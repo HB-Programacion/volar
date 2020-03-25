@@ -1,26 +1,34 @@
 {
   "files": {
-    "main.css": "/static/css/main.f598cfbd.chunk.css",
-    "main.js": "/static/js/main.2d63e3e5.chunk.js",
-    "main.js.map": "/static/js/main.2d63e3e5.chunk.js.map",
+    "main.css": "/static/css/main.0e8da1eb.chunk.css",
+    "main.js": "/static/js/main.f96db16a.chunk.js",
+    "main.js.map": "/static/js/main.f96db16a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ddb06e3a.js",
     "runtime-main.js.map": "/static/js/runtime-main.ddb06e3a.js.map",
     "static/css/2.de424728.chunk.css": "/static/css/2.de424728.chunk.css",
-    "static/js/2.63b128bb.chunk.js": "/static/js/2.63b128bb.chunk.js",
-    "static/js/2.63b128bb.chunk.js.map": "/static/js/2.63b128bb.chunk.js.map",
+    "static/js/2.1ed11e6e.chunk.js": "/static/js/2.1ed11e6e.chunk.js",
+    "static/js/2.1ed11e6e.chunk.js.map": "/static/js/2.1ed11e6e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0f291483cf94e53ec9d001fc998799de.js": "/precache-manifest.0f291483cf94e53ec9d001fc998799de.js",
+    "precache-manifest.d400b0b9d7ee582566206d9e1b4d9f68.js": "/precache-manifest.d400b0b9d7ee582566206d9e1b4d9f68.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/static/css/2.de424728.chunk.css.map",
-    "static/css/main.f598cfbd.chunk.css.map": "/static/css/main.f598cfbd.chunk.css.map",
-    "static/js/2.63b128bb.chunk.js.LICENSE.txt": "/static/js/2.63b128bb.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
+    "static/css/main.0e8da1eb.chunk.css.map": "/static/css/main.0e8da1eb.chunk.css.map",
+    "static/js/2.1ed11e6e.chunk.js.LICENSE.txt": "/static/js/2.1ed11e6e.chunk.js.LICENSE.txt",
+    "static/media/cohete-stars.svg": "/static/media/cohete-stars.d18157d2.svg",
+    "static/media/d-cognitivo.svg": "/static/media/d-cognitivo.088cf473.svg",
+    "static/media/d-emocional.svg": "/static/media/d-emocional.a619995d.svg",
+    "static/media/d-fisico.svg": "/static/media/d-fisico.3893bf69.svg",
+    "static/media/group-nosotros.svg": "/static/media/group-nosotros.b71d7611.svg",
+    "static/media/logo-volar.svg": "/static/media/logo-volar.afb5693c.svg",
+    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
+    "static/media/nino.png": "/static/media/nino.b465f296.png",
+    "static/media/proposito.svg": "/static/media/proposito.46c11336.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.ddb06e3a.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.63b128bb.chunk.js",
-    "static/css/main.f598cfbd.chunk.css",
-    "static/js/main.2d63e3e5.chunk.js"
+    "static/js/2.1ed11e6e.chunk.js",
+    "static/css/main.0e8da1eb.chunk.css",
+    "static/js/main.f96db16a.chunk.js"
   ]
 }
