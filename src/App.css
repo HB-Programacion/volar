@@ -189,13 +189,14 @@ border:none
 .equipo-home .card-body h6{
   color: #fff;
   font-family: "Questrial";
-  font-size: .9rem
+  font-size: 1rem
 }
 .equipo-home .controls-top{
   top: 9rem;
   position: relative;
   display: flex;
   justify-content: space-between;
+  z-index: 5
 }
 .equipo-home .controls-top a{
   color: #fff
