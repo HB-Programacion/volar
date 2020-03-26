@@ -33,7 +33,7 @@ body {
 /* MENU */
 
 .logo{
-  width: 6rem;
+  width: 8rem;
   height: auto;
 }
 .custom-toggler{
@@ -45,6 +45,7 @@ body {
 /* HOME */
 nav{
   z-index: 10;
+  font-family: 'Questrial';
 }
 .video-bg{
   height: 100vh;
@@ -63,21 +64,28 @@ nav{
   color:#7DC7C5;
   font-family: 'Questrial';
   font-weight: bolder!important;
-  line-height: 17px;
+  line-height: 20px;
 
 }
-.text-proposito img{
+.text-proposito .megafono{
   width: 3rem;
   height: auto;
   margin-top: -2rem
 }
 
 .text-proposito .h1-proposito{
-  margin-left: 45px
+  margin-left: 5rem;
+  margin-bottom: 1rem
 }
 .text-proposito p{
   line-height: 20px;
   font-family: 'Questrial', sans-serif;
+}
+.arrow-orange{
+    width: 1.2rem;
+    height: auto;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 .btn-orange{
   background-color: #EF8B44;
@@ -86,10 +94,7 @@ nav{
   box-shadow: 1px 1px 1px 1px #CE6A24;
   text-transform: uppercase;
 }
-.btn-orange span{
-  color: #CE6A24;
-  font-size: 1.3rem
-}
+
 .nosotros-home{
   font-family: 'Questrial', sans-serif;
   text-align: center
@@ -97,19 +102,199 @@ nav{
 .nosotros-home h2{
   text-transform: uppercase;
   color: #7DC7C5;
-  font-weight: 800
+  font-weight: 800;
+  font-size: 1.8rem
 }
 .nosotros-home p{
   line-height: 20px;
 }
-.box-estrategias{
-  display: flex;
-  justify-content: space-evenly
+.nosotros-home .btn-orange{
+  position: relative;
+    top: 2rem;
 }
+.box-estrategias{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+}
+ .box-estrategias .card{
+  width: 34%;
+  border: 0px
+}
+ .box-estrategias .card-img-top{
+  width: 50%;
+  margin: auto
+}
+ .box-estrategias .card-body{
+  padding: 0px;
+  color: #7DC7C5
+}
+
 .group-nosotros{
   position: relative;
   left: -33%;
   bottom: -3rem;
   width: 100%;
 }
+.cohete{
+  position: relative;
+    bottom: -4rem;
+    z-index: 1;
+    display: block;
+    left: 50%;
+    transform: translate(-50%)
+}
+.img-estrategias{
+  width: 20%;
+  height: auto;
+}
+
+.equipo-home{
+  background-color: #7DC7C5;
+  z-index: 5;
+  position: relative;
+  text-align: center;
+}
+.equipo-home h2{
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: 'Questrial';
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem
+}
+.equipo-home .card{
+background-color: rgba(0,0,0,0);
+border:none
+ }
+ .equipo-home .card img{
+   width: 70%;
+   margin: auto
+ }
+.equipo-home .card-body{
+  background-color: #ef8b44de;
+  /* opacity: .9; */
+  width: 70%;
+  margin: auto;
+  position: relative;
+  top: -4rem;
+  height: 70px;
+  padding: .8rem;
+
+  font-weight: 400;
+  text-align: left
+}
+.equipo-home .card-body h6{
+  color: #fff;
+  font-family: "Questrial";
+  font-size: .9rem
+}
+.equipo-home .controls-top{
+  top: 9rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.equipo-home .controls-top a{
+  color: #fff
+}
 /* HOME */
+
+
+/* TABLET */
+@media (min-width: 992px) {
+
+}
+/* TABLET */
+
+/* DESKTOP */
+@media (min-width: 1200px) {
+ html {
+  font-size: .98vw;
+  font-family: 'Questrial';
+} 
+
+/* MENU */
+
+.logo{
+  width: 10rem;
+}
+.navbar-brand{
+  margin-bottom: 1rem;
+  margin-left: 1rem
+}
+#navbarNav{
+  justify-content: space-around;
+  font-size: 1.5rem
+}
+#navbarNav ul li{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  
+}
+
+/* MENU */
+/* HOME */
+.text-proposito .h1-proposito{
+  margin-left: 5rem;
+  margin-bottom: 1.5rem;
+}
+.text-proposito h1{
+  font-size: 2.5rem;
+  line-height: 2.3rem;
+
+}
+.text-proposito .megafono{
+  width: 5rem
+}
+.text-proposito{
+  width: 50%
+}
+.text-proposito p, .nosotros-home p{
+  font-size: 1.5rem;
+  line-height: 1.8rem
+}
+.arrow-orange{
+  width: 1.5rem;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.btn-orange{
+background-color: #EF8B44;
+padding: 14px 12px;
+font-size: 1.5rem;
+letter-spacing: 1.5px
+}
+
+.nosotros-home h2{
+  font-size: 2.5rem;
+  margin-bottom: 1.3rem
+}
+.group-nosotros{
+  width: 80%;
+}
+.estrellita{
+  margin: 2rem
+}
+.img-estrategias{
+ width: 10%;
+ height: auto;
+}
+.box-estrategias{
+  margin-top: 4rem;
+  margin-bottom: 3rem
+}
+.box-estrategias .card{
+  width: 35%;
+
+}
+ .box-estrategias .card-img-top{
+  width: 20%;
+
+}
+
+}
+
+/* DESKTOP */
