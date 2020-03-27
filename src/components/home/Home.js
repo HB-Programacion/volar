@@ -15,6 +15,9 @@ import sara from '../../images/sara.png';
 import geraldine from '../../images/geraldine.png';
 import aran from '../../images/aran.png';
 import maria from '../../images/maria.png';
+import banner1 from '../../images/banner1.png';
+import bannerMobile1 from '../../images/baner-mobile1.png';
+
 
 
 
@@ -32,8 +35,8 @@ const Home = () => {
         <p>
             Darle a cada niña y niño, en su infancia temprana, la oportunidad de poder desarrollar al máximo las habilidades necesarias para su desarrollo integral. 
         </p>
-        <p>Los bebés nacen listos para aprender. </p>
-        <p className="mb-5 "><strong>¡Y tú tienes todo para ayudarlos</strong></p>
+        <p className="mb-4">Los bebés nacen listos para aprender.<br></br><strong>¡Y tú tienes todo para ayudarlos</strong> </p>
+        
         <Link className="btn-orange text-white">
             <img src={arrowLeft} className="arrow-orange"></img>
             ¡Entérate más!
@@ -77,7 +80,7 @@ const Home = () => {
    </div>
    <div className="equipo-home">
         <h2>nuestro equipo</h2>
-        <div class="container my-4">
+        <div class="container ">
             <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
                 <div class="controls-top">
                     <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
@@ -88,6 +91,8 @@ const Home = () => {
                     <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
                     <li data-target="#multi-item-example" data-slide-to="1"></li>
                     <li data-target="#multi-item-example" data-slide-to="2"></li>
+                    <li data-target="#multi-item-example" data-slide-to="3"></li>
+                    <li data-target="#multi-item-example" data-slide-to="4"></li>
                 </ol>
 
                 <div class="carousel-inner" role="listbox">
@@ -279,6 +284,60 @@ const Home = () => {
                 </div>
 
             </div>
+        </div>
+   </div>
+
+   <div className="momento-home">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src={bannerMobile1} class="d-block w-100" alt="..."/>
+                    <div class="carousel-caption  d-md-block">
+                        <h5>First slide label</h5>
+                        <Link className="btn-orange text-white">
+                            <img src={arrowLeft} className="arrow-orange"></img>
+                                ¡Aprendamos a hacerlo!
+                            <img src={arrowRigth}className="arrow-orange"></img>
+                        </Link>
+                    </div>
+                    
+                </div>
+                <div class="carousel-item">
+                    <img src={bannerMobile1} class="d-block w-100" alt="..."/>
+                    <div class="carousel-caption  d-md-block">
+                        <h5>Second slide label</h5>
+                        <Link className="btn-orange text-white">
+                            <img src={arrowLeft} className="arrow-orange"></img>
+                                ¡Aprendamos a hacerlo!
+                            <img src={arrowRigth}className="arrow-orange"></img>
+                        </Link>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src={bannerMobile1} class="d-block w-100" alt="..."/>
+                    <div class="carousel-caption  d-md-block">
+                        <h5>Third slide label</h5>
+                        <Link className="btn-orange text-white">
+                            <img src={arrowLeft} className="arrow-orange"></img>
+                                ¡Aprendamos a hacerlo!
+                            <img src={arrowRigth}className="arrow-orange"></img>
+                        </Link>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
    </div>
   

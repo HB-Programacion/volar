@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f54bdfec29bb76aa0affd873ed4f3a98",
+    "revision": "c85252b82dd325af8d3f43e28895e614",
     "url": "/index.html"
   },
   {
-    "revision": "bc93686f73c5d3d948f6",
+    "revision": "493126c0178007d3bd59",
     "url": "/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "2def7b6c3b7c4c108a73",
-    "url": "/static/css/main.934b2e95.chunk.css"
+    "revision": "94c4406699650cc5e23a",
+    "url": "/static/css/main.c1a9718f.chunk.css"
   },
   {
-    "revision": "bc93686f73c5d3d948f6",
-    "url": "/static/js/2.1860166b.chunk.js"
+    "revision": "493126c0178007d3bd59",
+    "url": "/static/js/2.a8bcc05c.chunk.js"
   },
   {
     "revision": "150e7ebf1b16402b62fb665d1a7869df",
-    "url": "/static/js/2.1860166b.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.a8bcc05c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2def7b6c3b7c4c108a73",
-    "url": "/static/js/main.cb4cba0c.chunk.js"
+    "revision": "94c4406699650cc5e23a",
+    "url": "/static/js/main.4a858f90.chunk.js"
   },
   {
     "revision": "8c5c6a26d069b279fa1e",
@@ -40,8 +40,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/arrow-right-orange.1d3b0965.svg"
   },
   {
-    "revision": "d18157d281c74f3487da572162c0abd1",
-    "url": "/static/media/cohete-stars.d18157d2.svg"
+    "revision": "7b943555adfe2c93ea46d632a78e8e60",
+    "url": "/static/media/baner-mobile1.7b943555.png"
+  },
+  {
+    "revision": "426b50fd359650b56c7a978c2e39470e",
+    "url": "/static/media/banner1.426b50fd.png"
+  },
+  {
+    "revision": "fa0e2d8b54918724af83efd5ff34fb95",
+    "url": "/static/media/cohete-stars.fa0e2d8b.svg"
   },
   {
     "revision": "fc9e4ce420437f798dec1278d71cec75",
@@ -64,8 +72,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/geraldine.352cd1c6.png"
   },
   {
-    "revision": "b71d7611c2f1a2f6399754fc08e17551",
-    "url": "/static/media/group-nosotros.b71d7611.svg"
+    "revision": "c0cd1e9507ccb184a00693a53419588d",
+    "url": "/static/media/group-nosotros.c0cd1e95.svg"
   },
   {
     "revision": "afb5693cc5c3c630f2c9a930a50079a2",

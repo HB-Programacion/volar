@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
 body {
-
+  margin: 0;
+  padding: 0
 }
-/* html {
-  font-size: .98vw;
-} */
+html{
+  font-size: 4.6vw;
+}
 
 * {
   margin: 0;
@@ -33,7 +34,7 @@ body {
 /* MENU */
 
 .logo{
-  width: 8rem;
+  width: 6.2rem;
   height: auto;
 }
 .custom-toggler{
@@ -46,6 +47,7 @@ body {
 nav{
   z-index: 10;
   font-family: 'Questrial';
+  box-shadow: 1px 2px 1px #9a9b9e52
 }
 .video-bg{
   height: 100vh;
@@ -64,7 +66,7 @@ nav{
   color:#7DC7C5;
   font-family: 'Questrial';
   font-weight: bolder!important;
-  line-height: 20px;
+  line-height: 1rem;
 
 }
 .text-proposito .megafono{
@@ -78,14 +80,15 @@ nav{
   margin-bottom: 1rem
 }
 .text-proposito p{
-  line-height: 20px;
+  line-height: 1.3rem;
   font-family: 'Questrial', sans-serif;
+  font-size: .9rem
 }
 .arrow-orange{
     width: 1.2rem;
     height: auto;
-    margin-left: 3px;
-    margin-right: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .btn-orange{
   background-color: #EF8B44;
@@ -93,6 +96,7 @@ nav{
   border-radius: 25px;
   box-shadow: 1px 1px 1px 1px #CE6A24;
   text-transform: uppercase;
+  font-size: 1rem;
 }
 
 .nosotros-home{
@@ -106,7 +110,8 @@ nav{
   font-size: 1.8rem
 }
 .nosotros-home p{
-  line-height: 20px;
+  line-height: 1.2rem;
+  font-size: .9rem
 }
 .nosotros-home .btn-orange{
   position: relative;
@@ -170,26 +175,30 @@ background-color: rgba(0,0,0,0);
 border:none
  }
  .equipo-home .card img{
-   width: 70%;
+   width: 13rem;
+   height: auto;
    margin: auto
  }
 .equipo-home .card-body{
   background-color: #ef8b44de;
   /* opacity: .9; */
-  width: 70%;
+  width: 13rem;
   margin: auto;
   position: relative;
   top: -4rem;
-  height: 70px;
+  height: 4.2rem;
   padding: .8rem;
-
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
   font-weight: 400;
-  text-align: left
+  text-align: left;
+  padding-left: 1.5rem
 }
 .equipo-home .card-body h6{
   color: #fff;
   font-family: "Questrial";
-  font-size: 1rem
+  font-size: 1rem;
+  line-height: .9rem
 }
 .equipo-home .controls-top{
   top: 9rem;
@@ -201,12 +210,37 @@ border:none
 .equipo-home .controls-top a{
   color: #fff
 }
+
+.equipo-home .carousel-indicators li{
+  width: 10px;
+  height: 10px;
+  border-radius: 25px;
+  border-bottom: none;
+  border-top: none;
+  margin-top: -2rem
+
+}
+.momento-home .carousel-indicators li{
+  width: 10px;
+  height: 10px;
+  border-radius: 25px;
+  border-bottom: none;
+  border-top: none;
+
+}
+
+.momento-home .carousel-caption{
+  left: 0%;
+  right: 0%;
+}
 /* HOME */
 
 
 /* TABLET */
 @media (min-width: 992px) {
-
+  /* .equipo-home .card img{
+    width: 10rem
+  } */
 }
 /* TABLET */
 
@@ -266,7 +300,8 @@ border:none
 background-color: #EF8B44;
 padding: 14px 12px;
 font-size: 1.5rem;
-letter-spacing: 1.5px
+letter-spacing: 1.5px;
+
 }
 
 .nosotros-home h2{
@@ -295,7 +330,9 @@ letter-spacing: 1.5px
   width: 20%;
 
 }
-
+/* .equipo-home .card img{
+  width: 10rem
+} */
 }
 
 /* DESKTOP */
