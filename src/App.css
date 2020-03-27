@@ -45,7 +45,7 @@ html{
 
 /* HOME */
 nav{
-  z-index: 10;
+  z-index: 19;
   font-family: 'Questrial';
   box-shadow: 1px 2px 1px #9a9b9e52
 }
@@ -62,11 +62,13 @@ nav{
 }
 .text-proposito h1{
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   color:#7DC7C5;
   font-family: 'Questrial';
   font-weight: bolder!important;
-  line-height: 1rem;
+  line-height: 1.2rem;
+  -webkit-text-stroke: 1px #7dc7c5;
+  letter-spacing: 1px
 
 }
 .text-proposito .megafono{
@@ -76,8 +78,9 @@ nav{
 }
 
 .text-proposito .h1-proposito{
-  margin-left: 5rem;
-  margin-bottom: 1rem
+  margin-left: 4.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.3rem;
 }
 .text-proposito p{
   line-height: 1.3rem;
@@ -92,11 +95,11 @@ nav{
 }
 .btn-orange{
   background-color: #EF8B44;
-  padding: 14px 12px;
+  padding: 12px 6px;
   border-radius: 25px;
   box-shadow: 1px 1px 1px 1px #CE6A24;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: .8rem;
 }
 
 .nosotros-home{
@@ -107,19 +110,21 @@ nav{
   text-transform: uppercase;
   color: #7DC7C5;
   font-weight: 800;
-  font-size: 1.8rem
+  font-size: 1.6rem;
+  -webkit-text-stroke: 1px #7dc7c5;
+  letter-spacing: 1px
 }
 .nosotros-home p{
   line-height: 1.2rem;
-  font-size: .9rem
+  font-size: .9rem;
+  letter-spacing: .5px
 }
 .nosotros-home .btn-orange{
   position: relative;
-    top: 2rem;
+    top: 1.4rem;
 }
 .box-estrategias{
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 1.5rem;
   width: 100%;
   display: flex;
 }
@@ -128,27 +133,32 @@ nav{
   border: 0px
 }
  .box-estrategias .card-img-top{
-  width: 50%;
+  width: 37%;
   margin: auto
 }
  .box-estrategias .card-body{
-  padding: 0px;
-  color: #7DC7C5
+  padding: .5rem;
+  color: #7DC7C5;
+  -webkit-text-stroke: .5px #7dc7c5;
+  letter-spacing: .3px
 }
 
 .group-nosotros{
   position: relative;
-  left: -33%;
-  bottom: -3rem;
+  left: -30%;
+  bottom: -2.2rem;
   width: 100%;
 }
 .cohete{
   position: relative;
-    bottom: -4rem;
-    z-index: 1;
-    display: block;
-    left: 50%;
-    transform: translate(-50%)
+  bottom: -4.5rem;
+  z-index: 1;
+  display: block;
+  left: 50%;
+  transform: translate(-50%);
+  width: 30%;
+  top: 3rem;
+
 }
 .img-estrategias{
   width: 20%;
@@ -167,8 +177,10 @@ nav{
   text-transform: uppercase;
   font-family: 'Questrial';
   padding-top: 2rem;
-  margin-bottom: 1rem;
-  font-size: 1.8rem
+  margin-bottom: -1rem;
+  font-size: 1.6rem;
+  -webkit-text-stroke: 1px #fff;
+  letter-spacing: 1px;
 }
 .equipo-home .card{
 background-color: rgba(0,0,0,0);
@@ -177,7 +189,9 @@ border:none
  .equipo-home .card img{
    width: 13rem;
    height: auto;
-   margin: auto
+   margin: auto;
+  box-shadow: 6px 5px 8px -2px rgba(0,0,0,0.56);
+   border-radius: 25px;
  }
 .equipo-home .card-body{
   background-color: #ef8b44de;
@@ -197,15 +211,17 @@ border:none
 .equipo-home .card-body h6{
   color: #fff;
   font-family: "Questrial";
-  font-size: 1rem;
-  line-height: .9rem
+  font-size: .89rem;
+  line-height: .95rem;
+  letter-spacing: .5px;
 }
 .equipo-home .controls-top{
   top: 9rem;
   position: relative;
   display: flex;
   justify-content: space-between;
-  z-index: 5
+  z-index: 5;
+  font-size: 1.5rem
 }
 .equipo-home .controls-top a{
   color: #fff
@@ -226,14 +242,102 @@ border:none
   border-radius: 25px;
   border-bottom: none;
   border-top: none;
+  background-color: #7dc7c5
 
 }
 
 .momento-home .carousel-caption{
   left: 0%;
   right: 0%;
+  bottom: 6%;
+}
+.momento-home .carousel-caption h5{
+  background-color: #fff;
+  width: 80%;
+  margin: auto;
+  height: 7rem;
+  border-radius: 25px
+}
+
+.carousel-caption-text{
+  position: absolute;
+    z-index: 5;
+    color: #fff;
+    top: 2rem;
+    text-align: center
+}
+
+.carousel-caption-text h2{
+  color: #7dc7c5;
+  text-transform: uppercase;
+  font-size: 1.55rem;
+  -webkit-text-stroke: 1px #7dc7c5;
+  letter-spacing: .5px;
+  text-align: center;
+  z-index: 2;
+}
+
+.carousel-caption-text p{
+  color: #2E335E;
+  font-size: .89rem;
+  line-height: 1.1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
+  top: -.3rem
+
 }
 /* HOME */
+
+/* FOOTER */
+.footer-box{
+ padding-top: 5rem;
+ border-top: .8rem solid #7DC7C5;
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding-bottom: 5rem;
+ padding-left: 1rem;
+ padding-right: 1rem
+}
+
+.box-redes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row
+}
+
+.box-redes img{
+  width: 80%;
+  height: auto;
+}
+.box-convenio{
+  display: flex;
+ width: 100%;
+ justify-content: space-around;
+ align-items: center;
+ margin-bottom: 2.5rem
+}
+.box-ubicacion, .box-correo{
+  margin-bottom: 1.6rem
+}
+.box-ubicacion p{
+  font-size: 1rem;
+  line-height: .3rem
+}
+.box-ubicacion .text-small{
+  font-size: .88rem
+}
+.box-correo p{
+  font-size: 1rem;
+  line-height: .3rem
+}
+/* FOOTER */
+
+
+
 
 
 /* TABLET */
@@ -330,6 +434,7 @@ letter-spacing: 1.5px;
   width: 20%;
 
 }
+
 /* .equipo-home .card img{
   width: 10rem
 } */

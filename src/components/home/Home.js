@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
+
 import nino from '../../images/nino.png';
 import proposito from '../../images/proposito.svg';
 import cognitivo from '../../images/d-cognitivo.svg';
@@ -52,7 +53,7 @@ const Home = () => {
         <p className="text-aguamarina">Está enfocado en ofrecer estrategias de crianza que fortalezcan:</p>
         <div className="box-estrategias">
             <div class="card" >
-                <img src={cognitivo} class="card-img-top" alt="..."/>
+                <img src={cognitivo} class="card-img-top mt-1" alt="..."/>
                 <div class="card-body">
                     <p class="card-text">Desarrollo cognitivo</p>
                 </div>
@@ -64,7 +65,7 @@ const Home = () => {
                 </div>
             </div>
             <div class="card" >
-                <img src={fisico} class="card-img-top" alt="..."/>
+                <img src={fisico} class="card-img-top mt-1" alt="..."/>
                 <div class="card-body">
                     <p class="card-text">Desarrollo Físico </p>
                 </div>
@@ -297,6 +298,10 @@ const Home = () => {
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src={bannerMobile1} class="d-block w-100" alt="..."/>
+                    <div className="carousel-caption-text">
+                        <h2>¡Cada momento cuenta!</h2>
+                        <p>¿Sabías que tus actividades cotidianas son oportunidades para el desarrollo del cerebro de tus hijas e hijos?</p>
+                    </div>
                     <div class="carousel-caption  d-md-block">
                         <h5>First slide label</h5>
                         <Link className="btn-orange text-white">
@@ -309,6 +314,10 @@ const Home = () => {
                 </div>
                 <div class="carousel-item">
                     <img src={bannerMobile1} class="d-block w-100" alt="..."/>
+                    <div className="carousel-caption-text">
+                        <h2>¡Cada momento cuenta!</h2>
+                        <p>¿Sabías que tus actividades cotidianas son oportunidades para el desarrollo del cerebro de tus hijas e hijos?</p>
+                    </div>
                     <div class="carousel-caption  d-md-block">
                         <h5>Second slide label</h5>
                         <Link className="btn-orange text-white">
@@ -320,6 +329,10 @@ const Home = () => {
                 </div>
                 <div class="carousel-item">
                     <img src={bannerMobile1} class="d-block w-100" alt="..."/>
+                    <div className="carousel-caption-text">
+                        <h2>¡Cada momento cuenta!</h2>
+                        <p>¿Sabías que tus actividades cotidianas son oportunidades para el desarrollo del cerebro de tus hijas e hijos?</p>
+                    </div>
                     <div class="carousel-caption  d-md-block">
                         <h5>Third slide label</h5>
                         <Link className="btn-orange text-white">
@@ -340,7 +353,7 @@ const Home = () => {
             </a>
         </div>
    </div>
-  
+ 
    
 
 </Router>
