@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import aporta from '../../images/aporta-logo.svg';
 import breca from '../../images/breca-logo.svg';
 import ubicacion from '../../images/ubicacion-logo.svg';
+import telefono from '../../images/telefono-logo.svg';
 import correo from '../../images/correo-logo.svg';
 import facebook from '../../images/facebook.svg';
 import instagram from '../../images/instagram.svg';
@@ -27,6 +28,11 @@ const Footer = () => {
                 <p>Oficina</p>
                 <p>Calle Las Begonias 441, Piso 9 </p>
                 <p className="text-small">San Isidro, Lima 27 - Perú </p>
+            </div>
+            <div className="box-telefono">
+                <img src={telefono} className="mb-3"></img>
+                <p>Teléfono</p>
+                <p>914-054-626</p>
             </div>
             <div className="box-correo">
                 <img src={correo} className="mb-3"></img>

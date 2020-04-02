@@ -11,11 +11,41 @@ html{
   margin: 0;
   padding: 0
 }
+.title{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.7rem;
+  line-height: 1.2rem;
+  -webkit-text-stroke: 1px #000;
+  letter-spacing: .9px
+
+}
+.p-mobile-blue{
+  font-family: 'Questrial';
+  color: #2E335E;
+  font-size: .85rem;
+  line-height: 1.1rem;
+  letter-spacing: .25px
+}
+
+.letra-gruesa-azul{
+  -webkit-text-stroke: .8px #2E335E;
+  font-size: .92rem
+}
 .text-aguamarina{
   color: #7DC7C5;
 }
 .text-blue-volar{
   color: #2E335E
+}
+
+.border-top-radius{
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.border-bottom-radius{
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 .w-30{
   width: 30%
@@ -29,8 +59,33 @@ html{
 .w-22{
   width: 22%
 }
-
-
+.w-35{
+  width: 35%
+}
+.w-40{
+  width: 40%
+}
+.w-45{
+  width: 45%
+}
+.w-55{
+  width: 55%
+}
+.w-60{
+  width: 60%
+}
+.w-65{
+  width: 65%
+}
+.w-70{
+  width: 70%
+}
+.w-80{
+  width: 80%
+}
+.w-90{
+  width: 90%
+}
 /* MENU */
 
 .logo{
@@ -289,6 +344,58 @@ border:none
 }
 /* HOME */
 
+/* NOSOTROS */
+#nosotros-page{
+  background-color: #7DC7C5;
+  text-align: center;
+}
+.box-title{
+  display: flex;
+  justify-content: center;
+  padding-top: 7rem;
+  background-color: #fff;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  height: 11rem;
+}
+.left-star{
+  width: 6rem;
+  height: auto;
+  position: relative;
+  top: -2rem
+}
+.right-star{
+  width: 6rem;
+  height: auto;
+  position: relative;
+  top: -2rem
+}
+.video{
+  width: 90%;
+}
+.box-crecer-agua{
+  display: flex;
+}
+.box-orange{
+  text-align: left;
+  color:#EF8B44;
+  line-height: 1rem;
+  font-size: .75rem;
+  padding-right: 1.8rem;
+  padding-left: .8rem;
+ 
+}
+.box-blue{
+  text-align: left;
+  color :#7DC7C5;
+  line-height: 1rem;
+  font-size: .75rem;
+  padding-right: 1.8rem;
+  padding-left: .8rem
+}
+
+/* NOSOTROS */
+
 /* FOOTER */
 .footer-box{
  padding-top: 5rem;
@@ -320,7 +427,7 @@ border:none
  align-items: center;
  margin-bottom: 2.5rem
 }
-.box-ubicacion, .box-correo{
+.box-ubicacion, .box-correo, .box-telefono{
   margin-bottom: 1.6rem
 }
 .box-ubicacion p{
@@ -330,7 +437,8 @@ border:none
 .box-ubicacion .text-small{
   font-size: .88rem
 }
-.box-correo p{
+
+.box-correo p, .box-telefono{
   font-size: 1rem;
   line-height: .3rem
 }

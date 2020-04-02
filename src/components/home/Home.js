@@ -18,6 +18,7 @@ import aran from '../../images/aran.png';
 import maria from '../../images/maria.png';
 import banner1 from '../../images/banner1.png';
 import bannerMobile1 from '../../images/baner-mobile1.png';
+import Nosotros from "../Nosotros.js"
 
 
 
@@ -25,7 +26,7 @@ import bannerMobile1 from '../../images/baner-mobile1.png';
 const Home = () => { 
 
     return (
-<Router>
+<>
    <img src={nino} className="w-100 video-bg"></img>
    <div className="text-center text-white text-proposito">
        <div className="d-flex justify-content-center  text-center text-white">
@@ -71,7 +72,7 @@ const Home = () => {
                 </div>
             </div>
         </div>
-        <Link className="btn-orange text-white">
+        <Link to="/nosotros" className="btn-orange text-white">
             <img src={arrowLeft} className="arrow-orange"></img>
             nuestra historia
             <img src={arrowRigth}className="arrow-orange"></img>
@@ -354,8 +355,6 @@ const Home = () => {
         </div>
    </div>
  
-   
-
-</Router>
+</>
 )}
 export default Home;
