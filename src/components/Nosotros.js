@@ -8,6 +8,8 @@ import info1 from "../images/info-1.png"
 import crecer from "../images/crecer.svg"
 import agua from "../images/agua-segura.svg"
 import cohete from "../images/cohete_fondo.png"
+import arrowLeft from '../images/arrow-left-orange.svg';
+import arrowRigth from '../images/arrow-right-orange.svg';
 
 const Nosotros = () => {
     return(
@@ -57,9 +59,23 @@ const Nosotros = () => {
                     </div>
                 </div>
             </div>
-            <figure className="w-100">
-                        <img src={cohete} className="w-100"></img>
-            </figure>
+            <div>
+                <figure className="w-100 m-0">
+                    <img src={cohete} className="w-100"></img>
+                </figure>
+                <div className="cohete1">
+                    <div className="title-cohete-1">
+                        <div className="numero-cohete">1</div>
+                        <div className="fase-cohete">Fase Aprende</div>
+                    </div>
+                    <Link className="">
+                        <img src={arrowLeft} className="arrow-orange"></img>
+                        ver más
+                        <img src={arrowRigth}className="arrow-orange"></img>
+                    </Link>
+                </div>
+            </div>
+            
         </div>
     )
 }

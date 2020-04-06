@@ -393,6 +393,31 @@ border:none
   padding-right: 1.8rem;
   padding-left: .8rem
 }
+.cohete1{
+  position: absolute;
+  border-bottom-style: dashed;
+  border-bottom-width: 1.5px;
+  padding-left: 3rem
+}
+.title-cohete-1{
+  display: flex;
+}
+.numero-cohete{
+  width: 30%;
+  font-size: 2.8rem;
+  font-family: "Helvetica"
+}
+.fase-cohete{
+  width: 70%;
+  text-align: initial;
+  font-size: .85rem;
+  line-height: .9rem;
+  position: relative;
+  bottom: -1.3rem;
+  left: -.5rem;
+  font-family: "Helvetica"
+}
+
 
 /* NOSOTROS */
 
