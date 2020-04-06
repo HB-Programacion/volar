@@ -1,15 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import starsLeft from "../images/stars-left.svg"
-import starsRight from "../images/stars-right.svg"
-import video from "../images/video-nosotros.png"
-import info1 from "../images/info-1.png"
-import crecer from "../images/crecer.svg"
-import agua from "../images/agua-segura.svg"
-import cohete from "../images/cohete_fondo.png"
-import arrowLeft from '../images/arrow-left-orange.svg';
-import arrowRigth from '../images/arrow-right-orange.svg';
+import starsLeft from "../../images/stars-left.svg"
+import starsRight from "../../images/stars-right.svg"
+import video from "../../images/video-nosotros.png"
+import info1 from "../../images/info-1.png"
+import crecer from "../../images/crecer.svg"
+import agua from "../../images/agua-segura.svg"
+import cohete from "../../images/cohete_fondo.png"
+import arrowLeft from '../../images/arrow-left-orange.svg';
+import arrowRigth from '../../images/arrow-right-orange.svg';
 
 const Nosotros = () => {
     return(

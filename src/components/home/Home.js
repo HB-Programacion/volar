@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-
+import "./home.css"
 import nino from '../../images/nino.png';
 import proposito from '../../images/proposito.svg';
 import cognitivo from '../../images/d-cognitivo.svg';
@@ -18,7 +18,7 @@ import aran from '../../images/aran.png';
 import maria from '../../images/maria.png';
 import banner1 from '../../images/banner1.png';
 import bannerMobile1 from '../../images/baner-mobile1.png';
-import Nosotros from "../Nosotros.js"
+import Nosotros from "../nosotros/Nosotros"
 
 
 

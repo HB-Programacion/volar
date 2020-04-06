@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
+import "./footer.css"
 import aporta from '../../images/aporta-logo.svg';
 import breca from '../../images/breca-logo.svg';
 import ubicacion from '../../images/ubicacion-logo.svg';

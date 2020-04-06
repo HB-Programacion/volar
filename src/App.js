@@ -7,15 +7,13 @@ import './App.css';
 import Menu from './components/menu/Menu';
 import Home from './components/home/Home';
 import Footer from './components/footer/Footer';
-import Nosotros from './components/Nosotros';
+import Nosotros from './components/nosotros/Nosotros';
 
 function App() {
   return (
     <>
     <div className="">
       <Menu/>
-      {/* <Home/> */}
-      
       </div>
       <Route path="/" exact component={Home} />
       <Route path="/nosotros" exact component={Nosotros} />

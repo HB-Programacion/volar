@@ -1,0 +1,45 @@
+.footer-box{
+    padding-top: 5rem;
+    border-top: .8rem solid #7DC7C5;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem
+   }
+   
+   .box-redes{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: row
+   }
+   
+   .box-redes img{
+     width: 80%;
+     height: auto;
+   }
+   .box-convenio{
+     display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2.5rem
+   }
+   .box-ubicacion, .box-correo, .box-telefono{
+     margin-bottom: 1.6rem
+   }
+   .box-ubicacion p{
+     font-size: 1rem;
+     line-height: .3rem
+   }
+   .box-ubicacion .text-small{
+     font-size: .88rem
+   }
+   
+   .box-correo p, .box-telefono{
+     font-size: 1rem;
+     line-height: .3rem
+   }

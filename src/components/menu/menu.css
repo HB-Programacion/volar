@@ -1,0 +1,13 @@
+.logo{
+  width: 6.2rem;
+  height: auto;
+}
+.custom-toggler{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(119,196,194)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M10 8h20M10 16h20M10 24h20'/%3E%3C/svg%3E")!important;
+}
+
+nav{
+    z-index: 19;
+    font-family: 'Questrial';
+    box-shadow: 1px 2px 1px #9a9b9e52
+  }

@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
 body {
   margin: 0;
-  padding: 0
+  padding: 0;
+  font-family: 'Questrial';
 }
 html{
   font-size: 4.6vw;
@@ -86,263 +87,7 @@ html{
 .w-90{
   width: 90%
 }
-/* MENU */
 
-.logo{
-  width: 6.2rem;
-  height: auto;
-}
-.custom-toggler{
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(119,196,194)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M10 8h20M10 16h20M10 24h20'/%3E%3C/svg%3E")!important;
-}
-
-/* MENU */
-
-/* HOME */
-nav{
-  z-index: 19;
-  font-family: 'Questrial';
-  box-shadow: 1px 2px 1px #9a9b9e52
-}
-.video-bg{
-  height: 100vh;
-}
-.text-proposito{
-  width: 90%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-
-}
-.text-proposito h1{
-  text-transform: uppercase;
-  font-size: 1.7rem;
-  color:#7DC7C5;
-  font-family: 'Questrial';
-  font-weight: bolder!important;
-  line-height: 1.2rem;
-  -webkit-text-stroke: 1px #7dc7c5;
-  letter-spacing: 1px
-
-}
-.text-proposito .megafono{
-  width: 3rem;
-  height: auto;
-  margin-top: -2rem
-}
-
-.text-proposito .h1-proposito{
-  margin-left: 4.5rem;
-  margin-bottom: 1rem;
-  line-height: 1.3rem;
-}
-.text-proposito p{
-  line-height: 1.3rem;
-  font-family: 'Questrial', sans-serif;
-  font-size: .9rem
-}
-.arrow-orange{
-    width: 1.2rem;
-    height: auto;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-.btn-orange{
-  background-color: #EF8B44;
-  padding: 12px 6px;
-  border-radius: 25px;
-  box-shadow: 1px 1px 1px 1px #CE6A24;
-  text-transform: uppercase;
-  font-size: .8rem;
-}
-
-.nosotros-home{
-  font-family: 'Questrial', sans-serif;
-  text-align: center
-}
-.nosotros-home h2{
-  text-transform: uppercase;
-  color: #7DC7C5;
-  font-weight: 800;
-  font-size: 1.6rem;
-  -webkit-text-stroke: 1px #7dc7c5;
-  letter-spacing: 1px
-}
-.nosotros-home p{
-  line-height: 1.2rem;
-  font-size: .9rem;
-  letter-spacing: .5px
-}
-.nosotros-home .btn-orange{
-  position: relative;
-    top: 1.4rem;
-}
-.box-estrategias{
-  margin-top: 1.5rem;
-  width: 100%;
-  display: flex;
-}
- .box-estrategias .card{
-  width: 34%;
-  border: 0px
-}
- .box-estrategias .card-img-top{
-  width: 37%;
-  margin: auto
-}
- .box-estrategias .card-body{
-  padding: .5rem;
-  color: #7DC7C5;
-  -webkit-text-stroke: .5px #7dc7c5;
-  letter-spacing: .3px
-}
-
-.group-nosotros{
-  position: relative;
-  left: -30%;
-  bottom: -2.2rem;
-  width: 100%;
-}
-.cohete{
-  position: relative;
-  bottom: -4.5rem;
-  z-index: 1;
-  display: block;
-  left: 50%;
-  transform: translate(-50%);
-  width: 30%;
-  top: 3rem;
-
-}
-.img-estrategias{
-  width: 20%;
-  height: auto;
-}
-
-.equipo-home{
-  background-color: #7DC7C5;
-  z-index: 5;
-  position: relative;
-  text-align: center;
-}
-.equipo-home h2{
-  color: #fff;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: 'Questrial';
-  padding-top: 2rem;
-  margin-bottom: -1rem;
-  font-size: 1.6rem;
-  -webkit-text-stroke: 1px #fff;
-  letter-spacing: 1px;
-}
-.equipo-home .card{
-background-color: rgba(0,0,0,0);
-border:none
- }
- .equipo-home .card img{
-   width: 13rem;
-   height: auto;
-   margin: auto;
-  box-shadow: 6px 5px 8px -2px rgba(0,0,0,0.56);
-   border-radius: 25px;
- }
-.equipo-home .card-body{
-  background-color: #ef8b44de;
-  /* opacity: .9; */
-  width: 13rem;
-  margin: auto;
-  position: relative;
-  top: -4rem;
-  height: 4.2rem;
-  padding: .8rem;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  font-weight: 400;
-  text-align: left;
-  padding-left: 1.5rem
-}
-.equipo-home .card-body h6{
-  color: #fff;
-  font-family: "Questrial";
-  font-size: .89rem;
-  line-height: .95rem;
-  letter-spacing: .5px;
-}
-.equipo-home .controls-top{
-  top: 9rem;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  z-index: 5;
-  font-size: 1.5rem
-}
-.equipo-home .controls-top a{
-  color: #fff
-}
-
-.equipo-home .carousel-indicators li{
-  width: 10px;
-  height: 10px;
-  border-radius: 25px;
-  border-bottom: none;
-  border-top: none;
-  margin-top: -2rem
-
-}
-.momento-home .carousel-indicators li{
-  width: 10px;
-  height: 10px;
-  border-radius: 25px;
-  border-bottom: none;
-  border-top: none;
-  background-color: #7dc7c5
-
-}
-
-.momento-home .carousel-caption{
-  left: 0%;
-  right: 0%;
-  bottom: 6%;
-}
-.momento-home .carousel-caption h5{
-  background-color: #fff;
-  width: 80%;
-  margin: auto;
-  height: 7rem;
-  border-radius: 25px
-}
-
-.carousel-caption-text{
-  position: absolute;
-    z-index: 5;
-    color: #fff;
-    top: 2rem;
-    text-align: center
-}
-
-.carousel-caption-text h2{
-  color: #7dc7c5;
-  text-transform: uppercase;
-  font-size: 1.55rem;
-  -webkit-text-stroke: 1px #7dc7c5;
-  letter-spacing: .5px;
-  text-align: center;
-  z-index: 2;
-}
-
-.carousel-caption-text p{
-  color: #2E335E;
-  font-size: .89rem;
-  line-height: 1.1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  position: relative;
-  top: -.3rem
-
-}
-/* HOME */
 
 /* NOSOTROS */
 #nosotros-page{
@@ -422,7 +167,7 @@ border:none
 /* NOSOTROS */
 
 /* FOOTER */
-.footer-box{
+/* .footer-box{
  padding-top: 5rem;
  border-top: .8rem solid #7DC7C5;
  text-align: center;
@@ -466,7 +211,7 @@ border:none
 .box-correo p, .box-telefono{
   font-size: 1rem;
   line-height: .3rem
-}
+} */
 /* FOOTER */
 
 

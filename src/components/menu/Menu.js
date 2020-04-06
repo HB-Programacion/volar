@@ -1,9 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
+import "./menu.css"
 import logo from '../../images/logo-volar.svg';
 import Home from "../home/Home"
-import Nosotros from "../Nosotros"
+import Nosotros from "../nosotros/Nosotros"
+
 const Menu = () => { 
 
     return (
