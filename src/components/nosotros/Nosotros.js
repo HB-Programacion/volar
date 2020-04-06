@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
+import "./nosotros.css"
 import starsLeft from "../../images/stars-left.svg"
 import starsRight from "../../images/stars-right.svg"
 import video from "../../images/video-nosotros.png"

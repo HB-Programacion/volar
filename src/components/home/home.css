@@ -36,20 +36,7 @@
     font-family: 'Questrial', sans-serif;
     font-size: .9rem
   }
-  .arrow-orange{
-      width: 1.2rem;
-      height: auto;
-      margin-left: 5px;
-      margin-right: 5px;
-  }
-  .btn-orange{
-    background-color: #EF8B44;
-    padding: 12px 6px;
-    border-radius: 25px;
-    box-shadow: 1px 1px 1px 1px #CE6A24;
-    text-transform: uppercase;
-    font-size: .8rem;
-  }
+ 
   
   .nosotros-home{
     font-family: 'Questrial', sans-serif;

@@ -12,6 +12,21 @@ html{
   margin: 0;
   padding: 0
 }
+.arrow-orange{
+  width: 1.2rem;
+  height: auto;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.btn-orange{
+background-color: #EF8B44;
+padding: 12px 6px;
+border-radius: 25px;
+box-shadow: 1px 1px 1px 1px #CE6A24;
+text-transform: uppercase;
+font-size: .8rem;
+}
+
 .title{
   text-transform: uppercase;
   text-align: center;
@@ -48,6 +63,8 @@ html{
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
+
+
 .w-30{
   width: 30%
 }
@@ -87,134 +104,6 @@ html{
 .w-90{
   width: 90%
 }
-
-
-/* NOSOTROS */
-#nosotros-page{
-  background-color: #7DC7C5;
-  text-align: center;
-}
-.box-title{
-  display: flex;
-  justify-content: center;
-  padding-top: 7rem;
-  background-color: #fff;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
-  height: 11rem;
-}
-.left-star{
-  width: 6rem;
-  height: auto;
-  position: relative;
-  top: -2rem
-}
-.right-star{
-  width: 6rem;
-  height: auto;
-  position: relative;
-  top: -2rem
-}
-.video{
-  width: 90%;
-}
-.box-crecer-agua{
-  display: flex;
-}
-.box-orange{
-  text-align: left;
-  color:#EF8B44;
-  line-height: 1rem;
-  font-size: .75rem;
-  padding-right: 1.8rem;
-  padding-left: .8rem;
- 
-}
-.box-blue{
-  text-align: left;
-  color :#7DC7C5;
-  line-height: 1rem;
-  font-size: .75rem;
-  padding-right: 1.8rem;
-  padding-left: .8rem
-}
-.cohete1{
-  position: absolute;
-  border-bottom-style: dashed;
-  border-bottom-width: 1.5px;
-  padding-left: 3rem
-}
-.title-cohete-1{
-  display: flex;
-}
-.numero-cohete{
-  width: 30%;
-  font-size: 2.8rem;
-  font-family: "Helvetica"
-}
-.fase-cohete{
-  width: 70%;
-  text-align: initial;
-  font-size: .85rem;
-  line-height: .9rem;
-  position: relative;
-  bottom: -1.3rem;
-  left: -.5rem;
-  font-family: "Helvetica"
-}
-
-
-/* NOSOTROS */
-
-/* FOOTER */
-/* .footer-box{
- padding-top: 5rem;
- border-top: .8rem solid #7DC7C5;
- text-align: center;
- display: flex;
- flex-direction: column;
- align-items: center;
- padding-bottom: 5rem;
- padding-left: 1rem;
- padding-right: 1rem
-}
-
-.box-redes{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row
-}
-
-.box-redes img{
-  width: 80%;
-  height: auto;
-}
-.box-convenio{
-  display: flex;
- width: 100%;
- justify-content: space-around;
- align-items: center;
- margin-bottom: 2.5rem
-}
-.box-ubicacion, .box-correo, .box-telefono{
-  margin-bottom: 1.6rem
-}
-.box-ubicacion p{
-  font-size: 1rem;
-  line-height: .3rem
-}
-.box-ubicacion .text-small{
-  font-size: .88rem
-}
-
-.box-correo p, .box-telefono{
-  font-size: 1rem;
-  line-height: .3rem
-} */
-/* FOOTER */
-
-
 
 
 
