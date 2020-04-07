@@ -25,6 +25,7 @@
   }
   .video{
     width: 90%;
+    margin: auto
   }
   .box-crecer-agua{
     display: flex;

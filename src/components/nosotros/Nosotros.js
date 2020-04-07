@@ -21,7 +21,9 @@ const Nosotros = () => {
                 <img src={starsRight}className="right-star"></img>
             </div>
             <div className="mt-3 ">
-                <img src={video} className="video"></img>
+                <div className="video">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3nvEJDc3Vic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
                 <p className="text-white">Video Volar - ¿Quiénes somos? </p>
                 <div className="container">
                     <div className="p-2 p-mobile-blue"> 
