@@ -27,21 +27,6 @@ text-transform: uppercase;
 font-size: .8rem;
 }
 
-.btn-light-blue{
-  background-color: #7DC7C5;
-  padding: 12px 20px;
-  border-radius: 25px;
-  box-shadow: 2px 2px 2px 2px #28ABA9;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  text-align: center;
-  text-decoration:none!important;
-  font-weight: 600!important
-  }
-
-.font-color-orange{
-  color:#EF8B44!important
-}
 .title{
   text-transform: uppercase;
   text-align: center;

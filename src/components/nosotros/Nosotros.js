@@ -64,17 +64,20 @@ const Nosotros = () => {
                 <figure className="w-100 m-0">
                     <img src={cohete} className="w-100"></img>
                 </figure>
+                <div className="cohete-right">
                 <div className="cohete1">
                     <div className="title-cohete-1">
                         <div className="numero-cohete">1</div>
                         <div className="fase-cohete">Fase Aprende</div>
                     </div>
-                    <Link className="">
-                        <img src={arrowLeft} className="arrow-orange"></img>
+                    <Link className="btn-cohete">
+                        <img src={arrowLeft} className="arrow-orange-cohete"></img>
                         ver más
-                        <img src={arrowRigth}className="arrow-orange"></img>
+                        <img src={arrowRigth}className="arrow-orange-cohete"></img>
                     </Link>
                 </div>
+                </div>
+                
             </div>
             
         </div>
