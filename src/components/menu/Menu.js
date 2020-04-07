@@ -3,14 +3,16 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 import "./menu.css"
 import logo from '../../images/logo-volar.svg';
+import candado from '../../images/candado-login.svg';
 import Home from "../home/Home"
 import Nosotros from "../nosotros/Nosotros"
+import "../../App.css"
 
 const Menu = () => { 
 
     return (
 <>
-    <nav className=" navbar navbar-expand-lg navbar-light bg-white position-fixed w-100">
+    <nav className=" navbar navbar-expand-lg navbar-light bg-white position-fixed w-100 style">
         <Link to="/" className="navbar-brand" href="#"><img src={logo} className="logo"></img> </Link>
         <button className="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon custom-toggler"></span>
@@ -28,6 +30,9 @@ const Menu = () => {
                 </li>
                 <li className="nav-item">
                     <Link to="/contactanos" className="nav-link" href="#">Contáctanos</Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="/contactanos" className="nav-link font-color-orange" href="#">  <img src={candado}/> Iniciar sesión </Link>
                 </li>
             </ul>
         </div>
