@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.7f28acf6.chunk.css",
-    "main.js": "/static/js/main.8fdf3cf5.chunk.js",
-    "main.js.map": "/static/js/main.8fdf3cf5.chunk.js.map",
+    "main.css": "/static/css/main.54d6da6f.chunk.css",
+    "main.js": "/static/js/main.7c076810.chunk.js",
+    "main.js.map": "/static/js/main.7c076810.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ddb06e3a.js",
     "runtime-main.js.map": "/static/js/runtime-main.ddb06e3a.js.map",
     "static/css/2.de424728.chunk.css": "/static/css/2.de424728.chunk.css",
-    "static/js/2.558296ea.chunk.js": "/static/js/2.558296ea.chunk.js",
-    "static/js/2.558296ea.chunk.js.map": "/static/js/2.558296ea.chunk.js.map",
+    "static/js/2.4e9a3f3d.chunk.js": "/static/js/2.4e9a3f3d.chunk.js",
+    "static/js/2.4e9a3f3d.chunk.js.map": "/static/js/2.4e9a3f3d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.aa1b3eab6aabc78b53ba1ba453173ea3.js": "/precache-manifest.aa1b3eab6aabc78b53ba1ba453173ea3.js",
+    "precache-manifest.856d71f04e7f09d1ac7637eb1bf0dd70.js": "/precache-manifest.856d71f04e7f09d1ac7637eb1bf0dd70.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/static/css/2.de424728.chunk.css.map",
-    "static/css/main.7f28acf6.chunk.css.map": "/static/css/main.7f28acf6.chunk.css.map",
-    "static/js/2.558296ea.chunk.js.LICENSE.txt": "/static/js/2.558296ea.chunk.js.LICENSE.txt",
+    "static/css/main.54d6da6f.chunk.css.map": "/static/css/main.54d6da6f.chunk.css.map",
+    "static/js/2.4e9a3f3d.chunk.js.LICENSE.txt": "/static/js/2.4e9a3f3d.chunk.js.LICENSE.txt",
     "static/media/agua-segura.svg": "/static/media/agua-segura.ee055883.svg",
     "static/media/aporta-logo.svg": "/static/media/aporta-logo.b0ef2f14.svg",
     "static/media/aran.png": "/static/media/aran.cc8680b1.png",
@@ -22,6 +22,7 @@
     "static/media/baner-mobile1.png": "/static/media/baner-mobile1.7b943555.png",
     "static/media/banner1.png": "/static/media/banner1.426b50fd.png",
     "static/media/breca-logo.svg": "/static/media/breca-logo.e0e6a714.svg",
+    "static/media/candado-login.svg": "/static/media/candado-login.f330c94f.svg",
     "static/media/cohete-stars.svg": "/static/media/cohete-stars.fa0e2d8b.svg",
     "static/media/cohete_fondo.png": "/static/media/cohete_fondo.bba8b274.png",
     "static/media/correo-logo.svg": "/static/media/correo-logo.2cc3e020.svg",
@@ -50,8 +51,8 @@
   "entrypoints": [
     "static/js/runtime-main.ddb06e3a.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.558296ea.chunk.js",
-    "static/css/main.7f28acf6.chunk.css",
-    "static/js/main.8fdf3cf5.chunk.js"
+    "static/js/2.4e9a3f3d.chunk.js",
+    "static/css/main.54d6da6f.chunk.css",
+    "static/js/main.7c076810.chunk.js"
   ]
 }
