@@ -30,6 +30,26 @@
     width: 90%;
     margin: auto
   }
+
+  .video-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    /*padding-top: 30px;  IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+    }
+    
+    .video-responsive iframe,
+    .video-responsive object,
+    .video-responsive embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+
+
   .box-crecer-agua{
     display: flex;
   }
@@ -52,8 +72,8 @@
   }
   .cohete-right{
     position: absolute;
-    top: 105rem;
-    left: 10rem;
+    top: 106rem;
+    left: 9.8rem;
   }
   .cohete1{
     position: relative;
@@ -106,8 +126,8 @@
 
   .cohete-left{
     position: absolute;
-    top: 109.5rem;
-    left: 4rem;
+    top: 110rem;
+    left: 2.5rem;
   }
 
   .cohete2{
@@ -116,7 +136,7 @@
     border-bottom-width: 1.4px;
     padding-bottom: .5rem;
     text-align: left;
-    padding-right: 2.3rem;
+    padding-right: 3.65rem;
   }
   .title-cohete-2{
     display: flex;
@@ -129,12 +149,28 @@
 
   .cohete-right3{
     position: absolute;
-    top: 114rem;
-    left: 10rem;
+    top: 115rem;
+    left: 9.2rem;
   }
 
+  .cohete3{
+    padding-left: 3.5rem;
+    border-bottom-style: dashed;
+    border-bottom-width: 1.4px;
+    padding-bottom: .5rem
+  }
+  .title-cohete-3{
+    left: .8rem;
+  }
   .cohete-left4{
     position: absolute;
-    top: 119rem;
-    left: 4rem;
+    top: 120rem;
+    left: 2.5rem;
   }
+.cohete4{
+  padding-right: 2.4rem
+}
+.fase-cohete-4{
+  left: -.8rem;
+  bottom: -.6rem
+}
