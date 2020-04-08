@@ -10,7 +10,7 @@ import starsLeft2 from "../../images/starts-left-aprendamos2.png"
 import starsRight2 from "../../images/starts-right-aprendamos2.png";
 import starCenter from "../../images/start-light-blue.png"
 
-export const Aprendamos2 = () => {
+export const EmpiezaAprender = () => {
   return (
     <div className="background-blue">
       <div className="box-title-aprendamos show-tittle">

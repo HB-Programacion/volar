@@ -9,7 +9,7 @@ import Home from './components/home/Home';
 import Footer from './components/footer/Footer';
 import Nosotros from './components/nosotros/Nosotros';
 import {Aprendamos} from './components/aprendamos/Aprendamos'
-import {Aprendamos2} from './components/aprendamos/Aprendamos2'
+import {EmpiezaAprender} from './components/aprendamos/EmpiezaAprender'
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
       <Route path="/" exact component={Home} />
       <Route path="/nosotros" exact component={Nosotros} />
       <Route path="/aprendamos" exact component={Aprendamos} />
-      <Route path="/aprendamos/empieza-a-aprender" exact component={Aprendamos2} />
+      <Route path="/aprendamos/empieza-a-aprender" exact component={EmpiezaAprender} />
       </Switch>
       <Footer/>
     </>
