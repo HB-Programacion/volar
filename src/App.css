@@ -18,6 +18,14 @@ html{
   margin-left: 5px;
   margin-right: 5px;
 }
+
+.arrow-blue{
+  width: 1.7rem;
+  height: auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .btn-orange{
 background-color: #EF8B44;
 padding: 12px 6px;
@@ -36,7 +44,8 @@ font-size: .8rem;
   font-size: 1.2rem;
   text-align: center;
   text-decoration:none!important;
-  font-weight: 600!important
+  font-weight: 600!important;
+  display: flex;
   }
 
 .font-color-orange{
@@ -131,7 +140,7 @@ font-size: .8rem;
 /* TABLET */
 
 /* DESKTOP */
-@media (min-width: 1200px) {
+@media (min-width: 769px) {
  html {
   font-size: .98vw;
   font-family: 'Questrial';
@@ -182,6 +191,8 @@ font-size: .8rem;
   margin-left: 4px;
   margin-right: 4px;
 }
+
+
 .btn-orange{
 background-color: #EF8B44;
 padding: 14px 12px;

@@ -16,9 +16,9 @@ const Nosotros = () => {
     return(
         <div id="nosotros-page">
             <div className="box-title">
-                <img src={starsLeft}className="left-star"></img>
+                <img src={starsLeft} className="left-star" alt="stars-left"></img>
                 <h1 className="title">nosotros</h1>
-                <img src={starsRight}className="right-star"></img>
+                <img src={starsRight} className="right-star" alt="stars-right"></img>
             </div>
             <div className="mt-3 ">
                 <img src={video} className="video"></img>
