@@ -21,7 +21,9 @@ const Nosotros = () => {
                 <img src={starsRight} className="right-star" alt="stars-right"></img>
             </div>
             <div className="mt-3 ">
-                <img src={video} className="video"></img>
+                <div className="video">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3nvEJDc3Vic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
                 <p className="text-white">Video Volar - ¿Quiénes somos? </p>
                 <div className="container">
                     <div className="p-2 p-mobile-blue"> 
@@ -64,17 +66,62 @@ const Nosotros = () => {
                 <figure className="w-100 m-0">
                     <img src={cohete} className="w-100"></img>
                 </figure>
-                <div className="cohete1">
-                    <div className="title-cohete-1">
-                        <div className="numero-cohete">1</div>
-                        <div className="fase-cohete">Fase Aprende</div>
+                <div className="cohete-right">
+                    <div className="cohete1">
+                        <div className="title-cohete-1">
+                            <div className="numero-cohete">1</div>
+                            <div className="fase-cohete">Fase Aprender</div>
+                        </div>
+                        <Link className="btn-cohete">
+                            <img src={arrowLeft} className="arrow-orange-cohete"></img>
+                            ver más
+                            <img src={arrowRigth}className="arrow-orange-cohete"></img>
+                        </Link>
                     </div>
-                    <Link className="">
-                        <img src={arrowLeft} className="arrow-orange"></img>
-                        ver más
-                        <img src={arrowRigth}className="arrow-orange"></img>
-                    </Link>
                 </div>
+
+                <div className="cohete-left">
+                    <div className="cohete2">
+                        <div className="title-cohete-2">
+                            <div className="numero-cohete">2</div>
+                            <div className="fase-cohete">Fase Probar</div>
+                        </div>
+                        <Link className="btn-cohete">
+                            <img src={arrowLeft} className="arrow-orange-cohete"></img>
+                            ver más
+                            <img src={arrowRigth}className="arrow-orange-cohete"></img>
+                        </Link>
+                    </div>
+                </div>
+
+                <div className="cohete-right3">
+                    <div className="cohete1">
+                        <div className="title-cohete-1">
+                            <div className="numero-cohete">3</div>
+                            <div className="fase-cohete">Fase Refinar</div>
+                        </div>
+                        <Link className="btn-cohete">
+                            <img src={arrowLeft} className="arrow-orange-cohete"></img>
+                            ver más
+                            <img src={arrowRigth}className="arrow-orange-cohete"></img>
+                        </Link>
+                    </div>
+                </div>
+
+                <div className="cohete-left4">
+                    <div className="cohete2">
+                        <div className="title-cohete-2">
+                            <div className="numero-cohete">4</div>
+                            <div className="fase-cohete">Fase Evaluar y Escalar</div>
+                        </div>
+                        <Link className="btn-cohete">
+                            <img src={arrowLeft} className="arrow-orange-cohete"></img>
+                            ver más
+                            <img src={arrowRigth}className="arrow-orange-cohete"></img>
+                        </Link>
+                    </div>
+                </div>
+
             </div>
             
         </div>

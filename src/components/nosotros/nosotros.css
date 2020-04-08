@@ -28,6 +28,7 @@
   }
   .video{
     width: 90%;
+    margin: auto
   }
   .box-crecer-agua{
     display: flex;
@@ -49,27 +50,91 @@
     padding-right: 1.8rem;
     padding-left: .8rem
   }
-  .cohete1{
+  .cohete-right{
     position: absolute;
+    top: 105rem;
+    left: 10rem;
+  }
+  .cohete1{
+    position: relative;
     border-bottom-style: dashed;
-    border-bottom-width: 1.5px;
-    padding-left: 3rem
+    border-bottom-width: 1.4px;
+    padding-left: 1rem;
+    padding-bottom: .5rem;
+    text-align: right
+  
   }
   .title-cohete-1{
     display: flex;
+    color: #fff;
+    /* margin-bottom: -1.5rem; */
+    position: relative;
+    left: 1.5rem;
+    bottom: -1.2rem;
+    
   }
   .numero-cohete{
     width: 30%;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-family: "Helvetica"
   }
   .fase-cohete{
     width: 70%;
     text-align: initial;
-    font-size: .85rem;
-    line-height: .9rem;
+    font-size: .7rem;
+    line-height: .7rem;
+    letter-spacing: .07rem;
     position: relative;
     bottom: -1.3rem;
-    left: -.5rem;
-    font-family: "Helvetica"
+    left: -.2rem;
+    font-family: "Helvetica";
+  }
+  .arrow-orange-cohete{
+    width: 1rem;
+    padding: 0 .2rem ;
+  }
+  .btn-cohete{
+    color: #fff;
+    background-color: #EF8B44;
+    padding: .25rem .30rem;
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px 1px #CE6A24;
+    text-transform: uppercase;
+    font-size: .5rem;
+    letter-spacing: .05rem
+  }
+
+  .cohete-left{
+    position: absolute;
+    top: 109.5rem;
+    left: 4rem;
+  }
+
+  .cohete2{
+    position: relative;
+    border-bottom-style: dashed;
+    border-bottom-width: 1.4px;
+    padding-bottom: .5rem;
+    text-align: left;
+    padding-right: 2.3rem;
+  }
+  .title-cohete-2{
+    display: flex;
+    color: #fff;
+    /* margin-bottom: -1.5rem; */
+    position: relative;
+    bottom: -1.2rem;
+    
+  }
+
+  .cohete-right3{
+    position: absolute;
+    top: 114rem;
+    left: 10rem;
+  }
+
+  .cohete-left4{
+    position: absolute;
+    top: 119rem;
+    left: 4rem;
   }
