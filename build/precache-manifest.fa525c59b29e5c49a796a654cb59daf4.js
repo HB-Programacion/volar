@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "92c580c6682190618f4c8f213347b463",
+    "revision": "840876fa17528e95a1f2c02bbdb6b4fd",
     "url": "/index.html"
   },
   {
-    "revision": "776accb57ca01071ad4a",
+    "revision": "45cbfa336b344d1dd542",
     "url": "/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "2c601f33dcfd45f892d3",
-    "url": "/static/css/main.7f28acf6.chunk.css"
+    "revision": "9be33caf9d54a8f7387c",
+    "url": "/static/css/main.d8ecb024.chunk.css"
   },
   {
-    "revision": "776accb57ca01071ad4a",
-    "url": "/static/js/2.558296ea.chunk.js"
+    "revision": "45cbfa336b344d1dd542",
+    "url": "/static/js/2.067b2dd9.chunk.js"
   },
   {
     "revision": "150e7ebf1b16402b62fb665d1a7869df",
-    "url": "/static/js/2.558296ea.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.067b2dd9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2c601f33dcfd45f892d3",
-    "url": "/static/js/main.8fdf3cf5.chunk.js"
+    "revision": "9be33caf9d54a8f7387c",
+    "url": "/static/js/main.ebdd2083.chunk.js"
   },
   {
     "revision": "8c5c6a26d069b279fa1e",
@@ -58,6 +58,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e0e6a7142c800deb5ade36937a4408bc",
     "url": "/static/media/breca-logo.e0e6a714.svg"
+  },
+  {
+    "revision": "f330c94ffa09264dae903911b55d6c77",
+    "url": "/static/media/candado-login.f330c94f.svg"
   },
   {
     "revision": "fa0e2d8b54918724af83efd5ff34fb95",
