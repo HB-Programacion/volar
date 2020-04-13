@@ -41,6 +41,7 @@ export const EmpiezaAprender = () => {
       <div className="btn-box">
         <div className="row">
           <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+            <Link to="/aprendamos/cuidador/registro-niños">
             <div className="btn-cuidador">
               <img class="icono" src={iconoCuidador} alt="icono cuidador" />
               <h2 className="letter-btn">
@@ -51,6 +52,7 @@ export const EmpiezaAprender = () => {
                 <i class="fas fa-chevron-right"></i>
               </div>
             </div>
+            </Link>
           </div>
           <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
             <div className="btn-aliado">

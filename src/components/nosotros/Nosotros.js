@@ -21,8 +21,8 @@ const Nosotros = () => {
                 <img src={starsRight} className="right-star" alt="stars-right"></img>
             </div>
             <div className="mt-3 ">
-                <div className="video">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3nvEJDc3Vic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div className="video-responsive">
+                    <iframe  src="https://www.youtube.com/embed/3nvEJDc3Vic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <p className="text-white">Video Volar - ¿Quiénes somos? </p>
                 <div className="container">
@@ -95,8 +95,8 @@ const Nosotros = () => {
                 </div>
 
                 <div className="cohete-right3">
-                    <div className="cohete1">
-                        <div className="title-cohete-1">
+                    <div className="cohete3">
+                        <div className="title-cohete-1 title-cohete-3">
                             <div className="numero-cohete">3</div>
                             <div className="fase-cohete">Fase Refinar</div>
                         </div>
@@ -109,10 +109,10 @@ const Nosotros = () => {
                 </div>
 
                 <div className="cohete-left4">
-                    <div className="cohete2">
-                        <div className="title-cohete-2">
+                    <div className="cohete2 cohete4">
+                        <div className="title-cohete-2 ">
                             <div className="numero-cohete">4</div>
-                            <div className="fase-cohete">Fase Evaluar y Escalar</div>
+                            <div className="fase-cohete fase-cohete-4">Fase<br></br> Evaluar y Escalar</div>
                         </div>
                         <Link className="btn-cohete">
                             <img src={arrowLeft} className="arrow-orange-cohete"></img>

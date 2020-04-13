@@ -1,0 +1,229 @@
+.register-child {
+  padding-top: 8rem;
+}
+
+.tittle-register-child {
+  color: #2e335e;
+  display: block;
+  margin: auto;
+  font-family: "Questrial";
+  -webkit-text-stroke: 1px #2e335e;
+  font-size: 2.7rem;
+}
+
+.subtittle-register-child {
+  color: #2e335e;
+  display: block;
+  margin: auto;
+  font-family: "Questrial";
+  -webkit-text-stroke: 2px #2e335e;
+  font-size: 2.7rem;
+}
+
+.list-register {
+  box-shadow: 0 0 9px rgb(134, 129, 129);
+  margin: 3rem 11rem 5rem 11rem;
+  padding: 5rem 7rem 7rem 7rem;
+  border-radius: 20px;
+}
+
+.letter-register {
+  color: #2e335e;
+  font-family: "Questrial";
+  font-size: 1.5rem;
+}
+
+.input-register-space {
+  display: block;
+  font-size: 1.3rem;
+  font-family: "Questrial";
+  color: rgb(0, 0, 0);
+  width: 100% !important;
+  border-radius: 1em;
+  padding: 0.4em 1.4em 0.3em 0.8em;
+  margin-bottom: 1rem;
+  border: 2px solid rgba(112, 112, 112, 0.212);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.select-register-space {
+  display: block;
+  font-size: 1.3rem;
+  font-family: "Questrial";
+  color: rgb(0, 0, 0);
+  line-height: 1.3;
+  padding: 0.4em 1.4em 0.3em 0.8em;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid rgba(112, 112, 112, 0.212);
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.03);
+  border-radius: 1em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  background-image: url("../../../images/arrow-bottom-orange.png"),
+    linear-gradient(to bottom, #ffffff 0%, #f7f7f7 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 1em auto, 100%;
+  margin-bottom: 1rem;
+}
+
+.style-radio {
+  height: 28px;
+  position: relative;
+  align-items: center;
+}
+
+.style-radio input {
+  position: absolute;
+  opacity: 0;
+  display: block;
+  height: 0;
+  width: 0;
+}
+
+.style-radio .radio {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: inline-block;
+  position: relative;
+  height: 25px;
+  width: 25px;
+  border-radius: 5px;
+  margin-right: 5px;
+  border: 0.5px solid rgba(112, 112, 112, 0.356);
+  background-color: #ffffff;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  outline: none;
+  box-sizing: border-box;
+  transition: 0.5s all;
+}
+.style-radio:hover .radio {
+  background-color: #f9f9f9;
+  box-shadow: inset 1px 2px 3px 0 rgba(221, 115, 29, 0.534);
+}
+
+.style-radio input:checked + .radio {
+  border-color: rgba(85, 85, 85, 0.541);
+  background-color: #f9f9f9;
+  box-shadow: inset 1px 2px 3px 0 rgba(0, 0, 0, 0.1);
+  cursor: default;
+}
+.style-radio:hover .radio::before,
+.style-radio input:checked + .radio::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background-color: #ddd;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.style-radio input:checked + .radio::before {
+  background-color: #ef8b44;
+  box-shadow: 1px 2px 2px 0 rgba(245, 111, 1, 0.747);
+}
+.style-radio input + .radio + .text {
+  color: #777;
+  cursor: pointer;
+  align-self: center;
+}
+.style-radio input:checked + .radio + .text {
+  color: rgb(0, 0, 0);
+  cursor: default;
+}
+.style-radio .text {
+  color: #777;
+  cursor: pointer;
+  margin-right: 10px;
+  font-family: "Questrial";
+  font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+  .register-child {
+    padding-top: 7rem;
+  }
+
+  .tittle-register-child {
+    font-size: 2rem;
+  }
+
+  .subtittle-register-child {
+    font-size: 2rem;
+  }
+
+  .list-register {
+    box-shadow: 0 0 9px rgb(134, 129, 129);
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 20px;
+  }
+  .letter-register {
+    font-size: 1.1rem;
+  }
+
+  .select-register-space {
+    display: block;
+    font-size: 1rem;
+    font-family: "Questrial";
+    color: rgb(0, 0, 0);
+    line-height: 1;
+    padding: 0.4em 1.4em 0.3em 0.8em;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid rgba(112, 112, 112, 0.212);
+    /*box-shadow: 0 1px 0 1px rgba(0,0,0,.03);*/
+    border-radius: 1em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url("../../../images/arrow-bottom-orange.png"),
+      linear-gradient(to bottom, #ffffff 0%, #f7f7f7 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: right 0.7em top 50%, 0 0;
+    background-size: 0.8em auto, 100%;
+    margin-bottom: 1rem;
+  }
+
+  .input-register-space {
+    font-size: 1rem;
+  }
+
+
+  .btn-navy-blue{
+    background-color: #2E335E;
+    padding: 12px 12px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px 2px #1A1F46;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration:none!important;
+    font-weight: 600!important;
+    display: block;
+    margin:0 auto;
+    width: 13rem;
+    }
+  /*.select-register-space option{ 
+        font-weight:normal;
+        width: 5rem;
+
+}*/
+}
+
+/*.content-input input,
+.content-select select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}*/
