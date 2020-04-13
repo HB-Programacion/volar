@@ -1,0 +1,121 @@
+/*HIGIENE*/
+
+.box-title-higine {
+  background: url(./../../../../images/fondo-encabezado-higiene.png) no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding-top: 8rem;
+  /*height: 100vh;
+    width: 100%;*/
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+.icono-area {
+  height: 7rem;
+  margin: 0 auto;
+}
+
+.title-area {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  -webkit-text-stroke: 1.5px #ffffff;
+  letter-spacing: 0.9px;
+  font-family: "Questrial";
+  margin-top: 1.5rem;
+  margin-bottom: 10rem;
+}
+
+.box-section {
+  background-color: #ffffff;
+  box-shadow: 0 0 9px rgb(134, 129, 129);
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  border-radius: 20px;
+  display: flex;
+}
+
+.list-videos-tips {
+  margin-top: -6rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+
+.icono-video-tip {
+  height: 5rem;
+}
+
+.box-text-video-tip {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Questrial";
+  color: #2e335e;
+  margin: 0.5rem 0.5rem 0rem 2rem;
+
+  /* -webkit-text-stroke: 1.5px #7dc7c5;
+    font-size: 1.5rem;*/
+}
+
+.subtittle-video-tip {
+  -webkit-text-stroke: 1.5px #2e335e;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.text-video-tip {
+  -webkit-text-stroke: 0.5px #2e335e;
+  font-size: 1rem;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .box-section {
+    background-color: #ffffff;
+    box-shadow: 0 0 9px rgb(134, 129, 129);
+    margin: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 20px;
+    display: flex;
+  }
+
+  .list-videos-tips {
+    margin-top: -6rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .icono-video-tip {
+    height: 3rem;
+  }
+
+  .box-text-video-tip {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Questrial";
+    color: #2e335e;
+    margin: 0.5rem 0.5rem 0rem 0.5rem;
+
+    /* -webkit-text-stroke: 1.5px #7dc7c5;
+        font-size: 1.5rem;*/
+  }
+
+  .subtittle-video-tip {
+    -webkit-text-stroke: 1.5px #2e335e;
+    font-size: 0.8rem;
+    text-align: left;
+  }
+
+  .text-video-tip {
+    -webkit-text-stroke: 0.5px #2e335e;
+    font-size: 0.7rem;
+    text-align: left;
+  }
+}
