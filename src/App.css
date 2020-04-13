@@ -150,7 +150,20 @@ font-size: .8rem;
   width: 100%;
 }
 
+.hide-desktop{
+  display: none;
+}
 
+.show-desktop{
+  display: block;
+}
+
+.hide-mobile{
+  display: none;
+}
+ .show-mobile{
+  display: block;
+ }
 
 /* TABLET */
 @media (min-width: 992px) {
@@ -159,113 +172,16 @@ font-size: .8rem;
   } */
 }
 /* TABLET */
-
-/* DESKTOP */
 @media (min-width: 769px) {
- html {
-  font-size: .98vw;
-  font-family: 'Questrial';
-} 
-
-/* MENU */
-
-.logo{
-  width: 10rem;
-}
-.navbar-brand{
-  margin-bottom: 1rem;
-  margin-left: 1rem
-}
-#navbarNav{
-  justify-content: space-around;
-  font-size: 1.5rem
-}
-#navbarNav ul li{
-  margin-left: 1rem;
-  margin-right: 1rem;
-  
-}
-
-/* MENU */
-/* HOME */
-.text-proposito .h1-proposito{
-  margin-left: 5rem;
-  margin-bottom: 1.5rem;
-}
-.text-proposito h1{
-  font-size: 2.5rem;
-  line-height: 2.3rem;
+  html {
+   font-size: .98vw;
+   font-family: 'Questrial';
+  } 
+  .hide-mobile{
+    display: block;
+  }
+  .show-mobile{
+    display: none;
+   }
 
 }
-.text-proposito .megafono{
-  width: 5rem
-}
-.text-proposito{
-  width: 50%
-}
-.text-proposito p, .nosotros-home p{
-  font-size: 1.5rem;
-  line-height: 1.8rem
-}
-.arrow-orange{
-  width: 1.5rem;
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
-
-.btn-orange{
-background-color: #EF8B44;
-padding: 14px 12px;
-font-size: 1.5rem;
-letter-spacing: 1.5px;
-
-}
-
-.nosotros-home h2{
-  font-size: 2.5rem;
-  margin-bottom: 1.3rem
-}
-.group-nosotros{
-  width: 80%;
-}
-.estrellita{
-  margin: 2rem
-}
-.img-estrategias{
- width: 10%;
- height: auto;
-}
-.box-estrategias{
-  margin-top: 4rem;
-  margin-bottom: 3rem
-}
-.box-estrategias .card{
-  width: 35%;
-
-}
- .box-estrategias .card-img-top{
-  width: 20%;
-
-}
-
-/* .equipo-home .card img{
-  width: 10rem
-} */
-}
-
-.start-center{
-  font-size: 2.5rem;
-  margin:2rem;
-  text-align: center;
-}
-
-
-.hide-desktop{
-  display: none;
-}
-
-.show-desktop{
-  display: block;
-}
-/* DESKTOP */

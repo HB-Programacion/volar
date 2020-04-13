@@ -16,26 +16,26 @@ const Footer = () => {
             <div className="box-convenio">
                
                     <figure className="">
-                        <img src={aporta}className=""></img>
+                        <img src={aporta}className="aporta"></img>
                     </figure>
                     <figure className="mt-2">
-                        <img src={breca}></img>
+                        <img src={breca} className="breca"></img>
                 
                 </figure>
             </div>
             <div className="box-ubicacion">
-                <img src={ubicacion} className="mb-3"></img>
+                <img src={ubicacion} className="mb-3 ubicacion"></img>
                 <p>Oficina</p>
                 <p>Calle Las Begonias 441, Piso 9 </p>
                 <p className="text-small">San Isidro, Lima 27 - Perú </p>
             </div>
             <div className="box-telefono">
-                <img src={telefono} className="mb-3"></img>
+                <img src={telefono} className="mb-3 telefono"></img>
                 <p>Teléfono</p>
                 <p>914-054-626</p>
             </div>
             <div className="box-correo">
-                <img src={correo} className="mb-3"></img>
+                <img src={correo} className="mb-3 correo"></img>
                 <p>Correo</p>
                 <p>volar@aporta.org.pe</p>
             </div>

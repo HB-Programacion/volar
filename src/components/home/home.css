@@ -1,5 +1,9 @@
 .video-bg{
+  background-image: url('../../images/home-img/nino2.png');
     height: 100vh;
+    background-size: cover;
+    background-position: top;
+ 
   }
   .text-proposito{
     width: 90%;
@@ -25,7 +29,9 @@
     height: auto;
     margin-top: -2rem
   }
-  
+  .m-b-xs{
+    margin-bottom: 1.5rem
+  }
   .text-proposito .h1-proposito{
     margin-left: 4.5rem;
     margin-bottom: 1rem;
@@ -41,6 +47,10 @@
   .nosotros-home{
     font-family: 'Questrial', sans-serif;
     text-align: center
+  }
+
+  .mt-nosotros{
+    margin-top: 5rem;
   }
   .nosotros-home h2{
     text-transform: uppercase;
@@ -79,11 +89,28 @@
     letter-spacing: .3px
   }
   
-  .group-nosotros{
+  /* .group-nosotros{
     position: relative;
     left: -30%;
     bottom: -2.2rem;
     width: 100%;
+  } */
+  .stars-home{
+    position: relative;
+    width: 100%
+  }
+  .stars-home img{
+    width: 30%
+  }
+  .star-left{
+    position: absolute;
+    left: 0rem;
+    top:-4rem
+  }
+  .star-right{
+    position: absolute;
+    right: 0rem;
+    top:-4rem
   }
   .cohete{
     position: relative;
@@ -187,7 +214,7 @@
     right: 0%;
     bottom: 6%;
   }
-  .momento-home .carousel-caption h5{
+  .momento-home .carousel-caption .box-title-slide{
     background-color: #fff;
     width: 80%;
     margin: auto;
@@ -207,7 +234,7 @@
     color: #7dc7c5;
     text-transform: uppercase;
     font-size: 1.55rem;
-    -webkit-text-stroke: 1px #7dc7c5;
+    -webkit-text-stroke: 1.1px #7dc7c5;
     letter-spacing: .5px;
     text-align: center;
     z-index: 2;
@@ -223,3 +250,188 @@
     top: -.3rem
   
   }
+  .share{
+   position: absolute;
+   width: 50%
+   
+  }
+  .share-img{
+    width: 25%;
+    position: absolute;
+    left: -1rem;
+    top:-1rem
+  }
+  .title-slide{
+    text-transform: uppercase;
+    color: #AE96B2;
+    padding: 1.6rem 2rem;
+    text-align: left;
+    -webkit-text-stroke: 1px #AE96B2;
+    font-size: 1.5rem;
+  }
+
+
+
+
+  
+ 
+  /* DESKTOP */
+@media (min-width: 769px) {
+  html {
+   font-size: .98vw;
+   font-family: 'Questrial';
+  } 
+ 
+ 
+ /* HOME */
+  .text-proposito .h1-proposito{
+    margin-left: 5rem;
+    margin-bottom: 1.5rem;
+  }
+  .text-proposito h1{
+   font-size: 2.5rem;
+   line-height: 2.3rem;
+ }
+  .text-proposito .megafono{
+   width: 5rem
+ }
+ .text-proposito{
+   width: 40%
+ }
+ .mt-4-xl{
+   margin-top: 2rem;
+   margin-bottom: 2.5rem
+
+ }
+ .text-proposito p, .nosotros-home p{
+   font-size: 1.4rem;
+   line-height: 1.8rem
+ }
+ .arrow-orange{
+   width: 1.5rem;
+   margin-left: 4px;
+   margin-right: 4px;
+ }
+ .btn-orange{
+ background-color: #EF8B44;
+ padding: 14px 12px;
+ font-size: 1.2rem;
+ letter-spacing: 1.5px;
+ }
+ .mt-nosotros{
+  margin-top: 7rem;
+  }
+ .stars-home img{
+  width: 20%
+  }
+ .nosotros-home p{
+   width: 70%;
+  margin: 0 auto
+  }
+ .nosotros-home h2{
+   font-size: 2.5rem;
+   margin-bottom: 1.3rem
+ }
+ .group-nosotros{
+   width: 80%;
+ }
+ .estrellita{
+   margin: 2rem auto!important;
+ }
+ .img-estrategias{
+  width: 10%;
+  height: auto;
+ }
+ .box-estrategias{
+   margin-top: 4rem;
+   margin-bottom: 3rem
+ }
+ .box-estrategias .card{
+   width: 35%;
+ 
+ }
+  .box-estrategias .card-img-top{
+   width: 20%;
+ 
+ }
+ .cohete{
+   top:7rem;
+   width: 20%;
+ }
+
+ .equipo-home{
+  padding-top: 2rem
+}
+.equipo-home h2{
+  font-size: 2.5rem;
+}
+.box-equipo-desktop{
+  margin-top: 3rem;
+  padding-bottom: 4rem
+}
+.equipo-home .card img{
+  width: 17rem
+}
+.equipo-home .card-body{
+  width: 17rem
+}
+.equipo-home .card-body h6{
+  font-size: 1rem
+}
+.equipo-home .controls-top{
+  top: 12rem;
+}
+.momento-home h2{
+  font-size: 2.5rem;
+}
+.momento-home p{
+  font-size: 1.5rem;
+  
+}
+.momento-home .carousel-caption-text{
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 4rem
+}
+.momento-home .carousel-caption .box-title-slide{
+  width: 30%;
+  margin: auto;
+  height: 12rem;
+  border-radius: 25px
+}
+.title-slide{
+  font-size: 2.5rem;
+  padding: 2.3rem 3.5rem;
+}
+.share{
+  width: 30%
+}
+ .share-img{
+   width: 18%;
+   position: absolute;
+   left: -3rem;
+   top:-3rem
+ }
+ .carousel-caption-text h2{
+   font-size: 2.5rem
+ }
+ .carousel-caption-text p{
+   top: 1rem;
+   width: 70%;
+   margin: 0 auto;
+   line-height: 1.5rem
+ }
+
+}
+ 
+ /* .start-center{
+   font-size: 2.5rem;
+   margin:2rem;
+   text-align: center;
+ } */
+ 
+ 
+ 
+ 
+ /* DESKTOP */
