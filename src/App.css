@@ -49,6 +49,20 @@ font-size: .8rem;
   display: flex;
   }
 
+  .btn-navy-blue{
+    background-color: #2E335E;
+    padding: 12px 20px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px 2px #1A1F46;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration:none!important;
+    font-weight: 600!important;
+    display: block;
+    margin:0 auto;
+    }
+
 .font-color-orange{
   color:#EF8B44!important
 }
@@ -80,6 +94,9 @@ font-size: .8rem;
   color: #2E335E
 }
 
+.text-lila{
+  color:#AE96B2
+}
 .border-top-radius{
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
@@ -128,6 +145,9 @@ font-size: .8rem;
 }
 .w-90{
   width: 90%
+}
+.w-100{
+  width: 100%;
 }
 
 
@@ -234,4 +254,18 @@ letter-spacing: 1.5px;
 } */
 }
 
+.start-center{
+  font-size: 2.5rem;
+  margin:2rem;
+  text-align: center;
+}
+
+
+.hide-desktop{
+  display: none;
+}
+
+.show-desktop{
+  display: block;
+}
 /* DESKTOP */

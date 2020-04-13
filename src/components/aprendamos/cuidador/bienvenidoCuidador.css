@@ -1,0 +1,336 @@
+.title-cuidador {
+  color: #ffffff;
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  -webkit-text-stroke: 1px #ffffff;
+  letter-spacing: 0.9px;
+  font-family: "Questrial";
+  margin-top: 4rem;
+}
+
+.box-title-cuidador {
+  padding-top: 7rem;
+  background-color: #ae96b2;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  height: 24rem;
+}
+
+.box-row-1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.box-row-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box-text {
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.left-star-cuidador {
+  width: 10rem;
+  height: 8rem;
+  position: relative;
+  top: 1.5rem;
+}
+.right-star-cuidador {
+  width: 10rem;
+  height: 8rem;
+  position: relative;
+  top: 1.5rem;
+}
+
+.icon-bienvenida-cuidador {
+  height: 7rem;
+  margin: 2rem 1rem 1rem 2rem;
+}
+
+.style-text-center {
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  letter-spacing: 0.9px;
+  font-family: "Questrial";
+}
+.margin-video {
+  margin: 1rem 10rem 2rem 10rem;
+}
+
+.btn-areas {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.area-higiene {
+  border: 0.8rem solid #7dc7c5;
+  /*box-shadow: 0 1px 0 1px rgba(0,0,0,.03);*/
+  border-radius: 1.5em;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0.5rem 1rem 0.5rem;
+  height: 14rem;
+}
+.area-socioEmocional {
+  border: 0.8rem solid #ae96b2;
+  /*box-shadow: 0 1px 0 1px rgba(0,0,0,.03);*/
+  border-radius: 1.5em;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0.5rem 1rem 0.5rem;
+  height: 14rem;
+}
+.area-rutina {
+  border: 0.8rem solid #ef8b44;
+  /*box-shadow: 0 1px 0 1px rgba(0,0,0,.03);*/
+  border-radius: 1.5em;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0.5rem 1rem 0.5rem;
+  height: 14rem;
+}
+
+.area-juego {
+  border: 0.8rem solid #f7b919;
+  /*box-shadow: 0 1px 0 1px rgba(0,0,0,.03);*/
+  border-radius: 1.5em;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0.5rem 1rem 0.5rem;
+  height: 14rem;
+}
+.area-nutricion {
+  border: 0.8rem solid #eb477a;
+  /*box-shadow: 0 1px 0 1px rgba(0,0,0,.03);*/
+  border-radius: 1.5em;
+  margin: 1rem;
+  padding: 1.5rem 0.5rem 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 14rem;
+}
+
+.icon-area {
+  height: 5rem;
+  margin: 0rem 4rem 0rem 4rem;
+}
+
+.text-area-higiene {
+  text-align: center;
+  font-family: "Questrial";
+  margin-top: 1rem;
+  color: #7dc7c5;
+  -webkit-text-stroke: 1.5px #7dc7c5;
+  font-size: 1.5rem;
+}
+
+.text-area-social {
+  text-align: center;
+  font-family: "Questrial";
+  margin-top: 1rem;
+  color: #ae96b2;
+  -webkit-text-stroke: 1.5px #ae96b2;
+  font-size: 1.5rem;
+}
+.text-area-rutina {
+  text-align: center;
+  font-family: "Questrial";
+  margin-top: 1rem;
+  color: #ef8b44;
+  -webkit-text-stroke: 1.5px #ef8b44;
+  font-size: 1.5rem;
+}
+.text-area-juego {
+  text-align: center;
+  font-family: "Questrial";
+  margin-top: 1rem;
+  color: #f7b919;
+  -webkit-text-stroke: 1.5px #f7b919;
+  font-size: 1.5rem;
+}
+.text-area-nutricion {
+  text-align: center;
+  font-family: "Questrial";
+  margin-top: 1rem;
+  color: #eb477a;
+  -webkit-text-stroke: 1.5px #eb477a;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .show-desktop {
+    display: none;
+  }
+  .hide-desktop {
+    display: block;
+  }
+
+  .box-title-cuidador {
+    padding-top: 5rem;
+    height: 20rem;
+  }
+  .icon-bienvenida-cuidador {
+    height: 4rem;
+    margin: 1rem 1rem 1rem 2rem;
+  }
+
+  .left-star-cuidador {
+    width: 6rem;
+    height: 3rem;
+    position: relative;
+    top: 1.5rem;
+  }
+  .right-star-cuidador {
+    width: 6rem;
+    height: 3rem;
+    position: relative;
+    top: 1.5rem;
+  }
+  .box-text {
+    color: #2e335e;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .box-saludo {
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .box-row-1 {
+    margin-bottom: 0rem;
+  }
+  .style-text-center {
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    letter-spacing: 0.9px;
+    font-family: "Questrial";
+  }
+  .start-center{
+    font-size: 2rem;
+    margin:1rem;
+    text-align: center;
+  }
+  .margin-video {
+    margin: 1rem;
+  }
+
+/*mobile-botones-areas*/
+.btn-areas {
+    display: flex;
+    padding: 0.5rem;
+  }
+  
+  .area-higiene {
+    border: 0.5rem solid #7dc7c5;
+    /*box-shadow: 0 1px 0 1px rgba(0,0,0,.03);*/
+    border-radius: 2.5em;
+    margin: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    height: 8rem;
+  }
+  .area-socioEmocional {
+    border: 0.5rem solid #ae96b2;
+    /*box-shadow: 0 1px 0 1px rgba(0,0,0,.03);*/
+    border-radius: 2.5em;
+    margin: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    height: 8rem;
+  }
+  .area-rutina {
+    border: 0.5rem solid #ef8b44;
+    /*box-shadow: 0 1px 0 1px rgba(0,0,0,.03);*/
+    border-radius: 2.5em;
+    margin: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    height: 8rem;
+  }
+  
+  .area-juego {
+    border: 0.5rem solid #f7b919;
+    /*box-shadow: 0 1px 0 1px rgba(0,0,0,.03);*/
+    border-radius: 2.5em;
+    margin: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    height: 8rem;
+  }
+  .area-nutricion {
+    border: 0.5rem solid #eb477a;
+    /*box-shadow: 0 1px 0 1px rgba(0,0,0,.03);*/
+    border-radius: 2.5em;
+    margin: 0.2rem;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 8rem;
+  }
+  
+  .icon-area {
+    height: 3rem;
+    margin: 0rem 2.5rem 0rem 2.5rem;
+  }
+  
+  .text-area-higiene {
+    text-align: center;
+    font-family: "Questrial";
+    margin-top: 0.5rem;
+    color: #7dc7c5;
+    -webkit-text-stroke: 1px #7dc7c5;
+    font-size: 0.8rem;
+  }
+  
+  .text-area-social {
+    text-align: center;
+    font-family: "Questrial";
+    margin-top: 0.5rem;
+    color: #ae96b2;
+    -webkit-text-stroke: 1px #ae96b2;
+    font-size: 0.8rem;
+  }
+  .text-area-rutina {
+    text-align: center;
+    font-family: "Questrial";
+    margin-top: 0.5rem;
+    color: #ef8b44;
+    -webkit-text-stroke: 1px #ef8b44;
+    font-size: 0.8rem;
+  }
+  .text-area-juego {
+    text-align: center;
+    font-family: "Questrial";
+    margin-top: 0.5rem;
+    color: #f7b919;
+    -webkit-text-stroke: 1px #f7b919;
+    font-size: 0.8rem;
+  }
+  .text-area-nutricion {
+    text-align: center;
+    font-family: "Questrial";
+    margin-top: 0.5rem;
+    color: #eb477a;
+    -webkit-text-stroke: 1px #eb477a;
+    font-size: 0.8rem;
+  }
+  
+}
