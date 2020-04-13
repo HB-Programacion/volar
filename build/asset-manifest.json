@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.7d45efb5.chunk.css",
-    "main.js": "/static/js/main.80e6ba61.chunk.js",
-    "main.js.map": "/static/js/main.80e6ba61.chunk.js.map",
+    "main.css": "/static/css/main.ddd14dc8.chunk.css",
+    "main.js": "/static/js/main.efae1387.chunk.js",
+    "main.js.map": "/static/js/main.efae1387.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ddb06e3a.js",
     "runtime-main.js.map": "/static/js/runtime-main.ddb06e3a.js.map",
     "static/css/2.de424728.chunk.css": "/static/css/2.de424728.chunk.css",
     "static/js/2.21a9db63.chunk.js": "/static/js/2.21a9db63.chunk.js",
     "static/js/2.21a9db63.chunk.js.map": "/static/js/2.21a9db63.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.f42a0440195b4813e9f88905d44a652b.js": "/precache-manifest.f42a0440195b4813e9f88905d44a652b.js",
+    "precache-manifest.9f619d14659bda0de88846847363e76a.js": "/precache-manifest.9f619d14659bda0de88846847363e76a.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/static/css/2.de424728.chunk.css.map",
-    "static/css/main.7d45efb5.chunk.css.map": "/static/css/main.7d45efb5.chunk.css.map",
+    "static/css/main.ddd14dc8.chunk.css.map": "/static/css/main.ddd14dc8.chunk.css.map",
     "static/js/2.21a9db63.chunk.js.LICENSE.txt": "/static/js/2.21a9db63.chunk.js.LICENSE.txt",
     "static/media/aprendamos.css": "/static/media/fondo_inicio_aprendamos_desktop.b2916edb.png",
     "static/media/agua-segura.svg": "/static/media/agua-segura.ee055883.svg",
@@ -57,7 +57,7 @@
     "static/js/runtime-main.ddb06e3a.js",
     "static/css/2.de424728.chunk.css",
     "static/js/2.21a9db63.chunk.js",
-    "static/css/main.7d45efb5.chunk.css",
-    "static/js/main.80e6ba61.chunk.js"
+    "static/css/main.ddd14dc8.chunk.css",
+    "static/js/main.efae1387.chunk.js"
   ]
 }
