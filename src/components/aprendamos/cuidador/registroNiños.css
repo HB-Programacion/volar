@@ -7,8 +7,6 @@
   display: block;
   margin: auto;
   font-family: "Questrial";
-  -webkit-text-stroke: 1px #2e335e;
-  font-size: 2.7rem;
 }
 
 .subtittle-register-child {
@@ -150,7 +148,7 @@
 
 @media (max-width: 768px) {
   .register-child {
-    padding-top: 7rem;
+    padding-top: 5rem;
   }
 
   .tittle-register-child {
@@ -197,6 +195,7 @@
 
   .input-register-space {
     font-size: 1rem;
+    padding: 0.1em 1.4em 0.1em 0.8em;
   }
 
 
