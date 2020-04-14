@@ -29,9 +29,9 @@ const Nosotros = () => {
                 <div className="video-responsive">
                     <iframe  src="https://www.youtube.com/embed/3nvEJDc3Vic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <p className="text-white">Video Volar - ¿Quiénes somos? </p>
+                <p className="text-white name-video">Video Volar - ¿Quiénes somos? </p>
                 <div className="container">
-                    <div className="p-2 p-mobile-blue"> 
+                    <div className=" p-mobile-blue"> 
                         <p>Desde su creación, el proyecto VOLAR fue concebido como un modelo de sostenibilidad transversal y escalable, enfocado en ofrecer a las familias de nuestras zonas de influencia la oportunidad de que sus hijas e hijos puedan alcanzar su máximo potencial.</p>
                         <p>Para ello, reforzamos las capacidades en las plataformas comunitarias existentes aprovechando la tecnología y fortalecer así las capacidades parentales para el desarrollo infantil temprano de los niños y niñas</p>
                     </div>
@@ -45,21 +45,21 @@ const Nosotros = () => {
                     </figure>
                     <div className="mt-5 div-items">
                         <div className="box-crecer-agua crecer-left">
-                            <figure className="w-35 text-right">
-                                <img src={crecer} className="w-40"></img>
+                            <figure className=" box-img-info text-right">
+                                <img src={crecer} className=" crecer"></img>
                             </figure >
                             <div className="w-65 box-orange mt-1">Interacciones de calidad para el desarrollo cognitivo y socioemocional. </div>
                         </div>
                         <div className="box-crecer-agua crecer-right">
-                            <figure className="w-35 text-right">
-                                <img src={agua} className="w-30"></img>
+                            <figure className=" box-img-info text-right">
+                                <img src={agua} className=" agua"></img>
                             </figure >
                             <div className="w-65 box-blue mt-1">Higiene y agua segura para el desarrollo físico. </div>
                         </div>
                     </div>
                     <p className="mt-2 estrellita">&#10022;</p>
                     <div className="container">
-                        <p className="p-mobile-blue">
+                        <p className="p-mobile-blue text-info-bottom">
                             Mamás, papás, maestras, madres cuidadoras, agentes comunitarias de salud y Volar, trabajamos 
                             juntos para fortalecer las capacidades de crianza que aseguran el 
                             desarrollo óptimo de cada niña y niño del país.
@@ -89,7 +89,7 @@ const Nosotros = () => {
                     <div className="cohete2">
                         <div className="title-cohete-2">
                             <div className="numero-cohete">2</div>
-                            <div className="fase-cohete">Fase Probar</div>
+                            <div className="fase-cohete left-5-rem">Fase Probar</div>
                         </div>
                         <Link className="btn-cohete">
                             <img src={arrowLeft} className="arrow-orange-cohete"></img>
@@ -103,7 +103,7 @@ const Nosotros = () => {
                     <div className="cohete3">
                         <div className="title-cohete-1 title-cohete-3">
                             <div className="numero-cohete">3</div>
-                            <div className="fase-cohete">Fase Refinar</div>
+                            <div className="fase-cohete left-5-rem">Fase Refinar</div>
                         </div>
                         <Link className="btn-cohete">
                             <img src={arrowLeft} className="arrow-orange-cohete"></img>
