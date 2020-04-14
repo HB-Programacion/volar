@@ -4,23 +4,28 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./nosotros.css"
 import starsLeft from "../../images/stars-left.svg"
 import starsRight from "../../images/stars-right.svg"
-import video from "../../images/video-nosotros.png"
-import info1 from "../../images/info-1.png"
-import crecer from "../../images/crecer.svg"
-import agua from "../../images/agua-segura.svg"
-import cohete from "../../images/cohete_fondo.png"
+import info1 from "../../images/nosotros-img/info-1.png"
+import crecer from "../../images/nosotros-img/crecer.svg"
+import agua from "../../images/nosotros-img/agua-segura.svg"
+import cohete from "../../images/nosotros-img/cohete_fondo.png"
 import arrowLeft from '../../images/arrow-left-orange.svg';
 import arrowRigth from '../../images/arrow-right-orange.svg';
+import starsLeftDesktop from "./../../images/stars-left-desktop.svg";
+import starsRightDesktop from "./../../images/stars-right-desktop.svg";
 
 const Nosotros = () => {
     return(
         <div id="nosotros-page">
-            <div className="box-title">
+            <div className="box-title ">
+            <figure className="stars-group">
+                <img src={starsLeftDesktop} className="stars-left-desktop"></img>
+                <img src={starsRightDesktop} className="stars-right-desktop"></img>
+            </figure>
                 <img src={starsLeft} className="left-star" alt="stars-left"></img>
                 <h1 className="title">nosotros</h1>
                 <img src={starsRight} className="right-star" alt="stars-right"></img>
             </div>
-            <div className="mt-3 ">
+            <div className="mt-3 video">
                 <div className="video-responsive">
                     <iframe  src="https://www.youtube.com/embed/3nvEJDc3Vic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
@@ -32,20 +37,20 @@ const Nosotros = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-white pt-5 pb-5 border-top-radius border-bottom-radius">
+            <div className="bg-white pt-5 pb-5 border-top-radius border-bottom-radius adelante">
                 <div className="container">
-                    <h6 className="p-mobile-blue letra-gruesa-azul">Trabajamos las 5 dimensiones del modelo Nuturing Care, con énfasis en:</h6>
-                    <figure className="p-2">
-                        <img src={info1} className="w-100"></img>
+                    <h6 className="p-mobile-blue letra-gruesa-azul title-h6">Trabajamos las 5 dimensiones del modelo Nuturing Care, con énfasis en:</h6>
+                    <figure className="p-2 w-100">
+                        <img src={info1} className=" info-1"></img>
                     </figure>
-                    <div className="mt-5">
-                        <div className="box-crecer-agua">
+                    <div className="mt-5 div-items">
+                        <div className="box-crecer-agua crecer-left">
                             <figure className="w-35 text-right">
                                 <img src={crecer} className="w-40"></img>
                             </figure >
                             <div className="w-65 box-orange mt-1">Interacciones de calidad para el desarrollo cognitivo y socioemocional. </div>
                         </div>
-                        <div className="box-crecer-agua">
+                        <div className="box-crecer-agua crecer-right">
                             <figure className="w-35 text-right">
                                 <img src={agua} className="w-30"></img>
                             </figure >
@@ -62,10 +67,10 @@ const Nosotros = () => {
                     </div>
                 </div>
             </div>
-            <div>
-                <figure className="w-100 m-0">
+            <div className="cohete-fondo">
+                {/* <figure className="w-100 m-0 ">
                     <img src={cohete} className="w-100"></img>
-                </figure>
+                </figure> */}
                 <div className="cohete-right">
                     <div className="cohete1">
                         <div className="title-cohete-1">

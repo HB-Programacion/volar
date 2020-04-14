@@ -26,6 +26,10 @@
     top: -2rem;
     float: right;
   }
+  .stars-group{
+    display: none
+  }
+
   .video{
     width: 90%;
     margin: auto
@@ -53,6 +57,11 @@
   .box-crecer-agua{
     display: flex;
   }
+
+
+  .info-1{
+    width: 100%
+  }
   .box-orange{
     text-align: left;
     color:#EF8B44;
@@ -70,9 +79,24 @@
     padding-right: 1.8rem;
     padding-left: .8rem
   }
+  .adelante{
+    z-index: 50!important;
+  }
+.cohete-fondo{
+  background-image: url('../../images/nosotros-img/cohete_fondo.png');
+  object-fit: contain;
+  height: 43rem;
+  width: 100%;
+  background-position:top;
+  background-repeat: no-repeat;
+  background-size: 105%;
+  margin-top: -1.5rem;
+  z-index: 8;
+  position: relative;
+}
   .cohete-right{
     position: absolute;
-    top: 106rem;
+    top: 16rem;
     left: 9.8rem;
   }
   .cohete1{
@@ -126,7 +150,7 @@
 
   .cohete-left{
     position: absolute;
-    top: 110rem;
+    top: 20rem;
     left: 2.5rem;
   }
 
@@ -149,7 +173,7 @@
 
   .cohete-right3{
     position: absolute;
-    top: 115rem;
+    top: 25rem;
     left: 9.2rem;
   }
 
@@ -164,7 +188,7 @@
   }
   .cohete-left4{
     position: absolute;
-    top: 120rem;
+    top: 30rem;
     left: 2.5rem;
   }
 .cohete4{
@@ -173,4 +197,134 @@
 .fase-cohete-4{
   left: -.8rem;
   bottom: -.6rem
+}
+
+@media (min-width: 769px) {
+  html {
+   font-size: .98vw;
+   font-family: 'Questrial';
+  } 
+  .box-title{
+    height: 18rem;
+    padding-top:11rem;
+  }
+  .title{
+    font-size: 2.5rem;
+    position: absolute
+  }
+  .left-star, .right-star{
+    display: none
+  }
+  .stars-group{
+    display: block;
+    position: relative;
+    width: 100%
+  }
+  .stars-left-desktop{
+    position: absolute;
+    width: 20%;
+    left: 20rem;
+    top: -3rem
+  }
+  .stars-right-desktop{
+    position: absolute;
+    width: 20%;
+    right: 20rem;
+    top: -3rem
+  }
+  .video{
+    width: 70%;
+    margin: auto
+  }
+  .video .container{
+    margin-top: 3rem;
+    margin-bottom: 3rem
+  }
+  .info-1{
+    width: 40%
+  }
+  .title-h6{
+    margin-top: 3rem;
+    margin-bottom: 10rem
+  }
+ .div-items{
+  position: relative;
+  top: -25rem;
+ }
+  .box-crecer-agua{
+    flex-direction: column;
+  }
+  .crecer-left{
+    position: absolute;
+    left: 3rem
+    
+  }
+  .crecer-right{
+    position: absolute;
+    right: -3rem;
+  }
+
+  .estrellita{
+    font-size: 1.5rem
+  }
+  .cohete-fondo{
+    height: 80rem;
+    background-size: 100%
+  }
+  .numero-cohete{
+    font-size: 7rem 
+  }
+  .cohete1{
+    border-bottom-width: 1.8px;
+    padding-bottom: 1.5rem;
+    padding-left: 10rem;
+  }
+  .title-cohete-1{
+    left: 2.5rem;
+  }
+  .fase-cohete{
+    font-size: 1.7rem;
+    line-height: 1.5rem;
+    bottom: -4.5rem
+  }
+  .cohete-right{
+    left: 59.8rem;
+    top:20rem
+  }
+  .cohete2{
+    border-bottom-width: 1.8px;
+    padding-bottom: 1.5rem;
+    padding-right: 15rem
+  }
+  .cohete-left{
+    top:30rem;
+    left: 15rem
+  }
+  .cohete3{
+    border-bottom-width: 1.8px;
+    padding-bottom: 1.5rem;
+    padding-left: 10rem;
+  }
+.cohete-right3{
+  top: 45rem;
+  left: 59.8rem;
+  text-align: right;
+}
+.cohete4{
+  padding-right: 10rem
+}
+.cohete-left4{
+  top: 58rem;
+  left: 14rem;
+}
+.fase-cohete-4{
+  bottom: -3rem
+}
+  .btn-cohete{
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem
+  }
+  .arrow-orange-cohete{
+    width: 1.7rem
+  }
 }
