@@ -11,8 +11,13 @@ import Nosotros from './components/nosotros/Nosotros';
 import {Aprendamos} from './components/aprendamos/Aprendamos';
 import {EmpiezaAprender} from './components/aprendamos/EmpiezaAprender';
 import {RegistroNiños} from './components/aprendamos/cuidador/RegistroNiños';
-import {BienvenidoCuidador} from './components/aprendamos/cuidador/BienvenidoCuidador'
-import  {Higiene} from './components/aprendamos/cuidador/areas/Higiene'
+import {BienvenidoCuidador} from './components/aprendamos/cuidador/BienvenidoCuidador';
+import  {Higiene} from './components/aprendamos/cuidador/areas/Higiene';
+import {Login} from './components/loginRegister/Login';
+import {Signup} from './components/loginRegister/Signup';
+import {PasswordReset} from './components/loginRegister/PasswordReset';
+import {Contactanos} from './components/contactanos/Contactanos';
+
 
 function App() {
   return (
@@ -28,6 +33,10 @@ function App() {
       <Route path="/aprendamos/cuidador/registro-niños" exact component={RegistroNiños} />
       <Route path="/aprendamos/cuidador" exact component={BienvenidoCuidador} />
       <Route path="/aprendamos/cuidador/higiene" exact component={Higiene} />
+      <Route path="/login" exact component={Login} />
+      <Route path="/signup" exact component={Signup} />
+      <Route path="/password/reset" exact component={PasswordReset} />
+      <Route path="/contactanos" exact component={Contactanos} />
       </Switch>
       <Footer/>
     </>

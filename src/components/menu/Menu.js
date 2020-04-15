@@ -30,7 +30,7 @@ const Menu = () => {
                     <Link to="/contactanos" className="nav-link text-desktop-aquamarine" href="#">Contáctanos</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/contactanos" className="nav-link font-color-orange" href="#">  <img src={candado}/> Iniciar sesión </Link>
+                    <Link to="/login" className="nav-link font-color-orange" href="#">  <img src={candado}/> Iniciar sesión </Link>
                 </li>
             </ul>
         </div>
