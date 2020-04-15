@@ -21,14 +21,15 @@
 .list-register {
   box-shadow: 0 0 9px rgb(134, 129, 129);
   margin: 3rem 11rem 5rem 11rem;
-  padding: 5rem 7rem 7rem 7rem;
+  padding: 3rem 7rem 3rem 7rem;
   border-radius: 20px;
 }
 
 .letter-register {
   color: #2e335e;
   font-family: "Questrial";
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  margin-bottom: 0;
 }
 
 .input-register-space {
@@ -166,7 +167,7 @@
     border-radius: 20px;
   }
   .letter-register {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 
   .select-register-space {
@@ -200,18 +201,9 @@
 
 
   .btn-navy-blue{
-    background-color: #2E335E;
-    padding: 12px 12px;
-    border-radius: 25px;
-    box-shadow: 2px 2px 2px 2px #1A1F46;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    text-align: center;
-    text-decoration:none!important;
-    font-weight: 600!important;
-    display: block;
-    margin:0 auto;
-    width: 13rem;
+    padding: 10px 2px;
+    font-size: 0.8rem;
+    margin: 0.5rem auto;
     }
   /*.select-register-space option{ 
         font-weight:normal;

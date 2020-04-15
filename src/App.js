@@ -15,6 +15,8 @@ import {BienvenidoCuidador} from './components/aprendamos/cuidador/BienvenidoCui
 import  {Higiene} from './components/aprendamos/cuidador/areas/Higiene';
 import {Login} from './components/loginRegister/Login';
 import {Signup} from './components/loginRegister/Signup';
+import {PasswordReset} from './components/loginRegister/PasswordReset';
+import {Contactanos} from './components/contactanos/Contactanos';
 
 
 function App() {
@@ -33,6 +35,8 @@ function App() {
       <Route path="/aprendamos/cuidador/higiene" exact component={Higiene} />
       <Route path="/login" exact component={Login} />
       <Route path="/signup" exact component={Signup} />
+      <Route path="/password/reset" exact component={PasswordReset} />
+      <Route path="/contactanos" exact component={Contactanos} />
       </Switch>
       <Footer/>
     </>

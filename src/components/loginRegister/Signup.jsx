@@ -9,7 +9,7 @@ export const Signup = () => {
     <div className="container">
       <div className="register-child">
         <div className="row">
-          <h1 className="tittle-register-child">¡Bienvenido!</h1>
+          <h1 className="tittle-register-child">Regístrate</h1>
         </div>
         <div className="list-login">
           <p className="letter-login">NOMBRE</p>
