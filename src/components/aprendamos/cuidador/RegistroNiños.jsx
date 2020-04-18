@@ -77,14 +77,14 @@ export const RegistroNiños = () => {
 
           <label className="style-radio">
             <input type="radio" name="breca" value="SI" />
-            <span class="radio"></span>
-            <span class="text">SI</span>
+            <span className="radio"></span>
+            <span className="text">SI</span>
           </label>
 
           <label className="style-radio">
             <input type="radio" name="breca" value="NO" />
-            <span class="radio"></span>
-            <span class="text">NO</span>
+            <span className="radio"></span>
+            <span className="text">NO</span>
           </label>
 
           <p className="letter-register">CÓDIGO COLABORADOR BRECA</p>
