@@ -111,7 +111,7 @@ const Signup = (props) => {
   
   const registerFacebook= React.useCallback(async () => {
     try {
-       const  provider = new firebase.auth.FacebookAuthProvider()
+       const  provider =  new firebase.auth.FacebookAuthProvider()
       const res = await auth.signInWithPopup(provider);
       console.log("facebook", res.user);
       /*await db.collection(res.user.uid).add({

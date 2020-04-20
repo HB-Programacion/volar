@@ -24,7 +24,7 @@ function App() {
 
   React.useEffect(() => {
     auth.onAuthStateChanged((user) => {
-      console.log("usuario", user);
+      console.log("usuario:)", user);
       if (user) {
         setFirebaseUser(user);
       } else {
