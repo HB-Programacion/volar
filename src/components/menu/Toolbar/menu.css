@@ -1,4 +1,6 @@
-.logo{
+
+
+/*.logo{
   width: 6.2rem;
   height: auto;
 }
@@ -11,9 +13,7 @@ nav{
     font-family: 'Questrial';
     box-shadow: 1px 2px 1px #9a9b9e52
   }
-  /* .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
-    border-bottom: 1px solid #7dc7c5
-  } */
+ 
   .navbar-light .navbar-nav .nav-link:focus{
     border-bottom: 1px solid #000;
   }
@@ -21,7 +21,12 @@ nav{
     color: #000!important;
     cursor: pointer;
   }
+  button:focus{
+    outline: 0px!important;
+    outline: 0px!important;
+}
 
+ 
   @media (min-width: 769px) {
     html {
      font-size: .98vw;
@@ -29,7 +34,11 @@ nav{
    } 
    
    /* MENU */
-   
+ 
+/*
+  .nav-mobile{
+    background-color: #7dc7c5!important
+  }
    .logo{
      width: 8.5rem;
    }
@@ -50,7 +59,57 @@ nav{
    .text-desktop-aquamarine{
     color: #7dc7c5!important
    }
-   /* .navbar-light .navbar-nav .nav-link{
-    color: #7dc7c5
-   } */
+  
+  }
+  */
+
+
+
+  .toolbar{
+    position: fixed;
+    width: 100%;
+    background-color: #7dc7c5;
+    height: 60px;
+    left: 0;
+    top: 0;
+  }
+
+  .toolbar-navigation{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 2rem;
+  }
+.spacer{
+  flex: 1
+}
+ .toolbar-logo{
+   margin-left: 0.5rem;
+ }
+  .toolbar-logo a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
+  .tollbar-navigation-items ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex
+  }
+
+  .tollbar-navigation-items li{
+    padding: 0 0.5rem;
+
+  }
+
+  .tollbar-navigation-items a{
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .tollbar-navigation-items a:hover,
+  .tollbar-navigation-items a:hover{
+    color: #000;
   }

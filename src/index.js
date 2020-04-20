@@ -7,6 +7,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css'; // Archivo CSS de
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js'; // Archivo Javascript de Bootstrap 4
 import { BrowserRouter as Router} from "react-router-dom";
 
+
 ReactDOM.render(
   <Router>
     <App />

@@ -164,6 +164,12 @@ font-size: .8rem;
  .show-mobile{
   display: block;
  }
+.mostrar-mobile-important{
+  display: block!important
+}
+.ocultar-mobile-important{
+  display: none!important
+}
 
 /* TABLET */
 @media (min-width: 992px) {
@@ -172,6 +178,9 @@ font-size: .8rem;
   } */
 }
 /* TABLET */
+
+
+/* DESKTOP */
 @media (min-width: 769px) {
   html {
    font-size: .98vw;
@@ -182,6 +191,9 @@ font-size: .8rem;
   }
   .show-mobile{
     display: none;
+   }
+   .ocultar-desktop-important{
+     display: none!important
    }
 .p-mobile-blue{
   font-size: 1.4rem;

@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import './App.css';
 
 import Menu from './components/menu/Menu';
+import MenuMobile from './components/menu/Toolbar/MenuMobile';
 import Home from './components/home/Home';
 import Footer from './components/footer/Footer';
 import Nosotros from './components/nosotros/Nosotros';
@@ -23,9 +24,11 @@ function App() {
   return (
     <>
     <div className="">
-      <Menu/>
+      {/* <Menu className=""/> */}
+      <MenuMobile className=""/>
       </div>
-      <Switch>
+    
+      <Switch style={{marginTop:"60px"}}>
       <Route path="/" exact component={Home} />
       <Route path="/nosotros" exact component={Nosotros} />
       <Route path="/aprendamos" exact component={Aprendamos} />
@@ -38,6 +41,7 @@ function App() {
       <Route path="/password/reset" exact component={PasswordReset} />
       <Route path="/contactanos" exact component={Contactanos} />
       </Switch>
+ 
       <Footer/>
     </>
   );
