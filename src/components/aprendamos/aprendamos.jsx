@@ -12,7 +12,7 @@ export const Aprendamos = () => {
         <div className="margin-top-bottom">
           <div className="row justify-content-center h-100">
             <Link
-              to="/aprendamos/empieza-a-aprender"
+              to="/aprendamos/cuidador/registro-niños"
               className="btn-light-blue text-white  m-3" 
             >
               <img src={arrowLeft} className="arrow-blue" alt="flecha izquierda azul"></img>
@@ -22,7 +22,7 @@ export const Aprendamos = () => {
           </div>
           <div className="row justify-content-center h-100">
             <Link
-              to="/aprendamos/empieza-a-aprender"
+              to="/login"
               className="btn-light-blue text-white  m-3"
             >
               <img src={arrowLeft} className="arrow-blue"></img>

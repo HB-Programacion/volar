@@ -60,22 +60,22 @@ const Home = () => {
         <p className="text-aguamarina estrellita">&#10022;</p>
         <p className="text-aguamarina">Está enfocado en ofrecer estrategias de crianza que fortalezcan:</p>
         <div className="box-estrategias">
-            <div class="card" >
-                <img src={cognitivo} class="card-img-top mt-1" alt="..."/>
-                <div class="card-body">
-                    <p class="card-text">Desarrollo<br></br> cognitivo</p>
+            <div className="card" >
+                <img src={cognitivo} className="card-img-top mt-1" alt="..."/>
+                <div className="card-body">
+                    <p className="card-text">Desarrollo<br></br> cognitivo</p>
                 </div>
             </div>
-            <div class="card" >
-                <img src={emocional} class="card-img-top" alt="..."/>
-                <div class="card-body">
-                    <p class="card-text">Desarrollo<br></br> Socio-emocional</p>
+            <div className="card" >
+                <img src={emocional} className="card-img-top" alt="..."/>
+                <div className="card-body">
+                    <p className="card-text">Desarrollo<br></br> Socio-emocional</p>
                 </div>
             </div>
-            <div class="card" >
-                <img src={fisico} class="card-img-top mt-1" alt="..."/>
-                <div class="card-body">
-                    <p class="card-text">Desarrollo<br></br> Físico </p>
+            <div className="card" >
+                <img src={fisico} clasName="card-img-top mt-1" alt="..."/>
+                <div className="card-body">
+                    <p className="card-text">Desarrollo<br></br> Físico </p>
                 </div>
             </div>
         </div>
@@ -89,14 +89,14 @@ const Home = () => {
    </div>
    <div className="equipo-home">
         <h2>nuestro equipo</h2>
-        <div class="container box-equipo-desktop">
-            <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-                <div class="controls-top">
-                    <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-                    <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+        <div className="container box-equipo-desktop">
+            <div id="multi-item-example" className="carousel slide carousel-multi-item" data-ride="carousel">
+                <div className="controls-top">
+                    <a className="btn-floating" href="#multi-item-example" data-slide="prev"><i className="fa fa-chevron-left"></i></a>
+                    <a className="btn-floating" href="#multi-item-example" data-slide="next"><i className="fa fa-chevron-right"></i></a>
                 </div>
 
-                <ol class="carousel-indicators">
+                <ol className="carousel-indicators">
                     <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
                     <li data-target="#multi-item-example" data-slide-to="1"></li>
                     <li data-target="#multi-item-example" data-slide-to="2"></li>
@@ -104,17 +104,17 @@ const Home = () => {
                     <li data-target="#multi-item-example" data-slide-to="4"></li>
                 </ol>
 
-                <div class="carousel-inner" role="listbox">
+                <div className="carousel-inner" role="listbox">
 
-                    <div class="carousel-item active">
+                    <div className="carousel-item active">
 
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card mb-2">
-                                    <img class="card-img-top" src={fabiola}
+                        <div className="row">
+                            <div className="col-md-4">
+                                <div className="card mb-2">
+                                    <img className="card-img-top" src={fabiola}
                                         alt="Card image cap"/>
-                                    <div class="card-body">
-                                        <h6 class="card-title">Fabiola<br></br> Cáceres Gerenta</h6>
+                                    <div className="card-body">
+                                        <h6 className="card-title">Fabiola<br></br> Cáceres Gerenta</h6>
                                     </div>
                                 </div>
                             </div>
@@ -432,7 +432,7 @@ const Home = () => {
                         <h2>¡Cada momento cuenta!</h2>
                         <p>¿Sabías que tus actividades cotidianas son oportunidades para el desarrollo del cerebro de tus hijas e hijos?</p>
                     </div>
-                    <div class="carousel-caption  d-md-block">
+                    <div className="carousel-caption  d-md-block">
                         <div className="box-title-slide">
                             <figure className=" share ">
                                 <img src={share} className="share-img"></img>
@@ -447,13 +447,13 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+            <a className="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+            <a className="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="sr-only">Next</span>
             </a>
         </div>
    </div>
