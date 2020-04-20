@@ -158,14 +158,14 @@ const Login = (props) => {
  
           </div>
           <div className="box-text-a">
-            <a className="text-a" href="/password/reset">
+            <Link className="text-a" to="/password/reset">
               ¿Olvidaste tu contraseña?
-            </a>
+            </Link>
             <div className="box-register">
               <p>¿No tienes una cuenta?</p>
-              <a className="text-a" href="/signup">
+              <Link className="text-a" to="/signup">
                 Regístrate
-              </a>
+              </Link>
             </div>
           </div>
         </div>
