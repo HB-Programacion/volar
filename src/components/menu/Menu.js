@@ -2,8 +2,8 @@ import React from "react";
 import { Link, withRouter } from "react-router-dom";
 
 import "./menu.css";
-import logo from "../../images/logo-volar.svg";
-import candado from "../../images/candado-login.svg";
+import logo from "../../images/menu-img/logo-volar.svg";
+import candado from "../../images/menu-img/candado-login.svg";
 import "../../App.css";
 import { auth, db } from "../firebase/firebase";
 

@@ -1,9 +1,11 @@
-import React from "react";
+import React, {useState }from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 import "./App.css";
 
 import MenuNuevo from "./components/menu/Toolbar/MenuNuevo";
+import SideDrawer from "./components/menu/SideDrawer/SideDrawer"
+import Backdrop from "./components/menu/Backdrop/Backdrop"
 import Menu from "./components/menu/Menu";
 import Home from "./components/home/Home";
 import Footer from "./components/footer/Footer";
@@ -19,8 +21,35 @@ import { PasswordReset } from "./components/loginRegister/PasswordReset";
 import { Contactanos } from "./components/contactanos/Contactanos";
 import { auth } from "./components/firebase/firebase";
 
+
 function App() {
+
   const [firebaseUser, setFirebaseUser] = React.useState(false);
+  const[sideDrawerOpen,setSideDrawerOpen]= useState(false);
+
+  const drawerToggleClickHandler = (prev) => {
+    if(prev){
+      setSideDrawerOpen(true)
+    }else{
+      setSideDrawerOpen(false)
+    }
+    // setSideDrawerOpen((prev)=>{
+      
+    //   return{sideDrawerOpen:!prev.sideDrawerOpen}
+    // })
+  }
+
+  const backdropClickHandler =()=>{
+
+    setSideDrawerOpen(false)
+  }
+    // let sideDrawer;
+    let backdrop;
+    if(sideDrawerOpen){
+      // sideDrawer = <SideDrawer/>;
+      backdrop = <Backdrop click={backdropClickHandler}/>;
+    }
+ 
 
   React.useEffect(() => {
     auth.onAuthStateChanged((user) => {
@@ -35,12 +64,22 @@ function App() {
 
   return  firebaseUser !== false ? (
     <Router>
-      <div className="">
-        {/* <MenuNuevo/> */}
-        <Menu firebaseUser={firebaseUser} />
-      </div>
-      {/* <Switch style={{marginTop:"60px"}}> */}
-      <Switch>
+      
+      <div style={{height: '100%'}}>
+        <MenuNuevo 
+          firebaseUser={firebaseUser}
+          drawerClickHandler={drawerToggleClickHandler} 
+        />
+        
+        <SideDrawer 
+        firebaseUser={firebaseUser}
+        show={sideDrawerOpen}
+        click={backdropClickHandler}/>
+        {backdrop}
+        {/* <Menu firebaseUser={firebaseUser} /> */}
+      
+      <Switch style={{marginTop:"60px"}}>
+      {/* <Switch> */}
         <Route path="/" exact component={Home} />
         <Route path="/nosotros" exact component={Nosotros} />
         <Route path="/aprendamos/cuidador-principal" exact component={Aprendamos} />
@@ -66,6 +105,7 @@ function App() {
         <Route path="/contactanos" exact component={Contactanos} />
       </Switch>
       <Footer />
+      </div>
     </Router>
   ):(<p>CARGANDO</p>);
 }

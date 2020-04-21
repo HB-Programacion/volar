@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <g id="Grupo_980" data-name="Grupo 980" transform="translate(-29 -155)">
+    <g id="Elipse_189" data-name="Elipse 189" transform="translate(29 155)" fill="none" stroke="#fff" stroke-width="1">
+      <circle cx="12.5" cy="12.5" r="12.5" stroke="none"/>
+      <circle cx="12.5" cy="12.5" r="12" fill="none"/>
+    </g>
+    <g id="Grupo_699" data-name="Grupo 699" transform="translate(33.999 159.932)">
+      <g id="Grupo_694" data-name="Grupo 694" transform="translate(0.001 0.068)">
+        <g id="Grupo_693" data-name="Grupo 693" transform="translate(0)">
+          <path id="Trazado_1306" data-name="Trazado 1306" d="M14.062,6.151a1.228,1.228,0,0,0-.428-.844L12.418,4.264V1.3a.412.412,0,0,0-.412-.412H10.358a.407.407,0,0,0-.407.412v.844L7.866.368a1.23,1.23,0,0,0-1.608,0L.433,5.307A1.236,1.236,0,0,0,.3,7.051a1.249,1.249,0,0,0,1.356.36v6.307a.407.407,0,0,0,.407.412h9.944a.412.412,0,0,0,.412-.412V7.411a1.236,1.236,0,0,0,1.645-1.26ZM10.77,1.713h.83V3.558l-.83-.706ZM8.715,13.306H5.358V10H8.715Zm2.884,0H9.533V9.6a.412.412,0,0,0-.412-.412H4.946a.407.407,0,0,0-.407.412v3.709H2.473V6.818L7.06,2.928,11.6,6.814v6.492Zm1.544-6.792a.412.412,0,0,1-.581.045L7.329,2.073a.412.412,0,0,0-.535,0L1.506,6.558a.412.412,0,0,1-.538-.624L6.793.994a.41.41,0,0,1,.537,0L13.1,5.933A.413.413,0,0,1,13.143,6.514Z" transform="translate(-0.001 -0.068)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Grupo_696" data-name="Grupo 696" transform="translate(5.363 5.01)">
+        <g id="Grupo_695" data-name="Grupo 695">
+          <path id="Trazado_1307" data-name="Trazado 1307" d="M198.141,179.938h-2.527a.407.407,0,0,0-.407.412v2.472a.407.407,0,0,0,.407.412h2.527a.412.412,0,0,0,.412-.412V180.35A.412.412,0,0,0,198.141,179.938Zm-.407,2.472h-1.709v-1.648h1.709Z" transform="translate(-195.207 -179.938)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Grupo_698" data-name="Grupo 698" transform="translate(7.061 10.834)">
+        <g id="Grupo_697" data-name="Grupo 697">
+          <circle id="Elipse_190" data-name="Elipse 190" cx="0.412" cy="0.412" r="0.412" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
