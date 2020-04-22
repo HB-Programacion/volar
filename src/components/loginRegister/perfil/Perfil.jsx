@@ -6,7 +6,6 @@ import { BrowserRouter as Router, Route, Link, withRouter } from "react-router-d
 import arrowLeft from "./../../../images/arrow-left-blue.svg";
 import arrowRight from "./../../../images/arrow-right-blue.svg";
 import { auth,db } from "../../../components/firebase/firebase";
-import Menu from "../../menu/Menu";
 const Perfil = (props) => {
 
   const [emailEdit, setEmailEdit] = React.useState('');
@@ -15,9 +14,16 @@ const Perfil = (props) => {
   const [dataPerfil, setDataPerfil]=React.useState('')
   const [departamentos, setDepartamentos]=React.useState([]);
   const [provincias, setProvincias]=React.useState([]);
+  const [distritos, setDistritos]=React.useState([]);
   const [departamentoElegido, setDepartamentoElegido]=React.useState('')
   const [departamentoElegidoKey, setDepartamentoElegidoKey]=React.useState('')
   const [provinciaElegido, setProvinciaElegido]=React.useState('')
+  const [provinciaElegidoKey, setProvinciaElegidoKey]=React.useState('')
+  const [distritoElegido, setDistritoElegido]=React.useState('')
+  const  [colaboradorBreca, setColaboradorBreca]=React.useState('')
+  const  [codigoBreca, setCodigoBreca]=React.useState('')
+  const [error, setError] = React.useState(null);
+
   React.useEffect(() => {
 
     if (props.firebaseUser !== null) {
@@ -28,7 +34,15 @@ const Perfil = (props) => {
           setDataPerfil(doc.data())
           setEmailEdit(doc.data().email);
           setNameEdit(doc.data().nombre);
-          setLastNameEdit(doc.data().apellido)
+          setLastNameEdit(doc.data().apellido);
+          setCodigoBreca(doc.data().codigoBreca);
+          setDepartamentoElegido(doc.data().departamento);
+          setProvinciaElegido(doc.data().provincia);
+          setDistritoElegido(doc.data().distrito);
+          setColaboradorBreca(doc.data().breca);
+          setDepartamentoElegidoKey(doc.data().departamentoKey);
+          setProvinciaElegidoKey(doc.data().provinciaKey);
+
         })
         .catch(function (error) {
           console.log("Error getting document:", error);
@@ -46,28 +60,83 @@ const Perfil = (props) => {
     .then(datos=>{
       setProvincias(datos)
     })
+    
+    fetch('formularioJson/distritos.json')
+    .then(response=> response.json())
+    .then(datos=>{
+      setDistritos(datos)
+    })
+
   },[props.firebaseUser])
   
-  console.log(departamentos[14])
-  console.log("hola",departamentoElegido)
 
-const handleInputChange=(event)=>{
+const handleInputChangeDepartamento=(event)=>{
   setDepartamentoElegido(event.target.value)
   const selectedIndex = event.target.options.selectedIndex;
   setDepartamentoElegidoKey(event.target.options[selectedIndex].getAttribute('data-key'));
 }
 
+const handleInputChangeProvincia=(event)=>{
+  setProvinciaElegido(event.target.value)
+  const selectedIndex = event.target.options.selectedIndex;
+  setProvinciaElegidoKey(event.target.options[selectedIndex].getAttribute('data-key'));
+}
+
+const procesarDatosPerfil = (e) => {
+  e.preventDefault();
+  if (!nameEdit.trim()) {
+    setError("Ingrese tu nombre");
+    return;
+  }
+  if (!lastNameEdit.trim()) {
+    setError("Ingrese tu apellido");
+    return;
+  }
+  if (!emailEdit.trim()) {
+    setError("Ingrese su  email");
+    return;
+  }
+  if (!departamentoElegido.trim()) {
+    setError("Seleccione un departamento");
+    return;
+  }
+  if (!provinciaElegido.trim()) {
+    setError("Seleccione una provincia");
+    return;
+  }
+  if (!distritoElegido.trim()) {
+    setError("Seleccione un distrito");
+    return;
+  }
+  if(!colaboradorBreca.trim()){
+      setError("Seleccione si es colaborador breca");
+      return;
+  }
+
+  if(colaboradorBreca==='SI' && !codigoBreca.trim()){
+    setError("Colocar código Breca");
+    return;
+}
+
+      editarPerfil();
+
+  setError(null);
+};
 const editarPerfil = async (e) => {
- e.preventDefault();
 try {
     await db.collection("usuarios").doc(props.firebaseUser.uid).update({
      ...dataPerfil,
      nombre:nameEdit,
      apellido:lastNameEdit,
-     email:emailEdit
+     email:emailEdit,
+     departamento:departamentoElegido,
+     provincia:provinciaElegido,
+     distrito:distritoElegido,
+     breca:colaboradorBreca,
+     codigoBreca:codigoBreca,
+     departamentoKey:departamentoElegidoKey,
+     provinciaKey:provinciaElegidoKey
     })
-
-
     props.history.push("/aprendamos/cuidador")
   } catch (error) {
     console.log(error);
@@ -80,7 +149,8 @@ try {
           <h2 className="subtittle-register-child">Actualizar Perfil</h2>
         </div>
         <div className="list-register">
-          <form onSubmit={editarPerfil}>
+          <form onSubmit={procesarDatosPerfil}>
+          {error && <div className="alert alert-danger">{error}</div>}
             <p className="letter-register">NOMBRE:</p>
             <input
               className="input-register-space"
@@ -110,7 +180,7 @@ try {
             />
             <p className="letter-register">DEPARTAMENTO</p>
             <select className="select-register-space"
-            onChange={handleInputChange}
+            onChange={handleInputChangeDepartamento}
             value={departamentoElegido}>
               <option>---SELECCIONA---</option>
              {departamentos.map(item=>(
@@ -119,46 +189,51 @@ try {
             </select>
             <p className="letter-register">PROVINCIA</p>
             <select className="select-register-space"
-            onChange={(e) => setProvinciaElegido(e.target.value)}
+            onChange={handleInputChangeProvincia}
             value={provinciaElegido}
             >
               <option>---SELECCIONA---</option>
               {provincias.map(item=>(
-             item.department_id===departamentoElegidoKey?<option key={item.id}>{item.name}</option>:null
+             item.department_id===departamentoElegidoKey?<option key={item.id} data-key={item.id}>{item.name}</option>:null
              ))}
             </select>
             <p className="letter-register">DISTRITO</p>
-            <select className="select-register-space">
-              <option>Villa el salvador</option>
-              <option>San juan de miraflores</option>
-              <option>Chorrillos</option>
-              <option>Miraflores</option>
-              <option>Surco</option>
-              <option>La Molina</option>
-              <option>Surquillo</option>
+            <select className="select-register-space"
+            onChange={(e)=>setDistritoElegido(e.target.value)}
+            value={distritoElegido}>
+            <option>---SELECCIONA---</option>
+              {distritos.map(item=>(
+             item.province_id===provinciaElegidoKey?<option key={item.id}  data-key={item.id}>{item.name}</option>:null
+             ))}
             </select>
             <p className="letter-register">COLABORADOR BRECA</p>
 
             <label className="style-radio">
-              <input type="radio" name="breca" value="SI" />
+              <input type="radio" name="breca" value="SI"  onChange={(e)=>setColaboradorBreca(e.target.value)}
+              checked={colaboradorBreca === "SI"} />
               <span className="radio"></span>
               <span className="text">SI</span>
             </label>
 
             <label className="style-radio">
-              <input type="radio" name="breca" value="NO" />
+              <input type="radio" name="breca" value="NO" onChange={(e)=>setColaboradorBreca(e.target.value)}
+               checked={colaboradorBreca === "NO"}/>
               <span className="radio"></span>
               <span className="text">NO</span>
             </label>
-
-            <p className="letter-register">CÓDIGO COLABORADOR BRECA</p>
-            <input
+             {colaboradorBreca==="SI" ? 
+           <>  
+             <p className="letter-register">CÓDIGO COLABORADOR BRECA</p>
+             <input
               className="input-register-space"
               type="text"
               placeholder="Código"
-            />
-            <p>{nameEdit}</p>
-  <p>{departamentoElegido}</p>
+              name="códigoBreca"
+              onChange={(e)=>setCodigoBreca(e.target.value)}
+              value={codigoBreca}
+            /> </>:null
+
+             }
               <button className="btn-navy-blue text-white" type="submit">
                 <img src={arrowLeft} className="arrow-blue"></img>
                 GUARDAR

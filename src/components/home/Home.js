@@ -40,7 +40,7 @@ const Home = () => {
         <p>
             Darle a cada niña y niño, en su infancia temprana, la oportunidad de poder desarrollar al máximo las habilidades necesarias para su desarrollo integral. 
         </p>
-        <p className="m-b-xs mt-4-xl">Los bebés nacen listos para aprender.<br></br><strong>¡Y tú tienes todo para ayudarlos</strong> </p>
+        <p className="m-b-xs mt-4-xl">Los bebés nacen listos para aprender.<br></br><strong>¡Y tú tienes todo para ayudarlos!</strong> </p>
         
         <Link className="btn-orange text-white">
             <img src={arrowLeft} className="arrow-orange"></img>

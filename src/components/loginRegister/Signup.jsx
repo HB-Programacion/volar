@@ -64,6 +64,13 @@ const Signup = (props) => {
         nombre: name,
         apellido: lastName,
         tipo: "cuidador",
+        departamento:"",
+        provincia:"",
+        distrito:"",
+        breca:"",
+        codigoBreca:"",
+        departamentoKey:"",
+        provinciaKey:"",
       });
       setPassword("");
       setEmail("");

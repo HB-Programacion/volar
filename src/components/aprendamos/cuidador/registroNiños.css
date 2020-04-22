@@ -149,11 +149,13 @@
 
 @media (max-width: 768px) {
   .register-child {
-    padding-top: 5rem;
+    padding-top: 6rem;
+    margin-bottom: 5rem;
   }
 
   .tittle-register-child {
     font-size: 2rem;
+    text-align: center
   }
 
   .subtittle-register-child {
