@@ -68,7 +68,7 @@ const Signup = (props) => {
       setPassword("");
       setEmail("");
       setError(null);
-      props.history.push("/aprendamos/cuidador");
+      props.history.push("perfil");
     } catch (error) {
       console.log(error);
       if (error.code === "auth/invalid-email") {

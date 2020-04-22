@@ -16,26 +16,36 @@ import Login from "./components/loginRegister/Login";
 import Signup from "./components/loginRegister/Signup";
 import { PasswordReset } from "./components/loginRegister/PasswordReset";
 import { Contactanos } from "./components/contactanos/Contactanos";
-import { auth } from "./components/firebase/firebase";
+import { auth,db } from "./components/firebase/firebase";
+import Perfil from './components/loginRegister/perfil/Perfil'
 
 function App() {
   const [firebaseUser, setFirebaseUser] = React.useState(false);
-
+  const [userName, setUserName] = React.useState(false);
   React.useEffect(() => {
     auth.onAuthStateChanged((user) => {
       console.log("usuario:)", user);
       if (user) {
         setFirebaseUser(user);
+        const perfilUser = db.collection("usuarios").doc(firebaseUser.uid);
+        perfilUser
+          .get()
+          .then((doc) => {
+            setUserName(doc.data().nombre);
+          })
+          .catch(function (error) {
+            console.log("Error getting document:", error);
+          });
       } else {
         setFirebaseUser(null);
       }
     });
-  }, []);
+  }, [firebaseUser]);
 
   return  firebaseUser !== false ? (
     <Router>
       <div className="">
-        <Menu firebaseUser={firebaseUser} />
+        <Menu firebaseUser={firebaseUser} userName={userName} />
       </div>
       <Switch>
         <Route path="/" exact component={Home} />
@@ -60,6 +70,9 @@ function App() {
         <Route path="/login" exact component={Login} />
         <Route path="/signup" exact component={Signup} />
         <Route path="/password/reset" exact component={PasswordReset} />
+        <Route path="/perfil" exact>
+          <Perfil firebaseUser={firebaseUser}  userName={userName}/> 
+        </Route>
         <Route path="/contactanos" exact component={Contactanos} />
       </Switch>
       <Footer />

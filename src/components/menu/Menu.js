@@ -8,7 +8,7 @@ import "../../App.css";
 import { auth, db } from "../firebase/firebase";
 
 const Menu = (props) => {
-  const [userName, setUserName] = React.useState("");
+ /*const [userName, setUserName] = React.useState("");
   React.useEffect(() => {
     if (props.firebaseUser !== null) {
       const perfilUser = db.collection("usuarios").doc(props.firebaseUser.uid);
@@ -21,7 +21,7 @@ const Menu = (props) => {
           console.log("Error getting document:", error);
         });
     }
-  }, [props.firebaseUser]);
+  }, [props.firebaseUser]);*/
 
   const cerrarSesion = () => {
     auth.signOut().then(() => {
@@ -84,13 +84,13 @@ const Menu = (props) => {
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  {userName}
+                  {props.userName}
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a className="dropdown-item" onClick={() => cerrarSesion()}>
                     Cerrar Sesión
                   </a>
-                  <Link className="dropdown-item" to="/">
+                  <Link className="dropdown-item" to="/perfil">
                     Mi perfil
                   </Link>
                 </div>
