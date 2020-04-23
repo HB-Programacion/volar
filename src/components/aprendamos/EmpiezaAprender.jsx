@@ -39,7 +39,7 @@ export const EmpiezaAprender = () => {
         <img src={starCenter} className="center-star" alt="stars-center"></img>
       </div>
       <div className="btn-box">
-        <div className="row">
+        <div className="row ml-0 mr-0">
           <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
             <Link to="/aprendamos/cuidador-principal">
             <div className="btn-cuidador">

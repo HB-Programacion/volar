@@ -146,12 +146,20 @@
     background-color: #EF8B44;
     padding: .25rem .30rem;
     border-radius: 25px;
-    box-shadow: 1px 1px 1px 1px #CE6A24;
     text-transform: uppercase;
     font-size: .5rem;
-    letter-spacing: .05rem
+    letter-spacing: .05rem;
+    cursor: pointer;
+    z-index: 50;
+    position: relative
   }
-
+  .btn-cohete:hover,
+  .btn-cohete:focus{
+    box-shadow: 1px 1px 1px 1px #CE6A24;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff
+  }
   .cohete-left{
     position: absolute;
     top: 20rem;

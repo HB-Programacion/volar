@@ -1,0 +1,225 @@
+.fase1{
+    margin-top: 4.5rem;
+    background-image: url("../../images/fase1-img/fondo_fase1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding:2rem 1rem 1rem 2rem;
+    text-align: center;
+    
+}
+.titulo-numero-fase{
+    font-family: 'Questrial';
+    font-size: .89rem;
+    color: #2E335E;
+    margin-bottom: 0rem;
+}
+
+.titulo-fase{
+    font-family: 'Questrial';
+    font-size: 1.2rem;
+    color: #2E335E;
+}
+.title-dit{
+    color: #7DC7C5;
+    font-family: 'Questrial';
+    font-size: .89rem;
+    text-align: center
+}
+.mt-4-fase{
+    margin-top: 1.5rem
+}
+.box-fase1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 1rem;
+}
+.box-fase1-dit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 0
+    
+}
+.box-fase1-dit p{
+    font-family: 'Questrial';
+    color: #2E335E;
+    font-size: .7rem;
+    line-height: .8rem;
+    letter-spacing: .25px;
+    padding: 0rem 1.3rem 0rem .5rem;
+    text-align: left
+}
+.box-infografia{
+    background: #2E335E;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+}
+.box-infografia h6{
+    font-family: 'Questrial';
+    color: #fff;
+    text-align: center;
+    font-size: .9rem;
+    padding: 1rem 3rem
+}
+.list-info{
+    font-family: 'Questrial';
+    color: #ffff;
+    font-size: .8rem;
+    line-height: 1rem;
+    letter-spacing: .25px;
+    padding: 1rem 2rem 0rem 3rem;
+    text-align: left;
+}
+.list-info li{
+    padding: 0rem .5rem 1rem 0rem;
+}
+.btn-fase-celeste{
+    cursor: pointer;
+    background-color: #7DC7C5;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: .7rem 1rem;
+    font-size:  .9rem;
+    line-height: 1rem;
+    text-align: center;
+    border: 2px solid #28ABA9;
+    width: 70%;
+    margin: .5rem auto;
+    border-radius: 4rem;
+}
+.btn-fase-celeste:hover,
+.btn-fase-celeste:focus{
+    box-shadow: 2px 2px 2px 2px #7DC7C5;
+    text-decoration: none;
+}
+
+.btn-fase-naranja{
+    cursor: pointer;
+    background-color:#EF8B44;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem;
+    font-size: .9rem;
+    line-height: 1rem;
+    text-align: center;
+    border: 2px solid #B55E21;
+    width: 60%;
+    margin: .5rem auto;
+    border-radius: 4rem;
+}
+.box-botones-fase{
+    display: flex;
+    flex-direction: column
+}
+
+.starsleft-info{
+    position: absolute;
+    left: 2%;
+    width: 40%;
+    top: 13%;
+}
+.starsRigth-info{
+    position: absolute;
+    right: 5%;
+    width: 20%;
+    top: 29%;
+}
+
+@media (min-width: 769px){
+    .fase1{
+        margin-top: 6rem;
+        padding:5rem 3rem 5rem 3rem;
+    }
+    .titulo-fase{
+        font-size: 2.5rem
+    }
+   
+    .titulo-numero-fase{
+        font-size: 1.7rem
+    }
+    .w-fase{
+        width: 65%;
+        margin: 1rem auto;
+    }
+    .title-dit{
+        font-size: 1.5rem;
+    }
+    .box-fase1{
+        flex-direction: row;
+        width: 80%;
+        margin: 4rem auto
+        
+    }
+    .box-fase1-dit{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .box-fase1-dit p{
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        text-align: center
+    }
+    .mt-xl{
+        margin-top: 4rem!important;
+    }
+    .box-fase1-dit img{
+        width: 10rem;
+    }
+    .mt-4-fase{
+        margin-top: 4rem;
+    }
+    .box-infografia{
+        padding-top: 4rem;
+    }
+    .box-infografia h6{
+        font-size: 1.45rem;
+        width: 47%;
+        margin: auto
+    }
+    .info-desktop{
+        width: 65%;
+        margin: 3rem auto
+    }
+    .starsleft-info{
+        left: 5%;
+        width: 14%;
+        top: 23%;
+    }
+    .starsRigth-info{
+        right: 8%;
+        width: 9%;
+        top: 19%;
+    }
+    .list-info{
+        width: 50%;
+        margin: 2rem auto;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+    .box-botones-fase{
+        width: 60%;
+        flex-direction: row;
+        justify-content: center;
+        margin: 1rem auto
+        
+    }
+    .box-botones-fase a{
+        width: 50%
+    }
+    .btn-fase-celeste{
+        margin: 0 auto;
+        font-size: 1.3rem;
+        line-height: 1.5rem
+    }
+    .btn-fase-naranja{
+        margin: 0 auto;
+        font-size: 1.3rem;
+        line-height: 1.5rem
+    }
+}

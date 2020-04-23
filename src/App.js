@@ -1,5 +1,6 @@
 import React, {useState }from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { auth } from "./components/firebase/firebase";
 
 import "./App.css";
 
@@ -9,6 +10,7 @@ import Backdrop from "./components/menu/Backdrop/Backdrop"
 import Home from "./components/home/Home";
 import Footer from "./components/footer/Footer";
 import Nosotros from "./components/nosotros/Nosotros";
+
 import { Aprendamos } from "./components/aprendamos/Aprendamos";
 import { EmpiezaAprender } from "./components/aprendamos/EmpiezaAprender";
 import { RegistroNiños } from "./components/aprendamos/cuidador/RegistroNiños";
@@ -20,6 +22,10 @@ import { PasswordReset } from "./components/loginRegister/PasswordReset";
 import { Contactanos } from "./components/contactanos/Contactanos";
 import { auth,db } from "./components/firebase/firebase";
 import Perfil from './components/loginRegister/perfil/Perfil'
+
+import Fase1 from "./components/fase1/Fase1"
+
+
 
 
 function App() {
@@ -88,7 +94,7 @@ function App() {
         {backdrop}
         {/* <Menu firebaseUser={firebaseUser} /> */}
       
-      <Switch style={{marginTop:"60px"}}>
+      <Switch style={{marginTop:"6rem"}}>
       {/* <Switch> */}
         <Route path="/" exact component={Home} />
         <Route path="/nosotros" exact component={Nosotros} />
@@ -116,6 +122,9 @@ function App() {
           <Perfil firebaseUser={firebaseUser}  userName={userName}/> 
         </Route>
         <Route path="/contactanos" exact component={Contactanos} />
+        <Route 
+          path="/nosotros/fase1" 
+          exact component={Fase1} />
       </Switch>
       <Footer />
       </div>
