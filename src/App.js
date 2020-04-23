@@ -1,6 +1,6 @@
 import React, {useState }from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import { auth } from "./components/firebase/firebase";
+import { auth,db } from "./components/firebase/firebase";
 
 import "./App.css";
 
@@ -20,7 +20,7 @@ import Login from "./components/loginRegister/Login";
 import Signup from "./components/loginRegister/Signup";
 import { PasswordReset } from "./components/loginRegister/PasswordReset";
 import { Contactanos } from "./components/contactanos/Contactanos";
-import { auth,db } from "./components/firebase/firebase";
+// import { auth,db } from "./components/firebase/firebase";
 import Perfil from './components/loginRegister/perfil/Perfil'
 
 import Fase1 from "./components/fase1/Fase1"
