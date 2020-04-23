@@ -1,5 +1,6 @@
 import React, {useState }from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { auth } from "./components/firebase/firebase";
 
 import "./App.css";
 
@@ -10,6 +11,7 @@ import Menu from "./components/menu/Menu";
 import Home from "./components/home/Home";
 import Footer from "./components/footer/Footer";
 import Nosotros from "./components/nosotros/Nosotros";
+
 import { Aprendamos } from "./components/aprendamos/Aprendamos";
 import { EmpiezaAprender } from "./components/aprendamos/EmpiezaAprender";
 import { RegistroNiños } from "./components/aprendamos/cuidador/RegistroNiños";
@@ -19,7 +21,8 @@ import Login from "./components/loginRegister/Login";
 import Signup from "./components/loginRegister/Signup";
 import { PasswordReset } from "./components/loginRegister/PasswordReset";
 import { Contactanos } from "./components/contactanos/Contactanos";
-import { auth } from "./components/firebase/firebase";
+import Fase1 from "./components/fase1/Fase1"
+
 
 
 function App() {
@@ -78,7 +81,7 @@ function App() {
         {backdrop}
         {/* <Menu firebaseUser={firebaseUser} /> */}
       
-      <Switch style={{marginTop:"60px"}}>
+      <Switch style={{marginTop:"6rem"}}>
       {/* <Switch> */}
         <Route path="/" exact component={Home} />
         <Route path="/nosotros" exact component={Nosotros} />
@@ -98,11 +101,26 @@ function App() {
           exact
           component={BienvenidoCuidador}
         />
-        <Route path="/aprendamos/cuidador/higiene" exact component={Higiene} />
-        <Route path="/login" exact component={Login} />
-        <Route path="/signup" exact component={Signup} />
-        <Route path="/password/reset" exact component={PasswordReset} />
-        <Route path="/contactanos" exact component={Contactanos} />
+        <Route 
+          path="/aprendamos/cuidador/higiene" 
+          exact 
+          component={Higiene} />
+        <Route 
+          path="/login" 
+          exact 
+          component={Login} />
+        <Route 
+          path="/signup" 
+          exact component={Signup} />
+        <Route 
+          path="/password/reset" 
+          exact component={PasswordReset} />
+        <Route 
+          path="/contactanos" 
+          exact component={Contactanos} />
+        <Route 
+          path="/nosotros/fase1" 
+          exact component={Fase1} />
       </Switch>
       <Footer />
       </div>

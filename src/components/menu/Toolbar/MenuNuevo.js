@@ -33,7 +33,7 @@ const MenuNuevo =props => {
 <div>
     <header className="toolbar">
         <nav className="toolbar-navigation">
-            <div className="toolbar-logo logo-box"><Link to='/' className=""><img src={logo} className="logo w-100"></img></Link></div>
+            <div className="toolbar-logo logo-box"><Link to='/' className=""><img src={logo} className="logo"></img></Link></div>
             <div className="spacer"/>
             <div className="tollbar-navigation-items">
                 <ul>
@@ -76,4 +76,4 @@ const MenuNuevo =props => {
 </div>
     )
 }
-export default MenuNuevo
+export default withRouter(MenuNuevo)

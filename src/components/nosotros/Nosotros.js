@@ -77,7 +77,7 @@ const Nosotros = () => {
                             <div className="numero-cohete">1</div>
                             <div className="fase-cohete">Fase Aprender</div>
                         </div>
-                        <Link className="btn-cohete">
+                        <Link to="/nosotros/fase1" className="btn-cohete">
                             <img src={arrowLeft} className="arrow-orange-cohete"></img>
                             ver más
                             <img src={arrowRigth}className="arrow-orange-cohete"></img>
