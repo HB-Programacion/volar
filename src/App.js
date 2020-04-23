@@ -7,7 +7,6 @@ import "./App.css";
 import MenuNuevo from "./components/menu/Toolbar/MenuNuevo";
 import SideDrawer from "./components/menu/SideDrawer/SideDrawer"
 import Backdrop from "./components/menu/Backdrop/Backdrop"
-import Menu from "./components/menu/Menu";
 import Home from "./components/home/Home";
 import Footer from "./components/footer/Footer";
 import Nosotros from "./components/nosotros/Nosotros";
@@ -21,13 +20,18 @@ import Login from "./components/loginRegister/Login";
 import Signup from "./components/loginRegister/Signup";
 import { PasswordReset } from "./components/loginRegister/PasswordReset";
 import { Contactanos } from "./components/contactanos/Contactanos";
+import { auth,db } from "./components/firebase/firebase";
+import Perfil from './components/loginRegister/perfil/Perfil'
+
 import Fase1 from "./components/fase1/Fase1"
+
 
 
 
 function App() {
 
   const [firebaseUser, setFirebaseUser] = React.useState(false);
+  const [userName, setUserName] = React.useState(false);
   const[sideDrawerOpen,setSideDrawerOpen]= useState(false);
 
   const drawerToggleClickHandler = (prev) => {
@@ -59,11 +63,20 @@ function App() {
       console.log("usuario:)", user);
       if (user) {
         setFirebaseUser(user);
+        const perfilUser = db.collection("usuarios").doc(firebaseUser.uid);
+        perfilUser
+          .get()
+          .then((doc) => {
+            setUserName(doc.data().nombre);
+          })
+          .catch(function (error) {
+            console.log("Error getting document:", error);
+          });
       } else {
         setFirebaseUser(null);
       }
     });
-  }, []);
+  }, [firebaseUser]);
 
   return  firebaseUser !== false ? (
     <Router>
@@ -101,23 +114,14 @@ function App() {
           exact
           component={BienvenidoCuidador}
         />
-        <Route 
-          path="/aprendamos/cuidador/higiene" 
-          exact 
-          component={Higiene} />
-        <Route 
-          path="/login" 
-          exact 
-          component={Login} />
-        <Route 
-          path="/signup" 
-          exact component={Signup} />
-        <Route 
-          path="/password/reset" 
-          exact component={PasswordReset} />
-        <Route 
-          path="/contactanos" 
-          exact component={Contactanos} />
+        <Route path="/aprendamos/cuidador/higiene" exact component={Higiene} />
+        <Route path="/login" exact component={Login} />
+        <Route path="/signup" exact component={Signup} />
+        <Route path="/password/reset" exact component={PasswordReset} />
+        <Route path="/perfil" exact>
+          <Perfil firebaseUser={firebaseUser}  userName={userName}/> 
+        </Route>
+        <Route path="/contactanos" exact component={Contactanos} />
         <Route 
           path="/nosotros/fase1" 
           exact component={Fase1} />

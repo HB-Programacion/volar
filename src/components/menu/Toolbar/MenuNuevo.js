@@ -57,7 +57,7 @@ const MenuNuevo =props => {
                                 <a className="dropdown-item" onClick={() => cerrarSesion()}>
                                 Cerrar Sesión
                                 </a>
-                                <Link className="dropdown-item" to="/">
+                                <Link className="dropdown-item" to="/perfil">
                                     Mi perfil
                                 </Link>
                             </div>
