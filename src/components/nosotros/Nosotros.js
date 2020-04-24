@@ -91,7 +91,7 @@ const Nosotros = () => {
                             <div className="numero-cohete">2</div>
                             <div className="fase-cohete left-5-rem">Fase Probar</div>
                         </div>
-                        <Link className="btn-cohete">
+                        <Link to="/nosotros/fase2" className="btn-cohete">
                             <img src={arrowLeft} className="arrow-orange-cohete"></img>
                             ver más
                             <img src={arrowRigth}className="arrow-orange-cohete"></img>

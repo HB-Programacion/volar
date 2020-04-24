@@ -93,6 +93,13 @@ font-size: .8rem;
   line-height: 1.1rem;
   letter-spacing: .25px
 }
+.p-mobile-white{
+  font-family: 'Questrial';
+  color: #fff;
+  font-size: .85rem;
+  line-height: 1.1rem;
+  letter-spacing: .25px
+}
 
 .letra-gruesa-azul{
   -webkit-text-stroke: .8px #2E335E;
@@ -117,7 +124,18 @@ font-size: .8rem;
   border-bottom-right-radius: 30px;
 }
 
-
+.w-10{
+  width: 10%
+}
+.w-12{
+  width: 12%
+}
+.w-15{
+  width: 15%
+}
+.w-25{
+  width: 25%
+}
 .w-30{
   width: 30%
 }
@@ -207,6 +225,10 @@ font-size: .8rem;
      display: none!important
    }
 .p-mobile-blue{
+  font-size: 1.4rem;
+  line-height: 1.8rem
+}
+.p-mobile-white{
   font-size: 1.4rem;
   line-height: 1.8rem
 }

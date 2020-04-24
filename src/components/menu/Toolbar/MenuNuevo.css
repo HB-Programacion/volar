@@ -8,6 +8,8 @@
     left: 0;
     top: 0;
     z-index: 50;
+    /* border-bottom: 5px solid #e2ddddd9; */
+    box-shadow: 0px 2px 2px 2px #e6e3e3fa;
   }
 
   .toolbar-navigation{
@@ -23,7 +25,7 @@
    margin-left: 1rem;
  } */
  .logo{
-   width: 8rem;
+   width: 11rem;
    height: auto;
  }
  .logo-box{

@@ -23,7 +23,8 @@ import { Contactanos } from "./components/contactanos/Contactanos";
 // import { auth,db } from "./components/firebase/firebase";
 import Perfil from './components/loginRegister/perfil/Perfil'
 
-import Fase1 from "./components/fase1/Fase1"
+import Fase1 from "./components/fase1/Fase1";
+import Fase2 from "./components/fase2/Fase2"
 
 
 
@@ -125,6 +126,9 @@ function App() {
         <Route 
           path="/nosotros/fase1" 
           exact component={Fase1} />
+      <Route 
+          path="/nosotros/fase2" 
+          exact component={Fase2} />
       </Switch>
       <Footer />
       </div>
