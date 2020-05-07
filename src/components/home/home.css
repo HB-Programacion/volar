@@ -44,7 +44,8 @@
   .text-proposito p{
     line-height: 1.3rem;
     font-family: 'Questrial', sans-serif;
-    font-size: .9rem
+    font-size: .9rem;
+    letter-spacing: .02rem
   }
  
   
@@ -324,7 +325,8 @@
  }
  .text-proposito p, .nosotros-home p{
    font-size: 1.4rem;
-   line-height: 1.8rem
+   line-height: 1.8rem;
+   letter-spacing: .08rem
  }
  .arrow-orange{
    width: 1.5rem;
