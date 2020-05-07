@@ -1,6 +1,7 @@
 import React, {useState }from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import { auth,db } from "./components/firebase/firebase";
+import {Planets} from 'react-preloaders';
 
 import "./App.css";
 
@@ -145,7 +146,12 @@ function App() {
       <Footer />
       </div>
     </Router>
-  ):(<p>CARGANDO</p>);
+  ):(
+
+    
+    <Planets color="#7DC7C5"/>
+    
+    );
 }
 
 export default App;

@@ -72,8 +72,8 @@ const Home = () => {
                     <p className="card-text">Desarrollo<br></br> Socio-emocional</p>
                 </div>
             </div>
-            <div className="card" >
-                <img src={fisico} clasName="card-img-top mt-1" alt="..."/>
+            <div className="card img-des-fisico" >
+                <img src={fisico} clasName="card-img-top  mt-1" alt="..."/>
                 <div className="card-body">
                     <p className="card-text">Desarrollo<br></br> Físico </p>
                 </div>
@@ -97,7 +97,7 @@ const Home = () => {
                 </div>
 
                 <ol className="carousel-indicators">
-                    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+                    <li data-target="#multi-item-example" data-slide-to="0" className="active"></li>
                     <li data-target="#multi-item-example" data-slide-to="1"></li>
                     <li data-target="#multi-item-example" data-slide-to="2"></li>
                     <li data-target="#multi-item-example" data-slide-to="3"></li>
@@ -119,22 +119,22 @@ const Home = () => {
                                 </div>
                             </div>
 
-                            <div class="col-md-4 clearfix d-none d-md-block">
-                                <div class="card mb-2">
-                                    <img class="card-img-top" src={sara}
+                            <div className="col-md-4 clearfix d-none d-md-block">
+                                <div className="card mb-2">
+                                    <img className="card-img-top" src={sara}
                                     alt="Card image cap"/>
-                                    <div class="card-body">
-                                        <h6 class="card-title">Sara Sarfaty <br></br>Coordinadora<br></br> de Diseño</h6>
+                                    <div className="card-body">
+                                        <h6 className="card-title">Sara Sarfaty <br></br>Coordinadora<br></br> de Diseño</h6>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-4 clearfix d-none d-md-block">
-                                <div class="card mb-2">
-                                    <img class="card-img-top" src={geraldine}
+                            <div className="col-md-4 clearfix d-none d-md-block">
+                                <div className="card mb-2">
+                                    <img className="card-img-top" src={geraldine}
                                     alt="Card image cap"/>
-                                    <div class="card-body">
-                                        <h6 class="card-title">Geraldine Guzmán<br></br> Coordinadora de Implementación</h6>
+                                    <div className="card-body">
+                                        <h6 className="card-title">Geraldine Guzmán<br></br> Coordinadora de Implementación</h6>
                                     </div>
                                 </div>
                             </div>
@@ -142,72 +142,35 @@ const Home = () => {
 
                     </div>
    
-                    <div class="carousel-item">
+                    <div className="carousel-item">
 
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card mb-2">
-                                    <img class="card-img-top" src={aran}
+                        <div className="row">
+                            <div className="col-md-4">
+                                <div className="card mb-2">
+                                    <img className="card-img-top" src={aran}
                                         alt="Card image cap"/>
-                                    <div class="card-body">
-                                        <h6 class="card-title">Arturo Martínez<br></br> Analista de Proyecto</h6>
+                                    <div className="card-body">
+                                        <h6 className="card-title">Arturo Martínez<br></br> Analista de Proyecto</h6>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-4 clearfix d-none d-md-block">
-                                <div class="card mb-2">
-                                    <img class="card-img-top" src={maria}
+                            <div className="col-md-4 clearfix d-none d-md-block">
+                                <div className="card mb-2">
+                                    <img className="card-img-top" src={maria}
                                         alt="Card image cap"/>
-                                    <div class="card-body">
-                                        <h6 class="card-title">María Guadalupe<br></br>Analista de Proyecto</h6>
+                                    <div className="card-body">
+                                        <h6 className="card-title">María Guadalupe<br></br>Analista de Proyecto</h6>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-4 clearfix clearfix d-none d-md-block">
-                                <div class="card mb-2">
-                                    <img class="card-img-top" src={fabiola}
+                            <div className="col-md-4 clearfix clearfix d-none d-md-block">
+                                <div className="card mb-2">
+                                    <img className="card-img-top" src={fabiola}
                                         alt="Card image cap"/>
-                                    <div class="card-body">
-                                        <h6 class="card-title">Fabiola<br></br> Cáceres Gerenta</h6>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="carousel-item">
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card mb-2">
-                                    <img class="card-img-top" src={sara}
-                                        alt="Card image cap"/>
-                                    <div class="card-body">
-                                        <h6 class="card-title">Sara Sarfaty <br></br>Coordinadora<br></br> de Diseño</h6>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 clearfix d-none d-md-block">
-                                <div class="card mb-2">
-                                    <img class="card-img-top" src={geraldine}
-                                        alt="Card image cap"/>
-                                    <div class="card-body">
-                                        <h6 class="card-title">Geraldine Guzmán<br></br> Coordinadora de Implementación</h6>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4 clearfix clearfix d-none d-md-block">
-                                <div class="card mb-2">
-                                    <img class="card-img-top" src={aran}
-                                        alt="Card image cap"/>
-                                    <div class="card-body">
-                                        <h6 class="card-title">Arturo Martínez<br></br> Analista de Proyecto</h6>
+                                    <div className="card-body">
+                                        <h6 className="card-title">Fabiola<br></br> Cáceres Gerenta</h6>
                                     </div>
                                 </div>
                             </div>
@@ -216,35 +179,35 @@ const Home = () => {
 
                     </div>
 
-                    <div class="carousel-item">
+                    <div className="carousel-item">
 
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card mb-2">
-                                    <img class="card-img-top" src={maria}
+                        <div className="row">
+                            <div className="col-md-4">
+                                <div className="card mb-2">
+                                    <img className="card-img-top" src={sara}
                                         alt="Card image cap"/>
-                                    <div class="card-body">
-                                        <h6 class="card-title">María Guadalupe<br></br> Analista de Proyecto</h6>
+                                    <div className="card-body">
+                                        <h6 className="card-title">Sara Sarfaty <br></br>Coordinadora<br></br> de Diseño</h6>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-4 clearfix d-none d-md-block">
-                                <div class="card mb-2">
-                                    <img class="card-img-top" src={fabiola}
+                            <div className="col-md-4 clearfix d-none d-md-block">
+                                <div className="card mb-2">
+                                    <img className="card-img-top" src={geraldine}
                                         alt="Card image cap"/>
-                                    <div class="card-body">
-                                        <h6 class="card-title">Fabiola Cáceres<br></br> Gerenta</h6>
+                                    <div className="card-body">
+                                        <h6 className="card-title">Geraldine Guzmán<br></br> Coordinadora de Implementación</h6>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-4 clearfix clearfix d-none d-md-block">
-                                <div class="card mb-2">
-                                    <img class="card-img-top" src={sara}
+                            <div className="col-md-4 clearfix clearfix d-none d-md-block">
+                                <div className="card mb-2">
+                                    <img className="card-img-top" src={aran}
                                         alt="Card image cap"/>
-                                    <div class="card-body">
-                                        <h6 class="card-title">Sara Sarfaty<br></br> Coordinadora<br></br> de Diseño</h6>
+                                    <div className="card-body">
+                                        <h6 className="card-title">Arturo Martínez<br></br> Analista de Proyecto</h6>
                                     </div>
                                 </div>
                             </div>
@@ -253,35 +216,72 @@ const Home = () => {
 
                     </div>
 
-                    <div class="carousel-item">
+                    <div className="carousel-item">
 
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card mb-2">
-                                    <img class="card-img-top" src={geraldine}
+                        <div className="row">
+                            <div className="col-md-4">
+                                <div className="card mb-2">
+                                    <img className="card-img-top" src={maria}
                                         alt="Card image cap"/>
-                                    <div class="card-body">
-                                        <h6 class="card-title">Geraldine Guzmán<br></br> Coordinadora de Implementación</h6>
+                                    <div className="card-body">
+                                        <h6 className="card-title">María Guadalupe<br></br> Analista de Proyecto</h6>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-4 clearfix d-none d-md-block">
-                                <div class="card mb-2">
-                                    <img class="card-img-top" src={aran}
+                            <div className="col-md-4 clearfix d-none d-md-block">
+                                <div className="card mb-2">
+                                    <img className="card-img-top" src={fabiola}
                                         alt="Card image cap"/>
-                                    <div class="card-body">
-                                        <h6 class="card-title">Arturo Martínez<br></br> Analista de Proyecto</h6>
+                                    <div className="card-body">
+                                        <h6 className="card-title">Fabiola Cáceres<br></br> Gerenta</h6>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-4 clearfix clearfix d-none d-md-block">
-                                <div class="card mb-2">
-                                    <img class="card-img-top" src={maria}
+                            <div className="col-md-4 clearfix clearfix d-none d-md-block">
+                                <div className="card mb-2">
+                                    <img className="card-img-top" src={sara}
                                         alt="Card image cap"/>
-                                    <div class="card-body">
-                                        <h6 class="card-title">María Guadalupe<br></br> Analista de Proyecto</h6>
+                                    <div className="card-body">
+                                        <h6 className="card-title">Sara Sarfaty<br></br> Coordinadora<br></br> de Diseño</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div className="carousel-item">
+
+                        <div className="row">
+                            <div className="col-md-4">
+                                <div className="card mb-2">
+                                    <img className="card-img-top" src={geraldine}
+                                        alt="Card image cap"/>
+                                    <div className="card-body">
+                                        <h6 className="card-title">Geraldine Guzmán<br></br> Coordinadora de Implementación</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-md-4 clearfix d-none d-md-block">
+                                <div className="card mb-2">
+                                    <img className="card-img-top" src={aran}
+                                        alt="Card image cap"/>
+                                    <div className="card-body">
+                                        <h6 className="card-title">Arturo Martínez<br></br> Analista de Proyecto</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-md-4 clearfix clearfix d-none d-md-block">
+                                <div className="card mb-2">
+                                    <img className="card-img-top" src={maria}
+                                        alt="Card image cap"/>
+                                    <div className="card-body">
+                                        <h6 className="card-title">María Guadalupe<br></br> Analista de Proyecto</h6>
                                     </div>
                                 </div>
                             </div>
@@ -297,20 +297,20 @@ const Home = () => {
    </div>
 
    <div className="momento-home show-mobile">
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
+            <ol className="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" className="active"></li>
                 <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
                 <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item img-banner active">
-                    <img src={bannerMobile1} class="d-block w-100 " alt="..." />
+            <div className="carousel-inner">
+                <div className="carousel-item img-banner active">
+                    <img src={bannerMobile1} className="d-block w-100 " alt="..." />
                     <div className="carousel-caption-text">
                         <h2>¡Cada momento cuenta!</h2>
                         <p>¿Sabías que tus actividades cotidianas son oportunidades para el desarrollo del cerebro de tus hijas e hijos?</p>
                     </div>
-                    <div class="carousel-caption  d-md-block">
+                    <div className="carousel-caption  d-md-block">
                         <div className="box-title-slide">
                             <figure className=" share ">
                                 <img src={share} className="share-img"></img>
@@ -325,13 +325,13 @@ const Home = () => {
                     </div>
                     
                 </div>
-                <div class="carousel-item">
-                    <img src={bannerMobile1} class="d-block w-100" alt="..."/>
+                <div className="carousel-item">
+                    <img src={bannerMobile1} className="d-block w-100" alt="..."/>
                     <div className="carousel-caption-text">
                         <h2>¡Cada momento cuenta!</h2>
                         <p>¿Sabías que tus actividades cotidianas son oportunidades para el desarrollo del cerebro de tus hijas e hijos?</p>
                     </div>
-                    <div class="carousel-caption  d-md-block">
+                    <div className="carousel-caption  d-md-block">
                         <div className="box-title-slide">
                             <figure className=" share ">
                                 <img src={share} className="share-img"></img>
@@ -345,13 +345,13 @@ const Home = () => {
                         </Link>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src={bannerMobile1} class="d-block w-100" alt="..."/>
+                <div className="carousel-item">
+                    <img src={bannerMobile1} className="d-block w-100" alt="..."/>
                     <div className="carousel-caption-text">
                         <h2>¡Cada momento cuenta!</h2>
                         <p>¿Sabías que tus actividades cotidianas son oportunidades para el desarrollo del cerebro de tus hijas e hijos?</p>
                     </div>
-                    <div class="carousel-caption  d-md-block">
+                    <div className="carousel-caption  d-md-block">
                         <div className="box-title-slide">
                             <figure className=" share ">
                                 <img src={share} className="share-img"></img>
@@ -366,32 +366,32 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+            <a className="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+            <a className="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="sr-only">Next</span>
             </a>
         </div>
    </div>
 
    <div className="momento-home hide-mobile">
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
+            <ol className="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" className="active"></li>
                 <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
                 <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item img-banner active">
-                    <img src={bannerDesktop} class="d-block w-100 " alt="..." />
+            <div className="carousel-inner">
+                <div className="carousel-item img-banner active">
+                    <img src={bannerDesktop} className="d-block w-100 " alt="..." />
                     <div className="carousel-caption-text">
                         <h2>¡Cada momento cuenta!</h2>
                         <p>¿Sabías que tus actividades cotidianas son oportunidades para el desarrollo del cerebro de tus hijas e hijos?</p>
                     </div>
-                    <div class="carousel-caption  d-md-block">
+                    <div className="carousel-caption  d-md-block">
                         <div className="box-title-slide">
                             <figure className=" share ">
                                 <img src={share} className="share-img"></img>
@@ -406,13 +406,13 @@ const Home = () => {
                     </div>
                     
                 </div>
-                <div class="carousel-item">
-                    <img src={bannerDesktop} class="d-block w-100" alt="..."/>
+                <div className="carousel-item">
+                    <img src={bannerDesktop} className="d-block w-100" alt="..."/>
                     <div className="carousel-caption-text">
                         <h2>¡Cada momento cuenta!</h2>
                         <p>¿Sabías que tus actividades cotidianas son oportunidades para el desarrollo del cerebro de tus hijas e hijos?</p>
                     </div>
-                    <div class="carousel-caption  d-md-block">
+                    <div className="carousel-caption  d-md-block">
                         <div className="box-title-slide">
                             <figure className=" share ">
                                 <img src={share} className="share-img"></img>
@@ -426,8 +426,8 @@ const Home = () => {
                         </Link>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src={bannerDesktop} class="d-block w-100" alt="..."/>
+                <div className="carousel-item">
+                    <img src={bannerDesktop} className="d-block w-100" alt="..."/>
                     <div className="carousel-caption-text">
                         <h2>¡Cada momento cuenta!</h2>
                         <p>¿Sabías que tus actividades cotidianas son oportunidades para el desarrollo del cerebro de tus hijas e hijos?</p>

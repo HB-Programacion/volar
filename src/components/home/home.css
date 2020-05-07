@@ -82,6 +82,10 @@
     width: 37%;
     margin: auto
   }
+  .img-des-fisico img{
+    width: 43.1%;
+    margin: auto;
+   }
    .box-estrategias .card-body{
     padding: .5rem;
     color: #7DC7C5;
@@ -271,9 +275,6 @@
   }
 
 
-
-
-  
  
   /* DESKTOP */
 @media (min-width: 769px) {
@@ -354,6 +355,8 @@
    width: 20%;
  
  }
+ 
+ 
  .cohete{
    top:7rem;
    width: 20%;
