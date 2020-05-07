@@ -27,7 +27,8 @@ const Nosotros = () => {
             </div>
             <div className="mt-3 video">
                 <div className="video-responsive">
-                    <iframe  src="https://www.youtube.com/embed/3nvEJDc3Vic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/nNdYfFO10d8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    {/* <iframe  src="https://www.youtube.com/watch?v=nNdYfFO10d8&feature=youtu.be&t=1s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                 </div>
                 <p className="text-white name-video">Video Volar - ¿Quiénes somos? </p>
                 <div className="container">

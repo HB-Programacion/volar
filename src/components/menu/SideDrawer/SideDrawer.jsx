@@ -90,16 +90,16 @@ const sideDraw = (props) => {
     return(
         <nav className={drawerClasses}>
             <ul className="list-sidedraw">
-                <div className="box-flecha" onClick={props.click}>
+                <div className="box-flecha" onClick={props.ocultarMenuMobile}>
                     <figure>
                         <img src={flecha} className="w-100"></img>
                     </figure>   
                 </div>
-                <li><Link to="/"><img src={logoBlanco} className="w-60 mb-5"/></Link></li>
-                <li><Link to="/"><img src={inicio} className="w-15 mr-2"/>Inicio</Link></li>
-                <li><Link to="/nosotros"><img src={nosotros}className="w-15 mr-2"/>Nosotros</Link></li>
-                <li><Link to="/aprendamos"><img src={aprendamos} className="w-15 mr-2"/>Aprendamos</Link></li>
-                <li><Link to="/contactanos"><img src={contactanos} className="w-15 mr-2"/>Contáctanos</Link></li>
+                <li onClick={props.ocultarMenuMobile}><Link to="/"><img src={logoBlanco} className="w-60 mb-5"/></Link></li>
+                <li onClick={props.ocultarMenuMobile}><Link to="/"><img src={inicio} className="w-15 mr-2"/>Inicio</Link></li>
+                <li onClick={props.ocultarMenuMobile}><Link to="/nosotros"><img src={nosotros}className="w-15 mr-2"/>Nosotros</Link></li>
+                <li onClick={props.ocultarMenuMobile}><Link to="/aprendamos"><img src={aprendamos} className="w-15 mr-2"/>Aprendamos</Link></li>
+                <li onClick={props.ocultarMenuMobile}><Link to="/contactanos"><img src={contactanos} className="w-15 mr-2"/>Contáctanos</Link></li>
                
                 <li><Link to="/login"><img src={iniciar} className="w-15 mr-2"/>Iniciar sesión</Link></li>
                 

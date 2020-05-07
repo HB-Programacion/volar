@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./Fase2.css"
-
+import {Router, Route, Link, Switch } from "react-router-dom";
 import starLeftMobile from "../../images/fase2-img/star-left-mobile.svg"
 import starRightMobile from "../../images/fase2-img/star-rigth-mobile.svg"
 import cohete from "../../images/fase2-img/cohete-fase2.svg"
@@ -21,18 +21,18 @@ const Fase2 = () => {
                 </p>
             </div>
             <div className="box-botones-fase2">
-                <div className="btn-fase2 font-color-orange">
+                <Link to="/nosotros/fase2/crecer" className="btn-fase2 font-color-orange">
                     <img src={crecer} className="w-12 mr-2"></img>
                     Crecer mejor
-                </div>
-                <div className="btn-fase2 text-aguamarina">
+                </Link>
+                <Link to="/nosotros/fase2/agua-segura" className="btn-fase2 text-aguamarina">
                     <img src={agua} className="w-10 mr-2"></img>
                     Agua segura
-                </div>
-                <div className="btn-fase-piloto">
+                </Link>
+                <Link to="/nosotros/fase2/el-piloto" className="btn-fase-piloto">
                     <img src={cohete} className="w-12 mr-2"></img>
                     El piloto
-                </div>
+                </Link>
             </div>
             <figure className="w-100">
                 <img src={coheteStars} className="cohete-fase2"></img>

@@ -24,8 +24,10 @@ import { Contactanos } from "./components/contactanos/Contactanos";
 import Perfil from './components/loginRegister/perfil/Perfil'
 
 import Fase1 from "./components/fase1/Fase1";
-import Fase2 from "./components/fase2/Fase2"
-
+import Fase2 from "./components/fase2/Fase2";
+import Crecer from "./components/crecer/Crecer";
+import Agua from "./components/agua-segura/AguaSegura";
+import Piloto from "./components/Piloto/Piloto";
 
 
 
@@ -33,29 +35,28 @@ function App() {
 
   const [firebaseUser, setFirebaseUser] = React.useState(false);
   const [userName, setUserName] = React.useState(false);
-  const[sideDrawerOpen,setSideDrawerOpen]= useState(false);
+  const[menuBurgerOpen,setmenuBurgerOpen]= useState(false);
 
-  const drawerToggleClickHandler = (prev) => {
-    if(prev){
-      setSideDrawerOpen(true)
-    }else{
-      setSideDrawerOpen(false)
-    }
-    // setSideDrawerOpen((prev)=>{
-      
-    //   return{sideDrawerOpen:!prev.sideDrawerOpen}
+  const drawerToggleClickHandler = () => {
+    // if(prev){
+    //   setmenuBurgerOpen(true)
+    // }else{
+    //   setmenuBurgerOpen(false)
+    // }
+    // setmenuBurgerOpen((prev)=>{
+      setmenuBurgerOpen(true)
+    //   return{menuBurgerOpen:!prev.menuBurgerOpen}
     // })
   }
 
-  const backdropClickHandler =()=>{
-
-    setSideDrawerOpen(false)
+  const ocultarMenuMobile =()=>{
+    setmenuBurgerOpen(false)
   }
     // let sideDrawer;
     let backdrop;
-    if(sideDrawerOpen){
+    if(menuBurgerOpen){
       // sideDrawer = <SideDrawer/>;
-      backdrop = <Backdrop click={backdropClickHandler}/>;
+      backdrop = <Backdrop click={ocultarMenuMobile}/>;
     }
  
 
@@ -86,12 +87,13 @@ function App() {
         <MenuNuevo 
           firebaseUser={firebaseUser}
           drawerClickHandler={drawerToggleClickHandler} 
+          ocultarMenuMobile={ocultarMenuMobile}
         />
         
         <SideDrawer 
         firebaseUser={firebaseUser}
-        show={sideDrawerOpen}
-        click={backdropClickHandler}/>
+        show={menuBurgerOpen}
+        ocultarMenuMobile={ocultarMenuMobile}/>
         {backdrop}
         {/* <Menu firebaseUser={firebaseUser} /> */}
       
@@ -126,9 +128,19 @@ function App() {
         <Route 
           path="/nosotros/fase1" 
           exact component={Fase1} />
-      <Route 
+        <Route 
           path="/nosotros/fase2" 
           exact component={Fase2} />
+        <Route 
+          path="/nosotros/fase2/crecer" 
+          exact component={Crecer} />
+          <Route 
+          path="/nosotros/fase2/agua-segura" 
+          exact component={Agua} />
+          <Route 
+          path="/nosotros/fase2/el-piloto" 
+          exact component={Piloto} />
+          
       </Switch>
       <Footer />
       </div>

@@ -179,6 +179,17 @@ font-size: .8rem;
   width: 100%;
 }
 
+.fondo-azul{
+  background: #2E335E
+}
+
+.fondo-blanco{
+  background: #fff
+}
+
+.fondo-celeste{
+  background: #7DC7C5;
+}
 .hide-desktop{
   display: none;
 }
