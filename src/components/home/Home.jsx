@@ -23,6 +23,7 @@ import starLeft from "../../images/home-img/star-left.svg"
 import starRight from "../../images/home-img/star-right.svg"
 import bannerDesktop from '../../images/home-img/foto-banner1.png';
 import share from "../../images/home-img/share-morado.svg"
+import tituloHome from "../../images/home-img/titulo-home.svg"
 
 const Home = () => { 
 
@@ -33,10 +34,11 @@ const Home = () => {
     </figure>
    <div className="text-center text-white text-proposito">
        <div className="d-flex justify-content-center  text-center text-white">
-            <h1>nuestro</h1>
-            <img src={proposito} className="megafono" ></img>
+            {/* <h1>nuestro</h1>
+            <img src={proposito} className="megafono" ></img> */}
+            <img src={tituloHome} alt=""className="titulo-home"/>
        </div>
-        <h1 className="h1-proposito">propósito</h1>
+        {/* <h1 className="h1-proposito">propósito</h1> */}
         <p>
             Darle a cada niña y niño, en su infancia temprana, la oportunidad de poder desarrollar al máximo las habilidades necesarias para su desarrollo integral. 
         </p>

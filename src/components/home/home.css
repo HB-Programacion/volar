@@ -5,6 +5,11 @@
     background-position: top;
  
   }
+
+  .titulo-home{
+    width: 15rem;
+    margin-bottom: .8rem;
+  }
   .text-proposito{
     width: 90%;
     position: absolute;
@@ -20,10 +25,8 @@
     font-family: 'Questrial';
     font-weight: bolder!important;
     line-height: 1.2rem;
-    /* -webkit-text-stroke: 1px #7dc7c5; */
+    -webkit-text-stroke: 1px #7dc7c5;
     letter-spacing: 1px;
-    font-weight: bolder;
-  
   }
   .text-proposito .megafono{
     width: 3rem;
@@ -305,6 +308,12 @@
  .text-proposito{
    width: 40%
  }
+
+ .titulo-home{
+  width: 24rem;
+  margin-bottom: 1rem;
+}
+
  .mt-4-xl{
    margin-top: 2rem;
    margin-bottom: 2.5rem
