@@ -315,9 +315,12 @@
 }
 
  .mt-4-xl{
-   margin-top: 2rem;
+   margin-top: 1.6rem;
    margin-bottom: 2.5rem
-
+ }
+ .fuerte-desktop{
+  -webkit-text-stroke: .9px #fff;
+  letter-spacing: .1rem
  }
  .text-proposito p, .nosotros-home p{
    font-size: 1.4rem;
