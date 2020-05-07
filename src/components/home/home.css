@@ -20,8 +20,9 @@
     font-family: 'Questrial';
     font-weight: bolder!important;
     line-height: 1.2rem;
-    -webkit-text-stroke: 1px #7dc7c5;
-    letter-spacing: 1px
+    /* -webkit-text-stroke: 1px #7dc7c5; */
+    letter-spacing: 1px;
+    font-weight: bolder;
   
   }
   .text-proposito .megafono{
@@ -288,10 +289,15 @@
   .text-proposito .h1-proposito{
     margin-left: 5rem;
     margin-bottom: 1.5rem;
+    /* -webkit-text-stroke: 2px #7dc7c5; */
+    font-weight: bolder;
+  
   }
   .text-proposito h1{
    font-size: 2.5rem;
    line-height: 2.3rem;
+   font-weight: bolder;
+   /* -webkit-text-stroke: 2px #7dc7c5; */
  }
   .text-proposito .megafono{
    width: 5rem
