@@ -34,11 +34,11 @@ const Home = () => {
     </figure>
    <div className="text-center text-white text-proposito">
        <div className="d-flex justify-content-center  text-center text-white">
-            <h1 className="hide-desktop">nuestro</h1>
-            <img src={proposito} className="megafono hide-desktop" ></img>
-            <img src={tituloHome} alt=""className="titulo-home hide-mobile"/>
+            {/* <h1 className="hide-desktop">nuestro</h1> */}
+            {/* <img src={proposito} className="megafono hide-desktop" ></img> */}
+            <img src={tituloHome} alt=""className="titulo-home "/>
        </div>
-        <h1 className="h1-proposito hide-desktop">propósito</h1>
+        {/* <h1 className="h1-proposito hide-desktop">propósito</h1> */}
         <p>
             Darle a cada niña y niño, en su infancia temprana, la oportunidad de poder desarrollar al máximo las habilidades necesarias para su desarrollo integral. 
         </p>
