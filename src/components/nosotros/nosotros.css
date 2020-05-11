@@ -159,14 +159,16 @@
     letter-spacing: .05rem;
     cursor: pointer;
     z-index: 50;
-    position: relative
+    position: relative;
+    box-shadow: 1px 1px 1px 1px #CE6A24;
+    font-family: "helvetica";
+    font-weight: 550;
   }
   .btn-cohete:hover,
   .btn-cohete:focus{
-    box-shadow: 1px 1px 1px 1px #CE6A24;
+    border: 2.5px solid #CE6A24;
     text-decoration: none;
-    font-weight: bold;
-    color: #fff
+    color: #fff;
   }
   .cohete-left{
     position: absolute;

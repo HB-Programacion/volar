@@ -49,7 +49,6 @@ const Agua = () => {
                     <li data-target="#multi-item-example" data-slide-to="1"></li>
                     <li data-target="#multi-item-example" data-slide-to="2"></li>
                     <li data-target="#multi-item-example" data-slide-to="3"></li>
-                    <li data-target="#multi-item-example" data-slide-to="4"></li>
                 </ol>
 
                 <div className="carousel-inner" role="listbox">
