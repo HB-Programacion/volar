@@ -25,92 +25,92 @@ import CarouselMobile from "./CarouselMobile";
 import CarouselDesktop from "./CarouselDesktop";
 
 const Home = () => { 
+
     const width = window.innerWidth;
-    const breakpoint = 768;
+    const breakpoint = 769;
+
     return (
-<div >
-    <figure className="video-bg">
-        {/* <img src={nino} className="w-100 "></img> */}
-    </figure>
-   <div className="text-center text-white text-proposito">
-       <div className="d-flex justify-content-center  text-center text-white">
-            {/* <h1 className="hide-desktop">nuestro</h1> */}
-            {/* <img src={proposito} className="megafono hide-desktop" ></img> */}
-            <img src={tituloHome} alt=""className="titulo-home tracking-in-expand-fwd-top"/>
-       </div>
-        {/* <h1 className="h1-proposito hide-desktop">propósito</h1> */}
-        <p className="">
-            Darle a cada niña y niño, en su infancia temprana, la oportunidad de poder desarrollar al máximo las habilidades necesarias para su desarrollo integral. 
-        </p>
-        <p className="">Los bebés nacen listos para aprender.<br></br><strong className="fuerte-desktop">¡Y tú tienes todo para ayudarlos!</strong> </p>
+        <div className="animated fadeIn">
+            <figure className="video-bg">
+                {/* <img src={nino} className="w-100 "></img> */}
+            </figure>
+             <div className="text-center text-white text-proposito">
+                <div className="d-flex justify-content-center  text-center text-white">
+                    {/* <h1 className="hide-desktop">nuestro</h1> */}
+                    {/* <img src={proposito} className="megafono hide-desktop" ></img> */}
+                    <img src={tituloHome} alt=""className="titulo-home tracking-in-expand-fwd-top"/>
+                </div>
+                    {/* <h1 className="h1-proposito hide-desktop">propósito</h1> */}
+                <p className="">
+                    Darle a cada niña y niño, en su infancia temprana, la oportunidad de poder desarrollar al máximo las habilidades necesarias para su desarrollo integral. 
+                </p>
+                <p className="">Los bebés nacen listos para aprender.<br></br><strong className="fuerte-desktop">¡Y tú tienes todo para ayudarlos!</strong> </p>
         
-        <Link to="/"className="btn-orange text-white wobble-hor-bottom">
-            <img src={arrowLeft} className="arrow-orange"></img>
-            ¡Entérate más!
-            <img src={arrowRigth}className="arrow-orange"></img>
-        </Link>
-   </div>
-   <div className='container'>
-    <div className="nosotros-home">
-    <figure className="stars-home">
-            <img src={starLeft} className="star-left heartbeat"></img>
-           <img src={starRight} className=" star-right heartbeat"></img>
-    </figure>
+                <Link to="/"className="btn-orange text-white wobble-hor-bottom">
+                    <img src={arrowLeft} className="arrow-orange"></img>
+                        ¡Entérate más!
+                    <img src={arrowRigth}className="arrow-orange"></img>
+                </Link>
+            </div>
+            <div className='container'>
+                <div className="nosotros-home">
+                    <figure className="stars-home">
+                        <img src={starLeft} className="star-left heartbeat"></img>
+                        <img src={starRight} className=" star-right heartbeat"></img>
+                    </figure>
         
-        <h2 className="mt-nosotros">nosotros</h2>
-        <p className="text-blue-volar">“Volar” es un proyecto de Aporta Desarrollo Sostenible, la plataforma de impacto social del Grupo Breca, diseñado con la intención de que las niñas y niños peruanos de 0 a 5 años alcancen su máximo potencial. </p>
-        <p className="text-aguamarina estrellita-home">&#10022;</p>
-        <p className="text-aguamarina subtitulo-home">Está enfocado en ofrecer estrategias de crianza que fortalezcan:</p>
-        <div className="box-estrategias">
-            <div className="card img-des-cognitivo" >
-                <img src={cognitivo} className="card-img-top mt-1 " alt="..."/>
-                <div className="card-body">
-                    <p className="card-text card-text-home">Desarrollo<br></br> cognitivo</p>
+                    <h2 className="mt-nosotros">nosotros</h2>
+                    <p className="text-blue-volar">“Volar” es un proyecto de Aporta Desarrollo Sostenible, la plataforma de impacto social del Grupo Breca, diseñado con la intención de que las niñas y niños peruanos de 0 a 5 años alcancen su máximo potencial. </p>
+                    <p className="text-aguamarina estrellita-home">&#10022;</p>
+                    <p className="text-aguamarina subtitulo-home">Está enfocado en ofrecer estrategias de crianza que fortalezcan:</p>
+                    <div className="box-estrategias">
+                        <div className="card img-des-cognitivo" >
+                            <img src={cognitivo} className="card-img-top mt-1 " alt="..."/>
+                            <div className="card-body">
+                                <p className="card-text card-text-home">Desarrollo<br></br> cognitivo</p>
+                            </div>
+                        </div>
+                        <div className="card" >
+                            <img src={emocional} className="card-img-top " alt="..."/>
+                            <div className="card-body">
+                                <p className="card-text card-text-home">Desarrollo<br></br> Socio-emocional</p>
+                            </div>
+                        </div>
+                        <div className="card img-des-fisico" >
+                            <img src={fisico} className="card-img-top" alt="..."/>
+                            <div className="card-body">
+                                <p className="card-text card-text-home">Desarrollo<br></br> Físico </p>
+                            </div>
+                        </div>
+                    </div>
+                    <Link to="/nosotros" className="btn-orange text-white wobble-hor-bottom">
+                        <img src={arrowLeft} className="arrow-orange"></img>
+                            nuestra historia
+                        <img src={arrowRigth}className="arrow-orange"></img>
+                    </Link>
+                    <img src={cohete} className="cohete "></img>
                 </div>
             </div>
-            <div className="card" >
-                <img src={emocional} className="card-img-top " alt="..."/>
-                <div className="card-body">
-                    <p className="card-text card-text-home">Desarrollo<br></br> Socio-emocional</p>
-                </div>
-            </div>
-            <div className="card img-des-fisico" >
-                <img src={fisico} className="card-img-top" alt="..."/>
-                <div className="card-body">
-                    <p className="card-text card-text-home">Desarrollo<br></br> Físico </p>
-                </div>
-            </div>
-        </div>
-        <a href="/nosotros"   className="btn-orange text-white wobble-hor-bottom">
-            <img src={arrowLeft} className="arrow-orange"></img>
-            nuestra historia
-            <img src={arrowRigth}className="arrow-orange"></img>
-        </a>
-        <img src={cohete} className="cohete "></img>
-    </div>
-   </div>
-   <div className="equipo-home">
-        <h2>nuestro equipo</h2>
-        <div className="container box-equipo-desktop">
-            <div id="multi-item-example" className="carousel slide carousel-multi-item" data-ride="carousel">
-                <div className="controls-top">
-                    <a className="btn-floating" href="#multi-item-example" data-slide="prev"><i className="fa fa-chevron-left"></i></a>
-                    <a className="btn-floating" href="#multi-item-example" data-slide="next"><i className="fa fa-chevron-right"></i></a>
-                </div>
+            <div className="equipo-home">
+                <h2>nuestro equipo</h2>
+                    <div className="container box-equipo-desktop">
+                        <div id="multi-item-example" className="carousel slide carousel-multi-item" data-ride="carousel">
+                            <div className="controls-top">
+                                <a className="btn-floating" href="#multi-item-example" data-slide="prev"><i className="fa fa-chevron-left"></i></a>
+                                <a className="btn-floating" href="#multi-item-example" data-slide="next"><i className="fa fa-chevron-right"></i></a>
+                            </div>
 
-                <ol className="carousel-indicators">
-                    <li data-target="#multi-item-example" data-slide-to="0" className="active"></li>
-                    <li data-target="#multi-item-example" data-slide-to="1"></li>
-                    <li data-target="#multi-item-example" data-slide-to="2"></li>
-                    <li data-target="#multi-item-example" data-slide-to="3"></li>
-                    <li data-target="#multi-item-example" data-slide-to="4"></li>
-                </ol>
-{width < breakpoint  ? <CarouselMobile /> : <CarouselDesktop />}
-
-                
+                            <ol className="carousel-indicators">
+                                <li data-target="#multi-item-example" data-slide-to="0" className="active"></li>
+                                <li data-target="#multi-item-example" data-slide-to="1"></li>
+                                <li data-target="#multi-item-example" data-slide-to="2"></li>
+                                <li data-target="#multi-item-example" data-slide-to="3"></li>
+                                <li data-target="#multi-item-example" data-slide-to="4"></li>
+                            </ol>
+                            {width < breakpoint  ? <CarouselMobile /> : <CarouselDesktop />}
+                        </div>
+                    </div> 
             </div>
-        </div> 
-   </div>
 
    <div className="momento-home show-mobile">
         <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">

@@ -35,6 +35,7 @@ import Piloto from "./components/Piloto/Piloto";
 import { Orbitals } from "react-spinners-css";
 import ConstruccionFase3 from "./components/nosotros/ConstruccionFase3";
 import ConstruccionFase4 from "./components/nosotros/ConstruccionFase4";
+import ConstruccionLogin from "./components/loginRegister/ConstruccionLogin";
 
 function App() {
   const [firebaseUser, setFirebaseUser] = React.useState(false);
@@ -169,6 +170,8 @@ function App() {
           </Route>
           <Route path="/login" exact>
             <Login firebaseUser={firebaseUser} />
+          </Route>
+          <Route path="/login-construccion" exact component={ ConstruccionLogin}>
           </Route>
           <Route path="/signup" exact>
             <Signup firebaseUser={firebaseUser} />
