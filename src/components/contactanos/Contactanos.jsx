@@ -8,9 +8,9 @@ export const Contactanos = () => {
     return (
         <div className="container animated fadeIn">
           <div className="register-child">
-            <div className="row">
-              <h1 className="tittle-register-child">¡Contáctanos!</h1>
-            </div>
+        
+              <h1 className="title tittle-register-child">¡Contáctanos!</h1>
+    
             <div className="list-register">
               <p className="letter-register">NOMBRE</p>
               <input
@@ -31,13 +31,13 @@ export const Contactanos = () => {
                 placeholder="Escribe tu mensaje"
               />
     
-              <Link to="/aprendamos/cuidador">
-                <button className="btn-navy-blue text-white">
+                <div className="caja-boton-contactanos">
+                <Link to="/" className="btn-navy-blue text-white wobble-hor-bottom">
                   <img src={arrowLeft} className="arrow-blue"></img>
                   ENVIAR
                   <img src={arrowRight} className="arrow-blue"></img>
-                </button>
-              </Link>
+                </Link>
+                </div>
             </div>
           </div>
         </div>
