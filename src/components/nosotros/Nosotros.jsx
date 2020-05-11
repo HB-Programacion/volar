@@ -18,12 +18,12 @@ const Nosotros = () => {
         <div id="nosotros-page">
             <div className="box-title ">
             <figure className="stars-group">
-                <img src={starsLeftDesktop} className="stars-left-desktop"></img>
-                <img src={starsRightDesktop} className="stars-right-desktop"></img>
+                <img src={starsLeftDesktop} className="stars-left-desktop heartbeat"></img>
+                <img src={starsRightDesktop} className="stars-right-desktop heartbeat"></img>
             </figure>
-                <img src={starsLeft} className="left-star" alt="stars-left"></img>
-                <h1 className="title">nosotros</h1>
-                <img src={starsRight} className="right-star" alt="stars-right"></img>
+                <img src={starsRight} className="left-star heartbeat" alt="stars-left"></img>
+                <h1 className="title title-nosotros tracking-in-expand-fwd-top">nosotros</h1>
+                <img src={starsRight} className="right-star heartbeat" alt="stars-right"></img>
             </div>
             <div className="mt-3 video">
                 <div className="video-responsive">
@@ -44,22 +44,22 @@ const Nosotros = () => {
                     <figure className="p-2 w-100">
                         <img src={info1} className=" info-1"></img>
                     </figure>
-                    <div className="mt-5 div-items">
+                    <div className="div-items">
                         <div className="box-crecer-agua crecer-left">
                             <figure className=" box-img-info text-right">
-                                <img src={crecer} className=" crecer"></img>
+                                <img src={crecer} className="w-100 crecer"></img>
                             </figure >
-                            <div className="w-65 box-orange mt-1">Interacciones de calidad para el desarrollo cognitivo y socioemocional. </div>
+                            <div className="w-65 box-orange">Interacciones de calidad para el desarrollo cognitivo y socioemocional. </div>
                         </div>
                         <div className="box-crecer-agua crecer-right">
-                            <figure className=" box-img-info text-right">
-                                <img src={agua} className=" agua"></img>
+                            <figure className=" box-img-info text-right box-gota-agua">
+                                <img src={agua} className="w-100 agua"></img>
                             </figure >
-                            <div className="w-65 box-blue mt-1">Higiene y agua segura para el desarrollo físico. </div>
+                            <div className="w-65 box-blue ">Higiene y agua segura para el desarrollo físico. </div>
                         </div>
                     </div>
-                    <p className="mt-2 estrellita">&#10022;</p>
-                    <div className="container">
+                    <p className="mt-2 estrellita heartbeat">&#10022;</p>
+                    <div className="container m2-desktop">
                         <p className="p-mobile-blue text-info-bottom">
                             Mamás, papás, maestras, madres cuidadoras, agentes comunitarias de salud y Volar, trabajamos 
                             juntos para fortalecer las capacidades de crianza que aseguran el 
@@ -68,11 +68,11 @@ const Nosotros = () => {
                     </div>
                 </div>
             </div>
-            <div className="cohete-fondo">
+            <div className="cohete-fondo ">
                 {/* <figure className="w-100 m-0 ">
                     <img src={cohete} className="w-100"></img>
                 </figure> */}
-                <div className="cohete-right">
+                <div className="cohete-right ">
                     <div className="cohete1">
                         <div className="title-cohete-1">
                             <div className="numero-cohete">1</div>

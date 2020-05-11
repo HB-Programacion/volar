@@ -4,12 +4,12 @@
     position: fixed;
     width: 100%;
     background-color: #fff;
-    height: 6rem;
+    height: 5rem;
     left: 0;
     top: 0;
     z-index: 50;
     /* border-bottom: 2px solid #aca7a78a; */
-    box-shadow: 0px 2px 2px 0px #dbdadafa;
+    box-shadow: 1px 1px 9px #52706f;
   }
 
   .toolbar-navigation{
@@ -25,7 +25,7 @@
    margin-left: 1rem;
  } */
  .logo{
-   width: 11rem;
+   width: 9.5rem;
    height: auto;
  }
  .logo-box{

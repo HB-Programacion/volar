@@ -27,11 +27,11 @@ const Agua = () => {
             <div className="fase2-agua border-bottom-radius">
                 <div className="fase2-agua-title">
                     <div className="logo-agua-img">
-                        <img src={crecer} className="w-100"></img>
+                        <img src={crecer} className="w-100 slide-in-left"></img>
                     </div>
                     <div>
                         <div className="fase2-probar">Fase 2 - Probar</div>
-                        <div className="fase2-title-agua">Agua segura</div>
+                        <div className="fase2-title-agua  tracking-in-expand-fwd-top">Agua segura</div>
                     </div>
                 </div>
                 <div className="box-fase2-agua">
@@ -193,8 +193,8 @@ const Agua = () => {
 
             <div className="fondo-blanco box-blanco-agua">
                 <div className="titulo-taller">
-                 <img src={starSanitaria} alt="" className="star-arriba"/>
-                 <img src={starVideo} alt="" className="star-video"/>
+                 <img src={starSanitaria} alt="" className="star-arriba heartbeat"/>
+                 <img src={starVideo} alt="" className="star-video heartbeat"/>
                     <h5>
                     Educación Sanitaria por barrio
                     </h5>
@@ -204,7 +204,7 @@ const Agua = () => {
                         <img src={videoTablets} ></img>
                     </div> */}
                     <div className="">
-                        <p className="p-mobile-blue pt-4">Sensibilización de la comunidad mediante talleres en temas de agua, saneamiento e higiene.</p>
+                        <p className="p-mobile-blue pt-2">Sensibilización de la comunidad mediante talleres en temas de agua, saneamiento e higiene.</p>
                         <p className="p-mobile-blue">Dividido en tres sesiones: </p>
                     </div>
                 </div>
@@ -238,9 +238,9 @@ const Agua = () => {
 
                 <div className="fondo-blanco box-organizaciones">
                     <div className="titulo-taller">
-                        <img src={starSanitaria} alt="" className="star-organizaciones-arriba"/>
+                        <img src={starSanitaria} alt="" className="star-organizaciones-arriba heartbeat"/>
                         <h5>Fortalecimiento de organizaciones comunitarias</h5>
-                        <img src={starRadio} alt="" className="star-organizaciones"/>
+                        <img src={starRadio} alt="" className="star-organizaciones heartbeat"/>
                     </div>
                     <div className="box-organizaciones-radio">
                             <p className="p-mobile-blue p-2">Apoyo a la correcta gestión del servicio de agua potable y alcantarillado del distrito.</p>

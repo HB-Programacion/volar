@@ -31,11 +31,11 @@ const Crecer = () => {
             <div className="fase2-crecer border-bottom-radius">
                 <div className="fase2-crecer-title">
                     <div className="logo-crecer-img">
-                        <img src={crecer} className="w-100"></img>
+                        <img src={crecer} className="w-100 slide-in-left"></img>
                     </div>
                     <div>
                         <div className="fase2-probar">Fase 2 - Probar</div>
-                        <div className="fase2-title">Crecer</div>
+                        <div className="fase2-title  tracking-in-expand-fwd-top">Crecer mejor</div>
                     </div>
                 </div>
                 <div className="box-fase2-crecer">
@@ -177,7 +177,8 @@ const Crecer = () => {
 
             <div className="text-white box-azul-crecer">
                 <div className="titulo-taller">
-                    <img src={star1} alt="" className="star-talleres"/>
+                <img src={coheteTalleres} className="cohete-taller-arriba"></img>
+                    <img src={star1} alt="" className="star-talleres heartbeat"/>
                     <h5 >Talleres presenciales en DIT</h5>
                     <h6>(Desarrollo Infantil Temprano)</h6>
                 </div>
@@ -191,7 +192,7 @@ const Crecer = () => {
             <div className="fondo-blanco box-blanco-crecer">
                 <div className="titulo-taller">
                  <img src={playArriba} alt="" className="play-arriba"/>
-                 <img src={starVideo} alt="" className="star-video"/>
+                 <img src={starVideo} alt="" className="star-video heartbeat"/>
                     <h5>
                         Videos cortos sobre crianza a través de tablets
                     </h5>
@@ -199,7 +200,7 @@ const Crecer = () => {
                 </div>
                 <div className="box-videos">
                     <div>
-                        <img src={videoTablets} ></img>
+                        <img src={videoTablets}className="tablet-imagen" ></img>
                     </div>
                     <div className="">
                         <p className="p-mobile-blue pt-4">Modelado de actividades para la mayor calidad y cantidad de interacciones de padres y cuidadores principales.</p>
@@ -218,11 +219,11 @@ const Crecer = () => {
                         <img src={rutinas}></img>
                         Rutinas
                     </div>
-                    <div className="circulos">
+                    <div className="circulos manzana-circulo">
                         <img src={salud}></img>
                         Salud y <br></br>Nutrición 
                     </div>
-                    <div className="circulos">
+                    <div className="circulos nina-circulo">
                         <img src={desarrollo}></img>
                         Desarrollo<br></br> Socioemocional 
                     </div>
@@ -232,13 +233,13 @@ const Crecer = () => {
                 <div className="fondo-celeste fondo-celeste-crecer">
                     <div className="titulo-taller">
                         <h5>Programa de mensajería de texto sobre crianza</h5>
-                        <img src={avioncito} alt="" className="avioncito-girado"/>
+                        <img src={avioncito} alt="" className="avioncito-girado "/>
                     </div>
                     <figure>
-                        <img src={cel}></img>
+                        <img src={cel} className="celular-imagen"></img>
                     </figure>
                     <p>Contactar a los participantes y brindarles consejos de forma costo - eficiente</p>
-                    <img src={avioncito} alt="" className="avioncito"/>
+                    <img src={avioncito} alt="" className="avioncito "/>
                 </div>
 
                 <div className="fondo-blanco box-spots">
@@ -250,11 +251,11 @@ const Crecer = () => {
                         <figure>
                             <img src={spots}className="spots-img"></img>
                         </figure>
-                        <div>
+                        <div className="texto-radio">
                             <p className="p-mobile-blue">Anunciar actividades de la misma población, además de información y consejos de crianza.</p>
                         </div>
                     </div>
-                    <img src={antena} alt="" className="antena"/>
+                    <img src={antena} alt="" className="antena wobble-ver-right"/>
                 </div>
             
 

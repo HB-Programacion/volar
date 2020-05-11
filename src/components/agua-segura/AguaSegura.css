@@ -1,6 +1,11 @@
 .fase2-agua{
     margin-top: 4.5rem;
-    background: #F7F7FA
+    background-size: cover;
+    background-position: center;
+    background-position: top;
+    background-repeat:no-repeat;
+    box-shadow: 1px 1px 9px #868181;
+    background-image: url("../../images/crecer-img/fondo_crecer_mejor_mobile.png");
 }
 .logo-agua-img{
     width: 10%;
@@ -16,13 +21,13 @@
 
 .fase2-probar{
     font-family: 'Questrial';
-    font-size: .8rem;
+    font-size: .89rem;
     margin-bottom: -.5rem
 }
 
 .fase2-title-agua{
     font-family: 'Questrial';
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     -webkit-text-stroke: 1px ;
     color: #7DC7C5;
     letter-spacing: .06rem;
@@ -30,20 +35,12 @@
 
 .box-fase2-agua{
     text-align: center;
-    width: 93.79%;
+    /* width: 93.79%;
+    margin: auto; */
+    width: 100%;
     margin: auto;
+    padding: 0rem 1rem;
 }
-/* .fondo-naranja-card{
-    background: #EF8B44;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding: 1rem 2rem;
-    height: 10rem!important;
-    
-} */
 
 .carousel-crecer{
     margin-top: -5rem;
@@ -51,11 +48,7 @@
 .card-crecer{
     background: rgba(0,0,0,0)!important;
     border: none!important;
-    /* border-radius: 1rem!important;
-    max-width: 12.5rem!important;
-    height: 13.9rem!important;
-    max-height: 200em!important;
-    margin: 0 auto!important */
+
 }
 
 .card-crecer img{
@@ -71,22 +64,7 @@
     margin: auto;
     z-index: 3;
 }
-/* .card-body-crecer{
-    max-height: 10em!important;
-    padding: .5rem!important;
-    
-}
-.card-body-crecer h6{
-    font-family: 'Questrial';
-    font-size: .9rem;
-    text-align: center
-}
 
-.card-body-crecer p{
-    font-family: 'Questrial';
-    font-size: .8rem;
-    text-align: center
-} */
 .controls-agua a{
     color: #EF8B44;
     font-size: 1.5rem
@@ -94,13 +72,7 @@
 .controls-agua a:hover{
     color: #EF8B44;
 }
-/* .point-agua {
-    margin-bottom: -.01rem!important;
-} */
 
-/* .controls-agua .carousel-indicators .active{
-    color: #CE6E2A!important
-} */
 .point-agua li{
     width: 12px!important;
     height: 12px!important;
@@ -121,18 +93,14 @@
 
 
 .box-azul-agua h5{
-    font-size: 1.4rem;
+    font-family: 'Questrial';
+    font-size: 1.2rem;
     -webkit-text-stroke: 1px #fff;
     letter-spacing: .08rem;
     line-height: 1.4rem;
     letter-spacing: .06rem;
 }
 
-.box-azul-agua h6{
-    font-size: 1.1rem;
-    letter-spacing: .03rem;
-    line-height: .8rem
-}
 .titulo-taller{
     width: 75%;
     margin: auto;
@@ -190,30 +158,35 @@
 
 
 .box-blanco-agua h5{
-    font-size: 1.5rem;
+    font-family: 'Questrial';
+    font-size: 1.2rem;
     color: #7DC7C5;
     -webkit-text-stroke: 1px #7DC7C5;
     letter-spacing: .06rem;
-    line-height: 1.4rem
+    line-height: 1.4rem;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem
 }
 
-.box-videos{
+/* .box-videos{
     display: flex;
     font-size: .9rem;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: .5rem  1rem;
-}
+} */
 
 
 .box-circulos-sanitaria{
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
+    width: 100%;
     margin: 0rem auto;
     justify-content: space-around;
     align-items: center;
+    
 }
 .box-circulos-sanitaria .circulos img{
     width: 4.5rem;
@@ -240,7 +213,7 @@
 }
 .fondo-celeste-agua{
     padding-top: 2.5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 2.5rem;
     text-align: center;
     position: relative;
 }
@@ -252,7 +225,7 @@
 .fondo-celeste-agua h5{
     font-family: 'Questrial';
     color: #fff; 
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     -webkit-text-stroke: 1px #fff;
     letter-spacing: .08rem;
     line-height: 1.4rem;
@@ -275,8 +248,8 @@
 
 .box-organizaciones{
     text-align: center;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     position: relative;
 }
 
@@ -297,7 +270,7 @@
 .box-organizaciones h5{
     color: #7DC7C5;
     font-family: 'Questrial';
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     -webkit-text-stroke: 1px #7DC7C5;
     letter-spacing: .08rem;
     line-height: 1.4rem;
@@ -328,8 +301,11 @@
        }
 
     .fase2-agua{
-        margin-top: 6rem;
-        padding:5rem 5rem 7rem 5rem;
+        margin-top: 5rem;
+        padding:5rem 5rem 5rem 5rem;
+        background-image: url("../../images/crecer-img/fondo_crecer_mejor_desktop.png");
+        background-size: cover;
+        background-position: top center;
     }
 
     .logo-agua-img{
@@ -342,8 +318,10 @@
 
     .box-fase2-agua{
         text-align: center;
-        width: 90%;
+        width: 100%;
         margin: 2rem auto;
+        padding-left:8rem;
+        padding-right: 8rem
     }
 
     .controls-agua{
@@ -381,13 +359,15 @@
         font-size: 1.4rem;
         width: 40%;
         line-height: 1.5rem;;
-        margin: 2rem auto 
+        margin: 2rem auto;
+        padding-left: 2rem;
+        padding-right: 2rem
     }
 
     .box-azul-agua .box-logos{
         flex-direction: row;
         /* justify-content: space-around */
-        margin-top: 1rem
+        margin-top: 4rem
     }
     .sesamo-desktop{
         width: 10%;
@@ -423,11 +403,13 @@
         top: 0%
     }
     .box-circulos-sanitaria{
-        width: 65%
+        width: 65%;
+        padding-left: 2rem;
+        padding-right: 2rem
     }
 
     .box-circulos-sanitaria .circulos img{
-       width:  9rem;
+       width:  11rem;
     }
     .box-circulos-sanitaria .circulos{
         font-size: 1.4rem;
@@ -440,7 +422,7 @@
     }
     .fondo-celeste-agua{
         padding-top: 5rem;
-        padding-bottom: 5rem;
+        padding-bottom: 5.5rem;
     }
 
     .fondo-celeste-agua h5{
@@ -453,9 +435,11 @@
 
     .fondo-celeste-agua p{
         font-size: 1.4rem;
-        width: 55%;
+        width: 50%;
         line-height: 1.5rem;
-        margin: 2rem auto
+        margin: 3rem auto;
+        padding-left: 6rem;
+        padding-right: 6rem;
     }
 
     .lavado-manos-img{
@@ -463,8 +447,8 @@
     }
 
     .box-organizaciones{
-        padding-top: 5rem;
-        padding-bottom: 5rem;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
     }
     .box-organizaciones h5{
         font-size: 2.4rem;
@@ -477,7 +461,10 @@
     .box-organizaciones p{
         font-size: 1.4rem;
         line-height: 1.5rem;
-        margin: 2rem auto
+        margin: 2rem auto;
+        padding-left: 2rem!important;
+        padding-right: 2rem!important;
+        width: 40%
     }
 
     .box-organizaciones .star-organizaciones-arriba{
@@ -492,7 +479,8 @@
     }
 
     .fort-org{
-        width: 25%
+        width: 25%;
+        margin-top: 2rem
     }
 
 }

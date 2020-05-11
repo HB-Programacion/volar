@@ -13,23 +13,23 @@ const Fase2 = () => {
     return(
         <div>
             <div className="fase2 border-bottom-radius">
-                <img src={starLeftMobile} className="star-left-mobile"></img>
-                <img src={starRightMobile} className="star-right-mobile"></img>
-                <h6 className="titulo-numero-fase text-white">Fase 2</h6>
-                <h5 className="titulo-fase text-white">Probar</h5>
+                {/* <img src={starLeftMobile} className="star-left-mobile"></img>
+                <img src={starRightMobile} className="star-right-mobile"></img> */}
+                <h6 className="titulo-numero-fase2">Fase 2</h6>
+                <h5 className="titulo-fase2  tracking-in-expand-fwd-top">Probar</h5>
                 <p className="p-mobile-white w-fase">En este momento del proyecto tuvimos como objetivo explorar diferentes tipos de soluciones, darle forma al futuro modelo de “Volar” y conducir las ideas a las zonas de influencia.
                 </p>
             </div>
             <div className="box-botones-fase2">
-                <Link to="/nosotros/fase2/crecer" className="btn-fase2 font-color-orange">
-                    <img src={crecer} className="w-12 mr-2"></img>
+                <Link to="/nosotros/fase2/crecer" className="btn-fase2 font-color-orange wobble-hor-bottom">
+                    <img src={crecer} className="w-12 mr-2 "></img>
                     Crecer mejor
                 </Link>
-                <Link to="/nosotros/fase2/agua-segura" className="btn-fase2 text-aguamarina">
+                <Link to="/nosotros/fase2/agua-segura" className="btn-fase2 text-aguamarina wobble-hor-bottom">
                     <img src={agua} className="w-10 mr-2"></img>
                     Agua segura
                 </Link>
-                <Link to="/nosotros/fase2/el-piloto" className="btn-fase-piloto">
+                <Link to="/nosotros/fase2/el-piloto" className="btn-fase-piloto wobble-hor-bottom">
                     <img src={cohete} className="w-12 mr-2"></img>
                     El piloto
                 </Link>

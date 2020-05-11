@@ -23,11 +23,11 @@ const Piloto = () => {
             <div className="fase2-piloto border-bottom-radius">
                 <div className="fase2-piloto-title">
                     <div className="logo-piloto">
-                        <img src={logo} className="w-100"></img>
+                        <img src={logo} className="w-100 slide-in-left"></img>
                     </div>
                     <div>
                         <div className="fase2-probar">Fase 2 - Probar</div>
-                        <div className="fase2-title-piloto">El piloto</div>
+                        <div className="fase2-title-piloto  tracking-in-expand-fwd-top">El piloto</div>
                     </div>
                 </div>
                 <div className="box-fase2-piloto">

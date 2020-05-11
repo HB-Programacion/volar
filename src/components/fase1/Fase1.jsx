@@ -9,6 +9,10 @@ import info from "../../images/fase1-img/contenido_infografia1.png"
 import infoDesktop from "../../images/fase1-img/infografia-desktop.png"
 import starsleft from "../../images/fase1-img/stars-info-left.svg"
 import starsRigth from "../../images/fase1-img/stars-info-rigth.svg"
+import arrowLeft from '../../images/arrow-left-orange.svg'
+import arrowRigth from '../../images/arrow-right-orange.svg';
+import arrowLeftBlue from '../../images/arrow-left-blue.svg'
+import arrowRightBlue from '../../images/arrow-right-blue.svg'
 
 const Fase1 = () => {
     return(
@@ -51,29 +55,35 @@ const Fase1 = () => {
             </div>
             <div className="box-infografia border-top-radius ">
                 <h6>Como resultado de la evidencia y la investigación, Volar decidió enfocarse principalmente en dos ejes que denominamos Crecer Mejor y Agua Segura:</h6>
-                <img src={starsleft} className="starsleft-info"></img>
-                <img src={starsRigth} className="starsRigth-info"></img>
+                <img src={starsleft} className="starsleft-info heartbeat"></img>
+                <img src={starsRigth} className="starsRigth-info heartbeat"></img>
                 <figure className="w-100">
-                    <img src={info} className="w-100 hide-desktop"></img>
-                    <img src={infoDesktop} className="info-desktop hide-mobile"></img>
+                    <img src={info} className="w-100 hide-desktop "></img>
+                    <img src={infoDesktop} className="info-desktop hide-mobile "></img>
                 </figure>
                 <ul className="list-info">
-                    <li>
+                    <li className="li-celeste">
                         Al enfocarnos en Agua Segura, impactamos directamente en las dimensiones del modelo de nurturing care en salud e, indirectamente, en nutrición, seguridad y protección.
                     </li>
-                    <li>
+                    <li className="li-naranja">
                         De igual forma, al intervenir en Crecer Mejor, trabajamos directamente los aspectos relacionados con el aprendizaje temprano, el apego seguro, seguridad y protección.
                     </li>
                 </ul>
                 <div className="box-botones-fase">
-                    <a href="/" className="">
+                    <a href="/" className="wobble-hor-bottom">
                         <div className="btn-fase-celeste">
-                        ¡Descubre los modelos <br></br>culturales!
+                        <img src={arrowLeftBlue} className="arrow-orange"></img>
+                        <div>¡Descubre los modelos culturales!</div>
+                        <img src={arrowRightBlue}className="arrow-orange"></img>
+                        
+                        
                         </div>
                     </a>
-                    <a href="/">
+                    <a href="/" className="wobble-hor-bottom">
                         <div className="btn-fase-naranja">
-                        APRENDE MÁS
+                        <img src={arrowLeft} className="arrow-orange"></img>
+                        <div className="ml-2 mr-2">APRENDE MÁS</div>
+                        <img src={arrowRigth}className="arrow-orange"></img>
                         </div>
                     </a>
                 </div>

@@ -104,11 +104,14 @@ const sideDraw = (props) => {
                 <li><NavLink to="/"  onClick={props.ocultarMenuMobile}><img src={logoBlanco} className="w-60 mb-5"/></NavLink></li>
                 <li><NavLink to="/"  onClick={props.ocultarMenuMobile} activeClassName='is-activeHomeMobile' exact={true}><img src={inicio} className="w-15 mr-2"/>Inicio</NavLink></li>
                 <li><NavLink to="/nosotros" onClick={props.ocultarMenuMobile} activeClassName='is-activeHomeMobile'><img src={nosotros}className="w-15 mr-2"/>Nosotros</NavLink></li>
-                {
+                {/*{
                       props.firebaseUser !== null ?  <li><NavLink to={`/aprendamos/cuidador/${props.idChild}`} onClick={props.ocultarMenuMobile} activeClassName='is-activeHomeMobile' ><img src={aprendamos} className="w-15 mr-2"/>Aprendamos</NavLink></li> :
                       <li><NavLink to='/aprendamos'onClick={props.ocultarMenuMobile}  activeClassName='is-activeHomeMobile'><img src={aprendamos} className="w-15 mr-2"/>Aprendamos</NavLink></li>
+                    }*/}
+                {
+                      props.firebaseUser !== null ?  <li><NavLink to= "/construccion-aprendamos" onClick={props.ocultarMenuMobile} activeClassName='is-activeHomeMobile' ><img src={aprendamos} className="w-15 mr-2"/>Aprendamos</NavLink></li> :
+                      <li><NavLink to= "/construccion-aprendamos"onClick={props.ocultarMenuMobile}  activeClassName='is-activeHomeMobile'><img src={aprendamos} className="w-15 mr-2"/>Aprendamos</NavLink></li>
                     }
-
                 <li><NavLink to="/contactanos" onClick={props.ocultarMenuMobile} activeClassName='is-activeHomeMobile'><img src={contactanos} className="w-15 mr-2"/>Contáctanos</NavLink></li>
                  {props.firebaseUser !== null ? 
                   ( <div><li><Link onClick={() => props.mostrarSubItem()}><img src={contactanos} className="w-15 mr-2 dropdown-toggle"/>{props.userName} <i class="fas fa-angle-down"></i></Link></li>

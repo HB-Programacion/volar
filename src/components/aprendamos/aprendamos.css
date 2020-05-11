@@ -101,6 +101,12 @@
  
 }
 
+.tittle-construccion{
+  font-family: 'Questrial';
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
 .btn-box{
     margin-top:8rem;
     margin-left:13rem;
@@ -259,5 +265,11 @@ margin:auto;
 margin-top:6rem;
 height: 1rem;
 }
-
+.tittle-construccion{
+  font-family: 'Questrial';
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+}
 }

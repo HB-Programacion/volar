@@ -11,24 +11,25 @@ import cohete from '../../images/cohete-stars.svg';
 import groupNosotros from '../../images/group-nosotros.svg';
 import arrowLeft from '../../images/arrow-left-orange.svg';
 import arrowRigth from '../../images/arrow-right-orange.svg';
-import fabiola from '../../images/equipo/fabiola.png';
-import sara from '../../images/equipo/sara.png';
-import geraldine from '../../images/equipo/geraldine.png';
-import aran from '../../images/equipo/aran.png';
-import maria from '../../images/equipo/maria.png';
+import fabiola from '../../images/equipo/fabiola_1.png';
+import sara from '../../images/equipo/sara_2.png';
+import geraldine from '../../images/equipo/geraldine_3.png';
+import aran from '../../images/equipo/arturo_4.png';
+import maria from '../../images/equipo/guadalupe_5.png';
 import banner1 from '../../images/banner1.png';
 import bannerMobile1 from '../../images/baner-mobile1.png';
 import Nosotros from "../nosotros/Nosotros"
 import starLeft from "../../images/home-img/star-left.svg"
 import starRight from "../../images/home-img/star-right.svg"
-import bannerDesktop from '../../images/home-img/foto-banner1.png';
+// import bannerDesktop from '../../images/home-img/foto_banner_propuesta.png';
+import bannerDesktop from '../../images/home-img/imagen_1920.png'
 import share from "../../images/home-img/share-morado.svg"
-import tituloHome from "../../images/home-img/titulo-home.svg"
+import tituloHome from "../../images/home-img/titulo_home.png"
 
 const Home = () => { 
 
     return (
-<>
+<div >
     <figure className="video-bg">
         {/* <img src={nino} className="w-100 "></img> */}
     </figure>
@@ -36,15 +37,15 @@ const Home = () => {
        <div className="d-flex justify-content-center  text-center text-white">
             {/* <h1 className="hide-desktop">nuestro</h1> */}
             {/* <img src={proposito} className="megafono hide-desktop" ></img> */}
-            <img src={tituloHome} alt=""className="titulo-home "/>
+            <img src={tituloHome} alt=""className="titulo-home tracking-in-expand-fwd-top"/>
        </div>
         {/* <h1 className="h1-proposito hide-desktop">propósito</h1> */}
-        <p>
+        <p className="">
             Darle a cada niña y niño, en su infancia temprana, la oportunidad de poder desarrollar al máximo las habilidades necesarias para su desarrollo integral. 
         </p>
-        <p className="m-b-xs mt-4-xl">Los bebés nacen listos para aprender.<br></br><strong className="fuerte-desktop">¡Y tú tienes todo para ayudarlos!</strong> </p>
+        <p className="">Los bebés nacen listos para aprender.<br></br><strong className="fuerte-desktop">¡Y tú tienes todo para ayudarlos!</strong> </p>
         
-        <Link className="btn-orange text-white">
+        <Link to="/"className="btn-orange text-white wobble-hor-bottom">
             <img src={arrowLeft} className="arrow-orange"></img>
             ¡Entérate más!
             <img src={arrowRigth}className="arrow-orange"></img>
@@ -53,45 +54,136 @@ const Home = () => {
    <div className='container'>
     <div className="nosotros-home">
     <figure className="stars-home">
-            <img src={starLeft} className="star-left"></img>
-           <img src={starRight} className=" star-right"></img>
+            <img src={starLeft} className="star-left heartbeat"></img>
+           <img src={starRight} className=" star-right heartbeat"></img>
     </figure>
         
         <h2 className="mt-nosotros">nosotros</h2>
         <p className="text-blue-volar">“Volar” es un proyecto de Aporta Desarrollo Sostenible, la plataforma de impacto social del Grupo Breca, diseñado con la intención de que las niñas y niños peruanos de 0 a 5 años alcancen su máximo potencial. </p>
-        <p className="text-aguamarina estrellita">&#10022;</p>
-        <p className="text-aguamarina">Está enfocado en ofrecer estrategias de crianza que fortalezcan:</p>
+        <p className="text-aguamarina estrellita-home">&#10022;</p>
+        <p className="text-aguamarina subtitulo-home">Está enfocado en ofrecer estrategias de crianza que fortalezcan:</p>
         <div className="box-estrategias">
-            <div className="card" >
-                <img src={cognitivo} className="card-img-top mt-1" alt="..."/>
+            <div className="card img-des-cognitivo" >
+                <img src={cognitivo} className="card-img-top mt-1 " alt="..."/>
                 <div className="card-body">
-                    <p className="card-text">Desarrollo<br></br> cognitivo</p>
+                    <p className="card-text card-text-home">Desarrollo<br></br> cognitivo</p>
                 </div>
             </div>
             <div className="card" >
-                <img src={emocional} className="card-img-top" alt="..."/>
+                <img src={emocional} className="card-img-top " alt="..."/>
                 <div className="card-body">
-                    <p className="card-text">Desarrollo<br></br> Socio-emocional</p>
+                    <p className="card-text card-text-home">Desarrollo<br></br> Socio-emocional</p>
                 </div>
             </div>
             <div className="card img-des-fisico" >
-                <img src={fisico} clasName="card-img-top  mt-1" alt="..."/>
+                <img src={fisico} className="card-img-top" alt="..."/>
                 <div className="card-body">
-                    <p className="card-text">Desarrollo<br></br> Físico </p>
+                    <p className="card-text card-text-home">Desarrollo<br></br> Físico </p>
                 </div>
             </div>
         </div>
-        <Link to="/nosotros" className="btn-orange text-white">
+        <Link to="/nosotros" className="btn-orange text-white wobble-hor-bottom">
             <img src={arrowLeft} className="arrow-orange"></img>
             nuestra historia
             <img src={arrowRigth}className="arrow-orange"></img>
         </Link>
-        <img src={cohete} className="cohete"></img>
+        <img src={cohete} className="cohete "></img>
     </div>
    </div>
    <div className="equipo-home">
         <h2>nuestro equipo</h2>
-        <div className="container box-equipo-desktop">
+
+<div className="container box-equipo-desktop show-mobile">
+            <div id="multi-item-example" className="carousel slide carousel-multi-item" data-ride="carousel">
+                <div className="controls-top">
+                    <a className="btn-floating" href="#multi-item-example" data-slide="prev"><i className="fa fa-chevron-left"></i></a>
+                    <a className="btn-floating" href="#multi-item-example" data-slide="next"><i className="fa fa-chevron-right"></i></a>
+                </div>
+
+                <ol className="carousel-indicators">
+                    <li data-target="#multi-item-example" data-slide-to="0" className="active"></li>
+                    <li data-target="#multi-item-example" data-slide-to="1"></li>
+                    <li data-target="#multi-item-example" data-slide-to="2"></li>
+                    <li data-target="#multi-item-example" data-slide-to="3"></li>
+                    <li data-target="#multi-item-example" data-slide-to="4"></li>
+                </ol>
+
+                <div className="carousel-inner" role="listbox">
+
+                    <div className="carousel-item active">
+
+                        <div className="row">
+                            <div className="col-md-12">
+                                <div className="card mb-2 fabiola">
+                                    <img className="card-img-top" src={fabiola}
+                                        alt="Card image cap"/>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+   
+                    <div className="carousel-item">
+
+                        <div className="row">
+                            <div className="col-md-12">
+                                <div className="card mb-2">
+                                    <img className="card-img-top" src={sara}
+                                        alt="Card image cap"/>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div className="carousel-item">
+
+                        <div className="row">
+                            <div className="col-md-12">
+                                <div className="card mb-2">
+                                    <img className="card-img-top" src={geraldine}
+                                        alt="Card image cap"/>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div className="carousel-item">
+
+                        <div className="row">
+                            <div className="col-md-12">
+                                <div className="card mb-2">
+                                    <img className="card-img-top" src={aran}
+                                        alt="Card image cap"/>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className="carousel-item">
+
+                        <div className="row">
+                            <div className="col-md-12">
+                                <div className="card mb-2">
+                                    <img className="card-img-top" src={maria}
+                                        alt="Card image cap"/>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+        
+        <div className="container box-equipo-desktop hide-mobile">
             <div id="multi-item-example" className="carousel slide carousel-multi-item" data-ride="carousel">
                 <div className="controls-top">
                     <a className="btn-floating" href="#multi-item-example" data-slide="prev"><i className="fa fa-chevron-left"></i></a>
@@ -112,12 +204,9 @@ const Home = () => {
 
                         <div className="row">
                             <div className="col-md-4">
-                                <div className="card mb-2">
+                                <div className="card mb-2 fabiola">
                                     <img className="card-img-top" src={fabiola}
                                         alt="Card image cap"/>
-                                    <div className="card-body">
-                                        <h6 className="card-title">Fabiola<br></br> Cáceres Gerenta</h6>
-                                    </div>
                                 </div>
                             </div>
 
@@ -125,9 +214,6 @@ const Home = () => {
                                 <div className="card mb-2">
                                     <img className="card-img-top" src={sara}
                                     alt="Card image cap"/>
-                                    <div className="card-body">
-                                        <h6 className="card-title">Sara Sarfaty <br></br>Coordinadora<br></br> de Diseño</h6>
-                                    </div>
                                 </div>
                             </div>
 
@@ -135,9 +221,6 @@ const Home = () => {
                                 <div className="card mb-2">
                                     <img className="card-img-top" src={geraldine}
                                     alt="Card image cap"/>
-                                    <div className="card-body">
-                                        <h6 className="card-title">Geraldine Guzmán<br></br> Coordinadora de Implementación</h6>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -151,9 +234,6 @@ const Home = () => {
                                 <div className="card mb-2">
                                     <img className="card-img-top" src={aran}
                                         alt="Card image cap"/>
-                                    <div className="card-body">
-                                        <h6 className="card-title">Arturo Martínez<br></br> Analista de Proyecto</h6>
-                                    </div>
                                 </div>
                             </div>
 
@@ -161,9 +241,6 @@ const Home = () => {
                                 <div className="card mb-2">
                                     <img className="card-img-top" src={maria}
                                         alt="Card image cap"/>
-                                    <div className="card-body">
-                                        <h6 className="card-title">María Guadalupe<br></br>Analista de Proyecto</h6>
-                                    </div>
                                 </div>
                             </div>
 
@@ -171,9 +248,6 @@ const Home = () => {
                                 <div className="card mb-2">
                                     <img className="card-img-top" src={fabiola}
                                         alt="Card image cap"/>
-                                    <div className="card-body">
-                                        <h6 className="card-title">Fabiola<br></br> Cáceres Gerenta</h6>
-                                    </div>
                                 </div>
                             </div>
 
@@ -181,121 +255,14 @@ const Home = () => {
 
                     </div>
 
-                    <div className="carousel-item">
-
-                        <div className="row">
-                            <div className="col-md-4">
-                                <div className="card mb-2">
-                                    <img className="card-img-top" src={sara}
-                                        alt="Card image cap"/>
-                                    <div className="card-body">
-                                        <h6 className="card-title">Sara Sarfaty <br></br>Coordinadora<br></br> de Diseño</h6>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-md-4 clearfix d-none d-md-block">
-                                <div className="card mb-2">
-                                    <img className="card-img-top" src={geraldine}
-                                        alt="Card image cap"/>
-                                    <div className="card-body">
-                                        <h6 className="card-title">Geraldine Guzmán<br></br> Coordinadora de Implementación</h6>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-md-4 clearfix clearfix d-none d-md-block">
-                                <div className="card mb-2">
-                                    <img className="card-img-top" src={aran}
-                                        alt="Card image cap"/>
-                                    <div className="card-body">
-                                        <h6 className="card-title">Arturo Martínez<br></br> Analista de Proyecto</h6>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div className="carousel-item">
-
-                        <div className="row">
-                            <div className="col-md-4">
-                                <div className="card mb-2">
-                                    <img className="card-img-top" src={maria}
-                                        alt="Card image cap"/>
-                                    <div className="card-body">
-                                        <h6 className="card-title">María Guadalupe<br></br> Analista de Proyecto</h6>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-md-4 clearfix d-none d-md-block">
-                                <div className="card mb-2">
-                                    <img className="card-img-top" src={fabiola}
-                                        alt="Card image cap"/>
-                                    <div className="card-body">
-                                        <h6 className="card-title">Fabiola Cáceres<br></br> Gerenta</h6>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-md-4 clearfix clearfix d-none d-md-block">
-                                <div className="card mb-2">
-                                    <img className="card-img-top" src={sara}
-                                        alt="Card image cap"/>
-                                    <div className="card-body">
-                                        <h6 className="card-title">Sara Sarfaty<br></br> Coordinadora<br></br> de Diseño</h6>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div className="carousel-item">
-
-                        <div className="row">
-                            <div className="col-md-4">
-                                <div className="card mb-2">
-                                    <img className="card-img-top" src={geraldine}
-                                        alt="Card image cap"/>
-                                    <div className="card-body">
-                                        <h6 className="card-title">Geraldine Guzmán<br></br> Coordinadora de Implementación</h6>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-md-4 clearfix d-none d-md-block">
-                                <div className="card mb-2">
-                                    <img className="card-img-top" src={aran}
-                                        alt="Card image cap"/>
-                                    <div className="card-body">
-                                        <h6 className="card-title">Arturo Martínez<br></br> Analista de Proyecto</h6>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-md-4 clearfix clearfix d-none d-md-block">
-                                <div className="card mb-2">
-                                    <img className="card-img-top" src={maria}
-                                        alt="Card image cap"/>
-                                    <div className="card-body">
-                                        <h6 className="card-title">María Guadalupe<br></br> Analista de Proyecto</h6>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
 
                 </div>
 
             </div>
         </div>
+
+
+
    </div>
 
    <div className="momento-home show-mobile">
@@ -319,7 +286,7 @@ const Home = () => {
                             </figure>
                             <h4 className="title-slide">Habla, canta y señala</h4>
                         </div>
-                        <Link className="btn-orange text-white">
+                        <Link to="/"className="btn-orange text-white">
                             <img src={arrowLeft} className="arrow-orange"></img>
                                 ¡Aprendamos a hacerlo!
                             <img src={arrowRigth}className="arrow-orange"></img>
@@ -340,7 +307,7 @@ const Home = () => {
                             </figure>
                             <h4 className="title-slide">Habla, canta y señala</h4>
                         </div>
-                        <Link className="btn-orange text-white">
+                        <Link to="/"className="btn-orange text-white">
                             <img src={arrowLeft} className="arrow-orange"></img>
                                 ¡Aprendamos a hacerlo!
                             <img src={arrowRigth}className="arrow-orange"></img>
@@ -360,7 +327,7 @@ const Home = () => {
                             </figure>
                             <h4 className="title-slide">Habla, canta y señala</h4>
                         </div>
-                        <Link className="btn-orange text-white">
+                        <Link to="/" className="btn-orange text-white">
                             <img src={arrowLeft} className="arrow-orange"></img>
                                 ¡Aprendamos a hacerlo!
                             <img src={arrowRigth}className="arrow-orange"></img>
@@ -387,7 +354,7 @@ const Home = () => {
                 <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
             </ol>
             <div className="carousel-inner">
-                <div className="carousel-item img-banner active">
+                <div className="carousel-item  active">
                     <img src={bannerDesktop} className="d-block w-100 " alt="..." />
                     <div className="carousel-caption-text">
                         <h2>¡Cada momento cuenta!</h2>
@@ -400,7 +367,7 @@ const Home = () => {
                             </figure>
                             <h4 className="title-slide">Habla, canta y señala</h4>
                         </div>
-                        <Link className="btn-orange text-white">
+                        <Link to="/" className="btn-orange text-white">
                             <img src={arrowLeft} className="arrow-orange"></img>
                                 ¡Aprendamos a hacerlo!
                             <img src={arrowRigth}className="arrow-orange"></img>
@@ -421,7 +388,7 @@ const Home = () => {
                             </figure>
                             <h4 className="title-slide">Habla, canta y señala</h4>
                         </div>
-                        <Link className="btn-orange text-white">
+                        <Link to="/" className="btn-orange text-white">
                             <img src={arrowLeft} className="arrow-orange"></img>
                                 ¡Aprendamos a hacerlo!
                             <img src={arrowRigth}className="arrow-orange"></img>
@@ -441,7 +408,7 @@ const Home = () => {
                             </figure>
                             <h4 className="title-slide">Habla, canta y señala</h4>
                         </div>
-                        <Link className="btn-orange text-white">
+                        <Link to="/" className="btn-orange text-white">
                             <img src={arrowLeft} className="arrow-orange"></img>
                                 ¡Aprendamos a hacerlo!
                             <img src={arrowRigth}className="arrow-orange"></img>
@@ -460,6 +427,6 @@ const Home = () => {
         </div>
    </div>
  
-</>
+</div>
 )}
 export default Home;

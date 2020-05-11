@@ -35,17 +35,20 @@ const MenuNuevo =props => {
 <div>
     <header className="toolbar">
         <nav className="toolbar-navigation">
-            <div className="toolbar-logo logo-box"><Link to='/' className=""><img src={logo} className="logo"></img></Link></div>
+            <div className="toolbar-logo logo-box "><Link to='/' className=""><img src={logo} className="logo bounce-in-right"></img></Link></div>
             <div className="spacer"/>
             <div className="tollbar-navigation-items">
                 <ul>
                     <li><NavLink to="/" activeClassName='is-activeHome' exact={true} >Inicio</NavLink></li>
                     <li><NavLink to="/nosotros" activeClassName='is-activeHome' >Nosotros</NavLink></li>
-                    {
+                    {/*{
                       props.firebaseUser !== null ?  <li><NavLink to={`/aprendamos/cuidador/${props.idChild}`} activeClassName='is-activeHome' >Aprendamos</NavLink></li> :
                       <li><NavLink to='/aprendamos' activeClassName='is-activeHome' >Aprendamos</NavLink></li>
+                    }*/}
+                    {
+                      props.firebaseUser !== null ?  <li><NavLink to= "/construccion-aprendamos" activeClassName='is-activeHome' >Aprendamos</NavLink></li> :
+                      <li><NavLink to= "/construccion-aprendamos" activeClassName='is-activeHome' >Aprendamos</NavLink></li>
                     }
-
                     <li><NavLink to="/contactanos" activeClassName='is-activeHome'>Contáctanos</NavLink></li>
                     {props.firebaseUser !== null ? (
                         <li className="nav-item dropdown">

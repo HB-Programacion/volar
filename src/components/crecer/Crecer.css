@@ -2,7 +2,13 @@
 
 .fase2-crecer{
     margin-top: 4.5rem;
-    background: #F7F7FA
+    background-image: url("../../images/crecer-img/fondo_crecer_mejor_mobile.png");
+    background-size: cover;
+    background-position: center;
+    background-position: top;
+    background-repeat:no-repeat;
+    /* box-shadow: 1px 2px 2px 1px rgb(241, 241, 241); */
+    box-shadow: 1px 1px 9px #868181;
 }
 .logo-crecer-img{
     width: 15%;
@@ -17,22 +23,25 @@
 
 .fase2-probar{
     font-family: 'Questrial';
-    font-size: .8rem;
+    font-size: .89rem;
     margin-bottom: -.5rem
 }
 
 .fase2-title{
     font-family: 'Questrial';
-    font-size: 1.4rem;
-    -webkit-text-stroke: 1px ;
+    font-size: 1.2rem;
+    -webkit-text-stroke: 1px #EF8B44;
     color: #EF8B44;
     letter-spacing: .06rem;
 }
 
 .box-fase2-crecer{
     text-align: center;
-    width: 93.79%;
+    /* width: 93.79%;
+    margin: auto; */
+    width: 100%;
     margin: auto;
+    padding: 0rem 1rem;
 }
 
 .carousel-crecer{
@@ -89,7 +98,7 @@
 }
 
 .box-azul-crecer h5{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     -webkit-text-stroke: 1px #fff;
     letter-spacing: .08rem;
     line-height: 1.4rem;
@@ -97,12 +106,12 @@
 }
 
 .box-azul-crecer h6{
-    font-size: 1.1rem;
+    font-size: 1rem;
     letter-spacing: .03rem;
     line-height: .8rem
 }
 .titulo-taller{
-    width: 75%;
+    width: 80%;
     margin: auto;
     text-align: center
 }
@@ -117,14 +126,17 @@
 .box-azul-crecer .box-foto p{
     font-size: .8rem;
     text-align: center;
-    width: 60%
+    width: 60%;
+    margin-left: -1.5rem
 }
 
 .box-azul-crecer .box-foto img{
     margin-left: 1rem;
     width: 40%
 }
-
+.box-azul-crecer .cohete-taller-arriba{
+    display: none
+}
 .box-azul-crecer .cohete-taller{
     position: absolute;
     bottom:-.8rem;
@@ -143,7 +155,7 @@
 .box-blanco-crecer .titulo-taller .play-arriba{
     position: absolute;
     width: 12%;
-    left: -15%;
+    left: -11%;
     top: -22%
 }
 .box-blanco-crecer .titulo-taller .star-video{
@@ -157,15 +169,17 @@
     position: absolute;
     width: 12%;
     right: -10%;
-    bottom: -22%;
+    bottom: -53%;
 }
 
 .box-blanco-crecer h5{
-    font-size: 1.5rem;
+    font-family: 'Questrial';
+    font-size: 1.2rem;
     color: #7DC7C5;
     -webkit-text-stroke: 1px #7DC7C5;
     letter-spacing: .06rem;
-    line-height: 1.4rem
+    line-height: 1.4rem;
+    width: 100%
 }
 
 .box-videos{
@@ -177,20 +191,21 @@
     padding: .5rem  1rem;
 }
 
-.box-videos {
 
-}
 
 .box-circulos-videos{
     display: flex;
     flex-wrap: wrap;
-    width: 70%;
+    width: 100%;
     margin: 1rem auto;
     justify-content: space-around;
     align-items: center;
+    padding: 0 1rem
 }
+ 
+
 .circulos img{
-    width: 4rem
+    width: 4rem;
 }
 .circulos{
     display: flex;
@@ -201,8 +216,19 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    line-height: .85rem;
+    line-height: .65rem;
+    margin-left:1rem;
+    margin-right: 1rem
 }
+.manzana-circulo{
+    margin-left: 2rem;
+    margin-top: 1rem
+    }
+.nina-circulo{
+    margin-top: 1rem;
+    margin-left: -2rem;
+}
+
 .fondo-celeste-crecer{
     padding-top: 2.5rem;
     padding-bottom: 3.5rem;
@@ -229,7 +255,7 @@
 .fondo-celeste-crecer h5{
     font-family: 'Questrial';
     color: #fff; 
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     -webkit-text-stroke: 1px #fff;
     letter-spacing: .08rem;
     line-height: 1.4rem;
@@ -263,7 +289,7 @@
 .box-spots h5{
     color: #7DC7C5;
     font-family: 'Questrial';
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     -webkit-text-stroke: 1px #7DC7C5;
     letter-spacing: .08rem;
     line-height: 1.4rem;
@@ -298,17 +324,22 @@
        }
 
     .fase2-crecer{
-        margin-top: 6rem;
-        padding:5rem 5rem 7rem 5rem;
+        margin-top: 5rem;
+        padding:5rem 5rem 5rem 5rem;
+        background-image: url("../../images/crecer-img/fondo_crecer_mejor_desktop.png");
+        background-size: cover;
+        background-position: top center;
     }
 
     .logo-crecer-img{
         width: 6%;
         margin-right: 1rem;
     }
-
+    .fase2-probar{
+        font-size: 1.7rem
+    }
     .fase2-title{
-        font-size: 2.7rem
+        font-size: 2.5rem
     }
 
     .box-fase2-crecer{
@@ -367,19 +398,30 @@
         width: 35%;
         margin-top: 2.5rem;
         line-height: 1.5rem;
-        margin-left: -3rem
+        line-height: 1.9rem;
+        margin-left: -1rem;
+        padding: 0rem 2.2rem
     }
     
     .box-azul-crecer .box-foto img{
-        margin-left: 1rem;
+        margin-left: 0rem;
         width: 20%
     }
     .box-azul-crecer .star-talleres{
         width: 10%;
         left: 26%;
     }
+
+    .box-azul-crecer .cohete-taller-arriba{
+        display: block;
+        transform: rotate(90deg);
+        left: -3%;
+        position: absolute;
+        width: 10%
+    }
     .box-azul-crecer .cohete-taller{
-        width: 15%
+        width: 20%;
+        bottom:-5rem;
     }
 
     .box-blanco-crecer{
@@ -399,7 +441,7 @@
         left: 3%
     }
     .box-blanco-crecer .titulo-taller .star-video{
-        width: 7%
+        width: 9%
     }
     .box-blanco-crecer .titulo-taller .play-abajo{
         width: 6%;
@@ -410,8 +452,22 @@
         margin: 3rem auto;
     }
 
+    
+    .box-videos .tablet-imagen{
+        width: 15rem
+    }
     .box-circulos-videos{
         width: 80%;
+    }
+
+    .manzana-circulo{
+        margin-left: 0rem;
+        margin-top: 1rem
+    }
+
+    .nina-circulo{
+        margin-top: 1rem;
+        margin-left: 0rem;
     }
     .circulos img{
         width: 9rem
@@ -434,9 +490,11 @@
         line-height: 2.5rem;
         letter-spacing: .1rem;
     }
-
+    .fondo-celeste-crecer .celular-imagen{
+        width: 45rem
+    }
     .fondo-celeste-crecer p{
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         line-height: 1.5rem;
     }
     .fondo-celeste-crecer figure{
@@ -468,14 +526,19 @@
         width: 60%;
         margin: 0 auto
     }
-
+    
     .box-spots-radio figure{
-        width: 15%;
+        width: 22%;
         margin-right: 1rem
     }
     .box-spots .starRadio{
         width: 7%;
         right: 33%;
+    }
+    .texto-radio{
+        margin-top: -1rem;
+        padding-left: 1rem;
+        padding-right: 1rem
     }
     .antena{
         width: 10%;
