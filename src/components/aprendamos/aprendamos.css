@@ -74,12 +74,12 @@
     border-radius: 40px;
     box-shadow: 0 0 9px rgb(0, 0, 0);
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 2.4rem;
     text-align: center;
     text-decoration:none!important;
     display: flex;
     font-family: 'Questrial';
-    margin-right: 2rem;
+    margin: 2rem;
 }
 
 
@@ -92,15 +92,21 @@
     border-radius: 40px;
     box-shadow: 0 0 9px rgb(0, 0, 0);
     text-transform: uppercase;
-    font-size:3rem;
+    font-size:2.4rem;
     text-align: center;
     text-decoration:none!important;
     display: flex;
     font-family: 'Questrial';
-    margin-left: 2rem;
+    margin: 2rem;
  
 }
 
+.tittle-construccion{
+  font-family: 'Questrial';
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
 .btn-box{
     margin-top:8rem;
     margin-left:13rem;
@@ -117,6 +123,11 @@
 
 .letter-btn{
     margin:1.5rem;
+}
+
+.icono{
+  height: 8rem;
+  width: 8rem;
 }
 
 /*Desktop*/
@@ -194,7 +205,8 @@
 }
 
 .icono{
-    height: 5.5rem;
+    height: 5.2rem;
+    width: 5.2rem;
 }
 
 
@@ -243,7 +255,7 @@
 .letter-btn{
     margin:0.5rem;
     margin-top: 1.4rem;
-    font-size: 1.2rem!important;
+    font-size: 0.9rem!important;
     width: 12rem;
 
 }
@@ -253,5 +265,11 @@ margin:auto;
 margin-top:6rem;
 height: 1rem;
 }
-
+.tittle-construccion{
+  font-family: 'Questrial';
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+}
 }

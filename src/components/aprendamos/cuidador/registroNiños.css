@@ -1,5 +1,5 @@
 .register-child {
-  padding-top: 8rem;
+  padding-top: 6rem;
 }
 
 .tittle-register-child {
@@ -7,6 +7,7 @@
   display: block;
   margin: auto;
   font-family: "Questrial";
+  margin-top:2rem
 }
 
 .subtittle-register-child {
@@ -20,26 +21,26 @@
 
 .list-register {
   box-shadow: 0 0 9px rgb(134, 129, 129);
-  margin: 3rem 11rem 5rem 11rem;
-  padding: 3rem 7rem 3rem 7rem;
+  margin: 3rem 9rem 5rem 9rem;
+  padding: 3rem 5rem 3rem 5rem;
   border-radius: 20px;
 }
 
 .letter-register {
   color: #2e335e;
   font-family: "Questrial";
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-bottom: 0;
 }
 
 .input-register-space {
   display: block;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-family: "Questrial";
   color: rgb(0, 0, 0);
   width: 100% !important;
   border-radius: 1em;
-  padding: 0.4em 1.4em 0.3em 0.8em;
+  padding: 0.2em 1.4em 0.2em 0.8em;
   margin-bottom: 1rem;
   border: 2px solid rgba(112, 112, 112, 0.212);
   appearance: none;
@@ -49,11 +50,11 @@
 
 .select-register-space {
   display: block;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-family: "Questrial";
   color: rgb(0, 0, 0);
   line-height: 1.3;
-  padding: 0.4em 1.4em 0.3em 0.8em;
+  padding: 0.2em 1.4em 0.2em 0.8em;
   width: 100%;
   box-sizing: border-box;
   border: 2px solid rgba(112, 112, 112, 0.212);
@@ -144,18 +145,19 @@
   cursor: pointer;
   margin-right: 10px;
   font-family: "Questrial";
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 768px) {
   .register-child {
-    padding-top: 6rem;
+    padding-top: 4rem;
     margin-bottom: 5rem;
   }
 
   .tittle-register-child {
     font-size: 2rem;
-    text-align: center
+    text-align: center;
+    
   }
 
   .subtittle-register-child {
@@ -165,7 +167,7 @@
   .list-register {
     box-shadow: 0 0 9px rgb(134, 129, 129);
     margin: 1rem 0.5rem 1rem 0.5rem;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 2rem 1rem 2rem 1rem;
     border-radius: 20px;
   }
   .letter-register {
@@ -174,11 +176,11 @@
 
   .select-register-space {
     display: block;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-family: "Questrial";
     color: rgb(0, 0, 0);
     line-height: 1;
-    padding: 0.4em 1.4em 0.3em 0.8em;
+    padding: 0.3em 1.4em 0.3em 0.8em;
     width: 100%;
     box-sizing: border-box;
     border: 2px solid rgba(112, 112, 112, 0.212);
@@ -197,14 +199,14 @@
   }
 
   .input-register-space {
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 0.1em 1.4em 0.1em 0.8em;
   }
 
 
   .btn-navy-blue{
     padding: 10px 2px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin: 0.5rem auto;
     }
   /*.select-register-space option{ 

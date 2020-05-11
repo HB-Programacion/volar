@@ -1,12 +1,12 @@
 import React from "react";
-import { Link, withRouter } from "react-router-dom";
+import { Link, withRouter,NavLink } from "react-router-dom";
 import { auth, db } from "../../firebase/firebase";
 
 import "./MenuNuevo.css";
 import DrawerToggleButton from"../SideDrawer/DrawerToggleButton"
 import logo from '../../../images/menu-img/logo-volar.svg';
 import candado from "../../../images/menu-img/candado-login.svg";
-
+import MenuChild from "../MenuChild"
 
 const MenuNuevo =props => {
     const [userName, setUserName] = React.useState("");
@@ -29,6 +29,8 @@ const MenuNuevo =props => {
       props.history.push("/login");
     });
   };
+
+  console.log("loco", props.firebaseUser)
     return (
 <div>
     <header className="toolbar">
@@ -37,10 +39,17 @@ const MenuNuevo =props => {
             <div className="spacer"/>
             <div className="tollbar-navigation-items">
                 <ul>
-                    <li><Link to="/">Inicio</Link></li>
-                    <li><Link to="/nosotros">Nosotros</Link></li>
-                    <li><Link to='/aprendamos'>Aprendamos</Link></li>
-                    <li><Link to="/contactanos">Contáctanos</Link></li>
+                    <li><NavLink to="/" activeClassName='is-activeHome' exact={true} >Inicio</NavLink></li>
+                    <li><NavLink to="/nosotros" activeClassName='is-activeHome' >Nosotros</NavLink></li>
+                    {/*{
+                      props.firebaseUser !== null ?  <li><NavLink to={`/aprendamos/cuidador/${props.idChild}`} activeClassName='is-activeHome' >Aprendamos</NavLink></li> :
+                      <li><NavLink to='/aprendamos' activeClassName='is-activeHome' >Aprendamos</NavLink></li>
+                    }*/}
+                    {
+                      props.firebaseUser !== null ?  <li><NavLink to= "/construccion-aprendamos" activeClassName='is-activeHome' >Aprendamos</NavLink></li> :
+                      <li><NavLink to= "/construccion-aprendamos" activeClassName='is-activeHome' >Aprendamos</NavLink></li>
+                    }
+                    <li><NavLink to="/contactanos" activeClassName='is-activeHome'>Contáctanos</NavLink></li>
                     {props.firebaseUser !== null ? (
                         <li className="nav-item dropdown">
                             <a
@@ -73,6 +82,10 @@ const MenuNuevo =props => {
             </div>
         </nav>
     </header>
+   {
+     props.firebaseUser!==null ? <MenuChild firebaseUser={props.firebaseUser} mandarIdChild={props.mandarIdChild} updateArrayChild={props.updateArrayChild}/> : null
+   }
+   
 </div>
     )
 }
