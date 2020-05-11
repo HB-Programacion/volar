@@ -29,6 +29,7 @@ import Fase2 from "./components/fase2/Fase2";
 import Crecer from "./components/crecer/Crecer";
 import Agua from "./components/agua-segura/AguaSegura";
 import Piloto from "./components/Piloto/Piloto";
+import { Orbitals} from 'react-spinners-css';
 
 
 
@@ -98,9 +99,9 @@ function App() {
         {backdrop}
         {/* <Menu firebaseUser={firebaseUser} /> */}
       
-      <Switch style={{marginTop:"6rem"}}>
+      <Switch style={{marginTop:"5rem"}}>
       {/* <Switch> */}
-        <Route path="/" exact component={Home} />
+        <Route path="/" exact component={Home} className="animated" />
         <Route path="/nosotros" exact component={Nosotros} />
         <Route path="/aprendamos/cuidador-principal" exact component={Aprendamos} />
         <Route
@@ -112,6 +113,7 @@ function App() {
           path="/aprendamos/cuidador/registro-niños"
           exact
           component={RegistroNiños}
+          
         />
         <Route
           path="/aprendamos/cuidador"
@@ -148,8 +150,11 @@ function App() {
     </Router>
   ):(
 
-    <p>cargado</p>
-    // <Planets color="#7DC7C5"/>
+    <div className="grande">
+      <div className="centrando-spiner">
+      <Orbitals color="#EF8B44" size={900}/>
+      </div>
+    </div>
     
     );
 }

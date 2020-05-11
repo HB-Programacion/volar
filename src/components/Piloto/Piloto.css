@@ -1,8 +1,12 @@
 
 .fase2-piloto{
     margin-top: 4.5rem;
-    background: #FFFBF0;
-    padding-bottom: 2.5rem
+    padding-bottom: 2.5rem;
+    background-image: url("../../images/piloto-img/fase_piloto_mobile.png");
+    background-size: cover;
+    background-position: top ;
+    background-repeat:no-repeat;
+    box-shadow: 1px 1px 9px #868181;
 }
 
 .logo-piloto{
@@ -19,13 +23,13 @@
 
 .fase2-piloto{
     font-family: 'Questrial';
-    font-size: .8rem;
+    font-size: .89rem;
     margin-bottom: -.5rem
 }
 
 .fase2-title-piloto{
     font-family: 'Questrial';
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     -webkit-text-stroke: 1px #F7B919;
     color: #F7B919;
     letter-spacing: .06rem;
@@ -33,14 +37,17 @@
 
 .box-fase2-piloto{
     text-align: center;
-    width: 93.79%;
-    margin: 0rem auto;
+    /* width: 93.79%;
+    margin: 0rem auto; */
+    width: 100%;
+    margin: auto;
+    padding: 0rem 1rem;
 }
 
 .estrellita-amarilla{
     text-align: center;
     color: #F7B919;
-    margin-top: 1.5rem
+    margin-top: 1rem
 }
 
 .title-piloto{
@@ -85,7 +92,7 @@
 }
 
 .card-piloto img{
-    width: 85%;
+    width: 80%;
     margin: 3rem auto;
 }
 .controls-piloto{
@@ -121,8 +128,9 @@
        }
 
     .fase2-piloto{
-        margin-top: 6rem;
-        padding:5rem 5rem 7rem 5rem;
+        margin-top: 5rem;
+        padding:5rem 5rem 5rem 5rem;
+        background-image: url("../../images/piloto-img/fondo_piloto_desktop.png");
     }
     
     .logo-piloto{
@@ -138,8 +146,9 @@
 
    .box-fase2-piloto{
     text-align: center;
-    width: 90%;
+    width: 100%;
     margin: 2rem auto;
+    padding: 0rem 10rem;
     }
 
     .estrellita-amarilla{

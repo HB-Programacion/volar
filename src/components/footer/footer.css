@@ -62,7 +62,8 @@
    
     .box-convenio{
       flex-direction: column;
-      width: 30%
+      width: 23%;
+      margin-bottom:0rem;
     }
     .box-ubicacion, .box-telefono, .box-correo,.box-redes{
       width: 19%;

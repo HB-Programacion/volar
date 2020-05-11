@@ -19,6 +19,7 @@
     font-family: 'Questrial';
     font-size: 1.2rem;
     color: #2E335E;
+    -webkit-text-stroke: 1px #2E335E;
 }
 .title-dit{
     color: #7DC7C5;
@@ -27,13 +28,14 @@
     text-align: center
 }
 .mt-4-fase{
-    margin-top: 1.5rem
+    margin-top: 3rem
 }
 .box-fase1{
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 1rem 1rem;
+    margin-bottom: 2rem
 }
 .box-fase1-dit{
     display: flex;
@@ -54,8 +56,8 @@
 }
 .box-infografia{
     background: #2E335E;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
     position: relative;
 }
 .box-infografia h6{
@@ -64,6 +66,24 @@
     text-align: center;
     font-size: .9rem;
     padding: 1rem 3rem
+
+}
+.list-info .li-celeste::before {
+    content: "\2022";
+    color: #7DC7C5;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.list-info .li-naranja::before {
+    content: "\2022";
+    color: #EF8B44;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
 }
 .list-info{
     font-family: 'Questrial';
@@ -73,45 +93,64 @@
     letter-spacing: .25px;
     padding: 1rem 2rem 0rem 3rem;
     text-align: left;
+    list-style: none;
 }
 .list-info li{
     padding: 0rem .5rem 1rem 0rem;
 }
 .btn-fase-celeste{
+    font-family: "helvetica";
+    font-weight: 550;
     cursor: pointer;
     background-color: #7DC7C5;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     padding: .7rem 1rem;
-    font-size:  .9rem;
+    font-size:  .8rem;
     line-height: 1rem;
     text-align: center;
-    border: 2px solid #28ABA9;
-    width: 70%;
+    border: 1.3px solid #28ABA9;
+    width: 78%;
     margin: .5rem auto;
     border-radius: 4rem;
+    box-shadow: 1px 1px 1px 1px #7DC7C5;
+    display: flex
+
 }
 .btn-fase-celeste:hover,
 .btn-fase-celeste:focus{
-    box-shadow: 2px 2px 2px 2px #7DC7C5;
+    border: 3px solid #28ABA9;
     text-decoration: none;
 }
 
 .btn-fase-naranja{
+    font-family: "helvetica";
+    font-weight: 550;
     cursor: pointer;
     background-color:#EF8B44;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     padding: 1rem;
-    font-size: .9rem;
+    font-size: .8rem;
     line-height: 1rem;
     text-align: center;
-    border: 2px solid #B55E21;
+    border: 1.3px solid #B55E21;
     width: 60%;
     margin: .5rem auto;
     border-radius: 4rem;
+    /* border-radius: 25px; */
+    box-shadow: 1px 1px 1px 1px #CE6A24;
+    display: flex;
+    justify-content: center
+}
+
+.btn-fase-naranja:hover,
+.btn-fase-naranja:focus{
+  
+  border: 3px solid #CE6A24;
+  text-decoration: none;
 }
 .box-botones-fase{
     display: flex;
@@ -133,8 +172,9 @@
 
 @media (min-width: 769px){
     .fase1{
-        margin-top: 6rem;
+        margin-top: 5rem;
         padding:5rem 3rem 5rem 3rem;
+        background-image: url("../../images/fase1-img/fondo_fase_desktop.png");
     }
     .titulo-fase{
         font-size: 2.5rem
@@ -153,9 +193,14 @@
     .box-fase1{
         flex-direction: row;
         width: 80%;
-        margin: 4rem auto
-        
+        margin: 3rem auto;
+        margin-bottom: 6rem;      
     }
+
+    .mt-4-fase{
+        margin-top: 6rem;
+    }
+
     .box-fase1-dit{
         flex-direction: column;
         justify-content: center;
@@ -168,18 +213,19 @@
     .mt-xl{
         margin-top: 4rem!important;
     }
+    .box-fase1-dit p{
+        margin-left: 1.5rem
+    }
     .box-fase1-dit img{
-        width: 10rem;
+        width: 13.5rem;
     }
-    .mt-4-fase{
-        margin-top: 4rem;
-    }
+    
     .box-infografia{
         padding-top: 4rem;
     }
     .box-infografia h6{
-        font-size: 1.45rem;
-        width: 47%;
+        font-size: 1.5rem;
+        width: 65%;
         margin: auto
     }
     .info-desktop{
@@ -213,13 +259,15 @@
         width: 50%
     }
     .btn-fase-celeste{
-        margin: 0 auto;
-        font-size: 1.3rem;
+        /* margin: 0 auto; */
+        font-size: 1.2rem;
         line-height: 1.5rem
     }
     .btn-fase-naranja{
-        margin: 0 auto;
-        font-size: 1.3rem;
-        line-height: 1.5rem
+        /* margin: 0 auto; */
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        padding: 1.45rem 0rem;
+        width: 72%;
     }
 }

@@ -1,7 +1,7 @@
 .fase2{
     margin-top: 4.5rem;
-    /* background-image: url("../../images/fase1-img/fondo_fase1.png"); */
-    background-color: #2E335E;
+    background-image: url("../../images/fase2-img/fondo_fase_2_mobile.png");
+    /* background-color: #2E335E; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -10,7 +10,7 @@
     position: relative;
 }
 
-.star-left-mobile{
+/* .star-left-mobile{
     position: absolute;
     left: 10%;
     top: 12%;
@@ -20,6 +20,21 @@
     position: absolute;
     right: 10%;
     top: 12%;
+} */
+
+
+.titulo-numero-fase2{
+    font-family: 'Questrial';
+    font-size: .89rem;
+    color: #fff;
+    margin-bottom: 0rem;
+}
+
+.titulo-fase2{
+    font-family: 'Questrial';
+    font-size: 1.2rem;
+    color: #fff;
+    -webkit-text-stroke: 1px #fff;
 }
 .btn-fase2{
     font-family: 'Questrial';
@@ -30,11 +45,13 @@
     margin: 0 auto;
     text-align: center;
     background: #fff;
-    border: 2px solid #f3eeee;
+    border: 1px solid #f3eeee;
     border-radius: 1.1rem ;
     padding: .9rem 0rem;
     margin-top: 1rem;
     cursor: pointer;
+    box-shadow: 1px 1px 1px 1px #e7e2e2;
+    text-decoration: none;
 }
 .btn-fase-piloto{
     font-family: 'Questrial';
@@ -45,26 +62,29 @@
     margin: 0 auto;
     text-align: center;
     background: #F7B919;
-    border: 2px solid #f7e6ba;
+    border: 1px solid #f7e6ba;
     border-radius: 1.1rem;
     padding: .9rem 0rem;
     color: #fff;
     margin-top: 1rem;
     cursor: pointer;
+    text-decoration: none;
+    box-shadow: 1px 1px 1px 1px #e7e2e2;
 }
 
 .btn-fase2:hover,
 .btn-fase2:focus{
-    box-shadow: 1px 2px 2px 1px #f3eeee;
+    box-shadow: 13px solid #f3eeee;
     text-decoration: none;
-    font-size: 1.5rem
+    font-size: 1.4rem
 }
 
 .btn-fase-piloto:hover,
 .btn-fase-piloto:focus{
     box-shadow: 1px 2px 2px 1px #f7e6ba;
     text-decoration: none;
-    font-size: 1.5em
+    font-size: 1.4em;
+    color: #fff!important;
 }
 .box-botones-fase2{
     display: flex;
@@ -91,42 +111,51 @@
 
 @media (min-width: 769px){
     .fase2{
-        margin-top: 6rem;
-        padding:5rem 5rem 7rem 5rem;
+        margin-top: 5rem;
+        padding:5rem 5rem 6rem 5rem;
+        background-image: url("../../images/fase2-img/fondo_fase_2_desktop.png");
+        background-position: top center;
+    }
+    .titulo-fase2{
+        font-size: 2.5rem
+    }
+   
+    .titulo-numero-fase2{
+        font-size: 1.7rem
     }
     .box-botones-fase2{
         margin-bottom: -12rem;
-        top: -6rem;
+        top: -5rem;
         
     }
     .btn-fase2{
         width: 25%;
         margin-top: 2rem;
-        font-size: 2.4rem;
+        font-size: 2.2rem;
         border-radius: 2rem;
         box-shadow: 1px 1px #f3eeee;
     }
     .btn-fase-piloto{
         width: 25%;
         margin-top: 2rem;
-        font-size: 2.4rem;
+        font-size: 2.2rem;
         border-radius: 2rem;
         box-shadow: 1px 1px #f7e6ba;
     }
     .cohete-fase2{
-        width: 20%;
-        bottom: -12rem;
+        width: 12%;
+        bottom: -9rem;
     }
     
     .btn-fase2:hover,
     .btn-fase2:focus{
-        font-size: 2.6rem;
+        font-size: 2.3rem;
         box-shadow: 2px 2px 2px 2px #f3eeee;
     }
     
     .btn-fase-piloto:hover,
     .btn-fase-piloto:focus{
-        font-size: 2.6rem;
+        font-size: 2.3rem;
         box-shadow: 2px 2px 2px 2px #f7e6ba;
     }
 }
