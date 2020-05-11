@@ -57,6 +57,19 @@
    
 }
 
+.sub-Item{
+    margin-left: 2rem;
+}
+
+.is-activeHomeMobile{
+    font-weight: bold!important;
+}
+
+.list-sidedraw a:hover{
+    text-decoration: none;
+    font-weight: 500;
+    color:#ffffff ;
+}
 @media(min-width: 768px){
     .side-drawer{
         display: none;

@@ -9,12 +9,16 @@ const firebaseConfig = {
     projectId: "volar-web-18e43",
     storageBucket: "volar-web-18e43.appspot.com",
     messagingSenderId: "353667435584",
-    appId: "1:353667435584:web:6f99e2bb504a5993dea3a5"
+    appId: "1:353667435584:web:6f99e2bb504a5993dea3a5",
+
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+
 
 const db = firebase.firestore();
 const auth = firebase.auth();
 
 export {db, auth,firebase }
+
+

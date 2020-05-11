@@ -2,36 +2,70 @@ import React from "react";
 import "../../aprendamos/cuidador/registroNiños.css";
 import "../../aprendamos/aprendamos.css";
 import "../../../App.css";
-import { BrowserRouter as Router, Route, Link, withRouter } from "react-router-dom";
+import "./perfil.css";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  withRouter,
+} from "react-router-dom";
 import arrowLeft from "./../../../images/arrow-left-blue.svg";
 import arrowRight from "./../../../images/arrow-right-blue.svg";
-import { auth,db } from "../../../components/firebase/firebase";
-const Perfil = (props) => {
+import { auth, db } from "../../../components/firebase/firebase";
+import { useCollection } from "react-firebase-hooks/firestore";
+import childA from "./../../../images/child-a.svg";
+import childO from "./../../../images/child-o.svg";
 
-  const [emailEdit, setEmailEdit] = React.useState('');
-  const [nameEdit, setNameEdit] = React.useState('');
-  const [lastNameEdit, setLastNameEdit] = React.useState('');
-  const [dataPerfil, setDataPerfil]=React.useState('')
-  const [departamentos, setDepartamentos]=React.useState([]);
-  const [provincias, setProvincias]=React.useState([]);
-  const [distritos, setDistritos]=React.useState([]);
-  const [departamentoElegido, setDepartamentoElegido]=React.useState('')
-  const [departamentoElegidoKey, setDepartamentoElegidoKey]=React.useState('')
-  const [provinciaElegido, setProvinciaElegido]=React.useState('')
-  const [provinciaElegidoKey, setProvinciaElegidoKey]=React.useState('')
-  const [distritoElegido, setDistritoElegido]=React.useState('')
-  const  [colaboradorBreca, setColaboradorBreca]=React.useState('')
-  const  [codigoBreca, setCodigoBreca]=React.useState('')
+const Perfil = (props) => {
+  const [emailEdit, setEmailEdit] = React.useState("");
+  const [nameEdit, setNameEdit] = React.useState("");
+  const [lastNameEdit, setLastNameEdit] = React.useState("");
+  const [dataPerfil, setDataPerfil] = React.useState("");
+  const [dataPerfilChild, setDataPerfilChild] = React.useState("")
+  const [departamentos, setDepartamentos] = React.useState([]);
+  const [provincias, setProvincias] = React.useState([]);
+  const [distritos, setDistritos] = React.useState([]);
+  const [departamentoElegido, setDepartamentoElegido] = React.useState("");
+  const [departamentoElegidoKey, setDepartamentoElegidoKey] = React.useState(
+    ""
+  );
+  const [provinciaElegido, setProvinciaElegido] = React.useState("");
+  const [provinciaElegidoKey, setProvinciaElegidoKey] = React.useState("");
+  const [distritoElegido, setDistritoElegido] = React.useState("");
+  const [colaboradorBreca, setColaboradorBreca] = React.useState("");
+  const [codigoBreca, setCodigoBreca] = React.useState("");
   const [error, setError] = React.useState(null);
+  const [guardado, setGuardado] = React.useState(null);
+  const [editNameChild, setEditNameChild] = React.useState("");
+  const [editSexoChild, setEditSexoChild] = React.useState("");
+  const [editFechaNacimientoChild, setEditFechaNacimientoChild] = React.useState("");
+  const [editRelationshipChild, setEditRelationshipChild] = React.useState(
+    ""
+  );
+  const [idChild, setIdChild] = React.useState(null);
+  const [errorChild, setErrorChild] = React.useState(null);
+  const [guardadoChild, setGuardadoChild] = React.useState(null);
+  const [editEdadChild, setEditEdadChild] = React.useState('');
+
+
+  
+  const [usuarioChild] = useCollection(
+    db
+      .collection("usuarios")
+      .doc(props.firebaseUser.uid)
+      .collection("addChild"),
+    {
+      snapshotListenOptions: { includeMetadataChanges: true },
+    }
+  );
 
   React.useEffect(() => {
-
     if (props.firebaseUser !== null) {
       const perfilUser = db.collection("usuarios").doc(props.firebaseUser.uid);
       perfilUser
         .get()
         .then((doc) => {
-          setDataPerfil(doc.data())
+          setDataPerfil(doc.data());
           setEmailEdit(doc.data().email);
           setNameEdit(doc.data().nombre);
           setLastNameEdit(doc.data().apellido);
@@ -42,205 +76,772 @@ const Perfil = (props) => {
           setColaboradorBreca(doc.data().breca);
           setDepartamentoElegidoKey(doc.data().departamentoKey);
           setProvinciaElegidoKey(doc.data().provinciaKey);
-
         })
         .catch(function (error) {
           console.log("Error getting document:", error);
         });
+      if (idChild !== null) {
+        const perfilUserChild = db
+          .collection("usuarios")
+          .doc(props.firebaseUser.uid)
+          .collection("addChild")
+          .doc(idChild);
+        perfilUserChild
+          .get()
+          .then((item) => {
+            setDataPerfilChild(item.data())
+            setEditNameChild(item.data().nameChild);
+            setEditSexoChild(item.data().sexoChild);
+            setEditFechaNacimientoChild(item.data().nacimientoChild);
+            setEditRelationshipChild(item.data().relationshipChild);
+          })
+          .catch(function (error) {
+            console.log("Error getting document:", error);
+          });
+      }
     }
 
-    fetch('formularioJson/departamentos.json')
-    .then(response=> response.json())
-    .then(datos=>{
-      setDepartamentos(datos)
-    })
+    fetch("formularioJson/departamentos.json")
+      .then((response) => response.json())
+      .then((datos) => {
+        setDepartamentos(datos);
+      });
 
-    fetch('formularioJson/provincias.json')
-    .then(response=> response.json())
-    .then(datos=>{
-      setProvincias(datos)
-    })
-    
-    fetch('formularioJson/distritos.json')
-    .then(response=> response.json())
-    .then(datos=>{
-      setDistritos(datos)
-    })
+    fetch("formularioJson/provincias.json")
+      .then((response) => response.json())
+      .then((datos) => {
+        setProvincias(datos);
+      });
 
-  },[props.firebaseUser])
-  
+    fetch("formularioJson/distritos.json")
+      .then((response) => response.json())
+      .then((datos) => {
+        setDistritos(datos);
+      });
+       console.log("judith", editFechaNacimientoChild)
+      if(editFechaNacimientoChild!==""){
+        const birthday=new Date(editFechaNacimientoChild.split('-').join('/'));
+        const ageDifMs = Date.now() - birthday.getTime();
+      const ageDate = new Date(ageDifMs); 
+      setEditEdadChild(Math.abs(ageDate.getUTCFullYear() - 1970))
+      }
+  }, [props.firebaseUser, idChild, editFechaNacimientoChild]);
 
-const handleInputChangeDepartamento=(event)=>{
-  setDepartamentoElegido(event.target.value)
-  const selectedIndex = event.target.options.selectedIndex;
-  setDepartamentoElegidoKey(event.target.options[selectedIndex].getAttribute('data-key'));
-}
+  const handleInputChangeDepartamento = (event) => {
+    setDepartamentoElegido(event.target.value);
+    const selectedIndex = event.target.options.selectedIndex;
+    setDepartamentoElegidoKey(
+      event.target.options[selectedIndex].getAttribute("data-key")
+    );
+  };
+  console.log("edadChild", editEdadChild)
+  const handleInputChangeProvincia = (event) => {
+    setProvinciaElegido(event.target.value);
+    const selectedIndex = event.target.options.selectedIndex;
+    setProvinciaElegidoKey(
+      event.target.options[selectedIndex].getAttribute("data-key")
+    );
+  };
 
-const handleInputChangeProvincia=(event)=>{
-  setProvinciaElegido(event.target.value)
-  const selectedIndex = event.target.options.selectedIndex;
-  setProvinciaElegidoKey(event.target.options[selectedIndex].getAttribute('data-key'));
-}
+  const procesarDatosPerfil = (e) => {
+    e.preventDefault();
 
-const procesarDatosPerfil = (e) => {
-  e.preventDefault();
-  if (!nameEdit.trim()) {
-    setError("Ingrese tu nombre");
-    return;
-  }
-  if (!lastNameEdit.trim()) {
-    setError("Ingrese tu apellido");
-    return;
-  }
-  if (!emailEdit.trim()) {
-    setError("Ingrese su  email");
-    return;
-  }
-  if (!departamentoElegido.trim()) {
-    setError("Seleccione un departamento");
-    return;
-  }
-  if (!provinciaElegido.trim()) {
-    setError("Seleccione una provincia");
-    return;
-  }
-  if (!distritoElegido.trim()) {
-    setError("Seleccione un distrito");
-    return;
-  }
-  if(!colaboradorBreca.trim()){
+    setGuardado(null);
+    if (!nameEdit.trim()) {
+      setError("Ingrese tu nombre");
+      return;
+    }
+    if (!lastNameEdit.trim()) {
+      setError("Ingrese tu apellido");
+      return;
+    }
+    if (!emailEdit.trim()) {
+      setError("Ingrese su  email");
+      return;
+    }
+    if (!departamentoElegido.trim()) {
+      setError("Seleccione un departamento");
+      return;
+    }
+    if (!provinciaElegido.trim()) {
+      setError("Seleccione una provincia");
+      return;
+    }
+    if (!distritoElegido.trim()) {
+      setError("Seleccione un distrito");
+      return;
+    }
+    if (!colaboradorBreca.trim()) {
       setError("Seleccione si es colaborador breca");
       return;
-  }
+    }
 
-  if(colaboradorBreca==='SI' && !codigoBreca.trim()){
-    setError("Colocar código Breca");
-    return;
-}
+    if (colaboradorBreca === "SI" && !codigoBreca.trim()) {
+      setError("Colocar código Breca");
+      return;
+    }
 
-      editarPerfil();
+    editarPerfil();
+    setError(null);
+  };
+  const editarPerfil = async (e) => {
+    try {
+      await db
+        .collection("usuarios")
+        .doc(props.firebaseUser.uid)
+        .update({
+          ...dataPerfil,
+          nombre: nameEdit,
+          apellido: lastNameEdit,
+          email: emailEdit,
+          departamento: departamentoElegido,
+          provincia: provinciaElegido,
+          distrito: distritoElegido,
+          breca: colaboradorBreca,
+          codigoBreca: codigoBreca,
+          departamentoKey: departamentoElegidoKey,
+          provinciaKey: provinciaElegidoKey,
+        });
 
-  setError(null);
-};
-const editarPerfil = async (e) => {
-try {
-    await db.collection("usuarios").doc(props.firebaseUser.uid).update({
-     ...dataPerfil,
-     nombre:nameEdit,
-     apellido:lastNameEdit,
-     email:emailEdit,
-     departamento:departamentoElegido,
-     provincia:provinciaElegido,
-     distrito:distritoElegido,
-     breca:colaboradorBreca,
-     codigoBreca:codigoBreca,
-     departamentoKey:departamentoElegidoKey,
-     provinciaKey:provinciaElegidoKey
-    })
-    props.history.push("/aprendamos/cuidador")
-  } catch (error) {
-    console.log(error);
-};
-}
-  return(
+      setGuardado("Tu  perfil ha sido guardo exitosamente");
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const activarEdicion = (item) => {
+    /*  setEditNameChild(item.data().nameChild);
+    setEditSexo(item.data().sexoChild);
+    setEditFechaNacimiento(item.data().nacimientoChild);
+    setEditRelationshipChild(item.data().relationshipChild);*/
+    setIdChild(item.id);
+  };
+  
+
+  
+
+  const procesarDatosPerfilChild = (e) => {
+    e.preventDefault();
+    if (!editNameChild.trim()) {
+      setErrorChild("Agregar nombre del niño(a)");
+      return;
+    }
+    if (!editSexoChild.trim()) {
+      setErrorChild("Agregar sexo del niño(a)");
+      return;
+    }
+    if (!editFechaNacimientoChild.trim()) {
+      setErrorChild("Agregar fecha de nacimiento");
+      return;
+    }
+    if (!editRelationshipChild.trim()) {
+      setErrorChild("Agregue el parentesco con el niño(a)");
+      return;
+    }
+     
+
+    updateChild()
+    setErrorChild(null);
+  };
+
+  const updateChild = async (e) => {
+    try {
+      await db
+        .collection("usuarios")
+        .doc(props.firebaseUser.uid)
+        .collection("addChild")
+        .doc(idChild)
+        .update({
+          ...dataPerfilChild,
+          nameChild: editNameChild,
+          sexoChild: editSexoChild,
+          nacimientoChild: editFechaNacimientoChild,
+          relationshipChild: editRelationshipChild,
+          edadChild:editEdadChild
+        });
+
+      setGuardadoChild("El perfil de tu niño a sido editado");
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  const eliminar = async (id) => {
+    try {
+      await db
+        .collection("usuarios")
+        .doc(props.firebaseUser.uid)
+        .collection("addChild")
+        .doc(id)
+        .delete();
+
+      /*  const arrayFiltrado = tareas.filter((item) => item.id !== id);
+      setTareas(arrayFiltrado);*/
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  return (
     <div className="container">
       <div className="register-child">
         <div className="row">
           <h2 className="subtittle-register-child">Actualizar Perfil</h2>
         </div>
-        <div className="list-register">
-          <form onSubmit={procesarDatosPerfil}>
-          {error && <div className="alert alert-danger">{error}</div>}
-            <p className="letter-register">NOMBRE:</p>
-            <input
-              className="input-register-space"
-              type="text"
-              placeholder="Nombre"
-              name="nombre"
-              onChange={(e) => setNameEdit(e.target.value)}
-              value={nameEdit}
-            />
-            <p className="letter-register">APELLIDO:</p>
-            <input
-              className="input-register-space"
-              type="text"
-              placeholder="Apellido"
-              name="apellido"
-              onChange={(e) => setLastNameEdit(e.target.value)}
-              value={lastNameEdit}
-            />
-            <p className="letter-register">CORREO:</p>
-            <input
-              className="input-register-space"
-              type="text"
-              placeholder="Email"
-              name="email"
-              onChange={(e) => setEmailEdit(e.target.value)}
-              value={emailEdit}
-            />
-            <p className="letter-register">DEPARTAMENTO</p>
-            <select className="select-register-space"
-            onChange={handleInputChangeDepartamento}
-            value={departamentoElegido}>
-              <option>---SELECCIONA---</option>
-             {departamentos.map(item=>(
-                <option key={item.id} data-key={item.id}>{item.name}</option>
-             ))} 
-            </select>
-            <p className="letter-register">PROVINCIA</p>
-            <select className="select-register-space"
-            onChange={handleInputChangeProvincia}
-            value={provinciaElegido}
-            >
-              <option>---SELECCIONA---</option>
-              {provincias.map(item=>(
-             item.department_id===departamentoElegidoKey?<option key={item.id} data-key={item.id}>{item.name}</option>:null
-             ))}
-            </select>
-            <p className="letter-register">DISTRITO</p>
-            <select className="select-register-space"
-            onChange={(e)=>setDistritoElegido(e.target.value)}
-            value={distritoElegido}>
-            <option>---SELECCIONA---</option>
-              {distritos.map(item=>(
-             item.province_id===provinciaElegidoKey?<option key={item.id}  data-key={item.id}>{item.name}</option>:null
-             ))}
-            </select>
-            <p className="letter-register">COLABORADOR BRECA</p>
+        {usuarioChild && (
+          <div>
+            {usuarioChild.docs.length === 0 ? (
+              <div className="list-register">
+                <form onSubmit={procesarDatosPerfil}>
+                  {error && <div className="alert alert-danger">{error}</div>}
+                  {guardado && (
+                    <div className="alert alert-success">{guardado}</div>
+                  )}
+                  <div className="row">
+                    <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                      <p className="letter-register">NOMBRE:</p>
+                      <input
+                        className="input-register-space"
+                        type="text"
+                        placeholder="Nombre"
+                        name="nombre"
+                        onChange={(e) => setNameEdit(e.target.value)}
+                        value={nameEdit}
+                      />
+                    </div>
+                    <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                      <p className="letter-register">APELLIDO:</p>
+                      <input
+                        className="input-register-space"
+                        type="text"
+                        placeholder="Apellido"
+                        name="apellido"
+                        onChange={(e) => setLastNameEdit(e.target.value)}
+                        value={lastNameEdit}
+                      />
+                    </div>
+                  </div>
+                  <p className="letter-register">CORREO:</p>
+                  <input
+                    className="input-register-space"
+                    type="text"
+                    placeholder="Email"
+                    name="email"
+                    onChange={(e) => setEmailEdit(e.target.value)}
+                    value={emailEdit}
+                  />
+                  <div className="row">
+                    <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                      <p className="letter-register">DEPARTAMENTO</p>
+                      <select
+                        className="select-register-space"
+                        onChange={handleInputChangeDepartamento}
+                        value={departamentoElegido}
+                      >
+                        <option>---SELECCIONA---</option>
+                        {departamentos.map((item) => (
+                          <option key={item.id} data-key={item.id}>
+                            {item.name}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+                    <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                      <p className="letter-register">PROVINCIA</p>
+                      <select
+                        className="select-register-space"
+                        onChange={handleInputChangeProvincia}
+                        value={provinciaElegido}
+                      >
+                        <option>---SELECCIONA---</option>
+                        {provincias.map((item) =>
+                          item.department_id === departamentoElegidoKey ? (
+                            <option key={item.id} data-key={item.id}>
+                              {item.name}
+                            </option>
+                          ) : null
+                        )}
+                      </select>
+                    </div>
+                    <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                      <p className="letter-register">DISTRITO</p>
+                      <select
+                        className="select-register-space"
+                        onChange={(e) => setDistritoElegido(e.target.value)}
+                        value={distritoElegido}
+                      >
+                        <option>---SELECCIONA---</option>
+                        {distritos.map((item) =>
+                          item.province_id === provinciaElegidoKey ? (
+                            <option key={item.id} data-key={item.id}>
+                              {item.name}
+                            </option>
+                          ) : null
+                        )}
+                      </select>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                      <p className="letter-register">COLABORADOR BRECA</p>
 
-            <label className="style-radio">
-              <input type="radio" name="breca" value="SI"  onChange={(e)=>setColaboradorBreca(e.target.value)}
-              checked={colaboradorBreca === "SI"} />
-              <span className="radio"></span>
-              <span className="text">SI</span>
-            </label>
+                      <label className="style-radio">
+                        <input
+                          type="radio"
+                          name="breca"
+                          value="SI"
+                          onChange={(e) => setColaboradorBreca(e.target.value)}
+                          checked={colaboradorBreca === "SI"}
+                        />
+                        <span className="radio"></span>
+                        <span className="text">SI</span>
+                      </label>
 
-            <label className="style-radio">
-              <input type="radio" name="breca" value="NO" onChange={(e)=>setColaboradorBreca(e.target.value)}
-               checked={colaboradorBreca === "NO"}/>
-              <span className="radio"></span>
-              <span className="text">NO</span>
-            </label>
-             {colaboradorBreca==="SI" ? 
-           <>  
-             <p className="letter-register">CÓDIGO COLABORADOR BRECA</p>
-             <input
-              className="input-register-space"
-              type="text"
-              placeholder="Código"
-              name="códigoBreca"
-              onChange={(e)=>setCodigoBreca(e.target.value)}
-              value={codigoBreca}
-            /> </>:null
+                      <label className="style-radio">
+                        <input
+                          type="radio"
+                          name="breca"
+                          value="NO"
+                          onChange={(e) => setColaboradorBreca(e.target.value)}
+                          checked={colaboradorBreca === "NO"}
+                        />
+                        <span className="radio"></span>
+                        <span className="text">NO</span>
+                      </label>
+                    </div>
+                    <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                      {colaboradorBreca === "SI" ? (
+                        <>
+                          <p className="letter-register">
+                            CÓDIGO COLABORADOR BRECA
+                          </p>
+                          <input
+                            className="input-register-space"
+                            type="text"
+                            placeholder="Código"
+                            name="códigoBreca"
+                            onChange={(e) => setCodigoBreca(e.target.value)}
+                            value={codigoBreca}
+                          />
+                        </>
+                      ) : null}
+                    </div>
+                  </div>
+                  <div className="row mt-4">
+                    <div className="col-sm-10 col-md-10 col-lg-10 col-xl-10">
+                      <button
+                        className="btn-navy-blue text-white"
+                        type="submit"
+                      >
+                        <img src={arrowLeft} className="arrow-blue"></img>
+                        GUARDAR
+                        <img src={arrowRight} className="arrow-blue"></img>
+                      </button>
+                    </div>
+                    <div className="col-sm-2 col-md-2 col-lg-2 col-xl-2 mt-3">
+                      <Link className="siguiente" to="/registro-niño">
+                        Siguiente &gt;
+                      </Link>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            ) : (
+              <div className="list-register2">
+                <div className="row">
+                  <div className="col-sm-12 col-md-12	col-lg-6 col-xl-6">
+                    <p className="subtitulo-perfil">Datos Generales</p>
+                    <form onSubmit={procesarDatosPerfil}>
+                      {error && (
+                        <div className="alert alert-danger">{error}</div>
+                      )}
+                      {guardado && (
+                        <div className="alert alert-success">{guardado}</div>
+                      )}
+                      <div className="row">
+                        <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                          <p className="letter-register">NOMBRE:</p>
+                          <input
+                            className="input-register-space"
+                            type="text"
+                            placeholder="Nombre"
+                            name="nombre"
+                            onChange={(e) => setNameEdit(e.target.value)}
+                            value={nameEdit}
+                          />
+                        </div>
+                        <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                          <p className="letter-register">APELLIDO:</p>
+                          <input
+                            className="input-register-space"
+                            type="text"
+                            placeholder="Apellido"
+                            name="apellido"
+                            onChange={(e) => setLastNameEdit(e.target.value)}
+                            value={lastNameEdit}
+                          />
+                        </div>
+                      </div>
+                      <p className="letter-register">CORREO:</p>
+                      <input
+                        className="input-register-space"
+                        type="text"
+                        placeholder="Email"
+                        name="email"
+                        onChange={(e) => setEmailEdit(e.target.value)}
+                        value={emailEdit}
+                      />
+                      <div className="row">
+                        <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                          <p className="letter-register">DEPARTAMENTO</p>
+                          <select
+                            className="select-register-space"
+                            onChange={handleInputChangeDepartamento}
+                            value={departamentoElegido}
+                          >
+                            <option>-SELECCIONA-</option>
+                            {departamentos.map((item) => (
+                              <option key={item.id} data-key={item.id}>
+                                {item.name}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
+                        <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                          <p className="letter-register">PROVINCIA</p>
+                          <select
+                            className="select-register-space"
+                            onChange={handleInputChangeProvincia}
+                            value={provinciaElegido}
+                          >
+                            <option>-SELECCIONA-</option>
+                            {provincias.map((item) =>
+                              item.department_id === departamentoElegidoKey ? (
+                                <option key={item.id} data-key={item.id}>
+                                  {item.name}
+                                </option>
+                              ) : null
+                            )}
+                          </select>
+                        </div>
+                        <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                          <p className="letter-register">DISTRITO</p>
+                          <select
+                            className="select-register-space"
+                            onChange={(e) => setDistritoElegido(e.target.value)}
+                            value={distritoElegido}
+                          >
+                            <option>-SELECCIONA-</option>
+                            {distritos.map((item) =>
+                              item.province_id === provinciaElegidoKey ? (
+                                <option key={item.id} data-key={item.id}>
+                                  {item.name}
+                                </option>
+                              ) : null
+                            )}
+                          </select>
+                        </div>
+                      </div>
+                      <div className="row">
+                        <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                          <p className="letter-register">COLABORADOR BRECA</p>
 
-             }
-              <button className="btn-navy-blue text-white" type="submit">
-                <img src={arrowLeft} className="arrow-blue"></img>
-                GUARDAR
-                <img src={arrowRight} className="arrow-blue"></img>
-              </button>
-          </form>
-        </div>
+                          <label className="style-radio">
+                            <input
+                              type="radio"
+                              name="breca"
+                              value="SI"
+                              onChange={(e) =>
+                                setColaboradorBreca(e.target.value)
+                              }
+                              checked={colaboradorBreca === "SI"}
+                            />
+                            <span className="radio"></span>
+                            <span className="text">SI</span>
+                          </label>
+
+                          <label className="style-radio">
+                            <input
+                              type="radio"
+                              name="breca"
+                              value="NO"
+                              onChange={(e) =>
+                                setColaboradorBreca(e.target.value)
+                              }
+                              checked={colaboradorBreca === "NO"}
+                            />
+                            <span className="radio"></span>
+                            <span className="text">NO</span>
+                          </label>
+                        </div>
+                        <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                          {colaboradorBreca === "SI" ? (
+                            <>
+                              <p className="letter-register">
+                                CÓDIGO COLABORADOR BRECA
+                              </p>
+                              <input
+                                className="input-register-space"
+                                type="text"
+                                placeholder="Código"
+                                name="códigoBreca"
+                                onChange={(e) => setCodigoBreca(e.target.value)}
+                                value={codigoBreca}
+                              />{" "}
+                            </>
+                          ) : null}
+                        </div>
+                      </div>
+                      <div className="row mt-4">
+                        <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                          <button
+                            className="btn-navy-blue text-white"
+                            type="submit"
+                          >
+                            <img src={arrowLeft} className="arrow-blue"></img>
+                            GUARDAR
+                            <img src={arrowRight} className="arrow-blue"></img>
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div className="col-sm-12 col-md-12	col-lg-6 col-xl-6">
+                    <div className="vertical-line"></div>
+                    <div className="marginPerfilChild">
+                      <p className="subtitulo-perfil">Niños:</p>
+                      {usuarioChild.docs.map((item, key) => (
+                        <div className="row">
+                          <div key={item.id} className="col-12">
+                            <div className="box-sectionChild">
+                              {item.data().sexoChild === "Femenino" ? (
+                                <img
+                                  src={childA}
+                                  className="icono-video-tip"
+                                  alt="icono de tip"
+                                />
+                              ) : (
+                                <img
+                                  src={childO}
+                                  className="icono-video-tip"
+                                  alt="icono de tip"
+                                />
+                              )}
+                              <div className="box-text-video-tip">
+                                <h3 className="subtittle-video-tip">
+                                  {item.data().nameChild}
+                                </h3>
+                                <h5 className="text-video-tip">
+                                  Edad: {item.data().edadChild}
+                                </h5>
+                              </div>
+                              <div className="btn-editar-eliminar">
+                                <button
+                                  type="button"
+                                  className="btn btn-danger btn-sm float-right"
+                                  data-toggle="modal"
+                                  data-target={"#hola" + key}
+                                >
+                                  Eliminar
+                                </button>
+                                <button
+                                  type="button"
+                                  className="btn btn-warning btn-sm float-right mr-2"
+                                  data-toggle="modal"
+                                  data-target={"#editar" + key}
+                                  onClick={() => activarEdicion(item)}
+                                >
+                                  Editar
+                                </button>
+                                <div
+                                  class="modal fade"
+                                  id={"hola" + key}
+                                  tabindex="-1"
+                                  role="dialog"
+                                  aria-labelledby="exampleModalLabel"
+                                  aria-hidden="true"
+                                >
+                                  <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-body texto-modal">
+                                        ¿Estás seguro de querer borrar el perfil
+                                        de {item.data().nameChild}?
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button
+                                          type="button"
+                                          class="btn btn-secondary"
+                                          data-dismiss="modal"
+                                        >
+                                          Close
+                                        </button>
+                                        <button
+                                          type="button"
+                                          class="btn btn-primary"
+                                          data-dismiss="modal"
+                                          onClick={() => eliminar(item.id)}
+                                        >
+                                          Eliminar
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="modal fade"
+                                  id={"editar" + key}
+                                  tabindex="-1"
+                                  role="dialog"
+                                  aria-labelledby="exampleModalLabel"
+                                  aria-hidden="true"
+                                >
+                                  <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5
+                                          class="modal-title"
+                                          id="exampleModalLabel"
+                                        >
+                                          Editar datos del niño
+                                        </h5>
+                                        <button
+                                          type="button"
+                                          class="close"
+                                          data-dismiss="modal"
+                                          aria-label="Close"
+                                        >
+                                          <span aria-hidden="true">
+                                            &times;
+                                          </span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <form onSubmit={procesarDatosPerfilChild}>
+                                          {errorChild && (
+                                            <div className="alert alert-danger">
+                                              {errorChild}
+                                            </div>
+                                          )}
+                                          {guardadoChild && (
+                                            <div className="alert alert-success">
+                                              {guardadoChild}
+                                            </div>
+                                          )}
+                                          <div className="row">
+                                            <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                              <p className="letter-register">
+                                                NOMBRE DE NIÑO:
+                                              </p>
+                                              <input
+                                                className="input-register-space"
+                                                type="text"
+                                                placeholder="Nombre del niño(a)"
+                                                name="nameChild"
+                                                onChange={(e) =>
+                                                  setEditNameChild(
+                                                    e.target.value
+                                                  )
+                                                }
+                                                value={editNameChild}
+                                              />
+                                            </div>
+                                          
+                                            <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                              <p className="letter-register">
+                                                SEXO:
+                                              </p>
+                                              <select
+                                                className="select-register-space"
+                                                onChange={(e) =>
+                                                  setEditSexoChild(e.target.value)
+                                                }
+                                                value={editSexoChild}
+                                              >
+                                                <option>
+                                                  ---SELECCIONA---
+                                                </option>
+                                                <option>Masculino</option>
+                                                <option>Femenino</option>
+                                              </select>
+                                            </div>
+                                          </div>
+                                          <div className="row">
+                                            <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                              <p className="letter-register">
+                                                FECHA DE NACIMIENTO:
+                                              </p>
+                                              <input
+                                                className="input-register-space"
+                                                type="date"
+                                                name="editFechaNacimientoChild"
+                                                onChange={(e) =>
+                                                  setEditFechaNacimientoChild(
+                                                    e.target.value
+                                                  )
+                                                }
+                                                value={editFechaNacimientoChild}
+                                              />
+                                              <p>{editFechaNacimientoChild}</p>
+                                            </div>
+                                            <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                              <p className="letter-register">
+                                                PARENTESCO CON EL NIÑO(A):
+                                              </p>
+                                              <select
+                                                className="select-register-space"
+                                                onChange={(e) =>
+                                                  setEditRelationshipChild(
+                                                    e.target.value
+                                                  )
+                                                }
+                                                value={editRelationshipChild}
+                                              >
+                                                <option>
+                                                  ---SELECCIONA---
+                                                </option>
+                                                <option>Mamá</option>
+                                                <option>Papá</option>
+                                                <option>Abuelo(a)</option>
+                                                <option>Tío(a)</option>
+                                                <option>Otros</option>
+                                              </select>
+                                            </div>
+                                          </div>
+                                          <button
+                                            className="btn-navy-blue text-white"
+                                            type="submit"
+                                            
+                                          >
+                                            <img
+                                              src={arrowLeft}
+                                              className="arrow-blue"
+                                            ></img>
+                                            GUARDAR
+                                            <img
+                                              src={arrowRight}
+                                              className="arrow-blue"
+                                            ></img>
+                                          </button>
+                                        </form>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                      <Link className="addChild" to="/registro-niño">
+                        + AGREGAR NIÑO
+                        <img src={arrowLeft} className="arrow-blue"></img>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );

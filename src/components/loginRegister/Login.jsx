@@ -37,7 +37,7 @@ const Login = (props) => {
       setPassword('')
       setEmail('')
       setError(null)
-      props.history.push("/aprendamos/cuidador")
+      props.history.push("/")
     } catch (error) {
       console.log(error);
       if(error.code==="auth/invalid-email"){
@@ -61,17 +61,25 @@ const Login = (props) => {
         nombre:'tarea de ejemplo',
         fecha:Date.now()
       })*/
+
       await db.collection("usuarios").doc(res.user.uid).set({
         email: res.user.email,
         uid: res.user.uid,
-        nombre: res.user.displayName,
-        apellido: "",
+        nombre:res.user.displayName.split(' ')[0] ,
+        apellido: res.user.displayName.split(' ')[2],
+        departamento:"",
+        provincia:"",
+        distrito:"",
+        breca:"",
+        codigoBreca:"",
+        departamentoKey:"",
+        provinciaKey:"",
         tipo: "cuidador",
       });
       setPassword("");
       setEmail("");
       setError(null);
-      props.history.push("/aprendamos/cuidador");
+      props.history.push("/");
     } catch (error) {
       console.log(error);
       if (error.code === "auth/invalid-email") {
@@ -94,14 +102,21 @@ const Login = (props) => {
       await db.collection("usuarios").doc(res.user.uid).set({
         email: res.user.email,
         uid: res.user.uid,
-        nombre: res.user.displayName,
-        apellido: "",
+        nombre:res.user.displayName.split(' ')[0] ,
+        apellido: res.user.displayName.split(' ')[2],
+        departamento:"",
+        provincia:"",
+        distrito:"",
+        breca:"",
+        codigoBreca:"",
+        departamentoKey:"",
+        provinciaKey:"",
         tipo: "cuidador",
       });
       setPassword("");
       setEmail("");
       setError(null);
-      props.history.push("/aprendamos/cuidador");
+      props.history.push("/");
     } catch (error) {
       console.log(error);
       if (error.code === "auth/invalid-email") {

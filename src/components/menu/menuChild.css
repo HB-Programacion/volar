@@ -1,0 +1,56 @@
+.margin-top{
+    margin-top: 10rem;
+    margin-bottom: -4rem;
+    background-color: #2175bc!important;
+}
+
+.nav-child{
+    background-color: #2175bc;
+    padding-left: 1rem!important;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+}
+.button {
+    padding: 0;
+    display: flex;
+    }
+   
+ .item {
+    display: inline;
+    font-family: 'Questrial';
+    font-size: 1.2rem;
+    text-decoration: none!important;
+    float: left;
+    padding: 10px;
+    background-color: #2175bc;
+    color: #fff;
+    text-transform: uppercase;
+    }
+
+.is-active{
+        font-weight: bold !important;
+
+    }
+
+    @media (max-width: 768px) {
+        .margin-top{
+            margin-top: 8.5rem;
+            margin-bottom: -4rem;
+            background-color: #2175bc!important;
+        }
+
+        .item {
+            display: inline;
+            font-family: 'Questrial';
+            font-size: 0.8rem;
+            text-decoration: none!important;
+            float: left;
+            padding: 10px;
+            background-color: #2175bc;
+            color: #fff;
+            text-transform: uppercase;
+            }
+      }
+      

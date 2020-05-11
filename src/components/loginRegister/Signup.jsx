@@ -75,9 +75,9 @@ const Signup = (props) => {
       setPassword("");
       setEmail("");
       setError(null);
-      props.history.push("perfil");
+      props.history.push("/perfil");
     } catch (error) {
-      console.log(error);
+      console.log("hola");
       if (error.code === "auth/invalid-email") {
         setError("Email no válido");
       } else if (error.code === "auth/email-already-in-use") {
@@ -98,21 +98,21 @@ const Signup = (props) => {
       await db.collection("usuarios").doc(res.user.uid).set({
         email: res.user.email,
         uid: res.user.uid,
-        nombre: res.user.displayName,
-        apellido: "",
+        nombre:res.user.displayName.split(' ')[0] ,
+        apellido: res.user.displayName.split(' ')[2],
+        departamento:"",
+        provincia:"",
+        distrito:"",
+        breca:"",
+        codigoBreca:"",
+        departamentoKey:"",
+        provinciaKey:"",
         tipo: "cuidador",
       });
-      setPassword("");
-      setEmail("");
       setError(null);
-      props.history.push("/aprendamos/cuidador");
+      props.history.push("/perfil");
     } catch (error) {
       console.log(error);
-      if (error.code === "auth/invalid-email") {
-        setError("Email no válido");
-      } else if (error.code === "auth/email-already-in-use") {
-        setError("Email ya utilizado");
-      }
     }
   }, [props.history]);
   
@@ -128,21 +128,21 @@ const Signup = (props) => {
       await db.collection("usuarios").doc(res.user.uid).set({
         email: res.user.email,
         uid: res.user.uid,
-        nombre: res.user.displayName,
-        apellido: "",
+        nombre:res.user.displayName.split(' ')[0] ,
+        apellido: res.user.displayName.split(' ')[2],
         tipo: "cuidador",
+        departamento:"",
+        provincia:"",
+        distrito:"",
+        breca:"",
+        codigoBreca:"",
+        departamentoKey:"",
+        provinciaKey:"",
       });
-      setPassword("");
-      setEmail("");
       setError(null);
-      props.history.push("/aprendamos/cuidador");
+      props.history.push("/perfil");
     } catch (error) {
       console.log(error);
-      if (error.code === "auth/invalid-email") {
-        setError("Email no válido");
-      } else if (error.code === "auth/email-already-in-use") {
-        setError("Email ya utilizado");
-      }
     }
   }, [ props.history]);
 
@@ -222,7 +222,7 @@ const Signup = (props) => {
             </div>
           </div>
           <div className="box-text-a">
-            <Link className="text-a" to="/">
+            <Link className="text-a" to="/aprendamos/cuidador/registro-niños">
               Pruebe un consejo antes de crear una cuenta
             </Link>
           </div>

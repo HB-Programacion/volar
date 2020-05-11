@@ -1,0 +1,96 @@
+.siguiente{
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: "Questrial";
+}
+
+.subtitulo-perfil{
+    font-size: 1.4rem;
+    font-family: "Questrial";
+    margin-top: 1rem;
+    color: #2E335E;
+    font-weight: 800;
+}
+
+
+.addChild{
+    margin-top:1rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+    float: right;
+    font-family: "Questrial";
+    color: #2E335E;
+}
+
+.box-sectionChild {
+    background-color: #ffffff;
+    box-shadow: 0 0 2px rgb(134, 129, 129);
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 20px;
+    display: flex;
+  }
+  
+.vertical-line{
+    width: 0.2rem; /* Line width */
+    background-color: #2E335E; /* Line color */
+    height: 100%; /* Override in-line if you want specific height. */
+    float: left; /* Causes the line to float to left of content. 
+      You can instead use position:absolute or display:inline-block
+      if this fits better with your design */
+  }
+
+  .marginPerfilChild{
+      margin-left: 2rem;
+  }
+  .btn-editar-eliminar{
+      margin: 2rem 4rem;
+  }
+
+  .texto-modal{
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 700;
+      float: right;
+      font-family: "Questrial";
+      color: #2E335E;
+
+  }
+  
+  .list-register2 {
+    box-shadow: 0 0 9px rgb(134, 129, 129);
+    margin: 3rem 2rem 5rem 2rem;
+    padding: 3rem 4rem 3rem 4rem;
+    border-radius: 20px;
+  }
+  @media (max-width: 768px) {
+    .list-register2 {
+        box-shadow: 0 0 9px rgb(134, 129, 129);
+        margin: 1rem 1rem 1rem 1rem;
+        padding: 1rem 1rem 1rem 1rem;
+        border-radius: 20px;
+      }
+      
+      .vertical-line{
+        margin: 1.5rem 4rem;
+        width: 50%; /* Line width */
+        text-align: center;
+        background-color: #2E335E; /* Line color */
+        height: 0.2rem; /* Override in-line if you want specific height. */
+
+      }
+      .marginPerfilChild{
+        margin-left: 0rem;
+    }
+    .btn-editar-eliminar{
+        margin: 1rem 1rem;
+    }
+
+    .siguiente{
+        font-size: 1.2rem;
+        text-align: center;
+        font-family: "Questrial";
+        float: right;
+    }
+  }
+  

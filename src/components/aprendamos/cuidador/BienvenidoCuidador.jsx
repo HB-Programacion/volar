@@ -15,8 +15,32 @@ import iconAreaJuego from "./../../../images/icon-juego.png";
 import iconAreaNutricion from "./../../../images/icon-nutricion.png";
 import startsLeftWhiteMobile from "./../../../images/starts-white-mobile-left.png";
 import startsRightWhiteMobile from "./../../../images/stars-white-mobile-right.png";
+import { auth, db } from "../../../components/firebase/firebase";
 
-export const BienvenidoCuidador = () => {
+export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild }) => {
+  const [nameChild, setNameChild] = React.useState("");
+
+  React.useEffect(() => {
+    if (firebaseUser !== null && idChild !== "") {
+      const childData = db
+        .collection("usuarios")
+        .doc(firebaseUser.uid)
+        .collection("addChild")
+        .doc(idChild);
+      childData
+        .get()
+        .then((snapShots) => {
+          setNameChild(snapShots.data().nameChild);
+        })
+        .catch(function (error) {
+          console.log("Error getting document:", error);
+        });
+    }
+  }, [firebaseUser, idChild]);
+
+  console.log("array-a", arrayChild);
+
+  console.log("puta que felicidad ", idChild);
   return (
     <div>
       <div className="box-title-cuidador show-desktop">
@@ -39,10 +63,24 @@ export const BienvenidoCuidador = () => {
           />
         </div>
         <div className="box-row-2">
-          <p className="box-text">
-            Hoy aprenderemos a desarrollar las habilidades de lenguaje de
-            Cristina aprovechando los momentos de aseo.
-          </p>
+          {firebaseUser !== null ? (
+            arrayChild.docs.length === 0 ? (
+              <p className="box-text">
+                Hoy aprenderemos a desarrollar las habilidades de lenguaje de tu
+                hijo aprovechando los momentos de aseo.
+              </p>
+            ) : (
+              <p className="box-text">
+                Hoy aprenderemos a desarrollar las habilidades de lenguaje de{" "}
+                {nameChild} aprovechando los momentos de aseo.
+              </p>
+            )
+          ) : (
+            <p className="box-text">
+              Hoy aprenderemos a desarrollar las habilidades de lenguaje de tu
+              hijo aprovechando los momentos de aseo.
+            </p>
+          )}
         </div>
       </div>
       <div className="box-title-cuidador hide-desktop">
@@ -66,8 +104,24 @@ export const BienvenidoCuidador = () => {
         <div className="box-row-2">
           <h1 className="box-saludo">¡Hola!</h1>
           <p className="box-text">
-            Hoy aprenderemos a desarrollar las habilidades de lenguaje de
-            Cristina aprovechando los momentos de aseo.
+            {firebaseUser !== null ? (
+              arrayChild.docs.length === 0 ? (
+                <p className="box-text">
+                  Hoy aprenderemos a desarrollar las habilidades de lenguaje de
+                  tu hijo aprovechando los momentos de aseo.
+                </p>
+              ) : (
+                <p className="box-text">
+                  Hoy aprenderemos a desarrollar las habilidades de lenguaje de{" "}
+                  {nameChild} aprovechando los momentos de aseo.
+                </p>
+              )
+            ) : (
+              <p className="box-text">
+                Hoy aprenderemos a desarrollar las habilidades de lenguaje de tu
+                hijo aprovechando los momentos de aseo.
+              </p>
+            )}
           </p>
         </div>
       </div>
@@ -99,14 +153,14 @@ export const BienvenidoCuidador = () => {
         <div className="btn-areas w-100">
           <div className="w-20">
             <Link to="/aprendamos/cuidador/higiene">
-            <div className="area-higiene">
-              <img
-                src={iconAreaHigiene}
-                className="icon-area"
-                alt="stars-left"
-              />
-              <p className="text-area-higiene">HIGIENE Y AGUA SEGURA</p>
-            </div>
+              <div className="area-higiene">
+                <img
+                  src={iconAreaHigiene}
+                  className="icon-area"
+                  alt="stars-left"
+                />
+                <p className="text-area-higiene">HIGIENE Y AGUA SEGURA</p>
+              </div>
             </Link>
           </div>
           <div className="w-20">
@@ -191,7 +245,7 @@ export const BienvenidoCuidador = () => {
           </div>
         </div>
         <div className="btn-areas w-100">
-           <div className="w-50">
+          <div className="w-50">
             <div className="area-nutricion">
               <img
                 src={iconAreaNutricion}

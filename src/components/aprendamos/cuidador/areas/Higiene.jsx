@@ -1,10 +1,37 @@
 import React from "react";
 import "./areas.css";
 import iconoHigieneWhite from "./../../../../images/icon-higiene-white.png";
-import iconoVideoHigiene from "./../../../../images/icono-video-higiene.png";
-import iconoTipHigiene from "./../../../../images/icono-tip-higiene.png";
+import iconoTipLighBlue from "./../../../../images/icon-tip-ligh-blue.svg";
+import { useCollection } from "react-firebase-hooks/firestore";
+import { auth,db } from "../../../../components/firebase/firebase";
+export const Higiene = ({contenidoFirebase, error, loading, firebaseUser, idChild}) => {
 
-export const Higiene = () => {
+ const [edad, setEdad]= React.useState("")
+  const [usuarioChild] = useCollection(
+    db.collection("usuarios").doc(firebaseUser.uid).collection("addChild"),
+    {
+      snapshotListenOptions: { includeMetadataChanges: true },
+    }
+  );
+
+  React.useEffect(() => {
+    if (firebaseUser !== null  && idChild!=="") {
+      const childData = db.collection("usuarios").doc(firebaseUser.uid).collection("addChild").doc(idChild);
+      childData
+        .get()
+        .then((snapShots) => {
+         setEdad(snapShots.data().edadChild)
+        })
+        .catch(function (error) {
+          console.log("Error getting document:", error);
+        });
+      }
+ /*  const childData= db.collection("usuarios").doc(firebaseUser.uid).collection("addChild").doc("OxtF7ijtoOlOX7zx3xcY")
+  console.log("hola", childData.data().edadChild)
+    ///Obteniendo todo el contenido de firebase///*/
+  }, [firebaseUser, idChild]);
+    console.log("edad-2", edad)
+
   return (
     <div>
       <div className="box-title-higine show-desktop">
@@ -16,97 +43,48 @@ export const Higiene = () => {
         <h1 className="title-area">HIGIENE Y AGUA SEGURA</h1>
       </div>
       <div className="list-videos-tips">
-        <div className="row">
-          <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-            <div className="box-section">
-              <img
-                src={iconoVideoHigiene}
-                className="icono-video-tip"
-                alt="icono de video"
-              />
-              <div className="box-text-video-tip">
-                <h3 className="subtittle-video-tip">
-                  ¡DESCUBRIENDO MI BARRIO!
-                </h3>
-                <h5 className="text-video-tip">VIDEO</h5>
+        {error && <strong>Error: {JSON.stringify(error)}</strong>}
+        {loading && <span>Collection: Loading...</span>}
+        {contenidoFirebase && (<div className="row">
+            {contenidoFirebase.docs.filter(item=>  item.data().seccion==="Higiene y Agua Segura" &&  item.data().edad==edad ).map(item => (
+                <div key={item.id} className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                <div className="box-section">
+                  <img
+                    src={iconoTipLighBlue}
+                    className="icono-video-tip"
+                    alt="icono de tip"
+                  />
+                  <div className="box-text-video-tip">
+                    <h3 className="subtittle-video-tip">
+                      {item.data().titulo}
+                    </h3>
+                    <h5 className="text-video-tip">Tip N° {item.data().n_tip}</h5>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-            <div className="box-section">
-              <img
-                src={iconoTipHigiene}
-                className="icono-video-tip"
-                alt="icono de tip"
-              />
-              <div className="box-text-video-tip">
-                <h3 className="subtittle-video-tip">AGUA SEGURA</h3>
-                <h5 className="text-video-tip">TIP 1</h5>
+              ))}
+               </div>)}
+
+               {usuarioChild && (<div className="row">
+            {usuarioChild.docs.filter(item=>  item.data().edadChild===edad ).map(item => (
+                <div key={item.id} className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                <div className="box-section">
+                  <img
+                    src={iconoTipLighBlue}
+                    className="icono-video-tip"
+                    alt="icono de tip"
+                  />
+                  <div className="box-text-video-tip">
+                    <h3 className="subtittle-video-tip">
+                      {item.data().nameChild}
+                    </h3>
+                    <h5 className="text-video-tip">Tip N° {item.data().sexoChild}</h5>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-            <div className="box-section">
-              <img
-                src={iconoVideoHigiene}
-                className="icono-video-tip"
-                alt="icono de video"
-              />
-              <div className="box-text-video-tip">
-                <h3 className="subtittle-video-tip">
-                  ¡DESCUBRIENDO MI BARRIO!
-                </h3>
-                <h5 className="text-video-tip">VIDEO</h5>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-            <div className="box-section">
-              <img
-                src={iconoTipHigiene}
-                className="icono-video-tip"
-                alt="icono de tip"
-              />
-              <div className="box-text-video-tip">
-                <h3 className="subtittle-video-tip">AGUA SEGURA</h3>
-                <h5 className="text-video-tip">TIP 1</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-            <div className="box-section">
-              <img
-                src={iconoVideoHigiene}
-                className="icono-video-tip"
-                alt="icono de video"
-              />
-              <div className="box-text-video-tip">
-                <h3 className="subtittle-video-tip">
-                  ¡DESCUBRIENDO MI BARRIO!
-                </h3>
-                <h5 className="text-video-tip">VIDEO</h5>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-            <div className="box-section">
-              <img
-                src={iconoTipHigiene}
-                className="icono-video-tip"
-                alt="icono de tip"
-              />
-              <div className="box-text-video-tip">
-                <h3 className="subtittle-video-tip">AGUA SEGURA</h3>
-                <h5 className="text-video-tip">TIP 1</h5>
-              </div>
-            </div>
-          </div>
+              ))}
+               </div>)}
         </div>
       </div>
-    </div>
   );
 };

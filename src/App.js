@@ -24,8 +24,8 @@ import { Contactanos } from "./components/contactanos/Contactanos";
 import Perfil from './components/loginRegister/perfil/Perfil'
 
 import Fase1 from "./components/fase1/Fase1"
-
-
+import RegistroChild from "./components/loginRegister/perfil/RegistroChild";
+import { useCollection } from "react-firebase-hooks/firestore";
 
 
 function App() {
@@ -33,7 +33,16 @@ function App() {
   const [firebaseUser, setFirebaseUser] = React.useState(false);
   const [userName, setUserName] = React.useState(false);
   const[sideDrawerOpen,setSideDrawerOpen]= useState(false);
+  const [idChild, setIdChild] = React.useState("")
+  const [arrayChild, setArrayChild] = React.useState("");
+  const [subItem, setSubItem] = React.useState(false)
 
+
+  const mostrarSubItem = ()=>{
+      setSubItem(!subItem)
+  }
+
+  console.log("jkkks", subItem)
   const drawerToggleClickHandler = (prev) => {
     if(prev){
       setSideDrawerOpen(true)
@@ -45,7 +54,24 @@ function App() {
     //   return{sideDrawerOpen:!prev.sideDrawerOpen}
     // })
   }
+  const [contenidoFirebase, loading, error] = useCollection(
+    db.collection('contenido'),
+    {
+      snapshotListenOptions: { includeMetadataChanges: true },
+    }
+  );
 
+  const mandarIdChild = (idChildArray) => {
+    setIdChild(idChildArray);
+    console.log("perro", idChild)
+  };
+  
+
+  const updateArrayChild = (arrayChildT) => {
+    setArrayChild(arrayChildT)
+  }
+
+  console.log(arrayChild)
   const backdropClickHandler =()=>{
 
     setSideDrawerOpen(false)
@@ -76,6 +102,7 @@ function App() {
         setFirebaseUser(null);
       }
     });
+    ///Obteniendo todo el contenido de firebase///
   }, [firebaseUser]);
 
   return  firebaseUser !== false ? (
@@ -85,13 +112,22 @@ function App() {
         <MenuNuevo 
           firebaseUser={firebaseUser}
           drawerClickHandler={drawerToggleClickHandler} 
+          mandarIdChild={mandarIdChild}
+          idChild={idChild}
+          updateArrayChild={updateArrayChild}
+          userName={userName}
         />
         
         <SideDrawer 
         firebaseUser={firebaseUser}
         show={sideDrawerOpen}
-        click={backdropClickHandler}/>
+        click={backdropClickHandler}
+        userName={userName}
+        mostrarSubItem={mostrarSubItem}
+        subItem={subItem}
+        idChild={idChild}/>
         {backdrop}
+       
         {/* <Menu firebaseUser={firebaseUser} /> */}
       
       <Switch style={{marginTop:"6rem"}}>
@@ -110,16 +146,28 @@ function App() {
           component={RegistroNiños}
         />
         <Route
-          path="/aprendamos/cuidador"
-          exact
-          component={BienvenidoCuidador}
-        />
-        <Route path="/aprendamos/cuidador/higiene" exact component={Higiene} />
-        <Route path="/login" exact component={Login} />
-        <Route path="/signup" exact component={Signup} />
+          path={`/aprendamos/cuidador/${idChild}`}
+          exact>
+         <BienvenidoCuidador idChild={idChild} firebaseUser={firebaseUser} arrayChild={arrayChild}/>
+        </Route>
+        <Route path="/aprendamos/cuidador/higiene" exact>
+          <Higiene contenidoFirebase={contenidoFirebase} error={error} loading={loading} firebaseUser={firebaseUser} idChild={idChild}/>
+         </Route> 
+        <Route path="/login" exact>
+          <Login firebaseUser={firebaseUser} />
+        </Route> 
+        <Route path="/signup" exact>
+          <Signup firebaseUser={firebaseUser} />
+        </Route> 
         <Route path="/password/reset" exact component={PasswordReset} />
-        <Route path="/perfil" exact>
-          <Perfil firebaseUser={firebaseUser}  userName={userName}/> 
+        {firebaseUser!==null ? <Route path="/perfil" exact>
+          <Perfil firebaseUser={firebaseUser}/> 
+        </Route>:null
+
+        }
+        
+        <Route path="/registro-niño" exact>
+          <RegistroChild  firebaseUser={firebaseUser} mandarIdChild={mandarIdChild}/> 
         </Route>
         <Route path="/contactanos" exact component={Contactanos} />
         <Route 
