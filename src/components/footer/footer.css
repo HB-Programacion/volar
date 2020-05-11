@@ -56,8 +56,8 @@
     }
     .footer-box{
       flex-direction: row;
-      padding-top: 6rem;
-      padding-bottom: 6rem;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
     }
    
     .box-convenio{
