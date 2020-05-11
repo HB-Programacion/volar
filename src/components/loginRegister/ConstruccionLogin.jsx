@@ -11,7 +11,7 @@ const ConstruccionLogin = () => {
                  <h1 className="tittle-construccion-fase">Fase 3</h1>
                  <h1 className="tittle-construccion">Refinar</h1>
               </div>
-              <div className="row justify-content-center h-100">
+              <div className="row justify-content-center mt-3 h-100">
                  <h1 className="tittle-construccion">En construcción</h1>
               </div>
             </div>

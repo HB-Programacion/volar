@@ -21,6 +21,8 @@
   margin-top: 14rem;
 }
 /* construcciom */
+
+
 .tittle-construccion-fase{
   font-family: 'Questrial';
   color: white;
@@ -187,7 +189,7 @@ width: 30%
     font-size: 1.4rem;
   }
   .tittle-construccion{
-    font-size: 2.5rem
+    font-size: 2rem
   }
   .tittle-construccion-ok{
     font-size: 2rem

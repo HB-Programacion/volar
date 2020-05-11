@@ -228,6 +228,48 @@
   width: 30%
 }
 
+
+
+/* fondo en construccion */
+
+.background-fase3{
+  background-image: url('../../images/fase3-img/fondo_fase_3_mobile.png');
+  height: 100vh;
+    background-size: cover;
+    background-position: top center;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.cohete-construccion{
+  width: 50%;
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translate(-50%)
+}
+.tittle-construccion-fase3{
+  font-family: 'Questrial';
+  color:#2E335E ;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: -.3rem
+}
+.tittle-construccion-3{
+  font-family: 'Questrial';
+  color: #2E335E;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  font-size: 2rem
+}
+
+
+
+/* fondo en construccion */
+
 @media (min-width: 769px) {
   html {
    font-size: .98vw;
@@ -424,4 +466,25 @@
   .left-5-rem{
     left: .5rem
   }
+
+
+  /* construccion */
+  .background-fase3{
+    background-image: url('../../images/fase3-img/fondo_fase_3_desktop.png');
+  }
+
+  .cohete-construccion{
+    width: 20%;
+  }
+  .tittle-construccion-fase{
+   
+    font-size: 1.9rem;
+  }
+  .tittle-construccion{
+    font-size: 3rem
+  }
+ 
+
+
+  /* construccion */
 }
