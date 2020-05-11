@@ -73,7 +73,7 @@ const MenuNuevo =props => {
                         </li>
             )
                     : (
-                    <li className="mostrar-siempre"><Link to="/login" className="font-color-orange"><img src={candado} alt="candado" className="" /> Iniciar sesión</Link> </li>
+                    <li className="mostrar-siempre"><Link to="/login/construccion" className="font-color-orange"><img src={candado} alt="candado" className="" /> Iniciar sesión</Link> </li>
                     )}
                 </ul>
             </div>

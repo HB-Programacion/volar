@@ -20,7 +20,29 @@
 .margin-top-bottom {
   margin-top: 14rem;
 }
-
+/* construcciom */
+.tittle-construccion-fase{
+  font-family: 'Questrial';
+  color: white;
+  font-weight: 700;
+  font-size: 1.9rem;
+  margin-bottom: -.3rem
+}
+.tittle-construccion{
+  font-family: 'Questrial';
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  font-size: 3rem
+}
+.tittle-construccion-ok{
+  font-family: 'Questrial';
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  font-size: 2.5rem
+}
+/* construcciom */
 /*Aprendamos2*/
 
 .background-blue {
@@ -101,12 +123,7 @@
  
 }
 
-.tittle-construccion{
-  font-family: 'Questrial';
-  color: white;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-}
+
 .btn-box{
     margin-top:8rem;
     margin-left:13rem;
@@ -129,7 +146,13 @@
   height: 8rem;
   width: 8rem;
 }
-
+.cohete-volando-figure{
+width: 30%
+}
+.cohete-volando{
+  position: absolute;
+  left: -15%;
+}
 /*Desktop*/
 
 @media (min-width: 769px) {
@@ -137,6 +160,8 @@
 
 /*mobile*/
 @media (max-width: 768px) {
+
+  /* en construccion */
   .background {
     background: url(./../../images/FONDO_APRENDAMOS_INICIO.png) no-repeat;
     height: 100vh;
@@ -148,6 +173,27 @@
   .margin-top-bottom {
     margin-top: 10rem;
   }
+
+
+  .cohete-volando-figure{
+    width: 80%
+    }
+  .cohete-volando{
+    position: absolute;
+    left: -15%;
+  }
+  .tittle-construccion-fase{
+   
+    font-size: 1.4rem;
+  }
+  .tittle-construccion{
+    font-size: 2.5rem
+  }
+  .tittle-construccion-ok{
+    font-size: 2rem
+  }
+
+/* en construccion */
   .btn-light-blue {
     background-color: #7dc7c5;
     padding: 12px 20px;

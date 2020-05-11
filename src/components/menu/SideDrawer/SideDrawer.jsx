@@ -119,7 +119,7 @@ const sideDraw = (props) => {
                   <li><Link className="sub-Item" onClick={props.ocultarMenuMobile}  to="/perfil">Mi Perfil</Link></li>
                   <li><Link className="sub-Item" onClick={() => cerrarSesion()} >Cerrar Sesión</Link></li>
                       </div> : null }</div>)
-                   : <li><NavLink to="/login" activeClassName='is-activeHomeMobile'><img src={iniciar} className="w-15 mr-2"/>Iniciar sesión</NavLink></li>}
+                   : <li><NavLink to="/login/construccion" activeClassName='is-activeHomeMobile'><img src={iniciar} className="w-15 mr-2"/>Iniciar sesión</NavLink></li>}
                 
                 
             </ul>
