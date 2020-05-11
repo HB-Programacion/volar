@@ -33,6 +33,8 @@ import Crecer from "./components/crecer/Crecer";
 import Agua from "./components/agua-segura/AguaSegura";
 import Piloto from "./components/Piloto/Piloto";
 import { Orbitals } from "react-spinners-css";
+import ConstruccionFase3 from "./components/nosotros/ConstruccionFase3";
+import ConstruccionFase4 from "./components/nosotros/ConstruccionFase4";
 
 function App() {
   const [firebaseUser, setFirebaseUser] = React.useState(false);
@@ -191,6 +193,8 @@ function App() {
           <Route path="/nosotros/fase2/agua-segura" exact component={Agua} />
           <Route path="/nosotros/fase2/el-piloto" exact component={Piloto} />
           <Route path="/construccion-aprendamos" exact component={ConstruccionAprendamos} />
+          <Route path="/construccion-fase-3" exact component={ConstruccionFase3} />
+          <Route path="/construccion-fase-4" exact component={ConstruccionFase4} />
         </Switch>
         <Footer />
       </div>
