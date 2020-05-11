@@ -311,6 +311,7 @@
     position: absolute;
     bottom: -4%;
     right: 0;
+    margin: 1rem;
 }
 .box-spots-radio div{
     text-align: center;
