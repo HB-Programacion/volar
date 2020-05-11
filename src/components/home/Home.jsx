@@ -25,7 +25,8 @@ import CarouselMobile from "./CarouselMobile";
 import CarouselDesktop from "./CarouselDesktop";
 
 const Home = () => { 
-
+    const width = window.innerWidth;
+    const breakpoint = 768;
     return (
 <div >
     <figure className="video-bg">
@@ -104,13 +105,9 @@ const Home = () => {
                     <li data-target="#multi-item-example" data-slide-to="3"></li>
                     <li data-target="#multi-item-example" data-slide-to="4"></li>
                 </ol>
-                {/* <div className="show-mobile">
-                    <CarouselMobile />
-                </div> */}
-        
-                 <div className="hide-mobile">
-                    <CarouselDesktop />
-                </div>
+{width < breakpoint  ? <CarouselMobile /> : <CarouselDesktop />}
+
+                
             </div>
         </div> 
    </div>
