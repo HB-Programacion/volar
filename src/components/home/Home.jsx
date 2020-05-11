@@ -83,11 +83,11 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <Link to="/nosotros" className="btn-orange text-white wobble-hor-bottom">
+                    <a href="/nosotros" className="btn-orange text-white wobble-hor-bottom">
                         <img src={arrowLeft} className="arrow-orange"></img>
                             nuestra historia
                         <img src={arrowRigth}className="arrow-orange"></img>
-                    </Link>
+                    </a>
                     <img src={cohete} className="cohete "></img>
                 </div>
             </div>

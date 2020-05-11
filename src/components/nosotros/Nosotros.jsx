@@ -78,11 +78,11 @@ const Nosotros = () => {
                             <div className="numero-cohete">1</div>
                             <div className="fase-cohete">Fase Aprender</div>
                         </div>
-                        <Link to="/nosotros/fase1" className="btn-cohete">
+                        <a href="/nosotros/fase1" className="btn-cohete">
                             <img src={arrowLeft} className="arrow-orange-cohete"></img>
                             ver más
                             <img src={arrowRigth}className="arrow-orange-cohete"></img>
-                        </Link>
+                        </a>
                     </div>
                 </div>
 
@@ -92,11 +92,11 @@ const Nosotros = () => {
                             <div className="numero-cohete">2</div>
                             <div className="fase-cohete left-5-rem">Fase Probar</div>
                         </div>
-                        <Link to="/nosotros/fase2" className="btn-cohete">
+                        <a href="/nosotros/fase2" className="btn-cohete">
                             <img src={arrowLeft} className="arrow-orange-cohete"></img>
                             ver más
                             <img src={arrowRigth}className="arrow-orange-cohete"></img>
-                        </Link>
+                        </a>
                     </div>
                 </div>
 
@@ -106,11 +106,11 @@ const Nosotros = () => {
                             <div className="numero-cohete">3</div>
                             <div className="fase-cohete left-5-rem">Fase Refinar</div>
                         </div>
-                        <Link to="/construccion-fase-3"className="btn-cohete">
+                        <a href="/construccion-fase-3"className="btn-cohete">
                             <img src={arrowLeft} className="arrow-orange-cohete"></img>
                             ver más
                             <img src={arrowRigth}className="arrow-orange-cohete"></img>
-                        </Link>
+                        </a>
                     </div>
                 </div>
 
@@ -120,11 +120,11 @@ const Nosotros = () => {
                             <div className="numero-cohete">4</div>
                             <div className="fase-cohete fase-cohete-4">Fase<br></br> Evaluar y Escalar</div>
                         </div>
-                        <Link to="/construccion-fase-4" className="btn-cohete">
+                        <a href="/construccion-fase-4" className="btn-cohete">
                             <img src={arrowLeft} className="arrow-orange-cohete"></img>
                             ver más
                             <img src={arrowRigth}className="arrow-orange-cohete"></img>
-                        </Link>
+                        </a>
                     </div>
                 </div>
 
