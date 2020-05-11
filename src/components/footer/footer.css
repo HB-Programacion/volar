@@ -49,6 +49,10 @@
     width: 7.4rem
   }
 
+  a .icon-footer:hover{
+    transform: scale(1.2);
+  }
+
    @media (min-width: 769px) {
     html {
      font-size: .98vw;

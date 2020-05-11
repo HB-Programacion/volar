@@ -41,13 +41,14 @@ const Footer = () => {
             </div>
             <div className="box-redes">
                 <figure>
-                    <img src={instagram} className=""></img>
+                    <a href="https://www.instagram.com/somos.volar/">
+                    <img src={instagram} className="icon-footer"></img></a>
                 </figure>
                 <figure>
-                    <img src={facebook}></img>
+                    <a href="https://www.facebook.com/somosvolar/"><img src={facebook} className="icon-footer"></img></a>
                 </figure>
                 <figure>
-                    <img src={medium}></img>
+                    <a href=""><img src={medium} className="icon-footer"></img></a>
                 </figure>
             </div>
         </div>

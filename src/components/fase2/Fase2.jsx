@@ -21,18 +21,18 @@ const Fase2 = () => {
                 </p>
             </div>
             <div className="box-botones-fase2">
-                <Link to="/nosotros/fase2/crecer" className="btn-fase2 font-color-orange wobble-hor-bottom">
+                <a href="/nosotros/fase2/crecer" className="btn-fase2 font-color-orange wobble-hor-bottom">
                     <img src={crecer} className="w-12 mr-2 "></img>
                     Crecer mejor
-                </Link>
-                <Link to="/nosotros/fase2/agua-segura" className="btn-fase2 text-aguamarina wobble-hor-bottom">
+                </a>
+                <a href="/nosotros/fase2/agua-segura" className="btn-fase2 text-aguamarina wobble-hor-bottom">
                     <img src={agua} className="w-10 mr-2"></img>
                     Agua segura
-                </Link>
-                <Link to="/nosotros/fase2/el-piloto" className="btn-fase-piloto wobble-hor-bottom">
+                </a>
+                <a href="/nosotros/fase2/el-piloto" className="btn-fase-piloto wobble-hor-bottom">
                     <img src={cohete} className="w-12 mr-2"></img>
                     El piloto
-                </Link>
+                </a>
             </div>
             <figure className="w-100">
                 <img src={coheteStars} className="cohete-fase2"></img>
