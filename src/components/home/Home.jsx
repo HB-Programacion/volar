@@ -11,11 +11,7 @@ import cohete from '../../images/cohete-stars.svg';
 import groupNosotros from '../../images/group-nosotros.svg';
 import arrowLeft from '../../images/arrow-left-orange.svg';
 import arrowRigth from '../../images/arrow-right-orange.svg';
-import fabiola from '../../images/equipo/fabiola_1.png';
-import sara from '../../images/equipo/sara_2.png';
-import geraldine from '../../images/equipo/geraldine_3.png';
-import aran from '../../images/equipo/arturo_4.png';
-import maria from '../../images/equipo/guadalupe_5.png';
+
 import banner1 from '../../images/banner1.png';
 import bannerMobile1 from '../../images/baner-mobile1.png';
 import Nosotros from "../nosotros/Nosotros"
@@ -25,9 +21,12 @@ import starRight from "../../images/home-img/star-right.svg"
 import bannerDesktop from '../../images/home-img/imagen_1920.png'
 import share from "../../images/home-img/share-morado.svg"
 import tituloHome from "../../images/home-img/titulo_home.png"
+import CarouselMobile from "./CarouselMobile";
+import CarouselDesktop from "./CarouselDesktop";
 
 const Home = () => { 
-
+    const width = window.innerWidth;
+    const breakpoint = 768;
     return (
 <div >
     <figure className="video-bg">
@@ -92,8 +91,7 @@ const Home = () => {
    </div>
    <div className="equipo-home">
         <h2>nuestro equipo</h2>
-
-<div className="container box-equipo-desktop show-mobile">
+        <div className="container box-equipo-desktop">
             <div id="multi-item-example" className="carousel slide carousel-multi-item" data-ride="carousel">
                 <div className="controls-top">
                     <a className="btn-floating" href="#multi-item-example" data-slide="prev"><i className="fa fa-chevron-left"></i></a>
@@ -107,162 +105,11 @@ const Home = () => {
                     <li data-target="#multi-item-example" data-slide-to="3"></li>
                     <li data-target="#multi-item-example" data-slide-to="4"></li>
                 </ol>
+{width < breakpoint  ? <CarouselMobile /> : <CarouselDesktop />}
 
-                <div className="carousel-inner" role="listbox">
-
-                    <div className="carousel-item active">
-
-                        <div className="row">
-                            <div className="col-md-12">
-                                <div className="card mb-2 fabiola">
-                                    <img className="card-img-top" src={fabiola}
-                                        alt="Card image cap"/>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-   
-                    <div className="carousel-item">
-
-                        <div className="row">
-                            <div className="col-md-12">
-                                <div className="card mb-2">
-                                    <img className="card-img-top" src={sara}
-                                        alt="Card image cap"/>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div className="carousel-item">
-
-                        <div className="row">
-                            <div className="col-md-12">
-                                <div className="card mb-2">
-                                    <img className="card-img-top" src={geraldine}
-                                        alt="Card image cap"/>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div className="carousel-item">
-
-                        <div className="row">
-                            <div className="col-md-12">
-                                <div className="card mb-2">
-                                    <img className="card-img-top" src={aran}
-                                        alt="Card image cap"/>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div className="carousel-item">
-
-                        <div className="row">
-                            <div className="col-md-12">
-                                <div className="card mb-2">
-                                    <img className="card-img-top" src={maria}
-                                        alt="Card image cap"/>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
+                
             </div>
-        </div>
-
-
-
-        
-        <div className="container box-equipo-desktop hide-mobile">
-            <div id="multi-item-example" className="carousel slide carousel-multi-item" data-ride="carousel">
-                <div className="controls-top">
-                    <a className="btn-floating" href="#multi-item-example" data-slide="prev"><i className="fa fa-chevron-left"></i></a>
-                    <a className="btn-floating" href="#multi-item-example" data-slide="next"><i className="fa fa-chevron-right"></i></a>
-                </div>
-
-                <ol className="carousel-indicators">
-                    <li data-target="#multi-item-example" data-slide-to="0" className="active"></li>
-                    <li data-target="#multi-item-example" data-slide-to="1"></li>
-                    <li data-target="#multi-item-example" data-slide-to="2"></li>
-                    <li data-target="#multi-item-example" data-slide-to="3"></li>
-                    <li data-target="#multi-item-example" data-slide-to="4"></li>
-                </ol>
-
-                <div className="carousel-inner" role="listbox">
-
-                    <div className="carousel-item active">
-
-                        <div className="row">
-                            <div className="col-md-4">
-                                <div className="card mb-2 fabiola">
-                                    <img className="card-img-top" src={fabiola}
-                                        alt="Card image cap"/>
-                                </div>
-                            </div>
-
-                            <div className="col-md-4 clearfix d-none d-md-block">
-                                <div className="card mb-2">
-                                    <img className="card-img-top" src={sara}
-                                    alt="Card image cap"/>
-                                </div>
-                            </div>
-
-                            <div className="col-md-4 clearfix d-none d-md-block">
-                                <div className="card mb-2">
-                                    <img className="card-img-top" src={geraldine}
-                                    alt="Card image cap"/>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-   
-                    <div className="carousel-item">
-
-                        <div className="row">
-                            <div className="col-md-4">
-                                <div className="card mb-2">
-                                    <img className="card-img-top" src={aran}
-                                        alt="Card image cap"/>
-                                </div>
-                            </div>
-
-                            <div className="col-md-4 clearfix d-none d-md-block">
-                                <div className="card mb-2">
-                                    <img className="card-img-top" src={maria}
-                                        alt="Card image cap"/>
-                                </div>
-                            </div>
-
-                            <div className="col-md-4 clearfix clearfix d-none d-md-block">
-                                <div className="card mb-2">
-                                    <img className="card-img-top" src={fabiola}
-                                        alt="Card image cap"/>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-        </div>
-
-
-
+        </div> 
    </div>
 
    <div className="momento-home show-mobile">
