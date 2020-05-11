@@ -16,7 +16,7 @@ import starsRightDesktop from "./../../images/stars-right-desktop.svg";
 const Nosotros = () => {
     return(
         <div id="nosotros-page">
-            <div className="box-title ">
+            <div id="tittle-nosotros" className="box-title ">
             <figure className="stars-group">
                 <img src={starsLeftDesktop} className="stars-left-desktop heartbeat"></img>
                 <img src={starsRightDesktop} className="stars-right-desktop heartbeat"></img>
