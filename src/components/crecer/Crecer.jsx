@@ -27,7 +27,7 @@ import antena from "../../images/crecer-img/antena.svg"
 
 const Crecer = () => {
     return(
-        <div className="fondo-azul">
+        <div className="fondo-azul animated fadeIn">
             <div className="fase2-crecer border-bottom-radius">
                 <div className="fase2-crecer-title">
                     <div className="logo-crecer-img">

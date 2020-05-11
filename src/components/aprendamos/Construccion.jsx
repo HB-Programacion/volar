@@ -5,7 +5,7 @@ import cohete from '../../images/cohete-volando.svg';
 const ConstruccionAprendamos = () => {
     return (
         <div className="padding-top background" id="aprendamos-page">
-          <div className="container">
+          <div className="container  animated fadeIn">
             <div className="margin-top-bottom">
               <div className="row justify-content-center h-100">
                  <h1 className="tittle-construccion">Aprendamos</h1>

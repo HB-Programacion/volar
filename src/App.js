@@ -168,8 +168,10 @@ function App() {
               idChild={idChild}
             />
           </Route>
-          <Route path="/login/construccion" exact>
-            <Login firebaseUser={ConstruccionLogin} />
+          <Route path="/login" exact>
+            <Login firebaseUser={firebaseUser} />
+          </Route>
+          <Route path="/login-construccion" exact component={ ConstruccionLogin}>
           </Route>
           <Route path="/signup" exact>
             <Signup firebaseUser={firebaseUser} />

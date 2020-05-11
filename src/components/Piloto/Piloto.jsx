@@ -19,7 +19,7 @@ import card17 from "../../images/piloto-img/17.png"
 
 const Piloto = () => {
     return (
-        <div className="fondo-blanco">
+        <div className="fondo-blanco animated fadeIn">
             <div className="fase2-piloto border-bottom-radius">
                 <div className="fase2-piloto-title">
                     <div className="logo-piloto">

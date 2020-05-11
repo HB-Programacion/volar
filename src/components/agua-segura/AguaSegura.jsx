@@ -23,7 +23,7 @@ import fortalecimientoOrg from "../../images/agua-segura-img/fortalecimiento-org
 
 const Agua = () => {
     return(
-        <div className="fondo-azul">
+        <div className="fondo-azul animated fadeIn">
             <div className="fase2-agua border-bottom-radius">
                 <div className="fase2-agua-title">
                     <div className="logo-agua-img">

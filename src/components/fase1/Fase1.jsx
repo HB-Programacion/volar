@@ -16,7 +16,7 @@ import arrowRightBlue from '../../images/arrow-right-blue.svg'
 
 const Fase1 = () => {
     return(
-        <div>
+        <div className="animated fadeIn">
             <div className="fase1 border-bottom-radius">
                 <h6 className="titulo-numero-fase">Fase 1</h6>
                 <h5 className="titulo-fase">Aprender</h5>

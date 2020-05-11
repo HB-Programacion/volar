@@ -30,7 +30,7 @@ const Home = () => {
     const breakpoint = 769;
 
     return (
-        <div>
+        <div className="animated fadeIn">
             <figure className="video-bg">
                 {/* <img src={nino} className="w-100 "></img> */}
             </figure>

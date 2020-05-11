@@ -11,7 +11,7 @@ import coheteStars from "../../images/cohete-stars.svg"
 
 const Fase2 = () => {
     return(
-        <div>
+        <div className="animated fadeIn">
             <div className="fase2 border-bottom-radius">
                 {/* <img src={starLeftMobile} className="star-left-mobile"></img>
                 <img src={starRightMobile} className="star-right-mobile"></img> */}
