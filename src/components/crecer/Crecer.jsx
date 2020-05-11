@@ -23,9 +23,16 @@ import starVideo from "../../images/crecer-img/start-video.svg"
 import avioncito from "../../images/crecer-img/avioncito.svg"
 import starRadio from "../../images/crecer-img/star-radio.svg"
 import antena from "../../images/crecer-img/antena.svg"
+import CarouselCrecerMobile from "./CarouselCrecerMobile";
+import CarouselCrecerDesktop from "./CarouselCrecerDesktop";
 
 
 const Crecer = () => {
+
+    const width = window.innerWidth;
+    const breakpoint = 769;
+
+
     return(
         <div className="fondo-azul animated fadeIn">
             <div className="fase2-crecer border-bottom-radius">
@@ -53,122 +60,9 @@ const Crecer = () => {
                     <li data-target="#multi-item-example" data-slide-to="1"></li>
                     <li data-target="#multi-item-example" data-slide-to="2"></li>
                     <li data-target="#multi-item-example" data-slide-to="3"></li>
-                    <li data-target="#multi-item-example" data-slide-to="4"></li>
                 </ol>
 
-                <div className="carousel-inner" role="listbox">
-
-                    <div className="carousel-item active">
-
-                        <div className="row">
-                            <div className="col-md-4 ">
-                                <div className="card mb-2 card-crecer">
-                                        <img className="card-img-top " src={talleres}
-                                        alt="talleres-presenciales"/>
-                                </div>
-                            </div>
-
-                            <div className="col-md-4 clearfix d-none d-md-block">
-                                <div className="card mb-2 card-crecer">
-                                        <img className="card-img-top " src={videos}
-                                        alt="Card image cap"/>
-                                </div>
-                            </div>
-
-                            <div className="col-md-4 clearfix d-none d-md-block">
-                                <div className="card mb-2 card-crecer">
-                                        <img className="card-img-top " src={mensajeria}
-                                        alt="Card image cap"/>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-   
-                    <div className="carousel-item">
-
-                        <div className="row">
-                            <div className="col-md-4">
-                                <div className="card mb-2 card-crecer">
-                                        <img className="card-img-top " src={videos}
-                                        alt="Card image cap"/>
-                                </div>
-                            </div>
-
-                            <div className="col-md-4 clearfix d-none d-md-block">
-                                <div className="card mb-2 card-crecer">
-                                        <img className="card-img-top " src={mensajeria}
-                                        alt="Card image cap"/>
-                                </div>
-                            </div>
-
-                            <div className="col-md-4 clearfix clearfix d-none d-md-block">
-                                <div className="card mb-2 card-crecer">
-                                        <img className="card-img-top " src={radio}
-                                        alt="Card image cap"/>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div className="carousel-item">
-
-                        <div className="row">
-                            <div className="col-md-4">
-                                <div className="card mb-2 card-crecer">
-                                        <img className="card-img-top " src={mensajeria}
-                                        alt="Card image cap"/>
-                                </div>
-                            </div>
-
-                            <div className="col-md-4 clearfix d-none d-md-block">
-                                <div className="card mb-2 card-crecer">
-                                        <img className="card-img-top " src={radio}
-                                        alt="Card image cap"/>
-                                </div>
-                            </div>
-
-                            <div className="col-md-4 clearfix d-none d-md-block">
-                                <div className="card mb-2 card-crecer">
-                                        <img className="card-img-top " src={talleres}
-                                        alt="talleres-presenciales"/>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div className="carousel-item">
-
-                        <div className="row">
-                            <div className="col-md-4">
-                                <div className="card mb-2 card-crecer">
-                                        <img className="card-img-top " src={radio}
-                                        alt="Card image cap"/>
-                                </div>
-                            </div>
-
-                            <div className="col-md-4 clearfix d-none d-md-block">
-                                <div className="card mb-2 card-crecer">
-                                        <img className="card-img-top " src={talleres}
-                                        alt="talleres-presenciales"/>
-                                </div>
-                            </div>
-
-                            <div className="col-md-4 clearfix clearfix d-none d-md-block">
-                                <div className="card mb-2 card-crecer">
-                                        <img className="card-img-top " src={videos}
-                                        alt="Card image cap"/>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
+                {width < breakpoint  ? <CarouselCrecerMobile /> : <CarouselCrecerDesktop />}
 
             </div>
         </div>

@@ -3,11 +3,13 @@
 }
 
 .tittle-register-child {
-  color: #2e335e;
-  display: block;
-  margin: auto;
+position: relative;
   font-family: "Questrial";
-  margin-top:2rem
+  margin-top:2.5rem;
+  color: #2E335E;
+  -webkit-text-stroke: 1px #2E335E;
+  text-transform: none;
+  text-align: center 
 }
 
 .subtittle-register-child {
@@ -155,9 +157,10 @@
   }
 
   .tittle-register-child {
-    font-size: 2rem;
+    font-size: 1.7rem;
     text-align: center;
-    
+    margin-top: 3rem;
+    margin-bottom: 1.5rem
   }
 
   .subtittle-register-child {
