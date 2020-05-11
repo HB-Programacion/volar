@@ -1,0 +1,485 @@
+
+
+.fase2-crecer{
+    margin-top: 4.5rem;
+    background: #F7F7FA
+}
+.logo-crecer-img{
+    width: 15%;
+    margin-right: .25rem;
+}
+.fase2-crecer-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5rem
+}
+
+.fase2-probar{
+    font-family: 'Questrial';
+    font-size: .8rem;
+    margin-bottom: -.5rem
+}
+
+.fase2-title{
+    font-family: 'Questrial';
+    font-size: 1.4rem;
+    -webkit-text-stroke: 1px ;
+    color: #EF8B44;
+    letter-spacing: .06rem;
+}
+
+.box-fase2-crecer{
+    text-align: center;
+    width: 93.79%;
+    margin: auto;
+}
+
+.carousel-crecer{
+    margin-top: -5rem;
+}
+.card-crecer{
+    background: rgba(0,0,0,0)!important;
+    border: none!important;
+}
+
+.card-crecer img{
+    width: 60%;
+    margin: 3rem auto;
+}
+.controls-crecer{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 10rem;
+    width: 88%;
+    margin: auto;
+    z-index: 3;
+}
+
+.controls-crecer a{
+    color: #7DC7C5;
+    font-size: 1.5rem
+}
+.controls-crecer a:hover{
+    color: #7DC7C5;
+}
+
+.point-crecer li{
+    width: 12px!important;
+    height: 12px!important;
+    border-radius: 50%!important;
+    background-color: #EF8B44!important;
+    /* opacity: .5!important; */
+}
+
+
+.box-azul-crecer{
+    font-family: 'Questrial';
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    position: relative;
+}
+
+.box-azul-crecer .star-talleres{
+    position: absolute;
+    width: 25%;
+    left: 0;
+    top: 5%
+}
+
+.box-azul-crecer h5{
+    font-size: 1.4rem;
+    -webkit-text-stroke: 1px #fff;
+    letter-spacing: .08rem;
+    line-height: 1.4rem;
+    letter-spacing: .06rem;
+}
+
+.box-azul-crecer h6{
+    font-size: 1.1rem;
+    letter-spacing: .03rem;
+    line-height: .8rem
+}
+.titulo-taller{
+    width: 75%;
+    margin: auto;
+    text-align: center
+}
+
+.box-azul-crecer .box-foto{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem
+}
+
+.box-azul-crecer .box-foto p{
+    font-size: .8rem;
+    text-align: center;
+    width: 60%
+}
+
+.box-azul-crecer .box-foto img{
+    margin-left: 1rem;
+    width: 40%
+}
+
+.box-azul-crecer .cohete-taller{
+    position: absolute;
+    bottom:-.8rem;
+    right: 0%;
+    width: 25%
+}
+
+.box-blanco-crecer{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.box-blanco-crecer .titulo-taller{
+    position: relative
+}
+.box-blanco-crecer .titulo-taller .play-arriba{
+    position: absolute;
+    width: 12%;
+    left: -15%;
+    top: -22%
+}
+.box-blanco-crecer .titulo-taller .star-video{
+    position: absolute;
+    width: 20%;
+    right: -15%;
+    top: -15%
+}
+
+.box-blanco-crecer .titulo-taller .play-abajo{
+    position: absolute;
+    width: 12%;
+    right: -10%;
+    bottom: -22%;
+}
+
+.box-blanco-crecer h5{
+    font-size: 1.5rem;
+    color: #7DC7C5;
+    -webkit-text-stroke: 1px #7DC7C5;
+    letter-spacing: .06rem;
+    line-height: 1.4rem
+}
+
+.box-videos{
+    display: flex;
+    font-size: .9rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: .5rem  1rem;
+}
+
+.box-videos {
+
+}
+
+.box-circulos-videos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 1rem auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.circulos img{
+    width: 4rem
+}
+.circulos{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Questrial';
+    font-size: .8rem;
+    color:#7DC7C5;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: .85rem;
+}
+.fondo-celeste-crecer{
+    padding-top: 2.5rem;
+    padding-bottom: 3.5rem;
+    text-align: center;
+    position: relative;
+}
+.fondo-celeste-crecer .avioncito{
+    position: absolute;
+    width: 12%;
+    left: -3%;
+}
+
+.fondo-celeste-crecer .avioncito-girado{
+    position: absolute;
+    width: 8%;
+    top: 5%;
+    right: 0%;
+    transform: rotateY(150deg)
+}
+
+.fondo-celeste-crecer .titulo-taller{
+    width: 78%;
+}
+.fondo-celeste-crecer h5{
+    font-family: 'Questrial';
+    color: #fff; 
+    font-size: 1.4rem;
+    -webkit-text-stroke: 1px #fff;
+    letter-spacing: .08rem;
+    line-height: 1.4rem;
+    letter-spacing: .06rem;
+}
+
+.fondo-celeste-crecer p{
+    color: #fff;
+    font-family: 'Questrial';
+    font-size: .85rem;
+    line-height: 1.1rem;
+    letter-spacing: .25px;
+    width: 80%;
+    margin: auto
+}
+
+.box-spots{
+    text-align: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    position: relative;
+}
+
+.box-spots .starRadio{
+    position: absolute;
+    width: 18%;
+    right: 7%;
+    top: 6%
+}
+
+.box-spots h5{
+    color: #7DC7C5;
+    font-family: 'Questrial';
+    font-size: 1.4rem;
+    -webkit-text-stroke: 1px #7DC7C5;
+    letter-spacing: .08rem;
+    line-height: 1.4rem;
+    letter-spacing: .06rem;
+}
+
+.box-spots-radio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 1rem */
+}
+.spots-img{
+    width: 100%;
+    margin-top: 1.5rem
+}
+.antena{
+    width: 30%;
+    position: absolute;
+    bottom: -4%;
+    right: 0;
+}
+.box-spots-radio div{
+    text-align: center;
+    width: 50%
+}
+
+
+@media (min-width: 769px) {
+    html {
+        font-size: .98vw;
+       }
+
+    .fase2-crecer{
+        margin-top: 6rem;
+        padding:5rem 5rem 7rem 5rem;
+    }
+
+    .logo-crecer-img{
+        width: 6%;
+        margin-right: 1rem;
+    }
+
+    .fase2-title{
+        font-size: 2.7rem
+    }
+
+    .box-fase2-crecer{
+        text-align: center;
+        width: 90%;
+        margin: 2rem auto;
+    }
+
+    .controls-crecer{
+        width: 100%
+    }
+
+    .controls-crecer a{
+        font-size: 3rem
+    }
+
+    .point-crecer{
+        bottom: -3rem!important
+    }
+    .point-crecer li{
+        width: 1.5rem!important;
+        height: 1.5rem!important;
+    }
+
+    .card-crecer img{
+        width: 65%!important
+    }
+    .controls-crecer{
+        top: 14rem
+    }
+
+    .box-azul-crecer{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    
+    .box-azul-crecer h5{
+        font-size: 2.4rem;
+        -webkit-text-stroke: 1px #fff;
+        letter-spacing: 1.1rem;
+        line-height: 2.5rem;
+        letter-spacing: .1rem;
+    }
+    
+    .box-azul-crecer h6{
+        font-size: 1.8rem;
+        letter-spacing: .03rem;
+        line-height: 1.5rem
+    }
+    .box-azul-crecer .box-foto{
+        justify-content: center
+    }
+    .box-azul-crecer .box-foto p{
+        font-size: 1.4rem;
+        text-align: center;
+        width: 35%;
+        margin-top: 2.5rem;
+        line-height: 1.5rem;
+        margin-left: -3rem
+    }
+    
+    .box-azul-crecer .box-foto img{
+        margin-left: 1rem;
+        width: 20%
+    }
+    .box-azul-crecer .star-talleres{
+        width: 10%;
+        left: 26%;
+    }
+    .box-azul-crecer .cohete-taller{
+        width: 15%
+    }
+
+    .box-blanco-crecer{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .box-blanco-crecer h5{
+        font-size: 2.4rem;
+        -webkit-text-stroke: 1px #7DC7C5;
+        letter-spacing: 1.1rem;
+        line-height: 2.5rem;
+        letter-spacing: .1rem;
+    }
+
+    .box-blanco-crecer .titulo-taller .play-arriba{
+        width: 6%;
+        left: 3%
+    }
+    .box-blanco-crecer .titulo-taller .star-video{
+        width: 7%
+    }
+    .box-blanco-crecer .titulo-taller .play-abajo{
+        width: 6%;
+        right: 4%;
+    }
+    .box-videos{
+        width: 50%;
+        margin: 3rem auto;
+    }
+
+    .box-circulos-videos{
+        width: 80%;
+    }
+    .circulos img{
+        width: 9rem
+    }
+
+    .circulos{
+        font-size: 1.4rem;
+        line-height: 1.5rem
+    }
+
+
+    .fondo-celeste-crecer{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .fondo-celeste-crecer h5{
+        font-size: 2.4rem;
+        -webkit-text-stroke: 1px #fff;
+        letter-spacing: 1.1rem;
+        line-height: 2.5rem;
+        letter-spacing: .1rem;
+    }
+
+    .fondo-celeste-crecer p{
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+    }
+    .fondo-celeste-crecer figure{
+        margin: 2rem auto
+    }
+
+    .fondo-celeste-crecer .avioncito{
+        width: 6%;
+        bottom: 3%;
+        left: -2%;
+    }
+    .fondo-celeste-crecer .avioncito-girado{
+        width: 6%;
+    }
+
+    .box-spots{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .box-spots h5{
+        font-size: 2.4rem;
+        -webkit-text-stroke: 1px #7DC7C5;
+        letter-spacing: 1.1rem;
+        line-height: 2.5rem;
+        letter-spacing: .1rem;
+    }
+    .box-spots-radio{
+        width: 60%;
+        margin: 0 auto
+    }
+
+    .box-spots-radio figure{
+        width: 15%;
+        margin-right: 1rem
+    }
+    .box-spots .starRadio{
+        width: 7%;
+        right: 33%;
+    }
+    .antena{
+        width: 10%;
+        bottom: -2%
+    }
+
+}

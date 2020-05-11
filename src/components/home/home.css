@@ -5,6 +5,11 @@
     background-position: top;
  
   }
+
+  .titulo-home{
+    width: 15rem;
+    margin-bottom: .8rem;
+  }
   .text-proposito{
     width: 90%;
     position: absolute;
@@ -21,8 +26,7 @@
     font-weight: bolder!important;
     line-height: 1.2rem;
     -webkit-text-stroke: 1px #7dc7c5;
-    letter-spacing: 1px
-  
+    letter-spacing: 1px;
   }
   .text-proposito .megafono{
     width: 3rem;
@@ -40,7 +44,8 @@
   .text-proposito p{
     line-height: 1.3rem;
     font-family: 'Questrial', sans-serif;
-    font-size: .9rem
+    font-size: .9rem;
+    letter-spacing: .02rem
   }
  
   
@@ -82,6 +87,10 @@
     width: 37%;
     margin: auto
   }
+  .img-des-fisico img{
+    width: 43.1%;
+    margin: auto;
+   }
    .box-estrategias .card-body{
     padding: .5rem;
     color: #7DC7C5;
@@ -271,9 +280,6 @@
   }
 
 
-
-
-  
  
   /* DESKTOP */
 @media (min-width: 769px) {
@@ -287,10 +293,15 @@
   .text-proposito .h1-proposito{
     margin-left: 5rem;
     margin-bottom: 1.5rem;
+    /* -webkit-text-stroke: 2px #7dc7c5; */
+    font-weight: bolder;
+  
   }
   .text-proposito h1{
    font-size: 2.5rem;
    line-height: 2.3rem;
+   font-weight: bolder;
+   /* -webkit-text-stroke: 2px #7dc7c5; */
  }
   .text-proposito .megafono{
    width: 5rem
@@ -298,14 +309,24 @@
  .text-proposito{
    width: 40%
  }
- .mt-4-xl{
-   margin-top: 2rem;
-   margin-bottom: 2.5rem
 
+ .titulo-home{
+  width: 24rem;
+  margin-bottom: 1rem;
+}
+
+ .mt-4-xl{
+   margin-top: 1.6rem;
+   margin-bottom: 2.5rem
+ }
+ .fuerte-desktop{
+  -webkit-text-stroke: .15px #fff;
+  letter-spacing: .1rem
  }
  .text-proposito p, .nosotros-home p{
    font-size: 1.4rem;
-   line-height: 1.8rem
+   line-height: 1.8rem;
+   letter-spacing: .08rem
  }
  .arrow-orange{
    width: 1.5rem;
@@ -354,6 +375,8 @@
    width: 20%;
  
  }
+ 
+ 
  .cohete{
    top:7rem;
    width: 20%;

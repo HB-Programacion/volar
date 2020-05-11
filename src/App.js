@@ -1,6 +1,7 @@
 import React, {useState }from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import { auth,db } from "./components/firebase/firebase";
+// import {Planets} from 'react-preloaders';
 
 import "./App.css";
 
@@ -26,6 +27,11 @@ import Perfil from './components/loginRegister/perfil/Perfil'
 import Fase1 from "./components/fase1/Fase1"
 import RegistroChild from "./components/loginRegister/perfil/RegistroChild";
 import { useCollection } from "react-firebase-hooks/firestore";
+import Fase2 from "./components/fase2/Fase2";
+import Crecer from "./components/crecer/Crecer";
+import Agua from "./components/agua-segura/AguaSegura";
+import Piloto from "./components/Piloto/Piloto";
+
 
 
 function App() {
@@ -36,22 +42,27 @@ function App() {
   const [idChild, setIdChild] = React.useState("")
   const [arrayChild, setArrayChild] = React.useState("");
   const [subItem, setSubItem] = React.useState(false)
-
+  const [menuBurgerOpen, setmenuBurgerOpen] =React.useState(false)
 
   const mostrarSubItem = ()=>{
       setSubItem(!subItem)
   }
 
-  console.log("jkkks", subItem)
-  const drawerToggleClickHandler = (prev) => {
-    if(prev){
-      setSideDrawerOpen(true)
-    }else{
-      setSideDrawerOpen(false)
-    }
+
+
     // setSideDrawerOpen((prev)=>{
       
     //   return{sideDrawerOpen:!prev.sideDrawerOpen}
+
+  const drawerToggleClickHandler = () => {
+    // if(prev){
+    //   setmenuBurgerOpen(true)
+    // }else{
+    //   setmenuBurgerOpen(false)
+    // }
+    // setmenuBurgerOpen((prev)=>{
+      setmenuBurgerOpen(true)
+    //   return{menuBurgerOpen:!prev.menuBurgerOpen}
     // })
   }
   const [contenidoFirebase, loading, error] = useCollection(
@@ -71,16 +82,14 @@ function App() {
     setArrayChild(arrayChildT)
   }
 
-  console.log(arrayChild)
-  const backdropClickHandler =()=>{
-
-    setSideDrawerOpen(false)
+  const ocultarMenuMobile =()=>{
+    setmenuBurgerOpen(false)
   }
     // let sideDrawer;
     let backdrop;
-    if(sideDrawerOpen){
+    if(menuBurgerOpen){
       // sideDrawer = <SideDrawer/>;
-      backdrop = <Backdrop click={backdropClickHandler}/>;
+      backdrop = <Backdrop click={ocultarMenuMobile}/>;
     }
  
 
@@ -116,16 +125,18 @@ function App() {
           idChild={idChild}
           updateArrayChild={updateArrayChild}
           userName={userName}
+          ocultarMenuMobile={ocultarMenuMobile}
         />
         
         <SideDrawer 
         firebaseUser={firebaseUser}
         show={sideDrawerOpen}
-        click={backdropClickHandler}
         userName={userName}
         mostrarSubItem={mostrarSubItem}
         subItem={subItem}
-        idChild={idChild}/>
+        idChild={idChild}
+        show={menuBurgerOpen}
+        ocultarMenuMobile={ocultarMenuMobile}/>
         {backdrop}
        
         {/* <Menu firebaseUser={firebaseUser} /> */}
@@ -173,11 +184,29 @@ function App() {
         <Route 
           path="/nosotros/fase1" 
           exact component={Fase1} />
+        <Route 
+          path="/nosotros/fase2" 
+          exact component={Fase2} />
+        <Route 
+          path="/nosotros/fase2/crecer" 
+          exact component={Crecer} />
+          <Route 
+          path="/nosotros/fase2/agua-segura" 
+          exact component={Agua} />
+          <Route 
+          path="/nosotros/fase2/el-piloto" 
+          exact component={Piloto} />
+          
       </Switch>
       <Footer />
       </div>
     </Router>
-  ):(<p>CARGANDO</p>);
+  ):(
+
+    <p>cargado</p>
+    // <Planets color="#7DC7C5"/>
+    
+    );
 }
 
 export default App;

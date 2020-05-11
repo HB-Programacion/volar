@@ -29,6 +29,10 @@ html{
 }
 
 .btn-orange{
+
+ font-family: "helvetica";
+ font-weight: 550;
+ letter-spacing: .07rem;
 background-color: #EF8B44;
 border:1.3px solid #CE6A24;
 padding: 12px 6px;
@@ -94,6 +98,13 @@ font-size: .8rem;
   line-height: 1.1rem;
   letter-spacing: .25px
 }
+.p-mobile-white{
+  font-family: 'Questrial';
+  color: #fff;
+  font-size: .85rem;
+  line-height: 1.1rem;
+  letter-spacing: .25px
+}
 
 .letra-gruesa-azul{
   -webkit-text-stroke: .8px #2E335E;
@@ -118,7 +129,18 @@ font-size: .8rem;
   border-bottom-right-radius: 30px;
 }
 
-
+.w-10{
+  width: 10%
+}
+.w-12{
+  width: 12%
+}
+.w-15{
+  width: 15%
+}
+.w-25{
+  width: 25%
+}
 .w-30{
   width: 30%
 }
@@ -162,6 +184,17 @@ font-size: .8rem;
   width: 100%;
 }
 
+.fondo-azul{
+  background: #2E335E
+}
+
+.fondo-blanco{
+  background: #fff
+}
+
+.fondo-celeste{
+  background: #7DC7C5;
+}
 .hide-desktop{
   display: none;
 }
@@ -208,6 +241,10 @@ font-size: .8rem;
      display: none!important
    }
 .p-mobile-blue{
+  font-size: 1.4rem;
+  line-height: 1.8rem
+}
+.p-mobile-white{
   font-size: 1.4rem;
   line-height: 1.8rem
 }

@@ -1,0 +1,132 @@
+.fase2{
+    margin-top: 4.5rem;
+    /* background-image: url("../../images/fase1-img/fondo_fase1.png"); */
+    background-color: #2E335E;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding:2rem 1.5rem 4rem 1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.star-left-mobile{
+    position: absolute;
+    left: 10%;
+    top: 12%;
+}
+
+.star-right-mobile{
+    position: absolute;
+    right: 10%;
+    top: 12%;
+}
+.btn-fase2{
+    font-family: 'Questrial';
+    font-size: 1.3rem;
+    -webkit-text-stroke: .8px ;
+    letter-spacing: .06rem;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background: #fff;
+    border: 2px solid #f3eeee;
+    border-radius: 1.1rem ;
+    padding: .9rem 0rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.btn-fase-piloto{
+    font-family: 'Questrial';
+    font-size: 1.3rem;
+    -webkit-text-stroke: .8px ;
+    letter-spacing: .06rem;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background: #F7B919;
+    border: 2px solid #f7e6ba;
+    border-radius: 1.1rem;
+    padding: .9rem 0rem;
+    color: #fff;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.btn-fase2:hover,
+.btn-fase2:focus{
+    box-shadow: 1px 2px 2px 1px #f3eeee;
+    text-decoration: none;
+    font-size: 1.5rem
+}
+
+.btn-fase-piloto:hover,
+.btn-fase-piloto:focus{
+    box-shadow: 1px 2px 2px 1px #f7e6ba;
+    text-decoration: none;
+    font-size: 1.5em
+}
+.box-botones-fase2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    /* height: 17em; */
+    position: relative;
+    top: -4rem;
+    margin-bottom: -7rem;
+    
+    
+}
+.cohete-fase2{
+    margin: auto;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: -6rem;
+    z-index: -1;
+
+}
+
+@media (min-width: 769px){
+    .fase2{
+        margin-top: 6rem;
+        padding:5rem 5rem 7rem 5rem;
+    }
+    .box-botones-fase2{
+        margin-bottom: -12rem;
+        top: -6rem;
+        
+    }
+    .btn-fase2{
+        width: 25%;
+        margin-top: 2rem;
+        font-size: 2.4rem;
+        border-radius: 2rem;
+        box-shadow: 1px 1px #f3eeee;
+    }
+    .btn-fase-piloto{
+        width: 25%;
+        margin-top: 2rem;
+        font-size: 2.4rem;
+        border-radius: 2rem;
+        box-shadow: 1px 1px #f7e6ba;
+    }
+    .cohete-fase2{
+        width: 20%;
+        bottom: -12rem;
+    }
+    
+    .btn-fase2:hover,
+    .btn-fase2:focus{
+        font-size: 2.6rem;
+        box-shadow: 2px 2px 2px 2px #f3eeee;
+    }
+    
+    .btn-fase-piloto:hover,
+    .btn-fase-piloto:focus{
+        font-size: 2.6rem;
+        box-shadow: 2px 2px 2px 2px #f7e6ba;
+    }
+}
