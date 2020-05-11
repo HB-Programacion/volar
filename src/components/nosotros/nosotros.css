@@ -166,7 +166,7 @@
   }
   .btn-cohete:hover,
   .btn-cohete:focus{
-    border: 2.5px solid #CE6A24;
+    border: 1.5px solid #CE6A24;
     text-decoration: none;
     color: #fff;
   }
@@ -249,7 +249,7 @@
 .cohete-construccion{
   width: 50%;
   position: absolute;
-  bottom: -1rem;
+  bottom: -5rem;
   left: 50%;
   transform: translate(-50%)
 }
