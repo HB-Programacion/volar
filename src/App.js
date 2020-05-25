@@ -33,8 +33,8 @@ import Crecer from "./components/crecer/Crecer";
 import Agua from "./components/agua-segura/AguaSegura";
 import Piloto from "./components/Piloto/Piloto";
 import { Orbitals } from "react-spinners-css";
-import ConstruccionFase3 from "./components/nosotros/ConstruccionFase3";
-import ConstruccionFase4 from "./components/nosotros/ConstruccionFase4";
+import Fase3 from "./components/fase3/Fase3";
+import Fase4 from "./components/fase4/Fase4";
 import ConstruccionLogin from "./components/loginRegister/ConstruccionLogin";
 
 function App() {
@@ -196,8 +196,8 @@ function App() {
           <Route path="/nosotros/fase2/agua-segura" exact component={Agua} />
           <Route path="/nosotros/fase2/el-piloto" exact component={Piloto} />
           <Route path="/construccion-aprendamos" exact component={ConstruccionAprendamos} />
-          <Route path="/construccion-fase-3" exact component={ConstruccionFase3} />
-          <Route path="/construccion-fase-4" exact component={ConstruccionFase4} />
+          <Route path="/nosotros/fase3" exact component={Fase3} />
+          <Route path="/nosotros/fase4" exact component={Fase4} />
         </Switch>
         <Footer />
       </div>
