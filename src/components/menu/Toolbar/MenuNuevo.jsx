@@ -41,14 +41,11 @@ const MenuNuevo =props => {
                 <ul>
                     <li><NavLink to="/" activeClassName='is-activeHome' exact={true} >Inicio</NavLink></li>
                     <li><NavLink to="/nosotros" activeClassName='is-activeHome' >Nosotros</NavLink></li>
-                    {/*{
+                    {
                       props.firebaseUser !== null ?  <li><NavLink to={`/aprendamos/cuidador/${props.idChild}`} activeClassName='is-activeHome' >Aprendamos</NavLink></li> :
                       <li><NavLink to='/aprendamos' activeClassName='is-activeHome' >Aprendamos</NavLink></li>
-                    }*/}
-                    {
-                      props.firebaseUser !== null ?  <li><NavLink to= "/construccion-aprendamos" activeClassName='is-activeHome' >Aprendamos</NavLink></li> :
-                      <li><NavLink to= "/construccion-aprendamos" activeClassName='is-activeHome' >Aprendamos</NavLink></li>
                     }
+
                     <li><NavLink to="/contactanos" activeClassName='is-activeHome'>Contáctanos</NavLink></li>
                     {props.firebaseUser !== null ? (
                         <li className="nav-item dropdown">
@@ -73,7 +70,7 @@ const MenuNuevo =props => {
                         </li>
             )
                     : (
-                    <li className="mostrar-siempre"><Link to="/login-construccion" className="font-color-orange"><img src={candado} alt="candado" className="" /> Iniciar sesión</Link> </li>
+                    <li className="mostrar-siempre"><Link to="/login" className="font-color-orange"><img src={candado} alt="candado" className="" /> Iniciar sesión</Link> </li>
                     )}
                 </ul>
             </div>
