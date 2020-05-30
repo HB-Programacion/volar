@@ -128,11 +128,9 @@ const Login = (props) => {
   }, [ props.history]);
 
   return (
-    <div className="container">
+    
       <div className="register-child">
-        <div className="row">
           <h1 className="tittle-register-child">¡Bienvenido!</h1>
-        </div>
         <div className="list-login">
           <form onSubmit={procesarDatos}>
             {error && <div className="alert alert-danger">{error}</div>}
@@ -185,7 +183,7 @@ const Login = (props) => {
           </div>
         </div>
       </div>
-    </div>
+ 
   );
 };
 export default withRouter(Login);
