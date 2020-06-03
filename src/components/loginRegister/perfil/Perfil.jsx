@@ -445,7 +445,7 @@ const Perfil = (props) => {
             ) : (
               <div className="list-register2">
                 <div className="row">
-                  <div className="col-sm-12 col-md-12	col-lg-6 col-xl-6">
+                  <div className="col-sm-12 col-md-12	col-lg-7 col-xl-7">
                     <p className="subtitulo-perfil">Datos Generales</p>
                     <form onSubmit={procesarDatosPerfil}>
                       {error && (
@@ -602,7 +602,7 @@ const Perfil = (props) => {
                       </div>
                     </form>
                   </div>
-                  <div className="col-sm-12 col-md-12	col-lg-6 col-xl-6">
+                  <div className="col-sm-12 col-md-12	col-lg-5 col-xl-5">
                     <div className="vertical-line"></div>
                     <div className="marginPerfilChild">
                       <p className="subtitulo-perfil">Niños:</p>
