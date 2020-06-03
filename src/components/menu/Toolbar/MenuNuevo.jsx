@@ -30,7 +30,6 @@ const MenuNuevo =props => {
     });
   };
 
-  console.log("loco", props.firebaseUser)
     return (
 <div>
     <header className="toolbar">

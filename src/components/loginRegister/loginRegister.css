@@ -31,7 +31,7 @@
 }
 .list-login {
   box-shadow: 0 0 9px rgb(134, 129, 129,0.3);
-  margin: 2rem 30rem 2rem 30rem;
+  margin: 2rem 32rem 2rem 32rem;
   padding: 2rem 4rem 2rem 4rem;
   border-radius: 20px;
 }
@@ -40,7 +40,7 @@
   color: #2e335e;
   font-family: "Questrial";
   font-size: 1.2rem;
-  margin-bottom: 0;
+  margin-bottom: 0.3rem;
 }
 
 .box-text-a {

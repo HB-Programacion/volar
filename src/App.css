@@ -227,6 +227,12 @@ font-size: .8rem;
   display: none!important
 }
 
+input:focus{
+  outline: none;
+  -webkit-box-shadow: 4px 3px 3px 1px rgba(46,51,94,1);
+-moz-box-shadow: 4px 3px 3px 1px rgba(46,51,94,1);
+box-shadow: 4px 3px 3px 1px rgba(46,51,94,1);
+}
 
 
 /* TABLET */

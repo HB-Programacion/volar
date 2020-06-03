@@ -73,7 +73,6 @@ function App() {
 
   const mandarIdChild = (idChildArray) => {
     setIdChild(idChildArray);
-    console.log("perro", idChild);
   };
 
   const updateArrayChild = (arrayChildT) => {

@@ -30,7 +30,7 @@ export const Higiene = ({contenidoFirebase, error, loading, firebaseUser, idChil
   console.log("hola", childData.data().edadChild)
     ///Obteniendo todo el contenido de firebase///*/
   }, [firebaseUser, idChild]);
-    console.log("edad-2", edad)
+
 
   return (
     <div>

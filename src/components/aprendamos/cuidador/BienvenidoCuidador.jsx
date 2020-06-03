@@ -38,9 +38,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild }) => {
     }
   }, [firebaseUser, idChild]);
 
-  console.log("array-a", arrayChild);
 
-  console.log("puta que felicidad ", idChild);
   return (
     <div>
       <div className="box-title-cuidador show-desktop">
