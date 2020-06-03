@@ -2,12 +2,12 @@ import React from "react";
 
 import "./Fase2.css"
 import {Router, Route, Link, Switch } from "react-router-dom";
-import starLeftMobile from "../../images/fase2-img/star-left-mobile.svg"
-import starRightMobile from "../../images/fase2-img/star-rigth-mobile.svg"
-import cohete from "../../images/fase2-img/cohete-fase2.svg"
-import crecer from "../../images/nosotros-img/crecer.svg"
-import agua from "../../images/nosotros-img/agua-segura.svg"
-import coheteStars from "../../images/cohete-stars.svg"
+import starLeftMobile from "../../../images/fase2-img/star-left-mobile.svg"
+import starRightMobile from "../../../images/fase2-img/star-rigth-mobile.svg"
+import cohete from "../../../images/fase2-img/cohete-fase2.svg"
+import crecer from "../../../images/nosotros-img/crecer.svg"
+import agua from "../../../images/nosotros-img/agua-segura.svg"
+import coheteStars from "../../../images/cohete-stars.svg"
 
 const Fase2 = () => {
     return(

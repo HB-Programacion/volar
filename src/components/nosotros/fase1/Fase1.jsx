@@ -2,17 +2,17 @@ import React from "react";
 
 import "./fase1.css"
 
-import modelos from "../../images/fase1-img/modelo-cultural.svg"
-import mapeo from "../../images/fase1-img/mapeo.svg"
-import investigacion from "../../images/fase1-img/investigacion.svg"
-import info from "../../images/fase1-img/contenido_infografia1.png"
-import infoDesktop from "../../images/fase1-img/infografia-desktop.png"
-import starsleft from "../../images/fase1-img/stars-info-left.svg"
-import starsRigth from "../../images/fase1-img/stars-info-rigth.svg"
-import arrowLeft from '../../images/arrow-left-orange.svg'
-import arrowRigth from '../../images/arrow-right-orange.svg';
-import arrowLeftBlue from '../../images/arrow-left-blue.svg'
-import arrowRightBlue from '../../images/arrow-right-blue.svg'
+import modelos from "../../../images/fase1-img/modelo-cultural.svg"
+import mapeo from "../../../images/fase1-img/mapeo.svg"
+import investigacion from "../../../images/fase1-img/investigacion.svg"
+import info from "../../../images/fase1-img/contenido_infografia1.png"
+import infoDesktop from "../../../images/fase1-img/infografia-desktop.png"
+import starsleft from "../../../images/fase1-img/stars-info-left.svg"
+import starsRigth from "../../../images/fase1-img/stars-info-rigth.svg"
+import arrowLeft from '../../../images/arrow-left-orange.svg'
+import arrowRigth from '../../../images/arrow-right-orange.svg';
+import arrowLeftBlue from '../../../images/arrow-left-blue.svg'
+import arrowRightBlue from '../../../images/arrow-right-blue.svg'
 
 const Fase1 = () => {
     return(

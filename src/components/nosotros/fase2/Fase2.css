@@ -1,6 +1,6 @@
 .fase2{
     margin-top: 4.5rem;
-    background-image: url("../../images/fase2-img/fondo_fase_2_mobile.png");
+    background-image: url("../../../images/fase2-img/fondo_fase_2_mobile.png");
     /* background-color: #2E335E; */
     background-repeat: no-repeat;
     background-size: cover;
@@ -113,7 +113,7 @@
     .fase2{
         margin-top: 5rem;
         padding:5rem 5rem 6rem 5rem;
-        background-image: url("../../images/fase2-img/fondo_fase_2_desktop.png");
+        background-image: url("../../../images/fase2-img/fondo_fase_2_desktop.png");
         background-position: top center;
     }
     .titulo-fase2{

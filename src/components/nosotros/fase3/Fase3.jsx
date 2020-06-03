@@ -1,12 +1,13 @@
 import React from 'react'
 
 import "./Fase3.css"
-import duracion from "../../images/fase3-img/duracion.svg"
-import articulacion from "../../images/fase3-img/articulacion.svg"
-import evaluacion from "../../images/fase3-img/evaluacion.svg"
-import mejoras from "../../images/fase3-img/mejoras.svg"
-import reforzamiento from "../../images/fase3-img/reforzamiento.svg"
-import cohete from "../../images/fase3-img/cohete-naranja.svg"
+import duracion from "../../../images/fase3-img/duracion.svg"
+import articulacion from "../../../images/fase3-img/articulacion.svg"
+import evaluacion from "../../../images/fase3-img/evaluacion.svg"
+import mejoras from "../../../images/fase3-img/mejoras.svg"
+import reforzamiento from "../../../images/fase3-img/reforzamiento.svg"
+import cohete from "../../../images/fase3-img/cohete-naranja.svg"
+import coheteLuna from '../../../images/cohete-stars.svg';
 
 const Fase3 = () => {
     return (
@@ -14,7 +15,7 @@ const Fase3 = () => {
             <div className="fase1 fase3-image border-bottom-radius">
                 <h6 className="titulo-numero-fase">Fase 3</h6>
                 <h5 className="titulo-fase">Refinar</h5>
-                <p className="p-mobile-white w-fase">
+                <p className="p-mobile-blue w-fase">
                     Para el año 2020, Volar recoge todos los aprendizajes obtenidos durante el 2019 para ajustar y afianzar su modelo de atención a la primera infancia de forma integral, que se acople lo mejor posible a la realidad de nuestras zonas de influencia, a las necesidades de los actores locales y comunitarios en los que nos apoyamos.
                 </p>
             </div>
@@ -70,12 +71,12 @@ const Fase3 = () => {
                 </div>
             </div>
             <div className="box-boton-fase3">
-                <a href="/" className="btn-modelo-volar wobble-hor-bottom">
+                <a href="/fase3/modelo-volar" className="btn-modelo-volar wobble-hor-bottom">
                     <img src={cohete} className="w-12 mr-2"></img>
                     Modelo volar
                 </a>
             </div>
-            
+            <img src={coheteLuna} alt="" className="cohete "/>
         </div>
     )
 }
