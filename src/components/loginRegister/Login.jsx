@@ -13,17 +13,14 @@ const Login = (props) => {
   const procesarDatos = (e) => {
     e.preventDefault();
     if (!email.trim()) {
-      console.log("ingrese email");
       setError("ingrese email");
       return;
     }
     if (!password.trim()) {
-      console.log("ingrese password");
       setError("ingrese password");
       return;
     }
     if (password.length < 6) {
-      console.log("Password de 6 carácteres a más");
       setError("Password mayor a 6 carácteres");
       return;
     }
@@ -33,7 +30,6 @@ const Login = (props) => {
   const login = React.useCallback(async () => {
     try {
       const res = await auth.signInWithEmailAndPassword(email,password);
-      console.log(res.user);
       setPassword('')
       setEmail('')
       setError(null)
@@ -56,7 +52,6 @@ const Login = (props) => {
     try {
        const  provider = new firebase.auth.GoogleAuthProvider()
       const res = await auth.signInWithPopup(provider);
-      console.log("google", res.user);
       /*await db.collection(res.user.uid).add({
         nombre:'tarea de ejemplo',
         fecha:Date.now()
@@ -141,6 +136,7 @@ const Login = (props) => {
               placeholder="Email"
               onChange={(e) => setEmail(e.target.value)}
               value={email}
+              autoFocus
             />
             <p className="letter-login">CONTRASEÑA</p>
             <input

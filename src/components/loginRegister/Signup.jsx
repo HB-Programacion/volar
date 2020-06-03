@@ -13,7 +13,6 @@ const Signup = (props) => {
   const [name, setName] = React.useState("");
   const [lastName, setLastName] = React.useState("");
   const [error, setError] = React.useState(null);
-  console.log("history", props.history);
   const procesarDatos = (e) => {
     e.preventDefault();
     if (!name.trim()) {
@@ -25,17 +24,14 @@ const Signup = (props) => {
       return;
     }
     if (!email.trim()) {
-      console.log("ingrese email");
       setError("ingrese email");
       return;
     }
     if (!password.trim()) {
-      console.log("ingrese password");
       setError("ingrese password");
       return;
     }
     if (password.length < 6) {
-      console.log("Password de 6 carácteres a más");
       setError("Password mayor a 6 carácteres");
       return;
     }
@@ -53,7 +49,6 @@ const Signup = (props) => {
   const registrar = React.useCallback(async () => {
     try {
       const res = await auth.createUserWithEmailAndPassword(email, password);
-      console.log("jhh", res.user);
       /*await db.collection(res.user.uid).add({
         nombre:'tarea de ejemplo',
         fecha:Date.now()
@@ -77,7 +72,6 @@ const Signup = (props) => {
       setError(null);
       props.history.push("/perfil");
     } catch (error) {
-      console.log("hola");
       if (error.code === "auth/invalid-email") {
         setError("Email no válido");
       } else if (error.code === "auth/email-already-in-use") {
@@ -90,7 +84,6 @@ const Signup = (props) => {
     try {
        const  provider = new firebase.auth.GoogleAuthProvider()
       const res = await auth.signInWithPopup(provider);
-      console.log("google", res.user);
       /*await db.collection(res.user.uid).add({
         nombre:'tarea de ejemplo',
         fecha:Date.now()
@@ -120,7 +113,6 @@ const Signup = (props) => {
     try {
        const  provider =  new firebase.auth.FacebookAuthProvider()
       const res = await auth.signInWithPopup(provider);
-      console.log("facebook", res.user);
       /*await db.collection(res.user.uid).add({
         nombre:'tarea de ejemplo',
         fecha:Date.now()
@@ -159,6 +151,7 @@ const Signup = (props) => {
               placeholder="Nombre"
               onChange={(e) => setName(e.target.value)}
               value={name}
+              autoFocus
             />
             <p className="letter-login">APELLIDOS</p>
             <input
