@@ -282,11 +282,8 @@ const Perfil = (props) => {
   };
 
   return (
-    <div className="container">
       <div className="register-child">
-        <div className="row">
           <h2 className="subtittle-register-child">Actualizar Perfil</h2>
-        </div>
         {usuarioChild && (
           <div>
             {usuarioChild.docs.length === 0 ? (
@@ -843,7 +840,6 @@ const Perfil = (props) => {
           </div>
         )}
       </div>
-    </div>
   );
 };
 
