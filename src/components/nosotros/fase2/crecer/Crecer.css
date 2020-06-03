@@ -2,7 +2,7 @@
 
 .fase2-crecer{
     margin-top: 4.5rem;
-    background-image: url("../../images/crecer-img/fondo_crecer_mejor_mobile.png");
+    background-image: url("../../../../images/crecer-img/fondo_crecer_mejor_mobile.png");
     background-size: cover;
     background-position: center;
     background-position: top;
@@ -327,7 +327,7 @@
     .fase2-crecer{
         margin-top: 5rem;
         padding:5rem 5rem 5rem 5rem;
-        background-image: url("../../images/crecer-img/fondo_crecer_mejor_desktop.png");
+        background-image: url("../../../../images/crecer-img/fondo_crecer_mejor_desktop.png");
         background-size: cover;
         background-position: top center;
     }

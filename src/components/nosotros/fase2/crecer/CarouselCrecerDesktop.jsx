@@ -1,9 +1,9 @@
 import React from 'react'
 
-import talleres from "../../images/crecer-img/talleres-presenciales.png"
-import videos from "../../images/crecer-img/videos-cortos.png"
-import mensajeria from "../../images/crecer-img/mensajeria.png"
-import radio from "../../images/crecer-img/radio.png"
+import talleres from "../../../../images/crecer-img/talleres-presenciales.png"
+import videos from "../../../../images/crecer-img/videos-cortos.png"
+import mensajeria from "../../../../images/crecer-img/mensajeria.png"
+import radio from "../../../../images/crecer-img/radio.png"
 
 
 const CarouselCrecerDesktop = () => {

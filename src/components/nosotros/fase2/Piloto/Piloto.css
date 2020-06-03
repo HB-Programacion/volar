@@ -2,7 +2,7 @@
 .fase2-piloto{
     margin-top: 4.5rem;
     padding-bottom: 2.5rem;
-    background-image: url("../../images/piloto-img/fase_piloto_mobile.png");
+    background-image: url("../../../../images/piloto-img/fase_piloto_mobile.png");
     background-size: cover;
     background-position: top ;
     background-repeat:no-repeat;
@@ -130,7 +130,7 @@
     .fase2-piloto{
         margin-top: 5rem;
         padding:5rem 5rem 5rem 5rem;
-        background-image: url("../../images/piloto-img/fondo_piloto_desktop.png");
+        background-image: url("../../../../images/piloto-img/fondo_piloto_desktop.png");
         background-position: center;
     }
     

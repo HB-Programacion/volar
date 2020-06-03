@@ -25,16 +25,16 @@ import { Contactanos } from "./components/contactanos/Contactanos";
 import Perfil from "./components/loginRegister/perfil/Perfil";
 import ConstruccionAprendamos from "./components/aprendamos/Construccion"
 
-import Fase1 from "./components/fase1/Fase1";
+import Fase1 from "./components/nosotros/fase1/Fase1";
 import RegistroChild from "./components/loginRegister/perfil/RegistroChild";
 import { useCollection } from "react-firebase-hooks/firestore";
-import Fase2 from "./components/fase2/Fase2";
-import Crecer from "./components/crecer/Crecer";
-import Agua from "./components/agua-segura/AguaSegura";
-import Piloto from "./components/Piloto/Piloto";
+import Fase2 from "./components/nosotros/fase2/Fase2";
+import Crecer from "./components/nosotros/fase2/crecer/Crecer";
+import Agua from "./components/nosotros/fase2/agua-segura/AguaSegura";
+import Piloto from "./components/nosotros/fase2/Piloto/Piloto";
 import { Orbitals } from "react-spinners-css";
-import Fase3 from "./components/fase3/Fase3";
-import Fase4 from "./components/fase4/Fase4";
+import Fase3 from "./components/nosotros/fase3/Fase3";
+import Fase4 from "./components/nosotros/fase4/Fase4";
 import ConstruccionLogin from "./components/loginRegister/ConstruccionLogin";
 
 function App() {
