@@ -63,6 +63,44 @@
     padding: 3rem 4rem 3rem 4rem;
     border-radius: 20px;
   }
+
+  .btn-navy-blue-password{
+    background-color:#7DC7C5;
+    padding: 8px 2px;
+    border-radius: 25px;
+    border: 1.3px solid #1A1F46;
+    box-shadow: 1px 1px 1px 1px #1A1F46;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration:none!important;
+    font-weight: 550!important;
+    display: block;
+    margin:0 auto;
+    font-family: "helvetica";
+    
+    }
+    .btn-navy-blue-password:hover,.btn-navy-blue:focus{
+      border: 2.5px #1A1F46;
+      text-decoration: none;
+      /* font-size: .9rem; */
+    }
+  
+
+    .box-actualizar-password{
+      margin-top: 1rem;
+      background-color: #ffffff;
+      box-shadow: 0 0 2px #7DC7C5;
+      margin: 2rem 0.5rem 0.5rem 0.5rem;
+      padding: 1rem 1rem 1rem 1rem;
+      border-radius: 20px;
+
+    }
+    .arrow-blue-password{
+      width: 1.2rem;
+      height: auto;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
   @media (max-width: 768px) {
     .list-register2 {
         box-shadow: 0 0 9px rgb(134, 129, 129);

@@ -7,7 +7,7 @@ import arrowRight from "./../../images/arrow-right-blue.svg";
 
 export const PasswordReset = () => {
   const [email, SetEmail]=React.useState('');
-  const usuario = auth.currentUser;;
+  const usuario = auth.currentUser;
   const resetPasswordEmail = async ()=>{
       var actionCodeSettings = {
           // After password reset, the user will be give the ability to go back

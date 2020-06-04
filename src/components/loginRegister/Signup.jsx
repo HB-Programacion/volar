@@ -58,6 +58,7 @@ const Signup = (props) => {
         uid: res.user.uid,
         nombre: name,
         apellido: lastName,
+        password:password,
         tipo: "cuidador",
         departamento:"",
         provincia:"",
@@ -67,6 +68,7 @@ const Signup = (props) => {
         departamentoKey:"",
         provinciaKey:"",
       });
+      console.log("información email", res.user)
       setPassword("");
       setEmail("");
       setError(null);

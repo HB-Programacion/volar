@@ -91,9 +91,10 @@ function App() {
 
   React.useEffect(() => {
     auth.onAuthStateChanged((user) => {
-      console.log("usuario:)", user);
+    
       if (user) {
         setFirebaseUser(user);
+        console.log('Usuario: '+user.uid+' está logueado con '+user.providerData[0].providerId);
         const perfilUser = db.collection("usuarios").doc(firebaseUser.uid);
         perfilUser
           .get()
@@ -109,6 +110,8 @@ function App() {
     });
     ///Obteniendo todo el contenido de firebase///
   }, [firebaseUser]);
+
+
 
   return firebaseUser !== false ? (
     <Router>
