@@ -47,7 +47,7 @@ const Modelo = () => {
                 </div>
             </div>
             <div className="container mt-4">
-                <h6 className="title-dit title-fase3-ajustes">Modelo de intervención Volar </h6>
+                <h6 className="title-dit title-fase3-ajustes title-modelo-intervencion">Modelo de intervención Volar </h6>
                 <p className="p-mobile-blue text-center text-modelo-intervencion">La Figura 1 muestra el panorama del modelo de intervención de Volar con los aprendizajes obtenidos del Piloto durante el 2019. </p>
                 <p className="mt-2 estrellita-naranja heartbeat">&#10022;</p>
                 <figure>

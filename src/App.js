@@ -37,6 +37,7 @@ import Fase3 from "./components/nosotros/fase3/Fase3";
 import Fase4 from "./components/nosotros/fase4/Fase4";
 import ConstruccionLogin from "./components/loginRegister/ConstruccionLogin";
 import Modelo from "./components/nosotros/fase3/modelo/Modelo";
+import Redes from "./components/redes/Redes";
 
 function App() {
   const [firebaseUser, setFirebaseUser] = React.useState(false);
@@ -114,6 +115,7 @@ function App() {
   return firebaseUser !== false ? (
     <Router>
       <div style={{ height: "100%" }}>
+      
         <MenuNuevo
           firebaseUser={firebaseUser}
           drawerClickHandler={drawerToggleClickHandler}
@@ -201,6 +203,7 @@ function App() {
           <Route path="/nosotros/fase4" exact component={Fase4} />
         </Switch>
         <Footer />
+        <Redes/>
       </div>
     </Router>
   ) : (

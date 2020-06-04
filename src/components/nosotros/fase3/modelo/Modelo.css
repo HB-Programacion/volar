@@ -138,11 +138,6 @@
         margin: 2rem auto
     }
 
-    .box-modelo-volar-item {
-        /* width: 49%; */
-
-    }
-
     .w-fase-modelo {
         margin: 0;
         width: 95%
@@ -160,11 +155,13 @@
         padding-left: 10rem;
         padding-right: 10rem
     }
-
+    .title-modelo-intervencion{
+        margin-top: 6rem
+    }
     .img-intervencion {
 
         margin: auto;
-        margin-bottom: 5rem;
+        margin-bottom: 7rem;
         margin-top: 2rem
     }
 
