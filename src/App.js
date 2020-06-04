@@ -5,6 +5,7 @@ import { auth, db } from "./components/firebase/firebase";
 
 import "./App.css";
 
+import { Orbitals } from "react-spinners-css";
 import MenuNuevo from "./components/menu/Toolbar/MenuNuevo";
 import SideDrawer from "./components/menu/SideDrawer/SideDrawer";
 import Backdrop from "./components/menu/Backdrop/Backdrop";
@@ -32,10 +33,11 @@ import Fase2 from "./components/nosotros/fase2/Fase2";
 import Crecer from "./components/nosotros/fase2/crecer/Crecer";
 import Agua from "./components/nosotros/fase2/agua-segura/AguaSegura";
 import Piloto from "./components/nosotros/fase2/Piloto/Piloto";
-import { Orbitals } from "react-spinners-css";
 import Fase3 from "./components/nosotros/fase3/Fase3";
 import Fase4 from "./components/nosotros/fase4/Fase4";
 import ConstruccionLogin from "./components/loginRegister/ConstruccionLogin";
+import Modelo from "./components/nosotros/fase3/modelo/Modelo";
+import Redes from "./components/redes/Redes";
 
 function App() {
   const [firebaseUser, setFirebaseUser] = React.useState(false);
@@ -116,6 +118,7 @@ function App() {
   return firebaseUser !== false ? (
     <Router>
       <div style={{ height: "100%" }}>
+      
         <MenuNuevo
           firebaseUser={firebaseUser}
           drawerClickHandler={drawerToggleClickHandler}
@@ -199,9 +202,11 @@ function App() {
           <Route path="/nosotros/fase2/el-piloto" exact component={Piloto} />
           <Route path="/construccion-aprendamos" exact component={ConstruccionAprendamos} />
           <Route path="/nosotros/fase3" exact component={Fase3} />
+          <Route path="/nosotros/fase3/modelo-volar" exact component={Modelo} />
           <Route path="/nosotros/fase4" exact component={Fase4} />
         </Switch>
         <Footer />
+        <Redes/>
       </div>
     </Router>
   ) : (

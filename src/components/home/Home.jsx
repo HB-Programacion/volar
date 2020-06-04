@@ -12,9 +12,18 @@ import groupNosotros from '../../images/group-nosotros.svg';
 import arrowLeft from '../../images/arrow-left-orange.svg';
 import arrowRigth from '../../images/arrow-right-orange.svg';
 
-import banner1 from '../../images/banner1.png';
-import bannerMobile1 from '../../images/baner-mobile1.png';
-import Nosotros from "../nosotros/Nosotros"
+
+import bannerMobile1 from '../../images/home-img/banner-mobile/banerM1.png';
+import bannerMobile2 from '../../images/home-img/banner-mobile/banerM2.png';
+import bannerMobile3 from '../../images/home-img/banner-mobile/banerM3.png';
+import bannerMobile4 from '../../images/home-img/banner-mobile/banerM4.png';
+
+import bannerDesktop1 from '../../images/home-img/banner-desktop/banerD1.png';
+import bannerDesktop2 from '../../images/home-img/banner-desktop/banerD2.png';
+import bannerDesktop3 from '../../images/home-img/banner-desktop/banerD3.png';
+import bannerDesktop4 from '../../images/home-img/banner-desktop/banerD4.png';
+
+
 import starLeft from "../../images/home-img/star-left.svg"
 import starRight from "../../images/home-img/star-right.svg"
 // import bannerDesktop from '../../images/home-img/foto_banner_propuesta.png';
@@ -142,7 +151,7 @@ const Home = () => {
                     
                 </div>
                 <div className="carousel-item">
-                    <img src={bannerMobile1} className="d-block w-100" alt="..."/>
+                    <img src={bannerMobile2} className="d-block w-100" alt="..."/>
                     <div className="carousel-caption-text">
                         <h2>¡Cada momento cuenta!</h2>
                         <p>¿Sabías que tus actividades cotidianas son oportunidades para el desarrollo del cerebro de tus hijas e hijos?</p>
@@ -162,7 +171,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <img src={bannerMobile1} className="d-block w-100" alt="..."/>
+                    <img src={bannerMobile3} className="d-block w-100" alt="..."/>
                     <div className="carousel-caption-text">
                         <h2>¡Cada momento cuenta!</h2>
                         <p>¿Sabías que tus actividades cotidianas son oportunidades para el desarrollo del cerebro de tus hijas e hijos?</p>
@@ -202,7 +211,7 @@ const Home = () => {
             </ol>
             <div className="carousel-inner">
                 <div className="carousel-item  active">
-                    <img src={bannerDesktop} className="d-block w-100 " alt="..." />
+                    <img src={bannerDesktop1} className="d-block w-100 " alt="..." />
                     <div className="carousel-caption-text">
                         <h2>¡Cada momento cuenta!</h2>
                         <p>¿Sabías que tus actividades cotidianas son oportunidades para el desarrollo del cerebro de tus hijas e hijos?</p>
@@ -223,7 +232,7 @@ const Home = () => {
                     
                 </div>
                 <div className="carousel-item">
-                    <img src={bannerDesktop} className="d-block w-100" alt="..."/>
+                    <img src={bannerDesktop2} className="d-block w-100" alt="..."/>
                     <div className="carousel-caption-text">
                         <h2>¡Cada momento cuenta!</h2>
                         <p>¿Sabías que tus actividades cotidianas son oportunidades para el desarrollo del cerebro de tus hijas e hijos?</p>
@@ -243,7 +252,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <img src={bannerDesktop} className="d-block w-100" alt="..."/>
+                    <img src={bannerDesktop3} className="d-block w-100" alt="..."/>
                     <div className="carousel-caption-text">
                         <h2>¡Cada momento cuenta!</h2>
                         <p>¿Sabías que tus actividades cotidianas son oportunidades para el desarrollo del cerebro de tus hijas e hijos?</p>

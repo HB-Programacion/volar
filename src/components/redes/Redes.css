@@ -1,0 +1,59 @@
+.cont-redes
+{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+	position: fixed;
+	top: 50%;
+	z-index: 10;
+	transform: translateY(-50%);
+	left: 0;
+
+}
+
+
+
+.cont-redes a
+{
+	width: 3rem;
+	height: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	color: #fff;
+	text-decoration: none;
+	opacity: 0.5;
+	filter: grayscale(1);
+	transition: all 0.4s ease-in;
+}
+
+.cont-redes a:hover
+{
+	opacity: 1;
+	filter: grayscale(0);
+}
+
+.cont-redes a i
+{
+	transform: rotate(90deg);
+	transition: all 0.4s ease-in;
+}
+
+.cont-redes a:hover i
+{
+	transform: rotate(0deg) scale(1.5);
+}
+
+.cont-redes a:nth-child(1)
+{
+background-color: #4267B2;
+}
+
+
+.cont-redes a:nth-child(2)
+{
+background-color: #F77737;
+}
