@@ -19,6 +19,7 @@ position: relative;
   font-family: "Questrial";
   -webkit-text-stroke: 2px #2e335e;
   font-size: 2.7rem;
+  text-align: center;
 }
 
 .list-register {
@@ -165,6 +166,7 @@ position: relative;
 
   .subtittle-register-child {
     font-size: 2rem;
+    text-align: center;
   }
 
   .list-register {

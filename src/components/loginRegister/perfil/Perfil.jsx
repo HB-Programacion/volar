@@ -21,7 +21,7 @@ const Perfil = (props) => {
   const [nameEdit, setNameEdit] = React.useState("");
   const [lastNameEdit, setLastNameEdit] = React.useState("");
   const [dataPerfil, setDataPerfil] = React.useState("");
-  const [dataPerfilChild, setDataPerfilChild] = React.useState("")
+  const [dataPerfilChild, setDataPerfilChild] = React.useState("");
   const [departamentos, setDepartamentos] = React.useState([]);
   const [provincias, setProvincias] = React.useState([]);
   const [distritos, setDistritos] = React.useState([]);
@@ -38,17 +38,20 @@ const Perfil = (props) => {
   const [guardado, setGuardado] = React.useState(null);
   const [editNameChild, setEditNameChild] = React.useState("");
   const [editSexoChild, setEditSexoChild] = React.useState("");
-  const [editFechaNacimientoChild, setEditFechaNacimientoChild] = React.useState("");
-  const [editRelationshipChild, setEditRelationshipChild] = React.useState(
-    ""
-  );
+  const [
+    editFechaNacimientoChild,
+    setEditFechaNacimientoChild,
+  ] = React.useState("");
+  const [editRelationshipChild, setEditRelationshipChild] = React.useState("");
   const [idChild, setIdChild] = React.useState(null);
   const [errorChild, setErrorChild] = React.useState(null);
   const [guardadoChild, setGuardadoChild] = React.useState(null);
-  const [editEdadChild, setEditEdadChild] = React.useState('');
+  const [editEdadChild, setEditEdadChild] = React.useState("");
+  const [password, setPassword] = React.useState("");
+  const [currentPassword, setCurrentPassword] = React.useState("");
+  const [newPassword, setNewPassword] = React.useState("");
+  const [repeatNewPassword, setRepeatNewPassword] = React.useState("");
 
-
-  
   const [usuarioChild] = useCollection(
     db
       .collection("usuarios")
@@ -69,6 +72,7 @@ const Perfil = (props) => {
           setEmailEdit(doc.data().email);
           setNameEdit(doc.data().nombre);
           setLastNameEdit(doc.data().apellido);
+          setPassword(doc.data().password);
           setCodigoBreca(doc.data().codigoBreca);
           setDepartamentoElegido(doc.data().departamento);
           setProvinciaElegido(doc.data().provincia);
@@ -89,7 +93,7 @@ const Perfil = (props) => {
         perfilUserChild
           .get()
           .then((item) => {
-            setDataPerfilChild(item.data())
+            setDataPerfilChild(item.data());
             setEditNameChild(item.data().nameChild);
             setEditSexoChild(item.data().sexoChild);
             setEditFechaNacimientoChild(item.data().nacimientoChild);
@@ -118,13 +122,13 @@ const Perfil = (props) => {
       .then((datos) => {
         setDistritos(datos);
       });
-       console.log("judith", editFechaNacimientoChild)
-      if(editFechaNacimientoChild!==""){
-        const birthday=new Date(editFechaNacimientoChild.split('-').join('/'));
-        const ageDifMs = Date.now() - birthday.getTime();
-      const ageDate = new Date(ageDifMs); 
-      setEditEdadChild(Math.abs(ageDate.getUTCFullYear() - 1970))
-      }
+    console.log("judith", editFechaNacimientoChild);
+    if (editFechaNacimientoChild !== "") {
+      const birthday = new Date(editFechaNacimientoChild.split("-").join("/"));
+      const ageDifMs = Date.now() - birthday.getTime();
+      const ageDate = new Date(ageDifMs);
+      setEditEdadChild(Math.abs(ageDate.getUTCFullYear() - 1970));
+    }
   }, [props.firebaseUser, idChild, editFechaNacimientoChild]);
 
   const handleInputChangeDepartamento = (event) => {
@@ -134,7 +138,7 @@ const Perfil = (props) => {
       event.target.options[selectedIndex].getAttribute("data-key")
     );
   };
-  console.log("edadChild", editEdadChild)
+  console.log("edadChild", editEdadChild);
   const handleInputChangeProvincia = (event) => {
     setProvinciaElegido(event.target.value);
     const selectedIndex = event.target.options.selectedIndex;
@@ -184,8 +188,42 @@ const Perfil = (props) => {
     editarPerfil();
     setError(null);
   };
+
+  const actualizarPassword = (e) => {
+    e.preventDefault();
+    setGuardado(null);
+    if (password !== currentPassword) {
+      setError("Contraseña actual incorrecta");
+      return;
+    }
+    if (
+      !newPassword.trim()
+    ) {
+      setError("Añadir la nueva contraseña");
+      return;
+    }
+    if (
+      newPassword !== repeatNewPassword 
+    ) {
+      setError("Las contraseñas no coinciden");
+      return;
+    }
+
+    editarPassword();
+    setError(null);
+  };
   const editarPerfil = async (e) => {
     try {
+      const user = auth.currentUser;
+      console.log("judith", user);
+      user
+        .updateEmail(emailEdit)
+        .then(function () {
+          // Update successful.
+        })
+        .catch(function (error) {
+          console.log("error", error);
+        });
       await db
         .collection("usuarios")
         .doc(props.firebaseUser.uid)
@@ -209,6 +247,24 @@ const Perfil = (props) => {
     }
   };
 
+  const editarPassword = async (e) => {
+    try {
+      const user = auth.currentUser;
+      user.updatePassword(newPassword);
+      await db
+      .collection("usuarios")
+      .doc(props.firebaseUser.uid)
+      .update({
+        ...dataPerfil,
+       password:newPassword
+      });
+
+      setGuardado("Tu contraseña ha sido actualizada");
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   const activarEdicion = (item) => {
     /*  setEditNameChild(item.data().nameChild);
     setEditSexo(item.data().sexoChild);
@@ -216,9 +272,6 @@ const Perfil = (props) => {
     setEditRelationshipChild(item.data().relationshipChild);*/
     setIdChild(item.id);
   };
-  
-
-  
 
   const procesarDatosPerfilChild = (e) => {
     e.preventDefault();
@@ -238,9 +291,8 @@ const Perfil = (props) => {
       setErrorChild("Agregue el parentesco con el niño(a)");
       return;
     }
-     
 
-    updateChild()
+    updateChild();
     setErrorChild(null);
   };
 
@@ -257,7 +309,7 @@ const Perfil = (props) => {
           sexoChild: editSexoChild,
           nacimientoChild: editFechaNacimientoChild,
           relationshipChild: editRelationshipChild,
-          edadChild:editEdadChild
+          edadChild: editEdadChild,
         });
 
       setGuardadoChild("El perfil de tu niño a sido editado");
@@ -282,45 +334,54 @@ const Perfil = (props) => {
   };
 
   return (
-    <div className="container">
-      <div className="register-child">
-        <div className="row">
-          <h2 className="subtittle-register-child">Actualizar Perfil</h2>
-        </div>
-        {usuarioChild && (
-          <div>
-            {usuarioChild.docs.length === 0 ? (
-              <div className="list-register">
-                <form onSubmit={procesarDatosPerfil}>
-                  {error && <div className="alert alert-danger">{error}</div>}
-                  {guardado && (
-                    <div className="alert alert-success">{guardado}</div>
-                  )}
-                  <div className="row">
-                    <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                      <p className="letter-register">NOMBRE:</p>
-                      <input
-                        className="input-register-space"
-                        type="text"
-                        placeholder="Nombre"
-                        name="nombre"
-                        onChange={(e) => setNameEdit(e.target.value)}
-                        value={nameEdit}
-                      />
-                    </div>
-                    <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                      <p className="letter-register">APELLIDO:</p>
-                      <input
-                        className="input-register-space"
-                        type="text"
-                        placeholder="Apellido"
-                        name="apellido"
-                        onChange={(e) => setLastNameEdit(e.target.value)}
-                        value={lastNameEdit}
-                      />
-                    </div>
+    <div className="register-child">
+      <h2 className="subtittle-register-child">Actualizar Perfil</h2>
+      {usuarioChild && (
+        <div>
+          {usuarioChild.docs.length === 0 ? (
+            <div className="list-register">
+              <form onSubmit={procesarDatosPerfil}>
+                {error && <div className="alert alert-danger">{error}</div>}
+                {guardado && (
+                  <div className="alert alert-success">{guardado}</div>
+                )}
+                <div className="row">
+                  <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <p className="letter-register">NOMBRE:</p>
+                    <input
+                      className="input-register-space"
+                      type="text"
+                      placeholder="Nombre"
+                      name="nombre"
+                      onChange={(e) => setNameEdit(e.target.value)}
+                      value={nameEdit}
+                    />
                   </div>
-                  <p className="letter-register">CORREO:</p>
+                  <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <p className="letter-register">APELLIDO:</p>
+                    <input
+                      className="input-register-space"
+                      type="text"
+                      placeholder="Apellido"
+                      name="apellido"
+                      onChange={(e) => setLastNameEdit(e.target.value)}
+                      value={lastNameEdit}
+                    />
+                  </div>
+                </div>
+                <p className="letter-register">CORREO:</p>
+                {props.firebaseUser.providerData[0].providerId ===
+                "google.com" ? (
+                  <input
+                    className="input-register-space"
+                    type="text"
+                    placeholder="Email"
+                    name="email"
+                    onChange={(e) => setEmailEdit(e.target.value)}
+                    value={emailEdit}
+                    disabled
+                  />
+                ) : (
                   <input
                     className="input-register-space"
                     type="text"
@@ -329,159 +390,168 @@ const Perfil = (props) => {
                     onChange={(e) => setEmailEdit(e.target.value)}
                     value={emailEdit}
                   />
-                  <div className="row">
-                    <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                      <p className="letter-register">DEPARTAMENTO</p>
-                      <select
-                        className="select-register-space"
-                        onChange={handleInputChangeDepartamento}
-                        value={departamentoElegido}
-                      >
-                        <option>---SELECCIONA---</option>
-                        {departamentos.map((item) => (
+                )}
+
+                <div className="row">
+                  <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                    <p className="letter-register">DEPARTAMENTO</p>
+                    <select
+                      className="select-register-space"
+                      onChange={handleInputChangeDepartamento}
+                      value={departamentoElegido}
+                    >
+                      <option>---SELECCIONA---</option>
+                      {departamentos.map((item) => (
+                        <option key={item.id} data-key={item.id}>
+                          {item.name}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                  <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                    <p className="letter-register">PROVINCIA</p>
+                    <select
+                      className="select-register-space"
+                      onChange={handleInputChangeProvincia}
+                      value={provinciaElegido}
+                    >
+                      <option>---SELECCIONA---</option>
+                      {provincias.map((item) =>
+                        item.department_id === departamentoElegidoKey ? (
                           <option key={item.id} data-key={item.id}>
                             {item.name}
                           </option>
-                        ))}
-                      </select>
-                    </div>
-                    <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                      <p className="letter-register">PROVINCIA</p>
-                      <select
-                        className="select-register-space"
-                        onChange={handleInputChangeProvincia}
-                        value={provinciaElegido}
-                      >
-                        <option>---SELECCIONA---</option>
-                        {provincias.map((item) =>
-                          item.department_id === departamentoElegidoKey ? (
-                            <option key={item.id} data-key={item.id}>
-                              {item.name}
-                            </option>
-                          ) : null
-                        )}
-                      </select>
-                    </div>
-                    <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                      <p className="letter-register">DISTRITO</p>
-                      <select
-                        className="select-register-space"
-                        onChange={(e) => setDistritoElegido(e.target.value)}
-                        value={distritoElegido}
-                      >
-                        <option>---SELECCIONA---</option>
-                        {distritos.map((item) =>
-                          item.province_id === provinciaElegidoKey ? (
-                            <option key={item.id} data-key={item.id}>
-                              {item.name}
-                            </option>
-                          ) : null
-                        )}
-                      </select>
-                    </div>
+                        ) : null
+                      )}
+                    </select>
                   </div>
-                  <div className="row">
-                    <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                      <p className="letter-register">COLABORADOR BRECA</p>
-
-                      <label className="style-radio">
-                        <input
-                          type="radio"
-                          name="breca"
-                          value="SI"
-                          onChange={(e) => setColaboradorBreca(e.target.value)}
-                          checked={colaboradorBreca === "SI"}
-                        />
-                        <span className="radio"></span>
-                        <span className="text">SI</span>
-                      </label>
-
-                      <label className="style-radio">
-                        <input
-                          type="radio"
-                          name="breca"
-                          value="NO"
-                          onChange={(e) => setColaboradorBreca(e.target.value)}
-                          checked={colaboradorBreca === "NO"}
-                        />
-                        <span className="radio"></span>
-                        <span className="text">NO</span>
-                      </label>
-                    </div>
-                    <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                      {colaboradorBreca === "SI" ? (
-                        <>
-                          <p className="letter-register">
-                            CÓDIGO COLABORADOR BRECA
-                          </p>
-                          <input
-                            className="input-register-space"
-                            type="text"
-                            placeholder="Código"
-                            name="códigoBreca"
-                            onChange={(e) => setCodigoBreca(e.target.value)}
-                            value={codigoBreca}
-                          />
-                        </>
-                      ) : null}
-                    </div>
+                  <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                    <p className="letter-register">DISTRITO</p>
+                    <select
+                      className="select-register-space"
+                      onChange={(e) => setDistritoElegido(e.target.value)}
+                      value={distritoElegido}
+                    >
+                      <option>---SELECCIONA---</option>
+                      {distritos.map((item) =>
+                        item.province_id === provinciaElegidoKey ? (
+                          <option key={item.id} data-key={item.id}>
+                            {item.name}
+                          </option>
+                        ) : null
+                      )}
+                    </select>
                   </div>
-                  <div className="row mt-4">
-                    <div className="col-sm-10 col-md-10 col-lg-10 col-xl-10">
-                      <button
-                        className="btn-navy-blue text-white"
-                        type="submit"
-                      >
-                        <img src={arrowLeft} className="arrow-blue"></img>
-                        GUARDAR
-                        <img src={arrowRight} className="arrow-blue"></img>
-                      </button>
-                    </div>
-                    <div className="col-sm-2 col-md-2 col-lg-2 col-xl-2 mt-3">
-                      <Link className="siguiente" to="/registro-niño">
-                        Siguiente &gt;
-                      </Link>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            ) : (
-              <div className="list-register2">
+                </div>
                 <div className="row">
-                  <div className="col-sm-12 col-md-12	col-lg-6 col-xl-6">
-                    <p className="subtitulo-perfil">Datos Generales</p>
-                    <form onSubmit={procesarDatosPerfil}>
-                      {error && (
-                        <div className="alert alert-danger">{error}</div>
-                      )}
-                      {guardado && (
-                        <div className="alert alert-success">{guardado}</div>
-                      )}
-                      <div className="row">
-                        <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                          <p className="letter-register">NOMBRE:</p>
-                          <input
-                            className="input-register-space"
-                            type="text"
-                            placeholder="Nombre"
-                            name="nombre"
-                            onChange={(e) => setNameEdit(e.target.value)}
-                            value={nameEdit}
-                          />
-                        </div>
-                        <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                          <p className="letter-register">APELLIDO:</p>
-                          <input
-                            className="input-register-space"
-                            type="text"
-                            placeholder="Apellido"
-                            name="apellido"
-                            onChange={(e) => setLastNameEdit(e.target.value)}
-                            value={lastNameEdit}
-                          />
-                        </div>
+                  <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <p className="letter-register">COLABORADOR BRECA</p>
+
+                    <label className="style-radio">
+                      <input
+                        type="radio"
+                        name="breca"
+                        value="SI"
+                        onChange={(e) => setColaboradorBreca(e.target.value)}
+                        checked={colaboradorBreca === "SI"}
+                      />
+                      <span className="radio"></span>
+                      <span className="text">SI</span>
+                    </label>
+
+                    <label className="style-radio">
+                      <input
+                        type="radio"
+                        name="breca"
+                        value="NO"
+                        onChange={(e) => setColaboradorBreca(e.target.value)}
+                        checked={colaboradorBreca === "NO"}
+                      />
+                      <span className="radio"></span>
+                      <span className="text">NO</span>
+                    </label>
+                  </div>
+                  <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    {colaboradorBreca === "SI" ? (
+                      <>
+                        <p className="letter-register">
+                          CÓDIGO COLABORADOR BRECA
+                        </p>
+                        <input
+                          className="input-register-space"
+                          type="text"
+                          placeholder="Código"
+                          name="códigoBreca"
+                          onChange={(e) => setCodigoBreca(e.target.value)}
+                          value={codigoBreca}
+                        />
+                      </>
+                    ) : null}
+                  </div>
+                </div>
+                <div className="row mt-4">
+                  <div className="col-sm-10 col-md-10 col-lg-10 col-xl-10">
+                    <button className="btn-navy-blue text-white" type="submit">
+                      <img src={arrowLeft} className="arrow-blue"></img>
+                      GUARDAR
+                      <img src={arrowRight} className="arrow-blue"></img>
+                    </button>
+                  </div>
+                  <div className="col-sm-2 col-md-2 col-lg-2 col-xl-2 mt-3">
+                    <Link className="siguiente" to="/registro-niño">
+                      Siguiente &gt;
+                    </Link>
+                  </div>
+                </div>
+              </form>
+            </div>
+          ) : (
+            <div className="list-register2">
+              <div className="row">
+                <div className="col-sm-12 col-md-12	col-lg-7 col-xl-7">
+                  <p className="subtitulo-perfil">Datos Generales</p>
+                  <form onSubmit={procesarDatosPerfil}>
+                    {error && <div className="alert alert-danger">{error}</div>}
+                    {guardado && (
+                      <div className="alert alert-success">{guardado}</div>
+                    )}
+                    <div className="row">
+                      <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        <p className="letter-register">NOMBRE:</p>
+                        <input
+                          className="input-register-space"
+                          type="text"
+                          placeholder="Nombre"
+                          name="nombre"
+                          onChange={(e) => setNameEdit(e.target.value)}
+                          value={nameEdit}
+                        />
                       </div>
-                      <p className="letter-register">CORREO:</p>
+                      <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        <p className="letter-register">APELLIDO:</p>
+                        <input
+                          className="input-register-space"
+                          type="text"
+                          placeholder="Apellido"
+                          name="apellido"
+                          onChange={(e) => setLastNameEdit(e.target.value)}
+                          value={lastNameEdit}
+                        />
+                      </div>
+                    </div>
+                    <p className="letter-register">CORREO:</p>
+                    {props.firebaseUser.providerData[0].providerId ===
+                    "google.com" ? (
+                      <input
+                        className="input-register-space"
+                        type="text"
+                        placeholder="Email"
+                        name="email"
+                        onChange={(e) => setEmailEdit(e.target.value)}
+                        value={emailEdit}
+                        disabled
+                      />
+                    ) : (
                       <input
                         className="input-register-space"
                         type="text"
@@ -490,339 +560,422 @@ const Perfil = (props) => {
                         onChange={(e) => setEmailEdit(e.target.value)}
                         value={emailEdit}
                       />
-                      <div className="row">
-                        <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                          <p className="letter-register">DEPARTAMENTO</p>
-                          <select
-                            className="select-register-space"
-                            onChange={handleInputChangeDepartamento}
-                            value={departamentoElegido}
-                          >
-                            <option>-SELECCIONA-</option>
-                            {departamentos.map((item) => (
+                    )}
+                    <div className="row">
+                      <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                        <p className="letter-register">DEPARTAMENTO</p>
+                        <select
+                          className="select-register-space"
+                          onChange={handleInputChangeDepartamento}
+                          value={departamentoElegido}
+                        >
+                          <option>-SELECCIONA-</option>
+                          {departamentos.map((item) => (
+                            <option key={item.id} data-key={item.id}>
+                              {item.name}
+                            </option>
+                          ))}
+                        </select>
+                      </div>
+                      <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                        <p className="letter-register">PROVINCIA</p>
+                        <select
+                          className="select-register-space"
+                          onChange={handleInputChangeProvincia}
+                          value={provinciaElegido}
+                        >
+                          <option>-SELECCIONA-</option>
+                          {provincias.map((item) =>
+                            item.department_id === departamentoElegidoKey ? (
                               <option key={item.id} data-key={item.id}>
                                 {item.name}
                               </option>
-                            ))}
-                          </select>
-                        </div>
-                        <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                          <p className="letter-register">PROVINCIA</p>
-                          <select
-                            className="select-register-space"
-                            onChange={handleInputChangeProvincia}
-                            value={provinciaElegido}
-                          >
-                            <option>-SELECCIONA-</option>
-                            {provincias.map((item) =>
-                              item.department_id === departamentoElegidoKey ? (
-                                <option key={item.id} data-key={item.id}>
-                                  {item.name}
-                                </option>
-                              ) : null
-                            )}
-                          </select>
-                        </div>
-                        <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                          <p className="letter-register">DISTRITO</p>
-                          <select
-                            className="select-register-space"
-                            onChange={(e) => setDistritoElegido(e.target.value)}
-                            value={distritoElegido}
-                          >
-                            <option>-SELECCIONA-</option>
-                            {distritos.map((item) =>
-                              item.province_id === provinciaElegidoKey ? (
-                                <option key={item.id} data-key={item.id}>
-                                  {item.name}
-                                </option>
-                              ) : null
-                            )}
-                          </select>
-                        </div>
+                            ) : null
+                          )}
+                        </select>
                       </div>
-                      <div className="row">
-                        <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                          <p className="letter-register">COLABORADOR BRECA</p>
+                      <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                        <p className="letter-register">DISTRITO</p>
+                        <select
+                          className="select-register-space"
+                          onChange={(e) => setDistritoElegido(e.target.value)}
+                          value={distritoElegido}
+                        >
+                          <option>-SELECCIONA-</option>
+                          {distritos.map((item) =>
+                            item.province_id === provinciaElegidoKey ? (
+                              <option key={item.id} data-key={item.id}>
+                                {item.name}
+                              </option>
+                            ) : null
+                          )}
+                        </select>
+                      </div>
+                    </div>
+                    <div className="row">
+                      <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        <p className="letter-register">COLABORADOR BRECA</p>
 
-                          <label className="style-radio">
-                            <input
-                              type="radio"
-                              name="breca"
-                              value="SI"
-                              onChange={(e) =>
-                                setColaboradorBreca(e.target.value)
-                              }
-                              checked={colaboradorBreca === "SI"}
-                            />
-                            <span className="radio"></span>
-                            <span className="text">SI</span>
-                          </label>
+                        <label className="style-radio">
+                          <input
+                            type="radio"
+                            name="breca"
+                            value="SI"
+                            onChange={(e) =>
+                              setColaboradorBreca(e.target.value)
+                            }
+                            checked={colaboradorBreca === "SI"}
+                          />
+                          <span className="radio"></span>
+                          <span className="text">SI</span>
+                        </label>
 
-                          <label className="style-radio">
+                        <label className="style-radio">
+                          <input
+                            type="radio"
+                            name="breca"
+                            value="NO"
+                            onChange={(e) =>
+                              setColaboradorBreca(e.target.value)
+                            }
+                            checked={colaboradorBreca === "NO"}
+                          />
+                          <span className="radio"></span>
+                          <span className="text">NO</span>
+                        </label>
+                      </div>
+                      <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        {colaboradorBreca === "SI" ? (
+                          <>
+                            <p className="letter-register">
+                              CÓDIGO COLABORADOR BRECA
+                            </p>
                             <input
-                              type="radio"
-                              name="breca"
-                              value="NO"
-                              onChange={(e) =>
-                                setColaboradorBreca(e.target.value)
-                              }
-                              checked={colaboradorBreca === "NO"}
-                            />
-                            <span className="radio"></span>
-                            <span className="text">NO</span>
-                          </label>
-                        </div>
-                        <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                          {colaboradorBreca === "SI" ? (
-                            <>
-                              <p className="letter-register">
-                                CÓDIGO COLABORADOR BRECA
-                              </p>
-                              <input
-                                className="input-register-space"
-                                type="text"
-                                placeholder="Código"
-                                name="códigoBreca"
-                                onChange={(e) => setCodigoBreca(e.target.value)}
-                                value={codigoBreca}
-                              />{" "}
-                            </>
-                          ) : null}
-                        </div>
+                              className="input-register-space"
+                              type="text"
+                              placeholder="Código"
+                              name="códigoBreca"
+                              onChange={(e) => setCodigoBreca(e.target.value)}
+                              value={codigoBreca}
+                            />{" "}
+                          </>
+                        ) : null}
                       </div>
-                      <div className="row mt-4">
-                        <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                          <button
-                            className="btn-navy-blue text-white"
-                            type="submit"
-                          >
-                            <img src={arrowLeft} className="arrow-blue"></img>
-                            GUARDAR
-                            <img src={arrowRight} className="arrow-blue"></img>
-                          </button>
-                        </div>
+                    </div>
+                    <div className="row mt-4">
+                      <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <button
+                          className="btn-navy-blue text-white"
+                          type="submit"
+                        >
+                          <img src={arrowLeft} className="arrow-blue"></img>
+                          GUARDAR
+                          <img src={arrowRight} className="arrow-blue"></img>
+                        </button>
                       </div>
-                    </form>
+                    </div>
+                  </form>
+                  {props.firebaseUser.providerData[0].providerId !==
+                "google.com" ? (
+                  <form onSubmit={actualizarPassword}>
+                  <div className="box-actualizar-password">
+                    <div className="row">
+                      <Link
+                        style={{
+                          margin: "auto",
+                          fontWeight: 700,
+                          fontSize: "1.3rem",
+                          marginBottom: "1.5rem",
+                        }}
+                      >
+                        Cambiar contraseña
+                      </Link>
+                    </div>
+                    {error && <div className="alert alert-danger">{error}</div>}
+                  {guardado && (
+                    <div className="alert alert-success">{guardado}</div>
+                  )}
+                    <div className="row">
+                      <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        <p className="letter-register">CONTRASEÑA ACTUAL</p>
+                        <input
+                          className="input-register-space"
+                          type="password"
+                          placeholder="Contraseña Actual"
+                          name="Actual Contraseña"
+                          onChange={(e) => setCurrentPassword(e.target.value)}
+                          value={currentPassword}
+                        />
+                      </div>
+                      <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        {password === currentPassword &&
+                        password.length >= 6 ? (
+                          <p>La contraseña actual es la correcta</p>
+                        ) : (
+                          <p>La contraseña actual no es la correcta</p>
+                        )}
+                      </div>
+                    </div>
+                    <div className="row">
+                      <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        <p className="letter-register">NUEVA CONTRASEÑA</p>
+                        <input
+                          className="input-register-space"
+                          type="password"
+                          placeholder="Nueva Contraseña"
+                          name="Nueva Contraseña"
+                          onChange={(e) => setNewPassword(e.target.value)}
+                          value={newPassword}
+                        />
+                      </div>
+                      <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        <p className="letter-register">
+                          REPETIR NUEVA CONTRASEÑA
+                        </p>
+                        <input
+                          className="input-register-space"
+                          type="password"
+                          placeholder="Repetir Nueva Contraseña"
+                          name="Repetir Nueva Contraseña"
+                          onChange={(e) =>
+                            setRepeatNewPassword(e.target.value)
+                          }
+                          value={repeatNewPassword}
+                        />
+                      </div>
+                    </div>
+                    <div className="row">
+                      <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <button
+                          className="btn-navy-blue-password text-white"
+                          type="submit"
+                        >
+                          <img
+                            src={arrowLeft}
+                            className="arrow-blue-password"
+                          ></img>
+                          Actualizar contraseña
+                          <img
+                            src={arrowRight}
+                            className="arrow-blue-password"
+                          ></img>
+                        </button>
+                      </div>
+                    </div>
                   </div>
-                  <div className="col-sm-12 col-md-12	col-lg-6 col-xl-6">
-                    <div className="vertical-line"></div>
-                    <div className="marginPerfilChild">
-                      <p className="subtitulo-perfil">Niños:</p>
-                      {usuarioChild.docs.map((item, key) => (
-                        <div className="row">
-                          <div key={item.id} className="col-12">
-                            <div className="box-sectionChild">
-                              {item.data().sexoChild === "Femenino" ? (
-                                <img
-                                  src={childA}
-                                  className="icono-video-tip"
-                                  alt="icono de tip"
-                                />
-                              ) : (
-                                <img
-                                  src={childO}
-                                  className="icono-video-tip"
-                                  alt="icono de tip"
-                                />
-                              )}
-                              <div className="box-text-video-tip">
-                                <h3 className="subtittle-video-tip">
-                                  {item.data().nameChild}
-                                </h3>
-                                <h5 className="text-video-tip">
-                                  Edad: {item.data().edadChild}
-                                </h5>
-                              </div>
-                              <div className="btn-editar-eliminar">
-                                <button
-                                  type="button"
-                                  className="btn btn-danger btn-sm float-right"
-                                  data-toggle="modal"
-                                  data-target={"#hola" + key}
-                                >
-                                  Eliminar
-                                </button>
-                                <button
-                                  type="button"
-                                  className="btn btn-warning btn-sm float-right mr-2"
-                                  data-toggle="modal"
-                                  data-target={"#editar" + key}
-                                  onClick={() => activarEdicion(item)}
-                                >
-                                  Editar
-                                </button>
-                                <div
-                                  class="modal fade"
-                                  id={"hola" + key}
-                                  tabindex="-1"
-                                  role="dialog"
-                                  aria-labelledby="exampleModalLabel"
-                                  aria-hidden="true"
-                                >
-                                  <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                      <div class="modal-body texto-modal">
-                                        ¿Estás seguro de querer borrar el perfil
-                                        de {item.data().nameChild}?
-                                      </div>
-                                      <div class="modal-footer">
-                                        <button
-                                          type="button"
-                                          class="btn btn-secondary"
-                                          data-dismiss="modal"
-                                        >
-                                          Close
-                                        </button>
-                                        <button
-                                          type="button"
-                                          class="btn btn-primary"
-                                          data-dismiss="modal"
-                                          onClick={() => eliminar(item.id)}
-                                        >
-                                          Eliminar
-                                        </button>
-                                      </div>
+                </form>
+                ): ""}
+                
+                </div>
+                <div className="col-sm-12 col-md-12	col-lg-5 col-xl-5">
+                  <div className="vertical-line"></div>
+                  <div className="marginPerfilChild">
+                    <p className="subtitulo-perfil">Niños:</p>
+                    {usuarioChild.docs.map((item, key) => (
+                      <div className="row">
+                        <div key={item.id} className="col-12">
+                          <div className="box-sectionChild">
+                            {item.data().sexoChild === "Femenino" ? (
+                              <img
+                                src={childA}
+                                className="icono-video-tip"
+                                alt="icono de tip"
+                              />
+                            ) : (
+                              <img
+                                src={childO}
+                                className="icono-video-tip"
+                                alt="icono de tip"
+                              />
+                            )}
+                            <div className="box-text-video-tip">
+                              <h3 className="subtittle-video-tip">
+                                {item.data().nameChild}
+                              </h3>
+                              <h5 className="text-video-tip">
+                                Edad: {item.data().edadChild}
+                              </h5>
+                            </div>
+                            <div className="btn-editar-eliminar">
+                              <button
+                                type="button"
+                                className="btn btn-danger btn-sm float-right"
+                                data-toggle="modal"
+                                data-target={"#hola" + key}
+                              >
+                                Eliminar
+                              </button>
+                              <button
+                                type="button"
+                                className="btn btn-warning btn-sm float-right mr-2"
+                                data-toggle="modal"
+                                data-target={"#editar" + key}
+                                onClick={() => activarEdicion(item)}
+                              >
+                                Editar
+                              </button>
+                              <div
+                                class="modal fade"
+                                id={"hola" + key}
+                                tabindex="-1"
+                                role="dialog"
+                                aria-labelledby="exampleModalLabel"
+                                aria-hidden="true"
+                              >
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-body texto-modal">
+                                      ¿Estás seguro de querer borrar el perfil
+                                      de {item.data().nameChild}?
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button
+                                        type="button"
+                                        class="btn btn-secondary"
+                                        data-dismiss="modal"
+                                      >
+                                        Close
+                                      </button>
+                                      <button
+                                        type="button"
+                                        class="btn btn-primary"
+                                        data-dismiss="modal"
+                                        onClick={() => eliminar(item.id)}
+                                      >
+                                        Eliminar
+                                      </button>
                                     </div>
                                   </div>
                                 </div>
-                                <div
-                                  class="modal fade"
-                                  id={"editar" + key}
-                                  tabindex="-1"
-                                  role="dialog"
-                                  aria-labelledby="exampleModalLabel"
-                                  aria-hidden="true"
-                                >
-                                  <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <h5
-                                          class="modal-title"
-                                          id="exampleModalLabel"
-                                        >
-                                          Editar datos del niño
-                                        </h5>
+                              </div>
+                              <div
+                                class="modal fade"
+                                id={"editar" + key}
+                                tabindex="-1"
+                                role="dialog"
+                                aria-labelledby="exampleModalLabel"
+                                aria-hidden="true"
+                              >
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5
+                                        class="modal-title"
+                                        id="exampleModalLabel"
+                                      >
+                                        Editar datos del niño
+                                      </h5>
+                                      <button
+                                        type="button"
+                                        class="close"
+                                        data-dismiss="modal"
+                                        aria-label="Close"
+                                      >
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <form onSubmit={procesarDatosPerfilChild}>
+                                        {errorChild && (
+                                          <div className="alert alert-danger">
+                                            {errorChild}
+                                          </div>
+                                        )}
+                                        {guardadoChild && (
+                                          <div className="alert alert-success">
+                                            {guardadoChild}
+                                          </div>
+                                        )}
+                                        <div className="row">
+                                          <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                            <p className="letter-register">
+                                              NOMBRE DE NIÑO:
+                                            </p>
+                                            <input
+                                              className="input-register-space"
+                                              type="text"
+                                              placeholder="Nombre del niño(a)"
+                                              name="nameChild"
+                                              onChange={(e) =>
+                                                setEditNameChild(e.target.value)
+                                              }
+                                              value={editNameChild}
+                                            />
+                                          </div>
+
+                                          <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                            <p className="letter-register">
+                                              SEXO:
+                                            </p>
+                                            <select
+                                              className="select-register-space"
+                                              onChange={(e) =>
+                                                setEditSexoChild(e.target.value)
+                                              }
+                                              value={editSexoChild}
+                                            >
+                                              <option>---SELECCIONA---</option>
+                                              <option>Masculino</option>
+                                              <option>Femenino</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                        <div className="row">
+                                          <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                            <p className="letter-register">
+                                              FECHA DE NACIMIENTO:
+                                            </p>
+                                            <input
+                                              className="input-register-space"
+                                              type="date"
+                                              name="editFechaNacimientoChild"
+                                              onChange={(e) =>
+                                                setEditFechaNacimientoChild(
+                                                  e.target.value
+                                                )
+                                              }
+                                              value={editFechaNacimientoChild}
+                                            />
+                                            <p>{editFechaNacimientoChild}</p>
+                                          </div>
+                                          <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                                            <p className="letter-register">
+                                              PARENTESCO CON EL NIÑO(A):
+                                            </p>
+                                            <select
+                                              className="select-register-space"
+                                              onChange={(e) =>
+                                                setEditRelationshipChild(
+                                                  e.target.value
+                                                )
+                                              }
+                                              value={editRelationshipChild}
+                                            >
+                                              <option>---SELECCIONA---</option>
+                                              <option>Mamá</option>
+                                              <option>Papá</option>
+                                              <option>Abuelo(a)</option>
+                                              <option>Tío(a)</option>
+                                              <option>Otros</option>
+                                            </select>
+                                          </div>
+                                        </div>
+
                                         <button
-                                          type="button"
-                                          class="close"
-                                          data-dismiss="modal"
-                                          aria-label="Close"
+                                          className="btn-navy-blue text-white"
+                                          type="submit"
                                         >
-                                          <span aria-hidden="true">
-                                            &times;
-                                          </span>
+                                          <img
+                                            src={arrowLeft}
+                                            className="arrow-blue"
+                                          ></img>
+                                          GUARDAR
+                                          <img
+                                            src={arrowRight}
+                                            className="arrow-blue"
+                                          ></img>
                                         </button>
-                                      </div>
-                                      <div class="modal-body">
-                                        <form onSubmit={procesarDatosPerfilChild}>
-                                          {errorChild && (
-                                            <div className="alert alert-danger">
-                                              {errorChild}
-                                            </div>
-                                          )}
-                                          {guardadoChild && (
-                                            <div className="alert alert-success">
-                                              {guardadoChild}
-                                            </div>
-                                          )}
-                                          <div className="row">
-                                            <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                                              <p className="letter-register">
-                                                NOMBRE DE NIÑO:
-                                              </p>
-                                              <input
-                                                className="input-register-space"
-                                                type="text"
-                                                placeholder="Nombre del niño(a)"
-                                                name="nameChild"
-                                                onChange={(e) =>
-                                                  setEditNameChild(
-                                                    e.target.value
-                                                  )
-                                                }
-                                                value={editNameChild}
-                                              />
-                                            </div>
-                                          
-                                            <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                                              <p className="letter-register">
-                                                SEXO:
-                                              </p>
-                                              <select
-                                                className="select-register-space"
-                                                onChange={(e) =>
-                                                  setEditSexoChild(e.target.value)
-                                                }
-                                                value={editSexoChild}
-                                              >
-                                                <option>
-                                                  ---SELECCIONA---
-                                                </option>
-                                                <option>Masculino</option>
-                                                <option>Femenino</option>
-                                              </select>
-                                            </div>
-                                          </div>
-                                          <div className="row">
-                                            <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                                              <p className="letter-register">
-                                                FECHA DE NACIMIENTO:
-                                              </p>
-                                              <input
-                                                className="input-register-space"
-                                                type="date"
-                                                name="editFechaNacimientoChild"
-                                                onChange={(e) =>
-                                                  setEditFechaNacimientoChild(
-                                                    e.target.value
-                                                  )
-                                                }
-                                                value={editFechaNacimientoChild}
-                                              />
-                                              <p>{editFechaNacimientoChild}</p>
-                                            </div>
-                                            <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                                              <p className="letter-register">
-                                                PARENTESCO CON EL NIÑO(A):
-                                              </p>
-                                              <select
-                                                className="select-register-space"
-                                                onChange={(e) =>
-                                                  setEditRelationshipChild(
-                                                    e.target.value
-                                                  )
-                                                }
-                                                value={editRelationshipChild}
-                                              >
-                                                <option>
-                                                  ---SELECCIONA---
-                                                </option>
-                                                <option>Mamá</option>
-                                                <option>Papá</option>
-                                                <option>Abuelo(a)</option>
-                                                <option>Tío(a)</option>
-                                                <option>Otros</option>
-                                              </select>
-                                            </div>
-                                          </div>
-                                          <button
-                                            className="btn-navy-blue text-white"
-                                            type="submit"
-                                            
-                                          >
-                                            <img
-                                              src={arrowLeft}
-                                              className="arrow-blue"
-                                            ></img>
-                                            GUARDAR
-                                            <img
-                                              src={arrowRight}
-                                              className="arrow-blue"
-                                            ></img>
-                                          </button>
-                                        </form>
-                                      </div>
+                                      </form>
                                     </div>
                                   </div>
                                 </div>
@@ -830,19 +983,19 @@ const Perfil = (props) => {
                             </div>
                           </div>
                         </div>
-                      ))}
-                      <Link className="addChild" to="/registro-niño">
-                        + AGREGAR NIÑO
-                        <img src={arrowLeft} className="arrow-blue"></img>
-                      </Link>
-                    </div>
+                      </div>
+                    ))}
+                    <Link className="addChild" to="/registro-niño">
+                      + AGREGAR NIÑO
+                      <img src={arrowLeft} className="arrow-blue"></img>
+                    </Link>
                   </div>
                 </div>
               </div>
-            )}
-          </div>
-        )}
-      </div>
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 };

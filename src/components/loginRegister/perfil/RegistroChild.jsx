@@ -114,11 +114,8 @@ const RegistroChild = (props) => {
   
   
   return (
-    <div className="container">
       <div className="register-child">
-        <div className="row">
           <h2 className="subtittle-register-child">Añadir Niño </h2>
-        </div>
         <div className="list-register">
           <form onSubmit={procesarDatosAgregarChild}>
             {error && <div className="alert alert-danger">{error}</div>}
@@ -187,7 +184,6 @@ const RegistroChild = (props) => {
           </form>
         </div>
       </div>
-    </div>
   );
 };
 

@@ -61,7 +61,7 @@ const Login = (props) => {
         email: res.user.email,
         uid: res.user.uid,
         nombre:res.user.displayName.split(' ')[0] ,
-        apellido: res.user.displayName.split(' ')[2],
+        apellido: res.user.displayName.length > 1 ? res.user.displayName.split(' ')[1] : "" ,
         departamento:"",
         provincia:"",
         distrito:"",
@@ -71,12 +71,13 @@ const Login = (props) => {
         provinciaKey:"",
         tipo: "cuidador",
       });
+    
       setPassword("");
       setEmail("");
       setError(null);
       props.history.push("/");
     } catch (error) {
-      console.log(error);
+      console.log("error gmail", error);
       if (error.code === "auth/invalid-email") {
         setError("Email no válido");
       } else if (error.code === "auth/email-already-in-use") {
@@ -99,13 +100,6 @@ const Login = (props) => {
         uid: res.user.uid,
         nombre:res.user.displayName.split(' ')[0] ,
         apellido: res.user.displayName.split(' ')[2],
-        departamento:"",
-        provincia:"",
-        distrito:"",
-        breca:"",
-        codigoBreca:"",
-        departamentoKey:"",
-        provinciaKey:"",
         tipo: "cuidador",
       });
       setPassword("");
@@ -124,62 +118,68 @@ const Login = (props) => {
 
   return (
     
-      <div className="register-child">
-          <h1 className="tittle-register-child">¡Bienvenido!</h1>
-        <div className="list-login">
-          <form onSubmit={procesarDatos}>
-            {error && <div className="alert alert-danger">{error}</div>}
-            <p className="letter-login">CORREO ELECTRÓNICO</p>
-            <input
-              className="input-register-space"
-              type="email"
-              placeholder="Email"
-              onChange={(e) => setEmail(e.target.value)}
-              value={email}
-              autoFocus
-            />
-            <p className="letter-login">CONTRASEÑA</p>
-            <input
-              className="input-register-space"
-              type="password"
-              placeholder="Contraseña"
-              onChange={(e) => setPassword(e.target.value)}
-              value={password}
-            />
-            <button type="submit"  className="btn-login text-white">
-              <img src={arrowLeft} className="arrow-blue"></img>
-              INICIAR SESIÓN
-              <img src={arrowRight} className="arrow-blue"></img>
-            </button>
-            </form>
-          <div className="loginDivider">
-            <span className="loginDivider-text">o</span>
-          </div>
-          <div className="btn-facebook-google">
-              <button className="btn-facebook text-white"
-               onClick={()=>loginFacebook()}>
-                Iniciar sesión con Facebook
-              </button>
-              <button className="btn-google text-white"
-               onClick={()=>loginGoogle()}>
-                Iniciar sesión con Google
-              </button>
- 
-          </div>
-          <div className="box-text-a">
-            <Link className="text-a" to="/password/reset">
-              ¿Olvidaste tu contraseña?
-            </Link>
-            <div className="box-register">
-              <p>¿No tienes una cuenta?</p>
-              <Link className="text-a" to="/signup">
-                Regístrate
-              </Link>
-            </div>
-          </div>
-        </div>
+<>
+{
+  props.firebaseUser===null ? (
+    
+    <div className="register-child">
+    <h1 className="tittle-register-child">¡Bienvenido!</h1>
+  <div className="list-login">
+    <form onSubmit={procesarDatos}>
+      {error && <div className="alert alert-danger">{error}</div>}
+      <p className="letter-login">CORREO ELECTRÓNICO</p>
+      <input
+        className="input-register-space"
+        type="email"
+        placeholder="Email"
+        onChange={(e) => setEmail(e.target.value)}
+        value={email}
+        autoFocus
+      />
+      <p className="letter-login">CONTRASEÑA</p>
+      <input
+        className="input-register-space"
+        type="password"
+        placeholder="Contraseña"
+        onChange={(e) => setPassword(e.target.value)}
+        value={password}
+      />
+      <button type="submit"  className="btn-login text-white">
+        <img src={arrowLeft} className="arrow-blue"></img>
+        INICIAR SESIÓN
+        <img src={arrowRight} className="arrow-blue"></img>
+      </button>
+      </form>
+    <div className="loginDivider">
+      <span className="loginDivider-text">o</span>
+    </div>
+    <div className="btn-facebook-google">
+        <button className="btn-facebook text-white"
+         onClick={()=>loginFacebook()}>
+          Iniciar sesión con Facebook
+        </button>
+        <button className="btn-google text-white"
+         onClick={()=>loginGoogle()}>
+          Iniciar sesión con Google
+        </button>
+
+    </div>
+    <div className="box-text-a">
+      <Link className="text-a" to="/password/reset">
+        ¿Olvidaste tu contraseña?
+      </Link>
+      <div className="box-register">
+        <p>¿No tienes una cuenta?</p>
+        <Link className="text-a" to="/signup">
+          Regístrate
+        </Link>
       </div>
- 
+    </div>
+  </div>
+</div>
+  ): null
+}
+</>
   );
 };
 export default withRouter(Login);
