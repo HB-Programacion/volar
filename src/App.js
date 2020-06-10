@@ -38,6 +38,7 @@ import Fase4 from "./components/nosotros/fase4/Fase4";
 import ConstruccionLogin from "./components/loginRegister/ConstruccionLogin";
 import Modelo from "./components/nosotros/fase3/modelo/Modelo";
 import Redes from "./components/redes/Redes";
+import Involucramiento from "./components/nosotros/fase3/modelo/involucramiento/Involucramiento";
 
 function App() {
   const [firebaseUser, setFirebaseUser] = React.useState(false);
@@ -203,6 +204,7 @@ function App() {
           <Route path="/construccion-aprendamos" exact component={ConstruccionAprendamos} />
           <Route path="/nosotros/fase3" exact component={Fase3} />
           <Route path="/nosotros/fase3/modelo-volar" exact component={Modelo} />
+          <Route path="/nosotros/fase3/modelo-volar/involucramiento-formacion-de-aliados-comunitarios" exact component={Involucramiento} />
           <Route path="/nosotros/fase4" exact component={Fase4} />
         </Switch>
         <Footer />

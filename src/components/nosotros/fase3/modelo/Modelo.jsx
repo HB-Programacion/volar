@@ -70,7 +70,7 @@ const Modelo = () => {
                         <div className="box-card-modelo-text">
                         <p className="p-tilte-modelo">Involucramiento y formación de aliados comunitarios;</p> 
                            <p className="p-mobile-blue">los cuales los hemos dividido en función al grupo etario al que atienden (0 a 3 y 3 a 5 años).</p>
-                           <a href="/">ver más aquí</a>
+                           <a href="/nosotros/fase3/modelo-volar/involucramiento-formacion-de-aliados-comunitarios">ver más aquí</a>
                         </div>
                     </div>
                     <div className="box-card-modelo">
