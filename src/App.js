@@ -18,6 +18,10 @@ import { EmpiezaAprender } from "./components/aprendamos/EmpiezaAprender";
 import { RegistroNiños } from "./components/aprendamos/cuidador/RegistroNiños";
 import { BienvenidoCuidador } from "./components/aprendamos/cuidador/BienvenidoCuidador";
 import { Higiene } from "./components/aprendamos/cuidador/areas/Higiene";
+import { Socioemocional } from "./components/aprendamos/cuidador/areas/Socioemocional";
+import { Rutina } from "./components/aprendamos/cuidador/areas/Rutina";
+import { Juego } from "./components/aprendamos/cuidador/areas/Juego";
+import { Nutricion } from "./components/aprendamos/cuidador/areas/Nutricion";
 import Login from "./components/loginRegister/Login";
 import Signup from "./components/loginRegister/Signup";
 import { PasswordReset } from "./components/loginRegister/PasswordReset";
@@ -67,7 +71,7 @@ function App() {
     // })
   };
   const [contenidoFirebase, loading, error] = useCollection(
-    db.collection("contenido"),
+    db.collection("contenido").orderBy("n_tip", "asc"),
     {
       snapshotListenOptions: { includeMetadataChanges: true },
     }
@@ -93,10 +97,10 @@ function App() {
 
   React.useEffect(() => {
     auth.onAuthStateChanged((user) => {
-    
+
       if (user) {
         setFirebaseUser(user);
-        console.log('Usuario: '+user.uid+' está logueado con '+user.providerData[0].providerId);
+        console.log('Usuario: ' + user.uid + ' está logueado con ' + user.providerData[0].providerId);
         const perfilUser = db.collection("usuarios").doc(firebaseUser.uid);
         perfilUser
           .get()
@@ -118,7 +122,7 @@ function App() {
   return firebaseUser !== false ? (
     <Router>
       <div style={{ height: "100%" }}>
-      
+
         <MenuNuevo
           firebaseUser={firebaseUser}
           drawerClickHandler={drawerToggleClickHandler}
@@ -172,49 +176,85 @@ function App() {
               firebaseUser={firebaseUser}
               idChild={idChild}
             />
-          </Route>
-          <Route path="/login" exact>
-            <Login firebaseUser={firebaseUser} />
-          </Route>
-          <Route path="/login-construccion" exact component={ ConstruccionLogin}>
-          </Route>
-          <Route path="/signup" exact>
-            <Signup firebaseUser={firebaseUser} />
-          </Route>
-          <Route path="/password/reset" exact component={PasswordReset} />
-          {firebaseUser !== null ? (
-            <Route path="/perfil" exact>
-              <Perfil firebaseUser={firebaseUser} />
+             </Route>
+            <Route path="/aprendamos/cuidador/socioemocional" exact>
+              <Socioemocional
+                contenidoFirebase={contenidoFirebase}
+                error={error}
+                loading={loading}
+                firebaseUser={firebaseUser}
+                idChild={idChild}
+              />
             </Route>
-          ) : null}
+            <Route path="/aprendamos/cuidador/rutina" exact>
+              <Rutina
+                contenidoFirebase={contenidoFirebase}
+                error={error}
+                loading={loading}
+                firebaseUser={firebaseUser}
+                idChild={idChild}
+              />
+            </Route>
+            <Route path="/aprendamos/cuidador/juego" exact>
+              <Juego
+                contenidoFirebase={contenidoFirebase}
+                error={error}
+                loading={loading}
+                firebaseUser={firebaseUser}
+                idChild={idChild}
+              />
+            </Route>
+            <Route path="/aprendamos/cuidador/nutricion" exact>
+              <Nutricion
+                contenidoFirebase={contenidoFirebase}
+                error={error}
+                loading={loading}
+                firebaseUser={firebaseUser}
+                idChild={idChild}
+              />
+            </Route>
+            <Route path="/login" exact>
+              <Login firebaseUser={firebaseUser} />
+            </Route>
+            <Route path="/login-construccion" exact component={ConstruccionLogin}>
+            </Route>
+            <Route path="/signup" exact>
+              <Signup firebaseUser={firebaseUser} />
+            </Route>
+            <Route path="/password/reset" exact component={PasswordReset} />
+            {firebaseUser !== null ? (
+              <Route path="/perfil" exact>
+                <Perfil firebaseUser={firebaseUser} />
+              </Route>
+            ) : null}
 
-          <Route path="/registro-niño" exact>
-            <RegistroChild
-              firebaseUser={firebaseUser}
-              mandarIdChild={mandarIdChild}
-            />
-          </Route>
-          <Route path="/contactanos" exact component={Contactanos} />
-          <Route path="/nosotros/fase1" exact component={Fase1} />
-          <Route path="/nosotros/fase2" exact component={Fase2} />
-          <Route path="/nosotros/fase2/crecer" exact component={Crecer} />
-          <Route path="/nosotros/fase2/agua-segura" exact component={Agua} />
-          <Route path="/nosotros/fase2/el-piloto" exact component={Piloto} />
-          <Route path="/construccion-aprendamos" exact component={ConstruccionAprendamos} />
-          <Route path="/nosotros/fase3" exact component={Fase3} />
-          <Route path="/nosotros/fase3/modelo-volar" exact component={Modelo} />
-          <Route path="/nosotros/fase4" exact component={Fase4} />
+            <Route path="/registro-niño" exact>
+              <RegistroChild
+                firebaseUser={firebaseUser}
+                mandarIdChild={mandarIdChild}
+              />
+            </Route>
+            <Route path="/contactanos" exact component={Contactanos} />
+            <Route path="/nosotros/fase1" exact component={Fase1} />
+            <Route path="/nosotros/fase2" exact component={Fase2} />
+            <Route path="/nosotros/fase2/crecer" exact component={Crecer} />
+            <Route path="/nosotros/fase2/agua-segura" exact component={Agua} />
+            <Route path="/nosotros/fase2/el-piloto" exact component={Piloto} />
+            <Route path="/construccion-aprendamos" exact component={ConstruccionAprendamos} />
+            <Route path="/nosotros/fase3" exact component={Fase3} />
+            <Route path="/nosotros/fase3/modelo-volar" exact component={Modelo} />
+            <Route path="/nosotros/fase4" exact component={Fase4} />
         </Switch>
-        <Footer />
-        <Redes/>
+          <Footer />
+          <Redes />
       </div>
     </Router>
   ) : (
-    <div className="grande">
-      <div className="centrando-spiner">
-        <Orbitals color="#EF8B44" size={900} />
+      <div className="grande">
+        <div className="centrando-spiner">
+          <Orbitals color="#EF8B44" size={900} />
+        </div>
       </div>
-    </div>
   );
 }
 
