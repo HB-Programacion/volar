@@ -13,6 +13,71 @@
   -o-background-size: cover;
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 60px;
+
+}
+
+.box-title-socioemocional {
+  background: url(./../../../../images/areas-img/socioemocional_fondo_desktop.png) no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding-top: 8rem;
+  /*height: 100vh;
+    width: 100%;*/
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+background-color: #AE96B2;
+}
+
+.box-title-rutina {
+  background: url(./../../../../images/areas-img/rutina_fondo_desktop.png) no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding-top: 8rem;
+  /*height: 100vh;
+    width: 100%;*/
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+background-color: #EF8B44;
+}
+
+.box-title-juego {
+  background: url(./../../../../images/areas-img/juego_fondo_desktop.png) no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding-top: 8rem;
+  /*height: 100vh;
+    width: 100%;*/
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  background-color: #F7B919;
+}
+
+.box-title-nutricion {
+  background: url(./../../../../images/areas-img/nutricion_fondo_desktop.png) no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding-top: 8rem;
+  /*height: 100vh;
+    width: 100%;*/
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  background-color: #EB477A;
 }
 
 .icono-area {
@@ -67,12 +132,14 @@
   -webkit-text-stroke: 1.5px #2e335e;
   font-size: 1.5rem;
   text-align: left;
+  text-transform: uppercase;
 }
 
 .text-video-tip {
   -webkit-text-stroke: 0.5px #2e335e;
   font-size: 1rem;
   text-align: left;
+  text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
@@ -117,5 +184,114 @@
     -webkit-text-stroke: 0.5px #2e335e;
     font-size: 0.7rem;
     text-align: left;
+   
+  }
+
+  .box-title-higine {
+    background: url(./../../../../images/areas-img/higiene-fondo-mobile.png) no-repeat;
+    padding-top: 5rem;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    height: 22rem;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+   
+  }
+
+  .box-title-socioemocional {
+    background: url(./../../../../images/areas-img/socioemocional_fondo_mobile.png) no-repeat;
+    padding-top: 5rem;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-color: #AE96B2;
+   
+  }
+
+  .box-title-rutina {
+    background: url(./../../../../images/areas-img/rutina_fondo_mobile.png) no-repeat;
+    padding-top: 5rem;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-color: #EF8B44;
+  }
+
+  .box-title-juego {
+    background: url(./../../../../images/areas-img/juego_fondo_mobile.png) no-repeat;
+    padding-top: 5rem;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-color: #F7B919;
+  }
+
+  .box-title-juego {
+    background: url(./../../../../images/areas-img/nutricion_fondo_desktop.png) no-repeat;
+    padding-top: 5rem;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-color: #F7B919;
+  }
+
+  .box-title-nutricion {
+    background: url(./../../../../images/areas-img/nutricion_fondo_mobile.png) no-repeat;
+    padding-top: 5rem;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-color: #EB477A;
+  }
+  .icono-area {
+    height: 5rem;
+    margin: 0 auto;
+  }
+  .title-area {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    -webkit-text-stroke: 1.5px #ffffff;
+    letter-spacing: 0.5px;
+    font-family: "Questrial";
+    margin: 1.5rem 5rem 7rem 5rem;
+  }
+  .list-videos-tips {
+    margin-top: -4rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 }
