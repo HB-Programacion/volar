@@ -38,7 +38,6 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild }) => {
     }
   }, [firebaseUser, idChild]);
 
-
   return (
     <div>
       <div className="box-title-cuidador show-desktop">
@@ -162,33 +161,44 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild }) => {
             </Link>
           </div>
           <div className="w-20">
-            <div className="area-socioEmocional">
-              <img
-                src={iconAreaSocial}
-                className="icon-area"
-                alt="stars-left"
-              />
-              <p className="text-area-social">SOCIOEMOCIONAL</p>
-            </div>
+            <Link to="/aprendamos/cuidador/socioemocional">
+              <div className="area-socioEmocional">
+                <img
+                  src={iconAreaSocial}
+                  className="icon-area"
+                  alt="stars-left"
+                />
+                <p className="text-area-social">SOCIOEMOCIONAL</p>
+              </div>
+            </Link>
           </div>
           <div className="w-20">
-            <div className="area-rutina">
-              <img
-                src={iconAreaRutina}
-                className="icon-area"
-                alt="stars-left"
-              />
-              <p className="text-area-rutina">RUTINA</p>
-            </div>
+            <Link to="/aprendamos/cuidador/rutina">
+              <div className="area-rutina">
+                <img
+                  src={iconAreaRutina}
+                  className="icon-area"
+                  alt="stars-left"
+                />
+                <p className="text-area-rutina">RUTINA</p>
+              </div>
+            </Link>
           </div>
           <div className="w-20">
-            <div className="area-juego">
-              <img src={iconAreaJuego} className="icon-area" alt="stars-left" />
-              <p className="text-area-juego">JUEGO</p>
-            </div>
+          <Link to="/aprendamos/cuidador/juego">
+              <div className="area-juego">
+                <img
+                  src={iconAreaJuego}
+                  className="icon-area"
+                  alt="stars-left"
+                />
+                <p className="text-area-juego">JUEGO</p>
+              </div>
+            </Link>
           </div>
           <div className="w-20">
-            <div className="area-nutricion">
+          <Link to="/aprendamos/cuidador/nutricion">
+           <div className="area-nutricion">
               <img
                 src={iconAreaNutricion}
                 className="icon-area"
@@ -198,53 +208,67 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild }) => {
                 NUTRICIÓN <br /> Y FÍSICO
               </p>
             </div>
+            </Link>
           </div>
         </div>
       </div>
       <div className="list-btn-areas hide-desktop">
         <div className="btn-areas w-100">
           <div className="w-50">
-            <div className="area-higiene">
-              <img
-                src={iconAreaHigiene}
-                className="icon-area"
-                alt="stars-left"
-              />
-              <p className="text-area-higiene">HIGIENE Y AGUA SEGURA</p>
-            </div>
+            <Link to="/aprendamos/cuidador/higiene">
+              <div className="area-higiene">
+                <img
+                  src={iconAreaHigiene}
+                  className="icon-area"
+                  alt="stars-left"
+                />
+                <p className="text-area-higiene">HIGIENE Y AGUA SEGURA</p>
+              </div>
+            </Link>
           </div>
           <div className="w-50">
-            <div className="area-socioEmocional">
-              <img
-                src={iconAreaSocial}
-                className="icon-area"
-                alt="stars-left"
-              />
-              <p className="text-area-social">SOCIOEMOCIONAL</p>
-            </div>
-          </div>
-        </div>
-        <div className="btn-areas w-100">
-          <div className="w-50">
-            <div className="area-rutina">
-              <img
-                src={iconAreaRutina}
-                className="icon-area"
-                alt="stars-left"
-              />
-              <p className="text-area-rutina">RUTINA</p>
-            </div>
-          </div>
-          <div className="w-50">
-            <div className="area-juego">
-              <img src={iconAreaJuego} className="icon-area" alt="stars-left" />
-              <p className="text-area-juego">JUEGO</p>
-            </div>
+            <Link to="/aprendamos/cuidador/socioemocional">
+              <div className="area-socioEmocional">
+                <img
+                  src={iconAreaSocial}
+                  className="icon-area"
+                  alt="stars-left"
+                />
+                <p className="text-area-social">SOCIOEMOCIONAL</p>
+              </div>
+            </Link>
           </div>
         </div>
         <div className="btn-areas w-100">
           <div className="w-50">
-            <div className="area-nutricion">
+            <Link to="/aprendamos/cuidador/rutina">
+              <div className="area-rutina">
+                <img
+                  src={iconAreaRutina}
+                  className="icon-area"
+                  alt="stars-left"
+                />
+                <p className="text-area-rutina">RUTINA</p>
+              </div>
+            </Link>
+          </div>
+          <div className="w-50">
+            <Link to="/aprendamos/cuidador/juego">
+              <div className="area-juego">
+                <img
+                  src={iconAreaJuego}
+                  className="icon-area"
+                  alt="stars-left"
+                />
+                <p className="text-area-juego">JUEGO</p>
+              </div>
+            </Link>
+          </div>
+        </div>
+        <div className="btn-areas w-100">
+          <div className="w-50">
+           <Link to="/aprendamos/cuidador/nutricion">
+           <div className="area-nutricion">
               <img
                 src={iconAreaNutricion}
                 className="icon-area"
@@ -254,6 +278,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild }) => {
                 NUTRICIÓN <br /> Y FÍSICO
               </p>
             </div>
+            </Link>
           </div>
         </div>
       </div>
