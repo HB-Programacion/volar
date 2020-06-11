@@ -18,7 +18,7 @@ import starR from "../../../../images/fase3-img/modelo/start-right.svg"
 
 const Modelo = () => {
     return (
-        <div>
+        <div className="fondo-circulo">
             <div className="fase2 fase3-modelo border-bottom-radius">
                 <h5 className="titulo-fase titulo-fase3-modelo">Modelo volar</h5>
                 <div className="box-modelo-volar">
@@ -80,7 +80,7 @@ const Modelo = () => {
                         <div className="box-card-modelo-text">
                             <p className="p-tilte-modelo">Rotación de Tablets</p> 
                             <p className="p-mobile-blue"> a familias con contenido DIT. </p> 
-                            <a href="/">ver más aquí</a>
+                            <a href="/nosotros/fase3/modelo-volar/rotacion-de-tablets">ver más aquí</a>
                         </div>
                     </div>
                     <div className="box-card-modelo">
@@ -90,7 +90,7 @@ const Modelo = () => {
                         <div className="box-card-modelo-text">
                             <p className="p-tilte-modelo">Grupos de interaprendizaje familiar.</p> 
                             <p></p>
-                           <a href="/">ver más aquí</a>
+                           <a href="/nosotros/fase3/modelo-volar/grupos-de-aprendizaje-familiar">ver más aquí</a>
                         </div>
                     </div>
                     </div>
@@ -111,7 +111,7 @@ const Modelo = () => {
                         <div className="box-card-modelo-text">
                         <p className="p-tilte-modelo">Programa de mensajería de texto.</p> 
                            <p className="p-mobile-blue"></p>
-                           <a href="/" className="color-fuxia">ver más aquí</a>
+                           <a href="/nosotros/fase3/modelo-volar/programa-mensajeria-de-texto" className="color-fuxia">ver más aquí</a>
                         </div>
                     </div>
                     <div className="box-card-modelo">
@@ -121,7 +121,7 @@ const Modelo = () => {
                         <div className="box-card-modelo-text">
                             <p className="p-tilte-modelo">Spots radiales a través de emisoras locales.</p> 
                             <p className="p-mobile-blue"></p> 
-                            <a href="/" className="color-fuxia">ver más aquí</a>
+                            <a href="/nosotros/fase3/modelo-volar/spots-radiales" className="color-fuxia">ver más aquí</a>
                         </div>
                     </div>
                     <div className="box-card-modelo">
@@ -131,7 +131,7 @@ const Modelo = () => {
                         <div className="box-card-modelo-text">
                             <p className="p-tilte-modelo">Feria Familiar.</p> 
                             <p></p>
-                           <a href="/" className="color-fuxia">ver más aquí</a>
+                           <a href="/nosotros/fase3/modelo-volar/feria-familiar" className="color-fuxia">ver más aquí</a>
                         </div>
                     </div>
                     </div>

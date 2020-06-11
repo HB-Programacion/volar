@@ -43,6 +43,11 @@ import ConstruccionLogin from "./components/loginRegister/ConstruccionLogin";
 import Modelo from "./components/nosotros/fase3/modelo/Modelo";
 import Redes from "./components/redes/Redes";
 import Involucramiento from "./components/nosotros/fase3/modelo/involucramiento/Involucramiento";
+import Rotacion from "./components/nosotros/fase3/modelo/rotacion/Rotacion";
+import Grupos from "./components/nosotros/fase3/modelo/grupos/Grupos";
+import Programa from "./components/nosotros/fase3/modelo/programa-mensajeria/Programa";
+import Spots from "./components/nosotros/fase3/modelo/spots/Spots";
+import Feria from "./components/nosotros/fase3/modelo/feria/Feria";
 
 function App() {
   const [firebaseUser, setFirebaseUser] = React.useState(false);
@@ -246,6 +251,11 @@ function App() {
           <Route path="/nosotros/fase3/modelo-volar" exact component={Modelo} />
           <Route path="/nosotros/fase3/modelo-volar/involucramiento-formacion-de-aliados-comunitarios" exact component={Involucramiento} />
           <Route path="/nosotros/fase4" exact component={Fase4} />
+          <Route path="/nosotros/fase3/modelo-volar/rotacion-de-tablets" exact component={Rotacion} />
+          <Route path="/nosotros/fase3/modelo-volar/grupos-de-aprendizaje-familiar" exact component={Grupos} />
+          <Route path="/nosotros/fase3/modelo-volar/programa-mensajeria-de-texto" exact component={Programa} />
+          <Route path="/nosotros/fase3/modelo-volar/spots-radiales" exact component={Spots} />
+          <Route path="/nosotros/fase3/modelo-volar/feria-familiar" exact component={Feria} />
         </Switch>
           <Footer />
           <Redes />

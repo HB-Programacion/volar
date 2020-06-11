@@ -7,7 +7,7 @@ import involucramientoImg from "../../../../../images/fase3-img/modelo/involucra
 
 const Involucramiento = () => {
     return (
-        <div className="involucramiento-tip">
+        <div>
             <div className="img-involucramiento">
                 <img src={involucramientoImg} alt="" className="w-100"/>
             </div>

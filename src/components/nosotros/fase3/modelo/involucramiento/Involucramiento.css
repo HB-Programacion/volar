@@ -1,7 +1,11 @@
 
 .involucramiento-tip{
-    margin-top: 6.5rem;
-    margin-bottom: 2rem
+    padding-top: 6.5rem;
+    margin-bottom: 2rem;
+    background-image: url('../../../../../images/fase3-img/modelo/involucramiento-img/fondo-involucramiento.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left top
 }
 /* .img-involucramiento{
     background-image: url("../../../../../images/fase3-img/modelo/involucramiento-img/involucramiento.png");
