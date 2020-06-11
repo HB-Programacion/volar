@@ -1,5 +1,6 @@
 import React from "react";
 import "./areas.css";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import iconoHigieneWhite from "./../../../../images/icon-higiene-white.png";
 import iconoTipLighBlue from "./../../../../images/icon-tip-ligh-blue.svg";
 import { useCollection } from "react-firebase-hooks/firestore";
@@ -47,8 +48,8 @@ export const Higiene = ({contenidoFirebase, error, loading, firebaseUser, idChil
         {loading && <span>Collection: Loading...</span>}
         {contenidoFirebase && (<div className="row">
             {contenidoFirebase.docs.filter(item=>  item.data().seccion==="Higiene y Agua Segura" &&  item.data().edad==edad ).map(item => (
-                <div key={item.id} className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                <div className="box-section">
+               <div key={item.id} className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+               <Link to="/aprendamos/cuidador/nutricion/tips">  <div className="box-section">
                   <img
                     src={iconoTipLighBlue}
                     className="icono-video-tip"
@@ -61,26 +62,7 @@ export const Higiene = ({contenidoFirebase, error, loading, firebaseUser, idChil
                     <h5 className="text-video-tip">Tip N° {item.data().n_tip}</h5>
                   </div>
                 </div>
-              </div>
-              ))}
-               </div>)}
-
-               {usuarioChild && (<div className="row">
-            {usuarioChild.docs.filter(item=>  item.data().edadChild===edad ).map(item => (
-                <div key={item.id} className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                <div className="box-section">
-                  <img
-                    src={iconoTipLighBlue}
-                    className="icono-video-tip"
-                    alt="icono de tip"
-                  />
-                  <div className="box-text-video-tip">
-                    <h3 className="subtittle-video-tip">
-                      {item.data().nameChild}
-                    </h3>
-                    <h5 className="text-video-tip">Tip N° {item.data().sexoChild}</h5>
-                  </div>
-                </div>
+                </Link>
               </div>
               ))}
                </div>)}

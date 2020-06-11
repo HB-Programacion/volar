@@ -1,0 +1,29 @@
+.background-tips-higiene {
+    background: url(./../../../../images/areas-img/tips_higiene.png) no-repeat;
+    height: 90vh;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+  }
+
+  .tittle-tips {
+    font-family: 'Questrial';
+    color: #2E335E;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    font-size: 2rem;
+    padding-top: 6rem;
+    -webkit-text-stroke: 2px #2E335E;
+}
+
+.tips-numbers{
+    font-family: 'Questrial';
+    color: #2E335E;
+    letter-spacing: 0.05em;
+    -webkit-text-stroke: 0.5px #2E335E;
+}
+
+.tips-margin-top{
+margin: 3rem 2rem 1rem 2rem !important;
+}

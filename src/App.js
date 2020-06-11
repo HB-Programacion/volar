@@ -22,6 +22,7 @@ import { Socioemocional } from "./components/aprendamos/cuidador/areas/Socioemoc
 import { Rutina } from "./components/aprendamos/cuidador/areas/Rutina";
 import { Juego } from "./components/aprendamos/cuidador/areas/Juego";
 import { Nutricion } from "./components/aprendamos/cuidador/areas/Nutricion";
+import  TipsHigiene  from "./components/aprendamos/cuidador//areas/TipsHigiene";
 import Login from "./components/loginRegister/Login";
 import Signup from "./components/loginRegister/Signup";
 import { PasswordReset } from "./components/loginRegister/PasswordReset";
@@ -206,6 +207,15 @@ function App() {
             </Route>
             <Route path="/aprendamos/cuidador/nutricion" exact>
               <Nutricion
+                contenidoFirebase={contenidoFirebase}
+                error={error}
+                loading={loading}
+                firebaseUser={firebaseUser}
+                idChild={idChild}
+              />
+            </Route>
+            <Route path="/aprendamos/cuidador/nutricion/tips" exact>
+              <TipsHigiene
                 contenidoFirebase={contenidoFirebase}
                 error={error}
                 loading={loading}
