@@ -16,10 +16,10 @@ const TipsHigiene = () => {
           </div>
           <div className="row tips-margin-top">
             <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-              <div>
+              <div className="videoWrapper">
                 <iframe
-                  width="560"
-                  height="315"
+                  width="600"
+                  height="350"
                   src="https://www.youtube.com/embed/2mY7AFTtYwQ"
                   frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -28,13 +28,13 @@ const TipsHigiene = () => {
               </div>
             </div>
             <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-              <div>
-                <p>
+              <div class="text-tips">
+                <p class="text-tips-light">
                   Cuando descanses aprovecha para comunicarte con tu bebé.
                   ¡Puedes cantarle tu canción favorita! Él escucha todo a tu
                   alrededor.
                 </p>
-                <p>¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!</p>
+                <p class="text-tips-bold">¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!</p>
               </div>
             </div>
           </div>
