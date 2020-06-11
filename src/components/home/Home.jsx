@@ -12,7 +12,6 @@ import groupNosotros from '../../images/group-nosotros.svg';
 import arrowLeft from '../../images/arrow-left-orange.svg';
 import arrowRigth from '../../images/arrow-right-orange.svg';
 
-
 import bannerMobile1 from '../../images/home-img/banner-mobile/banerM1.png';
 import bannerMobile2 from '../../images/home-img/banner-mobile/banerM2.png';
 import bannerMobile3 from '../../images/home-img/banner-mobile/banerM3.png';
@@ -27,7 +26,7 @@ import bannerDesktop4 from '../../images/home-img/banner-desktop/banerD4.png';
 import starLeft from "../../images/home-img/star-left.svg"
 import starRight from "../../images/home-img/star-right.svg"
 // import bannerDesktop from '../../images/home-img/foto_banner_propuesta.png';
-import bannerDesktop from '../../images/home-img/imagen_1920.png'
+
 import share from "../../images/home-img/share-morado.svg"
 import tituloHome from "../../images/home-img/titulo_home.png"
 import CarouselMobile from "./CarouselMobile";
