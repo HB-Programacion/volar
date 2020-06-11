@@ -1,4 +1,4 @@
-.img-modelo{
+.img-modelo {
     padding-top: 6.5rem;
     padding-bottom: 2rem;
     background-image: url('../../../../../images/fase3-img/modelo/involucramiento-img/fondo-modelo.png');
@@ -10,17 +10,17 @@
     padding-right: 1rem;
 }
 
-.img-modelo figure{
+.img-modelo figure {
     width: 30%;
     margin: 1rem auto
 }
 
-.title-grueso{
+.title-grueso {
     -webkit-text-stroke: 1px #2E335E;
     font-size: .95rem;
 }
 
-.img-modelo-rosa{
+.img-modelo-rosa {
     padding-top: 6.5rem;
     padding-bottom: 2rem;
     background-image: url('../../../../../images/fase3-img/modelo/involucramiento-img/fondo-modelo-rosa.png');
@@ -31,7 +31,45 @@
     padding-left: 1rem;
     padding-right: 1rem;
 }
-.img-modelo-rosa figure{
+
+.img-modelo-rosa figure {
     width: 30%;
     margin: 1rem auto
+}
+
+@media (min-width: 769px) {
+    .img-modelo {
+        background-image: url('../../../../../images/fase3-img/modelo/involucramiento-img/fondo-modelo-desktop.png');
+        background-position: center center;
+        padding-top: 12.5rem;
+        padding-bottom: 4rem;
+        padding-left: 7rem;
+        padding-right: 7rem;
+        height: 55rem;
+    }
+
+    .title-grueso {
+        -webkit-text-stroke: 1px #2E335E;
+        font-size: 1.8rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem
+    }
+
+    .img-modelo figure {
+        width: 10%;
+    }
+
+    .img-modelo-rosa {
+        background-image: url('../../../../../images/fase3-img/modelo/involucramiento-img/fondo-modelo-rosa-desktop.png');
+        background-position: center center;
+        padding-top: 12.5rem;
+        padding-bottom: 4rem;
+        padding-left: 7rem;
+        padding-right: 7rem;
+        height: 55rem;
+    }
+
+    .img-modelo-rosa figure {
+        width: 10%;
+    }
 }
