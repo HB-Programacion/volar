@@ -1,0 +1,114 @@
+.fase4-fondo{
+    background: #2E335E
+}
+
+.titulo-fase4{
+    font-family: 'Questrial';
+    font-size: 1.2rem;
+    color: #fff;
+    -webkit-text-stroke: 1px #fff;
+}
+.box-mapa{
+    display: flex;
+    flex-direction: column
+}
+
+.box-mapa figure{
+    width: 100
+}
+
+.box-empresas{
+    background: #F7F7F7;
+    width: 100%;
+    padding-top: 1.5rem;
+}
+
+.box-empresa-title{
+    padding-left: 2rem;
+    
+}
+
+.empresa-tilte{
+    color: #2E335E;
+    font-size: 1.2rem;
+    /* -webkit-text-stroke: 1px #2E335E; */
+    /* padding-right: 1rem; */
+    border-bottom: .2rem solid #2E335E;
+    width: 50%
+}
+
+
+.box-empresas-logos{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem
+}
+
+.logo-figure-empresa{
+    width: 45%;
+    padding-left: .5rem;
+    padding-right: .5rem
+}
+
+@media (min-width: 769px){
+    .fase4-fondo{
+        margin-top: 5rem;
+        padding:10rem 3rem 5rem 3rem;
+        /* background-image: url("../../images/fase1-img/fondo_fase_desktop.png"); */
+    }
+
+    .titulo-fase4{
+        font-size: 2rem;
+        letter-spacing: .1rem
+    }
+
+    .box-mapa{
+        flex-direction: row-reverse;
+        padding: 1rem;
+        justify-content: center;
+        /* align-items: center */
+    }
+    
+    
+    .box-mapa .mapa-peru{
+        width: 45%;
+        border-left: 1px solid #fff
+    }
+
+    .box-mapa .mapa-peru img{
+       padding-left: 3rem
+    }
+
+    .box-mapa .mapa-item{
+        width: 35%;
+        margin-right: 3rem
+    }
+
+    .box-empresa-title{
+        margin-left: 4.5rem;
+        padding-top: 2rem;
+    }
+    .empresa-tilte{
+        font-size: 2rem;
+        width: 20%
+    }
+
+    .logo-figure-empresa{
+        width: 17%;
+        padding-left: 1rem;
+        padding-right: 1rem
+    }
+
+    .box-empresas-logos{
+        margin-top: 3.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 4rem
+    }
+
+}
