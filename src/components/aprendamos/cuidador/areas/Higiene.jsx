@@ -49,7 +49,7 @@ export const Higiene = ({contenidoFirebase, error, loading, firebaseUser, idChil
         {contenidoFirebase && (<div className="row">
             {contenidoFirebase.docs.filter(item=>  item.data().seccion==="Higiene y Agua Segura" &&  item.data().edad==edad ).map(item => (
                <div key={item.id} className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-               <Link to="/aprendamos/cuidador/nutricion/tips">  <div className="box-section">
+               <Link to="/aprendamos/cuidador/higiene/tips">  <div className="box-section">
                   <img
                     src={iconoTipLighBlue}
                     className="icono-video-tip"

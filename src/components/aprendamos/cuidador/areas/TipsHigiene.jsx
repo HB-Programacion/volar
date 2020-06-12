@@ -18,6 +18,7 @@ const TipsHigiene = () => {
             <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
               <div className="videoWrapper">
                 <iframe
+                className="border-video-higiene"
                   width="600"
                   height="350"
                   src="https://www.youtube.com/embed/2mY7AFTtYwQ"
