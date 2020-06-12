@@ -1,0 +1,264 @@
+.background-tips-higiene {
+    background: url(./../../../../images/areas-img/tips_higiene.png) no-repeat;
+    height: 90vh;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+  }
+
+  .background-tips-socioemocional {
+    background: url(./../../../../images/areas-img/tips_socioemocional.png) no-repeat;
+    height: 90vh;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+  }
+
+  .background-tips-rutina {
+    background: url(./../../../../images/areas-img/tips_rutina.png) no-repeat;
+    height: 90vh;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+  }
+
+  .background-tips-juego {
+    background: url(./../../../../images/areas-img/tips_juego.png) no-repeat;
+    height: 90vh;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+  }
+
+  
+  .background-tips-nutricion {
+    background: url(./../../../../images/areas-img/tips_nutricion.png) no-repeat;
+    height: 90vh;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+  }
+
+  .tittle-tips {
+    font-family: 'Questrial';
+    color: #2E335E;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    font-size: 2rem;
+    padding-top: 6rem;
+    -webkit-text-stroke: 2px #2E335E;
+}
+
+.tips-numbers{
+    font-family: 'Questrial';
+    color: #2E335E;
+    letter-spacing: 0.05em;
+    -webkit-text-stroke: 0.5px #2E335E;
+}
+
+.tips-margin-top{
+margin: 3rem 3rem 1rem 3rem !important;
+}
+
+.text-tips{
+    padding: 4rem 0rem 0rem 2rem;
+}
+.text-tips-light{
+    font-family: 'Questrial';
+    color: #2E335E;
+    letter-spacing: 0.05em;
+    font-size: 1.35rem;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.text-tips-bold{
+    font-family: 'Questrial';
+    color: #2E335E;
+    letter-spacing: 0.05em;
+    font-size: 1.35rem;
+    font-weight: 900;
+    text-align: center;
+    -webkit-text-stroke: 0.5px #2E335E;
+
+}
+.border-video-higiene{
+    background-color:#2E335E;
+    border-color:#5FACAA;
+    width:360px;
+      height:300px;
+    border-width:8px;
+    border-style:solid;
+    border-top: solid 15px rgb(36, 88, 87); 
+    border-left: dotted 15px #5FACAA;
+    border-bottom: solid 15px rgb(36, 88, 87); 
+}
+
+.border-video-socioemocional{
+    background-color:#2E335E;
+    border-color:#96769B;
+    width:360px;
+      height:300px;
+    border-width:8px;
+    border-style:solid;
+    border-top: solid 15px rgb(148, 88, 157); 
+    border-left: dotted 15px #AE96B2;
+    border-bottom: solid 15px rgb(148, 88, 157);  
+}
+
+
+.border-video-rutina{
+    background-color:#2E335E;
+    border-color:#CB702F;
+    width:360px;
+      height:300px;
+    border-width:8px;
+    border-style:solid;
+    border-top: solid 15px rgb(207, 101, 25); 
+    border-left: dotted 15px #EF8B44;
+    border-bottom: solid 15px rgb(207, 101, 25);  
+}
+
+.border-video-juego{
+    background-color:#2E335E;
+    border-color:#D6A81C;
+    width:360px;
+      height:300px;
+    border-width:8px;
+    border-style:solid;
+    border-top: solid 15px rgb(214, 163, 11); 
+    border-left: dotted 15px #F7B919;
+    border-bottom: solid 15px rgb(214, 163, 11);  
+}
+
+.border-video-nutricion{
+    background-color:#2E335E;
+    border-color:#BE2252;
+    width:360px;
+      height:300px;
+    border-width:8px;
+    border-style:solid;
+    border-top: solid 15px rgb(187, 17, 68); 
+    border-left: dotted 15px #EB477A;
+    border-bottom: solid 15px rgb(187, 17, 68);  
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  @media (max-width: 768px) {
+    .background-tips-higiene {
+        background: url(./../../../../images/areas-img/tips-higiene-mobile.png) no-repeat;
+        height: 90vh;
+        background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+      }
+    
+      .tittle-tips {
+        font-family: 'Questrial';
+        color: #2E335E;
+        font-weight: 900;
+        letter-spacing: 0.05em;
+        font-size: 1.2rem;
+        padding-top: 4rem;
+        -webkit-text-stroke: 2px #2E335E;
+    }
+    
+    .tips-numbers{
+        font-family: 'Questrial';
+        color: #2E335E;
+        font-size: 0.8rem;
+        letter-spacing: 0.05em;
+        -webkit-text-stroke: 0.5px #2E335E;
+    }
+    
+    .tips-margin-top{
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem !important;
+    }
+    
+    .text-tips{
+        padding: 2rem 0rem 0rem 1rem;
+    }
+    .text-tips-light{
+        font-family: 'Questrial';
+        color: #2E335E;
+        letter-spacing: 0.05em;
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-align: center;
+    
+    }
+    
+    .text-tips-bold{
+        font-family: 'Questrial';
+        color: #2E335E;
+        letter-spacing: 0.05em;
+        font-size: 1rem;
+        font-weight: 900;
+        text-align: center;
+        -webkit-text-stroke: 0.5px #2E335E;
+    
+    }
+    .border-video-higiene{
+        background-color:#2E335E;
+        border-color:#5FACAA;
+        width:360px;
+        height:300px;
+        border-width:4px;
+        border-style:solid;
+        border-top: solid 10px rgb(36, 88, 87); 
+        border-left: dotted 10px #5FACAA;
+        border-bottom: solid 10px rgb(36, 88, 87); 
+    }
+    
+    .background-tips-socioemocional {
+        background: url(./../../../../images/areas-img/tips-socioemocional-mobile.png) no-repeat;
+        height: 90vh;
+        background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+      }
+    
+      .border-video-socioemocional{
+        background-color:#2E335E;
+        border-color:#96769B;
+        width:360px;
+          height:300px;
+        border-width:4px;
+        border-style:solid;
+        border-top: solid 10px rgb(148, 88, 157); 
+        border-left: dotted 10px #AE96B2;
+        border-bottom: solid 10px rgb(148, 88, 157);  
+    }
+
+    .background-tips-rutina {
+        background: url(./../../../../images/areas-img/tips-rutina-mobile.png) no-repeat;
+        height: 90vh;
+        background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+      }
+  }
+
+  

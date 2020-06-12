@@ -1,5 +1,6 @@
 import React from "react";
 import "./areas.css";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import iconoNutricionWhite from "./../../../../images/areas-img/icon_nutricion.png";
 import iconoTipNutricion from "./../../../../images/areas-img/icono_tip_nutricion.svg";
 import fondo from "./../../../../images/areas-img/socioemocional_fondo_desktop.png";
@@ -51,7 +52,7 @@ export const Nutricion= ({contenidoFirebase, error, loading, firebaseUser, idChi
         {contenidoFirebase && (<div className="row">
             {contenidoFirebase.docs.filter(item=>  item.data().seccion==="Higiene y Agua Segura" &&  item.data().edad==edad ).map(item => (
                 <div key={item.id} className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                <div className="box-section">
+               <Link to="/aprendamos/cuidador/nutricion/tips">   <div className="box-section">
                   <img
                     src={iconoTipNutricion}
                     className="icono-video-tip"
@@ -64,6 +65,7 @@ export const Nutricion= ({contenidoFirebase, error, loading, firebaseUser, idChi
                     <h5 className="text-video-tip">Tip N° {item.data().n_tip}</h5>
                   </div>
                 </div>
+                </Link>
               </div>
               ))}
                </div>)}
