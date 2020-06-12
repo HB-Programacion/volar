@@ -31,6 +31,8 @@ import share from "../../images/home-img/share-morado.svg"
 import tituloHome from "../../images/home-img/titulo_home.png"
 import CarouselMobile from "./CarouselMobile";
 import CarouselDesktop from "./CarouselDesktop";
+import videoo from "../../images/video/video-volar.mp4"
+
 
 const Home = () => { 
 
@@ -39,9 +41,16 @@ const Home = () => {
 
     return (
         <div className="animated fadeIn">
-            <figure className="video-bg">
-                {/* <img src={nino} className="w-100 "></img> */}
-            </figure>
+            <div className="video-bg">
+                <video class=" " width="500" height="600"  loop autoPlay muted  >
+					<source src={videoo} type="video/mp4"/>
+					<source src={videoo} type="video/ogg"/>
+					<source src={videoo} type="video/webm"/>
+					Your browser does not support the video tag.
+				</video>
+            </div>
+    
+
              <div className="text-center text-white text-proposito">
                 <div className="d-flex justify-content-center  text-center text-white">
                     {/* <h1 className="hide-desktop">nuestro</h1> */}
@@ -119,169 +128,168 @@ const Home = () => {
                         </div>
                     </div> 
             </div>
-
-   <div className="momento-home show-mobile">
-        <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
-            <ol className="carousel-indicators">
-                <li data-target="#carouselExampleCaptions" data-slide-to="0" className="active"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            </ol>
-            <div className="carousel-inner">
-                <div className="carousel-item img-banner active">
-                    <img src={bannerMobile1} className="d-block w-100 " alt="..." />
-                    <div className="carousel-caption-text">
-                        <h2>¡Cada momento cuenta!</h2>
-                        <p>¿Sabías que tus actividades cotidianas son oportunidades para el desarrollo del cerebro de tus hijas e hijos?</p>
-                    </div>
-                    <div className="carousel-caption  d-md-block">
-                        <div className="box-title-slide">
-                            <figure className=" share ">
-                                <img src={share} className="share-img"></img>
-                            </figure>
-                            <h4 className="title-slide">Habla, canta y señala</h4>
+            {width < breakpoint  ? 
+                <div className="momento-home">
+                    <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
+                        <ol className="carousel-indicators">
+                            <li data-target="#carouselExampleCaptions" data-slide-to="0" className="active"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        </ol>
+                        <div className="carousel-inner">
+                            <div className="carousel-item img-banner active">
+                                <img src={bannerMobile1} className="d-block w-100 " alt="..." />
+                                <div className="carousel-caption-text">
+                                    <h2>¡Cada momento cuenta!</h2>
+                                    <p>¿Sabías que tus actividades cotidianas son oportunidades para el desarrollo del cerebro de tus hijas e hijos?</p>
+                                </div>
+                                <div className="carousel-caption  d-md-block">
+                                    <div className="box-title-slide">
+                                        <figure className=" share ">
+                                            <img src={share} className="share-img"></img>
+                                        </figure>
+                                        <h4 className="title-slide">Habla, canta y señala</h4>
+                                    </div>
+                                    <Link to="/"className="btn-orange text-white">
+                                        <img src={arrowLeft} className="arrow-orange"></img>
+                                            ¡Aprendamos a hacerlo!
+                                        <img src={arrowRigth}className="arrow-orange"></img>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="carousel-item">
+                                <img src={bannerMobile2} className="d-block w-100" alt="..."/>
+                                <div className="carousel-caption-text">
+                                    <h2>¡Cada momento cuenta!</h2>
+                                    <p>¿Sabías que tus actividades cotidianas son oportunidades para el desarrollo del cerebro de tus hijas e hijos?</p>
+                                </div>
+                                <div className="carousel-caption  d-md-block">
+                                    <div className="box-title-slide">
+                                        <figure className=" share ">
+                                            <img src={share} className="share-img"></img>
+                                        </figure>
+                                        <h4 className="title-slide">Habla, canta y señala</h4>
+                                    </div>
+                                    <Link to="/"className="btn-orange text-white">
+                                        <img src={arrowLeft} className="arrow-orange"></img>
+                                            ¡Aprendamos a hacerlo!
+                                        <img src={arrowRigth}className="arrow-orange"></img>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="carousel-item">
+                                <img src={bannerMobile3} className="d-block w-100" alt="..."/>
+                                <div className="carousel-caption-text">
+                                    <h2>¡Cada momento cuenta!</h2>
+                                    <p>¿Sabías que tus actividades cotidianas son oportunidades para el desarrollo del cerebro de tus hijas e hijos?</p>
+                                </div>
+                                <div className="carousel-caption  d-md-block">
+                                    <div className="box-title-slide">
+                                        <figure className=" share ">
+                                            <img src={share} className="share-img"></img>
+                                        </figure>
+                                        <h4 className="title-slide">Habla, canta y señala</h4>
+                                    </div>
+                                    <Link to="/" className="btn-orange text-white">
+                                        <img src={arrowLeft} className="arrow-orange"></img>
+                                            ¡Aprendamos a hacerlo!
+                                        <img src={arrowRigth}className="arrow-orange"></img>
+                                    </Link>
+                                </div>
+                            </div>
                         </div>
-                        <Link to="/"className="btn-orange text-white">
-                            <img src={arrowLeft} className="arrow-orange"></img>
-                                ¡Aprendamos a hacerlo!
-                            <img src={arrowRigth}className="arrow-orange"></img>
-                        </Link>
+                        <a className="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span className="sr-only">Previous</span>
+                        </a>
+                        <a className="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span className="sr-only">Next</span>
+                        </a>
                     </div>
+                </div>
+                : 
+                <div className="momento-home">
+                    <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
+                        <ol className="carousel-indicators">
+                            <li data-target="#carouselExampleCaptions" data-slide-to="0" className="active"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        </ol>
+                        <div className="carousel-inner">
+                            <div className="carousel-item  active">
+                                <img src={bannerDesktop1} className="d-block w-100 " alt="..." />
+                                <div className="carousel-caption-text">
+                                    <h2>¡Cada momento cuenta!</h2>
+                                    <p>¿Sabías que tus actividades cotidianas son oportunidades para el desarrollo del cerebro de tus hijas e hijos?</p>
+                                </div>
+                                <div className="carousel-caption  d-md-block">
+                                    <div className="box-title-slide">
+                                        <figure className=" share ">
+                                            <img src={share} className="share-img"></img>
+                                        </figure>
+                                        <h4 className="title-slide">Habla, canta y señala</h4>
+                                    </div>
+                                    <Link to="/" className="btn-orange text-white">
+                                        <img src={arrowLeft} className="arrow-orange"></img>
+                                            ¡Aprendamos a hacerlo!
+                                        <img src={arrowRigth}className="arrow-orange"></img>
+                                    </Link>
+                                </div>
                     
-                </div>
-                <div className="carousel-item">
-                    <img src={bannerMobile2} className="d-block w-100" alt="..."/>
-                    <div className="carousel-caption-text">
-                        <h2>¡Cada momento cuenta!</h2>
-                        <p>¿Sabías que tus actividades cotidianas son oportunidades para el desarrollo del cerebro de tus hijas e hijos?</p>
-                    </div>
-                    <div className="carousel-caption  d-md-block">
-                        <div className="box-title-slide">
-                            <figure className=" share ">
-                                <img src={share} className="share-img"></img>
-                            </figure>
-                            <h4 className="title-slide">Habla, canta y señala</h4>
+                            </div>
+                            <div className="carousel-item">
+                                <img src={bannerDesktop2} className="d-block w-100" alt="..."/>
+                                <div className="carousel-caption-text">
+                                    <h2>¡Cada momento cuenta!</h2>
+                                    <p>¿Sabías que tus actividades cotidianas son oportunidades para el desarrollo del cerebro de tus hijas e hijos?</p>
+                                </div>
+                                <div className="carousel-caption  d-md-block">
+                                    <div className="box-title-slide">
+                                        <figure className=" share ">
+                                            <img src={share} className="share-img"></img>
+                                        </figure>
+                                        <h4 className="title-slide">Habla, canta y señala</h4>
+                                    </div>
+                                    <Link to="/" className="btn-orange text-white">
+                                        <img src={arrowLeft} className="arrow-orange"></img>
+                                            ¡Aprendamos a hacerlo!
+                                        <img src={arrowRigth}className="arrow-orange"></img>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="carousel-item">
+                                <img src={bannerDesktop3} className="d-block w-100" alt="..."/>
+                                    <div className="carousel-caption-text">
+                                        <h2>¡Cada momento cuenta!</h2>
+                                        <p>¿Sabías que tus actividades cotidianas son oportunidades para el desarrollo del cerebro de tus hijas e hijos?</p>
+                                    </div>
+                                    <div className="carousel-caption  d-md-block">
+                                        <div className="box-title-slide">
+                                            <figure className=" share ">
+                                                <img src={share} className="share-img"></img>
+                                            </figure>
+                                            <h4 className="title-slide">Habla, canta y señala</h4>
+                                        </div>
+                                        <Link to="/" className="btn-orange text-white">
+                                            <img src={arrowLeft} className="arrow-orange"></img>
+                                                ¡Aprendamos a hacerlo!
+                                            <img src={arrowRigth}className="arrow-orange"></img>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                            <a className="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span className="sr-only">Previous</span>
+                            </a>
+                            <a className="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span className="sr-only">Next</span>
+                            </a>
                         </div>
-                        <Link to="/"className="btn-orange text-white">
-                            <img src={arrowLeft} className="arrow-orange"></img>
-                                ¡Aprendamos a hacerlo!
-                            <img src={arrowRigth}className="arrow-orange"></img>
-                        </Link>
                     </div>
+                    }
                 </div>
-                <div className="carousel-item">
-                    <img src={bannerMobile3} className="d-block w-100" alt="..."/>
-                    <div className="carousel-caption-text">
-                        <h2>¡Cada momento cuenta!</h2>
-                        <p>¿Sabías que tus actividades cotidianas son oportunidades para el desarrollo del cerebro de tus hijas e hijos?</p>
-                    </div>
-                    <div className="carousel-caption  d-md-block">
-                        <div className="box-title-slide">
-                            <figure className=" share ">
-                                <img src={share} className="share-img"></img>
-                            </figure>
-                            <h4 className="title-slide">Habla, canta y señala</h4>
-                        </div>
-                        <Link to="/" className="btn-orange text-white">
-                            <img src={arrowLeft} className="arrow-orange"></img>
-                                ¡Aprendamos a hacerlo!
-                            <img src={arrowRigth}className="arrow-orange"></img>
-                        </Link>
-                    </div>
-                </div>
-            </div>
-            <a className="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="sr-only">Previous</span>
-            </a>
-            <a className="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="sr-only">Next</span>
-            </a>
-        </div>
-   </div>
-
-   <div className="momento-home hide-mobile">
-        <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
-            <ol className="carousel-indicators">
-                <li data-target="#carouselExampleCaptions" data-slide-to="0" className="active"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            </ol>
-            <div className="carousel-inner">
-                <div className="carousel-item  active">
-                    <img src={bannerDesktop1} className="d-block w-100 " alt="..." />
-                    <div className="carousel-caption-text">
-                        <h2>¡Cada momento cuenta!</h2>
-                        <p>¿Sabías que tus actividades cotidianas son oportunidades para el desarrollo del cerebro de tus hijas e hijos?</p>
-                    </div>
-                    <div className="carousel-caption  d-md-block">
-                        <div className="box-title-slide">
-                            <figure className=" share ">
-                                <img src={share} className="share-img"></img>
-                            </figure>
-                            <h4 className="title-slide">Habla, canta y señala</h4>
-                        </div>
-                        <Link to="/" className="btn-orange text-white">
-                            <img src={arrowLeft} className="arrow-orange"></img>
-                                ¡Aprendamos a hacerlo!
-                            <img src={arrowRigth}className="arrow-orange"></img>
-                        </Link>
-                    </div>
-                    
-                </div>
-                <div className="carousel-item">
-                    <img src={bannerDesktop2} className="d-block w-100" alt="..."/>
-                    <div className="carousel-caption-text">
-                        <h2>¡Cada momento cuenta!</h2>
-                        <p>¿Sabías que tus actividades cotidianas son oportunidades para el desarrollo del cerebro de tus hijas e hijos?</p>
-                    </div>
-                    <div className="carousel-caption  d-md-block">
-                        <div className="box-title-slide">
-                            <figure className=" share ">
-                                <img src={share} className="share-img"></img>
-                            </figure>
-                            <h4 className="title-slide">Habla, canta y señala</h4>
-                        </div>
-                        <Link to="/" className="btn-orange text-white">
-                            <img src={arrowLeft} className="arrow-orange"></img>
-                                ¡Aprendamos a hacerlo!
-                            <img src={arrowRigth}className="arrow-orange"></img>
-                        </Link>
-                    </div>
-                </div>
-                <div className="carousel-item">
-                    <img src={bannerDesktop3} className="d-block w-100" alt="..."/>
-                    <div className="carousel-caption-text">
-                        <h2>¡Cada momento cuenta!</h2>
-                        <p>¿Sabías que tus actividades cotidianas son oportunidades para el desarrollo del cerebro de tus hijas e hijos?</p>
-                    </div>
-                    <div className="carousel-caption  d-md-block">
-                        <div className="box-title-slide">
-                            <figure className=" share ">
-                                <img src={share} className="share-img"></img>
-                            </figure>
-                            <h4 className="title-slide">Habla, canta y señala</h4>
-                        </div>
-                        <Link to="/" className="btn-orange text-white">
-                            <img src={arrowLeft} className="arrow-orange"></img>
-                                ¡Aprendamos a hacerlo!
-                            <img src={arrowRigth}className="arrow-orange"></img>
-                        </Link>
-                    </div>
-                </div>
-            </div>
-            <a className="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="sr-only">Previous</span>
-            </a>
-            <a className="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="sr-only">Next</span>
-            </a>
-        </div>
-   </div>
- 
-</div>
-)}
+            )}
 export default Home;

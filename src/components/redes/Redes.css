@@ -1,5 +1,4 @@
-.cont-redes
-{
+.cont-redes {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -15,8 +14,7 @@
 
 
 
-.cont-redes a
-{
+.cont-redes a {
 	width: 3rem;
 	height: 3rem;
 	display: flex;
@@ -25,35 +23,49 @@
 	flex-wrap: wrap;
 	color: #fff;
 	text-decoration: none;
-	opacity: 0.5;
-	filter: grayscale(1);
+	opacity: 0.8;
+	filter: grayscale(.5);
 	transition: all 0.4s ease-in;
 }
 
-.cont-redes a:hover
-{
+.cont-redes a:hover {
 	opacity: 1;
 	filter: grayscale(0);
+	text-decoration: none
 }
 
-.cont-redes a i
-{
+.cont-redes a i {
 	transform: rotate(90deg);
 	transition: all 0.4s ease-in;
+	text-decoration: none
 }
 
-.cont-redes a:hover i
-{
+.cont-redes a:hover i {
 	transform: rotate(0deg) scale(1.5);
+	text-decoration: none
 }
 
-.cont-redes a:nth-child(1)
-{
-background-color: #4267B2;
+.cont-redes a:nth-child(1) {
+	background-color: #7dc7c5;
+	text-decoration: none
 }
 
 
-.cont-redes a:nth-child(2)
-{
-background-color: #F77737;
+.cont-redes a:nth-child(2) {
+	background-color: #7dc7c5;
+	text-decoration: none
+}
+
+
+@media (min-width: 769px) {
+	.cont-redes a {
+		width: 4rem;
+		height: 4rem;
+	}
+
+	.cont-redes a {
+		font-size: 1.5rem
+	}
+
+
 }
