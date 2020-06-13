@@ -66,7 +66,7 @@
 .btn-areas {
   display: flex;
   justify-content: center;
-  padding: 3rem;
+  padding: 1.5rem 3rem 1.5rem 3rem;
 }
 
 .area-higiene {
@@ -121,9 +121,25 @@
   height: 14rem;
 }
 
+
+.area-sesamo {
+  border: 0.8rem solid #05AB4C;
+  /*box-shadow: 0 1px 0 1px rgba(0,0,0,.03);*/
+  border-radius: 1.5em;
+  margin: 1rem;
+  padding: 1.5rem 0.5rem 1.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 14rem;
+}
 .icon-area {
   height: 5rem;
   margin: 0rem 4rem 0rem 4rem;
+}
+
+.icon-sesamo {
+  height: 9rem;
+  margin: 0rem 2rem 0rem 2rem;
 }
 
 .text-area-higiene {
@@ -285,6 +301,17 @@
     flex-direction: column;
     height: 8rem;
   }
+
+  .area-sesamo {
+    border: 0.5rem solid #05AB4C;
+    /*box-shadow: 0 1px 0 1px rgba(0,0,0,.03);*/
+    border-radius: 2.5em;
+    margin: 0.2rem;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 8rem;
+  }
   
   .icon-area {
     height: 3rem;
@@ -333,4 +360,8 @@
     font-size: 0.8rem;
   }
   
+  .icon-sesamo {
+    height: 5rem;
+    margin: 0rem 1rem 0rem 1rem;
+  }
 }
