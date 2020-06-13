@@ -10,7 +10,7 @@ export const Aprendamos = () => {
     <div className="padding-top background" id="aprendamos-page">
       <div className="column">
         <div className="margin-top-bottom">
-          <div className="row justify-content-center h-100">
+          <div className="row justify-content-center h-100 sin-margin-row">
             <Link
               to="/aprendamos/cuidador/registro-niños"
               className="btn-light-blue text-white  m-3" 
@@ -20,7 +20,7 @@ export const Aprendamos = () => {
               <img src={arrowRight} className="arrow-blue" alt="flecha derecha  azul"></img>
             </Link>
           </div>
-          <div className="row justify-content-center h-100">
+          <div className="row justify-content-center h-100 sin-margin-row">
             <Link
               to="/login"
               className="btn-light-blue text-white  m-3"

@@ -1,6 +1,9 @@
-/*Aprendamos*/
+/* otro
+ */
 
-.padding-top {
+ /*Aprendamos*/
+
+ .padding-top {
   padding-top: 7rem;
 }
 
@@ -10,7 +13,6 @@
 
 .background {
   background: url(./../../images/fondo_inicio_aprendamos_desktop.png) no-repeat;
-  height: 100vh;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -20,6 +22,13 @@
 .margin-top-bottom {
   margin-top: 14rem;
 }
+
+.sin-margin-row{
+  margin-left: 0px;
+  margin-right: 0px
+}
+
+
 /* construcciom */
 
 
@@ -44,12 +53,16 @@
   letter-spacing: 0.05em;
   font-size: 2.5rem
 }
+
+
+
+
 /* construcciom */
 /*Aprendamos2*/
 
 .background-blue {
   background: #2e335e no-repeat;
-  height: 100vh;
+  height: 70rem;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -59,23 +72,24 @@
 .title-aprendamos {
   color: #2e335e;
   text-align: center;
-  font-size: 3.5rem;
-  line-height: 3.5rem;
+  text-transform: unset;
+  line-height: 2.5rem;
   -webkit-text-stroke: 1px #2e335e;
   letter-spacing: 0.9px;
+  font-family: 'Questrial';
 }
 
 .box-title-aprendamos {
   display: flex;
-  justify-content: center;
-  padding-top: 8rem;
-  background-color: #fff;
-  border-bottom-left-radius: 100px;
-  border-bottom-right-radius: 100px;
-  height: 18rem;
+    justify-content: center;
+    padding-top: 10rem;
+    background-color: #fff;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    height: 20rem;
 }
 
-.left-star-aprendamos {
+/* .left-star-aprendamos {
   width: 30rem;
   height: auto;
   position: relative;
@@ -87,7 +101,7 @@
   height: auto;
   position: relative;
   top: -2rem;
-}
+} */
 
 .btn-cuidador{
     background: #fff;
@@ -95,15 +109,16 @@
     -webkit-text-stroke: 0.06em #AE96B2;
     letter-spacing: 0.06em;
     padding: 1rem 1rem 1rem 4rem;
-    border-radius: 40px;
+    border-radius: 20px;
     box-shadow: 0 0 9px rgb(0, 0, 0);
     text-transform: uppercase;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     text-align: center;
     text-decoration:none!important;
     display: flex;
     font-family: 'Questrial';
     margin: 2rem;
+    margin-top: 4rem
 }
 
 
@@ -113,16 +128,16 @@
     -webkit-text-stroke: 0.06em #7DC7C5;
     letter-spacing: 0.06em;
     padding: 1rem 1rem 1rem 4rem;
-    border-radius: 40px;
+    border-radius: 20px;
     box-shadow: 0 0 9px rgb(0, 0, 0);
     text-transform: uppercase;
-    font-size:2.4rem;
+    font-size:2.2rem;
     text-align: center;
     text-decoration:none!important;
     display: flex;
     font-family: 'Questrial';
     margin: 2rem;
- 
+    margin-top: 4rem
 }
 
 
@@ -133,7 +148,7 @@
 }
 
 .vertical-center{
-    margin-top:1.8rem
+    margin-top:2rem
 }
 
 .hide-tittle{
@@ -155,14 +170,19 @@ width: 30%
   position: absolute;
   left: -15%;
 }
-/*Desktop*/
+.left-star-empieza{
+  display: none
 
-@media (min-width: 769px) {
+}
+.right-star-empieza{
+  display: none
+  
 }
 
-/*mobile*/
-@media (max-width: 768px) {
 
+/*mobile*/
+
+@media (max-width: 768px) {
   /* en construccion */
   .background {
     background: url(./../../images/FONDO_APRENDAMOS_INICIO.png) no-repeat;
@@ -194,6 +214,10 @@ width: 30%
   .tittle-construccion-ok{
     font-size: 2rem
   }
+  .background-blue {
+    height: 42rem;
+  }
+
 
 /* en construccion */
   .btn-light-blue {
@@ -224,25 +248,18 @@ width: 30%
       display:none!important
   }
 
+
   .title-aprendamos {
-    color: #2e335e;
-    text-align: center;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    -webkit-text-stroke: 1px #2e335e;
-    letter-spacing: 0.9px;
+    font-size: 1.7rem;
     position: absolute;
-    z-index:5;
-    margin: 0px 3.4rem;
+    color:#2E335E;
+    -webkit-text-stroke: 1px #2E335E;
   }
   
   .box-title-aprendamos {
     display: flex;
     justify-content: center;
     padding-top: 7rem;
-    background-color: #fff;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
     height: 18rem;
   }
   
@@ -260,38 +277,22 @@ width: 30%
 
 
 .btn-cuidador{
-    background: #fff;
-    color: #AE96B2;
-    -webkit-text-stroke: 0.06em #AE96B2;
     letter-spacing: 0.06em;
     padding: 0.5rem 0.5rem 0.5rem 2rem;
-    border-radius: 30px;
+    border-radius: 20px;
     box-shadow: 0 0 9px rgb(143, 143, 143);
-    text-transform: uppercase;
     font-size: 2rem;
-    text-align: center;
-    text-decoration:none!important;
-    display: flex;
-    font-family: 'Questrial';
     margin: 0.5rem 1.5rem 0.5rem 1.5rem;
 }
 
 
 .btn-aliado{
-    background: #fff;
-    color: #7DC7C5;
-    -webkit-text-stroke: 0.06em #7DC7C5;
-    letter-spacing: 0.06em;
-    padding: 0.5rem 0.5rem 0.5rem 2rem;
-    border-radius: 30px;
-    box-shadow: 0 0 9px rgb(143, 143, 143);
-    text-transform: uppercase;
-    font-size:2rem;
-    text-align: center;
-    text-decoration:none!important;
-    display: flex;
-    font-family: 'Questrial';
-    margin: 0.5rem 1.5rem 0.5rem 1.5rem;
+  letter-spacing: 0.06em;
+  padding: 0.5rem 0.5rem 0.5rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 9px rgb(143, 143, 143);
+  font-size: 2rem;
+  margin: 0.5rem 1.5rem 0.5rem 1.5rem;
  
 }
 .vertical-center{
@@ -320,4 +321,25 @@ height: 1rem;
   font-size: 2rem;
   letter-spacing: 0.05em;
 }
+.left-star-empieza{
+  width: 6rem;
+  height: auto;
+  position: relative;
+  top: -5rem;
+  left: -4rem;
+
 }
+.right-star-empieza{
+  width: 6rem;
+  height: auto;
+  position: relative;
+  top: -5rem;
+  right: -4rem;
+  
+}
+
+}
+
+
+
+

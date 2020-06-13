@@ -28,10 +28,18 @@ import starRight from "../../images/home-img/star-right.svg"
 // import bannerDesktop from '../../images/home-img/foto_banner_propuesta.png';
 
 import share from "../../images/home-img/share-morado.svg"
+import shareF from "../../images/home-img/share-fuxia.svg"
+import shareC from "../../images/home-img/share-celeste.svg"
+import shareA from "../../images/home-img/share-amarillo.svg"
 import tituloHome from "../../images/home-img/titulo_home.png"
 import CarouselMobile from "./CarouselMobile";
 import CarouselDesktop from "./CarouselDesktop";
-import videoo from "../../images/video/video-volar.mp4"
+import videoo from "../../images/video/home_desktop_1.mp4"
+import videoMobile from "../../images/video/home_tablet_1.mp4"
+import habla from "../../images/home-img/hablaYcanta.svg"
+import exploren from "../../images/home-img/exploren.svg"
+import lean from "../../images/home-img/lean.svg"
+import cuenten from "../../images/home-img/cuenten.svg"
 
 
 const Home = () => { 
@@ -41,6 +49,7 @@ const Home = () => {
 
     return (
         <div className="animated fadeIn">
+        {width < breakpoint  ?  
             <div className="video-bg">
                 <video class=" " width="500" height="600"  loop autoPlay muted  >
 					<source src={videoo} type="video/mp4"/>
@@ -49,7 +58,16 @@ const Home = () => {
 					Your browser does not support the video tag.
 				</video>
             </div>
-    
+            :
+            <div className="video-bg">
+                <video class=" " width="100" height="200"  loop autoPlay muted  >
+					<source src={videoMobile} type="video/mp4" />
+					<source src={videoMobile} type="video/ogg"/>
+					<source src={videoMobile} type="video/webm"/>
+					Your browser does not support the video tag.
+				</video>
+            </div>
+             }
 
              <div className="text-center text-white text-proposito">
                 <div className="d-flex justify-content-center  text-center text-white">
@@ -63,11 +81,11 @@ const Home = () => {
                 </p>
                 <p className="">Los bebés nacen listos para aprender.<br></br><strong className="fuerte-desktop">¡Y tú tienes todo para ayudarlos!</strong> </p>
         
-                <Link to="/"className="btn-orange text-white wobble-hor-bottom">
+                <a href="https://www.youtube.com/watch?v=XOIlfPB7ezs"className="btn-orange text-white wobble-hor-bottom" target="_blank">
                     <img src={arrowLeft} className="arrow-orange"></img>
                         ¡Entérate más!
                     <img src={arrowRigth}className="arrow-orange"></img>
-                </Link>
+                </a>
             </div>
             <div className='container'>
                 <div className="nosotros-home">
@@ -148,7 +166,11 @@ const Home = () => {
                                         <figure className=" share ">
                                             <img src={share} className="share-img"></img>
                                         </figure>
-                                        <h4 className="title-slide">Habla, canta y señala</h4>
+                                        <div className="title-slide">
+                                            <h4 className="">Habla, canta y señala</h4>
+                                            <img src={habla} alt=""/>
+                                        </div>
+                                        
                                     </div>
                                     <Link to="/"className="btn-orange text-white">
                                         <img src={arrowLeft} className="arrow-orange"></img>
@@ -166,9 +188,12 @@ const Home = () => {
                                 <div className="carousel-caption  d-md-block">
                                     <div className="box-title-slide">
                                         <figure className=" share ">
-                                            <img src={share} className="share-img"></img>
+                                            <img src={shareF} className="share-img"></img>
                                         </figure>
-                                        <h4 className="title-slide">Habla, canta y señala</h4>
+                                        <div className="title-slide">
+                                            <h4 className="text-fuxia">Exploren mediante el movimiento y el juego</h4>
+                                            <img src={exploren} alt=""/>
+                                        </div>
                                     </div>
                                     <Link to="/"className="btn-orange text-white">
                                         <img src={arrowLeft} className="arrow-orange"></img>
@@ -186,9 +211,35 @@ const Home = () => {
                                 <div className="carousel-caption  d-md-block">
                                     <div className="box-title-slide">
                                         <figure className=" share ">
-                                            <img src={share} className="share-img"></img>
+                                            <img src={shareC} className="share-img"></img>
                                         </figure>
-                                        <h4 className="title-slide">Habla, canta y señala</h4>
+                                        <div className="title-slide">
+                                            <h4 className="text-celeste">LEAN Y COMENTEN HISTORIAS</h4>
+                                            <img src={lean} alt=""/>
+                                        </div>
+                                    </div>
+                                    <Link to="/" className="btn-orange text-white">
+                                        <img src={arrowLeft} className="arrow-orange"></img>
+                                            ¡Aprendamos a hacerlo!
+                                        <img src={arrowRigth}className="arrow-orange"></img>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="carousel-item">
+                                <img src={bannerMobile4} className="d-block w-100" alt="..."/>
+                                <div className="carousel-caption-text">
+                                    <h2>¡Cada momento cuenta!</h2>
+                                    <p>¿Sabías que tus actividades cotidianas son oportunidades para el desarrollo del cerebro de tus hijas e hijos?</p>
+                                </div>
+                                <div className="carousel-caption  d-md-block">
+                                    <div className="box-title-slide">
+                                        <figure className=" share ">
+                                            <img src={shareA} className="share-img"></img>
+                                        </figure>
+                                        <div className="title-slide">
+                                            <h4 className="text-amarilloo">CUENTEN, AGRUPEN Y COMPAREN LAS COSAS</h4>
+                                            <img src={cuenten} alt=""/>
+                                        </div>
                                     </div>
                                     <Link to="/" className="btn-orange text-white">
                                         <img src={arrowLeft} className="arrow-orange"></img>
@@ -228,7 +279,10 @@ const Home = () => {
                                         <figure className=" share ">
                                             <img src={share} className="share-img"></img>
                                         </figure>
-                                        <h4 className="title-slide">Habla, canta y señala</h4>
+                                        <div className="title-slide">
+                                            <h4 className="">Habla, canta y señala</h4>
+                                            <img src={habla} alt=""/>
+                                        </div>
                                     </div>
                                     <Link to="/" className="btn-orange text-white">
                                         <img src={arrowLeft} className="arrow-orange"></img>
@@ -247,9 +301,12 @@ const Home = () => {
                                 <div className="carousel-caption  d-md-block">
                                     <div className="box-title-slide">
                                         <figure className=" share ">
-                                            <img src={share} className="share-img"></img>
+                                            <img src={shareF} className="share-img"></img>
                                         </figure>
-                                        <h4 className="title-slide">Habla, canta y señala</h4>
+                                        <div className="title-slide">
+                                            <h4 className="text-fuxia">Exploren mediante el movimiento y el juego</h4>
+                                            <img src={exploren} alt=""/>
+                                        </div>
                                     </div>
                                     <Link to="/" className="btn-orange text-white">
                                         <img src={arrowLeft} className="arrow-orange"></img>
@@ -267,9 +324,35 @@ const Home = () => {
                                     <div className="carousel-caption  d-md-block">
                                         <div className="box-title-slide">
                                             <figure className=" share ">
-                                                <img src={share} className="share-img"></img>
+                                                <img src={shareC} className="share-img"></img>
                                             </figure>
-                                            <h4 className="title-slide">Habla, canta y señala</h4>
+                                            <div className="title-slide">
+                                                <h4 className="text-celeste">LEAN Y COMENTEN HISTORIAS</h4>
+                                                <img src={lean} alt=""/>
+                                            </div>
+                                        </div>
+                                        <Link to="/" className="btn-orange text-white">
+                                            <img src={arrowLeft} className="arrow-orange"></img>
+                                                ¡Aprendamos a hacerlo!
+                                            <img src={arrowRigth}className="arrow-orange"></img>
+                                        </Link>
+                                    </div>
+                                </div>
+                                <div className="carousel-item">
+                                    <img src={bannerDesktop4} className="d-block w-100" alt="..."/>
+                                    <div className="carousel-caption-text">
+                                        <h2>¡Cada momento cuenta!</h2>
+                                        <p>¿Sabías que tus actividades cotidianas son oportunidades para el desarrollo del cerebro de tus hijas e hijos?</p>
+                                    </div>
+                                    <div className="carousel-caption  d-md-block">
+                                        <div className="box-title-slide">
+                                            <figure className=" share ">
+                                                <img src={shareA} className="share-img"></img>
+                                            </figure>
+                                            <div className="title-slide">
+                                                <h4 className="text-amarilloo">CUENTEN, AGRUPEN Y COMPAREN LAS COSAS</h4>
+                                                <img src={cuenten} alt=""/>
+                                            </div>
                                         </div>
                                         <Link to="/" className="btn-orange text-white">
                                             <img src={arrowLeft} className="arrow-orange"></img>

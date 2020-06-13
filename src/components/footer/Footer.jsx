@@ -8,7 +8,6 @@ import telefono from '../../images/telefono-logo.svg';
 import correo from '../../images/correo-logo.svg';
 import facebook from '../../images/facebook.svg';
 import instagram from '../../images/instagram.svg';
-import medium from '../../images/medium.svg';
 
 const Footer = () => {
     return(
@@ -41,15 +40,14 @@ const Footer = () => {
             </div>
             <div className="box-redes">
                 <figure>
-                    <a href="https://www.instagram.com/somos.volar/">
+                    <a href="https://www.instagram.com/somos.volar/" target="_blank">
                     <img src={instagram} className="icon-footer"></img></a>
                 </figure>
                 <figure>
-                    <a href="https://www.facebook.com/somosvolar/"><img src={facebook} className="icon-footer"></img></a>
+                    <a href="https://www.facebook.com/somosvolar/" target="_blank">
+                    <img src={facebook} className="icon-footer"></img></a>
                 </figure>
-                <figure>
-                    <a href=""><img src={medium} className="icon-footer"></img></a>
-                </figure>
+                
             </div>
         </div>
     )

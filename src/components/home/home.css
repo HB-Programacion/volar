@@ -12,8 +12,7 @@
        object-fit: cover;
     -o-object-position: center;
        object-position: center;
-    opacity: 1;
-    filter: grayscale(2)
+
     
   }
 
@@ -251,10 +250,10 @@
   }
   .momento-home .carousel-caption .box-title-slide{
     background-color: #fff;
-    width: 80%;
+    width: 90%;
     margin: auto;
-    height: 7rem;
-    border-radius: 25px
+    height: 5rem;
+    border-radius: 18px
   }
   
   .carousel-caption-text{
@@ -291,21 +290,47 @@
    
   }
   .share-img{
-    width: 25%;
+    width: 20%;
     position: absolute;
-    left: -1rem;
-    top:-1rem
+    left: -.5rem;
+    top:-1.1rem
   }
   .title-slide{
     text-transform: uppercase;
     color: #AE96B2;
-    padding: 1.6rem 2rem;
+    padding: 1rem 1rem;
     text-align: left;
     -webkit-text-stroke: 1px #AE96B2;
-    font-size: 1.5rem;
+    display: flex;
+    height: 5rem;
+    align-items: center;
+    justify-content: center
+    
+    
   }
+  .title-slide h4{
+    font-size: 1.2rem;
+    text-align: center
+    
+  }
+  .title-slide img{
+    width: 2.3rem;
+    margin-left: 0rem;
+    margin-top: -1rem
+  }
+.text-fuxia{
+  color:#EB477A;
+  -webkit-text-stroke: 1px #EB477A;
+}
+.text-celeste{
+  color: #7DC7C5;
+  -webkit-text-stroke: 1px #7DC7C5;
+}
 
-
+.text-amarilloo{
+  color: #F7B919;
+  -webkit-text-stroke: 1px #F7B919;
+}
 
  
   /* DESKTOP */
@@ -314,7 +339,12 @@
    font-size: .98vw;
    font-family: 'Questrial';
   } 
- 
+  /* .video-bg{
+    width: 100%;
+    height: 100%;
+    
+    
+  } */
  
  /* HOME */
   .text-proposito .h1-proposito{
@@ -465,23 +495,35 @@
   top: 4rem
 }
 .momento-home .carousel-caption .box-title-slide{
-  width: 30%;
+  width: 45%;
   margin: auto;
-  height: 12rem;
-  border-radius: 25px
+  height: 8rem;
+  border-radius: 25px;
+  
 }
 .title-slide{
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
   padding: 2.3rem 3.5rem;
+  height: 8rem;
+  
 }
+
+.title-slide h4{
+  font-size: 2.3rem;
+}
+.title-slide img{
+  width: 5rem;
+  margin-left: .5rem
+}
+
 .share{
-  width: 30%
+  width: 25%
 }
  .share-img{
    width: 18%;
    position: absolute;
-   left: -3rem;
-   top:-3rem
+   left: -2rem;
+   top:-2rem
  }
  .carousel-caption-text h2{
    font-size: 2.7rem
