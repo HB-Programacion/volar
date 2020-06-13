@@ -13,14 +13,28 @@ import iconAreaSocial from "./../../../images/icon-emocional.png";
 import iconAreaRutina from "./../../../images/icon-rutina.png";
 import iconAreaJuego from "./../../../images/icon-juego.png";
 import iconAreaNutricion from "./../../../images/icon-nutricion.png";
+import iconAreaSesamo from "./../../../images/icon-sesamo.png";
 import startsLeftWhiteMobile from "./../../../images/starts-white-mobile-left.png";
 import startsRightWhiteMobile from "./../../../images/stars-white-mobile-right.png";
 import { auth, db } from "../../../components/firebase/firebase";
 
 export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild }) => {
   const [nameChild, setNameChild] = React.useState("");
+  const [colaboradorBreca, setColaboradorBreca] = React.useState("");
 
   React.useEffect(() => {
+
+    if (firebaseUser !== null){
+      const perfilUser = db.collection("usuarios").doc(firebaseUser.uid);
+      perfilUser
+        .get()
+        .then((doc) =>{
+          setColaboradorBreca(doc.data().breca);
+        })
+        .catch(function (error) {
+          console.log("Error getting document:", error);
+        });
+    }
     if (firebaseUser !== null && idChild !== "") {
       const childData = db
         .collection("usuarios")
@@ -64,12 +78,12 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild }) => {
             arrayChild.docs.length === 0 ? (
               <p className="box-text">
                 Hoy aprenderemos a desarrollar las habilidades de lenguaje de tu
-                hijo aprovechando los momentos de aseo.
+                hijo aprovechando los momentos de aseo. 
               </p>
             ) : (
               <p className="box-text">
-                Hoy aprenderemos a desarrollar las habilidades de lenguaje de{" "}
-                {nameChild} aprovechando los momentos de aseo.
+                Hoy aprenderemos a desarrollar las habilidades de lenguaje de 
+                {nameChild} aprovechando los momentos de aseo.{arrayChild.docs.length}
               </p>
             )
           ) : (
@@ -147,7 +161,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild }) => {
         tus hijos e hijas!
       </p>
       <div className="list-btn-areas show-desktop">
-        <div className="btn-areas w-100">
+      {colaboradorBreca === "NO" ?   <div className="btn-areas w-100">
           <div className="w-20">
             <Link to="/aprendamos/cuidador/higiene">
               <div className="area-higiene">
@@ -205,12 +219,89 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild }) => {
                 alt="stars-left"
               />
               <p className="text-area-nutricion">
-                NUTRICIÓN <br /> Y FÍSICO
+                NUTRICIÓN <br /> Y FÍSICO 
               </p>
             </div>
             </Link>
           </div>
-        </div>
+        </div> :
+         <> <div className="btn-areas w-100">
+          <div className="w-20">
+            <Link to="/aprendamos/cuidador/higiene">
+              <div className="area-higiene">
+                <img
+                  src={iconAreaHigiene}
+                  className="icon-area"
+                  alt="stars-left"
+                />
+                <p className="text-area-higiene">HIGIENE Y AGUA SEGURA</p>
+              </div>
+            </Link>
+          </div>
+          <div className="w-20">
+            <Link to="/aprendamos/cuidador/socioemocional">
+              <div className="area-socioEmocional">
+                <img
+                  src={iconAreaSocial}
+                  className="icon-area"
+                  alt="stars-left"
+                />
+                <p className="text-area-social">SOCIOEMOCIONAL</p>
+              </div>
+            </Link>
+          </div>
+          <div className="w-20">
+            <Link to="/aprendamos/cuidador/rutina">
+              <div className="area-rutina">
+                <img
+                  src={iconAreaRutina}
+                  className="icon-area"
+                  alt="stars-left"
+                />
+                <p className="text-area-rutina">RUTINA</p>
+              </div>
+            </Link>
+          </div>
+          </div>
+          <div className="btn-areas w-100">
+          <div className="w-20">
+          <Link to="/aprendamos/cuidador/juego">
+              <div className="area-juego">
+                <img
+                  src={iconAreaJuego}
+                  className="icon-area"
+                  alt="stars-left"
+                />
+                <p className="text-area-juego">JUEGO</p>
+              </div>
+            </Link>
+          </div>
+          <div className="w-20">
+          <Link to="/aprendamos/cuidador/nutricion">
+           <div className="area-nutricion">
+              <img
+                src={iconAreaNutricion}
+                className="icon-area"
+                alt="stars-left"
+              />
+              <p className="text-area-nutricion">
+                NUTRICIÓN <br /> Y FÍSICO 
+              </p>
+            </div>
+            </Link>
+          </div>
+          <div className="w-20">
+          <Link to="/aprendamos/cuidador/nutricion">
+           <div className="area-sesamo">
+              <img
+                src={iconAreaSesamo}
+                className="icon-sesamo"
+                alt="stars-left"
+              />
+            </div>
+            </Link>
+          </div>
+        </div> </> }
       </div>
       <div className="list-btn-areas hide-desktop">
         <div className="btn-areas w-100">
@@ -280,6 +371,17 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild }) => {
             </div>
             </Link>
           </div>
+          {colaboradorBreca === "SI" ?  <div className="w-50">
+          <Link to="/aprendamos/cuidador/nutricion">
+           <div className="area-sesamo">
+              <img
+                src={iconAreaSesamo}
+                className="icon-sesamo"
+                alt="stars-left"
+              />
+            </div>
+            </Link>
+          </div> : ""}
         </div>
       </div>
     </div>
