@@ -22,11 +22,13 @@ import { Socioemocional } from "./components/aprendamos/cuidador/areas/Socioemoc
 import { Rutina } from "./components/aprendamos/cuidador/areas/Rutina";
 import { Juego } from "./components/aprendamos/cuidador/areas/Juego";
 import { Nutricion } from "./components/aprendamos/cuidador/areas/Nutricion";
+import { Sesamo } from "./components/aprendamos/cuidador/areas/Sesamo";
 import  TipsHigiene  from "./components/aprendamos/cuidador/areas/TipsHigiene";
 import  TipsSocioemocional  from "./components/aprendamos/cuidador/areas/TipsSocioemocional";
 import  TipsRutina from "./components/aprendamos/cuidador/areas/TipsRutina";
 import  TipsJuego from "./components/aprendamos/cuidador/areas/TipsJuego";
 import  TipsNutricion from "./components/aprendamos/cuidador/areas/TipsNutricion";
+import TipsSesamo from "./components/aprendamos/cuidador/areas/TipsSesamo"
 import Login from "./components/loginRegister/Login";
 import Signup from "./components/loginRegister/Signup";
 import { PasswordReset } from "./components/loginRegister/PasswordReset";
@@ -58,6 +60,7 @@ function App() {
   const [firebaseUser, setFirebaseUser] = React.useState(false);
   const [userName, setUserName] = React.useState(false);
   const [idChild, setIdChild] = React.useState("");
+  const [numberTip, setNumberTip] = React.useState("");
   const [arrayChild, setArrayChild] = React.useState("");
   const [subItem, setSubItem] = React.useState(false);
   const [menuBurgerOpen, setmenuBurgerOpen] = React.useState(false);
@@ -92,6 +95,10 @@ function App() {
     setIdChild(idChildArray);
   };
 
+  const mandarNumberTip = (selectNumberTip)=> {
+    setNumberTip(selectNumberTip)
+  }
+  
   const updateArrayChild = (arrayChildT) => {
     setArrayChild(arrayChildT);
   };
@@ -186,6 +193,7 @@ function App() {
               loading={loading}
               firebaseUser={firebaseUser}
               idChild={idChild}
+              mandarNumberTip={mandarNumberTip}
             />
              </Route>
             <Route path="/aprendamos/cuidador/socioemocional" exact>
@@ -195,6 +203,7 @@ function App() {
                 loading={loading}
                 firebaseUser={firebaseUser}
                 idChild={idChild}
+                mandarNumberTip={mandarNumberTip}
               />
             </Route>
             <Route path="/aprendamos/cuidador/rutina" exact>
@@ -204,6 +213,7 @@ function App() {
                 loading={loading}
                 firebaseUser={firebaseUser}
                 idChild={idChild}
+                mandarNumberTip={mandarNumberTip}
               />
             </Route>
             <Route path="/aprendamos/cuidador/juego" exact>
@@ -213,6 +223,7 @@ function App() {
                 loading={loading}
                 firebaseUser={firebaseUser}
                 idChild={idChild}
+                mandarNumberTip={mandarNumberTip}
               />
             </Route>
             <Route path="/aprendamos/cuidador/nutricion" exact>
@@ -222,6 +233,17 @@ function App() {
                 loading={loading}
                 firebaseUser={firebaseUser}
                 idChild={idChild}
+                mandarNumberTip={mandarNumberTip}
+              />
+            </Route>
+            <Route path="/aprendamos/cuidador/sesamo" exact>
+              <Sesamo
+                contenidoFirebase={contenidoFirebase}
+                error={error}
+                loading={loading}
+                firebaseUser={firebaseUser}
+                idChild={idChild}
+                mandarNumberTip={mandarNumberTip}
               />
             </Route>
             <Route path="/aprendamos/cuidador/higiene/tips" exact>
@@ -231,6 +253,7 @@ function App() {
                 loading={loading}
                 firebaseUser={firebaseUser}
                 idChild={idChild}
+                numberTip={numberTip}
               />
             </Route>
             <Route path="/aprendamos/cuidador/socioemocional/tips" exact>
@@ -240,6 +263,7 @@ function App() {
                 loading={loading}
                 firebaseUser={firebaseUser}
                 idChild={idChild}
+                numberTip={numberTip}
               />
             </Route>
             <Route path="/aprendamos/cuidador/rutina/tips" exact>
@@ -249,6 +273,7 @@ function App() {
                 loading={loading}
                 firebaseUser={firebaseUser}
                 idChild={idChild}
+                numberTip={numberTip}
               />
             </Route>
             <Route path="/aprendamos/cuidador/juego/tips" exact>
@@ -258,6 +283,7 @@ function App() {
                 loading={loading}
                 firebaseUser={firebaseUser}
                 idChild={idChild}
+                numberTip={numberTip}
               />
             </Route>
             <Route path="/aprendamos/cuidador/nutricion/tips" exact>
@@ -267,6 +293,17 @@ function App() {
                 loading={loading}
                 firebaseUser={firebaseUser}
                 idChild={idChild}
+                numberTip={numberTip}
+              />
+            </Route>
+            <Route path="/aprendamos/cuidador/sesamo/tips" exact>
+              <TipsSesamo
+                contenidoFirebase={contenidoFirebase}
+                error={error}
+                loading={loading}
+                firebaseUser={firebaseUser}
+                idChild={idChild}
+                numberTip={numberTip}
               />
             </Route>
             <Route path="/login" exact>

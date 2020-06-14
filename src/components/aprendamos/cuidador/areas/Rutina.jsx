@@ -3,7 +3,6 @@ import "./areas.css";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import iconoRutinaWhite from "./../../../../images/areas-img/icon_rutina.png";
 import iconoTipRutina from "./../../../../images/areas-img/icono_tip_rutina.svg";
-import fondo from "./../../../../images/areas-img/socioemocional_fondo_desktop.png";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { auth,db } from "../../../firebase/firebase";
 

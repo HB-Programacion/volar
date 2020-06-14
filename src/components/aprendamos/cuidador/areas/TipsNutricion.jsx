@@ -41,9 +41,6 @@ const TipsNutricion = () => {
             </div>
           </div>
         </div>
-        {/*<figure className="position-relative cohete-volando-figure mt-5">
-              <img src={cohete} className="cohete-volando w-100"></img>
-    </figure>*/}
       </div>
     </div>
   );
