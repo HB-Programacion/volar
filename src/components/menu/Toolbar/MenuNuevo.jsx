@@ -41,7 +41,7 @@ const MenuNuevo =props => {
                     <li><NavLink to="/" activeClassName='is-activeHome' exact={true} >Inicio</NavLink></li>
                     <li><NavLink to="/nosotros" activeClassName='is-activeHome' >Nosotros</NavLink></li>
                     {
-                      props.firebaseUser !== null ?  <li><NavLink to={`/aprendamos/cuidador/${props.idChild}`} activeClassName='is-activeHome' >Aprendamos</NavLink></li> :
+                      props.firebaseUser !== null ?  <li><NavLink to={`/aprendamos/${props.idChild}`} activeClassName='is-activeHome' >Aprendamos</NavLink></li> :
                       <li><NavLink to='/aprendamos' activeClassName='is-activeHome' >Aprendamos</NavLink></li>
                     }
 

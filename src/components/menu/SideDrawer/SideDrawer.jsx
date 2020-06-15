@@ -105,7 +105,7 @@ const sideDraw = (props) => {
                 <li><NavLink to="/"  onClick={props.ocultarMenuMobile} activeClassName='is-activeHomeMobile' exact={true}><img src={inicio} className="w-15 mr-2"/>Inicio</NavLink></li>
                 <li><NavLink to="/nosotros" onClick={props.ocultarMenuMobile} activeClassName='is-activeHomeMobile'><img src={nosotros}className="w-15 mr-2"/>Nosotros</NavLink></li>
                 {
-                      props.firebaseUser !== null ?  <li><NavLink to={`/aprendamos/cuidador/${props.idChild}`} onClick={props.ocultarMenuMobile} activeClassName='is-activeHomeMobile' ><img src={aprendamos} className="w-15 mr-2"/>Aprendamos</NavLink></li> :
+                      props.firebaseUser !== null ?  <li><NavLink to={`/aprendamos/${props.idChild}`} onClick={props.ocultarMenuMobile} activeClassName='is-activeHomeMobile' ><img src={aprendamos} className="w-15 mr-2"/>Aprendamos</NavLink></li> :
                       <li><NavLink to='/aprendamos'onClick={props.ocultarMenuMobile}  activeClassName='is-activeHomeMobile'><img src={aprendamos} className="w-15 mr-2"/>Aprendamos</NavLink></li>
                     }
                 <li><NavLink to="/contactanos" onClick={props.ocultarMenuMobile} activeClassName='is-activeHomeMobile'><img src={contactanos} className="w-15 mr-2"/>Contáctanos</NavLink></li>
