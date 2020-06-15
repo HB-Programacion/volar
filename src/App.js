@@ -90,8 +90,9 @@ function App() {
     }
   );
 
-  const mandarIdChild = (idChildArray) => {
+  const mandarIdChild = (idChildArray, nameChild) => {
     setIdChild(idChildArray);
+    localStorage.setItem('nameChild', nameChild)
   };
 
 

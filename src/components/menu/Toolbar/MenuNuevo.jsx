@@ -10,6 +10,7 @@ import MenuChild from "../MenuChild"
 
 const MenuNuevo =props => {
     const [userName, setUserName] = React.useState("");
+    localStorage.setItem('nameUser', userName)
   React.useEffect(() => {
     if (props.firebaseUser !== null) {
       const perfilUser = db.collection("usuarios").doc(props.firebaseUser.uid);
@@ -17,6 +18,7 @@ const MenuNuevo =props => {
         .get()
         .then((doc) => {
           setUserName(doc.data().nombre);
+         
         })
         .catch(function (error) {
           console.log("Error getting document:", error);
