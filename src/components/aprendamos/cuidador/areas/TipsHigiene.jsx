@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./tips.css";
 import { auth, db } from "../../../../components/firebase/firebase";
-/import cohete from '../../images/cohete-volando.svg';/
+// import cohete from '../../images/cohete-volando.svg';
 
 import { Orbitals } from "react-spinners-css";
 
@@ -71,10 +71,10 @@ const TipsHigiene = ({
                           TIP N°{item.data().n_tip}
                         </h3>
                       </div>
-                      <div className="row tips-margin-top sin-margin-row">
+                      <div className="row tips-margin-top sin-margin-row tips-1-columna">
                         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                           {item.data().icono !== "" ? (
-                            <img src={item.data().icono} alt="" />
+                            <img src={item.data().icono} alt="" className="iconos-tips-blanco heartbeat" />
                           ) : (
                             <div className="videoWrapper">
                               <iframe
@@ -147,10 +147,10 @@ const TipsHigiene = ({
                           TIP N°{item.data().n_tip}
                         </h3>
                       </div>
-                      <div className="row tips-margin-top sin-margin-row">
+                      <div className="row tips-margin-top sin-margin-row tips-1-columna">
                         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                           {item.data().icono !== "" ? (
-                            <img src={item.data().icono} alt="" />
+                            <img src={item.data().icono} alt="" className="iconos-tips-blanco heartbeat" />
                           ) : (
                             <div className="videoWrapper">
                               <iframe
