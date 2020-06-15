@@ -37,8 +37,8 @@ const RegistroChild = (props) => {
       setError("Agregar sexo del niño(a)");
       return;
     }
-    if (!fechaNacimiento.trim()) {
-      setError("Agregar fecha de nacimiento");
+    if (!edadChild.trim()) {
+      setError("Agregar rango de edad del niño(a)");
       return;
     }
     if (!relationshipChild.trim()) {
@@ -53,12 +53,12 @@ const RegistroChild = (props) => {
 
   React.useEffect(() => {
     console.log("novato0", idChild)
-    if(fechaNacimiento!==""){
+   { /*if(fechaNacimiento!==""){
         const birthday=new Date(fechaNacimiento.split('-').join('/'));
         const ageDifMs = Date.now() - birthday.getTime();
       const ageDate = new Date(ageDifMs); 
       setEdadChild(Math.abs(ageDate.getUTCFullYear() - 1970))
-      }
+      }*/}
 
       if(idChild!==""){
         const editarIdChild = async ( ) => {
@@ -142,16 +142,24 @@ const RegistroChild = (props) => {
               </div>
             </div>
             <div className="row">
-              <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                <p className="letter-register">FECHA DE NACIMIENTO:</p>
-                <input
-                 className="input-register-space"
-                  name="requested_order_ship_date"
-                  type="date"
-                  value={fechaNacimiento}
-                  onChange={(e) => setFechaNacimiento(e.target.value)}
-                />
-              </div>
+            <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+              <p className="letter-register">EDAD DEL NIÑO</p>
+              <select
+                  className="select-register-space"
+                  onChange={(e) => setEdadChild(e.target.value)}
+                  value={edadChild}
+                  
+                >
+                  <option value="">---SELECCIONA---</option>
+                  <option  value="-1">Niño(a) por nacer</option>
+                  <option value="0" >0 - 1 año</option>
+                  <option value="1">1 - 2 años</option>
+                  <option value="2">2 - 3 años</option>
+                  <option value="3">3 - 4 años</option>
+                  <option value="4">4 - 5 años</option>
+                  <option value="5">5 - 6 años</option>
+                </select>
+            </div>
               <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                 <p className="letter-register">PARENTESCO CON EL NIÑO(A):</p>
                 <select
