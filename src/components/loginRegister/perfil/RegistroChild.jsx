@@ -51,10 +51,6 @@ const RegistroChild = (props) => {
     setError(null);
   };
 
-  console.log("ingenua",idChild)
- 
-
-
   React.useEffect(() => {
     console.log("novato0", idChild)
     if(fechaNacimiento!==""){

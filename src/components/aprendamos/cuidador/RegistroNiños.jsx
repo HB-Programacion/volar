@@ -11,6 +11,37 @@ export const RegistroNiños = () => {
   const [colaboradorBreca, setColaboradorBreca] = React.useState("");
   const [codigoBreca, setCodigoBreca] = React.useState("");
   const [edadChild, setEdadChild] = React.useState("");
+  const [error, setError] = React.useState(null);
+
+
+  const procesarDatosChild = (e) => {
+    e.preventDefault();
+    if (!nameChild.trim()) {
+      setError("Agregar nombre del niño(a)");
+      return;
+    }
+    if (!edadChild.trim()) {
+      setError("Agregar edad del niño(a)");
+      return;
+    }
+    if (!colaboradorBreca.trim()) {
+      setError("Agregar si es un colaborador breca");
+      return;
+    }
+    if (colaboradorBreca === "SI" && !codigoBreca.trim()) {
+      setError("Colocar código Breca");
+      return;
+    }
+
+    setError(null);
+  };
+
+  const addDateChild = React.useCallback(async () => {
+    
+  }, []);
+  
+
+
 
   return (
     <div className="container animated fadeIn box-registro-ninos">
@@ -22,7 +53,8 @@ export const RegistroNiños = () => {
           <h2 className="subtittle-register-child">Cuidador Principal</h2>
         </div>
         <div className="list-register">
-        <form>
+        <form onSubmit={procesarDatosChild}>
+        {error && <div className="alert alert-danger">{error}</div>}
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
               <p className="letter-register">NOMBRE DE NIÑO:</p>
@@ -33,6 +65,8 @@ export const RegistroNiños = () => {
                 name="nameChild"
                 onChange={(e) => setNameChild(e.target.value)}
                 value={nameChild}
+                autoFocus
+                
               />
             </div>
             <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
@@ -41,6 +75,7 @@ export const RegistroNiños = () => {
                   className="select-register-space"
                   onChange={(e) => setEdadChild(e.target.value)}
                   value={edadChild}
+                  
                 >
                   <option value="">---SELECCIONA---</option>
                   <option  value="-1">Niño(a) por nacer</option>
@@ -53,7 +88,7 @@ export const RegistroNiños = () => {
                 </select>
             </div>
           </div>
-          <p>{edadChild}</p>
+          <p>{error}</p>
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
               <p className="letter-register">COLABORADOR BRECA</p>

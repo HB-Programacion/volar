@@ -24,19 +24,14 @@ const MenuChild = ({firebaseUser, mandarIdChild,  updateArrayChild}) => {
         
             ///Obteniendo todo el contenido de firebase///
           }, [updateArrayChild, usuarioChild])
-
-          const mandarIdChildOficial= (idChildSelect)=>{
-            localStorage.setItem('localIdChild', idChildSelect)
-            console.log(localStorage.getItem('localIdChild'))
-          }
   return (
     <div className="margin-top">
         <div className="nav-child">
         <div className="boton row">
             {usuarioChild && (<div className="">
             {usuarioChild.docs.map((item, key) => (
-               <NavLink to={`/aprendamos/cuidador/${localStorage.getItem('localIdChild')}`} key={key} activeClassName='is-active'  
-             className="item" onClick={()=>mandarIdChildOficial(item.data().id)}>{item.data().nameChild}</NavLink>
+               <NavLink to={`/aprendamos/cuidador/${item.data().id}`} key={key} activeClassName='is-active'  
+             className="item" onClick={()=>mandarIdChild(item.data().id)}>{item.data().nameChild}</NavLink>
               ))}
                </div>)}
         <NavLink to="/registro-niño" className="item">+ AGREGAR NIÑO(A)</NavLink>
