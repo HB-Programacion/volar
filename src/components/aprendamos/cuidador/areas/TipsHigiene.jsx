@@ -72,10 +72,10 @@ const TipsHigiene = ({
                         TIP N°{item.data().n_tip}
                       </h3>
                     </div>
-                    <div className="row tips-margin-top sin-margin-row">
+                    <div className="row tips-margin-top sin-margin-row tips-1-columna">
                       <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                         {item.data().icono !== "" ? (
-                          <img src={item.data().icono} alt="" />
+                          <img src={item.data().icono} alt="" className="iconos-tips-blanco"/>
                         ) : (
                           <div className="videoWrapper">
                             <iframe
@@ -139,7 +139,7 @@ const TipsHigiene = ({
                         TIP N°{item.data().n_tip}
                       </h3>
                     </div>
-                    <div className="row tips-margin-top sin-margin-row">
+                    <div className="row tips-margin-top sin-margin-row tips-1-columna">
                       <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                         {item.data().icono !== "" ? (
                           <img src={item.data().icono} alt="" />
