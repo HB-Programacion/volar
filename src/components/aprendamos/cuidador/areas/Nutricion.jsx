@@ -5,7 +5,7 @@ import iconoNutricionWhite from "./../../../../images/areas-img/icon_nutricion.p
 import iconoTipNutricion from "./../../../../images/areas-img/icono_tip_nutricion.svg";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { auth,db } from "../../../firebase/firebase";
-
+import { Orbitals } from "react-spinners-css";
 
 export const Nutricion= ({contenidoFirebase, error, loading, firebaseUser, idChild}) => {
 
@@ -36,14 +36,18 @@ export const Nutricion= ({contenidoFirebase, error, loading, firebaseUser, idChi
        <div className="box-title-nutricion show-desktop">
          <img
            src={iconoNutricionWhite}
-           className="icono-area"
+           className="icono-area heartbeat"
            alt="gota de agua"
          />
-         <h1 className="title-area">NUTRICIÓN Y FÍSICO</h1>
+         <h1 className="title-area  tracking-in-expand-fwd-top">NUTRICIÓN Y FÍSICO</h1>
        </div>
        <div className="list-videos-tips">
          {error && <strong>Error: {JSON.stringify(error)}</strong>}
-         {loading && <span>Collection: Loading...</span>}
+         {loading && <div className="grande">
+        <div className="centrando-spiner">
+          <Orbitals color="#EF8B44" size={900} />
+        </div>
+      </div>}
          {contenidoFirebase && (<div className="row">
              {contenidoFirebase.docs.filter(item=>  item.data().seccion==="Nutrición y Salud" &&  item.data().edad==edad ).map(item => (
                  <div key={item.id} className="col-sm-12 col-md-12 col-lg-6 col-xl-6">

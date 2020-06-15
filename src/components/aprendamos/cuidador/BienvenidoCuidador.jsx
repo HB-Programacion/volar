@@ -65,7 +65,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
    {
      firebaseUser !== null ? (
       <div>
-      <div className="box-title-cuidador animated fadeIn show-desktop">
+      <div className="box-title-cuidador animated fadeIn ">
         <div className="box-row-1">
         {/* <img src={starsLeftDesktop} className="stars-left-desktop heartbeat"></img> */}
           <img
@@ -344,7 +344,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
      ):(
 
       <div>
-      <div className="box-title-cuidador animated fadeIn show-desktop">
+      <div className="box-title-cuidador animated fadeIn ">
         <div className="box-row-1">
         {/* <img src={starsLeftDesktop} className="stars-left-desktop heartbeat"></img> */}
           <img

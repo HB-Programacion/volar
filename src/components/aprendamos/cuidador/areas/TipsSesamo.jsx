@@ -32,13 +32,13 @@ const TipsSesamo = ({
                 )
                 .map((item) => (
                   <div className="">
-                    <div className="row justify-content-center h-100">
+                    <div className="row justify-content-center h-100 sin-margin-row">
                       <h1 className="tittle-tips"> {item.data().titulo}</h1>
                     </div>
-                    <div className="row justify-content-center  h-100">
+                    <div className="row justify-content-center  h-100 sin-margin-row">
                       <h3 className="tips-numbers"> {item.data().tipo}</h3>
                     </div>
-                    <div className="row tips-margin-top">
+                    <div className="row tips-margin-top sin-margin-row">
                       <div className="col-sm-12 col-md-12 col-lg-7 col-xl-7">
                         <div className="videoWrapper">
                           <iframe

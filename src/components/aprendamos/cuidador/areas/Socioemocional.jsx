@@ -5,6 +5,7 @@ import iconoSocioemocionalWhite from "./../../../../images/areas-img/icon_socioe
 import iconoTipSocioemocional from "./../../../../images/areas-img/icono_tip_socioemocional.svg";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { auth,db } from "../../../firebase/firebase";
+import { Orbitals } from "react-spinners-css";
 
 
 export const Socioemocional= ({contenidoFirebase, error, loading, firebaseUser, idChild}) => {
@@ -32,17 +33,21 @@ export const Socioemocional= ({contenidoFirebase, error, loading, firebaseUser, 
     <div>
     {firebaseUser !== null ? (
       <div>
-      <div className="box-title-socioemocional show-desktop">
+      <div className="box-title-socioemocional ">
         <img
           src={iconoSocioemocionalWhite}
-          className="icono-area"
+          className="icono-area heartbeat"
           alt="gota de agua"
         />
-        <h1 className="title-area">SOCIOEMOCIONAL</h1>
+        <h1 className="title-area  tracking-in-expand-fwd-top">SOCIOEMOCIONAL</h1>
       </div>
       <div className="list-videos-tips">
         {error && <strong>Error: {JSON.stringify(error)}</strong>}
-        {loading && <span>Collection: Loading...</span>}
+        {loading && <div className="grande">
+        <div className="centrando-spiner">
+          <Orbitals color="#EF8B44" size={900} />
+        </div>
+      </div>}
         {contenidoFirebase && (<div className="row">
             {contenidoFirebase.docs.filter(item=>  item.data().seccion==="Socioemocional" &&  item.data().edad==edad ).map(item => (
                 <div key={item.id} className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
@@ -67,7 +72,7 @@ export const Socioemocional= ({contenidoFirebase, error, loading, firebaseUser, 
     ) :
     (
       <div>
-      <div className="box-title-socioemocional show-desktop">
+      <div className="box-title-socioemocional ">
         <img
           src={iconoSocioemocionalWhite}
           className="icono-area"

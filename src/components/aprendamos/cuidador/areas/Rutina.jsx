@@ -5,6 +5,7 @@ import iconoRutinaWhite from "./../../../../images/areas-img/icon_rutina.png";
 import iconoTipRutina from "./../../../../images/areas-img/icono_tip_rutina.svg";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { auth,db } from "../../../firebase/firebase";
+import { Orbitals } from "react-spinners-css";
 
 
 export const Rutina= ({contenidoFirebase, error, loading, firebaseUser, idChild}) => {
@@ -36,14 +37,18 @@ export const Rutina= ({contenidoFirebase, error, loading, firebaseUser, idChild}
    <div className="box-title-rutina show-desktop">
      <img
        src={iconoRutinaWhite}
-       className="icono-area"
+       className="icono-area heartbeat"
        alt="gota de agua"
      />
-     <h1 className="title-area">RUTINA</h1>
+     <h1 className="title-area  tracking-in-expand-fwd-top">RUTINA</h1>
    </div>
    <div className="list-videos-tips">
      {error && <strong>Error: {JSON.stringify(error)}</strong>}
-     {loading && <span>Collection: Loading...</span>}
+     {loading && <div className="grande">
+        <div className="centrando-spiner">
+          <Orbitals color="#EF8B44" size={900} />
+        </div>
+      </div>}
      {contenidoFirebase && (<div className="row">
          {contenidoFirebase.docs.filter(item=>  item.data().seccion==="Rutina" &&  item.data().edad==edad ).map(item => (
              <div key={item.id} className="col-sm-12 col-md-12 col-lg-6 col-xl-6">

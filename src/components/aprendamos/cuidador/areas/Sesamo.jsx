@@ -5,6 +5,7 @@ import iconoSesamoWhite from "./../../../../images/areas-img/icon_sesamo.png";
 import iconoVideoJuego from "./../../../../images/areas-img/icon-video-sesamo.svg";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { auth, db } from "../../../firebase/firebase";
+import { Orbitals } from "react-spinners-css";
 
 export const Sesamo = ({
   contenidoFirebase,
@@ -50,13 +51,17 @@ export const Sesamo = ({
       <div className="box-title-sesamo show-desktop">
         <img
           src={iconoSesamoWhite}
-          className="icono-sesamo"
+          className="icono-sesamo heartbeat"
           alt="gota de agua"
         />
       </div>
       <div className="list-videos-tips">
         {error && <strong>Error: {JSON.stringify(error)}</strong>}
-        {loading && <span>Collection: Loading...</span>}
+        {loading && <div className="grande">
+        <div className="centrando-spiner">
+          <Orbitals color="#EF8B44" size={900} />
+        </div>
+      </div>}
         {contenidoFirebase && (
           <div className="row">
             {contenidoFirebase.docs

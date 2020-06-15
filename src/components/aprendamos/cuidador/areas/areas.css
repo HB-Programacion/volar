@@ -11,8 +11,8 @@
   -moz-background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
 
 }
 
@@ -27,8 +27,8 @@
   -moz-background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
 background-color: #AE96B2;
 }
 
@@ -43,8 +43,8 @@ background-color: #AE96B2;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
 background-color: #EF8B44;
 }
 
@@ -59,8 +59,8 @@ background-color: #EF8B44;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
   background-color: #F7B919;
 }
 
@@ -75,8 +75,8 @@ background-color: #EF8B44;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
   background-color: #EB477A;
 }
 
@@ -92,8 +92,8 @@ background-color: #EF8B44;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
 }
 
 
@@ -120,7 +120,7 @@ background-color: #EF8B44;
 
 .box-section {
   background-color: #ffffff;
-  box-shadow: 0 0 9px rgb(134, 129, 129);
+  box-shadow: 0 0 16px rgba(134, 129, 129, 0.384);
   margin: 1rem 1rem 1rem 1rem;
   padding: 1.5rem 1.5rem 1.5rem 1.5rem;
   border-radius: 20px;
@@ -166,7 +166,7 @@ background-color: #EF8B44;
 @media (max-width: 768px) {
   .box-section {
     background-color: #ffffff;
-    box-shadow: 0 0 9px rgb(134, 129, 129);
+    box-shadow: 0 0 16px rgba(134, 129, 129, 0.384);
     margin: 0.5rem 1rem 0.5rem 1rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: 20px;
@@ -211,8 +211,8 @@ background-color: #EF8B44;
   .box-title-higine {
     background: url(./../../../../images/areas-img/higiene-fondo-mobile.png) no-repeat;
     padding-top: 5rem;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
     height: 22rem;
     display: flex;
     flex-direction: column;
@@ -226,8 +226,8 @@ background-color: #EF8B44;
   .box-title-socioemocional {
     background: url(./../../../../images/areas-img/socioemocional_fondo_mobile.png) no-repeat;
     padding-top: 5rem;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
     height: 20rem;
     display: flex;
     flex-direction: column;
@@ -242,8 +242,8 @@ background-color: #EF8B44;
   .box-title-rutina {
     background: url(./../../../../images/areas-img/rutina_fondo_mobile.png) no-repeat;
     padding-top: 5rem;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
     height: 20rem;
     display: flex;
     flex-direction: column;
@@ -257,8 +257,8 @@ background-color: #EF8B44;
   .box-title-juego {
     background: url(./../../../../images/areas-img/juego_fondo_mobile.png) no-repeat;
     padding-top: 5rem;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
     height: 20rem;
     display: flex;
     flex-direction: column;
@@ -272,8 +272,8 @@ background-color: #EF8B44;
   .box-title-juego {
     background: url(./../../../../images/areas-img/nutricion_fondo_desktop.png) no-repeat;
     padding-top: 5rem;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
     height: 20rem;
     display: flex;
     flex-direction: column;
@@ -287,8 +287,8 @@ background-color: #EF8B44;
   .box-title-nutricion {
     background: url(./../../../../images/areas-img/nutricion_fondo_mobile.png) no-repeat;
     padding-top: 5rem;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
     height: 20rem;
     display: flex;
     flex-direction: column;
@@ -303,8 +303,8 @@ background-color: #EF8B44;
     background: url(./../../../../images/areas-img/sesamo_fondo_mobile.png) no-repeat;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
     height: 20rem;
     display: flex;
     flex-direction: column;
