@@ -7,20 +7,13 @@ const TipsSesamo = ({
   contenidoFirebase,
   error,
   loading,
-  firebaseUser,
-  idChild,
-  numberTip,
 }) => {
 
-  const [numberTipOficial, setNumberTipOficial]= React.useState("")
 
-
-  React.useEffect(() => {
- setNumberTipOficial(numberTip)
  /*  const childData= db.collection("usuarios").doc(firebaseUser.uid).collection("addChild").doc("OxtF7ijtoOlOX7zx3xcY")
   console.log("hola", childData.data().edadChild)
     ///Obteniendo todo el contenido de firebase///*/
-  }, [numberTip]);
+
 
 
   return (
@@ -35,17 +28,15 @@ const TipsSesamo = ({
                 .filter(
                   (item) =>
                     item.data().seccion ==="Sésamo" &&
-                    item.data().n_tip === numberTipOficial
+                    item.data().n_tip == localStorage.getItem('localNumberTip')
                 )
                 .map((item) => (
                   <div className="">
                     <div className="row justify-content-center h-100">
                       <h1 className="tittle-tips"> {item.data().titulo}</h1>
-                      <p>{numberTipOficial}- {item.data().n_tip}</p>
                     </div>
                     <div className="row justify-content-center  h-100">
                       <h3 className="tips-numbers"> {item.data().tipo}</h3>
-                      <p>{numberTipOficial}- {item.data().n_tip}</p>
                     </div>
                     <div className="row tips-margin-top">
                       <div className="col-sm-12 col-md-12 col-lg-7 col-xl-7">

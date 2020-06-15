@@ -26,9 +26,7 @@ import starsRightBienvenido from "../../../images/stars-right.svg"
 export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild }) => {
   const [nameChild, setNameChild] = React.useState("");
   const [colaboradorBreca, setColaboradorBreca] = React.useState("");
-
   React.useEffect(() => {
-
     if (firebaseUser !== null){
       const perfilUser = db.collection("usuarios").doc(firebaseUser.uid);
       perfilUser
@@ -40,12 +38,12 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild }) => {
           console.log("Error getting document:", error);
         });
     }
-    if (firebaseUser !== null && idChild !== "") {
+    if (firebaseUser !== null &&  localStorage.getItem('localIdChild') !== "") {
       const childData = db
         .collection("usuarios")
         .doc(firebaseUser.uid)
         .collection("addChild")
-        .doc(idChild);
+        .doc(localStorage.getItem('localIdChild'));
       childData
         .get()
         .then((snapShots) => {
@@ -55,7 +53,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild }) => {
           console.log("Error getting document:", error);
         });
     }
-  }, [firebaseUser, idChild]);
+  }, [firebaseUser]);
 
   return (
     <div>
