@@ -180,6 +180,7 @@ function App() {
               idChild={idChild}
               firebaseUser={firebaseUser}
               arrayChild={arrayChild}
+              contenidoFirebase={contenidoFirebase}
             />
           </Route>
           <Route path="/aprendamos/cuidador/higiene" exact>
