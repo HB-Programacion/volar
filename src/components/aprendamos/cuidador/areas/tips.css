@@ -1,6 +1,6 @@
 .background-tips-higiene {
     background: url(./../../../../images/areas-img/tips_higiene.png) no-repeat;
-    height: 90vh;
+    height: 58rem;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -9,7 +9,7 @@
 
   .background-tips-socioemocional {
     background: url(./../../../../images/areas-img/tips_socioemocional.png) no-repeat;
-    height: 90vh;
+    height: 58rem;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -18,7 +18,7 @@
 
   .background-tips-rutina {
     background: url(./../../../../images/areas-img/tips_rutina.png) no-repeat;
-    height: 90vh;
+    height: 58rem;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -27,7 +27,7 @@
 
   .background-tips-juego {
     background: url(./../../../../images/areas-img/tips_juego.png) no-repeat;
-    height: 90vh;
+    height: 58rem;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -37,7 +37,7 @@
   
   .background-tips-nutricion {
     background: url(./../../../../images/areas-img/tips_nutricion.png) no-repeat;
-    height: 90vh;
+    height: 58rem;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -46,7 +46,7 @@
 
   .background-tips-sesamo {
     background: url(./../../../../images/areas-img/tips_sesamo.png) no-repeat;
-    height: 90vh;
+    height: 58rem;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -81,6 +81,7 @@ margin: 2rem 3rem 2rem 3rem !important;
   justify-content: center;
   flex-direction: column;
   height: 100%;
+  margin-top: 2rem;
 }
 .text-tips-light{
     font-family: 'Questrial';
@@ -175,6 +176,19 @@ margin: 2rem 3rem 2rem 3rem !important;
     width: 100%;
     height: 100%;
   }
+.iconos-tips-blanco{
+  width: 40%;
+  margin: auto;
+  display: block
+}
+
+.tips-1-columna{
+  flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+}
+
 
 
   @media (max-width: 768px) {
