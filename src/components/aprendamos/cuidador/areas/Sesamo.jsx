@@ -17,12 +17,6 @@ export const Sesamo = ({
   
   const [edad, setEdad] = React.useState("");
 
-  const [usuarioChild] = useCollection(
-    db.collection("usuarios").doc(firebaseUser.uid).collection("addChild"),
-    {
-      snapshotListenOptions: { includeMetadataChanges: true },
-    }
-  );
 
  const mandarNumberTipOficial = (numberTip) => {
   localStorage.setItem('localNumberTip', numberTip)
@@ -71,8 +65,8 @@ export const Sesamo = ({
                   key={item.id}
                   className="col-sm-12 col-md-12 col-lg-6 col-xl-6"
                 >
-                  <Link
-                    to="/aprendamos/cuidador/sesamo/tips"
+                  <a
+                    href="/aprendamos/cuidador/sesamo/tips"
                     onClick={() => mandarNumberTipOficial(item.data().n_tip)}
                   >
                     <div className="box-section">
@@ -90,7 +84,7 @@ export const Sesamo = ({
                         </h5>
                       </div>
                     </div>
-                  </Link>
+                  </a>
                 </div>
               ))}
           </div>
