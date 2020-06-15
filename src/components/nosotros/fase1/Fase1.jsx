@@ -70,7 +70,7 @@ const Fase1 = () => {
                     </li>
                 </ul>
                 <div className="box-botones-fase">
-                    <a href="/" className="wobble-hor-bottom">
+                    <a href="../../../images/pdf/modelos-culturales.pdf" download="Antes-de-caminar-y-hablar-final2018" className="wobble-hor-bottom">
                         <div className="btn-fase-celeste">
                         <img src={arrowLeftBlue} className="arrow-orange"></img>
                         <div>¡Descubre los modelos culturales!</div>
@@ -79,7 +79,7 @@ const Fase1 = () => {
                         
                         </div>
                     </a>
-                    <a href="/" className="wobble-hor-bottom">
+                    <a href="/aprendamos" className="wobble-hor-bottom">
                         <div className="btn-fase-naranja">
                         <img src={arrowLeft} className="arrow-orange"></img>
                         <div className="ml-2 mr-2">APRENDE MÁS</div>

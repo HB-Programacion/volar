@@ -17,7 +17,7 @@ import starsss from "../../images/stars-left.svg"
 
 export const EmpiezaAprender = () => {
   return (
-    <div className="background-blue">
+    <div className="background-blue animated fadeIn">
       {/* <div className="box-title-aprendamos show-tittle">
         <img
           src={starsLeft}
@@ -56,9 +56,9 @@ export const EmpiezaAprender = () => {
       <div className="btn-box">
         <div className="row ml-0 mr-0">
           <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-            <Link to="/aprendamos/cuidador-principal">
+            <Link to="/aprendamos/cuidador-principal"className="link" >
             <div className="btn-cuidador">
-              <img className="icono" src={iconoCuidador} alt="icono cuidador" />
+              <img className="icono heartbeat" src={iconoCuidador} alt="icono cuidador" />
               <h2 className="letter-btn">
                 CUIDADOR PRINCIPAL
               </h2>
@@ -70,7 +70,7 @@ export const EmpiezaAprender = () => {
           </div>
           <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
             <div className="btn-aliado">
-              <img className="icono" src={iconoAliado} alt="icono cuidador" />
+              <img className="icono heartbeat" src={iconoAliado} alt="icono cuidador" />
               <h2 className="letter-btn">
                 ALIADO POR LA INFANCIA
               </h2>

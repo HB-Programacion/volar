@@ -279,6 +279,15 @@ input:focus {
 }
 
 
+.sin-margin-row{
+  margin-left: 0px!important;
+  margin-right: 0px!important
+}
+
+.link:hover{
+  text-decoration: none;
+}
+
 /* TABLET */
 @media (min-width: 992px) {
   /* .equipo-home .card img{

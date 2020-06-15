@@ -75,7 +75,7 @@ const Nosotros = () => {
                 <div className="cohete-right ">
                     <div className="cohete1">
                         <div className="title-cohete-1">
-                            <div className="numero-cohete">1</div>
+                            <div className="numero-cohete heartbeat">1</div>
                             <div className="fase-cohete">Fase Aprender</div>
                         </div>
                         <a href="/nosotros/fase1" className="btn-cohete">
@@ -89,7 +89,7 @@ const Nosotros = () => {
                 <div className="cohete-left">
                     <div className="cohete2">
                         <div className="title-cohete-2">
-                            <div className="numero-cohete">2</div>
+                            <div className="numero-cohete heartbeat">2</div>
                             <div className="fase-cohete left-5-rem">Fase Probar</div>
                         </div>
                         <a href="/nosotros/fase2" className="btn-cohete">
@@ -103,7 +103,7 @@ const Nosotros = () => {
                 <div className="cohete-right3">
                     <div className="cohete3">
                         <div className="title-cohete-1 title-cohete-3">
-                            <div className="numero-cohete">3</div>
+                            <div className="numero-cohete heartbeat">3</div>
                             <div className="fase-cohete left-5-rem">Fase Refinar</div>
                         </div>
                         <a href="/nosotros/fase3"className="btn-cohete">
@@ -117,7 +117,7 @@ const Nosotros = () => {
                 <div className="cohete-left4">
                     <div className="cohete2 cohete4">
                         <div className="title-cohete-2 ">
-                            <div className="numero-cohete">4</div>
+                            <div className="numero-cohete heartbeat">4</div>
                             <div className="fase-cohete fase-cohete-4">Fase<br></br> Evaluar y Escalar</div>
                         </div>
                         <a href="/nosotros/fase4" className="btn-cohete">
