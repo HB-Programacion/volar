@@ -3,8 +3,6 @@ import "./../aprendamos.css";
 import "./../../../App.css";
 import "./bienvenidoCuidador.css";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import startsLeftWhite from "./../../../images/stars-white-left.png";
-import startsRighttWhite from "./../../../images/stars-white-right.png";
 import iconoBienvenidaCuidador from "./../../../images/icon-bienvenida-cuidador.svg";
 import arrowLeft from "./../../../images/arrow-left-blue.svg";
 import arrowRight from "./../../../images/arrow-right-blue.svg";
@@ -14,16 +12,13 @@ import iconAreaRutina from "./../../../images/icon-rutina.svg";
 import iconAreaJuego from "./../../../images/icon-juego.svg";
 import iconAreaNutricion from "./../../../images/icon-nutricion.svg";
 import iconAreaSesamo from "./../../../images/icon-sesamo.svg";
-import startsLeftWhiteMobile from "./../../../images/starts-white-mobile-left.png";
-import startsRightWhiteMobile from "./../../../images/stars-white-mobile-right.png";
 import { auth, db } from "../../../components/firebase/firebase";
 
-import starsLeftDesktop from "../../../images/stars-left-desktop.svg";
-import starsRightDesktop from "../../../images/stars-right-desktop.svg";
-import starsRightBienvenido from "../../../images/stars-right.svg"
 
-export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild }) => {
+export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenidoFirebase }) => {
   const [nameChild, setNameChild] = React.useState("");
+  const [edadChild, setEdadChild] = React.useState("");
+  const [videoAleatorio, setVideoAleatorio] = React.useState("");
   const [colaboradorBreca, setColaboradorBreca] = React.useState("");
   React.useEffect(() => {
     if (firebaseUser !== null){
@@ -47,12 +42,22 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild }) => {
         .get()
         .then((snapShots) => {
           setNameChild(snapShots.data().nameChild);
+          setEdadChild(snapShots.data().edadChild);
         })
         .catch(function (error) {
           console.log("Error getting document:", error);
         });
     }
-  }, [firebaseUser,idChild]);
+     if(contenidoFirebase){
+       const newFilter=  contenidoFirebase.docs.filter(item=> item.data().video!=="" && item.data().seccion=== "Sésamo")
+       let  numberAleatorio = Math.round(Math.random()*(newFilter.length-1));
+
+       setVideoAleatorio(newFilter[numberAleatorio].data().video);
+   
+     }
+
+
+  }, [firebaseUser,idChild, contenidoFirebase]);
 
 
   return (
@@ -76,7 +81,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild }) => {
         <div className="box-row-2">
           
           {firebaseUser !== null ? (
-            arrayChild.docs.length === 0 ? (
+            arrayChild.docs.length == 0 ? (
               <p className="box-text ">
                 Hoy aprenderemos a desarrollar las habilidades de lenguaje de tu
                 hijo aprovechando los momentos de aseo. 
@@ -103,7 +108,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild }) => {
       <p className="estrellita-lila heartbeat">&#10022;</p>
       <div className="mt-3 video">
                 <div className="video-responsive">
-                    <iframe src="https://www.youtube.com/embed/3nvEJDc3Vic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src={videoAleatorio} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     {/* <iframe  src="https://www.youtube.com/watch?v=nNdYfFO10d8&feature=youtu.be&t=1s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                 </div>        
       </div>
@@ -376,7 +381,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild }) => {
       <p className="estrellita-lila heartbeat">&#10022;</p>
       <div className="mt-3 video">
                 <div className="video-responsive">
-                    <iframe src="https://www.youtube.com/embed/3nvEJDc3Vic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src={videoAleatorio}  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     {/* <iframe  src="https://www.youtube.com/watch?v=nNdYfFO10d8&feature=youtu.be&t=1s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                 </div>        
       </div>
