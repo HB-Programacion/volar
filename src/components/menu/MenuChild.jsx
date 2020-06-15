@@ -8,6 +8,7 @@ import {
   } from "react-router-dom";
   import { useCollection } from "react-firebase-hooks/firestore";
 import { auth,db } from "../../components/firebase/firebase";
+
 const MenuChild = ({firebaseUser, mandarIdChild,  updateArrayChild}) => {
 
     
@@ -23,6 +24,11 @@ const MenuChild = ({firebaseUser, mandarIdChild,  updateArrayChild}) => {
         
             ///Obteniendo todo el contenido de firebase///
           }, [updateArrayChild, usuarioChild])
+
+          const mandarIdChildOficial= (idChildSelect)=>{
+            localStorage.setItem('localIdChild', idChildSelect)
+            console.log(localStorage.getItem('localIdChild'))
+          }
   return (
     <div className="margin-top">
         <div className="nav-child">
@@ -30,7 +36,7 @@ const MenuChild = ({firebaseUser, mandarIdChild,  updateArrayChild}) => {
             {usuarioChild && (<div className="">
             {usuarioChild.docs.map((item, key) => (
                <NavLink to={`/aprendamos/cuidador/${item.data().id}`} key={key} activeClassName='is-active'  
-             className="item" onClick={()=>mandarIdChild(item.data().id)}>{item.data().nameChild}</NavLink>
+             className="item" onClick={()=>mandarIdChildOficial(item.data().id)}>{item.data().nameChild}</NavLink>
               ))}
                </div>)}
         <NavLink to="/registro-niño" className="item">+ AGREGAR CHILD</NavLink>
