@@ -665,7 +665,7 @@ const Perfil = (props) => {
                     <div className="row mt-4">
                       <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                         <button
-                          className="btn-navy-blue text-white boton-guardar-perfil"
+                          className="btn-navy-blue text-white "
                           type="submit"
                         >
                           <img src={arrowLeft} className="arrow-blue"></img>
@@ -822,9 +822,9 @@ const Perfil = (props) => {
                                 aria-labelledby="exampleModalLabel"
                                 aria-hidden="true"
                               >
-                                <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-body texto-modal">
+                                <div class="modal-dialog " role="document">
+                                  <div class="modal-content ">
+                                    <div class="modal-body texto-modal ">
                                       ¿Estás seguro de querer borrar el perfil
                                       de {item.data().nameChild}?
                                     </div>
@@ -962,7 +962,7 @@ const Perfil = (props) => {
                                         </div>
 
                                         <button
-                                          className="btn-navy-blue text-white boton-guardar-perfil"
+                                          className="btn-navy-blue text-white "
                                           type="submit"
                                         >
                                           <img
