@@ -18,6 +18,11 @@ import startsLeftWhiteMobile from "./../../../images/starts-white-mobile-left.pn
 import startsRightWhiteMobile from "./../../../images/stars-white-mobile-right.png";
 import { auth, db } from "../../../components/firebase/firebase";
 
+import starsLeftDesktop from "../../../images/stars-left-desktop.svg";
+import starsRightDesktop from "../../../images/stars-right-desktop.svg";
+import starsRightBienvenido from "../../../images/stars-right.svg"
+
+
 export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild }) => {
   const [nameChild, setNameChild] = React.useState("");
   const [colaboradorBreca, setColaboradorBreca] = React.useState("");
@@ -54,38 +59,32 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild }) => {
     <div>
       <div className="box-title-cuidador show-desktop">
         <div className="box-row-1">
-          <img
-            src={startsLeftWhite}
-            className="left-star-cuidador"
-            alt="stars-left"
-          />
+        <img src={starsLeftDesktop} className="stars-left-desktop heartbeat"></img>
           <img
             src={iconoBienvenidaCuidador}
             className="icon-bienvenida-cuidador"
             alt="stars-left"
           />
           <h1 className="title-cuidador">¡Hola!</h1>
-          <img
-            src={startsRighttWhite}
-            className="right-star-cuidador"
-            alt="stars-left"
-          />
+          <img src={starsRightDesktop} className="stars-right-desktop heartbeat"></img>
         </div>
+     
+
         <div className="box-row-2">
           {firebaseUser !== null ? (
             arrayChild.docs.length === 0 ? (
-              <p className="box-text">
+              <p className="box-text w-50 mx-auto">
                 Hoy aprenderemos a desarrollar las habilidades de lenguaje de tu
                 hijo aprovechando los momentos de aseo. 
               </p>
             ) : (
-              <p className="box-text">
+              <p className="box-text w-50 mx-auto">
                 Hoy aprenderemos a desarrollar las habilidades de lenguaje de 
                 {nameChild} aprovechando los momentos de aseo.{arrayChild.docs.length}
               </p>
             )
           ) : (
-            <p className="box-text">
+            <p className="box-text w-50 mx-auto">
               Hoy aprenderemos a desarrollar las habilidades de lenguaje de tu
               hijo aprovechando los momentos de aseo.
             </p>
@@ -94,23 +93,15 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild }) => {
       </div>
       <div className="box-title-cuidador hide-desktop">
         <div className="box-row-1">
-          <img
-            src={startsLeftWhiteMobile}
-            className="left-star-cuidador"
-            alt="stars-left"
-          />
+        {/* <img src={starsLeftDesktop} className="stars-left-desktop heartbeat"></img> */}
           <img
             src={iconoBienvenidaCuidador}
             className="icon-bienvenida-cuidador"
             alt="stars-left"
           />
-          <img
-            src={startsRightWhiteMobile}
-            className="right-star-cuidador"
-            alt="stars-left"
-          />
+          {/* <img src={starsRightDesktop} className="stars-right-desktop heartbeat"></img> */}
         </div>
-        <div className="box-row-2">
+        {/* <div className="box-row-2">
           <h1 className="box-saludo">¡Hola!</h1>
           <p className="box-text">
             {firebaseUser !== null ? (
@@ -132,30 +123,32 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild }) => {
               </p>
             )}
           </p>
-        </div>
+        </div> */}
       </div>
-      <p className="text-lila start-center">&#10022;</p>
-      <p className="text-aguamarina style-text-center">
-        Recuerda explicarle qué parte <br />
+      <p className="mt-5 estrellita-lila heartbeat">&#10022;</p>
+      <p className="title-dit">
+        Recuerda explicarle qué parte
         de su cuerpo estás limpiando y contarle qué vas a hacer luego.
       </p>
-      <p className="text-lila start-center">&#10022;</p>
-      <div className="video-responsive margin-video">
-        <iframe
-          src="https://www.youtube.com/embed/3nvEJDc3Vic"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+      <p className="mt-3 estrellita-lila heartbeat">&#10022;</p>
+      <div className="mt-3 video">
+                <div className="video-responsive">
+                    <iframe src="https://www.youtube.com/embed/3nvEJDc3Vic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    {/* <iframe  src="https://www.youtube.com/watch?v=nNdYfFO10d8&feature=youtu.be&t=1s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                </div>        
       </div>
-      <button className="btn-navy-blue text-white">
-        <img src={arrowLeft} className="arrow-blue"></img>
-        COMPARTIR
-        <img src={arrowRight} className="arrow-blue"></img>
-      </button>
-      <p className="text-lila start-center">&#10022;</p>
-      <p className="text-blue-volar style-text-center">
-        ¡Tienes todo lo que se necesita para desarrollar <br /> el cerebro de
+      <div className="caja-boton-contactanos mt-5 mb-5">
+                <a href="/" className="btn-navy-blue w-80 text-white wobble-hor-bottom">
+                  <img src={arrowLeft} className="arrow-blue"></img>
+                  COMPARTIR
+                  <img src={arrowRight} className="arrow-blue"></img>
+                </a>
+      </div>
+
+
+      <p className="mt-3 estrellita-lila heartbeat">&#10022;</p>
+      <p className="box-modelo-volar-item-text-title text-center  mb-3">
+        ¡Tienes todo lo que se necesita para desarrollar el cerebro de
         tus hijos e hijas!
       </p>
       <div className="list-btn-areas show-desktop">

@@ -1,3 +1,12 @@
+.box-title-cuidador {
+  padding-top: 8rem;
+  background-color: #ae96b2;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  height: 25rem;
+}
+
+
 .title-cuidador {
   color: #ffffff;
   text-align: center;
@@ -9,13 +18,6 @@
   margin-top: 4rem;
 }
 
-.box-title-cuidador {
-  padding-top: 7rem;
-  background-color: #ae96b2;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-  height: 24rem;
-}
 
 .box-row-1 {
   display: flex;
@@ -31,8 +33,9 @@
 
 .box-text {
   color: #ffffff;
-  font-size: 1.5rem;
   text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.8rem
 }
 .left-star-cuidador {
   width: 10rem;
@@ -52,16 +55,13 @@
   margin: 2rem 1rem 1rem 2rem;
 }
 
-.style-text-center {
+/* .style-text-center {
   text-align: center;
-  font-size: 1.8rem;
   line-height: 2rem;
   letter-spacing: 0.9px;
   font-family: "Questrial";
-}
-.margin-video {
-  margin: 1rem 10rem 2rem 10rem;
-}
+} */
+
 
 .btn-areas {
   display: flex;
@@ -133,8 +133,10 @@
   height: 14rem;
 }
 .icon-area {
-  height: 5rem;
-  margin: 0rem 4rem 0rem 4rem;
+  width: 5rem;
+  height: auto;
+  margin: 0 auto
+  /* margin: 0rem 4rem 0rem 4rem; */
 }
 
 .icon-sesamo {
@@ -184,6 +186,13 @@
   font-size: 1.5rem;
 }
 
+.estrellita-lila{
+  color: #ae96b2;
+  text-align: center;
+  font-size: 2rem
+}
+
+
 @media (max-width: 768px) {
   .show-desktop {
     display: none;
@@ -215,8 +224,11 @@
   }
   .box-text {
     color: #2e335e;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     text-align: center;
+    font-size: .85rem;
+    line-height: 1.1rem;
+    letter-spacing: .25px
   }
   .box-saludo {
     color: #ffffff;
