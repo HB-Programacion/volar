@@ -2,7 +2,7 @@ import React from "react";
 import "./../aprendamos.css";
 import "./../../../App.css";
 import "./bienvenidoCuidador.css";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route,  Link} from  "react-router-dom";
 import iconoBienvenidaCuidador from "./../../../images/icon-bienvenida-cuidador.svg";
 import arrowLeft from "./../../../images/arrow-left-blue.svg";
 import arrowRight from "./../../../images/arrow-right-blue.svg";
@@ -129,7 +129,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
       <div className="list-btn-areas show-desktop">
       {colaboradorBreca === "NO" ?   <div className="btn-areas w-100">
           <div className="w-20">
-            <Link to="/aprendamos/cuidador/higiene" className="link">
+            <a href="/aprendamos/cuidador/higiene" className="link">
               <div className="area-higiene">
                 <img
                   src={iconAreaHigiene}
@@ -138,10 +138,10 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 />
                 <p className="text-area-higiene">HIGIENE Y AGUA SEGURA</p>
               </div>
-            </Link>
+            </a>
           </div>
           <div className="w-20">
-            <Link to="/aprendamos/cuidador/socioemocional " className="link">
+            <a href="/aprendamos/cuidador/socioemocional " className="link">
               <div className="area-socioEmocional">
                 <img
                   src={iconAreaSocial}
@@ -150,10 +150,10 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 />
                 <p className="text-area-social">SOCIOEMOCIONAL</p>
               </div>
-            </Link>
+            </a>
           </div>
           <div className="w-20">
-            <Link to="/aprendamos/cuidador/rutina" className="link">
+            <a href="/aprendamos/cuidador/rutina" className="link">
               <div className="area-rutina">
                 <img
                   src={iconAreaRutina}
@@ -162,10 +162,10 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 />
                 <p className="text-area-rutina">RUTINA</p>
               </div>
-            </Link>
+            </a>
           </div>
           <div className="w-20">
-          <Link to="/aprendamos/cuidador/juego" className="link">
+          <a href="/aprendamos/cuidador/juego" className="link">
               <div className="area-juego">
                 <img
                   src={iconAreaJuego}
@@ -174,10 +174,10 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 />
                 <p className="text-area-juego">JUEGO</p>
               </div>
-            </Link>
+            </a>
           </div>
           <div className="w-20">
-          <Link to="/aprendamos/cuidador/nutricion" className="link">
+          <a  href="/aprendamos/cuidador/nutricion" className="link">
            <div className="area-nutricion">
               <img
                 src={iconAreaNutricion}
@@ -188,12 +188,12 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 NUTRICIÓN <br /> Y FÍSICO 
               </p>
             </div>
-            </Link>
+            </a>
           </div>
         </div> :
          <> <div className="btn-areas w-100">
           <div className="w-20">
-            <Link to="/aprendamos/cuidador/higiene" className="link">
+            <a href="/aprendamos/cuidador/higiene" className="link">
               <div className="area-higiene">
                 <img
                   src={iconAreaHigiene}
@@ -202,10 +202,10 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 />
                 <p className="text-area-higiene">HIGIENE Y AGUA SEGURA</p>
               </div>
-            </Link>
+            </a>
           </div>
           <div className="w-20">
-            <Link to="/aprendamos/cuidador/socioemocional" className="link">
+            <a href="/aprendamos/cuidador/socioemocional" className="link">
               <div className="area-socioEmocional">
                 <img
                   src={iconAreaSocial}
@@ -214,10 +214,10 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 />
                 <p className="text-area-social">SOCIOEMOCIONAL</p>
               </div>
-            </Link>
+            </a>
           </div>
           <div className="w-20">
-            <Link to="/aprendamos/cuidador/rutina" className="link">
+            <a href="/aprendamos/cuidador/rutina" className="link">
               <div className="area-rutina">
                 <img
                   src={iconAreaRutina}
@@ -226,12 +226,11 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 />
                 <p className="text-area-rutina">RUTINA</p>
               </div>
-            </Link>
-          </div>
+            </a>      </div>
           </div>
           <div className="btn-areas w-100">
           <div className="w-20">
-          <Link to="/aprendamos/cuidador/juego" className="link">
+          <a href="/aprendamos/cuidador/juego" className="link">
               <div className="area-juego">
                 <img
                   src={iconAreaJuego}
@@ -240,10 +239,9 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 />
                 <p className="text-area-juego">JUEGO</p>
               </div>
-            </Link>
-          </div>
+            </a>      </div>
           <div className="w-20">
-          <Link to="/aprendamos/cuidador/nutricion" className="link">
+          <a href="/aprendamos/cuidador/nutricion" className="link">
            <div className="area-nutricion">
               <img
                 src={iconAreaNutricion}
@@ -254,10 +252,9 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 NUTRICIÓN <br /> Y FÍSICO 
               </p>
             </div>
-            </Link>
-          </div>
+            </a>      </div>
           <div className="w-20">
-          <Link to="/aprendamos/cuidador/sesamo" className="link">
+          <a href="/aprendamos/cuidador/sesamo" className="link">
            <div className="area-sesamo">
               <img
                 src={iconAreaSesamo}
@@ -265,14 +262,13 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 alt="stars-left"
               />
             </div>
-            </Link>
-          </div>
+            </a>      </div>
         </div> </> }
       </div>
       <div className="list-btn-areas hide-desktop">
         <div className="btn-areas w-100">
           <div className="w-50">
-            <Link to="/aprendamos/cuidador/higiene" className="link">
+            <a href="/aprendamos/cuidador/higiene" className="link">
               <div className="area-higiene">
                 <img
                   src={iconAreaHigiene}
@@ -281,10 +277,9 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 />
                 <p className="text-area-higiene">HIGIENE Y AGUA SEGURA</p>
               </div>
-            </Link>
-          </div>
+            </a>       </div>
           <div className="w-50">
-            <Link to="/aprendamos/cuidador/socioemocional" className="link">
+            <a href="/aprendamos/cuidador/socioemocional" className="link">
               <div className="area-socioEmocional">
                 <img
                   src={iconAreaSocial}
@@ -293,12 +288,11 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 />
                 <p className="text-area-social">SOCIOEMOCIONAL</p>
               </div>
-            </Link>
-          </div>
+            </a>     </div>
         </div>
         <div className="btn-areas w-100">
           <div className="w-50">
-            <Link to="/aprendamos/cuidador/rutina" className="link">
+            <a href="/aprendamos/cuidador/rutina" className="link">
               <div className="area-rutina">
                 <img
                   src={iconAreaRutina}
@@ -307,10 +301,9 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 />
                 <p className="text-area-rutina">RUTINA</p>
               </div>
-            </Link>
-          </div>
+            </a>     </div>
           <div className="w-50">
-            <Link to="/aprendamos/cuidador/juego" className="link">
+            <a href="/aprendamos/cuidador/juego" className="link">
               <div className="area-juego">
                 <img
                   src={iconAreaJuego}
@@ -319,12 +312,11 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 />
                 <p className="text-area-juego">JUEGO</p>
               </div>
-            </Link>
-          </div>
+            </a>     </div>
         </div>
         <div className="btn-areas w-100">
           <div className="w-50">
-           <Link to="/aprendamos/cuidador/nutricion" className="link">
+           <a href="/aprendamos/cuidador/nutricion" className="link">
            <div className="area-nutricion">
               <img
                 src={iconAreaNutricion}
@@ -335,10 +327,9 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 NUTRICIÓN Y FÍSICO
               </p>
             </div>
-            </Link>
-          </div>
+            </a>     </div>
           {colaboradorBreca === "SI" ?  <div className="w-50">
-          <Link to="/aprendamos/cuidador/sesamo" className="link">
+          <a href="/aprendamos/cuidador/sesamo" className="link">
            <div className="area-sesamo">
               <img
                 src={iconAreaSesamo}
@@ -346,8 +337,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 alt="stars-left"
               />
             </div>
-            </Link>
-          </div> : ""}
+            </a> </div> : ""}
         </div>
       </div>
     </div>
@@ -402,7 +392,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
       <div className="list-btn-areas show-desktop">
       {JSON.parse(localStorage.getItem('dateChild')).colaboradorBreca === "NO" ?   <div className="btn-areas w-100">
           <div className="w-20">
-            <Link to="/aprendamos/cuidador/higiene" className="link">
+            <a href="/aprendamos/cuidador/higiene" className="link">
               <div className="area-higiene">
                 <img
                   src={iconAreaHigiene}
@@ -411,10 +401,9 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 />
                 <p className="text-area-higiene">HIGIENE Y AGUA SEGURA</p>
               </div>
-            </Link>
-          </div>
+            </a> </div>
           <div className="w-20">
-            <Link to="/aprendamos/cuidador/socioemocional " className="link">
+            <a href="/aprendamos/cuidador/socioemocional " className="link">
               <div className="area-socioEmocional">
                 <img
                   src={iconAreaSocial}
@@ -423,10 +412,9 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 />
                 <p className="text-area-social">SOCIOEMOCIONAL</p>
               </div>
-            </Link>
-          </div>
+            </a>   </div>
           <div className="w-20">
-            <Link to="/aprendamos/cuidador/rutina" className="link">
+            <a href="/aprendamos/cuidador/rutina" className="link">
               <div className="area-rutina">
                 <img
                   src={iconAreaRutina}
@@ -435,10 +423,9 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 />
                 <p className="text-area-rutina">RUTINA</p>
               </div>
-            </Link>
-          </div>
+            </a>    </div>
           <div className="w-20">
-          <Link to="/aprendamos/cuidador/juego" className="link">
+          <a href="/aprendamos/cuidador/juego" className="link">
               <div className="area-juego">
                 <img
                   src={iconAreaJuego}
@@ -447,10 +434,9 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 />
                 <p className="text-area-juego">JUEGO</p>
               </div>
-            </Link>
-          </div>
+            </a>     </div>
           <div className="w-20">
-          <Link to="/aprendamos/cuidador/nutricion" className="link">
+          <a href="/aprendamos/cuidador/nutricion" className="link">
            <div className="area-nutricion">
               <img
                 src={iconAreaNutricion}
@@ -461,12 +447,11 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 NUTRICIÓN <br /> Y FÍSICO 
               </p>
             </div>
-            </Link>
-          </div>
+            </a>    </div>
         </div> :
          <> <div className="btn-areas w-100">
           <div className="w-20">
-            <Link to="/aprendamos/cuidador/higiene" className="link">
+            <a href="/aprendamos/cuidador/higiene" className="link">
               <div className="area-higiene">
                 <img
                   src={iconAreaHigiene}
@@ -475,10 +460,9 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 />
                 <p className="text-area-higiene">HIGIENE Y AGUA SEGURA</p>
               </div>
-            </Link>
-          </div>
+            </a>    </div>
           <div className="w-20">
-            <Link to="/aprendamos/cuidador/socioemocional" className="link">
+            <a href="/aprendamos/cuidador/socioemocional" className="link">
               <div className="area-socioEmocional">
                 <img
                   src={iconAreaSocial}
@@ -487,10 +471,9 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 />
                 <p className="text-area-social">SOCIOEMOCIONAL</p>
               </div>
-            </Link>
-          </div>
+            </a> </div>
           <div className="w-20">
-            <Link to="/aprendamos/cuidador/rutina" className="link">
+            <a href="/aprendamos/cuidador/rutina" className="link">
               <div className="area-rutina">
                 <img
                   src={iconAreaRutina}
@@ -499,12 +482,11 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 />
                 <p className="text-area-rutina">RUTINA</p>
               </div>
-            </Link>
-          </div>
+            </a>   </div>
           </div>
           <div className="btn-areas w-100">
           <div className="w-20">
-          <Link to="/aprendamos/cuidador/juego" className="link">
+          <a href="/aprendamos/cuidador/juego" className="link">
               <div className="area-juego">
                 <img
                   src={iconAreaJuego}
@@ -513,10 +495,9 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 />
                 <p className="text-area-juego">JUEGO</p>
               </div>
-            </Link>
-          </div>
+            </a> </div>
           <div className="w-20">
-          <Link to="/aprendamos/cuidador/nutricion" className="link">
+          <a href="/aprendamos/cuidador/nutricion" className="link">
            <div className="area-nutricion">
               <img
                 src={iconAreaNutricion}
@@ -527,10 +508,9 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 NUTRICIÓN <br /> Y FÍSICO 
               </p>
             </div>
-            </Link>
-          </div>
+            </a></div>
           <div className="w-20">
-          <Link to="/aprendamos/cuidador/sesamo" className="link">
+          <a href="/aprendamos/cuidador/sesamo" className="link">
            <div className="area-sesamo">
               <img
                 src={iconAreaSesamo}
@@ -538,14 +518,13 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 alt="stars-left"
               />
             </div>
-            </Link>
-          </div>
+            </a> </div>
         </div> </> }
       </div>
       <div className="list-btn-areas hide-desktop">
         <div className="btn-areas w-100">
           <div className="w-50">
-            <Link to="/aprendamos/cuidador/higiene" className="link">
+            <a href="/aprendamos/cuidador/higiene" className="link">
               <div className="area-higiene">
                 <img
                   src={iconAreaHigiene}
@@ -554,10 +533,9 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 />
                 <p className="text-area-higiene">HIGIENE Y AGUA SEGURA</p>
               </div>
-            </Link>
-          </div>
+            </a>   </div>
           <div className="w-50">
-            <Link to="/aprendamos/cuidador/socioemocional" className="link">
+            <a href="/aprendamos/cuidador/socioemocional" className="link">
               <div className="area-socioEmocional">
                 <img
                   src={iconAreaSocial}
@@ -566,12 +544,11 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 />
                 <p className="text-area-social">SOCIOEMOCIONAL</p>
               </div>
-            </Link>
-          </div>
+            </a>    </div>
         </div>
         <div className="btn-areas w-100">
           <div className="w-50">
-            <Link to="/aprendamos/cuidador/rutina" className="link">
+            <a href="/aprendamos/cuidador/rutina" className="link">
               <div className="area-rutina">
                 <img
                   src={iconAreaRutina}
@@ -580,10 +557,9 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 />
                 <p className="text-area-rutina">RUTINA</p>
               </div>
-            </Link>
-          </div>
+            </a>   </div>
           <div className="w-50">
-            <Link to="/aprendamos/cuidador/juego" className="link">
+            <a href="/aprendamos/cuidador/juego" className="link">
               <div className="area-juego">
                 <img
                   src={iconAreaJuego}
@@ -592,12 +568,11 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 />
                 <p className="text-area-juego">JUEGO</p>
               </div>
-            </Link>
-          </div>
+            </a> </div>
         </div>
         <div className="btn-areas w-100">
           <div className="w-50">
-           <Link to="/aprendamos/cuidador/nutricion" className="link">
+           <a href="/aprendamos/cuidador/nutricion" className="link">
            <div className="area-nutricion">
               <img
                 src={iconAreaNutricion}
@@ -608,10 +583,9 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 NUTRICIÓN Y FÍSICO
               </p>
             </div>
-            </Link>
-          </div>
+            </a>  </div>
           {JSON.parse(localStorage.getItem('dateChild')).colaboradorBreca === "SI" ?  <div className="w-50">
-          <Link to="/aprendamos/cuidador/sesamo" className="link">
+          <a href="/aprendamos/cuidador/sesamo" className="link">
            <div className="area-sesamo">
               <img
                 src={iconAreaSesamo}
@@ -619,8 +593,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 alt="stars-left"
               />
             </div>
-            </Link>
-          </div> : ""}
+            </a>    </div> : ""}
         </div>
       </div>
     </div>

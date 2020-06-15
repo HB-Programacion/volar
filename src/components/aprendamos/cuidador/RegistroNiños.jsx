@@ -97,7 +97,6 @@ import arrowRight from "./../../../images/arrow-right-blue.svg";
                   <option value="5">5 - 6 años</option>
                 </select>
             </div>
-            <p>{edadChild}</p>
           </div>
           <p>{error}</p>
           <div className="row">

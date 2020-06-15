@@ -29,7 +29,7 @@ export const Socioemocional= ({contenidoFirebase, error, loading, firebaseUser, 
 
 
   return (
-    <>
+    <div>
     {firebaseUser !== null ? (
       <div>
       <div className="box-title-socioemocional show-desktop">
@@ -100,6 +100,6 @@ export const Socioemocional= ({contenidoFirebase, error, loading, firebaseUser, 
         </div>
       </div>
     )}
-    </>
+    </div>
   );
 };
