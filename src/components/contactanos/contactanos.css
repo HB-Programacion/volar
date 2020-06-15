@@ -1,3 +1,7 @@
+.contactanos-box{
+    margin-top: 3rem;
+    margin-bottom: 5rem
+}
 .textarea{
     height: 10rem;
 }
@@ -6,9 +10,19 @@
     width: 90%;
     margin: auto
 }
+.text-contactanos{
+padding-bottom: 1.5rem;
+/* text-transform: uppercase */
+}
+
 
 @media (min-width: 769px) {
     .caja-boton-contactanos{
         width: 30%
     }
+    .contactanos-box{
+        margin-top: 7rem;
+        margin-bottom: 10rem
+    }
+
 }

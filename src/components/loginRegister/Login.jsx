@@ -122,7 +122,7 @@ const Login = (props) => {
 {
   props.firebaseUser===null ? (
     
-    <div className="register-child">
+    <div className=" animated fadeIn register-child box-register-bienvenido">
     <h1 className="tittle-register-child">¡Bienvenido!</h1>
   <div className="list-login">
     <form onSubmit={procesarDatos}>
@@ -144,7 +144,7 @@ const Login = (props) => {
         onChange={(e) => setPassword(e.target.value)}
         value={password}
       />
-      <button type="submit"  className="btn-login text-white">
+      <button type="submit"  className="btn-login text-white wobble-hor-bottom" >
         <img src={arrowLeft} className="arrow-blue"></img>
         INICIAR SESIÓN
         <img src={arrowRight} className="arrow-blue"></img>
@@ -154,11 +154,11 @@ const Login = (props) => {
       <span className="loginDivider-text">o</span>
     </div>
     <div className="btn-facebook-google">
-        <button className="btn-facebook text-white"
+        <button className="btn-facebook text-white wobble-hor-bottom"
          onClick={()=>loginFacebook()}>
           Iniciar sesión con Facebook
         </button>
-        <button className="btn-google text-white"
+        <button className="btn-google text-white wobble-hor-bottom"
          onClick={()=>loginGoogle()}>
           Iniciar sesión con Google
         </button>

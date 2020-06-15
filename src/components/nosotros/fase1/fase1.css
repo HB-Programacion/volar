@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    padding:2rem 1.5rem 1rem 1.5rem;
+    padding:3.5rem 1.5rem 1rem 1.5rem;
     text-align: center;
     
 }
@@ -173,7 +173,7 @@
 @media (min-width: 769px){
     .fase1{
         margin-top: 5rem;
-        padding:5rem 3rem 5rem 3rem;
+        padding:6rem 3rem 5rem 3rem;
         background-image: url("../../../images/fase1-img/fondo_fase_desktop.png");
     }
     .titulo-fase{

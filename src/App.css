@@ -270,6 +270,9 @@ html {
 .ocultar-mobile-important {
   display: none !important
 }
+input:hover{
+  cursor: pointer;
+}
 
 input:focus {
   outline: none;
