@@ -67,7 +67,7 @@ export const Higiene = ({
                   .filter(
                     (item) =>
                       item.data().seccion === "Higiene y Agua Segura" &&
-                      item.data().edad == JSON.parse(localStorage.getItem('dateChild')).edad
+                      item.data().edad == edad
                   )
                   .map((item) => (
                     <div
@@ -118,7 +118,7 @@ export const Higiene = ({
                   .filter(
                     (item) =>
                       item.data().seccion === "Higiene y Agua Segura" &&
-                      item.data().edad == edad
+                      item.data().edad == JSON.parse(localStorage.getItem('dateChild')).edad
                   )
                   .map((item) => (
                     <div

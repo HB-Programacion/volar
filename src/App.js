@@ -252,6 +252,8 @@ function App() {
                 contenidoFirebase={contenidoFirebase}
                 error={error}
                 loading={loading}
+                firebaseUser={firebaseUser}
+                idChild={idChild}
               />
             </Route>
             <Route path="/aprendamos/cuidador/rutina/tips" exact>
@@ -259,6 +261,8 @@ function App() {
                 contenidoFirebase={contenidoFirebase}
                 error={error}
                 loading={loading}
+                firebaseUser={firebaseUser}
+                idChild={idChild}
               />
             </Route>
             <Route path="/aprendamos/cuidador/juego/tips" exact>
@@ -266,6 +270,8 @@ function App() {
                 contenidoFirebase={contenidoFirebase}
                 error={error}
                 loading={loading}
+                firebaseUser={firebaseUser}
+                idChild={idChild}
               />
             </Route>
             <Route path="/aprendamos/cuidador/nutricion/tips" exact>
@@ -273,6 +279,8 @@ function App() {
                 contenidoFirebase={contenidoFirebase}
                 error={error}
                 loading={loading}
+                firebaseUser={firebaseUser}
+                idChild={idChild}
               />
             </Route>
             <Route path="/aprendamos/cuidador/sesamo/tips" exact>
