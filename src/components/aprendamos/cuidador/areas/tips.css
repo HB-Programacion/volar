@@ -44,9 +44,19 @@
     -o-background-size: cover;
   }
 
+  .background-tips-sesamo {
+    background: url(./../../../../images/areas-img/tips_sesamo.png) no-repeat;
+    height: 90vh;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+  }
+
   .tittle-tips {
     font-family: 'Questrial';
     color: #2E335E;
+    text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 0.05em;
     font-size: 2rem;
@@ -62,11 +72,15 @@
 }
 
 .tips-margin-top{
-margin: 3rem 3rem 1rem 3rem !important;
+margin: 2rem 3rem 2rem 3rem !important;
 }
 
 .text-tips{
-    padding: 4rem 0rem 0rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
 }
 .text-tips-light{
     font-family: 'Questrial';
@@ -253,6 +267,15 @@ margin: 3rem 3rem 1rem 3rem !important;
 
     .background-tips-rutina {
         background: url(./../../../../images/areas-img/tips-rutina-mobile.png) no-repeat;
+        height: 90vh;
+        background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+      }
+
+      .background-tips-sesamo {
+        background: url(./../../../../images/areas-img/tips-sesamo-mobile.png) no-repeat;
         height: 90vh;
         background-size: cover;
         -moz-background-size: cover;
