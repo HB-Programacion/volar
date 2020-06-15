@@ -100,7 +100,6 @@ export const RegistroNiños = () => {
                   value="SI"
                   onChange={(e) => setColaboradorBreca(e.target.value)}
                   checked={colaboradorBreca === "SI"}
-                  
                 />
                 <span className="radio"></span>
                 <span className="text">SI</span>
