@@ -35,7 +35,10 @@
   color: #ffffff;
   text-align: center;
   font-size: 1.4rem;
-  line-height: 1.8rem
+  line-height: 1.8rem;
+  width: 50%;
+  margin: .5rem auto;
+  
 }
 .left-star-cuidador {
   width: 10rem;
@@ -51,8 +54,12 @@
 }
 
 .icon-bienvenida-cuidador {
-  height: 7rem;
-  margin: 2rem 1rem 1rem 2rem;
+  width: 3.5rem;
+  height: auto;
+  margin: 0rem;
+  position: relative;
+  top: 1rem;
+  right: .3rem;
 }
 
 /* .style-text-center {
@@ -71,72 +78,120 @@
 
 .area-higiene {
   border: 0.8rem solid #7dc7c5;
-  /*box-shadow: 0 1px 0 1px rgba(0,0,0,.03);*/
   border-radius: 1.5em;
   margin: 1rem;
   display: flex;
   flex-direction: column;
   padding: 1.5rem 0.5rem 1rem 0.5rem;
   height: 14rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
+.area-higiene:hover,
+.area-higiene:hover{
+  box-shadow: 3px 10px 22px #7dc7c5;
+}
+
+
 .area-socioEmocional {
   border: 0.8rem solid #ae96b2;
-  /*box-shadow: 0 1px 0 1px rgba(0,0,0,.03);*/
   border-radius: 1.5em;
   margin: 1rem;
   display: flex;
   flex-direction: column;
   padding: 1.5rem 0.5rem 1rem 0.5rem;
   height: 14rem;
+  display: flex;
+  justify-content: center;
+  align-items: center
 }
+.area-socioEmocional:hover,
+.area-socioEmocional:hover{
+  box-shadow: 3px 10px 22px #ae96b2;
+}
+
 .area-rutina {
   border: 0.8rem solid #ef8b44;
-  /*box-shadow: 0 1px 0 1px rgba(0,0,0,.03);*/
   border-radius: 1.5em;
   margin: 1rem;
   display: flex;
   flex-direction: column;
   padding: 1.5rem 0.5rem 1rem 0.5rem;
   height: 14rem;
+  display: flex;
+  justify-content: center;
+  align-items: center
 }
+
+.area-rutina:hover,
+.area-rutina:hover{
+  box-shadow: 3px 10px 22px #ef8b44;
+}
+
 
 .area-juego {
   border: 0.8rem solid #f7b919;
-  /*box-shadow: 0 1px 0 1px rgba(0,0,0,.03);*/
   border-radius: 1.5em;
   margin: 1rem;
   display: flex;
   flex-direction: column;
   padding: 1.5rem 0.5rem 1rem 0.5rem;
   height: 14rem;
+  display: flex;
+  justify-content: center;
+  align-items: center
 }
+.area-juego:hover,
+.area-juego:hover{
+  box-shadow: 3px 10px 22px #f7b919;
+}
+
+
 .area-nutricion {
   border: 0.8rem solid #eb477a;
-  /*box-shadow: 0 1px 0 1px rgba(0,0,0,.03);*/
   border-radius: 1.5em;
   margin: 1rem;
   padding: 1.5rem 0.5rem 1rem 0.5rem;
   display: flex;
   flex-direction: column;
   height: 14rem;
+  display: flex;
+  justify-content: center;
+  align-items: center
 }
+
+.area-nutricion:hover,
+.area-nutricion:hover{
+  box-shadow: 3px 10px 22px #eb477a;
+}
+
 
 
 .area-sesamo {
   border: 0.8rem solid #05AB4C;
-  /*box-shadow: 0 1px 0 1px rgba(0,0,0,.03);*/
   border-radius: 1.5em;
   margin: 1rem;
   padding: 1.5rem 0.5rem 1.5rem 0.5rem;
   display: flex;
   flex-direction: column;
   height: 14rem;
+  display: flex;
+  justify-content: center;
+  align-items: center
 }
+.area-sesamo:hover,
+.area-sesamo:hover{
+  box-shadow: 3px 10px 22px #05AB4C;
+}
+
+
+
 .icon-area {
   width: 5rem;
   height: auto;
   margin: 0 auto
-  /* margin: 0rem 4rem 0rem 4rem; */
 }
 
 .icon-sesamo {
@@ -151,6 +206,7 @@
   color: #7dc7c5;
   -webkit-text-stroke: 1.5px #7dc7c5;
   font-size: 1.5rem;
+  line-height: 1.6rem
 }
 
 .text-area-social {
@@ -184,12 +240,19 @@
   color: #eb477a;
   -webkit-text-stroke: 1.5px #eb477a;
   font-size: 1.5rem;
+  line-height: 1.6rem
 }
 
 .estrellita-lila{
   color: #ae96b2;
   text-align: center;
-  font-size: 2rem
+  font-size: 2rem;
+  margin-top: 2rem
+}
+
+.caja-compartir-hola{
+  margin-top: 3rem!important;
+  margin-bottom: 3rem!important
 }
 
 
@@ -205,9 +268,13 @@
     padding-top: 5rem;
     height: 20rem;
   }
+
+  .title-cuidador {
+font-size: 1.6rem
+  }
   .icon-bienvenida-cuidador {
-    height: 4rem;
-    margin: 1rem 1rem 1rem 2rem;
+    width: 2.5rem;
+   
   }
 
   .left-star-cuidador {
@@ -223,12 +290,13 @@
     top: 1.5rem;
   }
   .box-text {
-    color: #2e335e;
-    /* font-size: 1rem; */
+    color: #fff;
     text-align: center;
     font-size: .85rem;
     line-height: 1.1rem;
-    letter-spacing: .25px
+    letter-spacing: .25px;
+    width: 75%
+  
   }
   .box-saludo {
     color: #ffffff;
@@ -263,18 +331,15 @@
   }
   
   .area-higiene {
-    border: 0.5rem solid #7dc7c5;
-    /*box-shadow: 0 1px 0 1px rgba(0,0,0,.03);*/
+    border: 0.4rem solid #7dc7c5;
     border-radius: 2.5em;
     margin: 0.2rem;
     display: flex;
     flex-direction: column;
-    padding: 1rem 0.5rem 0.5rem 0.5rem;
     height: 8rem;
   }
   .area-socioEmocional {
     border: 0.5rem solid #ae96b2;
-    /*box-shadow: 0 1px 0 1px rgba(0,0,0,.03);*/
     border-radius: 2.5em;
     margin: 0.2rem;
     display: flex;
@@ -284,7 +349,6 @@
   }
   .area-rutina {
     border: 0.5rem solid #ef8b44;
-    /*box-shadow: 0 1px 0 1px rgba(0,0,0,.03);*/
     border-radius: 2.5em;
     margin: 0.2rem;
     display: flex;
@@ -295,7 +359,6 @@
   
   .area-juego {
     border: 0.5rem solid #f7b919;
-    /*box-shadow: 0 1px 0 1px rgba(0,0,0,.03);*/
     border-radius: 2.5em;
     margin: 0.2rem;
     display: flex;
@@ -305,7 +368,6 @@
   }
   .area-nutricion {
     border: 0.5rem solid #eb477a;
-    /*box-shadow: 0 1px 0 1px rgba(0,0,0,.03);*/
     border-radius: 2.5em;
     margin: 0.2rem;
     padding: 1rem 0.5rem 0.5rem 0.5rem;
@@ -316,7 +378,6 @@
 
   .area-sesamo {
     border: 0.5rem solid #05AB4C;
-    /*box-shadow: 0 1px 0 1px rgba(0,0,0,.03);*/
     border-radius: 2.5em;
     margin: 0.2rem;
     padding: 1rem 0.5rem 0.5rem 0.5rem;
@@ -326,54 +387,45 @@
   }
   
   .icon-area {
-    height: 3rem;
-    margin: 0rem 2.5rem 0rem 2.5rem;
+    position: relative;
+    width: 2.5rem;
+    top: .8rem
   }
   
   .text-area-higiene {
-    text-align: center;
-    font-family: "Questrial";
-    margin-top: 0.5rem;
-    color: #7dc7c5;
-    -webkit-text-stroke: 1px #7dc7c5;
     font-size: 0.8rem;
+    line-height: 1rem
   }
   
   .text-area-social {
-    text-align: center;
-    font-family: "Questrial";
-    margin-top: 0.5rem;
-    color: #ae96b2;
-    -webkit-text-stroke: 1px #ae96b2;
     font-size: 0.8rem;
   }
   .text-area-rutina {
-    text-align: center;
-    font-family: "Questrial";
-    margin-top: 0.5rem;
-    color: #ef8b44;
-    -webkit-text-stroke: 1px #ef8b44;
     font-size: 0.8rem;
   }
   .text-area-juego {
-    text-align: center;
-    font-family: "Questrial";
-    margin-top: 0.5rem;
-    color: #f7b919;
-    -webkit-text-stroke: 1px #f7b919;
     font-size: 0.8rem;
   }
   .text-area-nutricion {
-    text-align: center;
-    font-family: "Questrial";
-    margin-top: 0.5rem;
-    color: #eb477a;
-    -webkit-text-stroke: 1px #eb477a;
     font-size: 0.8rem;
+    line-height: 1rem
   }
   
   .icon-sesamo {
-    height: 5rem;
-    margin: 0rem 1rem 0rem 1rem;
+    /* height: 5rem;
+    margin: 0rem 1rem 0rem 1rem; */
   }
+
+  .estrellita-lila{
+    font-size: 1.3rem;
+    margin-top: 1rem
+  }
+.caja-compartir-hola{
+  margin-top: 1.5rem!important;
+  margin-bottom: 1.5rem!important
+}
+.text-tienes-todo{
+  width: 90%;
+  margin: auto
+}
 }
