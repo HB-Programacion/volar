@@ -1,13 +1,12 @@
 import React from "react";
 import "./areas.css";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import iconoSocioemocionalWhite from "./../../../../images/areas-img/icon_socioemocional.png";
-import iconoTipSocioemocional from "./../../../../images/areas-img/icono_tip_socioemocional.svg";
+import iconoSesamoWhite from "./../../../../images/areas-img/icon_sesamo.png";
+import iconoVideoJuego from "./../../../../images/areas-img/icon-video-sesamo.svg";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { auth,db } from "../../../firebase/firebase";
 
-
-export const Socioemocional= ({contenidoFirebase, error, loading, firebaseUser, idChild}) => {
+export const Sesamo= ({contenidoFirebase, error, loading, firebaseUser, idChild, mandarNumberTip}) => {
 
  const [edad, setEdad]= React.useState("")
   const [usuarioChild] = useCollection(
@@ -37,23 +36,24 @@ export const Socioemocional= ({contenidoFirebase, error, loading, firebaseUser, 
 
   return (
     <div>
-      <div className="box-title-socioemocional show-desktop">
+      <div className="box-title-sesamo show-desktop">
         <img
-          src={iconoSocioemocionalWhite}
-          className="icono-area"
+          src={iconoSesamoWhite}
+          className="icono-sesamo"
           alt="gota de agua"
         />
-        <h1 className="title-area">SOCIOEMOCIONAL</h1>
       </div>
       <div className="list-videos-tips">
         {error && <strong>Error: {JSON.stringify(error)}</strong>}
         {loading && <span>Collection: Loading...</span>}
         {contenidoFirebase && (<div className="row">
-            {contenidoFirebase.docs.filter(item=>  item.data().seccion==="Higiene y Agua Segura" &&  item.data().edad==edad ).map(item => (
+            {contenidoFirebase.docs.filter(item=>item.data().seccion==="Sésamo").map(item => (
                 <div key={item.id} className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                  <Link to="/aprendamos/cuidador/socioemocional/tips">  <div className="box-section">
+                <Link to="/aprendamos/cuidador/sesamo/tips" onClick={()=>mandarNumberTip(item.data().n_tip)}
+>
+                  <div className="box-section">
                   <img
-                    src={iconoTipSocioemocional}
+                    src={iconoVideoJuego}
                     className="icono-video-tip"
                     alt="icono de tip"
                   />
@@ -61,9 +61,10 @@ export const Socioemocional= ({contenidoFirebase, error, loading, firebaseUser, 
                     <h3 className="subtittle-video-tip">
                       {item.data().titulo}
                     </h3>
-                    <h5 className="text-video-tip">Tip N° {item.data().n_tip}</h5>
+                    <h5 className="text-video-tip">N° {item.data().n_tip} {item.data().tipo}</h5>
                   </div>
-                </div></Link>
+                </div>
+                </Link>
               </div>
               ))}
                </div>)}

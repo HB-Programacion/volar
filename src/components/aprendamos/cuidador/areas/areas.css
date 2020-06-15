@@ -80,11 +80,32 @@ background-color: #EF8B44;
   background-color: #EB477A;
 }
 
+.box-title-sesamo {
+  background: url(./../../../../images/areas-img/sesamo_fondo_desktop.png) no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  /*height: 100vh;
+    width: 100%;*/
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+
 .icono-area {
   height: 7rem;
   margin: 0 auto;
 }
 
+.icono-sesamo {
+  height: 10rem;
+  margin: 0 auto;
+}
 .title-area {
   text-align: center;
   color: #ffffff;
@@ -277,6 +298,22 @@ background-color: #EF8B44;
     -o-background-size: cover;
     background-color: #EB477A;
   }
+
+  .box-title-sesamo {
+    background: url(./../../../../images/areas-img/sesamo_fondo_mobile.png) no-repeat;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-color: #05AB4C;
+  }
   .icono-area {
     height: 5rem;
     margin: 0 auto;
@@ -293,5 +330,9 @@ background-color: #EF8B44;
     margin-top: -4rem;
     margin-right: 1rem;
     margin-left: 1rem;
+  }
+  .icono-sesamo {
+    height: 7rem;
+    margin: 0 auto;
   }
 }

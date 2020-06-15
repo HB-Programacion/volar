@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="85" height="84" viewBox="0 0 85 84">
+  <g id="Grupo_461" data-name="Grupo 461" transform="translate(-0.396 0.088)">
+    <path id="Polígono_9" data-name="Polígono 9" d="M23.626,1.569a1,1,0,0,1,1.747,0l22.8,40.944A1,1,0,0,1,47.3,44H1.7a1,1,0,0,1-.874-1.486Z" transform="translate(69.396 18.912) rotate(90)" fill="#05ab4c"/>
+    <g id="Elipse_184" data-name="Elipse 184" transform="translate(0.396 -0.088)" fill="none" stroke="#05ab4c" stroke-width="4">
+      <ellipse cx="42.5" cy="42" rx="42.5" ry="42" stroke="none"/>
+      <ellipse cx="42.5" cy="42" rx="40.5" ry="40" fill="none"/>
+    </g>
+  </g>
+</svg>

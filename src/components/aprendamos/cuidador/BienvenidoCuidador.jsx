@@ -291,7 +291,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild }) => {
             </Link>
           </div>
           <div className="w-20">
-          <Link to="/aprendamos/cuidador/nutricion">
+          <Link to="/aprendamos/cuidador/sesamo">
            <div className="area-sesamo">
               <img
                 src={iconAreaSesamo}
@@ -372,7 +372,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild }) => {
             </Link>
           </div>
           {colaboradorBreca === "SI" ?  <div className="w-50">
-          <Link to="/aprendamos/cuidador/nutricion">
+          <Link to="/aprendamos/cuidador/sesamo">
            <div className="area-sesamo">
               <img
                 src={iconAreaSesamo}
