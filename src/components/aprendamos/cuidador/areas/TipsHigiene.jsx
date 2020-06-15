@@ -3,13 +3,20 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./tips.css";
 /*import cohete from '../../images/cohete-volando.svg';*/
 
+
+import { Orbitals } from "react-spinners-css";
+
+
 const TipsHigiene = ({ contenidoFirebase, error, loading }) => {
   return (
     <div>
       <div className="background-tips-higiene" id="aprendamos-page">
         <div className=" animated fadeIn">
           {error && <strong>Error: {JSON.stringify(error)}</strong>}
-          {loading && <span>Collection: Loading...</span>}
+          {loading && <div className="grande">
+                <div className="centrando-spiner">
+          <Orbitals color="#EF8B44" size={900} />
+        </div> </div>}
           {contenidoFirebase && (
             <>
               {contenidoFirebase.docs
@@ -19,13 +26,13 @@ const TipsHigiene = ({ contenidoFirebase, error, loading }) => {
                 )
                 .map((item) => (
                   <div className="">
-                    <div className="row justify-content-center h-100">
-                      <h1 className="tittle-tips">{item.data().titulo}</h1>
+                    <div className="row justify-content-center h-100 sin-margin-row">
+                      <h1 className="tittle-tips tracking-in-expand-fwd-top">{item.data().titulo}</h1>
                     </div>
-                    <div className="row justify-content-center  h-100">
-                      <h3 className="tips-numbers">TIP N°{item.data().n_tip}</h3>
+                    <div className="row justify-content-center  h-100 sin-margin-row">
+                      <h3 className="tips-numbers tracking-in-expand-fwd-top">TIP N°{item.data().n_tip}</h3>
                     </div>
-                    <div className="row tips-margin-top">
+                    <div className="row tips-margin-top sin-margin-row">
                       <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                         <div className="videoWrapper">
                           <iframe
