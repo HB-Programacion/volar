@@ -227,6 +227,7 @@ margin: 2rem 3rem 2rem 3rem !important;
     
     .text-tips{
         padding: 2rem 0rem 0rem 1rem;
+        margin-top: 0rem
     }
     .text-tips-light{
         font-family: 'Questrial';
@@ -297,6 +298,12 @@ margin: 2rem 3rem 2rem 3rem !important;
         -moz-background-size: cover;
         -webkit-background-size: cover;
         -o-background-size: cover;
+      }
+
+      .iconos-tips-blanco{
+        width: 40%;
+        margin: auto;
+        display: block
       }
   }
 

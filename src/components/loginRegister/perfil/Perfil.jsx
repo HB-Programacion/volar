@@ -792,9 +792,9 @@ const Perfil = (props) => {
                               <h3 className="subtittle-video-tip">
                                 {item.data().nameChild}
                               </h3>
-                              <h5 className="text-video-tip">
+                              {/* <h5 className="text-video-tip">
                                 Edad: {item.data().edadChild}
-                              </h5>
+                              </h5> */}
                             </div>
                             <div className="btn-editar-eliminar">
                               <button
@@ -815,7 +815,7 @@ const Perfil = (props) => {
                                 Editar
                               </button>
                               <div
-                                class="modal fade"
+                                class="modal fade "
                                 id={"hola" + key}
                                 tabindex="-1"
                                 role="dialog"
@@ -849,7 +849,7 @@ const Perfil = (props) => {
                                 </div>
                               </div>
                               <div
-                                class="modal fade"
+                                class="modal fade "
                                 id={"editar" + key}
                                 tabindex="-1"
                                 role="dialog"
