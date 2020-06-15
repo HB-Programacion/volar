@@ -17,9 +17,8 @@ export const Higiene = ({
 
   const mandarNumberTipOficial = (numberTip) => {
     localStorage.setItem('localNumberTip', numberTip)
-    console.log(localStorage.getItem('localNumberTip'))
   };  
-  
+
   React.useEffect(() => {
     if (firebaseUser !== null && idChild !== "") {
       const childData = db
@@ -113,15 +112,16 @@ export const Higiene = ({
                   .filter(
                     (item) =>
                       item.data().seccion === "Higiene y Agua Segura" &&
-                      item.data().edad == JSON.parse(localStorage.getItem("dateChild")).edad
+                      item.data().edad == edad
                   )
                   .map((item) => (
                     <div
                       key={item.id}
                       className="col-sm-12 col-md-12 col-lg-6 col-xl-6"
                     >
-                      <Link to="/aprendamos/cuidador/higiene/tips">
-                        {" "}
+                      <a href="/aprendamos/cuidador/higiene/tips"
+                        onClick={() => mandarNumberTipOficial(item.data().n_tip)}>
+                        
                         <div className="box-section">
                           <img
                             src={iconoTipLighBlue}
@@ -137,7 +137,7 @@ export const Higiene = ({
                             </h5>
                           </div>
                         </div>
-                      </Link>
+                      </a>
                     </div>
                   ))}
               </div>
