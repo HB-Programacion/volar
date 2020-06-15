@@ -34,7 +34,7 @@ const MenuChild = ({firebaseUser, mandarIdChild,  updateArrayChild}) => {
              className="item" onClick={()=>mandarIdChild(item.data().id)}>{item.data().nameChild}</NavLink>
               ))}
                </div>)}
-        <NavLink to="/registro-niño" className="item">+ AGREGAR CHILD</NavLink>
+        <NavLink to="/registro-niño" className="item">+ AGREGAR NIÑO(A)</NavLink>
       
       </div>
         </div>

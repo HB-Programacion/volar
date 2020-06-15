@@ -1,5 +1,6 @@
 .fase4-fondo{
-    background: #2E335E
+    background: #2E335E;
+    padding-top: 2rem
 }
 
 .titulo-fase4{
@@ -56,7 +57,7 @@
 @media (min-width: 769px){
     .fase4-fondo{
         margin-top: 5rem;
-        padding:10rem 3rem 5rem 3rem;
+        padding:6.5rem 3rem 5rem 3rem;
         /* background-image: url("../../images/fase1-img/fondo_fase_desktop.png"); */
     }
 

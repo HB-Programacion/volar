@@ -6,8 +6,8 @@ import arrowRight from "./../../images/arrow-right-blue.svg";
 
 export const Contactanos = () => {
     return (
-        <div className="container animated fadeIn contactanos-box">
-          <div className="register-child">
+        <div className="container animated fadeIn ">
+          <div className="register-child contactanos-box">
         
               <h1 className="title tittle-register-child text-contactanos">¡Contáctanos!</h1>
     

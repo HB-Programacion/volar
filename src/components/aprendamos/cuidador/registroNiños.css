@@ -23,14 +23,14 @@ position: relative;
   display: block;
   margin:1rem  auto;
   font-family: "Questrial";
-  -webkit-text-stroke: 2px #2e335e;
-  font-size: 2.6rem;
+  -webkit-text-stroke: 1px #2e335e;
+  font-size: 2.5rem;
   text-align: center;
 }
 
 .list-register {
-  box-shadow: 0 0 9px rgb(134, 129, 129);
-  margin: 1.5rem 9rem 5rem 9rem;
+  box-shadow: 0 0 8px rgb(134, 129, 129);
+  margin: 3rem 9rem 8rem 9rem;
   padding: 3.5rem 5rem 4rem 3.5rem;
   border-radius: 20px;
 }
@@ -40,6 +40,7 @@ position: relative;
   font-family: "Questrial";
   font-size: 1.2rem;
   margin-bottom: 0;
+  -webkit-text-stroke: 1px #2e335e;
 }
 
 .input-register-space {
@@ -171,12 +172,12 @@ position: relative;
   }
 
   .subtittle-register-child {
-    font-size: 2rem;
+    font-size: 1.7rem;
     text-align: center;
   }
 
   .list-register {
-    box-shadow: 0 0 9px rgb(134, 129, 129);
+    box-shadow: 0 0 6px rgb(134, 129, 129);
     margin: 1rem 0.5rem 1rem 0.5rem;
     padding: 2rem 1rem 2rem 1rem;
     border-radius: 20px;
