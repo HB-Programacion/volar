@@ -86,8 +86,15 @@
   height: 14rem;
   display: flex;
   justify-content: center;
-  align-items: center
+  align-items: center;
+
 }
+.area-higiene:hover,
+.area-higiene:hover{
+  box-shadow: 3px 10px 22px #7dc7c5;
+}
+
+
 .area-socioEmocional {
   border: 0.8rem solid #ae96b2;
   border-radius: 1.5em;
@@ -100,6 +107,11 @@
   justify-content: center;
   align-items: center
 }
+.area-socioEmocional:hover,
+.area-socioEmocional:hover{
+  box-shadow: 3px 10px 22px #ae96b2;
+}
+
 .area-rutina {
   border: 0.8rem solid #ef8b44;
   border-radius: 1.5em;
@@ -113,6 +125,12 @@
   align-items: center
 }
 
+.area-rutina:hover,
+.area-rutina:hover{
+  box-shadow: 3px 10px 22px #ef8b44;
+}
+
+
 .area-juego {
   border: 0.8rem solid #f7b919;
   border-radius: 1.5em;
@@ -125,6 +143,12 @@
   justify-content: center;
   align-items: center
 }
+.area-juego:hover,
+.area-juego:hover{
+  box-shadow: 3px 10px 22px #f7b919;
+}
+
+
 .area-nutricion {
   border: 0.8rem solid #eb477a;
   border-radius: 1.5em;
@@ -137,6 +161,12 @@
   justify-content: center;
   align-items: center
 }
+
+.area-nutricion:hover,
+.area-nutricion:hover{
+  box-shadow: 3px 10px 22px #eb477a;
+}
+
 
 
 .area-sesamo {
@@ -151,6 +181,13 @@
   justify-content: center;
   align-items: center
 }
+.area-sesamo:hover,
+.area-sesamo:hover{
+  box-shadow: 3px 10px 22px #05AB4C;
+}
+
+
+
 .icon-area {
   width: 5rem;
   height: auto;
