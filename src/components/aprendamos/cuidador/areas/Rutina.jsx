@@ -45,7 +45,7 @@ export const Rutina= ({contenidoFirebase, error, loading, firebaseUser, idChild}
      {error && <strong>Error: {JSON.stringify(error)}</strong>}
      {loading && <span>Collection: Loading...</span>}
      {contenidoFirebase && (<div className="row">
-         {contenidoFirebase.docs.filter(item=>  item.data().seccion==="Higiene y Agua Segura" &&  item.data().edad==edad ).map(item => (
+         {contenidoFirebase.docs.filter(item=>  item.data().seccion==="Rutina" &&  item.data().edad==edad ).map(item => (
              <div key={item.id} className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
               <Link to="/aprendamos/cuidador/rutina/tips"><div className="box-section">
                <img
@@ -80,7 +80,7 @@ export const Rutina= ({contenidoFirebase, error, loading, firebaseUser, idChild}
         {error && <strong>Error: {JSON.stringify(error)}</strong>}
         {loading && <span>Collection: Loading...</span>}
         {contenidoFirebase && (<div className="row">
-            {contenidoFirebase.docs.filter(item=>  item.data().seccion==="Higiene y Agua Segura" &&  item.data().edad==JSON.parse(localStorage.getItem('dateChild')).edad ).map(item => (
+            {contenidoFirebase.docs.filter(item=>  item.data().seccion==="Rutina" &&  item.data().edad==JSON.parse(localStorage.getItem('dateChild')).edad ).map(item => (
                 <div key={item.id} className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                  <Link to="/aprendamos/cuidador/rutina/tips"><div className="box-section">
                   <img

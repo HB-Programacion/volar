@@ -20,6 +20,7 @@ export const Sesamo = ({
 
  const mandarNumberTipOficial = (numberTip) => {
   localStorage.setItem('localNumberTip', numberTip)
+  console.log(localStorage.getItem('localNumberTip'))
 };
 
   React.useEffect(() => {
