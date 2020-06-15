@@ -29,7 +29,7 @@ position: relative;
 }
 
 .list-register {
-  box-shadow: 0 0 8px rgb(134, 129, 129);
+  box-shadow: 0 0 10px rgba(134, 129, 129, 0.363);
   margin: 3rem 9rem 8rem 9rem;
   padding: 3.5rem 5rem 4rem 3.5rem;
   border-radius: 20px;
@@ -177,7 +177,7 @@ position: relative;
   }
 
   .list-register {
-    box-shadow: 0 0 6px rgb(134, 129, 129);
+    box-shadow: 0 0 10px rgba(134, 129, 129, 0.363);
     margin: 1rem 0.5rem 1rem 0.5rem;
     padding: 2rem 1rem 2rem 1rem;
     border-radius: 20px;

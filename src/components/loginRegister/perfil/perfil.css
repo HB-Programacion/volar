@@ -85,7 +85,7 @@
   }
   
   .list-register2 {
-    box-shadow: 0 0 9px rgb(134, 129, 129);
+    box-shadow: 0 0 10px rgba(134, 129, 129, 0.363);
     margin: 3rem 6rem 5rem 6rem;
     padding: 3rem 4rem 3rem 4rem;
     border-radius: 20px;
@@ -134,7 +134,7 @@
 
   @media (max-width: 768px) {
     .list-register2 {
-        box-shadow: 0 0 9px rgb(134, 129, 129);
+        box-shadow: 0 0 10px rgba(134, 129, 129, 0.363);
         margin: 1rem 1rem 1rem 1rem;
         padding: 1rem 1rem 1rem 1rem;
         border-radius: 20px;
