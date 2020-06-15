@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./tips.css";
 import { auth, db } from "../../../../components/firebase/firebase";
-/*import cohete from '../../images/cohete-volando.svg';*/
+/import cohete from '../../images/cohete-volando.svg';/
 
 import { Orbitals } from "react-spinners-css";
 
