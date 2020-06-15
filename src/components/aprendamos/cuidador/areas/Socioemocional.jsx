@@ -33,7 +33,7 @@ export const Socioemocional= ({contenidoFirebase, error, loading, firebaseUser, 
     <div>
     {firebaseUser !== null ? (
       <div>
-      <div className="box-title-socioemocional show-desktop">
+      <div className="box-title-socioemocional ">
         <img
           src={iconoSocioemocionalWhite}
           className="icono-area heartbeat"
@@ -72,7 +72,7 @@ export const Socioemocional= ({contenidoFirebase, error, loading, firebaseUser, 
     ) :
     (
       <div>
-      <div className="box-title-socioemocional show-desktop">
+      <div className="box-title-socioemocional ">
         <img
           src={iconoSocioemocionalWhite}
           className="icono-area"

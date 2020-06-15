@@ -1,9 +1,9 @@
 .box-title-cuidador {
-  padding-top: 8rem;
+  padding-top: 4rem;
   background-color: #ae96b2;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
-  height: 25rem;
+  height: 21rem;
 }
 
 
@@ -265,8 +265,8 @@
   }
 
   .box-title-cuidador {
-    padding-top: 5rem;
-    height: 20rem;
+    padding-top: 1rem;
+    height: 14rem;
   }
 
   .title-cuidador {
