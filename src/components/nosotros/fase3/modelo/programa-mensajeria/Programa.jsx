@@ -6,10 +6,10 @@ import tablet from "../../../../../images/fase3-img/modelo/mensajeria.svg"
 
 const Programa = () => {
     return (
-        <div>
+        <div className="animated fadeIn">
             <div className="img-modelo-rosa">
                 <figure >
-                    <img src={tablet} alt="" className="w-100"/>
+                    <img src={tablet} alt="" className="w-100 heartbeat"/>
                 </figure>
                 <p className="p-mobile-blue title-grueso">Programa de Mensajería de Texto</p>
                 <p className="p-mobile-blue">Hemos fortalecido y diferenciado nuestra batería 

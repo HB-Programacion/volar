@@ -22,7 +22,7 @@ const Fase4 = () => {
         <div className="animated fadeIn">
             <div className="fase1 fase4-fondo">
                 <h6 className="titulo-numero-fase color-white">Fase 4</h6>
-                <h5 className="titulo-fase4 ">Evaluar y escalar</h5>
+                <h5 className="titulo-fase4 tracking-in-expand-fwd-top">Evaluar y escalar</h5>
                 <p className="p-mobile-white w-fase">
                     Para el año 2020, Volar recoge todos los aprendizajes obtenidos durante el 2019 para ajustar y afianzar su modelo de atención a la primera infancia de forma integral, que se acople lo mejor posible a la realidad de nuestras zonas de influencia, a las necesidades de los actores locales y comunitarios en los que nos apoyamos.
                 </p>

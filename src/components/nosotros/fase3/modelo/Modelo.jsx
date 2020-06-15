@@ -18,13 +18,13 @@ import starR from "../../../../images/fase3-img/modelo/start-right.svg"
 
 const Modelo = () => {
     return (
-        <div className="fondo-circulo">
+        <div className="fondo-circulo animated fadeIn">
             <div className="fase2 fase3-modelo border-bottom-radius">
-                <h5 className="titulo-fase titulo-fase3-modelo">Modelo volar</h5>
+                <h5 className="titulo-fase titulo-fase3-modelo tracking-in-expand-fwd-top">Modelo volar</h5>
                 <div className="box-modelo-volar">
                     <div className="box-modelo-volar-item">
                         <figure className="box-modelo-volar-item-img">
-                            <img src={foco} alt=""/>
+                            <img src={foco} alt="" className="heartbeat"/>
                         </figure>
                         <div className="box-modelo-volar-item-text">
                             <p className="box-modelo-volar-item-text-title">Propósito volar</p>
@@ -35,7 +35,7 @@ const Modelo = () => {
                     </div>
                     <div className="box-modelo-volar-item">
                         <figure className="box-modelo-volar-item-img">
-                            <img src={propuesta} alt=""/>
+                            <img src={propuesta} alt=""className="heartbeat"/>
                         </figure>
                         <div className="box-modelo-volar-item-text">
                             <p className="box-modelo-volar-item-text-title">Propuesta de valor</p>
@@ -58,9 +58,9 @@ const Modelo = () => {
             <div className=" box-fase3-modelo-naranja">
                 <div className="container pt-5">
                     <div className="box-title-modelo-star">
-                        <img src={starL} alt="" className="starL-modelo"/>
+                        <img src={starL} alt="" className="starL-modelo heartbeat"/>
                         <h6 className="p-mobile-white box-fase3-modelo-naranja-title ">Intervenciones principales</h6>
-                        <img src={starR} alt=""className="starR-modelo"/>
+                        <img src={starR} alt=""className="starR-modelo heartbeat"/>
                     </div>
                     <div className="box-card-group-modelo">
                     <div className="box-card-modelo">
@@ -99,9 +99,9 @@ const Modelo = () => {
                 <p className="mt-2 estrellita-naranja color-white heartbeat">&#10022;</p>
                 <div className="container pt-4 pb-5">
                     <div className="box-title-modelo-star">
-                        <img src={starL} alt="" className="starL-modelo"/>
+                        <img src={starL} alt="" className="starL-modelo heartbeat"/>
                         <h6 className="p-mobile-white box-fase3-modelo-naranja-title ">Intervenciones complementarias</h6>
-                        <img src={starR} alt=""className="starR-modelo"/>
+                        <img src={starR} alt=""className="starR-modelo heartbeat"/>
                     </div>
                     <div className="box-card-group-modelo">
                     <div className="box-card-modelo">

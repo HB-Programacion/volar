@@ -9,7 +9,7 @@ export const Contactanos = () => {
         <div className="container animated fadeIn ">
           <div className="register-child contactanos-box">
         
-              <h1 className="title tittle-register-child text-contactanos">¡Contáctanos!</h1>
+              <h1 className="title tittle-register-child text-contactanos tracking-in-expand-fwd-top">¡Contáctanos!</h1>
     
             <div className="list-register">
               <p className="letter-register">NOMBRE</p>

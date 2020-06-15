@@ -141,8 +141,8 @@ const Signup = (props) => {
   }, [ props.history]);
 
   return (
-      <div className="register-child">
-          <h1 className="tittle-register-child">Regístrate</h1>
+      <div className="animated fadeIn register-child">
+          <h1 className="tittle-register-child tracking-in-expand-fwd-top">Regístrate</h1>
         <div className="list-login">
           <form onSubmit={procesarDatos}>
             {error && <div className="alert alert-danger">{error}</div>}

@@ -6,10 +6,10 @@ import tablet from "../../../../../images/fase3-img/modelo/radio.svg"
 
 const Spots = () => {
     return (
-        <div>
+        <div className="animated fadeIn">
             <div className="img-modelo-rosa">
                 <figure >
-                    <img src={tablet} alt="" className="w-100"/>
+                    <img src={tablet} alt="" className="w-100 heartbeat"/>
                 </figure>
                 <p className="p-mobile-blue title-grueso">Spots Radiales</p>
                 <p className="p-mobile-blue">Usamos el “quechuañol” (español y quechua)

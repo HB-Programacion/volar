@@ -19,7 +19,7 @@ const Fase1 = () => {
         <div className="animated fadeIn">
             <div className="fase1 border-bottom-radius">
                 <h6 className="titulo-numero-fase">Fase 1</h6>
-                <h5 className="titulo-fase">Aprender</h5>
+                <h5 className="titulo-fase tracking-in-expand-fwd-top">Aprender</h5>
                 <p className="p-mobile-blue w-fase">El objetivo de esta fase fue identificar intervenciones potencialmente efectivas para fomentar el desarrollo infantil temprano (DIT) en las zonas de influencia del grupo Breca en Perú.
                 </p>
                 <p className="p-mobile-blue w-fase">En esta fase, se buscó entender y reconocer la problemática del desarrollo infantil temprano, la cual es compleja, multidimensional y multiactor.</p>

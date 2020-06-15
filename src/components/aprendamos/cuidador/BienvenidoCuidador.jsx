@@ -65,7 +65,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild }) => {
             className="icon-bienvenida-cuidador"
             alt="stars-left"
           />
-          <h1 className="title-cuidador">¡Hola!</h1>
+          <h1 className="title-cuidador tracking-in-expand-fwd-top tracking-in-expand-fwd-top">¡Hola!</h1>
           {/* <img src={starsRightDesktop} className="stars-right-desktop heartbeat"></img> */}
         </div>
      

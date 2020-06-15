@@ -42,12 +42,13 @@
     -webkit-text-stroke: 1px #7DC7C5;
     letter-spacing: .07rem;
     color: #7DC7C5
-}
 
+}
 .box-boton-fase3:hover{
     cursor: pointer;
     box-shadow: 1px 1px 18px #e7e2e2;
-    font-size: 1.4rem
+    font-size: 1.4rem;
+ 
 }
 
 .box-boton-fase3{

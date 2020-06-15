@@ -123,7 +123,7 @@ const Login = (props) => {
   props.firebaseUser===null ? (
     
     <div className=" animated fadeIn register-child box-register-bienvenido">
-    <h1 className="tittle-register-child">¡Bienvenido!</h1>
+    <h1 className="tittle-register-child tracking-in-expand-fwd-top">¡Bienvenido!</h1>
   <div className="list-login">
     <form onSubmit={procesarDatos}>
       {error && <div className="alert alert-danger">{error}</div>}

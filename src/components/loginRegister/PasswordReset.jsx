@@ -29,8 +29,8 @@ export const PasswordReset = () => {
 
 
   return (
-      <div className="register-child">
-          <h1 className="tittle-register-child">Olvidaste tu contraseña</h1>
+      <div className="animated fadeIn register-child">
+          <h1 className="tittle-register-child tracking-in-expand-fwd-top">Olvidaste tu contraseña</h1>
         <div className="list-login">
           <div className="box-text-a">
             <p style={{ textAlign: "center" }}>

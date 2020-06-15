@@ -47,10 +47,10 @@ export const RegistroNiños = () => {
     <div className="container animated fadeIn box-registro-ninos">
       <div className="register-child">
         <div className="row">
-          <h1 className="title tittle-register-child">¡Bienvenido!</h1>
+          <h1 className="title tittle-register-child tracking-in-expand-fwd-top">¡Bienvenido!</h1>
         </div>
         <div className="row">
-          <h2 className="subtittle-register-child">Cuidador Principal</h2>
+          <h2 className="subtittle-register-child tracking-in-expand-fwd-top">Cuidador Principal</h2>
         </div>
         <div className="list-register">
         <form onSubmit={procesarDatosChild}>

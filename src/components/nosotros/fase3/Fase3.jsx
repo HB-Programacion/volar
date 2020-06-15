@@ -14,7 +14,7 @@ const Fase3 = () => {
         <div className="animated fadeIn">
             <div className="fase1 fase3-image border-bottom-radius">
                 <h6 className="titulo-numero-fase">Fase 3</h6>
-                <h5 className="titulo-fase">Refinar</h5>
+                <h5 className="titulo-fase tracking-in-expand-fwd-top">Refinar</h5>
                 <p className="p-mobile-blue w-fase">
                     Para el año 2020, Volar recoge todos los aprendizajes obtenidos durante el 2019 para ajustar y afianzar su modelo de atención a la primera infancia de forma integral, que se acople lo mejor posible a la realidad de nuestras zonas de influencia, a las necesidades de los actores locales y comunitarios en los que nos apoyamos.
                 </p>
@@ -72,7 +72,7 @@ const Fase3 = () => {
             </div>
             <div className="box-boton-fase3">
                 <a href="/nosotros/fase3/modelo-volar" className="btn-modelo-volar link wobble-hor-bottom">
-                    <img src={cohete} className="w-12 mr-2"></img>
+                    <img src={cohete} className="w-12 mr-2 heartbeat"></img>
                     Modelo volar
                 </a>
             </div>

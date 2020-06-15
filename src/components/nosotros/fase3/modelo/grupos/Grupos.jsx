@@ -6,10 +6,10 @@ import tablet from "../../../../../images/fase3-img/modelo/grupo.svg"
 
 const Grupos = () => {
     return (
-        <div>
+        <div  className="animated fadeIn">
             <div className="img-modelo">
                 <figure >
-                    <img src={tablet} alt="" className="w-100"/>
+                    <img src={tablet} alt="" className="w-100 heartbeat"/>
                 </figure>
                 <p className="p-mobile-blue title-grueso">Grupos de Interaprendizaje Familiar</p>
                 <p className="p-mobile-blue">Estos espacios, tienen el objetivo de crear 

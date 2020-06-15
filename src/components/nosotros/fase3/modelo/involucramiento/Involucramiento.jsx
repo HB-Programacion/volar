@@ -8,7 +8,7 @@ import involucramientoDesktop from "../../../../../images/fase3-img/modelo/invol
 
 const Involucramiento = () => {
     return (
-        <div>
+        <div  className="animated fadeIn">
             <div className="img-involucramiento mb-5">
                 <img src={involucramientoImg} alt="" className="show-mobile w-95"/>
                 <img src={involucramientoDesktop} alt="" className=" hide-mobile w-100"/>

@@ -111,7 +111,7 @@ const RegistroChild = (props) => {
   
   return (
       <div className="register-child animated fadeIn">
-          <h2 className="subtittle-register-child">Añadir Niño </h2>
+          <h2 className="subtittle-register-child tracking-in-expand-fwd-top">Añadir Niño </h2>
         <div className="list-register">
           <form onSubmit={procesarDatosAgregarChild}>
             {error && <div className="alert alert-danger">{error}</div>}

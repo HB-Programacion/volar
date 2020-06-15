@@ -335,7 +335,7 @@ const Perfil = (props) => {
 
   return (
     <div className="register-child animated fadeIn">
-      <h2 className="subtittle-register-child ">Actualizar Perfil</h2>
+      <h2 className="subtittle-register-child tracking-in-expand-fwd-top">Actualizar Perfil</h2>
       {usuarioChild && (
         <div>
           {usuarioChild.docs.length === 0 ? (
