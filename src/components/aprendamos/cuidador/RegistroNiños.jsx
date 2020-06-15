@@ -2,11 +2,11 @@ import React from "react";
 import "./registroNiños.css";
 import "../aprendamos.css";
 import "../../../App.css";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, withRouter } from "react-router-dom";
 import arrowLeft from "./../../../images/arrow-left-blue.svg";
 import arrowRight from "./../../../images/arrow-right-blue.svg";
 
-export const RegistroNiños = () => {
+ const RegistroNiños = (props) => {
   const [nameChild, setNameChild] = React.useState("");
   const [colaboradorBreca, setColaboradorBreca] = React.useState("");
   const [codigoBreca, setCodigoBreca] = React.useState("");
@@ -32,13 +32,23 @@ export const RegistroNiños = () => {
       setError("Colocar código Breca");
       return;
     }
+    addDateChild()
 
     setError(null);
   };
 
-  const addDateChild = React.useCallback(async () => {
-    
-  }, []);
+  const addDateChild =  () => {
+    const dateChildForm = {
+      name: nameChild, // Generamos una id rápida
+      edad: edadChild,
+      colaboradorBreca: colaboradorBreca,
+  };
+  localStorage.setItem('dateChild', JSON.stringify(dateChildForm))
+
+  console.log(localStorage.getItem('dateChild'))
+  props.history.push("/aprendamos/cuidador");
+
+  }
   
 
 
@@ -84,7 +94,7 @@ export const RegistroNiños = () => {
                   <option value="2">2 - 3 años</option>
                   <option value="3">3 - 4 años</option>
                   <option value="4">4 - 5 años</option>
-                  <option value="6">5 - 6 años</option>
+                  <option value="5">5 - 6 años</option>
                 </select>
             </div>
           </div>
@@ -150,3 +160,5 @@ export const RegistroNiños = () => {
     </div>
   );
 };
+
+export default withRouter(RegistroNiños);
