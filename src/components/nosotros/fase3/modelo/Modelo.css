@@ -1,7 +1,7 @@
 .fase3-modelo {
     background: #fff;
     box-shadow: 1px 1px 9px #868181;
-    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
 }
 
 .titulo-fase3-modelo {
@@ -126,7 +126,7 @@
 @media (min-width: 769px) {
     .fase3-modelo {
         margin-top: 5rem;
-        padding: 5rem 3rem 5rem 3rem;
+        padding: 6.5rem 3rem 5rem 3rem;
         /* background-image: url("../../images/fase1-img/fondo_fase_desktop.png"); */
     }
 

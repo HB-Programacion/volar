@@ -2,7 +2,34 @@
     font-size: 1.2rem;
     text-align: center;
     font-family: "Questrial";
+    color: #EF8B44;
+    /* text-decoration: underline; */
+    -webkit-text-stroke: 1px #EF8B44;
+    letter-spacing: .1rem
 }
+
+.siguiente:hover{
+    color: #2E335E;
+    -webkit-text-stroke: 1px #2E335E;
+    
+}
+
+.boton-guardar-perfil{
+    position: relative;
+    left: 6rem
+}
+
+.boton-guardar-perfil:hover,
+.boton-guardar-perfil:focus{
+    box-shadow: 2px 2px 16px #2E335E
+}
+
+
+.boton-guardar-nino:hover,
+.boton-guardar-nino:focus{
+    box-shadow: 2px 2px 16px #2E335E
+}
+
 
 .subtitulo-perfil{
     font-size: 1.4rem;
@@ -129,6 +156,14 @@
         text-align: center;
         font-family: "Questrial";
         float: right;
+        letter-spacing: .05rem
+        
     }
+
+
+.boton-guardar-perfil{
+    position: relative;
+    left: 0rem
+}
   }
   

@@ -6,6 +6,7 @@
     background-repeat:no-repeat;
     box-shadow: 1px 1px 9px #868181;
     background-image: url("../../../../images/crecer-img/fondo_crecer_mejor_mobile.png");
+    padding-top: 2rem
 }
 .logo-agua-img{
     width: 10%;

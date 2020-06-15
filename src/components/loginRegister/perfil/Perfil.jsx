@@ -334,8 +334,8 @@ const Perfil = (props) => {
   };
 
   return (
-    <div className="register-child">
-      <h2 className="subtittle-register-child">Actualizar Perfil</h2>
+    <div className="register-child animated fadeIn">
+      <h2 className="subtittle-register-child ">Actualizar Perfil</h2>
       {usuarioChild && (
         <div>
           {usuarioChild.docs.length === 0 ? (
@@ -491,15 +491,15 @@ const Perfil = (props) => {
                 </div>
                 <div className="row mt-4">
                   <div className="col-sm-10 col-md-10 col-lg-10 col-xl-10">
-                    <button className="btn-navy-blue text-white" type="submit">
+                    <button className="btn-navy-blue text-white wobble-hor-bottom boton-guardar-perfil" type="submit">
                       <img src={arrowLeft} className="arrow-blue"></img>
                       GUARDAR
                       <img src={arrowRight} className="arrow-blue"></img>
                     </button>
                   </div>
                   <div className="col-sm-2 col-md-2 col-lg-2 col-xl-2 mt-3">
-                    <Link className="siguiente" to="/registro-niño">
-                      Siguiente &gt;
+                    <Link className="siguiente link" to="/registro-niño">
+                      Siguiente &rArr;
                     </Link>
                   </div>
                 </div>
@@ -665,7 +665,7 @@ const Perfil = (props) => {
                     <div className="row mt-4">
                       <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                         <button
-                          className="btn-navy-blue text-white"
+                          className="btn-navy-blue text-white boton-guardar-perfil"
                           type="submit"
                         >
                           <img src={arrowLeft} className="arrow-blue"></img>
@@ -962,12 +962,12 @@ const Perfil = (props) => {
                                         </div>
 
                                         <button
-                                          className="btn-navy-blue text-white"
+                                          className="btn-navy-blue text-white boton-guardar-perfil"
                                           type="submit"
                                         >
                                           <img
                                             src={arrowLeft}
-                                            className="arrow-blue"
+                                            className="arrow-blue "
                                           ></img>
                                           GUARDAR
                                           <img
