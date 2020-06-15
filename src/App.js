@@ -13,7 +13,7 @@ import Home from "./components/home/Home";
 import Footer from "./components/footer/Footer";
 import Nosotros from "./components/nosotros/Nosotros";
 
-import { Aprendamos } from "./components/aprendamos/Aprendamos";
+import { Aprendamos } from "./components/aprendamos/aprendamos";
 import { EmpiezaAprender } from "./components/aprendamos/EmpiezaAprender";
 import  RegistroNiños from "./components/aprendamos/cuidador/RegistroNiños";
 import { BienvenidoCuidador } from "./components/aprendamos/cuidador/BienvenidoCuidador";
@@ -242,6 +242,8 @@ function App() {
                 contenidoFirebase={contenidoFirebase}
                 error={error}
                 loading={loading}
+                  firebaseUser={firebaseUser}
+                idChild={idChild}
               />
             </Route>
             <Route path="/aprendamos/cuidador/socioemocional/tips" exact>
