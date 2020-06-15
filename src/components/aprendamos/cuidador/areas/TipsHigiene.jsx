@@ -81,7 +81,7 @@ const TipsHigiene = ({
                                 className="border-video-higiene"
                                 width="600"
                                 height="350"
-                                src="https://www.youtube.com/embed/2mY7AFTtYwQ"
+                                src={item.data().video}
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen
@@ -157,7 +157,7 @@ const TipsHigiene = ({
                                 className="border-video-higiene"
                                 width="600"
                                 height="350"
-                                src="https://www.youtube.com/embed/2mY7AFTtYwQ"
+                                src={item.data().video}
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen
