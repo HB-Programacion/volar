@@ -9,13 +9,13 @@ const TipsRutina = () => {
       <div className="background-tips-rutina" id="aprendamos-page">
       <div className=" animated fadeIn">
         <div className="">
-          <div className="row justify-content-center h-100">
-            <h1 className="tittle-tips">EVITA ENFERMEDADES</h1>
+          <div className="row justify-content-center h-100 sin-margin-row">
+            <h1 className="tittle-tips tracking-in-expand-fwd-top">EVITA ENFERMEDADES</h1>
           </div>
-          <div className="row justify-content-center  h-100">
+          <div className="row justify-content-center  h-100 sin-margin-row">
             <h3 className="tips-numbers">TIP 1</h3>
           </div>
-          <div className="row tips-margin-top">
+          <div className="row tips-margin-top sin-margin-row">
             <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
               <div className="videoWrapper">
                 <iframe

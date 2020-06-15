@@ -1,5 +1,7 @@
 import React from "react";
 import "./areas.css";
+
+import { Orbitals } from "react-spinners-css";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import iconoHigieneWhite from "./../../../../images/icon-higiene-white.png";
 import iconoTipLighBlue from "./../../../../images/icon-tip-ligh-blue.svg";
@@ -48,14 +50,18 @@ export const Higiene = ({
           <div className="box-title-higine show-desktop">
             <img
               src={iconoHigieneWhite}
-              className="icono-area"
+              className="icono-area heartbeat"
               alt="gota de agua"
             />
-            <h1 className="title-area">HIGIENE Y AGUA SEGURA</h1>
+            <h1 className="title-area  tracking-in-expand-fwd-top">HIGIENE Y AGUA SEGURA</h1>
           </div>
           <div className="list-videos-tips">
             {error && <strong>Error: {JSON.stringify(error)}</strong>}
-            {loading && <span>Collection: Loading...</span>}
+            {loading && <div className="grande">
+                <div className="centrando-spiner">
+          <Orbitals color="#EF8B44" size={900} />
+        </div>
+      </div> }
             {contenidoFirebase && (
               <div className="row">
                 {contenidoFirebase.docs
