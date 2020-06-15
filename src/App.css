@@ -273,9 +273,9 @@ html {
 
 input:focus {
   outline: none;
-  -webkit-box-shadow: 4px 3px 3px 1px rgba(46, 51, 94, 1);
-  -moz-box-shadow: 4px 3px 3px 1px rgba(46, 51, 94, 1);
-  box-shadow: 4px 3px 3px 1px rgba(46, 51, 94, 1);
+  -webkit-box-shadow: 1px 2px 2px 1px rgba(46, 51, 94, 1);
+  -moz-box-shadow: 1px 2px 2px 1px rgba(46, 51, 94, 1);
+  box-shadow: 1px 2px 2px 1px rgba(46, 51, 94, 1);
 }
 
 
@@ -339,6 +339,15 @@ input:focus {
   .text-white {
     font-size: 1.4rem;
   }
+
+  .btn-navy-blue:hover,
+.btn-navy-blue:focus {
+  border: 3.5px #1A1F46;
+  text-decoration: none;
+
+  font-size: 1.5rem;
+}
+
 
 }
 

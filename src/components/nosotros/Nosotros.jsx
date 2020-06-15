@@ -2,16 +2,15 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import "./nosotros.css"
-import starsLeft from "../../images/stars-left.svg"
-import starsRight from "../../images/stars-right.svg"
+
 import info1 from "../../images/nosotros-img/info-1.png"
 import crecer from "../../images/nosotros-img/crecer.svg"
 import agua from "../../images/nosotros-img/agua-segura.svg"
-import cohete from "../../images/nosotros-img/cohete_fondo.png"
 import arrowLeft from '../../images/arrow-left-orange.svg';
 import arrowRigth from '../../images/arrow-right-orange.svg';
 import starsLeftDesktop from "./../../images/stars-left-desktop.svg";
 import starsRightDesktop from "./../../images/stars-right-desktop.svg";
+import starsRight from "../../images/stars-right.svg"
 
 const Nosotros = () => {
     return(

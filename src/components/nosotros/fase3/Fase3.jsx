@@ -71,7 +71,7 @@ const Fase3 = () => {
                 </div>
             </div>
             <div className="box-boton-fase3">
-                <a href="/nosotros/fase3/modelo-volar" className="btn-modelo-volar wobble-hor-bottom">
+                <a href="/nosotros/fase3/modelo-volar" className="btn-modelo-volar link wobble-hor-bottom">
                     <img src={cohete} className="w-12 mr-2"></img>
                     Modelo volar
                 </a>
