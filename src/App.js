@@ -90,15 +90,22 @@ function App() {
     }
   );
 
-  const mandarIdChild = (idChildArray, nameChild) => {
+
+
+  const mandarIdChild = (idChildArray, nameChild, edadChild) => {
     setIdChild(idChildArray);
     localStorage.setItem('nameChild', nameChild)
+    localStorage.setItem('edadChildLogueado', edadChild)
+    localStorage.setItem('idChildLogueado', idChildArray)
+    console.log( localStorage.getItem('idChildLogueado'))
+
   };
 
 
   
   const updateArrayChild = (arrayChildT) => {
     setArrayChild(arrayChildT);
+
   };
 
   const ocultarMenuMobile = () => {
@@ -176,7 +183,17 @@ function App() {
             exact
             component={RegistroNiños}
           />
-          <Route path={`/aprendamos/cuidador/${idChild}`} exact>
+          {localStorage.getItem('idChildLogueado')!==null ? (
+             <Route path={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueado')}`} exact>
+             <BienvenidoCuidador
+               idChild={idChild}
+               firebaseUser={firebaseUser}
+               arrayChild={arrayChild}
+               contenidoFirebase={contenidoFirebase}
+             />
+           </Route>
+          ): (
+            <Route path={`/aprendamos/cuidador/`} exact>
             <BienvenidoCuidador
               idChild={idChild}
               firebaseUser={firebaseUser}
@@ -184,6 +201,9 @@ function App() {
               contenidoFirebase={contenidoFirebase}
             />
           </Route>
+          )
+          }
+    
           <Route path="/aprendamos/cuidador/higiene" exact>
             <Higiene
               contenidoFirebase={contenidoFirebase}

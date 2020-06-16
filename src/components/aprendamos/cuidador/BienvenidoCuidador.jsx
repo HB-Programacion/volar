@@ -81,7 +81,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
         <div className="box-row-2">
           
           {firebaseUser !== null ? (
-            arrayChild.docs.length == 0 ? (
+        arrayChild.docs.length == 0 ? (
               <p className="box-text ">
                 Hoy aprenderemos a desarrollar las habilidades de lenguaje de tu
                 hijo aprovechando los momentos de aseo. 

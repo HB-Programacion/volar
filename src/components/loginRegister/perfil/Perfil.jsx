@@ -18,8 +18,6 @@ import childO from "./../../../images/child-o.svg";
 import deleteImg from "./../../../images/delete.svg";
 import editImg from "./../../../images/edit.svg";
 
-
-
 const Perfil = (props) => {
   const [emailEdit, setEmailEdit] = React.useState("");
   const [nameEdit, setNameEdit] = React.useState("");
@@ -100,7 +98,7 @@ const Perfil = (props) => {
             setDataPerfilChild(item.data());
             setEditNameChild(item.data().nameChild);
             setEditSexoChild(item.data().sexoChild);
-            setEditFechaNacimientoChild(item.data().nacimientoChild);
+            setEditEdadChild(item.data().edadChild);
             setEditRelationshipChild(item.data().relationshipChild);
           })
           .catch(function (error) {
@@ -126,12 +124,14 @@ const Perfil = (props) => {
       .then((datos) => {
         setDistritos(datos);
       });
-    console.log("judith", editFechaNacimientoChild);
-    if (editFechaNacimientoChild !== "") {
+
+    {
+      /* if (editFechaNacimientoChild !== "") {
       const birthday = new Date(editFechaNacimientoChild.split("-").join("/"));
       const ageDifMs = Date.now() - birthday.getTime();
       const ageDate = new Date(ageDifMs);
       setEditEdadChild(Math.abs(ageDate.getUTCFullYear() - 1970));
+    } */
     }
   }, [props.firebaseUser, idChild, editFechaNacimientoChild]);
 
@@ -200,15 +200,11 @@ const Perfil = (props) => {
       setError("Contraseña actual incorrecta");
       return;
     }
-    if (
-      !newPassword.trim()
-    ) {
+    if (!newPassword.trim()) {
       setError("Añadir la nueva contraseña");
       return;
     }
-    if (
-      newPassword !== repeatNewPassword 
-    ) {
+    if (newPassword !== repeatNewPassword) {
       setError("Las contraseñas no coinciden");
       return;
     }
@@ -256,12 +252,12 @@ const Perfil = (props) => {
       const user = auth.currentUser;
       user.updatePassword(newPassword);
       await db
-      .collection("usuarios")
-      .doc(props.firebaseUser.uid)
-      .update({
-        ...dataPerfil,
-       password:newPassword
-      });
+        .collection("usuarios")
+        .doc(props.firebaseUser.uid)
+        .update({
+          ...dataPerfil,
+          password: newPassword,
+        });
 
       setGuardado("Tu contraseña ha sido actualizada");
     } catch (error) {
@@ -287,8 +283,8 @@ const Perfil = (props) => {
       setErrorChild("Agregar sexo del niño(a)");
       return;
     }
-    if (!editFechaNacimientoChild.trim()) {
-      setErrorChild("Agregar fecha de nacimiento");
+    if (!editEdadChild.trim()) {
+      setErrorChild("Agregar Rango de edad del niño(a)");
       return;
     }
     if (!editRelationshipChild.trim()) {
@@ -311,7 +307,6 @@ const Perfil = (props) => {
           ...dataPerfilChild,
           nameChild: editNameChild,
           sexoChild: editSexoChild,
-          nacimientoChild: editFechaNacimientoChild,
           relationshipChild: editRelationshipChild,
           edadChild: editEdadChild,
         });
@@ -339,7 +334,9 @@ const Perfil = (props) => {
 
   return (
     <div className="register-child animated fadeIn">
-      <h2 className="subtittle-register-child tracking-in-expand-fwd-top">Actualizar Perfil</h2>
+      <h2 className="subtittle-register-child tracking-in-expand-fwd-top">
+        Actualizar Perfil
+      </h2>
       {usuarioChild && (
         <div>
           {usuarioChild.docs.length === 0 ? (
@@ -495,7 +492,10 @@ const Perfil = (props) => {
                 </div>
                 <div className="row mt-4">
                   <div className="col-sm-10 col-md-10 col-lg-10 col-xl-10">
-                    <button className="btn-navy-blue text-white wobble-hor-bottom boton-guardar-perfil" type="submit">
+                    <button
+                      className="btn-navy-blue text-white wobble-hor-bottom boton-guardar-perfil"
+                      type="submit"
+                    >
                       <img src={arrowLeft} className="arrow-blue"></img>
                       GUARDAR
                       <img src={arrowRight} className="arrow-blue"></img>
@@ -680,96 +680,101 @@ const Perfil = (props) => {
                     </div>
                   </form>
                   {props.firebaseUser.providerData[0].providerId !==
-                "google.com" ? (
-                  <form onSubmit={actualizarPassword}>
-                  <div className="box-actualizar-password">
-                    <div className="row">
-                      <Link
-                        style={{
-                          margin: "auto",
-                          fontWeight: 700,
-                          fontSize: "1.3rem",
-                          marginBottom: "1.5rem",
-                        }}
-                      >
-                        Cambiar contraseña
-                      </Link>
-                    </div>
-                    {error && <div className="alert alert-danger">{error}</div>}
-                  {guardado && (
-                    <div className="alert alert-success">{guardado}</div>
-                  )}
-                    <div className="row">
-                      <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                        <p className="letter-register">CONTRASEÑA ACTUAL</p>
-                        <input
-                          className="input-register-space"
-                          type="password"
-                          placeholder="Contraseña Actual"
-                          name="Actual Contraseña"
-                          onChange={(e) => setCurrentPassword(e.target.value)}
-                          value={currentPassword}
-                        />
-                      </div>
-                      <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                        {password === currentPassword &&
-                        password.length >= 6 ? (
-                          <p>La contraseña actual es la correcta</p>
-                        ) : (
-                          <p>La contraseña actual no es la correcta</p>
+                  "google.com" ? (
+                    <form onSubmit={actualizarPassword}>
+                      <div className="box-actualizar-password">
+                        <div className="row">
+                          <Link
+                            style={{
+                              margin: "auto",
+                              fontWeight: 700,
+                              fontSize: "1.3rem",
+                              marginBottom: "1.5rem",
+                            }}
+                          >
+                            Cambiar contraseña
+                          </Link>
+                        </div>
+                        {error && (
+                          <div className="alert alert-danger">{error}</div>
                         )}
+                        {guardado && (
+                          <div className="alert alert-success">{guardado}</div>
+                        )}
+                        <div className="row">
+                          <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <p className="letter-register">CONTRASEÑA ACTUAL</p>
+                            <input
+                              className="input-register-space"
+                              type="password"
+                              placeholder="Contraseña Actual"
+                              name="Actual Contraseña"
+                              onChange={(e) =>
+                                setCurrentPassword(e.target.value)
+                              }
+                              value={currentPassword}
+                            />
+                          </div>
+                          <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            {password === currentPassword &&
+                            password.length >= 6 ? (
+                              <p>La contraseña actual es la correcta</p>
+                            ) : (
+                              <p>La contraseña actual no es la correcta</p>
+                            )}
+                          </div>
+                        </div>
+                        <div className="row">
+                          <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <p className="letter-register">NUEVA CONTRASEÑA</p>
+                            <input
+                              className="input-register-space"
+                              type="password"
+                              placeholder="Nueva Contraseña"
+                              name="Nueva Contraseña"
+                              onChange={(e) => setNewPassword(e.target.value)}
+                              value={newPassword}
+                            />
+                          </div>
+                          <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <p className="letter-register">
+                              REPETIR NUEVA CONTRASEÑA
+                            </p>
+                            <input
+                              className="input-register-space"
+                              type="password"
+                              placeholder="Repetir Nueva Contraseña"
+                              name="Repetir Nueva Contraseña"
+                              onChange={(e) =>
+                                setRepeatNewPassword(e.target.value)
+                              }
+                              value={repeatNewPassword}
+                            />
+                          </div>
+                        </div>
+                        <div className="row">
+                          <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <button
+                              className="btn-navy-blue-password text-white"
+                              type="submit"
+                            >
+                              <img
+                                src={arrowLeft}
+                                className="arrow-blue-password"
+                              ></img>
+                              Actualizar contraseña
+                              <img
+                                src={arrowRight}
+                                className="arrow-blue-password"
+                              ></img>
+                            </button>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    <div className="row">
-                      <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                        <p className="letter-register">NUEVA CONTRASEÑA</p>
-                        <input
-                          className="input-register-space"
-                          type="password"
-                          placeholder="Nueva Contraseña"
-                          name="Nueva Contraseña"
-                          onChange={(e) => setNewPassword(e.target.value)}
-                          value={newPassword}
-                        />
-                      </div>
-                      <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                        <p className="letter-register">
-                          REPETIR NUEVA CONTRASEÑA
-                        </p>
-                        <input
-                          className="input-register-space"
-                          type="password"
-                          placeholder="Repetir Nueva Contraseña"
-                          name="Repetir Nueva Contraseña"
-                          onChange={(e) =>
-                            setRepeatNewPassword(e.target.value)
-                          }
-                          value={repeatNewPassword}
-                        />
-                      </div>
-                    </div>
-                    <div className="row">
-                      <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <button
-                          className="btn-navy-blue-password text-white"
-                          type="submit"
-                        >
-                          <img
-                            src={arrowLeft}
-                            className="arrow-blue-password"
-                          ></img>
-                          Actualizar contraseña
-                          <img
-                            src={arrowRight}
-                            className="arrow-blue-password"
-                          ></img>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-                ): ""}
-                
+                    </form>
+                  ) : (
+                    ""
+                  )}
                 </div>
                 <div className="col-sm-12 col-md-12	col-lg-5 col-xl-5">
                   <div className="vertical-line"></div>
@@ -927,20 +932,40 @@ const Perfil = (props) => {
                                         <div className="row">
                                           <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                                             <p className="letter-register">
-                                              FECHA DE NACIMIENTO:
+                                              EDAD DEL NIÑO
                                             </p>
-                                            <input
-                                              className="input-register-space"
-                                              type="date"
-                                              name="editFechaNacimientoChild"
+                                            <select
+                                              className="select-register-space"
                                               onChange={(e) =>
-                                                setEditFechaNacimientoChild(
-                                                  e.target.value
-                                                )
+                                                setEditEdadChild(e.target.value)
                                               }
-                                              value={editFechaNacimientoChild}
-                                            />
-                                            <p>{editFechaNacimientoChild}</p>
+                                              value={editEdadChild}
+                                            >
+                                              <option value="">
+                                                ---SELECCIONA---
+                                              </option>
+                                              <option value="-1">
+                                                Niño(a) por nacer
+                                              </option>
+                                              <option value="0">
+                                                0 - 1 año
+                                              </option>
+                                              <option value="1">
+                                                1 - 2 años
+                                              </option>
+                                              <option value="2">
+                                                2 - 3 años
+                                              </option>
+                                              <option value="3">
+                                                3 - 4 años
+                                              </option>
+                                              <option value="4">
+                                                4 - 5 años
+                                              </option>
+                                              <option value="5">
+                                                5 - 6 años
+                                              </option>
+                                            </select>
                                           </div>
                                           <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                                             <p className="letter-register">
