@@ -102,7 +102,7 @@ export const Juego = ({
         </div>
       ) : (
         <div>
-          <div className="box-title-higine show-desktop">
+          <div className="box-title-juego show-desktop">
             <img
               src={iconoJuegoWhite}
               className="icono-area"

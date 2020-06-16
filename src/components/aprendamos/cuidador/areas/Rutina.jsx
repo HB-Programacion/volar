@@ -102,7 +102,8 @@ export const Rutina= ({
         </div>
       ) : (
         <div>
-          <div className="box-title-rutina show-desktop">
+          <div className="box-title-rutina
+           show-desktop">
             <img
               src={iconoRutinaWhite}
               className="icono-area"

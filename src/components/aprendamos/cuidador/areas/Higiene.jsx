@@ -41,6 +41,7 @@ export const Higiene = ({
   console.log("hola", childData.data().edadChild)
     ///Obteniendo todo el contenido de firebase///*/
   }, [firebaseUser, idChild]);
+  console.log(edad, "edad")
 
   return (
     <div>
@@ -67,7 +68,7 @@ export const Higiene = ({
                   .filter(
                     (item) =>
                       item.data().seccion === "Higiene y Agua Segura" &&
-                      item.data().edad == edad
+                      item.data().edad ==  localStorage.getItem('edadChildLogueado')
                   )
                   .map((item) => (
                     <div

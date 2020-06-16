@@ -31,7 +31,7 @@ const MenuChild = ({firebaseUser, mandarIdChild,  updateArrayChild}) => {
             {usuarioChild && (<div className="">
             {usuarioChild.docs.map((item, key) => (
                <NavLink to={`/aprendamos/cuidador/${item.data().id}`} key={key} activeClassName='is-active'  
-             className="item" onClick={()=>mandarIdChild(item.data().id, item.data().nameChild)}>{item.data().nameChild}</NavLink>
+             className="item" onClick={()=>mandarIdChild(item.data().id, item.data().nameChild, item.data().edadChild)}>{item.data().nameChild}</NavLink>
               ))}
                </div>)}
         <NavLink to="/registro-niño" className="item">+ AGREGAR NIÑO(A)</NavLink>

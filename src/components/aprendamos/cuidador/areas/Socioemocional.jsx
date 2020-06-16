@@ -102,7 +102,7 @@ export const Socioemocional = ({
         </div>
       ) : (
         <div>
-          <div className="box-title-higine show-desktop">
+          <div className="box-title-socioemocional show-desktop">
             <img
               src={iconoSocioemocionalWhite}
               className="icono-area"
