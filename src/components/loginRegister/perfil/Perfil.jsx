@@ -15,6 +15,10 @@ import { auth, db } from "../../../components/firebase/firebase";
 import { useCollection } from "react-firebase-hooks/firestore";
 import childA from "./../../../images/child-a.svg";
 import childO from "./../../../images/child-o.svg";
+import deleteImg from "./../../../images/delete.svg";
+import editImg from "./../../../images/edit.svg";
+
+
 
 const Perfil = (props) => {
   const [emailEdit, setEmailEdit] = React.useState("");
@@ -788,7 +792,7 @@ const Perfil = (props) => {
                                 alt="icono de tip"
                               />
                             )}
-                            <div className="box-text-video-tip">
+                            <div className="box-text-video-tip mt-3">
                               <h3 className="subtittle-video-tip">
                                 {item.data().nameChild}
                               </h3>
@@ -799,20 +803,20 @@ const Perfil = (props) => {
                             <div className="btn-editar-eliminar">
                               <button
                                 type="button"
-                                className="btn btn-danger btn-sm float-right"
+                                className="btn  btn-sm float-right"
                                 data-toggle="modal"
                                 data-target={"#hola" + key}
                               >
-                                Eliminar
+                                <img src={deleteImg} className="w-50"></img>
                               </button>
                               <button
                                 type="button"
-                                className="btn btn-warning btn-sm float-right mr-2"
+                                className="btn btn-sm float-right"
                                 data-toggle="modal"
                                 data-target={"#editar" + key}
                                 onClick={() => activarEdicion(item)}
                               >
-                                Editar
+                                <img src={editImg} className="w-50"></img>
                               </button>
                               <div
                                 class="modal fade "

@@ -71,7 +71,12 @@
       margin-left: 2rem;
   }
   .btn-editar-eliminar{
-      margin: 2rem 4rem;
+      /* margin: 2rem 4rem; */
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      position: relative;
+      right: -3rem;
   }
 
   .texto-modal{
@@ -95,8 +100,8 @@
     background-color:#7DC7C5;
     padding: 8px 2px;
     border-radius: 25px;
-    border: 1.3px solid #1A1F46;
-    box-shadow: 1px 1px 1px 1px #1A1F46;
+    border: 1.5px solid rgb(70, 180, 177);
+    box-shadow: 1px 1px 6px #7DC7C5;
     font-size: 1rem;
     text-align: center;
     text-decoration:none!important;
@@ -104,7 +109,8 @@
     display: block;
     margin:0 auto;
     font-family: "helvetica";
-    
+    padding-left: .5rem;
+    padding-right: .5rem
     }
     .btn-navy-blue-password:hover,.btn-navy-blue:focus{
       border: 2.5px #1A1F46;
@@ -125,12 +131,20 @@
     .arrow-blue-password{
       width: 1.2rem;
       height: auto;
-      margin-left: 1rem;
-      margin-right: 1rem;
+     
     }
-
-
-    
+    .modal-backdrop{
+        position: relative!important;
+        background: #2E335E!important
+    }
+   
+    .modal-dialog{
+        margin:8.75rem auto!important;
+       
+    }
+    .modal{
+        background-color: rgba(46, 47, 49, 0.616)!important
+    }
 
   @media (max-width: 768px) {
     .list-register2 {
@@ -152,7 +166,7 @@
         margin-left: 0rem;
     }
     .btn-editar-eliminar{
-        margin: 1rem 1rem;
+       right: -1rem;
     }
 
     .siguiente{
