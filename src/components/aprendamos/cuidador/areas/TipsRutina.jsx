@@ -5,6 +5,7 @@ import { auth, db } from "../../../../components/firebase/firebase";
 // import cohete from '../../images/cohete-volando.svg';
 
 import { Orbitals } from "react-spinners-css";
+import arrTips from '../../../../data'
 
 const TipsRutina = ({
   contenidoFirebase,
@@ -13,43 +14,12 @@ const TipsRutina = ({
   firebaseUser,
   idChild,
 }) => {
-  const [edad, setEdad] = React.useState("");
-
-  React.useEffect(() => {
-    if (firebaseUser !== null && idChild !== "") {
-      const childData = db
-        .collection("usuarios")
-        .doc(firebaseUser.uid)
-        .collection("addChild")
-        .doc(idChild);
-      childData
-        .get()
-        .then((snapShots) => {
-          setEdad(snapShots.data().edadChild);
-        })
-        .catch(function (error) {
-          console.log("Error getting document:", error);
-        });
-    }
-    /*  const childData= db.collection("usuarios").doc(firebaseUser.uid).collection("addChild").doc("OxtF7ijtoOlOX7zx3xcY")
-  console.log("hola", childData.data().edadChild)
-    ///Obteniendo todo el contenido de firebase///*/
-  }, [firebaseUser, idChild]);
-
+ 
   return (
     <div>
       {firebaseUser !== null ? (
         <div className="background-tips-rutina" id="aprendamos-page">
           <div className=" animated fadeIn">
-            {error && <strong>Error: {JSON.stringify(error)}</strong>}
-            {loading && (
-              <div className="grande">
-                <div className="centrando-spiner">
-                  <Orbitals color="#EF8B44" size={900} />
-                </div>{" "}
-              </div>
-            )}
-            {contenidoFirebase && (
               <>
                 {contenidoFirebase.docs
                   .filter(
@@ -57,7 +27,7 @@ const TipsRutina = ({
                       item.data().seccion === "Rutina" &&
                       item.data().n_tip ==
                         localStorage.getItem("localNumberTip") &&
-                      item.data().edad == edad
+                      item.data().edad == localStorage.getItem('edadChildLogueadoActive')
                   )
                   .map((item) => (
                     <div className="" key={item}>
@@ -91,7 +61,7 @@ const TipsRutina = ({
                         </div>
                         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                           <div class="text-tips">
-                            <h3>Hola {localStorage.getItem("nameUser")}</h3>
+                            <h3>Hola {localStorage.getItem("nameUserActive")}</h3>
                             {item.data().texto1B !== "" ? (
                               <p class="text-tips-light">
                                 {item.data().texto1A}{" "}
@@ -110,26 +80,16 @@ const TipsRutina = ({
                     </div>
                   ))}
               </>
-            )}
           </div>
         </div>
       ) : (
         <div className="background-tips-rutina" id="aprendamos-page">
           <div className=" animated fadeIn">
-            {error && <strong>Error: {JSON.stringify(error)}</strong>}
-            {loading && (
-              <div className="grande">
-                <div className="centrando-spiner">
-                  <Orbitals color="#EF8B44" size={900} />
-                </div>{" "}
-              </div>
-            )}
-            {contenidoFirebase && (
               <>
-                {contenidoFirebase.docs
+                {arrTips
                   .filter(
                     (item) =>
-                      item.data().seccion === "Rutina" &&
+                      item.seccion === "Rutina" &&
                       item.data().n_tip ==
                         localStorage.getItem("localNumberTip") &&
                       item.data().edad ==
@@ -196,7 +156,6 @@ const TipsRutina = ({
                     </div>
                   ))}
               </>
-            )}
           </div>
         </div>
       )}

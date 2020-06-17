@@ -99,7 +99,7 @@ export const Socioemocional = ({
           </div>
           <div className="list-videos-tips">
               <div className="row">
-                {contenidoFirebase.docs
+                {arrTips
                   .filter(
                     (item) =>
                       item.seccion === "Socioemocional" &&
