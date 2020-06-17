@@ -59,25 +59,39 @@ const Login = (props) => {
         fecha:Date.now()
       })*/
 
-      await db.collection("usuarios").doc(res.user.uid).set({
-        email: res.user.email,
-        uid: res.user.uid,
-        nombre:res.user.displayName.split(' ')[0] ,
-        apellido: res.user.displayName.length > 1 ? res.user.displayName.split(' ')[1] : "" ,
-        departamento:"",
-        provincia:"",
-        distrito:"",
-        breca:"",
-        codigoBreca:"",
-        departamentoKey:"",
-        provinciaKey:"",
-        tipo: "cuidador",
-      });
+      await  db.collection("usuarios").doc(res.user.uid).get().then( usuarioBBDD => {
+        if (!usuarioBBDD .exists) {
+              console.log("No existe el usuario");
+              db.collection("usuarios").doc(res.user.uid).set({
+                email: res.user.email,
+                uid: res.user.uid,
+                nombre:res.user.displayName.split(' ')[0] ,
+                apellido: res.user.displayName.length > 1 ? res.user.displayName.split(' ')[1] : "" ,
+                departamento:"",
+                provincia:"",
+                distrito:"",
+                breca:"",
+                codigoBreca:"",
+                departamentoKey:"",
+                provinciaKey:"",
+                tipo: "cuidador",
+              })
+              props.history.push("/perfil");
+
+              //Entiendo que aqui va el código para asignar el mail e imagen
+        }
+        else{
+              console.log("Existe el usuario");
+           
+             props.history.push("/");
+        }
+     });
+  
+
     
       setPassword("");
       setEmail("");
       setError(null);
-      props.history.push("/");
     } catch (error) {
       console.log("error gmail", error);
       if (error.code === "auth/invalid-email") {
@@ -97,13 +111,36 @@ const Login = (props) => {
         nombre:'tarea de ejemplo',
         fecha:Date.now()
       })*/
-      await db.collection("usuarios").doc(res.user.uid).set({
-        email: res.user.email,
-        uid: res.user.uid,
-        nombre:res.user.displayName.split(' ')[0] ,
-        apellido: res.user.displayName.split(' ')[2],
-        tipo: "cuidador",
-      });
+     
+  
+      await  db.collection("usuarios").doc(res.user.uid).get().then( usuarioBBDD => {
+        if (!usuarioBBDD .exists) {
+              console.log("No existe el usuario");
+              db.collection("usuarios").doc(res.user.uid).set({
+                email: res.user.email,
+                uid: res.user.uid,
+                nombre:res.user.displayName.split(' ')[0] ,
+                apellido: res.user.displayName.length > 1 ? res.user.displayName.split(' ')[1] : "" ,
+                departamento:"",
+                provincia:"",
+                distrito:"",
+                breca:"",
+                codigoBreca:"",
+                departamentoKey:"",
+                provinciaKey:"",
+                tipo: "cuidador",
+              })
+              props.history.push("/perfil");
+
+              //Entiendo que aqui va el código para asignar el mail e imagen
+        }
+        else{
+              console.log("Existe el usuario");
+           
+             props.history.push("/");
+        }
+     });
+  
       setPassword("");
       setEmail("");
       setError(null);

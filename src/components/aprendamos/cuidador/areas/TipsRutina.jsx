@@ -95,7 +95,7 @@ const TipsRutina = ({
                             {item.data().texto1B !== "" ? (
                               <p class="text-tips-light">
                                 {item.data().texto1A}{" "}
-                                {localStorage.getItem("nameChild")}{" "}
+                                {localStorage.getItem('nameChildActive')}
                                 {item.data().texto1B}
                               </p>
                             ) : (

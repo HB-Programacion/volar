@@ -52,7 +52,6 @@ const RegistroChild = (props) => {
   };
 
   React.useEffect(() => {
-    console.log("novato0", idChild)
    { /*if(fechaNacimiento!==""){
         const birthday=new Date(fechaNacimiento.split('-').join('/'));
         const ageDifMs = Date.now() - birthday.getTime();
@@ -62,7 +61,6 @@ const RegistroChild = (props) => {
 
       if(idChild!==""){
         const editarIdChild = async ( ) => {
-          console.log("novato0", idChild)
           try {
             db.collection("usuarios").doc(props.firebaseUser.uid).collection('addChild').doc(idChild).update({
                id:idChild
@@ -73,8 +71,12 @@ const RegistroChild = (props) => {
         };
         editarIdChild()
         props.mandarIdChild(idChild)
+        localStorage.getItem('idChildLogueadoActive')
         props.history.push(`/aprendamos/cuidador/${idChild}`);
       }
+
+      localStorage.setItem('nameChildActive', nameChild)
+      localStorage.setItem('edadChildLogueadoActive', edadChild)
 
   /*    db.collection("usuarios").doc(props.firebaseUser.uid).collection('addChild').doc(idChild).update({
         nameChild: nameChild,
@@ -100,7 +102,7 @@ const RegistroChild = (props) => {
         id:""
       }).then(docRef=> {
         setIdChild(docRef.id)
-        console.log("Document written with ID: ", docRef.id);
+
     });
       setError(null);
     } catch (error) {

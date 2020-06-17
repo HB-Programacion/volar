@@ -83,14 +83,10 @@ const Signup = (props) => {
     }
   }, [email, password, name, lastName, props.history]);
   
-  const registerGoogle= React.useCallback(async () => {
+ {/*} const registerGoogle= React.useCallback(async () => {
     try {
        const  provider = new firebase.auth.GoogleAuthProvider()
       const res = await auth.signInWithPopup(provider);
-      /*await db.collection(res.user.uid).add({
-        nombre:'tarea de ejemplo',
-        fecha:Date.now()
-      })*/
       await db.collection("usuarios").doc(res.user.uid).set({
         email: res.user.email,
         uid: res.user.uid,
@@ -116,10 +112,6 @@ const Signup = (props) => {
     try {
        const  provider =  new firebase.auth.FacebookAuthProvider()
       const res = await auth.signInWithPopup(provider);
-      /*await db.collection(res.user.uid).add({
-        nombre:'tarea de ejemplo',
-        fecha:Date.now()
-      })*/
       await db.collection("usuarios").doc(res.user.uid).set({
         email: res.user.email,
         uid: res.user.uid,
@@ -139,7 +131,7 @@ const Signup = (props) => {
     } catch (error) {
       console.log(error);
     }
-  }, [ props.history]);
+  }, [ props.history]);*/}
 
   return (
       <div className="animated fadeIn register-child">
@@ -194,7 +186,8 @@ const Signup = (props) => {
               <img src={arrowRight} className="arrow-blue"></img>
             </button>
           </form>
-          <div className="loginDivider">
+         {
+           /*  <div className="loginDivider">
             <span className="loginDivider-text">o</span>
           </div>
           <div className="btn-facebook-google">
@@ -205,7 +198,8 @@ const Signup = (props) => {
               <button className="btn-google text-white" onClick={()=>registerGoogle()}>
                 Regístrate con Google
               </button>
-          </div>
+          </div>*/ 
+         }
           <div className="box-text-a">
             <div className="box-register">
               <p>¿Ya tienes una cuenta?</p>

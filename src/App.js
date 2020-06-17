@@ -94,10 +94,16 @@ function App() {
 
   const mandarIdChild = (idChildArray, nameChild, edadChild) => {
     setIdChild(idChildArray);
-    localStorage.setItem('nameChild', nameChild)
-    localStorage.setItem('edadChildLogueado', edadChild)
-    localStorage.setItem('idChildLogueado', idChildArray)
+    localStorage.setItem('nameChildActive', nameChild)
+    localStorage.setItem('edadChildLogueadoActive', edadChild)
+    localStorage.setItem('idChildLogueadoActive', idChildArray)
     console.log( localStorage.getItem('idChildLogueado'))
+    const dateChildActive = {
+      name: nameChild, // Generamos una id rápida
+      edad: edadChild,
+      id: idChildArray,
+  };
+  localStorage.setItem('dateChildActive', JSON.stringify(dateChildActive))
 
   };
 
@@ -105,6 +111,8 @@ function App() {
   
   const updateArrayChild = (arrayChildT) => {
     setArrayChild(arrayChildT);
+
+    console.log("judith" , arrayChild)
 
   };
 
@@ -183,8 +191,8 @@ function App() {
             exact
             component={RegistroNiños}
           />
-          {localStorage.getItem('idChildLogueado')!==null ? (
-             <Route path={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueado')}`} exact>
+          {localStorage.getItem('idChildLogueadoActive')!==null ? (
+             <Route path={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}`} exact>
              <BienvenidoCuidador
                idChild={idChild}
                firebaseUser={firebaseUser}
@@ -204,7 +212,7 @@ function App() {
           )
           }
     
-          <Route path="/aprendamos/cuidador/higiene" exact>
+          <Route path={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/higiene`} exact>
             <Higiene
               contenidoFirebase={contenidoFirebase}
               error={error}
@@ -213,7 +221,7 @@ function App() {
               idChild={idChild}
             />
              </Route>
-            <Route path="/aprendamos/cuidador/socioemocional" exact>
+            <Route path={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/socioemocional`}exact>
               <Socioemocional
                 contenidoFirebase={contenidoFirebase}
                 error={error}
@@ -222,7 +230,7 @@ function App() {
                 idChild={idChild}
               />
             </Route>
-            <Route path="/aprendamos/cuidador/rutina" exact>
+            <Route path={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/rutina`}exact>
               <Rutina
                 contenidoFirebase={contenidoFirebase}
                 error={error}
@@ -231,7 +239,7 @@ function App() {
                 idChild={idChild}
               />
             </Route>
-            <Route path="/aprendamos/cuidador/juego" exact>
+            <Route path={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/juego`} exact>
               <Juego
                 contenidoFirebase={contenidoFirebase}
                 error={error}
@@ -240,7 +248,7 @@ function App() {
                 idChild={idChild}
               />
             </Route>
-            <Route path="/aprendamos/cuidador/nutricion" exact>
+            <Route path={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/nutricion`} exact>
               <Nutricion
                 contenidoFirebase={contenidoFirebase}
                 error={error}
@@ -249,7 +257,7 @@ function App() {
                 idChild={idChild}
               />
             </Route>
-            <Route path="/aprendamos/cuidador/sesamo" exact>
+            <Route path={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/sesamo`} exact>
               <Sesamo
                 contenidoFirebase={contenidoFirebase}
                 error={error}
@@ -258,7 +266,7 @@ function App() {
                 idChild={idChild}
               />
             </Route>
-            <Route path="/aprendamos/cuidador/higiene/tips" exact>
+            <Route path={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/higiene/tips`} exact>
               <TipsHigiene
                 contenidoFirebase={contenidoFirebase}
                 error={error}
@@ -267,7 +275,7 @@ function App() {
                 idChild={idChild}
               />
             </Route>
-            <Route path="/aprendamos/cuidador/socioemocional/tips" exact>
+            <Route path={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/socioemocional/tips`}exact>
               <TipsSocioemocional
                 contenidoFirebase={contenidoFirebase}
                 error={error}
@@ -276,7 +284,7 @@ function App() {
                 idChild={idChild}
               />
             </Route>
-            <Route path="/aprendamos/cuidador/rutina/tips" exact>
+            <Route path={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/rutina/tips`} exact>
               <TipsRutina
                 contenidoFirebase={contenidoFirebase}
                 error={error}
@@ -285,7 +293,7 @@ function App() {
                 idChild={idChild}
               />
             </Route>
-            <Route path="/aprendamos/cuidador/juego/tips" exact>
+            <Route path={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/juego/tips`} exact>
               <TipsJuego
                 contenidoFirebase={contenidoFirebase}
                 error={error}
@@ -294,7 +302,7 @@ function App() {
                 idChild={idChild}
               />
             </Route>
-            <Route path="/aprendamos/cuidador/nutricion/tips" exact>
+            <Route path={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/nutricion/tips`} exact>
               <TipsNutricion
                 contenidoFirebase={contenidoFirebase}
                 error={error}
@@ -303,7 +311,113 @@ function App() {
                 idChild={idChild}
               />
             </Route>
-            <Route path="/aprendamos/cuidador/sesamo/tips" exact>
+            <Route path={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/sesamo/tips`} exact>
+              <TipsSesamo
+                contenidoFirebase={contenidoFirebase}
+                error={error}
+                loading={loading}
+              />
+            </Route>
+            <Route path={`/aprendamos/cuidador/higiene`} exact>
+            <Higiene
+              contenidoFirebase={contenidoFirebase}
+              error={error}
+              loading={loading}
+              firebaseUser={firebaseUser}
+              idChild={idChild}
+            />
+             </Route>
+            <Route path={`/aprendamos/cuidador/socioemocional`}exact>
+              <Socioemocional
+                contenidoFirebase={contenidoFirebase}
+                error={error}
+                loading={loading}
+                firebaseUser={firebaseUser}
+                idChild={idChild}
+              />
+            </Route>
+            <Route path={`/aprendamos/cuidador/rutina`}exact>
+              <Rutina
+                contenidoFirebase={contenidoFirebase}
+                error={error}
+                loading={loading}
+                firebaseUser={firebaseUser}
+                idChild={idChild}
+              />
+            </Route>
+            <Route path={`/aprendamos/cuidador/juego`} exact>
+              <Juego
+                contenidoFirebase={contenidoFirebase}
+                error={error}
+                loading={loading}
+                firebaseUser={firebaseUser}
+                idChild={idChild}
+              />
+            </Route>
+            <Route path={`/aprendamos/cuidador//nutricion`} exact>
+              <Nutricion
+                contenidoFirebase={contenidoFirebase}
+                error={error}
+                loading={loading}
+                firebaseUser={firebaseUser}
+                idChild={idChild}
+              />
+            </Route>
+            <Route path={`/aprendamos/cuidador/sesamo`} exact>
+              <Sesamo
+                contenidoFirebase={contenidoFirebase}
+                error={error}
+                loading={loading}
+                firebaseUser={firebaseUser}
+                idChild={idChild}
+              />
+            </Route>
+            <Route path={`/aprendamos/cuidador/higiene/tips`} exact>
+              <TipsHigiene
+                contenidoFirebase={contenidoFirebase}
+                error={error}
+                loading={loading}
+                  firebaseUser={firebaseUser}
+                idChild={idChild}
+              />
+            </Route>
+            <Route path={`/aprendamos/cuidador/socioemocional/tips`}exact>
+              <TipsSocioemocional
+                contenidoFirebase={contenidoFirebase}
+                error={error}
+                loading={loading}
+                firebaseUser={firebaseUser}
+                idChild={idChild}
+              />
+            </Route>
+            <Route path={`/aprendamos/cuidador/rutina/tips`} exact>
+              <TipsRutina
+                contenidoFirebase={contenidoFirebase}
+                error={error}
+                loading={loading}
+                firebaseUser={firebaseUser}
+                idChild={idChild}
+              />
+            </Route>
+            <Route path={`/aprendamos/cuidador/juego/tips`} exact>
+              <TipsJuego
+                contenidoFirebase={contenidoFirebase}
+                error={error}
+                loading={loading}
+                firebaseUser={firebaseUser}
+                idChild={idChild}
+              />
+            </Route>
+            <Route path={`/aprendamos/cuidador/nutricion/tips`} exact>
+              <TipsNutricion
+                contenidoFirebase={contenidoFirebase}
+                error={error}
+                loading={loading}
+                firebaseUser={firebaseUser}
+                idChild={idChild}
+              />
+            </Route>
+            <Route path={`/aprendamos/cuidador/sesamo/tips`} exact>
               <TipsSesamo
                 contenidoFirebase={contenidoFirebase}
                 error={error}
