@@ -58,6 +58,7 @@ import Feria from "./components/nosotros/fase3/modelo/feria/Feria";
 
 
 
+
 function App() {
 
   
@@ -68,6 +69,7 @@ function App() {
   const [arrayChild, setArrayChild] = React.useState("");
   const [subItem, setSubItem] = React.useState(false);
   const [menuBurgerOpen, setmenuBurgerOpen] = React.useState(false);
+  const [contenidoJson, setContenidoJson] = React.useState([]);
 
   const mostrarSubItem = () => {
     setSubItem(!subItem);
@@ -131,7 +133,16 @@ function App() {
     backdrop = <Backdrop click={ocultarMenuMobile} />;
   }
 
+  console.log("holis", contenidoJson)
   React.useEffect(() => {
+
+    fetch("./data/data.json")
+    .then((response) => response.json())
+    .then((datos) => {
+      setContenidoJson(datos);
+      console.log("holita", datos)
+    });
+
     auth.onAuthStateChanged((user) => {
 
       if (user) {
