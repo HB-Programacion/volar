@@ -619,14 +619,15 @@ export default [
 
     // juego_edad_0_tip_1
     {
-        "video": "",
+        "video"   : "",
         "seccion": "Juego",
         "n_tip": 1,
         "edad": 0,
         "texto1A": " Aprovecha momentos de la rutina como cuando lo alimentas o le cambias el pañal para fortalecer el desarrollo del cerebro de ",
         "texto1B": " Por ejemplo, jueguen al avioncito con la cuchara. ¡Préstale atención a sus reacciones! ",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/cuchara_Mesa%20de%20trabajo%201.svg"
+        "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/cuchara_Mesa%20de%20trabajo%201.svg",
+        "titulo":"Aprovecha cada momento"
 
     },
     { // juego_edad_0_tip_10
