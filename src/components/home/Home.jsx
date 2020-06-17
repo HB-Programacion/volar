@@ -153,6 +153,7 @@ const Home = () => {
                             <li data-target="#carouselExampleCaptions" data-slide-to="0" className="active"></li>
                             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
                             <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
                         </ol>
                         <div className="carousel-inner">
                             <div className="carousel-item img-banner active">
@@ -163,9 +164,11 @@ const Home = () => {
                                 </div>
                                 <div className="carousel-caption  d-md-block">
                                     <div className="box-title-slide">
-                                        <figure className=" share ">
-                                            <img src={share} className="share-img"></img>
-                                        </figure>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://52.177.117.53/"> 
+                                            <figure className=" share ">
+                                                <img src={share} className="share-img heartbeat"></img>
+                                            </figure>
+                                        </a>
                                         <div className="title-slide">
                                             <h4 className="">Habla, canta y señala</h4>
                                             <img src={habla} alt=""/>
@@ -187,9 +190,11 @@ const Home = () => {
                                 </div>
                                 <div className="carousel-caption  d-md-block">
                                     <div className="box-title-slide">
-                                        <figure className=" share ">
-                                            <img src={shareF} className="share-img"></img>
-                                        </figure>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://52.177.117.53/"> 
+                                            <figure className=" share ">
+                                                <img src={shareF} className="share-img heartbeat"></img>
+                                            </figure>
+                                        </a>
                                         <div className="title-slide">
                                             <h4 className="text-fuxia">Exploren mediante el movimiento y el juego</h4>
                                             <img src={exploren} alt=""/>
@@ -210,9 +215,11 @@ const Home = () => {
                                 </div>
                                 <div className="carousel-caption  d-md-block">
                                     <div className="box-title-slide">
-                                        <figure className=" share ">
-                                            <img src={shareC} className="share-img"></img>
-                                        </figure>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://52.177.117.53/"> 
+                                            <figure className=" share ">
+                                                <img src={shareC} className="share-img heartbeat"></img>
+                                            </figure>
+                                        </a>
                                         <div className="title-slide">
                                             <h4 className="text-celeste">LEAN Y COMENTEN HISTORIAS</h4>
                                             <img src={lean} alt=""/>
@@ -233,9 +240,11 @@ const Home = () => {
                                 </div>
                                 <div className="carousel-caption  d-md-block">
                                     <div className="box-title-slide">
-                                        <figure className=" share ">
-                                            <img src={shareA} className="share-img"></img>
-                                        </figure>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://52.177.117.53/"> 
+                                            <figure className=" share ">
+                                                <img src={shareA} className="share-img heartbeat"></img>
+                                            </figure>
+                                        </a>
                                         <div className="title-slide">
                                             <h4 className="text-amarilloo">CUENTEN, AGRUPEN Y COMPAREN LAS COSAS</h4>
                                             <img src={cuenten} alt=""/>
@@ -266,6 +275,7 @@ const Home = () => {
                             <li data-target="#carouselExampleCaptions" data-slide-to="0" className="active"></li>
                             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
                             <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
                         </ol>
                         <div className="carousel-inner">
                             <div className="carousel-item  active">
@@ -276,9 +286,11 @@ const Home = () => {
                                 </div>
                                 <div className="carousel-caption  d-md-block">
                                     <div className="box-title-slide">
-                                        <figure className=" share ">
-                                            <img src={share} className="share-img"></img>
-                                        </figure>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://52.177.117.53/">
+                                            <figure className=" share ">
+                                                <img src={share} className="share-img heartbeat"></img>
+                                            </figure>
+                                        </a>
                                         <div className="title-slide">
                                             <h4 className="">Habla, canta y señala</h4>
                                             <img src={habla} alt=""/>
@@ -300,9 +312,11 @@ const Home = () => {
                                 </div>
                                 <div className="carousel-caption  d-md-block">
                                     <div className="box-title-slide">
-                                        <figure className=" share ">
-                                            <img src={shareF} className="share-img"></img>
-                                        </figure>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://52.177.117.53/">
+                                            <figure className=" share ">
+                                                <img src={shareF} className="share-img heartbeat"></img>
+                                            </figure>
+                                        </a>
                                         <div className="title-slide">
                                             <h4 className="text-fuxia">Exploren mediante el movimiento y el juego</h4>
                                             <img src={exploren} alt=""/>
@@ -323,9 +337,11 @@ const Home = () => {
                                     </div>
                                     <div className="carousel-caption  d-md-block">
                                         <div className="box-title-slide">
-                                            <figure className=" share ">
-                                                <img src={shareC} className="share-img"></img>
-                                            </figure>
+                                            <a href="https://www.facebook.com/sharer/sharer.php?u=http://52.177.117.53/">                                        
+                                                <figure className=" share ">
+                                                    <img src={shareC} className="share-img heartbeat"></img>
+                                                </figure>
+                                            </a>
                                             <div className="title-slide">
                                                 <h4 className="text-celeste">LEAN Y COMENTEN HISTORIAS</h4>
                                                 <img src={lean} alt=""/>
@@ -346,9 +362,11 @@ const Home = () => {
                                     </div>
                                     <div className="carousel-caption  d-md-block">
                                         <div className="box-title-slide">
-                                            <figure className=" share ">
-                                                <img src={shareA} className="share-img"></img>
-                                            </figure>
+                                            <a href="https://www.facebook.com/sharer/sharer.php?u=http://52.177.117.53/">                                        
+                                                <figure className=" share ">
+                                                    <img src={shareA} className="share-img heartbeat"></img>
+                                                </figure>
+                                            </a>
                                             <div className="title-slide">
                                                 <h4 className="text-amarilloo">CUENTEN, AGRUPEN Y COMPAREN LAS COSAS</h4>
                                                 <img src={cuenten} alt=""/>

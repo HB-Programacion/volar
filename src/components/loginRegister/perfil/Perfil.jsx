@@ -806,23 +806,24 @@ const Perfil = (props) => {
                               </h5> */}
                             </div>
                             <div className="btn-editar-eliminar">
-                              <button
-                                type="button"
-                                className="btn  btn-sm float-right out-none-button"
-                                data-toggle="modal"
-                                data-target={"#hola" + key}
-                              >
-                                <img src={deleteImg} className="w-50"></img>
-                              </button>
-                              <button
+                            <button
                                 type="button"
                                 className="btn btn-sm float-right out-none-button"
                                 data-toggle="modal"
                                 data-target={"#editar" + key}
                                 onClick={() => activarEdicion(item)}
                               >
-                                <img src={editImg} className="w-50"></img>
+                                <img src={editImg} className="w-35"></img>
                               </button>
+                              <button
+                                type="button"
+                                className="btn  btn-sm float-right out-none-button"
+                                data-toggle="modal"
+                                data-target={"#hola" + key}
+                              >
+                                <img src={deleteImg} className="w-35"></img>
+                              </button>
+                              
                               <div
                                 className="modal fade "
                                 id={"hola" + key}

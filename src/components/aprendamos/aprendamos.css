@@ -105,7 +105,7 @@
     color: #AE96B2;
     -webkit-text-stroke: 0.06em #AE96B2;
     letter-spacing: 0.06em;
-    padding: 1rem 1rem 1rem 4rem;
+    padding: 1rem 1rem 1rem 3rem;
     border-radius: 20px;
     box-shadow: 0 0 9px rgb(0, 0, 0);
     text-transform: uppercase;
@@ -124,7 +124,7 @@
     color: #7DC7C5;
     -webkit-text-stroke: 0.06em #7DC7C5;
     letter-spacing: 0.06em;
-    padding: 1rem 1rem 1rem 4rem;
+    padding: 1rem 1rem 1rem 3rem;
     border-radius: 20px;
     box-shadow: 0 0 9px rgb(0, 0, 0);
     text-transform: uppercase;
@@ -156,6 +156,8 @@
 
 .letter-btn{
     margin:1.5rem;
+    position: relative;
+    left: -1rem;
 }
 
 .icono{

@@ -62,7 +62,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
     <>
    {
      firebaseUser !== null ? (
-      <div>
+      <div className="pb-5">
       <div className="box-title-cuidador animated fadeIn ">
         <div className="box-row-1">
         {/* <img src={starsLeftDesktop} className="stars-left-desktop heartbeat"></img> */}
@@ -96,7 +96,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 </div>        
       </div>
       <div className="caja-boton-contactanos caja-compartir-hola">
-                <a href="/" className="btn-navy-blue w-80 text-white wobble-hor-bottom">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=http://52.177.117.53/" className="btn-navy-blue w-80 text-white wobble-hor-bottom">
                   <img src={arrowLeft} className="arrow-blue"></img>
                   COMPARTIR
                   <img src={arrowRight} className="arrow-blue"></img>
@@ -359,7 +359,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                 </div>        
       </div>
       <div className="caja-boton-contactanos caja-compartir-hola">
-                <a href="/" className="btn-navy-blue w-80 text-white wobble-hor-bottom">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=http://52.177.117.53/" className="btn-navy-blue w-80 text-white wobble-hor-bottom">
                   <img src={arrowLeft} className="arrow-blue"></img>
                   COMPARTIR
                   <img src={arrowRight} className="arrow-blue"></img>
