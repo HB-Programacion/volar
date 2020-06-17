@@ -17,7 +17,6 @@ import { auth, db } from "../../../components/firebase/firebase";
 
 export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenidoFirebase }) => {
   const [nameChild, setNameChild] = React.useState("");
-  const [edadChild, setEdadChild] = React.useState("");
   const [videoAleatorio, setVideoAleatorio] = React.useState("");
   const [colaboradorBreca, setColaboradorBreca] = React.useState("");
   React.useEffect(() => {
@@ -41,8 +40,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
       childData
         .get()
         .then((snapShots) => {
-          setNameChild(snapShots.data().nameChild);
-          setEdadChild(snapShots.data().edadChild);
+          setNameChild(snapShots.data().nameChild); 
         })
         .catch(function (error) {
           console.log("Error getting document:", error);
@@ -79,25 +77,10 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
      
 
         <div className="box-row-2">
-          
-          {firebaseUser !== null ? (
-        arrayChild.docs.length == 0 ? (
               <p className="box-text ">
-                Hoy aprenderemos a desarrollar las habilidades de lenguaje de tu
-                hijo aprovechando los momentos de aseo. 
+                Hoy aprenderemos a desarrollar las habilidades de lenguaje de {localStorage.getItem('nameChildActive')} aprovechando los momentos de aseo.
               </p>
-            ) : (
-              <p className="box-text ">
-                Hoy aprenderemos a desarrollar las habilidades de lenguaje de 
-                {nameChild} aprovechando los momentos de aseo.{arrayChild.docs.length}
-              </p>
-            )
-          ) : (
-            <p className="box-text ">
-              Hoy aprenderemos a desarrollar las habilidades de lenguaje de tu
-              hijo aprovechando los momentos de aseo.
-            </p>
-          )}
+
         </div>
       </div>
       <p className="estrellita-lila heartbeat">&#10022;</p>
@@ -129,7 +112,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
       <div className="list-btn-areas show-desktop">
       {colaboradorBreca === "NO" ?   <div className="btn-areas w-100">
           <div className="w-20">
-            <a href="/aprendamos/cuidador/higiene" className="link">
+            <a href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/higiene`} className="link">
               <div className="area-higiene">
                 <img
                   src={iconAreaHigiene}
@@ -141,7 +124,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
             </a>
           </div>
           <div className="w-20">
-            <a href="/aprendamos/cuidador/socioemocional " className="link">
+            <a href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/socioemocional`} className="link">
               <div className="area-socioEmocional">
                 <img
                   src={iconAreaSocial}
@@ -153,7 +136,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
             </a>
           </div>
           <div className="w-20">
-            <a href="/aprendamos/cuidador/rutina" className="link">
+            <a href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/rutina`} className="link">
               <div className="area-rutina">
                 <img
                   src={iconAreaRutina}
@@ -165,7 +148,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
             </a>
           </div>
           <div className="w-20">
-          <a href="/aprendamos/cuidador/juego" className="link">
+          <a href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/juego`} className="link">
               <div className="area-juego">
                 <img
                   src={iconAreaJuego}
@@ -177,7 +160,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
             </a>
           </div>
           <div className="w-20">
-          <a  href="/aprendamos/cuidador/nutricion" className="link">
+          <a  href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/nutricion`} className="link">
            <div className="area-nutricion">
               <img
                 src={iconAreaNutricion}
@@ -193,7 +176,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
         </div> :
          <> <div className="btn-areas w-100">
           <div className="w-20">
-            <a href="/aprendamos/cuidador/higiene" className="link">
+            <a href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/higiene`} className="link">
               <div className="area-higiene">
                 <img
                   src={iconAreaHigiene}
@@ -205,7 +188,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
             </a>
           </div>
           <div className="w-20">
-            <a href="/aprendamos/cuidador/socioemocional" className="link">
+            <a href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/socioemocional`} className="link">
               <div className="area-socioEmocional">
                 <img
                   src={iconAreaSocial}
@@ -217,7 +200,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
             </a>
           </div>
           <div className="w-20">
-            <a href="/aprendamos/cuidador/rutina" className="link">
+            <a href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/rutina`} className="link">
               <div className="area-rutina">
                 <img
                   src={iconAreaRutina}
@@ -230,7 +213,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
           </div>
           <div className="btn-areas w-100">
           <div className="w-20">
-          <a href="/aprendamos/cuidador/juego" className="link">
+          <a href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/juego`} className="link">
               <div className="area-juego">
                 <img
                   src={iconAreaJuego}
@@ -241,7 +224,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
               </div>
             </a>      </div>
           <div className="w-20">
-          <a href="/aprendamos/cuidador/nutricion" className="link">
+          <a href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/nutricion`} className="link">
            <div className="area-nutricion">
               <img
                 src={iconAreaNutricion}
@@ -254,7 +237,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
             </div>
             </a>      </div>
           <div className="w-20">
-          <a href="/aprendamos/cuidador/sesamo" className="link">
+          <a href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/sesamo`} className="link">
            <div className="area-sesamo">
               <img
                 src={iconAreaSesamo}
@@ -268,7 +251,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
       <div className="list-btn-areas hide-desktop">
         <div className="btn-areas w-100">
           <div className="w-50">
-            <a href="/aprendamos/cuidador/higiene" className="link">
+            <a href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/higiene`} className="link">
               <div className="area-higiene">
                 <img
                   src={iconAreaHigiene}
@@ -279,7 +262,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
               </div>
             </a>       </div>
           <div className="w-50">
-            <a href="/aprendamos/cuidador/socioemocional" className="link">
+            <a href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/socioemocional`} className="link">
               <div className="area-socioEmocional">
                 <img
                   src={iconAreaSocial}
@@ -292,7 +275,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
         </div>
         <div className="btn-areas w-100">
           <div className="w-50">
-            <a href="/aprendamos/cuidador/rutina" className="link">
+            <a href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/rutina`} className="link">
               <div className="area-rutina">
                 <img
                   src={iconAreaRutina}
@@ -303,7 +286,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
               </div>
             </a>     </div>
           <div className="w-50">
-            <a href="/aprendamos/cuidador/juego" className="link">
+            <a href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/juego`} className="link">
               <div className="area-juego">
                 <img
                   src={iconAreaJuego}
@@ -316,7 +299,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
         </div>
         <div className="btn-areas w-100">
           <div className="w-50">
-           <a href="/aprendamos/cuidador/nutricion" className="link">
+           <a href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/nutricion`} className="link">
            <div className="area-nutricion">
               <img
                 src={iconAreaNutricion}
@@ -329,7 +312,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
             </div>
             </a>     </div>
           {colaboradorBreca === "SI" ?  <div className="w-50">
-          <a href="/aprendamos/cuidador/sesamo" className="link">
+          <a href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/sesamo`} className="link">
            <div className="area-sesamo">
               <img
                 src={iconAreaSesamo}

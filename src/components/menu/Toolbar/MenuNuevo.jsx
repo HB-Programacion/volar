@@ -10,14 +10,14 @@ import MenuChild from "../MenuChild"
 
 const MenuNuevo =props => {
     const [userName, setUserName] = React.useState("");
-    localStorage.setItem('nameUser', userName)
   React.useEffect(() => {
     if (props.firebaseUser !== null) {
       const perfilUser = db.collection("usuarios").doc(props.firebaseUser.uid);
       perfilUser
         .get()
         .then((doc) => {
-          setUserName(doc.data().nombre);
+          localStorage.setItem('nameUserActive', doc.data().nombre)
+          setUserName(localStorage.getItem('nameUserActive'));
          
         })
         .catch(function (error) {
@@ -28,8 +28,10 @@ const MenuNuevo =props => {
 
   const cerrarSesion = () => {
     auth.signOut().then(() => {
+      localStorage.clear()
       props.history.push("/login");
     });
+    
   };
 
     return (
@@ -43,7 +45,13 @@ const MenuNuevo =props => {
                     <li><NavLink to="/" activeClassName='is-activeHome' exact={true} >Inicio</NavLink></li>
                     <li><NavLink to="/nosotros" activeClassName='is-activeHome' >Nosotros</NavLink></li>
                     {
-                      props.firebaseUser !== null ?  <li><NavLink to={`/aprendamos/cuidador/${props.idChild}`} activeClassName='is-activeHome' >Aprendamos</NavLink></li> :
+                      props.firebaseUser !== null ?  (
+                        localStorage.getItem('idChildLogueadoActive') !==null    ? (
+                              <li><NavLink to={`/aprendamos/cuidador/${localStorage.getItem('idChildLogueadoActive')}`} activeClassName='is-activeHome' >Aprendamos</NavLink></li>
+                            ):(
+                              <li><NavLink to="/registro-niño" activeClassName='is-activeHome' >Aprendamos</NavLink></li>
+                            )
+                       ) :
                       <li><NavLink to='/aprendamos' activeClassName='is-activeHome' >Aprendamos</NavLink></li>
                     }
 

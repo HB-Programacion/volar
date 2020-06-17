@@ -67,14 +67,14 @@ export const Nutricion= ({
                   .filter(
                     (item) =>
                       item.data().seccion === "Nutrición y Salud" &&
-                      item.data().edad == edad
+                      item.data().edad == localStorage.getItem('edadChildLogueadoActive')
                   )
                   .map((item) => (
                     <div
                       key={item.id}
                       className="col-sm-12 col-md-12 col-lg-6 col-xl-6"
                     >
-                      <a href="/aprendamos/cuidador/nutricion/tips"
+                      <a href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/nutricion/tips`}
                         onClick={() => mandarNumberTipOficial(item.data().n_tip)}>
                         
                         <div className="box-section">

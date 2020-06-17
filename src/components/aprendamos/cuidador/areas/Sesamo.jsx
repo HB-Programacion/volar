@@ -47,55 +47,113 @@ export const Sesamo = ({
   }, [firebaseUser, idChild]);
 
   return (
+<>
+{
+  firebaseUser!==null?(
     <div>
-      <div className="box-title-sesamo show-desktop">
-        <img
-          src={iconoSesamoWhite}
-          className="icono-sesamo heartbeat"
-          alt="gota de agua"
-        />
-      </div>
-      <div className="list-videos-tips">
-        {error && <strong>Error: {JSON.stringify(error)}</strong>}
-        {loading && <div className="grande">
-        <div className="centrando-spiner">
-          <Orbitals color="#EF8B44" size={900} />
-        </div>
-      </div>}
-        {contenidoFirebase && (
-          <div className="row">
-            {contenidoFirebase.docs
-              .filter((item) => item.data().seccion === "Sésamo")
-              .map((item) => (
-                <div
-                  key={item.id}
-                  className="col-sm-12 col-md-12 col-lg-6 col-xl-6"
-                >
-                  <a
-                    href="/aprendamos/cuidador/sesamo/tips"
-                    onClick={() => mandarNumberTipOficial(item.data().n_tip)}
-                  >
-                    <div className="box-section">
-                      <img
-                        src={iconoVideoJuego}
-                        className="icono-video-tip"
-                        alt="icono de tip"
-                      />
-                      <div className="box-text-video-tip">
-                        <h3 className="subtittle-video-tip">
-                          {item.data().titulo}
-                        </h3>
-                        <h5 className="text-video-tip">
-                          N° {item.data().n_tip} {item.data().tipo}
-                        </h5>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              ))}
-          </div>
-        )}
-      </div>
+    <div className="box-title-sesamo show-desktop">
+      <img
+        src={iconoSesamoWhite}
+        className="icono-sesamo heartbeat"
+        alt="gota de agua"
+      />
     </div>
+    <div className="list-videos-tips">
+      {error && <strong>Error: {JSON.stringify(error)}</strong>}
+      {loading && <div className="grande">
+      <div className="centrando-spiner">
+        <Orbitals color="#EF8B44" size={900} />
+      </div>
+    </div>}
+      {contenidoFirebase && (
+        <div className="row">
+          {contenidoFirebase.docs
+            .filter((item) => item.data().seccion === "Sésamo")
+            .map((item) => (
+              <div
+                key={item.id}
+                className="col-sm-12 col-md-12 col-lg-6 col-xl-6"
+              >
+                <a
+                  href=
+                  {`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/sesamo/tips`}
+                  onClick={() => mandarNumberTipOficial(item.data().n_tip)}
+                >
+                  <div className="box-section">
+                    <img
+                      src={iconoVideoJuego}
+                      className="icono-video-tip"
+                      alt="icono de tip"
+                    />
+                    <div className="box-text-video-tip">
+                      <h3 className="subtittle-video-tip">
+                        {item.data().titulo}
+                      </h3>
+                      <h5 className="text-video-tip">
+                        N° {item.data().n_tip} {item.data().tipo}
+                      </h5>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            ))}
+        </div>
+      )}
+    </div>
+  </div> ): 
+  (
+    <div>
+    <div className="box-title-sesamo show-desktop">
+      <img
+        src={iconoSesamoWhite}
+        className="icono-sesamo heartbeat"
+        alt="gota de agua"
+      />
+    </div>
+    <div className="list-videos-tips">
+      {error && <strong>Error: {JSON.stringify(error)}</strong>}
+      {loading && <div className="grande">
+      <div className="centrando-spiner">
+        <Orbitals color="#EF8B44" size={900} />
+      </div>
+    </div>}
+      {contenidoFirebase && (
+        <div className="row">
+          {contenidoFirebase.docs
+            .filter((item) => item.data().seccion === "Sésamo")
+            .map((item) => (
+              <div
+                key={item.id}
+                className="col-sm-12 col-md-12 col-lg-6 col-xl-6"
+              >
+                <a
+                  href="/aprendamos/cuidador/sesamo/tips"
+                  onClick={() => mandarNumberTipOficial(item.data().n_tip)}
+                >
+                  <div className="box-section">
+                    <img
+                      src={iconoVideoJuego}
+                      className="icono-video-tip"
+                      alt="icono de tip"
+                    />
+                    <div className="box-text-video-tip">
+                      <h3 className="subtittle-video-tip">
+                        {item.data().titulo}
+                      </h3>
+                      <h5 className="text-video-tip">
+                        N° {item.data().n_tip} {item.data().tipo}
+                      </h5>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            ))}
+        </div>
+      )}
+    </div>
+  </div>
+  )
+}
+</>
   );
 };

@@ -68,14 +68,14 @@ export const Socioemocional = ({
                   .filter(
                     (item) =>
                       item.data().seccion === "Socioemocional" &&
-                      item.data().edad == edad
+                      item.data().edad == localStorage.getItem('edadChildLogueadoActive')
                   )
                   .map((item) => (
                     <div
                       key={item.id}
                       className="col-sm-12 col-md-12 col-lg-6 col-xl-6"
                     >
-                      <a href="/aprendamos/cuidador/socioemocional/tips"
+                      <a href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/socioemocional/tips`}
                         onClick={() => mandarNumberTipOficial(item.data().n_tip)}>
                         
                         <div className="box-section">

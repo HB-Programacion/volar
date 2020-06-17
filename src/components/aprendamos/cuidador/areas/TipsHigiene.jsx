@@ -94,8 +94,8 @@ const TipsHigiene = ({
                             <h3>Hola {localStorage.getItem("nameUser")}</h3>
                             {item.data().texto1B !== "" ? (
                               <p class="text-tips-light">
-                                {item.data().texto1A}{" "}
-                                {localStorage.getItem("nameChild")}{" "}
+                                {item.data().texto1A}
+                                {localStorage.getItem('nameChildActive')}
                                 {item.data().texto1B}
                               </p>
                             ) : (
