@@ -1,10 +1,12 @@
 import React from "react";
 import "./loginRegister.css";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 import arrowLeft from "./../../images/arrow-left-blue.svg";
 import arrowRight from "./../../images/arrow-right-blue.svg";
 import {auth, firebase, db} from "../firebase/firebase";
 import { withRouter } from "react-router-dom";
+
 const Login = (props) => {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
