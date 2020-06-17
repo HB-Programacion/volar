@@ -6,6 +6,7 @@ import iconoTipSocioemocional from "./../../../../images/areas-img/icono_tip_soc
 import { useCollection } from "react-firebase-hooks/firestore";
 import { auth,db } from "../../../firebase/firebase";
 import { Orbitals } from "react-spinners-css";
+import arrTips from '../../../../data'
 
 
 export const Socioemocional = ({
@@ -15,33 +16,25 @@ export const Socioemocional = ({
   firebaseUser,
   idChild,
 }) => {
-  const [edad, setEdad] = React.useState("");
-
 
   const mandarNumberTipOficial = (numberTip) => {
     localStorage.setItem('localNumberTip', numberTip)
   };  
 
-  React.useEffect(() => {
-    if (firebaseUser !== null && idChild !== "") {
-      const childData = db
-        .collection("usuarios")
-        .doc(firebaseUser.uid)
-        .collection("addChild")
-        .doc(idChild);
-      childData
-        .get()
-        .then((snapShots) => {
-          setEdad(snapShots.data().edadChild);
-        })
-        .catch(function (error) {
-          console.log("Error getting document:", error);
-        });
+  let arraySocioemocional=  arrTips
+
+  arraySocioemocional.sort(function (a, b) {
+    if (a.n_tip > b.n_tip) {
+      return 1;
     }
-    /*  const childData= db.collection("usuarios").doc(firebaseUser.uid).collection("addChild").doc("OxtF7ijtoOlOX7zx3xcY")
-  console.log("hola", childData.data().edadChild)
-    ///Obteniendo todo el contenido de firebase///*/
-  }, [firebaseUser, idChild]);
+    if (a.n_tip < b.n_tip) {
+      return -1;
+    }
+    // a must be equal to b
+    return 0;
+  });
+
+
 
   return (
     <div>
@@ -56,19 +49,13 @@ export const Socioemocional = ({
             <h1 className="title-area  tracking-in-expand-fwd-top">Socioemocional</h1>
           </div>
           <div className="list-videos-tips">
-            {error && <strong>Error: {JSON.stringify(error)}</strong>}
-            {loading && <div className="grande">
-                <div className="centrando-spiner">
-          <Orbitals color="#EF8B44" size={900} />
-        </div>
-      </div> }
-            {contenidoFirebase && (
+
               <div className="row">
-                {contenidoFirebase.docs
+                {arraySocioemocional
                   .filter(
                     (item) =>
-                      item.data().seccion === "Socioemocional" &&
-                      item.data().edad == localStorage.getItem('edadChildLogueadoActive')
+                      item.seccion === "Socioemocional" &&
+                      item.edad == localStorage.getItem('edadChildLogueadoActive')
                   )
                   .map((item) => (
                     <div
@@ -76,7 +63,7 @@ export const Socioemocional = ({
                       className="col-sm-12 col-md-12 col-lg-6 col-xl-6"
                     >
                       <a href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/socioemocional/tips`}
-                        onClick={() => mandarNumberTipOficial(item.data().n_tip)}>
+                        onClick={() => mandarNumberTipOficial(item.n_tip)}>
                         
                         <div className="box-section">
                           <img
@@ -86,10 +73,10 @@ export const Socioemocional = ({
                           />
                           <div className="box-text-video-tip">
                             <h3 className="subtittle-video-tip">
-                              {item.data().titulo}
+                              {item.titulo}
                             </h3>
                             <h5 className="text-video-tip">
-                              Tip N° {item.data().n_tip}
+                              Tip N° {item.n_tip}
                             </h5>
                           </div>
                         </div>
@@ -97,7 +84,7 @@ export const Socioemocional = ({
                     </div>
                   ))}
               </div>
-            )}
+          
           </div>
         </div>
       ) : (
@@ -111,15 +98,12 @@ export const Socioemocional = ({
             <h1 className="title-area">SOCIOEMOCIONAL</h1>
           </div>
           <div className="list-videos-tips">
-            {error && <strong>Error: {JSON.stringify(error)}</strong>}
-            {loading && <span>Collection: Loading...</span>}
-            {contenidoFirebase && (
               <div className="row">
                 {contenidoFirebase.docs
                   .filter(
                     (item) =>
-                      item.data().seccion === "Socioemocional" &&
-                      item.data().edad == JSON.parse(localStorage.getItem('dateChild')).edad
+                      item.seccion === "Socioemocional" &&
+                      item.edad == JSON.parse(localStorage.getItem('dateChild')).edad
                   )
                   .map((item) => (
                     <div
@@ -127,7 +111,7 @@ export const Socioemocional = ({
                       className="col-sm-12 col-md-12 col-lg-6 col-xl-6"
                     >
                       <a href="/aprendamos/cuidador/socioemocional/tips"
-                        onClick={() => mandarNumberTipOficial(item.data().n_tip)}>
+                        onClick={() => mandarNumberTipOficial(item.n_tip)}>
                         
                         <div className="box-section">
                           <img
@@ -137,10 +121,10 @@ export const Socioemocional = ({
                           />
                           <div className="box-text-video-tip">
                             <h3 className="subtittle-video-tip">
-                              {item.data().titulo}
+                              {item.titulo}
                             </h3>
                             <h5 className="text-video-tip">
-                              Tip N° {item.data().n_tip}
+                              Tip N° {item.n_tip}
                             </h5>
                           </div>
                         </div>
@@ -148,7 +132,7 @@ export const Socioemocional = ({
                     </div>
                   ))}
               </div>
-            )}
+          
           </div>
         </div>
       )}

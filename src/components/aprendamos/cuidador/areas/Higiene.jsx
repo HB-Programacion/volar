@@ -22,6 +22,17 @@ export const Higiene = ({
 
   let arrayHigiene =  arrTips
 
+  arrayHigiene.sort(function (a, b) {
+    if (a.n_tip > b.n_tip) {
+      return 1;
+    }
+    if (a.n_tip < b.n_tip) {
+      return -1;
+    }
+    // a must be equal to b
+    return 0;
+  });
+
 
   const mandarNumberTipOficial = (numberTip) => {
     localStorage.setItem('localNumberTip', numberTip)

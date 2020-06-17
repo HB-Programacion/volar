@@ -6,6 +6,7 @@ import iconoTipRutina from "./../../../../images/areas-img/icono_tip_rutina.svg"
 import { useCollection } from "react-firebase-hooks/firestore";
 import { auth,db } from "../../../firebase/firebase";
 import { Orbitals } from "react-spinners-css";
+import arrTips from '../../../../data'
 
 
 export const Rutina= ({
@@ -15,33 +16,30 @@ export const Rutina= ({
   firebaseUser,
   idChild,
 }) => {
-  const [edad, setEdad] = React.useState("");
+
+
+  let arrayRutina=  arrTips
+
+  arrayRutina.sort(function (a, b) {
+    if (a.n_tip > b.n_tip) {
+      return 1;
+    }
+    if (a.n_tip < b.n_tip) {
+      return -1;
+    }
+    // a must be equal to b
+    return 0;
+  });
+
+
+
 
 
   const mandarNumberTipOficial = (numberTip) => {
     localStorage.setItem('localNumberTip', numberTip)
   };  
 
-  React.useEffect(() => {
-    if (firebaseUser !== null && idChild !== "") {
-      const childData = db
-        .collection("usuarios")
-        .doc(firebaseUser.uid)
-        .collection("addChild")
-        .doc(idChild);
-      childData
-        .get()
-        .then((snapShots) => {
-          setEdad(snapShots.data().edadChild);
-        })
-        .catch(function (error) {
-          console.log("Error getting document:", error);
-        });
-    }
-    /*  const childData= db.collection("usuarios").doc(firebaseUser.uid).collection("addChild").doc("OxtF7ijtoOlOX7zx3xcY")
-  console.log("hola", childData.data().edadChild)
-    ///Obteniendo todo el contenido de firebase///*/
-  }, [firebaseUser, idChild]);
+
 
   return (
     <div>
@@ -56,19 +54,13 @@ export const Rutina= ({
             <h1 className="title-area  tracking-in-expand-fwd-top">RUTINA</h1>
           </div>
           <div className="list-videos-tips">
-            {error && <strong>Error: {JSON.stringify(error)}</strong>}
-            {loading && <div className="grande">
-                <div className="centrando-spiner">
-          <Orbitals color="#EF8B44" size={900} />
-        </div>
-      </div> }
-            {contenidoFirebase && (
+
               <div className="row">
-                {contenidoFirebase.docs
+                {arrayRutina
                   .filter(
                     (item) =>
-                      item.data().seccion === "Rutina" &&
-                      item.data().edad == localStorage.getItem('edadChildLogueadoActive')
+                      item.seccion === "Rutina" &&
+                      item.edad == localStorage.getItem('edadChildLogueadoActive')
                   )
                   .map((item) => (
                     <div
@@ -76,7 +68,7 @@ export const Rutina= ({
                       className="col-sm-12 col-md-12 col-lg-6 col-xl-6"
                     >
                       <a href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/rutina/tips`}
-                        onClick={() => mandarNumberTipOficial(item.data().n_tip)}>
+                        onClick={() => mandarNumberTipOficial(item.n_tip)}>
                         
                         <div className="box-section">
                           <img
@@ -86,10 +78,10 @@ export const Rutina= ({
                           />
                           <div className="box-text-video-tip">
                             <h3 className="subtittle-video-tip">
-                              {item.data().titulo}
+                              {item.titulo}
                             </h3>
                             <h5 className="text-video-tip">
-                              Tip N° {item.data().n_tip}
+                              Tip N° {item.n_tip}
                             </h5>
                           </div>
                         </div>
@@ -97,7 +89,6 @@ export const Rutina= ({
                     </div>
                   ))}
               </div>
-            )}
           </div>
         </div>
       ) : (
@@ -112,15 +103,13 @@ export const Rutina= ({
             <h1 className="title-area">RUTINA</h1>
           </div>
           <div className="list-videos-tips">
-            {error && <strong>Error: {JSON.stringify(error)}</strong>}
-            {loading && <span>Collection: Loading...</span>}
-            {contenidoFirebase && (
+
               <div className="row">
-                {contenidoFirebase.docs
+                {arrayRutina
                   .filter(
                     (item) =>
-                      item.data().seccion === "Rutina" &&
-                      item.data().edad == JSON.parse(localStorage.getItem('dateChild')).edad
+                      item.seccion === "Rutina" &&
+                      item.edad == JSON.parse(localStorage.getItem('dateChild')).edad
                   )
                   .map((item) => (
                     <div
@@ -128,7 +117,7 @@ export const Rutina= ({
                       className="col-sm-12 col-md-12 col-lg-6 col-xl-6"
                     >
                       <a href="/aprendamos/cuidador/rutina/tips"
-                        onClick={() => mandarNumberTipOficial(item.data().n_tip)}>
+                        onClick={() => mandarNumberTipOficial(item.n_tip)}>
                         
                         <div className="box-section">
                           <img
@@ -138,10 +127,10 @@ export const Rutina= ({
                           />
                           <div className="box-text-video-tip">
                             <h3 className="subtittle-video-tip">
-                              {item.data().titulo}
+                              {item.titulo}
                             </h3>
                             <h5 className="text-video-tip">
-                              Tip N° {item.data().n_tip}
+                              Tip N° {item.n_tip}
                             </h5>
                           </div>
                         </div>
@@ -149,7 +138,6 @@ export const Rutina= ({
                     </div>
                   ))}
               </div>
-            )}
           </div>
         </div>
       )}
