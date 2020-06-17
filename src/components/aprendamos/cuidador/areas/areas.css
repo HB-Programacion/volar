@@ -294,20 +294,7 @@ background-color: #EF8B44;
     background-color: #F7B919;
   }
 
-  .box-title-juego {
-    background: url(./../../../../images/areas-img/nutricion_fondo_desktop.png) no-repeat;
-    padding-top: 5rem;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    height: 20rem;
-    display: flex;
-    flex-direction: column;
-    background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-color: #F7B919;
-  }
+
 
   .box-title-nutricion {
     background: url(./../../../../images/areas-img/nutricion_fondo_mobile.png) no-repeat;
