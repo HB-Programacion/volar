@@ -29,6 +29,11 @@
     text-transform: uppercase;
     }
 
+    .item:hover{
+        text-decoration: none;
+        color: rgb(219, 216, 216)!important;
+    } 
+
 .is-active{
         font-weight: bold !important;
 
