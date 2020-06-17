@@ -7,6 +7,9 @@ import iconoHigieneWhite from "./../../../../images/icon-higiene-white.png";
 import iconoTipLighBlue from "./../../../../images/icon-tip-ligh-blue.svg";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { auth, db } from "../../../../components/firebase/firebase";
+
+
+
 export const Higiene = ({
   contenidoFirebase,
   error,
