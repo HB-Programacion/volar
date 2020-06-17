@@ -7,6 +7,8 @@ import iconoHigieneWhite from "./../../../../images/icon-higiene-white.png";
 import iconoTipLighBlue from "./../../../../images/icon-tip-ligh-blue.svg";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { auth, db } from "../../../../components/firebase/firebase";
+import arrTips from '../../../../data'
+
 
 
 
@@ -17,33 +19,15 @@ export const Higiene = ({
   firebaseUser,
   idChild,
 }) => {
-  const [edad, setEdad] = React.useState("");
+
+  let arrayHigiene =  arrTips
 
 
   const mandarNumberTipOficial = (numberTip) => {
     localStorage.setItem('localNumberTip', numberTip)
   };  
 
-  React.useEffect(() => {
-    if (firebaseUser !== null && idChild !== "") {
-      const childData = db
-        .collection("usuarios")
-        .doc(firebaseUser.uid)
-        .collection("addChild")
-        .doc(idChild);
-      childData
-        .get()
-        .then((snapShots) => {
-          setEdad(snapShots.data().edadChild);
-        })
-        .catch(function (error) {
-          console.log("Error getting document:", error);
-        });
-    }
-    /*  const childData= db.collection("usuarios").doc(firebaseUser.uid).collection("addChild").doc("OxtF7ijtoOlOX7zx3xcY")
-  console.log("hola", childData.data().edadChild)
-    ///Obteniendo todo el contenido de firebase///*/
-  }, [firebaseUser, idChild]);
+
 
   return (
     <div>
@@ -58,19 +42,19 @@ export const Higiene = ({
             <h1 className="title-area  tracking-in-expand-fwd-top">HIGIENE Y AGUA SEGURA</h1>
           </div>
           <div className="list-videos-tips">
-            {error && <strong>Error: {JSON.stringify(error)}</strong>}
+          {/*  {error && <strong>Error: {JSON.stringify(error)}</strong>}
             {loading && <div className="grande">
                 <div className="centrando-spiner">
           <Orbitals color="#EF8B44" size={900} />
         </div>
-      </div> }
-            {contenidoFirebase && (
+      </div> }*/}
+           {/* {contenidoFirebase && ( */}
               <div className="row">
-                {contenidoFirebase.docs
+                {arrayHigiene
                   .filter(
                     (item) =>
-                      item.data().seccion === "Higiene y Agua Segura" &&
-                      item.data().edad ==     localStorage.getItem('edadChildLogueadoActive')
+                      item.seccion === "Higiene y Agua Segura" &&
+                      item.edad ==     localStorage.getItem('edadChildLogueadoActive')
                   )
                   .map((item) => (
                     <div
@@ -78,7 +62,7 @@ export const Higiene = ({
                       className="col-sm-12 col-md-12 col-lg-6 col-xl-6"
                     >
                       <a href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/higiene/tips`}
-                        onClick={() => mandarNumberTipOficial(item.data().n_tip)}>
+                        onClick={() => mandarNumberTipOficial(item.n_tip)}>
                         
                         <div className="box-section">
                           <img
@@ -88,10 +72,10 @@ export const Higiene = ({
                           />
                           <div className="box-text-video-tip">
                             <h3 className="subtittle-video-tip">
-                              {item.data().titulo}
+                              {item.titulo}
                             </h3>
                             <h5 className="text-video-tip">
-                              Tip N° {item.data().n_tip}
+                              Tip N° {item.n_tip}
                             </h5>
                           </div>
                         </div>
@@ -99,7 +83,7 @@ export const Higiene = ({
                     </div>
                   ))}
               </div>
-            )}
+          {/*  )} */}
           </div>
         </div>
       ) : (
@@ -113,15 +97,15 @@ export const Higiene = ({
             <h1 className="title-area">HIGIENE Y AGUA SEGURA</h1>
           </div>
           <div className="list-videos-tips">
-            {error && <strong>Error: {JSON.stringify(error)}</strong>}
-            {loading && <span>Collection: Loading...</span>}
-            {contenidoFirebase && (
+           {/*} {error && <strong>Error: {JSON.stringify(error)}</strong>}
+            {loading && <span>Collection: Loading...</span>}*/}
+           {/* {contenidoFirebase && ( */}
               <div className="row">
-                {contenidoFirebase.docs
+                {arrayHigiene
                   .filter(
                     (item) =>
-                      item.data().seccion === "Higiene y Agua Segura" &&
-                      item.data().edad == JSON.parse(localStorage.getItem('dateChild')).edad
+                      item.seccion === "Higiene y Agua Segura" &&
+                      item.edad == JSON.parse(localStorage.getItem('dateChild')).edad
                   )
                   .map((item) => (
                     <div
@@ -129,7 +113,7 @@ export const Higiene = ({
                       className="col-sm-12 col-md-12 col-lg-6 col-xl-6"
                     >
                       <a href="/aprendamos/cuidador/higiene/tips"
-                        onClick={() => mandarNumberTipOficial(item.data().n_tip)}>
+                        onClick={() => mandarNumberTipOficial(item.n_tip)}>
                         
                         <div className="box-section">
                           <img
@@ -139,10 +123,10 @@ export const Higiene = ({
                           />
                           <div className="box-text-video-tip">
                             <h3 className="subtittle-video-tip">
-                              {item.data().titulo}
+                              {item.titulo}
                             </h3>
                             <h5 className="text-video-tip">
-                              Tip N° {item.data().n_tip}
+                              Tip N° {item.n_tip}
                             </h5>
                           </div>
                         </div>
@@ -150,7 +134,7 @@ export const Higiene = ({
                     </div>
                   ))}
               </div>
-            )}
+            {/*})} */}
           </div>
         </div>
       )}

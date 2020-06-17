@@ -63,6 +63,7 @@ function App() {
   const [arrayChild, setArrayChild] = React.useState("");
   const [subItem, setSubItem] = React.useState(false);
   const [menuBurgerOpen, setmenuBurgerOpen] = React.useState(false);
+  const [contenidoJson, setContenidoJson] = React.useState([]);
 
   const mostrarSubItem = () => {
     setSubItem(!subItem);
@@ -126,7 +127,17 @@ function App() {
     backdrop = <Backdrop click={ocultarMenuMobile} />;
   }
 
+  console.log("holis", contenidoJson)
   React.useEffect(() => {
+
+   {/* fetch("../data.json")
+    .then((response) => response.json())
+    .then((datos) => {
+      setContenidoJson(datos);
+      console.log("holita", datos)
+    });
+  */}
+
     auth.onAuthStateChanged((user) => {
 
       if (user) {

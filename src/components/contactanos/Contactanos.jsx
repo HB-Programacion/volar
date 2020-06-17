@@ -17,6 +17,7 @@ export const Contactanos = () => {
                 className="input-register-space"
                 type="text"
                 placeholder="Nombre"
+                autoFocus
               />
               <p className="letter-register">CORREO ELECTRÓNICO</p>
               <input
