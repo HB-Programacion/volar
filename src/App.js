@@ -133,12 +133,13 @@ function App() {
   console.log("holis", contenidoJson)
   React.useEffect(() => {
 
-    fetch("./data/data.json")
+   {/* fetch("../data.json")
     .then((response) => response.json())
     .then((datos) => {
       setContenidoJson(datos);
       console.log("holita", datos)
     });
+  */}
 
     auth.onAuthStateChanged((user) => {
 
