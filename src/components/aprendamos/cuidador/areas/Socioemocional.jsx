@@ -62,10 +62,10 @@ export const Socioemocional = ({
                       key={item.id}
                       className="col-sm-12 col-md-12 col-lg-6 col-xl-6"
                     >
-                      <a href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/socioemocional/tips`}
+                      <a className="link" href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/socioemocional/tips`}
                         onClick={() => mandarNumberTipOficial(item.n_tip)}>
                         
-                        <div className="box-section">
+                        <div className="box-section box-section-sociemocional">
                           <img
                             src={iconoTipSocioemocional}
                             className="icono-video-tip"
@@ -110,10 +110,10 @@ export const Socioemocional = ({
                       key={item.id}
                       className="col-sm-12 col-md-12 col-lg-6 col-xl-6"
                     >
-                      <a href="/aprendamos/cuidador/socioemocional/tips"
+                      <a className="link" href="/aprendamos/cuidador/socioemocional/tips"
                         onClick={() => mandarNumberTipOficial(item.n_tip)}>
                         
-                        <div className="box-section">
+                        <div className="box-section box-section-sociemocional">
                           <img
                             src={iconoTipSocioemocional}
                             className="icono-video-tip"

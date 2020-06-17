@@ -67,10 +67,10 @@ export const Rutina= ({
                       key={item.id}
                       className="col-sm-12 col-md-12 col-lg-6 col-xl-6"
                     >
-                      <a href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/rutina/tips`}
+                      <a className="link" href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/rutina/tips`}
                         onClick={() => mandarNumberTipOficial(item.n_tip)}>
                         
-                        <div className="box-section">
+                        <div className="box-section box-section-rutina">
                           <img
                             src={iconoTipRutina}
                             className="icono-video-tip"
@@ -116,10 +116,10 @@ export const Rutina= ({
                       key={item.id}
                       className="col-sm-12 col-md-12 col-lg-6 col-xl-6"
                     >
-                      <a href="/aprendamos/cuidador/rutina/tips"
+                      <a className="link" href="/aprendamos/cuidador/rutina/tips"
                         onClick={() => mandarNumberTipOficial(item.n_tip)}>
                         
-                        <div className="box-section">
+                        <div className="box-section box-section-rutina">
                           <img
                             src={iconoTipRutina}
                             className="icono-video-tip"

@@ -126,11 +126,36 @@ background-color: #EF8B44;
   border-radius: 20px;
   display: flex;
 }
+.box-section-higiene:hover{
+  box-shadow:  5px 5px 10px  #28ABA9;
+}
+.box-section-juego:hover{
+  box-shadow:  5px 5px 10px  #F7B919;
+}
+
+.box-section-nutricion:hover{
+  box-shadow:  5px 5px 10px  #EB477A;
+}
+
+.box-section-rutina:hover{
+  box-shadow:  5px 5px 10px  #EF8B44;
+}
+
+.box-section-sesamo:hover{
+  box-shadow:  5px 5px 10px  #05AB4C;
+}
+
+.box-section-sociemocional:hover{
+  box-shadow:  5px 5px 10px  #AE96B2;
+}
+
+
 
 .list-videos-tips {
   margin-top: -6rem;
   margin-right: 3rem;
   margin-left: 3rem;
+  margin-bottom: 5rem
 }
 
 .icono-video-tip {
