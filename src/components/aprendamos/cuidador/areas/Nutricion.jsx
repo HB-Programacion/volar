@@ -6,6 +6,7 @@ import iconoTipNutricion from "./../../../../images/areas-img/icono_tip_nutricio
 import { useCollection } from "react-firebase-hooks/firestore";
 import { auth,db } from "../../../firebase/firebase";
 import { Orbitals } from "react-spinners-css";
+import arrTips from '../../../../data'
 
 export const Nutricion= ({
   contenidoFirebase,
@@ -14,33 +15,26 @@ export const Nutricion= ({
   firebaseUser,
   idChild,
 }) => {
-  const [edad, setEdad] = React.useState("");
+  
+  let arrayNutricion=  arrTips
+
+  arrayNutricion.sort(function (a, b) {
+    if (a.n_tip > b.n_tip) {
+      return 1;
+    }
+    if (a.n_tip < b.n_tip) {
+      return -1;
+    }
+    // a must be equal to b
+    return 0;
+  });
+
 
 
   const mandarNumberTipOficial = (numberTip) => {
     localStorage.setItem('localNumberTip', numberTip)
   };  
 
-  React.useEffect(() => {
-    if (firebaseUser !== null && idChild !== "") {
-      const childData = db
-        .collection("usuarios")
-        .doc(firebaseUser.uid)
-        .collection("addChild")
-        .doc(idChild);
-      childData
-        .get()
-        .then((snapShots) => {
-          setEdad(snapShots.data().edadChild);
-        })
-        .catch(function (error) {
-          console.log("Error getting document:", error);
-        });
-    }
-    /*  const childData= db.collection("usuarios").doc(firebaseUser.uid).collection("addChild").doc("OxtF7ijtoOlOX7zx3xcY")
-  console.log("hola", childData.data().edadChild)
-    ///Obteniendo todo el contenido de firebase///*/
-  }, [firebaseUser, idChild]);
 
   return (
     <div>
@@ -55,19 +49,13 @@ export const Nutricion= ({
             <h1 className="title-area  tracking-in-expand-fwd-top">NUTRICIÓN Y SALUD</h1>
           </div>
           <div className="list-videos-tips">
-            {error && <strong>Error: {JSON.stringify(error)}</strong>}
-            {loading && <div className="grande">
-                <div className="centrando-spiner">
-          <Orbitals color="#EF8B44" size={900} />
-        </div>
-      </div> }
-            {contenidoFirebase && (
+            
               <div className="row">
-                {contenidoFirebase.docs
+                {arrayNutricion
                   .filter(
                     (item) =>
-                      item.data().seccion === "Nutrición y Salud" &&
-                      item.data().edad == localStorage.getItem('edadChildLogueadoActive')
+                      item.seccion === "Nutrición y Salud" &&
+                      item.edad == localStorage.getItem('edadChildLogueadoActive')
                   )
                   .map((item) => (
                     <div
@@ -75,7 +63,7 @@ export const Nutricion= ({
                       className="col-sm-12 col-md-12 col-lg-6 col-xl-6"
                     >
                       <a href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/nutricion/tips`}
-                        onClick={() => mandarNumberTipOficial(item.data().n_tip)}>
+                        onClick={() => mandarNumberTipOficial(item.n_tip)}>
                         
                         <div className="box-section">
                           <img
@@ -85,10 +73,10 @@ export const Nutricion= ({
                           />
                           <div className="box-text-video-tip">
                             <h3 className="subtittle-video-tip">
-                              {item.data().titulo}
+                              {item.titulo}
                             </h3>
                             <h5 className="text-video-tip">
-                              Tip N° {item.data().n_tip}
+                              Tip N° {item.n_tip}
                             </h5>
                           </div>
                         </div>
@@ -96,7 +84,7 @@ export const Nutricion= ({
                     </div>
                   ))}
               </div>
-            )}
+          
           </div>
         </div>
       ) : (
@@ -110,15 +98,12 @@ export const Nutricion= ({
             <h1 className="title-area">NUTRICIÓN</h1>
           </div>
           <div className="list-videos-tips">
-            {error && <strong>Error: {JSON.stringify(error)}</strong>}
-            {loading && <span>Collection: Loading...</span>}
-            {contenidoFirebase && (
               <div className="row">
-                {contenidoFirebase.docs
+                {arrayNutricion
                   .filter(
                     (item) =>
-                      item.data().seccion === "Nutrición y Salud" &&
-                      item.data().edad == JSON.parse(localStorage.getItem('dateChild')).edad
+                      item.seccion === "Nutrición y Salud" &&
+                      item.edad == JSON.parse(localStorage.getItem('dateChild')).edad
                   )
                   .map((item) => (
                     <div
@@ -126,7 +111,7 @@ export const Nutricion= ({
                       className="col-sm-12 col-md-12 col-lg-6 col-xl-6"
                     >
                       <a href="/aprendamos/cuidador/nutricion/tips"
-                        onClick={() => mandarNumberTipOficial(item.data().n_tip)}>
+                        onClick={() => mandarNumberTipOficial(item.n_tip)}>
                         
                         <div className="box-section">
                           <img
@@ -136,10 +121,10 @@ export const Nutricion= ({
                           />
                           <div className="box-text-video-tip">
                             <h3 className="subtittle-video-tip">
-                              {item.data().titulo}
+                              {item.titulo}
                             </h3>
                             <h5 className="text-video-tip">
-                              Tip N° {item.data().n_tip}
+                              Tip N° {item.n_tip}
                             </h5>
                           </div>
                         </div>
@@ -147,7 +132,6 @@ export const Nutricion= ({
                     </div>
                   ))}
               </div>
-            )}
           </div>
         </div>
       )}
