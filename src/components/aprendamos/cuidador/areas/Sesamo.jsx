@@ -6,6 +6,7 @@ import iconoVideoJuego from "./../../../../images/areas-img/icon-video-sesamo.sv
 import { useCollection } from "react-firebase-hooks/firestore";
 import { auth, db } from "../../../firebase/firebase";
 import { Orbitals } from "react-spinners-css";
+import arrTips from '../../../../data'
 
 export const Sesamo = ({
   contenidoFirebase,
@@ -16,7 +17,18 @@ export const Sesamo = ({
 }) => {
 
   
-  const [edad, setEdad] = React.useState("");
+  let arraySesamo=arrTips
+
+  arraySesamo.sort(function (a, b) {
+    if (a.n_tip > b.n_tip) {
+      return 1;
+    }
+    if (a.n_tip < b.n_tip) {
+      return -1;
+    }
+    // a must be equal to b
+    return 0;
+  });
 
 
  const mandarNumberTipOficial = (numberTip) => {
@@ -24,27 +36,7 @@ export const Sesamo = ({
   console.log(localStorage.getItem('localNumberTip'))
 };
 
-  React.useEffect(() => {
-    if (firebaseUser !== null && idChild !== "") {
-      const childData = db
-        .collection("usuarios")
-        .doc(firebaseUser.uid)
-        .collection("addChild")
-        .doc(idChild);
-      childData
-        .get()
-        .then((snapShots) => {
-          setEdad(snapShots.data().edadChild);
-        })
-        .catch(function (error) {
-          console.log("Error getting document:", error);
-        });
-    }
 
-    /*  const childData= db.collection("usuarios").doc(firebaseUser.uid).collection("addChild").doc("OxtF7ijtoOlOX7zx3xcY")
-  console.log("hola", childData.data().edadChild)
-    ///Obteniendo todo el contenido de firebase///*/
-  }, [firebaseUser, idChild]);
 
   return (
 <>
@@ -59,16 +51,10 @@ export const Sesamo = ({
       />
     </div>
     <div className="list-videos-tips">
-      {error && <strong>Error: {JSON.stringify(error)}</strong>}
-      {loading && <div className="grande">
-      <div className="centrando-spiner">
-        <Orbitals color="#EF8B44" size={900} />
-      </div>
-    </div>}
-      {contenidoFirebase && (
+
         <div className="row">
-          {contenidoFirebase.docs
-            .filter((item) => item.data().seccion === "Sésamo")
+          {arraySesamo
+            .filter((item) => item.seccion === "Sésamo")
             .map((item) => (
               <div
                 key={item.id}
@@ -77,7 +63,7 @@ export const Sesamo = ({
                 <a
                   href=
                   {`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/sesamo/tips`}
-                  onClick={() => mandarNumberTipOficial(item.data().n_tip)}
+                  onClick={() => mandarNumberTipOficial(item.n_tip)}
                 >
                   <div className="box-section">
                     <img
@@ -87,10 +73,10 @@ export const Sesamo = ({
                     />
                     <div className="box-text-video-tip">
                       <h3 className="subtittle-video-tip">
-                        {item.data().titulo}
+                        {item.titulo}
                       </h3>
                       <h5 className="text-video-tip">
-                        N° {item.data().n_tip} {item.data().tipo}
+                        N° {item.n_tip} {item.tipo}
                       </h5>
                     </div>
                   </div>
@@ -98,7 +84,6 @@ export const Sesamo = ({
               </div>
             ))}
         </div>
-      )}
     </div>
   </div> ): 
   (
@@ -111,16 +96,10 @@ export const Sesamo = ({
       />
     </div>
     <div className="list-videos-tips">
-      {error && <strong>Error: {JSON.stringify(error)}</strong>}
-      {loading && <div className="grande">
-      <div className="centrando-spiner">
-        <Orbitals color="#EF8B44" size={900} />
-      </div>
-    </div>}
-      {contenidoFirebase && (
+
         <div className="row">
-          {contenidoFirebase.docs
-            .filter((item) => item.data().seccion === "Sésamo")
+          {arraySesamo
+            .filter((item) => item.seccion === "Sésamo")
             .map((item) => (
               <div
                 key={item.id}
@@ -128,7 +107,7 @@ export const Sesamo = ({
               >
                 <a
                   href="/aprendamos/cuidador/sesamo/tips"
-                  onClick={() => mandarNumberTipOficial(item.data().n_tip)}
+                  onClick={() => mandarNumberTipOficial(item.n_tip)}
                 >
                   <div className="box-section">
                     <img
@@ -138,10 +117,10 @@ export const Sesamo = ({
                     />
                     <div className="box-text-video-tip">
                       <h3 className="subtittle-video-tip">
-                        {item.data().titulo}
+                        {item.titulo}
                       </h3>
                       <h5 className="text-video-tip">
-                        N° {item.data().n_tip} {item.data().tipo}
+                        N° {item.n_tip} {item.tipo}
                       </h5>
                     </div>
                   </div>
@@ -149,7 +128,7 @@ export const Sesamo = ({
               </div>
             ))}
         </div>
-      )}
+    
     </div>
   </div>
   )

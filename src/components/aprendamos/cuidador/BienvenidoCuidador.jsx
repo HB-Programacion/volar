@@ -110,7 +110,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
         tus hijos e hijas!
       </p>
       <div className="list-btn-areas show-desktop">
-      {colaboradorBreca === "NO" ?   <div className="btn-areas w-100">
+      {colaboradorBreca === "NO" || colaboradorBreca === ""  ?   <div className="btn-areas w-100">
           <div className="w-20">
             <a href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/higiene`} className="link">
               <div className="area-higiene">
