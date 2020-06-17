@@ -72,10 +72,10 @@ export const Higiene = ({
                       key={item.id}
                       className="col-sm-12 col-md-12 col-lg-6 col-xl-6"
                     >
-                      <a href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/higiene/tips`}
+                      <a className="link"href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/higiene/tips`}
                         onClick={() => mandarNumberTipOficial(item.n_tip)}>
                         
-                        <div className="box-section">
+                        <div className="box-section box-section-higiene">
                           <img
                             src={iconoTipLighBlue}
                             className="icono-video-tip"
@@ -123,10 +123,10 @@ export const Higiene = ({
                       key={item.id}
                       className="col-sm-12 col-md-12 col-lg-6 col-xl-6"
                     >
-                      <a href="/aprendamos/cuidador/higiene/tips"
+                      <a className="link" href="/aprendamos/cuidador/higiene/tips"
                         onClick={() => mandarNumberTipOficial(item.n_tip)}>
                         
-                        <div className="box-section">
+                        <div className="box-section box-section-higiene">
                           <img
                             src={iconoTipLighBlue}
                             className="icono-video-tip"

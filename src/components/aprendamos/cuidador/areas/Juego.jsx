@@ -64,10 +64,10 @@ export const Juego = ({
                       key={item.id}
                       className="col-sm-12 col-md-12 col-lg-6 col-xl-6"
                     >
-                      <a href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/juego/tips`}
+                      <a className="link" href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/juego/tips`}
                         onClick={() => mandarNumberTipOficial(item.n_tip)}>
                         
-                        <div className="box-section">
+                        <div className="box-section box-section-juego">
                           <img
                             src={iconoTipJuego}
                             className="icono-video-tip"
@@ -112,10 +112,10 @@ export const Juego = ({
                       key={item.id}
                       className="col-sm-12 col-md-12 col-lg-6 col-xl-6"
                     >
-                      <a href="/aprendamos/cuidador/juego/tips"
+                      <a className="link" href="/aprendamos/cuidador/juego/tips"
                         onClick={() => mandarNumberTipOficial(item.n_tip)}>
                         
-                        <div className="box-section">
+                        <div className="box-section box-section-juego">
                           <img
                             src={iconoTipJuego}
                             className="icono-video-tip"

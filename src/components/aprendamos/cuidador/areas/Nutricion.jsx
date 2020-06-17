@@ -62,10 +62,10 @@ export const Nutricion= ({
                       key={item.id}
                       className="col-sm-12 col-md-12 col-lg-6 col-xl-6"
                     >
-                      <a href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/nutricion/tips`}
+                      <a className="link" href={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/nutricion/tips`}
                         onClick={() => mandarNumberTipOficial(item.n_tip)}>
                         
-                        <div className="box-section">
+                        <div className="box-section box-section-nutricion">
                           <img
                             src={iconoTipNutricion}
                             className="icono-video-tip"
@@ -110,10 +110,10 @@ export const Nutricion= ({
                       key={item.id}
                       className="col-sm-12 col-md-12 col-lg-6 col-xl-6"
                     >
-                      <a href="/aprendamos/cuidador/nutricion/tips"
+                      <a className="link" href="/aprendamos/cuidador/nutricion/tips"
                         onClick={() => mandarNumberTipOficial(item.n_tip)}>
                         
-                        <div className="box-section">
+                        <div className="box-section box-section-nutricion">
                           <img
                             src={iconoTipNutricion}
                             className="icono-video-tip"

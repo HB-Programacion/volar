@@ -60,12 +60,12 @@ export const Sesamo = ({
                 key={item.id}
                 className="col-sm-12 col-md-12 col-lg-6 col-xl-6"
               >
-                <a
+                <a className="link"
                   href=
                   {`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/sesamo/tips`}
                   onClick={() => mandarNumberTipOficial(item.n_tip)}
                 >
-                  <div className="box-section">
+                  <div className="box-section box-section-sesamo">
                     <img
                       src={iconoVideoJuego}
                       className="icono-video-tip"
@@ -105,11 +105,11 @@ export const Sesamo = ({
                 key={item.id}
                 className="col-sm-12 col-md-12 col-lg-6 col-xl-6"
               >
-                <a
+                <a className="link"
                   href="/aprendamos/cuidador/sesamo/tips"
                   onClick={() => mandarNumberTipOficial(item.n_tip)}
                 >
-                  <div className="box-section">
+                  <div className="box-section box-section-sesamo">
                     <img
                       src={iconoVideoJuego}
                       className="icono-video-tip"
