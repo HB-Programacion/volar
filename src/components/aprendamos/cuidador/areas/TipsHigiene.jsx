@@ -6,9 +6,9 @@ import { auth, db } from "../../../../components/firebase/firebase";
 
 import { Orbitals } from "react-spinners-css";
 
-// import arrTips from '../../../../../public/data/data'
-// let arrayHigiene =  arrTips.filter(e => e.seccion === "Higiene y Agua Segura");
-// console.log(arrayHigiene);
+import arrTips from '../../../../data'
+let arrayHigiene =  arrTips.filter(e => e.seccion === "Higiene y Agua Segura");
+console.log(arrayHigiene);
 
 
 const TipsHigiene = ({
