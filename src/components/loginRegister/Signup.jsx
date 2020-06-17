@@ -1,10 +1,11 @@
 import React from "react";
-import "./loginRegister.css";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import arrowLeft from "./../../images/arrow-left-blue.svg";
-import arrowRight from "./../../images/arrow-right-blue.svg";
 import { auth, db, firebase } from "../firebase/firebase";
 import { withRouter } from "react-router-dom";
+import "./loginRegister.css";
+
+import arrowLeft from "./../../images/arrow-left-blue.svg";
+import arrowRight from "./../../images/arrow-right-blue.svg";
 
 const Signup = (props) => {
   const [email, setEmail] = React.useState("");
