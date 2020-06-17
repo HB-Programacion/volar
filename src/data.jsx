@@ -1161,18 +1161,21 @@ export default [
         "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/cubierto_plato_Mesa%20de%20trabajo%201.svg",
 
     },
-    // " higieneAguaSegura_edad_1_tip_5": 
+
     {
+        "seccion": "Higiene y Agua Segura",
+        "video": "",
         "n_tip": 5,
-        "seccion ": "Higiene y Agua Segura",
         "texto1A": " La única forma de matar los gérmenes del agua es hirviendola. Si la tomas directo del caño o del envase, podrías enfermarte del estómago. Y necesitas una buena salud para amamantar a tu bebé, recuerda que los 6 primeros meses solo debe tomar tu leche. ",
         "edad": 1,
         "texto1B": "",
         "titulo": "Cuídate",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/tetera_Mesa%20de%20trabajo%201.svg",
-        "video": "",
+
     },
+    // " higieneAguaSegura_edad_1_tip_5": 
+
     // "higieneAguaSegura_edad_1_tip_10": 
     {
         "seccion": "Higiene y Agua Segura",
@@ -4593,28 +4596,32 @@ export default [
         "texto3": "",
         "n_tip": 23
     },
-    // "sesamo_video_3": 
+
     {
-        "texto3": "",
-        "n_tip": 3,
-        "seccion ": "Sésamo",
         "titulo": "La abeja se baña",
         "texto2": "",
         "tipo": "Video Educativo",
         "texto1": "A través de imágenes, sin audio, se muestra el momento del baño como una actividad divertida. Además, grafica el uso del agua responsivo, sin desperdiciarlo.",
-        "video": "https://www.youtube.com/embed/c2yEkxEgT08?rel=0&autoplay=1"
+        "seccion": "Sésamo",
+        "video": "https://www.youtube.com/embed/c2yEkxEgT08?rel=0&autoplay=1",
+        "texto3": "",
+        "n_tip": 3
     },
-    // "sesamo_video_4": 
+
     {
+        "titulo": "El elefante y el ratón se lavan las manos",
         "texto2": "",
         "tipo": "Video Educativo",
         "texto1": "A través de imágenes, sin audio, se muestra el correcto lavado de manos de forma divertida.",
-        "video": "https://www.youtube.com/embed/rqodhJ5nVFU?rel=0&autoplay=1",
+        "seccion": "Sésamo",
+        "video": "https://www.youtube.com/embed/zR6mV8PcZ7A?rel=0&autoplay=1",
         "texto3": "",
-        "n_tip": 4,
-        "seccion ": "Sésamo",
-        "titulo": "El elefante y el ratón se lavan las manos"
+        "n_tip": 4
     },
+    // "sesamo_video_3": 
+
+    // "sesamo_video_4": 
+ 
     // "sesamo_video_5": 
     {
         "seccion": "Sésamo",

@@ -5,6 +5,7 @@ import { auth, db } from "../../../../components/firebase/firebase";
 // import cohete from '../../images/cohete-volando.svg';
 
 import { Orbitals } from "react-spinners-css";
+import arrTips from '../../../../data'
 
 const TipsSocioemocional = ({
   contenidoFirebase,
@@ -91,7 +92,7 @@ const TipsSocioemocional = ({
                         </div>
                         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                           <div class="text-tips">
-                            <h3>Hola {localStorage.getItem("nameUser")}</h3>
+                            <h3>Hola {localStorage.getItem("nameUserActive")}</h3>
                             {item.data().texto1B !== "" ? (
                               <p class="text-tips-light">
                                 {item.data().texto1A}{" "}

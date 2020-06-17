@@ -6,10 +6,9 @@ import { auth, db } from "../../../../components/firebase/firebase";
 
 import { Orbitals } from "react-spinners-css";
 
-import arrTips from '../../../../data'
+import arrTips from '../../../../data';
 
-let arrayHigiene =  arrTips.filter(e => e.seccion === "Higiene y Agua Segura");
-console.log(arrayHigiene);
+
 
 
 const TipsHigiene = ({
@@ -19,75 +18,54 @@ const TipsHigiene = ({
   firebaseUser,
   idChild,
 }) => {
-  const [edad, setEdad] = React.useState("");
 
-  React.useEffect(() => {
-    if (firebaseUser !== null && idChild !== "") {
-      const childData = db
-        .collection("usuarios")
-        .doc(firebaseUser.uid)
-        .collection("addChild")
-        .doc(idChild);
-      childData
-        .get()
-        .then((snapShots) => {
-          setEdad(snapShots.data().edadChild);
-        })
-        .catch(function (error) {
-          console.log("Error getting document:", error);
-        });
-    }
-    /*  const childData= db.collection("usuarios").doc(firebaseUser.uid).collection("addChild").doc("OxtF7ijtoOlOX7zx3xcY")
-  console.log("hola", childData.data().edadChild)
-    ///Obteniendo todo el contenido de firebase///*/
-  }, [firebaseUser, idChild]);
 
   return (
     <div>
       {firebaseUser !== null ? (
         <div className="background-tips-higiene" id="aprendamos-page">
           <div className=" animated fadeIn">
-            {error && <strong>Error: {JSON.stringify(error)}</strong>}
+          {/* {error && <strong>Error: {JSON.stringify(error)}</strong>}
             {loading && (
               <div className="grande">
                 <div className="centrando-spiner">
                   <Orbitals color="#EF8B44" size={900} />
                 </div>{" "}
               </div>
-            )}
-            {contenidoFirebase && (
+            )}*/}
+            {/*{contenidoFirebase && ( */}
               <>
-                {contenidoFirebase.docs
+                {arrTips
                   .filter(
                     (item) =>
-                      item.data().seccion === "Higiene y Agua Segura" &&
-                      item.data().n_tip ==
+                      item.seccion === "Higiene y Agua Segura" &&
+                      item.n_tip ==
                         localStorage.getItem("localNumberTip") &&
-                      item.data().edad == edad
+                      item.edad ==  localStorage.getItem('edadChildLogueadoActive')
                   )
                   .map((item) => (
                     <div className="" key={item}>
                       <div className="row justify-content-center h-100 sin-margin-row">
                         <h1 className="tittle-tips tracking-in-expand-fwd-top">
-                          {item.data().titulo}
+                          {item.titulo}
                         </h1>
                       </div>
                       <div className="row justify-content-center  h-100 sin-margin-row">
                         <h3 className="tips-numbers tracking-in-expand-fwd-top">
-                          TIP N°{item.data().n_tip}
+                          TIP N°{item.n_tip}
                         </h3>
                       </div>
                       <div className="row tips-margin-top sin-margin-row tips-1-columna">
                         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                          {item.data().icono !== "" ? (
-                            <img src={item.data().icono} alt="" className="iconos-tips-blanco heartbeat" />
+                          {item.icono !== "" ? (
+                            <img src={item.icono} alt="" className="iconos-tips-blanco heartbeat" />
                           ) : (
                             <div className="videoWrapper">
                               <iframe
                                 className="border-video-higiene"
                                 width="600"
                                 height="350"
-                                src={item.data().video}
+                                src={item.video}
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen
@@ -97,73 +75,64 @@ const TipsHigiene = ({
                         </div>
                         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                           <div class="text-tips">
-                            <h3>Hola {localStorage.getItem("nameUser")}</h3>
-                            {item.data().texto1B !== "" ? (
+                            <h3>Hola {localStorage.getItem("nameUserActive")}</h3>
+                            {item.texto1B !== "" ? (
                               <p class="text-tips-light">
-                                {item.data().texto1A}
+                                {item.texto1A}
                                 {localStorage.getItem('nameChildActive')}
-                                {item.data().texto1B}
+                                {item.texto1B}
                               </p>
                             ) : (
                               <p class="text-tips-light">
-                                {item.data().texto1A}
+                                {item.texto1A}
                               </p>
                             )}
-                            <p class="text-tips-bold">{item.data().texto2}</p>
+                            <p class="text-tips-bold">{item.texto2}</p>
                           </div>
                         </div>
                       </div>
                     </div>
                   ))}
               </>
-            )}
+           {/*  )} */}
           </div>
         </div>
       ) : (
         <div className="background-tips-higiene" id="aprendamos-page">
           <div className=" animated fadeIn">
-            {error && <strong>Error: {JSON.stringify(error)}</strong>}
-            {loading && (
-              <div className="grande">
-                <div className="centrando-spiner">
-                  <Orbitals color="#EF8B44" size={900} />
-                </div>{" "}
-              </div>
-            )}
-            {contenidoFirebase && (
               <>
                 {contenidoFirebase.docs
                   .filter(
                     (item) =>
-                      item.data().seccion === "Higiene y Agua Segura" &&
-                      item.data().n_tip ==
+                      item.seccion === "Higiene y Agua Segura" &&
+                      item.n_tip ==
                         localStorage.getItem("localNumberTip") &&
-                      item.data().edad ==
+                      item.edad ==
                         JSON.parse(localStorage.getItem("dateChild")).edad
                   )
                   .map((item) => (
                     <div className="">
                       <div className="row justify-content-center h-100 sin-margin-row">
                         <h1 className="tittle-tips tracking-in-expand-fwd-top">
-                          {item.data().titulo}
+                          {item.titulo}
                         </h1>
                       </div>
                       <div className="row justify-content-center  h-100 sin-margin-row">
                         <h3 className="tips-numbers tracking-in-expand-fwd-top">
-                          TIP N°{item.data().n_tip}
+                          TIP N°{item.n_tip}
                         </h3>
                       </div>
                       <div className="row tips-margin-top sin-margin-row tips-1-columna">
                         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                          {item.data().icono !== "" ? (
-                            <img src={item.data().icono} alt="" className="iconos-tips-blanco heartbeat" />
+                          {item.icono !== "" ? (
+                            <img src={item.icono} alt="" className="iconos-tips-blanco heartbeat" />
                           ) : (
                             <div className="videoWrapper">
                               <iframe
                                 className="border-video-higiene"
                                 width="600"
                                 height="350"
-                                src={item.data().video}
+                                src={item.video}
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen
@@ -176,25 +145,25 @@ const TipsHigiene = ({
                               <div class="text-tips">
                               <h3>Hola Mamita</h3>
                                 <p class="text-tips-light">
-                                  {item.data().texto1B}
+                                  {item.texto1B}
                                 </p>
-                              <p class="text-tips-bold">{item.data().texto2}</p>
+                              <p class="text-tips-bold">{item.texto2}</p>
                             </div>
                           ): (
                             <div class="text-tips">
                             <h3>Hola</h3>
-                            {item.data().texto1B !== "" ? (
+                            {item.texto1B !== "" ? (
                               <p class="text-tips-light">
-                                {item.data().texto1A}
+                                {item.texto1A}
                                 {JSON.parse(localStorage.getItem("dateChild")).name}
-                                {item.data().texto1B}
+                                {item.texto1B}
                               </p>
                             ) : (
                               <p class="text-tips-light">
-                                {item.data().texto1A}
+                                {item.texto1A}
                               </p>
                             )}
-                            <p class="text-tips-bold">{item.data().texto2}</p>
+                            <p class="text-tips-bold">{item.texto2}</p>
                           </div>
                           )}
                         </div>
@@ -202,7 +171,6 @@ const TipsHigiene = ({
                     </div>
                   ))}
               </>
-            )}
           </div>
         </div>
       )}
