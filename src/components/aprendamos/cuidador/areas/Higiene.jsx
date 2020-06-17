@@ -113,7 +113,7 @@ export const Higiene = ({
                       className="col-sm-12 col-md-12 col-lg-6 col-xl-6"
                     >
                       <a href="/aprendamos/cuidador/higiene/tips"
-                        onClick={() => mandarNumberTipOficial(item.data().n_tip)}>
+                        onClick={() => mandarNumberTipOficial(item.n_tip)}>
                         
                         <div className="box-section">
                           <img
