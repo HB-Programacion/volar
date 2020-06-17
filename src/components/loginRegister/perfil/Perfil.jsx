@@ -493,7 +493,7 @@ const Perfil = (props) => {
                 <div className="row mt-4">
                   <div className="col-sm-10 col-md-10 col-lg-10 col-xl-10">
                     <button
-                      className="btn-navy-blue text-white wobble-hor-bottom boton-guardar-perfil"
+                      className="btn-navy-blue text-white wobble-hor-bottom boton-guardar-perfil out-none-button"
                       type="submit"
                     >
                       <img src={arrowLeft} className="arrow-blue"></img>
@@ -669,7 +669,7 @@ const Perfil = (props) => {
                     <div className="row mt-4">
                       <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                         <button
-                          className="btn-navy-blue text-white "
+                          className="btn-navy-blue text-white out-none-button"
                           type="submit"
                         >
                           <img src={arrowLeft} className="arrow-blue"></img>
@@ -755,7 +755,7 @@ const Perfil = (props) => {
                         <div className="row">
                           <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                             <button
-                              className="btn-navy-blue-password text-white"
+                              className="btn-navy-blue-password text-white out-none-button"
                               type="submit"
                             >
                               <img
@@ -808,7 +808,7 @@ const Perfil = (props) => {
                             <div className="btn-editar-eliminar">
                               <button
                                 type="button"
-                                className="btn  btn-sm float-right"
+                                className="btn  btn-sm float-right out-none-button"
                                 data-toggle="modal"
                                 data-target={"#hola" + key}
                               >
@@ -816,7 +816,7 @@ const Perfil = (props) => {
                               </button>
                               <button
                                 type="button"
-                                className="btn btn-sm float-right"
+                                className="btn btn-sm float-right out-none-button"
                                 data-toggle="modal"
                                 data-target={"#editar" + key}
                                 onClick={() => activarEdicion(item)}
@@ -824,30 +824,30 @@ const Perfil = (props) => {
                                 <img src={editImg} className="w-50"></img>
                               </button>
                               <div
-                                class="modal fade "
+                                className="modal fade "
                                 id={"hola" + key}
                                 tabindex="-1"
                                 role="dialog"
                                 aria-labelledby="exampleModalLabel"
                                 aria-hidden="true"
                               >
-                                <div class="modal-dialog " role="document">
-                                  <div class="modal-content ">
-                                    <div class="modal-body texto-modal ">
+                                <div className="modal-dialog " role="document">
+                                  <div className="modal-content ">
+                                    <div className="modal-body texto-modal ">
                                       ¿Estás seguro de querer borrar el perfil
                                       de {item.data().nameChild}?
                                     </div>
-                                    <div class="modal-footer">
+                                    <div className="modal-footer">
                                       <button
                                         type="button"
-                                        class="btn btn-secondary"
+                                        className="btn btn-secondary out-none-button"
                                         data-dismiss="modal"
                                       >
                                         Close
                                       </button>
                                       <button
                                         type="button"
-                                        class="btn btn-primary"
+                                        className="btn btn-primary out-none-button"
                                         data-dismiss="modal"
                                         onClick={() => eliminar(item.id)}
                                       >
@@ -858,32 +858,32 @@ const Perfil = (props) => {
                                 </div>
                               </div>
                               <div
-                                class="modal fade "
+                                className="modal fade "
                                 id={"editar" + key}
                                 tabindex="-1"
                                 role="dialog"
                                 aria-labelledby="exampleModalLabel"
                                 aria-hidden="true"
                               >
-                                <div class="modal-dialog" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
+                                <div className="modal-dialog" role="document">
+                                  <div className="modal-content">
+                                    <div className="modal-header">
                                       <h5
-                                        class="modal-title"
+                                        className="modal-title"
                                         id="exampleModalLabel"
                                       >
                                         Editar datos del niño
                                       </h5>
                                       <button
                                         type="button"
-                                        class="close"
+                                        className="close out-none-button"
                                         data-dismiss="modal"
                                         aria-label="Close"
                                       >
                                         <span aria-hidden="true">&times;</span>
                                       </button>
                                     </div>
-                                    <div class="modal-body">
+                                    <div className="modal-body">
                                       <form onSubmit={procesarDatosPerfilChild}>
                                         {errorChild && (
                                           <div className="alert alert-danger">
@@ -991,7 +991,7 @@ const Perfil = (props) => {
                                         </div>
 
                                         <button
-                                          className="btn-navy-blue text-white "
+                                          className="btn-navy-blue text-white out-none-button"
                                           type="submit"
                                         >
                                           <img

@@ -1,6 +1,7 @@
 export default [
     // GESTANTE
     {
+        // higieneAguaSegura_edad_-1_tip_1
         "seccion": "Higiene y Agua Segura",
         "edad": -1,
         "n_tip": 1,
@@ -11,6 +12,7 @@ export default [
         "titulo": "Cuida lo que consumes",
         "video": ""
     },
+    // higieneAguaSegura_edad_-1_tip_2
     {
         "seccion": "Higiene y Agua Segura",
         "edad": -1,
@@ -23,6 +25,7 @@ export default [
         "video": ""
     },
     {
+        // higieneAguaSegura_edad_-1_tip_3
         "seccion": "Higiene y Agua Segura",
         "edad": -1,
         "n_tip": 3,
@@ -34,6 +37,7 @@ export default [
         "video": ""
     },
     {
+        // higieneAguaSegura_edad_-1_tip_4
         "seccion": "Higiene y Agua Segura",
         "edad": -1,
         "n_tip": 4,
@@ -45,6 +49,7 @@ export default [
         "video": ""
     },
     {
+        // higieneAguaSegura_edad_-1_tip_5
         seccion: "Higiene y Agua Segura",
         edad: -1,
         n_tip: 5,
@@ -56,6 +61,7 @@ export default [
         video: ""
     },
     {
+        // higieneAguaSegura_edad_-1_tip_6
         seccion: "Higiene y Agua Segura",
         edad: -1,
         n_tip: 6,
@@ -67,6 +73,7 @@ export default [
         video: ""
     },
     {
+        // higieneAguaSegura_edad_-1_tip_7
         seccion: "Higiene y Agua Segura",
         edad: -1,
         n_tip: 7,
@@ -78,6 +85,7 @@ export default [
         video: ""
     },
     {
+        // higieneAguaSegura_edad_-1_tip_8
         seccion: "Higiene y Agua Segura",
         edad: -1,
         n_tip: 8,
@@ -89,6 +97,7 @@ export default [
         video: ""
     },
     {
+        // higieneAguaSegura_edad_-1_tip_9
         seccion: "Higiene y Agua Segura",
         edad: -1,
         n_tip: 9,
@@ -100,10 +109,11 @@ export default [
         video: ""
     },
     {
+        // higieneAguaSegura_edad_-1_tip_10
         seccion: "Higiene y Agua Segura",
         edad: -1,
         n_tip: 10,
-        icono: "",
+        icono: "http://52.177.117.53/static/media/icono-blanco/0-1/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
         texto1A: "",
         texto1B: " Lávate bien las manos antes de cocinar y luego de ir al baño. ¡Bien hecho!",
         texto2: "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
@@ -111,6 +121,7 @@ export default [
         video: ""
     },
     {
+        // socioemocional_edad_-1_tip_1
         seccion: "Socioemocional",
         edad: -1,
         n_tip: 1,
@@ -122,6 +133,7 @@ export default [
         video: ""
     },
     {
+        // socioemocional_edad_-1_tip_2 
         seccion: "Socioemocional",
         edad: -1,
         n_tip: 2,
@@ -133,6 +145,7 @@ export default [
         video: ""
     },
     {
+        // socioemocional_edad_-1_tip_3
         seccion: "Socioemocional",
         edad: -1,
         n_tip: 3,
@@ -144,6 +157,7 @@ export default [
         video: ""
     },
     {
+        // socioemocional_edad_-1_tip_4
         seccion: "Socioemocional",
         edad: -1,
         n_tip: 4,
@@ -154,6 +168,7 @@ export default [
         titulo: "¡Todo va a estar bien!",
         video: ""
     },
+    // socioemocional_edad_-1_tip_5
     {
         seccion: "Socioemocional",
         edad: -1,
@@ -166,6 +181,7 @@ export default [
         video: ""
     },
     {
+        // socioemocional_edad_-1_tip_6
         seccion: "Socioemocional",
         edad: -1,
         n_tip: 6,
@@ -177,6 +193,7 @@ export default [
         video: ""
     },
     {
+        // socioemocional_edad_-1_tip_7
         seccion: "Socioemocional",
         edad: -1,
         n_tip: 7,
@@ -188,6 +205,7 @@ export default [
         video: ""
     },
     {
+        // socioemocional_edad_-1_tip_8
         seccion: "Socioemocional",
         edad: -1,
         n_tip: 8,
@@ -199,6 +217,7 @@ export default [
         video: ""
     },
     {
+        // socioemocional_edad_-1_tip_9
         seccion: "Socioemocional",
         edad: -1,
         n_tip: 9,
@@ -210,17 +229,19 @@ export default [
         video: ""
     },
     {
+        // socioemocional_edad_-1_tip_10
         seccion: "Socioemocional",
         edad: -1,
         n_tip: 10,
         icono: "",
-        texto1A: "",
+        texto1A: "http://52.177.117.53/static/media/icono-blanco/GESTACION/thumbs_up_Mesa%20de%20trabajo%201.svg",
         texto1B: ' Si la fecha de parto está cerca, te recomendamos practicar con tu pareja o un familiar cercano señales no verbales para comunicarse. Por ejemplo, puedes usar el dedo pulgar para indicar que "sí" o que "no". Así podrás comunicarle lo que quieres o sientes de manera más rápida y sin generar mucho estrés.',
         texto2: "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         titulo: "Anticípate",
         video: ""
     },
     {
+        // rutina_edad_-1_tip_1
         seccion: 'Rutina',
         edad: -1,
         n_tip: 1,
@@ -232,6 +253,7 @@ export default [
         video: ''
     },
     {
+        // rutina_edad_-1_tip_2
         seccion: 'Rutina',
         edad: -1,
         n_tip: 2,
@@ -243,6 +265,7 @@ export default [
         video: ''
     },
     {
+        // rutina_edad_-1_tip_3
         seccion: 'Rutina',
         edad: -1,
         n_tip: 3,
@@ -254,6 +277,7 @@ export default [
         video: 'https://www.youtube.com/embed/itGbDk8yZDw?rel=0&autoplay=1'
     },
     {
+        // rutina_edad_-1_tip_4
         seccion: 'Rutina',
         edad: -1,
         n_tip: 4,
@@ -265,6 +289,7 @@ export default [
         video: ''
     },
     {
+        // rutina_edad_-1_tip_5
         "seccion": "Rutina",
         "edad": -1,
         "n_tip": 5,
@@ -276,10 +301,11 @@ export default [
         "video": ""
     },
     {
+        // rutina_edad_-1_tip_6
         "seccion": "Rutina",
         "edad": -1,
         "n_tip": 6,
-        "icono":"http://52.177.117.53/static/media/icono-blanco/GESTACION/embarazada_Mesa%20de%20trabajo%201.svg",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/GESTACION/embarazada_Mesa%20de%20trabajo%201.svg",
         "texto1A": "",
         "texto1B": " Puedes comunicarte con tu bebé de muchas formas. Cuando se mueva, sobate la panza. ¿Patea de vuelta? ¡Te está respondiendo!",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
@@ -287,50 +313,55 @@ export default [
         "video": ""
     },
     {
+        // rutina_edad_-1_tip_7
         "seccion": "Rutina",
         "edad": -1,
         "n_tip": 7,
         "icono": "",
         "texto1A": "",
-        "texto1B":  "¿Sabías que los niños que reciben más cariño y atención crecen más seguros y sociales? ¡Dale mucho amor a tu bebé!",
+        "texto1B": "¿Sabías que los niños que reciben más cariño y atención crecen más seguros y sociales? ¡Dale mucho amor a tu bebé!",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "titulo": "Trátalo siempre con afecto",
         "video": ""
     },
     {
+        // rutina_edad_-1_tip_8
         "seccion": "Rutina",
         "edad": -1,
         "n_tip": 8,
-        "icono": "",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/GESTACION/madre_embarazada_y_corazon_Mesa%20de%20trabajo%201.svg",
         "texto1A": "",
-        "texto1B":"  ¿Ya son 3 meses de embarazo? Ya puedes masajear tu vientre sin problemas. Es una muy buena forma de relajarte y comunicarte con tu bebé. Recuerda consultar con tu ginecólogo todas tus dudas e inquietudes.",
-        "texto2":" ¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
+        "texto1B": "  ¿Ya son 3 meses de embarazo? Ya puedes masajear tu vientre sin problemas. Es una muy buena forma de relajarte y comunicarte con tu bebé. Recuerda consultar con tu ginecólogo todas tus dudas e inquietudes.",
+        "texto2": " ¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
         "titulo": "Actividades positivas",
         "video": ""
     },
     {
+        // rutina_edad_-1_tip_9
         "seccion": "Rutina",
         "edad": -1,
         "n_tip": 9,
         "icono": "http://52.177.117.53/static/media/icono-blanco/GESTACION/cuento_Mesa%20de%20trabajo%201.svg",
         "texto1A": "",
-        "texto1B":" Anima a tu pareja a leer para tu bebé. Esto ayudará a que lo conozca y se acostumbre a su voz. Esta actividad es super importante, especialmente en el último trimestre de tu embarazo.",
+        "texto1B": " Anima a tu pareja a leer para tu bebé. Esto ayudará a que lo conozca y se acostumbre a su voz. Esta actividad es super importante, especialmente en el último trimestre de tu embarazo.",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "titulo": "Interactúa siempre",
         "video": ""
     },
     {
+        // rutina_edad_-1_tip_10
         "seccion": "Rutina",
         "edad": -1,
         "n_tip": 10,
-        "icono": "",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/GESTACION/ni%C3%B1o_ni%C3%B1a_feliz_Mesa%20de%20trabajo%201.svg",
         "texto1A": "",
-        "texto1B":  "Dale a tu bebé todo el amor que necesite, sin importar si es niño o niña. Ambos deben ser tratados de la misma forma y necesitan de tu cariño e interacción para desarrollar todas sus habilidades.",
+        "texto1B": "Dale a tu bebé todo el amor que necesite, sin importar si es niño o niña. Ambos deben ser tratados de la misma forma y necesitan de tu cariño e interacción para desarrollar todas sus habilidades.",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "titulo": "Los sentimientos son importantes",
         "video": ""
     },
     {
+        // nutricionSalud_edad_-1_tip_1
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 1,
@@ -342,6 +373,7 @@ export default [
         "icono": "http://52.177.117.53/static/media/icono-blanco/GESTACION/plato_de_comida_fruta_Mesa%20de%20trabajo%201.svg"
     },
     {
+        // nutricionSalud_edad_-1_tip_2
         "n_tip": 2,
         "texto1A": "",
         "edad": -1,
@@ -353,6 +385,7 @@ export default [
         "video": ""
     },
     {
+        // nutricionSalud_edad_-1_tip_3
         "titulo": "Ayúdalo en su desarrollo",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": " http://52.177.117.53/static/media/icono-blanco/GESTACION/cerebro_corazon_Mesa%20de%20trabajo%201.svg",
@@ -364,6 +397,7 @@ export default [
         "texto1B": "Desde los primeros meses del embarazo, el corazón y cerebro de tu bebé están empezando a formarse. El hierro y ácido fólico ayudan en ese proceso. Pregúntale a tu médico como obtenerlo. "
     },
     {
+        // nutricionSalud_edad_-1_tip_4
         "titulo": "Nuestro consejo para ti",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": " http://52.177.117.53/static/media/icono-blanco/GESTACION/carnes_pescado_Mesa%20de%20trabajo%201.svg",
@@ -376,6 +410,7 @@ export default [
 
     },
     {
+        // nutricionSalud_edad_-1_tip_5
         "titulo": "Tu salud no es un juego",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "http://52.177.117.53/static/media/icono-blanco/GESTACION/fiebre_Mesa%20de%20trabajo%201.svg",
@@ -387,6 +422,7 @@ export default [
         "texto1B": "Las complicaciones en el embarazo pueden ocasionar fiebre. Si te sientes mal, podría ser por una complicación. Acude al centro de salud donde estás llevando tu embarazo."
 
     },
+    // nutricionSalud_edad_-1_tip_6
     {
         "seccion": "Nutrición y Salud",
         "video": "",
@@ -400,6 +436,7 @@ export default [
 
     },
     {
+        // nutricionSalud_edad_-1_tip_7
         "texto1A": "",
         "edad": -1,
         "texto1B": "Mantén una dieta balanceada para cuidar a tu bebé. Come más cereales, proteínas, frutas y verduras y menos dulces y grasas.",
@@ -411,6 +448,7 @@ export default [
         "n_tip": 7
 
     },
+    // nutricionSalud_edad_-1_tip_8
     {
         "texto1A": "",
         "edad": -1,
@@ -423,6 +461,7 @@ export default [
         "n_tip": 8
     },
     {
+        // nutricionSalud_edad_-1_tip_9
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 9,
@@ -435,6 +474,7 @@ export default [
 
     },
     {
+        // nutricionSalud_edad_-1_tip_10
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 10,
@@ -448,7 +488,7 @@ export default [
     },
 
     // EDAD DE 0-1
-    // higieneAguaSegura_edad_0
+    // higieneAguaSegura_edad_0_tip_1
 
     {
         "texto1A": " Cuando te lavas las manos matas los gérmenes que te hacen contraer enfermedades diarreicas. ¡Házlo siempre! ¡Cuidandote tú, cuidas a tus hijas e hijos!",
@@ -462,6 +502,7 @@ export default [
         "n_tip": 1
     },
     {
+        // higieneAguaSegura_edad_0_tip_2
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 3,
@@ -474,6 +515,7 @@ export default [
 
     },
     {
+        // higieneAguaSegura_edad_0_tip_8
         "texto1B": " ya está aprendiendo. Cuando le laves las manos, explícale lo que haces. ¡te escuchará!",
         "titulo": "Paso a Paso ",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
@@ -486,6 +528,7 @@ export default [
 
     },
     {
+        // higieneAguaSegura_edad_0_tip_10
         "texto1B": "",
         "titulo": "Sana costumbre",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
@@ -497,6 +540,7 @@ export default [
         "edad": 0
     },
     {
+        // higieneAguaSegura_edad_0_tip_2
         "n_tip": 2,
         "texto1A": "El lugar en el que lavas la ropa de ",
         "edad": 0,
@@ -509,6 +553,7 @@ export default [
 
     },
     {
+        // higieneAguaSegura_edad_0_tip_4
         "texto1B": "",
         "titulo": "Que sea una costumbre",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
@@ -521,6 +566,7 @@ export default [
 
     },
     {
+        // higieneAguaSegura_edad_0_tip_5
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 5,
@@ -533,6 +579,7 @@ export default [
 
     },
     {
+        // higieneAguaSegura_edad_0_tip_6
         "n_tip": 6,
         "texto1A": " Esteriliza el biberón de ",
         "edad": 0,
@@ -544,7 +591,7 @@ export default [
         "video": ""
 
     },
-    {
+    { // higieneAguaSegura_edad_0_tip_7
         "texto1A": " La única forma de matar los gérmenes del agua es hirviendola. Si la tomas directo del caño o del envase, podrías enfermarte del estómago. Y necesitas una buena salud para amamantar a tu bebé, recuerda que los 6 primeros meses solo debe tomar tu leche. ",
         "edad": 0,
         "texto1B": "",
@@ -556,6 +603,7 @@ export default [
         "n_tip": 7
     },
     {
+        // higieneAguaSegura_edad_0_tip_9
         "titulo": "Limpieza es salud",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/lavado_frutas_Mesa%20de%20trabajo%201.svg",
@@ -569,7 +617,7 @@ export default [
 
     // higieneAguaSegura_edad_0
 
-    // juego_edad_0
+    // juego_edad_0_tip_1
     {
         "video": "",
         "seccion": "Juego",
@@ -581,7 +629,7 @@ export default [
         "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/cuchara_Mesa%20de%20trabajo%201.svg"
 
     },
-    {
+    { // juego_edad_0_tip_10
         "texto1A": " Aprovecha momentos de la rutina para fortalecer sus habilidades cognitivas. Utiliza juguete o objetos seguros que hagan ruido para llamar la atención de ",
         "edad": 0,
         "texto1B": " motiva a que explore con sus manos.",
@@ -593,6 +641,7 @@ export default [
         "n_tip": 10
     },
     {
+        // juego_edad_0_tip_2
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": " http://52.177.117.53/static/media/icono-blanco/0-1/juguete_Mesa%20de%20trabajo%201.svg",
         "seccion": "Juego",
@@ -604,6 +653,7 @@ export default [
         "titulo": "¡No te olvides de jugar!"
     },
     {
+        // juego_edad_0_tip_4
         "texto1B": "",
         "titulo": "Aprovecha cada momento",
         "icono": " http://52.177.117.53/static/media/icono-blanco/0-1/juguete_Mesa%20de%20trabajo%201.svg",
@@ -615,6 +665,7 @@ export default [
 
     },
     {
+        // juego_edad_0_tip_5
         "seccion": "Juego",
         "video": "http://bit.ly/c-bebe",
         "n_tip": 5,
@@ -626,6 +677,7 @@ export default [
         "icono": ""
     },
     {
+        // juego_edad_0_tip_6
         "seccion": "Juego",
         "video": "",
         "n_tip": 6,
@@ -638,6 +690,7 @@ export default [
 
     },
     {
+        // juego_edad_0_tip_7
         "seccion": "Juego",
         "video": "",
         "n_tip": 7,
@@ -650,6 +703,7 @@ export default [
 
     },
     {
+        // juego_edad_0_tip_9
         "seccion": "Juego",
         "video": "",
         "n_tip": 9,
@@ -662,6 +716,7 @@ export default [
 
     },
     {
+        // juego_edad_0_tip_3
         "titulo": "Juega con él/ella",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": " http://52.177.117.53/static/media/icono-blanco/0-1/juguete_Mesa%20de%20trabajo%201.svg",
@@ -673,6 +728,7 @@ export default [
         "texto1B": " jugando a \"¿A dónde se fue?\". Pon frente a él un juguete seguro, luego escóndelo con una toalla. ¡Presta atención a su reacción y háblale constantemente! "
     },
     {
+        // juego_edad_0_tip_8
         "n_tip": 8,
         "texto1A": " Aprovecha momentos en casa con tu bebé para desarrollar sus habilidades cognitivas. A la hora de la comida, permítele que juegue y sienta con la comida. Así diferenciará texturas, sensaciones y formas.",
         "edad": 0,
@@ -968,8 +1024,9 @@ export default [
         "video": "",
         "n_tip": 10,
         "edad": 0,
+        "titulo": "Sabías que...",
         "texto1A": " Dar de lactar reduce el riesgo de cáncer de mama en la madre. Amamantar es cuidarte mientras  cuidas a "
-
+        
     },
     {
         // "nutricionSalud_edad_0_tip_2": {
@@ -1077,6 +1134,139 @@ export default [
     // nutricionSalud_edad_0
 
     // EDAD 1-2
+    // higieneAguaSegura_edad_1_tip
+    {
+        // " higieneAguaSegura_edad_1_tip_1": {
+        "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
+        "seccion": "Higiene y Agua Segura",
+        "video": "",
+        "n_tip": 1,
+        "texto1A": " Cuando te lavas las manos matas los gérmenes que te hacen contraer enfermedades diarreicas. ¡Házlo siempre! ¡Cuidandote tú, cuidas a tus hijas e hijos!",
+        "edad": 1,
+        "texto1B": "",
+        "titulo": "Siempre prevenidos",
+
+    },
+    // " higieneAguaSegura_edad_1_tip_4": 
+    {
+        "seccion": "Higiene y Agua Segura",
+        "video": "",
+        "n_tip": 4,
+        "texto1A": " Esteriliza el plato y los cubiertos de ",
+        "edad": 1,
+        "texto1B": " antes de usarlos. Lávalos con agua hervida y tenlos 5 minutos en agua caliente. ¡Bien!",
+        "titulo": "Evita los gérmenes",
+        "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/cubierto_plato_Mesa%20de%20trabajo%201.svg",
+
+    },
+    // " higieneAguaSegura_edad_1_tip_5": 
+    {
+        "n_tip": 5,
+        "seccion ": "Higiene y Agua Segura",
+        "texto1A": " La única forma de matar los gérmenes del agua es hirviendola. Si la tomas directo del caño o del envase, podrías enfermarte del estómago. Y necesitas una buena salud para amamantar a tu bebé, recuerda que los 6 primeros meses solo debe tomar tu leche. ",
+        "edad": 1,
+        "texto1B": "",
+        "titulo": "Cuídate",
+        "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/tetera_Mesa%20de%20trabajo%201.svg",
+        "video": "",
+    },
+    // "higieneAguaSegura_edad_1_tip_10": 
+    {
+        "seccion": "Higiene y Agua Segura",
+        "video": "",
+        "n_tip": 10,
+        "texto1A": " Los animales tienen varios gérmenes que pueden enfermar a ",
+        "edad": 1,
+        "texto1B": " ¡Ten cuidado siempre con el contacto que tiene con ellos! ",
+        "titulo": "Contacto mínimo",
+        "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
+        "icono": " http://52.177.117.53/static/media/icono-blanco/1-2/perro_Mesa%20de%20trabajo%201.svg",
+       
+    },
+    // "higieneAguaSegura_edad_1_tip_2": 
+    {
+        "seccion": "Higiene y Agua Segura",
+        "video": "",
+        "n_tip": 2,
+        "texto1A": " Los gérmenes viajan de mano en mano. Si están en la tuya, llegarán a la de ",
+        "edad": 1,
+        "texto1B": " ¡Suma el lavado de manos a tu rutina diaria! ¡Con agua y jabón durante 20seg!",
+        "titulo": "La limpieza es lo primero",
+        "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
+       
+    },
+    // "higieneAguaSegura_edad_1_tip_3": 
+    {
+        "seccion": "Higiene y Agua Segura",
+        "video": "",
+        "n_tip": 3,
+        "texto1A": " Ahora que ",
+        "edad": 1,
+        "texto1B": " tiene más dientecitos, ayúdalo a mantenerlos limpios. Enséñale que deben lavarse los dientes siempre luego de comer. ¡Bien!",
+        "titulo": "Siempre limpios",
+        "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/cepillo_dental_Mesa%20de%20trabajo%201.svg",
+       
+    },
+    // "higieneAguaSegura_edad_1_tip_6":
+     {
+        "titulo": "Cuidado con lo que consume",
+        "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
+        "icono": "  http://52.177.117.53/static/media/icono-blanco/1-2/vaso_de_agua_Mesa%20de%20trabajo%201.svg",
+        "seccion": "Higiene y Agua Segura",
+        "video": "",
+        "n_tip": 6,
+        "texto1A": " Ten siempre lista agua hervida y fresca por si ",
+        "edad": 1,
+        "texto1B": " tiene sed. Nunca le des agua del caño, podría hacerle mucho daño.",
+       
+    },
+    // "higieneAguaSegura_edad_1_tip_7":
+     {
+        "texto1B": " come la fruta sucia le dolerá mucho el estómago y podría darle diarrea o algo peor. ¡Cuidalo mucho! ",
+        "titulo": "Cuídalos",
+        "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/frutas_sucias_Mesa%20de%20trabajo%201.svg",
+        "seccion": "Higiene y Agua Segura",
+        "video": "",
+        "n_tip": 7,
+        "texto1A": " Si ",
+        "edad": 1,
+       
+    },
+    // "higieneAguaSegura_edad_1_tip_8": 
+    {
+        "seccion": "Higiene y Agua Segura",
+        "video": "",
+        "n_tip": 8,
+        "texto1A": " El agua es muy valiosa y tenemos que cuidarla. Guárdala en envases limpios con tapa para evitar que se contamine. ¡Sigue asi!",
+        "edad": 1,
+        "texto1B": "",
+        "titulo": "Sin contaminación",
+        "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
+        "icono": " http://52.177.117.53/static/media/icono-blanco/1-2/envase_agua_tapada_Mesa%20de%20trabajo%201.svg",
+       
+    },
+    // "higieneAguaSegura_edad_1_tip_9": 
+    {
+        "n_tip": 9,
+        "texto1A": " Envuelve bien el pañal sucio antes de botarlo y ten el tacho lejos de donde está ",
+        "edad": 1,
+        "texto1B": " Luego, lávate las manos con agua y jabón. ",
+        "titulo": "La limpieza es importante",
+        "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/pa%C3%B1al_Mesa%20de%20trabajo%201.svg",
+        "seccion": "Higiene y Agua Segura",
+        "video": "",
+       
+    },
+    // higieneAguaSegura_edad_1_tip
+
+
 
     //  nutricionSalud_edad_1_
     {
@@ -2015,7 +2205,7 @@ export default [
     },
     {
         // "rutina_edad_2_tip_2": {
-        "seccion": "Juego",
+        "seccion": "rutina",
         "video": "",
         "n_tip": 2,
         "texto1A": " ha crecido e irá aprendiendo a hacer sus cosas solo poco a poco. Así se sentirá más seguro. A esto le llamamos \"autonomía\".",
@@ -2366,7 +2556,8 @@ export default [
         "video": "",
         "n_tip": 1,
         "texto1A": " Siempre que",
-        "edad": 2},
+        "edad": 2
+    },
     // nutricionSalud_edad_2
 
     // EDAD3-4
@@ -2505,13 +2696,15 @@ export default [
         "texto1B": " sobre los alimentos que están cocinando para el almuerzo. Hablen de los sabores, colores y formas. Alimentando su mente, forjas su autonomía. Mira como: ",
         "titulo": "Aprendiendo día a día",
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
-        "icono": ""},
+        "icono": ""
+    },
     // "socioemocional_edad_3_tip_10": 
     {
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 10,
         "edad": 3,
+        "titulo": "Le afecta",
         "texto1A": " La violencia como los golpes o los gritos causa mucho estrés y afecta el desarrollo del cerebro de ",
         "texto1B": " ¡Dale mucho amor y respetalo!",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
@@ -2637,7 +2830,8 @@ export default [
         "texto1B": " y mientras van recogiendo la cosecha, pueden ir descubriendo las cosas que va viendo.  Mira como aquí: ",
         "titulo": "Enséñale a ayudar",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": ""},
+        "icono": ""
+    },
     // "rutina_edad_3_tip_10": 
     {
         "seccion": "Rutina",
@@ -3634,6 +3828,7 @@ export default [
         "seccion": "Higiene y Agua Segura",
         "n_tip": 2,
         "edad": 5,
+        "titulo": "La limpieza es lo más importante",
         "texto1A": " Esteriliza el plato y los cubiertos de ",
         "texto1B": " antes de usarlos. Lávalos con agua hervida y tenlos 5 minutos en agua caliente. ¡Bien!"
     },
@@ -3724,6 +3919,20 @@ export default [
     // higieneAguaSegura_edad_5
 
     // socioemocional_edad_5
+
+    // " socioemocional_edad_5_tip_1": 
+    {
+        "seccion": "Socioemocional",
+        "video": "",
+        "n_tip": 1,
+        "texto1A": " entiende si le dices que no y también sabe decirlo. Si te dice que no quiere hacer algo, no lo tomes a mal. ¡Dale más opciones y conversen sobre ellas!",
+        "edad": 5,
+        "texto1B": "",
+        "titulo": "Ellos comprenden lo que dices",
+        "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/dialogo_con_bebe_Mesa%20de%20trabajo%201.svg",
+       
+    },
 
     // "socioemocional_edad_5_tip_10": 
     {
@@ -4093,7 +4302,8 @@ export default [
         "icono": "",
         "seccion": "Nutrición y Salud",
         "video": "",
-        "n_tip": 1},
+        "n_tip": 1
+    },
     // "nutricionSalud_edad_5_tip_10":
     {
         "texto1A": " Cuando alimentes a ",

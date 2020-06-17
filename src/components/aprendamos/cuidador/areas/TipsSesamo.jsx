@@ -31,7 +31,7 @@ const TipsSesamo = ({
                     item.data().n_tip == localStorage.getItem('localNumberTip')
                 )
                 .map((item) => (
-                  <div className="">
+                  <div className="mt-5">
                     <div className="row justify-content-center h-100 sin-margin-row">
                       <h1 className="tittle-tips"> {item.data().titulo}</h1>
                     </div>

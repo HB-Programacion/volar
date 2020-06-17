@@ -180,7 +180,7 @@ const Signup = (props) => {
               onChange={(e) => setPasswordRepeat(e.target.value)}
               value={passwordRepeat}
             />
-            <button type="submit" className="btn-login text-white">
+            <button type="submit" className="btn-login text-white out-none-button">
               <img src={arrowLeft} className="arrow-blue"></img>
               CREAR MI CUENTA
               <img src={arrowRight} className="arrow-blue"></img>

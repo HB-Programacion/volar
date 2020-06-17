@@ -183,7 +183,7 @@ const Login = (props) => {
         onChange={(e) => setPassword(e.target.value)}
         value={password}
       />
-      <button type="submit"  className="btn-login text-white wobble-hor-bottom" >
+      <button type="submit"  className="btn-login text-white wobble-hor-bottom out-none-button" >
         <img src={arrowLeft} className="arrow-blue"></img>
         INICIAR SESIÓN
         <img src={arrowRight} className="arrow-blue"></img>
@@ -193,11 +193,11 @@ const Login = (props) => {
       <span className="loginDivider-text">o</span>
     </div>
     <div className="btn-facebook-google">
-        <button className="btn-facebook text-white wobble-hor-bottom"
+        <button className="btn-facebook text-white wobble-hor-bottom out-none-button"
          onClick={()=>loginFacebook()}>
           Iniciar sesión con Facebook
         </button>
-        <button className="btn-google text-white wobble-hor-bottom"
+        <button className="btn-google text-white wobble-hor-bottom out-none-button"
          onClick={()=>loginGoogle()}>
           Iniciar sesión con Google
         </button>

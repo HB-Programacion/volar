@@ -147,7 +147,7 @@ import arrowRight from "./../../../images/arrow-right-blue.svg";
           <div className="caja-boton-contactanos">
             <button
               type="submit"
-              className="btn-navy-blue text-white mt-3 mb-3 wobble-hor-bottom"
+              className="btn-navy-blue text-white mt-3 mb-3 wobble-hor-bottom out-none-button"
             >
               <img src={arrowLeft} className="arrow-blue"></img>
               ENVIAR

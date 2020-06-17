@@ -180,7 +180,7 @@ const RegistroChild = (props) => {
             </div>
             <div className="row mt-3">
               <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <button className="btn-navy-blue text-white wobble-hor-bottom boton-guardar-nino" type="submit">
+                <button className="btn-navy-blue text-white wobble-hor-bottom boton-guardar-nino out-none-button" type="submit">
                   <img src={arrowLeft} className="arrow-blue"></img>
                   GUARDAR
                   <img src={arrowRight} className="arrow-blue"></img>

@@ -291,6 +291,10 @@ input:focus {
   text-decoration: none;
 }
 
+
+.out-none-button:focus{
+  outline: none!important
+}
 /* TABLET */
 @media (min-width: 992px) {
   /* .equipo-home .card img{
