@@ -66,7 +66,7 @@ const TipsHigiene = ({
                       item.data().edad == edad
                   )
                   .map((item) => (
-                    <div className="mt-5" key={item}>
+                    <div className="" key={item}>
                       <div className="row justify-content-center h-100 sin-margin-row">
                         <h1 className="tittle-tips tracking-in-expand-fwd-top">
                           {item.data().titulo}
