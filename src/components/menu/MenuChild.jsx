@@ -27,7 +27,7 @@ const MenuChild = ({firebaseUser, mandarIdChild,  updateArrayChild}) => {
   return (
     <div className="margin-top">
         <div className="nav-child">
-        <div className="boton row">
+        <div className="boton row sin-margin-row">
             {usuarioChild && (<div className="">
             {usuarioChild.docs.map((item, key) => (
                <NavLink to={`/aprendamos/cuidador/${item.data().id}`} key={key} activeClassName='is-active'  
