@@ -1,9 +1,9 @@
 .box-title-cuidador {
-  padding-top: 4rem;
+  padding-top: 5.5rem;
   background-color: #ae96b2;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
-  height: 21rem;
+  height: 22rem;
 }
 
 
@@ -251,7 +251,7 @@
 }
 
 .caja-compartir-hola{
-  width: 30%;
+  width: 30%!important;
   margin-top: 3rem!important;
   margin-bottom: 3rem!important
 }
@@ -266,12 +266,13 @@
   }
 
   .box-title-cuidador {
-    padding-top: 1rem;
-    height: 14rem;
+    padding-top: .5rem;
+    height: 15rem;
   }
 
   .title-cuidador {
-font-size: 1.6rem
+font-size: 1.6rem;
+margin-top: 3rem
   }
   .icon-bienvenida-cuidador {
     width: 2.5rem;
@@ -308,6 +309,7 @@ font-size: 1.6rem
   
   .box-row-1 {
     margin-bottom: 0rem;
+    margin-top: 2rem;
   }
   .style-text-center {
     text-align: center;

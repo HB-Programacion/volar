@@ -68,7 +68,7 @@ const SideDraw = (props) => {
                         <div>
                             <li>
                                 <NavLink to ="/perfil"  onClick={props.ocultarMenuMobile} activeClassName='is-activeHomeMobile' className="w-15 mr-2">
-                                <img src={user} className="w-15 mr-2"/> Hola <span className="color-white">{userName}</span> 
+                                <img src={user} className="w-15 mr-2"/> Hola {userName} 
                                 </NavLink>
                             </li>
 

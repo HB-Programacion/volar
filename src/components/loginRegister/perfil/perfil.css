@@ -156,7 +156,7 @@
       
       .vertical-line{
         margin: 1.5rem 4rem;
-        width: 50%; /* Line width */
+        width: 55.5%; /* Line width */
         text-align: center;
         background-color: #2E335E; /* Line color */
         height: 0.2rem; /* Override in-line if you want specific height. */

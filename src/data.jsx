@@ -615,7 +615,6 @@ export default [
         "texto1B": "¡No te arriesgues!"
     },
 
-    // higieneAguaSegura_edad_0
 
     // juego_edad_0_tip_1
     {
@@ -740,10 +739,6 @@ export default [
         "seccion": "Juego",
         "video": "http://bit.ly/sensa-ciones"
     },
-    // juego_edad_0
-
-    // rutina_edad_0
-
     {
         // rutina_edad_0_tip_1
         "seccion": "Rutina",
@@ -867,9 +862,6 @@ export default [
         "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/reloj_Mesa%20de%20trabajo%201.svg"
 
     },
-    // juego_edad_0
-
-    // socioemocional_edad_0
     {
         // socioemocional_edad_0_tip_1": {
         "texto1A": " se da cuenta cuando estas feliz o triste y se sentirá así también. Evita situaciones de tensión o violencia que te pongan triste.",
@@ -1000,9 +992,6 @@ export default [
         "icono": " http://52.177.117.53/static/media/icono-blanco/0-1/mama_con_bebe_Mesa%20de%20trabajo%201.svg"
 
     },
-    // socioemocional_edad_0
-
-    // nutricionSalud_edad_0
     {
         // nutricionSalud_edad_0_tip_1": {
         "seccion": "Nutrición y Salud",
@@ -1132,10 +1121,8 @@ export default [
         "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/lactancia_Mesa%20de%20trabajo%201.svg"
 
     },
-    // nutricionSalud_edad_0
 
     // EDAD 1-2
-    // higieneAguaSegura_edad_1_tip
     {
         // " higieneAguaSegura_edad_1_tip_1": {
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
@@ -1268,143 +1255,139 @@ export default [
         "video": "",
        
     },
-    // higieneAguaSegura_edad_1_tip
 
 
+    // {
+    //     // " nutricionSalud_edad_1_tip_4": {
+    //     "texto1B": " tiene estos síntomas, llévalo al centro de salud.",
+    //     "titulo": "Cuídalo",
+    //     "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
+    //     "icono": " http://52.177.117.53/static/media/icono-blanco/1-2/dolor_de_barriga_Mesa%20de%20trabajo%201.svg",
+    //     "seccion": "Nutrición y Salud",
+    //     "video": "",
+    //     "n_tip": 4,
+    //     "texto1A": " Comer comida mal lavada puede provocar gusanos en la panza. Estos generan mucho dolor y problemas estomacales. Si ",
+    //     "edad": 1
 
-    //  nutricionSalud_edad_1_
-    {
-        // " nutricionSalud_edad_1_tip_4": {
-        "texto1B": " tiene estos síntomas, llévalo al centro de salud.",
-        "titulo": "Cuídalo",
-        "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/1-2/dolor_de_barriga_Mesa%20de%20trabajo%201.svg",
-        "seccion": "Nutrición y Salud",
-        "video": "",
-        "n_tip": 4,
-        "texto1A": " Comer comida mal lavada puede provocar gusanos en la panza. Estos generan mucho dolor y problemas estomacales. Si ",
-        "edad": 1
+    // },
 
-    },
-    {
-        // nutricionSalud_edad_1_tip_1": {
-        "titulo": "Su desarrollo es importante",
-        "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/ni%C3%B1o_ni%C3%B1a_feliz_Mesa%20de%20trabajo%201.svg",
-        "seccion": "Nutrición y Salud",
-        "video": "",
-        "n_tip": 1,
-        "texto1A": " Lleva a ",
-        "edad": 1,
-        "texto1B": " al centro de salud cada mes para ver si esta creciendo bien. Pide que te asesoren en como cuidarlo. ¡Bien hecho!"
+    // {
+    //     // nutricionSalud_edad_1_tip_1": {
+    //     "titulo": "Su desarrollo es importante",
+    //     "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
+    //     "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/ni%C3%B1o_ni%C3%B1a_feliz_Mesa%20de%20trabajo%201.svg",
+    //     "seccion": "Nutrición y Salud",
+    //     "video": "",
+    //     "n_tip": 1,
+    //     "texto1A": " Lleva a ",
+    //     "edad": 1,
+    //     "texto1B": " al centro de salud cada mes para ver si esta creciendo bien. Pide que te asesoren en como cuidarlo. ¡Bien hecho!"
 
-    },
-    {
-        // nutricionSalud_edad_1_tip_10": {
-        "n_tip": 10,
-        "texto1A": " Mantén a ",
-        "edad": 1,
-        "texto1B": " alejado de cualquiera que tosa o estornude. Muchas enfermedades respiratorias se transmiten así y estas afectan el desarrollo del cerebro de tus hijos. ",
-        "titulo": "Aleja a las posibles amenazas",
-        "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/estornudar_prohibido_Mesa%20de%20trabajo%201.svg",
-        "seccion": "Nutrición y Salud",
-        "video": ""
+    // },
+    // {
+    //     // nutricionSalud_edad_1_tip_10": {
+    //     "n_tip": 10,
+    //     "texto1A": " Mantén a ",
+    //     "edad": 1,
+    //     "texto1B": " alejado de cualquiera que tosa o estornude. Muchas enfermedades respiratorias se transmiten así y estas afectan el desarrollo del cerebro de tus hijos. ",
+    //     "titulo": "Aleja a las posibles amenazas",
+    //     "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
+    //     "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/estornudar_prohibido_Mesa%20de%20trabajo%201.svg",
+    //     "seccion": "Nutrición y Salud",
+    //     "video": ""
 
-    },
-    {
-        // nutricionSalud_edad_1_tip_2": {
-        "texto1A": " la leche materna tiene anticuerpos que protegen a ",
-        "edad": 1,
-        "texto1B": " de enfermedades ¡Tu leche es la mejor!",
-        "titulo": "Sabías que....",
-        "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/lactancia_Mesa%20de%20trabajo%201.svg",
-        "seccion": "Nutrición y Salud",
-        "video": "",
-        "n_tip": 2
+    // },
+    // {
+    //     // nutricionSalud_edad_1_tip_2": {
+    //     "texto1A": " la leche materna tiene anticuerpos que protegen a ",
+    //     "edad": 1,
+    //     "texto1B": " de enfermedades ¡Tu leche es la mejor!",
+    //     "titulo": "Sabías que....",
+    //     "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
+    //     "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/lactancia_Mesa%20de%20trabajo%201.svg",
+    //     "seccion": "Nutrición y Salud",
+    //     "video": "",
+    //     "n_tip": 2
 
-    },
-    {
-        // nutricionSalud_edad_1_tip_3": {
-        "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/plato_de_comida_Mesa%20de%20trabajo%201.svg",
-        "seccion": "Nutrición y Salud",
-        "video": "",
-        "n_tip": 3,
-        "texto1A": " Cuando alimentes a ",
-        "edad": 1,
-        "texto1B": " siéntalo en un espacio seguro y míralo a los ojos mientras le das cucharita por cucharita. ¡Disfruta con tu bebé!",
-        "titulo": "Tiempo de calidad"
+    // },
+    // {
+    //     // nutricionSalud_edad_1_tip_3": {
+    //     "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
+    //     "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/plato_de_comida_Mesa%20de%20trabajo%201.svg",
+    //     "seccion": "Nutrición y Salud",
+    //     "video": "",
+    //     "n_tip": 3,
+    //     "texto1A": " Cuando alimentes a ",
+    //     "edad": 1,
+    //     "texto1B": " siéntalo en un espacio seguro y míralo a los ojos mientras le das cucharita por cucharita. ¡Disfruta con tu bebé!",
+    //     "titulo": "Tiempo de calidad"
 
-    },
-    {
-        // "nutricionSalud_edad_1_tip_5": {
-        "texto1B": " 3 o 4 veces al dia. Necesita comer más para crecer mejor. ¡Bien hecho!",
-        "titulo": "La alimentación es importante",
-        "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/plato_de_comida_Mesa%20de%20trabajo%201.svg",
-        "seccion": "Nutrición y Salud",
-        "video": "",
-        "n_tip": 5,
-        "texto1A": " Dale comida chancada a ",
-        "edad": 1
+    // },
+    // {
+    //     // "nutricionSalud_edad_1_tip_5": {
+    //     "texto1B": " 3 o 4 veces al dia. Necesita comer más para crecer mejor. ¡Bien hecho!",
+    //     "titulo": "La alimentación es importante",
+    //     "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
+    //     "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/plato_de_comida_Mesa%20de%20trabajo%201.svg",
+    //     "seccion": "Nutrición y Salud",
+    //     "video": "",
+    //     "n_tip": 5,
+    //     "texto1A": " Dale comida chancada a ",
+    //     "edad": 1
 
-    },
-    {
-        // "nutricionSalud_edad_1_tip_6": {
-        "texto1A": " Alimenta a ",
-        "edad": 1,
-        "texto1B": " con muchas verduras y carnes. Necesita una variedad de alimentos para crecer bien. ¡Tú puedes!",
-        "titulo": "Balancea tu alimentación",
-        "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/1-2/verdura_fruta_Mesa%20de%20trabajo%201.svg",
-        "seccion": "Nutrición y Salud",
-        "video": "",
-        "n_tip": 6
+    // },
+    // {
+    //     // "nutricionSalud_edad_1_tip_6": {
+    //     "texto1A": " Alimenta a ",
+    //     "edad": 1,
+    //     "texto1B": " con muchas verduras y carnes. Necesita una variedad de alimentos para crecer bien. ¡Tú puedes!",
+    //     "titulo": "Balancea tu alimentación",
+    //     "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
+    //     "icono": " http://52.177.117.53/static/media/icono-blanco/1-2/verdura_fruta_Mesa%20de%20trabajo%201.svg",
+    //     "seccion": "Nutrición y Salud",
+    //     "video": "",
+    //     "n_tip": 6
 
-    },
-    {
-        // nutricionSalud_edad_1_tip_7": {
-        "texto1A": " A ",
-        "edad": 1,
-        "texto1B": " le tocan nuevas vacunas! Acude a su control puntualmente y en el centro de salud se las aplicarán. ¡Son muy importantes! Gracias a ellas prevenimos enfermedades que afectan su desarrollo.",
-        "titulo": "Nuevamente al médico",
-        "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/vacuna_Mesa%20de%20trabajo%201.svg",
-        "seccion": "Nutrición y Salud",
-        "video": "",
-        "n_tip": 7
+    // },
+    // {
+    //     // nutricionSalud_edad_1_tip_7": {
+    //     "texto1A": " A ",
+    //     "edad": 1,
+    //     "texto1B": " le tocan nuevas vacunas! Acude a su control puntualmente y en el centro de salud se las aplicarán. ¡Son muy importantes! Gracias a ellas prevenimos enfermedades que afectan su desarrollo.",
+    //     "titulo": "Nuevamente al médico",
+    //     "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
+    //     "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/vacuna_Mesa%20de%20trabajo%201.svg",
+    //     "seccion": "Nutrición y Salud",
+    //     "video": "",
+    //     "n_tip": 7
 
-    },
-    {
-        // "nutricionSalud_edad_1_tip_8": {
-        "seccion": "Nutrición y Salud",
-        "video": "",
-        "n_tip": 8,
-        "texto1A": " Haz de tu casa un lugar seguro para ",
-        "edad": 1,
-        "texto1B": " Bloquea los enchufes y el ingreso a lugares en donde podría caerse. ¡Cuidalo mucho!",
-        "titulo": "Cuídalo de los peligros",
-        "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/enchufe_Mesa%20de%20trabajo%201.svg"
+    // },
+    // {
+    //     // "nutricionSalud_edad_1_tip_8": {
+    //     "seccion": "Nutrición y Salud",
+    //     "video": "",
+    //     "n_tip": 8,
+    //     "texto1A": " Haz de tu casa un lugar seguro para ",
+    //     "edad": 1,
+    //     "texto1B": " Bloquea los enchufes y el ingreso a lugares en donde podría caerse. ¡Cuidalo mucho!",
+    //     "titulo": "Cuídalo de los peligros",
+    //     "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
+    //     "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/enchufe_Mesa%20de%20trabajo%201.svg"
 
-    },
-    {
-        // nutricionSalud_edad_1_tip_9": {
-        "seccion": "Nutrición y Salud",
-        "video": "",
-        "n_tip": 9,
-        "texto1A": " No alimentes a ",
-        "edad": 1,
-        "texto1B": " con gaseosas, helados o dulces. No tienen ninguna vitamina y afectan su crecimiento. ¡Cuidalo!",
-        "titulo": "Evita darle esto",
-        "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/1-2/dulce_prohibido_Mesa%20de%20trabajo%201.svg"
+    // },
+    // {
+    //     // nutricionSalud_edad_1_tip_9": {
+    //     "seccion": "Nutrición y Salud",
+    //     "video": "",
+    //     "n_tip": 9,
+    //     "texto1A": " No alimentes a ",
+    //     "edad": 1,
+    //     "texto1B": " con gaseosas, helados o dulces. No tienen ninguna vitamina y afectan su crecimiento. ¡Cuidalo!",
+    //     "titulo": "Evita darle esto",
+    //     "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
+    //     "icono": " http://52.177.117.53/static/media/icono-blanco/1-2/dulce_prohibido_Mesa%20de%20trabajo%201.svg"
 
-    },
-    // nutricionSalud_edad_1_
-    // juego_edad_1
+    // },
     {
         // juego_edad_1_tip_1": {
         "seccion": "Juego",
@@ -1534,9 +1517,6 @@ export default [
         "texto1B": " aprende a escuchar y respetar turnos. "
 
     },
-    // juego_edad_1
-
-    // nutricionSalud_edad_1
     {
         // nutricionSalud_edad_1_tip_4": {
         "texto1B": " tiene estos síntomas, llévalo al centro de salud.",
@@ -1665,9 +1645,7 @@ export default [
         "icono": " http://52.177.117.53/static/media/icono-blanco/1-2/dulce_prohibido_Mesa%20de%20trabajo%201.svg"
 
     },
-    // juego_edad_1
 
-    // rutina_edad_1
     {
         // rutina_edad_1_tip_4": {
         "texto1A": " Cuando camines con ",
@@ -1796,9 +1774,7 @@ export default [
         "icono": ""
 
     },
-    // rutina_edad_1
 
-    // socioemocional_edad_1
     {
         // socioemocional_edad_1_tip_1": {
         "n_tip": 1,
@@ -1927,11 +1903,8 @@ export default [
         "icono": "file:///C:/Users/sony/Desktop/build/static/media/icono-blanco/1-2/mama_con_bebe_Mesa%20de%20trabajo%201.svg"
 
     },
-    // rutina_edad_1
 
     // EDAD2
-
-    // higieneAguaSegura_edad_2
     {
         // higieneAguaSegura_edad_2_tip_10": {
         "n_tip": 10,
@@ -2052,9 +2025,7 @@ export default [
         "seccion": "Higiene y Agua Segura",
         "video": ""
     },
-    // higieneAguaSegura_edad_2
 
-    // socioemocional_edad_2
     {
         // socioemocional_edad_2_tip_1": {
         "texto1B": " se enoja es muy jóven para saber como controlarlo. Abrázalo, pónte a su altura para hablarle suavemente y enséñale como tranquilizarse. ",
@@ -2179,9 +2150,6 @@ export default [
         "edad": 2,
         "texto1B": " no hará que deje de portarse mal. Solo lo hará más dependiente. ¡No lo castigues! Promueve su autonomía, ayudándole a entender sus emociones."
     },
-    // socioemocional_edad_2
-
-    // rutina_edad_2
     {
         // rutina_edad_2_tip_1": {
         "seccion": "Rutina",
@@ -2308,9 +2276,6 @@ export default [
         "video": " http://bit.ly/2qQRfPR"
 
     },
-    // rutina_edad_1
-
-    // juego_edad_2
     // "juego_edad_2_tip_1": {
     {
         "seccion": "Juego",
@@ -2437,9 +2402,7 @@ export default [
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/corazon_Mesa%20de%20trabajo%201.svg"
     },
-    // juego_edad_2
 
-    // nutricionSalud_edad_2
     //  "nutricionSalud_edad_2_tip_10": 
     {
         "texto1A": " Si ",
@@ -2562,11 +2525,8 @@ export default [
         "texto1A": " Siempre que",
         "edad": 2
     },
-    // nutricionSalud_edad_2
 
     // EDAD3-4
-
-    // higieneAguaSegura_edad_3
     // " higieneAguaSegura_edad_3_tip_1": 
     {
         "n_tip": 1,
@@ -2687,9 +2647,7 @@ export default [
         "texto1B": " ¡Suma el lavado de manos a tu rutina diaria!",
         "titulo": "Buenas costumbres"
     },
-    // higieneAguaSegura_edad_3
 
-    // socioemocional_edad_3
     {
         // socioemocional_edad_3_tip_1": {
         "seccion": "Socioemocional",
@@ -2809,9 +2767,7 @@ export default [
         "texto1A": " se está portando mal? Piensa en como se comporta la familia frente a ",
         "edad": 3
     },
-    // socioemocional_edad_3
 
-    // rutina_edad_3
     {
         // rutina_edad_3_tip_1": {
         "titulo": "Estímulos por todos lados ",
@@ -2932,9 +2888,6 @@ export default [
         "video": "",
         "n_tip": 8
     },
-    // socioemocional_edad_2
-
-    // juego_edad_3
     // " juego_edad_3_tip_1": 
     {
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
@@ -3055,9 +3008,6 @@ export default [
         "video": "http://bit.ly/la-pelota",
         "n_tip": 9
     },
-    // juego_edad_3
-
-    // nutricionSalud_edad_3
     {
         // " nutricionSalud_edad_3_tip_1": {
         "titulo": "A tiempo",
@@ -3178,9 +3128,6 @@ export default [
         "video": "",
         "n_tip": 9
     },
-    // nutricionSalud_edad_3
-
-    // higieneAguaSegura_edad_4
     // "higieneAguaSegura_edad_4_tip_1": 
     {
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
@@ -3301,9 +3248,7 @@ export default [
         "video": "",
         "n_tip": 9
     },
-    // higieneAguaSegura_edad_4
 
-    // socioemocional_edad_4
     // "socioemocional_edad_4_tip_1": 
     {
         "seccion": "Socioemocional",
@@ -3425,9 +3370,7 @@ export default [
         "texto1A": " se está portando mal? Piensa en como se comporta la familia frente a ",
         "edad": 4
     },
-    // socioemocional_edad_4
 
-    // rutina_edad_4
     // "rutina_edad_4_tip_1": 
     {
         "seccion": "Rutina",
@@ -3548,9 +3491,7 @@ export default [
         "seccion": "Rutina",
         "video": ""
     },
-    // rutina_edad_4
 
-    // juego_edad_4
     // "juego_edad_4_tip_1": 
     {
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
@@ -3672,9 +3613,6 @@ export default [
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "icono": ""
     },
-    // juego_edad_4
-
-    // nutricionSalud_edad_4
     {
         // " nutricionSalud_edad_4_tip_1": {
         "titulo": "Siempre interactúen ",
@@ -3796,11 +3734,7 @@ export default [
         "video": ""
     },
 
-    // nutricionSalud_edad_4
-
-
     // EDAD-5-6?
-    // higieneAguaSegura_edad_5
     // " higieneAguaSegura_edad_5_tip_1": 
     {
         "texto1B": " debe estar limpio. Los niños pequeños tocan todo y se tocan la cara luego. ¡Cuídalo de los gérmenes!",
@@ -3920,9 +3854,6 @@ export default [
         "edad": 5,
         "texto1B": ""
     },
-    // higieneAguaSegura_edad_5
-
-    // socioemocional_edad_5
 
     // " socioemocional_edad_5_tip_1": 
     {
@@ -4046,9 +3977,7 @@ export default [
         "video": "",
         "n_tip": 9
     },
-    // socioemocional_edad_5
 
-    // rutina_edad_5
     // "rutina_edad_5_tip_1": 
     {
         "seccion": "Rutina",
@@ -4169,9 +4098,7 @@ export default [
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/zapatillas_Mesa%20de%20trabajo%201.svg"
     },
-    // rutina_edad_5
 
-    // juego_edad_5
     // "juego_edad_5_tip_1":
     {
         "seccion": "Juego",
@@ -4293,9 +4220,6 @@ export default [
         "seccion": "Juego",
         "video": " http://bit.ly/mi-pelota"
     },
-    // juego_edad_5
-
-    // nutricionSalud_edad_5
     {
         // nutricionSalud_edad_5_tip_1": {
         "texto1A": " Si ",
@@ -4416,7 +4340,7 @@ export default [
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
         "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/centro_de_salud_Mesa%20de%20trabajo%201.svg"
     },
-    // nutricionSalud_edad_5
+ 
 
     // SESAMO
 

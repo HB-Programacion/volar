@@ -67,9 +67,9 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
     <>
    {
      firebaseUser !== null ? (
-      <div className="pb-5">
-      <div className="box-title-cuidador animated fadeIn ">
-        <div className="box-row-1">
+      <div className="pb-5 ">
+      <div className="box-title-cuidador  animated fadeIn ">
+        <div className="box-row-1 ">
         {/* <img src={starsLeftDesktop} className="stars-left-desktop heartbeat"></img> */}
           <img
             src={iconoBienvenidaCuidador}
@@ -332,7 +332,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
      ):(
 
       <div>
-      <div className="box-title-cuidador animated fadeIn ">
+      <div className="box-title-cuidador mt-4 animated fadeIn ">
         <div className="box-row-1">
         {/* <img src={starsLeftDesktop} className="stars-left-desktop heartbeat"></img> */}
           <img
@@ -377,7 +377,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
         ¡Tienes todo lo que se necesita para desarrollar el cerebro de
         tus hijos e hijas!
       </p>
-      <div className="list-btn-areas show-desktop">
+      <div className="list-btn-areas mb-3 show-desktop">
       {JSON.parse(localStorage.getItem('dateChild')).colaboradorBreca === "NO" ?   <div className="btn-areas w-100">
           <div className="w-20">
             <a href="/aprendamos/cuidador/higiene" className="link">
@@ -509,7 +509,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
             </a> </div>
         </div> </> }
       </div>
-      <div className="list-btn-areas hide-desktop">
+      <div className="list-btn-areas mb-5 hide-desktop">
         <div className="btn-areas w-100">
           <div className="w-50">
             <a href="/aprendamos/cuidador/higiene" className="link">

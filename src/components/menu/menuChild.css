@@ -31,12 +31,12 @@
 
     .item:hover{
         text-decoration: none;
-        color: rgb(219, 216, 216)!important;
+        color: rgb(245, 162, 102)!important;
     } 
 
 .is-active{
         font-weight: bold !important;
-
+        color: rgb(245, 162, 102)!important;
     }
 
     @media (max-width: 768px) {
