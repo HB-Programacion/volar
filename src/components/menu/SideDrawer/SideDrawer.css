@@ -57,12 +57,10 @@
    
 }
 
-.sub-Item{
-    margin-left: 2rem;
-}
+
 
 .is-activeHomeMobile{
-    font-weight: bold!important;
+    color: #fa923f!important;
 }
 
 .list-sidedraw a:hover{
@@ -70,6 +68,25 @@
     font-weight: 500;
     color:#ffffff ;
 }
+.select-perfil{
+    position: absolute;
+    background: #fff;
+    /* left: 25%; */
+    top: 23rem;
+    width: 100%;
+}
+.select-perfil li{
+    line-height: .8rem!important;
+    margin: .7rem .7rem
+}
+
+.sub-Item{
+    margin-left: 4rem;
+    color: #7dc7c5!important;
+    font-size: .85rem!important;
+    
+}
+
 @media(min-width: 768px){
     .side-drawer{
         display: none;
