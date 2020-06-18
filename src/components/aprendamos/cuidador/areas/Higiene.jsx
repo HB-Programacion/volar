@@ -102,7 +102,7 @@ export const Higiene = ({
           <div className="box-title-higine show-desktop">
             <img
               src={iconoHigieneWhite}
-              className="icono-area"
+              className="icono-area heartbeat"
               alt="gota de agua"
             />
             <h1 className="title-area">HIGIENE Y AGUA SEGURA</h1>

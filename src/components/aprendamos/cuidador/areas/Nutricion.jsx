@@ -92,7 +92,7 @@ export const Nutricion= ({
           <div className="box-title-nutricion show-desktop">
             <img
               src={iconoNutricionWhite}
-              className="icono-area"
+              className="icono-area heartbeat"
               alt="gota de agua"
             />
             <h1 className="title-area">NUTRICIÓN</h1>

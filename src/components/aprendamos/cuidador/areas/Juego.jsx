@@ -94,7 +94,7 @@ export const Juego = ({
           <div className="box-title-juego show-desktop">
             <img
               src={iconoJuegoWhite}
-              className="icono-area"
+              className="icono-area heartbeat"
               alt="gota de agua"
             />
             <h1 className="title-area">JUEGO</h1>

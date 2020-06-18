@@ -97,7 +97,7 @@ export const Rutina= ({
            show-desktop">
             <img
               src={iconoRutinaWhite}
-              className="icono-area"
+              className="icono-area heartbeat"
               alt="gota de agua"
             />
             <h1 className="title-area">RUTINA</h1>

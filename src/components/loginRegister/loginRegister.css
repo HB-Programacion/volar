@@ -1,5 +1,5 @@
 .box-register-bienvenido{
-margin-top: 3.8rem;
+margin-top: 2.8rem;
 margin-bottom: 8.5rem
 }
 .loginDivider {
@@ -178,4 +178,9 @@ margin-bottom: 8.5rem
   .loginDivider {
     margin: 0.5rem auto;
   }
+
+  .box-register-bienvenido{
+    margin-top: 1.8rem;
+    margin-bottom: 8.5rem
+    }
 }
