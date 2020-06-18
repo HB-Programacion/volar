@@ -819,7 +819,7 @@ export default [
     {
         // rutina_edad_0_tip_8": {
         "seccion": "Rutina",
-        "video": "http://bit.ly/mi-cancion",
+        "video": "https://www.youtube.com/embed/itGbDk8yZDw?rel=0&autoplay=1",
         "n_tip": 8,
         "texto1A": " Enséñale a ",
         "edad": 0,

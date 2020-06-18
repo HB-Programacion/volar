@@ -13,6 +13,7 @@ import iconAreaJuego from "./../../../images/icon-juego.svg";
 import iconAreaNutricion from "./../../../images/icon-nutricion.svg";
 import iconAreaSesamo from "./../../../images/icon-sesamo.svg";
 import { auth, db } from "../../../components/firebase/firebase";
+import arrTips from '../../../../src/data'
 
 
 export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenidoFirebase }) => {
@@ -46,13 +47,17 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
           console.log("Error getting document:", error);
         });
     }
-     if(contenidoFirebase){
+    {/* if(contenidoFirebase){
        const newFilter=  contenidoFirebase.docs.filter(item=> item.data().video!=="" && item.data().seccion=== "Sésamo")
        let  numberAleatorio = Math.round(Math.random()*(newFilter.length-1));
 
        setVideoAleatorio(newFilter[numberAleatorio].data().video);
    
-     }
+     }*/}
+     const newFilter=  arrTips.filter(item=> item.video!=="" && item.seccion=== "Sésamo")
+     let  numberAleatorio = Math.round(Math.random()*(newFilter.length-1));
+
+     setVideoAleatorio(newFilter[numberAleatorio].video);
 
 
   }, [firebaseUser,idChild, contenidoFirebase]);
