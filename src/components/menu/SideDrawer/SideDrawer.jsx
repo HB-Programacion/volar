@@ -12,6 +12,7 @@ import aprendamos from "../../../images/menu-img/aprendamos-icono.svg"
 import contactanos from "../../../images/menu-img/contactanos-icono.svg"
 import iniciar from "../../../images/menu-img/iniciar-icono.svg"
 import cerrar from "../../../images/menu-img/cerrar-icono.svg"
+import user from "../../../images/menu-img/user-icono.svg"
 
 
 const SideDraw = (props) => {
@@ -67,7 +68,7 @@ const SideDraw = (props) => {
                         <div>
                             <li>
                                 <NavLink to ="/perfil"  onClick={props.ocultarMenuMobile} activeClassName='is-activeHomeMobile' className="w-15 mr-2">
-                                     Hola {userName}
+                                <img src={user} className="w-15 mr-2"/> Hola <span className="color-white">{userName}</span> 
                                 </NavLink>
                             </li>
 
