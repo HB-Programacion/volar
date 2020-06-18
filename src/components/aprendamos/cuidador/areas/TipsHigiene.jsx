@@ -101,7 +101,7 @@ const TipsHigiene = ({
         <div className="background-tips-higiene" id="aprendamos-page">
           <div className=" animated fadeIn">
               <>
-                {contenidoFirebase.docs
+                {arrTips
                   .filter(
                     (item) =>
                       item.seccion === "Higiene y Agua Segura" &&
