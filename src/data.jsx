@@ -4362,7 +4362,7 @@ export default [
         "tipo": "Video Educativo",
         "texto1": "Elmo y Clara dan 2 consejos para evitar la aparición del mosquito (es el mismo mosquito el que genera Zica, Malaria o Dengue). ",
         "seccion": "Sésamo",
-        "video": "https://www.youtube.com/embed/vL4c-ghx53s",
+        "video": "https://www.youtube.com/embed/vL4c-ghx53s?rel=0&autoplay=1",
         "texto3": "Consejo 2: No dejar que se acumule la basura y mantener siempre el basurero tapado",
         "n_tip": 10
     },
