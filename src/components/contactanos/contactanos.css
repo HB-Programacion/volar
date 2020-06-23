@@ -16,13 +16,12 @@ padding-bottom: 1.5rem;
 }
 
 
-@media (min-width: 769px) {
+@media (max-width: 769px) {
     .caja-boton-contactanos{
-        width: 35%
+        width: 65%!important;
     }
     .contactanos-box{
-        padding-top: 7rem;
-        margin-bottom: 10rem
+        padding-top: 2.5rem;
     }
 
 }
