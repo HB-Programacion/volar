@@ -189,6 +189,11 @@ const Perfil = (props) => {
       return;
     }
 
+    if(codigoBreca !== "Breca2020"){
+      setError("Código Breca incorrecto");
+      return
+    }
+
     editarPerfil();
     setError(null);
   };
