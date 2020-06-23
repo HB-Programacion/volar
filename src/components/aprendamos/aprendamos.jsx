@@ -13,7 +13,7 @@ export const Aprendamos = () => {
           <div className="row justify-content-center h-100 sin-margin-row wobble-hor-bottom">
             <Link
               to="/aprendamos/cuidador/registro-niños"
-              className="btn-light-blue text-white  m-3 boton-hover-aprendamos"  
+              className="btn-light-blue text-white  m-3 boton-hover-aprendamos"
             >
               <img src={arrowLeft} className="arrow-blue" alt="flecha izquierda azul"></img>
               Prueba un consejo antes <br /> de crear una cuenta
