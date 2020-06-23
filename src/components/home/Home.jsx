@@ -175,7 +175,7 @@ const Home = () => {
                                         </div>
                                         
                                     </div>
-                                    <Link to="/"className="btn-orange text-white">
+                                    <Link to="/aprendamos"className="btn-orange text-white">
                                         <img src={arrowLeft} className="arrow-orange"></img>
                                             ¡Aprendamos a hacerlo!
                                         <img src={arrowRigth}className="arrow-orange"></img>
@@ -200,7 +200,7 @@ const Home = () => {
                                             <img src={exploren} alt=""/>
                                         </div>
                                     </div>
-                                    <Link to="/"className="btn-orange text-white">
+                                    <Link to="/aprendamos"className="btn-orange text-white">
                                         <img src={arrowLeft} className="arrow-orange"></img>
                                             ¡Aprendamos a hacerlo!
                                         <img src={arrowRigth}className="arrow-orange"></img>
@@ -225,7 +225,7 @@ const Home = () => {
                                             <img src={lean} alt=""/>
                                         </div>
                                     </div>
-                                    <Link to="/" className="btn-orange text-white">
+                                    <Link to="/aprendamos" className="btn-orange text-white">
                                         <img src={arrowLeft} className="arrow-orange"></img>
                                             ¡Aprendamos a hacerlo!
                                         <img src={arrowRigth}className="arrow-orange"></img>
@@ -250,7 +250,7 @@ const Home = () => {
                                             <img src={cuenten} alt=""/>
                                         </div>
                                     </div>
-                                    <Link to="/" className="btn-orange text-white">
+                                    <Link to="/aprendamos" className="btn-orange text-white">
                                         <img src={arrowLeft} className="arrow-orange"></img>
                                             ¡Aprendamos a hacerlo!
                                         <img src={arrowRigth}className="arrow-orange"></img>
@@ -296,7 +296,7 @@ const Home = () => {
                                             <img src={habla} alt=""/>
                                         </div>
                                     </div>
-                                    <Link to="/" className="btn-orange text-white">
+                                    <Link to="/aprendamos" className="btn-orange text-white">
                                         <img src={arrowLeft} className="arrow-orange"></img>
                                             ¡Aprendamos a hacerlo!
                                         <img src={arrowRigth}className="arrow-orange"></img>
@@ -322,7 +322,7 @@ const Home = () => {
                                             <img src={exploren} alt=""/>
                                         </div>
                                     </div>
-                                    <Link to="/" className="btn-orange text-white">
+                                    <Link to="/aprendamos" className="btn-orange text-white">
                                         <img src={arrowLeft} className="arrow-orange"></img>
                                             ¡Aprendamos a hacerlo!
                                         <img src={arrowRigth}className="arrow-orange"></img>
@@ -347,7 +347,7 @@ const Home = () => {
                                                 <img src={lean} alt=""/>
                                             </div>
                                         </div>
-                                        <Link to="/" className="btn-orange text-white">
+                                        <Link to="/aprendamos" className="btn-orange text-white">
                                             <img src={arrowLeft} className="arrow-orange"></img>
                                                 ¡Aprendamos a hacerlo!
                                             <img src={arrowRigth}className="arrow-orange"></img>
@@ -372,7 +372,7 @@ const Home = () => {
                                                 <img src={cuenten} alt=""/>
                                             </div>
                                         </div>
-                                        <Link to="/" className="btn-orange text-white">
+                                        <Link to="/aprendamos" className="btn-orange text-white">
                                             <img src={arrowLeft} className="arrow-orange"></img>
                                                 ¡Aprendamos a hacerlo!
                                             <img src={arrowRigth}className="arrow-orange"></img>
