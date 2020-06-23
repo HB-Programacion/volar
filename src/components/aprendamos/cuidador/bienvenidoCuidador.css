@@ -88,6 +88,7 @@
   justify-content: center;
   align-items: center;
 
+
 }
 .area-higiene:hover,
 .area-higiene:hover{
@@ -251,9 +252,10 @@
 }
 
 .caja-compartir-hola{
-  width: 30%!important;
+  width: 30%;
+  margin: auto;
   margin-top: 3rem!important;
-  margin-bottom: 3rem!important
+  margin-bottom: 3rem!important;
 }
 
 
@@ -335,58 +337,70 @@ margin-top: 3rem
   
   .area-higiene {
     border: 0.4rem solid #7dc7c5;
-    border-radius: 2.5em;
+    border-radius: 2em;
     margin: 0.2rem;
     display: flex;
     flex-direction: column;
     height: 8rem;
+    width: 9rem;
+    margin: auto
   }
   .area-socioEmocional {
     border: 0.5rem solid #ae96b2;
-    border-radius: 2.5em;
+    border-radius: 2em;
     margin: 0.2rem;
     display: flex;
     flex-direction: column;
     padding: 1rem 0.5rem 0.5rem 0.5rem;
     height: 8rem;
+    width: 9rem;
+    margin: auto
   }
   .area-rutina {
     border: 0.5rem solid #ef8b44;
-    border-radius: 2.5em;
+    border-radius: 2em;
     margin: 0.2rem;
     display: flex;
     flex-direction: column;
     padding: 1rem 0.5rem 0.5rem 0.5rem;
     height: 8rem;
+    width: 9rem;
+    margin: auto
   }
   
   .area-juego {
     border: 0.5rem solid #f7b919;
-    border-radius: 2.5em;
+    border-radius: 2em;
     margin: 0.2rem;
     display: flex;
     flex-direction: column;
     padding: 1rem 0.5rem 0.5rem 0.5rem;
     height: 8rem;
+    width: 9rem;
+    margin: auto
   }
   .area-nutricion {
     border: 0.5rem solid #eb477a;
-    border-radius: 2.5em;
+    border-radius: 2em;
     margin: 0.2rem;
     padding: 1rem 0.5rem 0.5rem 0.5rem;
     display: flex;
     flex-direction: column;
     height: 8rem;
+    width: 9rem;
+    margin: auto
   }
 
   .area-sesamo {
     border: 0.5rem solid #05AB4C;
-    border-radius: 2.5em;
+    border-radius: 2em;
     margin: 0.2rem;
     padding: 1rem 0.5rem 0.5rem 0.5rem;
     display: flex;
     flex-direction: column;
     height: 8rem;
+    width: 9rem;
+    margin: auto
   }
   
   .icon-area {
@@ -425,7 +439,8 @@ margin-top: 3rem
   }
 .caja-compartir-hola{
   margin-top: 1.5rem!important;
-  margin-bottom: 1.5rem!important
+  margin-bottom: 1.5rem!important;
+  width: 90%;
 }
 .text-tienes-todo{
   width: 90%;
