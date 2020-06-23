@@ -32,8 +32,8 @@ const Signup = (props) => {
       setError("ingrese password");
       return;
     }
-    if (password.length < 6) {
-      setError("Password mayor a 6 carácteres");
+    if (password.length < 8) {
+      setError("Password mayor a 8 carácteres");
       return;
     }
     if(password!==passwordRepeat){

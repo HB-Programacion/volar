@@ -32,6 +32,14 @@ import arrowRight from "./../../../images/arrow-right-blue.svg";
       setError("Colocar código Breca");
       return;
     }
+
+    
+    if(codigoBreca !== "Breca2020"){
+      setError("Código Breca incorrecto");
+      return
+    }
+
+    
     addDateChild()
 
     setError(null);
