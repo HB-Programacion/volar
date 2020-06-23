@@ -100,7 +100,7 @@ export const BienvenidoCuidador = ({ idChild, firebaseUser, arrayChild, contenid
                     {/* <iframe  src="https://www.youtube.com/watch?v=nNdYfFO10d8&feature=youtu.be&t=1s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                 </div>        
       </div>
-      <div className="caja-boton-contactanos caja-compartir-hola">
+      <div className=" caja-compartir-hola">
                 <a href="https://www.facebook.com/sharer/sharer.php?u=http://52.177.117.53/" className="btn-navy-blue w-80 text-white wobble-hor-bottom">
                   <img src={arrowLeft} className="arrow-blue"></img>
                   COMPARTIR

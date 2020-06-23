@@ -15,7 +15,7 @@ import starsRight from "../../images/stars-right.svg"
 const Nosotros = () => {
     return(
         <div id="nosotros-page">
-            <div id="tittle-nosotros" className="box-title animated fadeIn ">
+            <div id="tittle-nosotros" className="box-title animated fadeIn mt-3">
             <figure className="stars-group">
                 <img src={starsLeftDesktop} className="stars-left-desktop heartbeat"></img>
                 <img src={starsRightDesktop} className="stars-right-desktop heartbeat"></img>
