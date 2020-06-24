@@ -34,12 +34,12 @@ import arrowRight from "./../../../images/arrow-right-blue.svg";
     }
 
     
-    if(codigoBreca !== "Breca2020"){
+    if(codigoBreca !== "Breca2020" && colaboradorBreca === "SI" ){
       setError("Código Breca incorrecto");
       return
     }
 
-    
+
     addDateChild()
 
     setError(null);

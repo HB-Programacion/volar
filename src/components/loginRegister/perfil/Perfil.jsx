@@ -189,7 +189,7 @@ const Perfil = (props) => {
       return;
     }
 
-    if(codigoBreca !== "Breca2020"){
+    if(codigoBreca !== "Breca2020" && colaboradorBreca === "SI" ){
       setError("Código Breca incorrecto");
       return
     }

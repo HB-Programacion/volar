@@ -13,7 +13,7 @@ import Home from "./components/home/Home";
 import Footer from "./components/footer/Footer";
 import Nosotros from "./components/nosotros/Nosotros";
 
-import { Aprendamos } from "./components/aprendamos/Aprendamos";
+import { Aprendamos } from "./components/aprendamos/aprendamos";
 import { EmpiezaAprender } from "./components/aprendamos/EmpiezaAprender";
 import  RegistroNiños from "./components/aprendamos/cuidador/RegistroNiños";
 import { BienvenidoCuidador } from "./components/aprendamos/cuidador/BienvenidoCuidador";
@@ -32,6 +32,7 @@ import TipsSesamo from "./components/aprendamos/cuidador/areas/TipsSesamo"
 import Login from "./components/loginRegister/Login";
 import Signup from "./components/loginRegister/Signup";
 import { PasswordReset } from "./components/loginRegister/PasswordReset";
+import { Contactanos2 } from "./components/contactanos/Contactanos2";
 import { Contactanos } from "./components/contactanos/Contactanos";
 // import { auth,db } from "./components/firebase/firebase";
 import Perfil from "./components/loginRegister/perfil/Perfil";
