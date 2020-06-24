@@ -13,7 +13,7 @@ import Home from "./components/home/Home";
 import Footer from "./components/footer/Footer";
 import Nosotros from "./components/nosotros/Nosotros";
 
-import { Aprendamos } from "./components/aprendamos/Aprendamos";
+import { Aprendamos } from "./components/aprendamos/aprendamos";
 import { EmpiezaAprender } from "./components/aprendamos/EmpiezaAprender";
 import  RegistroNiños from "./components/aprendamos/cuidador/RegistroNiños";
 import { BienvenidoCuidador } from "./components/aprendamos/cuidador/BienvenidoCuidador";
@@ -33,6 +33,7 @@ import Login from "./components/loginRegister/Login";
 import Signup from "./components/loginRegister/Signup";
 import { PasswordReset } from "./components/loginRegister/PasswordReset";
 import { Contactanos2 } from "./components/contactanos/Contactanos2";
+import { Contactanos } from "./components/contactanos/Contactanos";
 // import { auth,db } from "./components/firebase/firebase";
 import Perfil from "./components/loginRegister/perfil/Perfil";
 import ConstruccionAprendamos from "./components/aprendamos/Construccion"
@@ -382,7 +383,7 @@ function App() {
               mandarIdChild={mandarIdChild}
             />
           </Route>
-          <Route path="/contactanos2" exact component={Contactanos2} />
+          <Route path="/contactanos" exact component={Contactanos} />
           <Route path="/nosotros/fase1" exact component={Fase1} />
           <Route path="/nosotros/fase2" exact component={Fase2} />
           <Route path="/nosotros/fase2/crecer" exact component={Crecer} />

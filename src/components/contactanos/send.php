@@ -68,6 +68,7 @@ echo '<!DOCTYPE html>
     <link  rel="icon"   href="favicon.jpeg" type="image/jpeg" />
     <title>Estas Registrado</title>
 
+
 </head>
 <body>
     <section>
