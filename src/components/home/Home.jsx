@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import "./home.css"
-import nino from '../../images/home-img/nino2.png';
+import fondomobile from '../../images/home-img/img-mobile.png';
 import proposito from '../../images/home-img/proposito.svg';
 import cognitivo from '../../images/home-img/d-cognitivo.svg';
 import emocional from '../../images/home-img/d-emocional.svg';
@@ -49,26 +49,15 @@ const Home = () => {
 
     return (
         <div className="animated fadeIn">
-        {width < breakpoint  ?  
-            <div className="video-bg">
-                <video class=" " width="500" height="600"  loop autoPlay muted  >
+            <div className="video-bg ">
+                <video className="hide-mobile" width="500" height="600"  loop autoPlay muted  >
 					<source src={videoo} type="video/mp4"/>
 					<source src={videoo} type="video/ogg"/>
 					<source src={videoo} type="video/webm"/>
 					Your browser does not support the video tag.
 				</video>
+                <img src={fondomobile} alt="" className="show-mobile"/>
             </div>
-            :
-            <div className="video-bg">
-                <video class=" " width="100" height="200"  loop autoPlay muted  >
-					<source src={videoMobile} type="video/mp4" />
-					<source src={videoMobile} type="video/ogg"/>
-					<source src={videoMobile} type="video/webm"/>
-					Your browser does not support the video tag.
-				</video>
-            </div>
-             }
-
              <div className="text-center text-white text-proposito">
                 <div className="d-flex justify-content-center  text-center text-white">
                     {/* <h1 className="hide-desktop">nuestro</h1> */}
