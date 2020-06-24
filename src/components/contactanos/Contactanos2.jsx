@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import arrowLeft from "./../../images/arrow-left-blue.svg";
 import arrowRight from "./../../images/arrow-right-blue.svg";
 
-export const Contactanos = () => {
+export const Contactanos2 = () => {
   return (
     <div className="container mt-4  animated fadeIn ">
       <div className="register-child contactanos-box">

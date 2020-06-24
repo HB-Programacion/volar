@@ -68,97 +68,12 @@ echo '<!DOCTYPE html>
     <link  rel="icon"   href="favicon.jpeg" type="image/jpeg" />
     <title>Estas Registrado</title>
 
-    <style>
-        body {
-            padding: 0;
-            margin: 0;
-        }
-
-        @font-face {
-            font-family: "edos";
-            src: url("EDOSZ.TTF");
-        }
-
-        @font-face {
-            font-family: "gotham";
-            src: url("./Gotham-Bold.otf");
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        html {
-            font-size: 0.94vw;
-        }
-
-        section {
-            width: 100vw;
-            height: 100vh;
-            background: #000
-        }
-
-        .pop-up {
-            width: 35.74rem;
-            height: 26.04rem;
-            background-image: url("ventana_emergente.png");
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%)
-        }
-
-        h1 {
-            font-family: "edos";
-            width: 26.09rem;
-            font-size: 3.88rem;
-            text-align: center;
-            margin: auto;
-            margin-top: 2.9rem
-        }
-
-        img {
-            display: block;
-            width: 80%;
-            margin: 0rem auto;
-
-        }
-
-        h2 {
-            font-family: "gotham";
-            color: #fff;
-            text-transform: uppercase;
-            text-align: center;
-            width: 27.09rem;
-            margin: 1.5rem auto;
-            font-size: 1.11rem
-        }
-
-        @media (max-width: 768px) {
-            .pop-up {
-                width: 85.74rem;
-                height: 66.04rem;
-            }
-
-            h1 {
-                font-size: 8rem;
-                width: 66.09rem;
-                margin-top: 6rem
-            }
-
-            h2 {
-                font-size: 4.11rem;
-                width: 57.09rem;
-            }
-        }
-    </style>
-
 </head>
 <body>
     <section>
         <div class="pop-up">
             <h1>
-                ¡gracias
+                ¡Gracias
                 por comunicarse con Volar!
             </h1>
             <img src="linea.svg" alt="">

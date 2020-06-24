@@ -32,7 +32,7 @@ import TipsSesamo from "./components/aprendamos/cuidador/areas/TipsSesamo"
 import Login from "./components/loginRegister/Login";
 import Signup from "./components/loginRegister/Signup";
 import { PasswordReset } from "./components/loginRegister/PasswordReset";
-import { Contactanos } from "./components/contactanos/Contactanos";
+import { Contactanos2 } from "./components/contactanos/Contactanos2";
 // import { auth,db } from "./components/firebase/firebase";
 import Perfil from "./components/loginRegister/perfil/Perfil";
 import ConstruccionAprendamos from "./components/aprendamos/Construccion"
@@ -382,7 +382,7 @@ function App() {
               mandarIdChild={mandarIdChild}
             />
           </Route>
-          <Route path="/contactanos" exact component={Contactanos} />
+          <Route path="/contactanos2" exact component={Contactanos2} />
           <Route path="/nosotros/fase1" exact component={Fase1} />
           <Route path="/nosotros/fase2" exact component={Fase2} />
           <Route path="/nosotros/fase2/crecer" exact component={Crecer} />
