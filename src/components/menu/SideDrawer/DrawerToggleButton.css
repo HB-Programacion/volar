@@ -20,8 +20,8 @@
     border-radius: 50px;
 }
 
-/* @media(max-width: 768px){
-    .toggle-button_line{
-        width: 
+@media(max-width: 768px){
+    .toolbar-toggle-button-burger{
+        display:block!important
     }
-} */
+}

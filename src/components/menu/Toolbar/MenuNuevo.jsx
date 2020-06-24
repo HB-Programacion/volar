@@ -83,7 +83,7 @@ const MenuNuevo =props => {
                     )}
                 </ul>
             </div>
-            <div className="toolbar-toggle-button">
+            <div className="toolbar-toggle-button toolbar-toggle-button-burger">
                 <DrawerToggleButton click={props.drawerClickHandler}/>
             </div>
         </nav>
