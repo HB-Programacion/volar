@@ -2,7 +2,7 @@ import React from "react";
 import "./../aprendamos.css";
 import "./../../../App.css";
 import "./bienvenidoCuidador.css";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 import iconoBienvenidaCuidador from "./../../../images/icon-bienvenida-cuidador.svg";
 import arrowLeft from "./../../../images/arrow-left-blue.svg";
 import arrowRight from "./../../../images/arrow-right-blue.svg";
@@ -12,7 +12,7 @@ import iconAreaRutina from "./../../../images/icon-rutina.svg";
 import iconAreaJuego from "./../../../images/icon-juego.svg";
 import iconAreaNutricion from "./../../../images/icon-nutricion.svg";
 import iconAreaSesamo from "./../../../images/icon-sesamo.svg";
-import { auth, db } from "../../../components/firebase/firebase";
+import {db } from "../../../components/firebase/firebase";
 import arrTips from "../../../../src/data";
 
 export const BienvenidoCuidador = ({
