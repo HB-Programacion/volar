@@ -64,19 +64,37 @@ export const BienvenidoCuidador = ({
    
      }*/
     }
-    const newFilter = arrTips.filter(
-      (item) => item.video !== "" && item.seccion !== "Sésamo"  && item.edad == localStorage.getItem('edadChildLogueadoActive')
-    );
-    let numberAleatorio = Math.round(Math.random() * (newFilter.length - 1));
+    if (firebaseUser !== null ){
 
-    setVideoAleatorio(newFilter[numberAleatorio].video);
-    setTexto1aAleatorio(newFilter[numberAleatorio].texto1A);
-    setTexto1bAleatorio(newFilter[numberAleatorio].texto1B);
-    setTexto2Aleatorio(newFilter[numberAleatorio].texto2);
-    setColorSeccionAleatorio(newFilter[numberAleatorio].seccion)
-    console.log("seccion", colorSeccionAleatorio)
-    console.log("textoa", texto1aAleatorio)
-    console.log("textob", texto1bAleatorio)
+      const newFilter = arrTips.filter(
+        (item) => item.video !== "" && item.seccion !== "Sésamo"  && item.edad == localStorage.getItem('edadChildLogueadoActive')
+      );
+      let numberAleatorio = Math.round(Math.random() * (newFilter.length - 1));
+  
+      setVideoAleatorio(newFilter[numberAleatorio].video);
+      setTexto1aAleatorio(newFilter[numberAleatorio].texto1A);
+      setTexto1bAleatorio(newFilter[numberAleatorio].texto1B);
+      setTexto2Aleatorio(newFilter[numberAleatorio].texto2);
+      setColorSeccionAleatorio(newFilter[numberAleatorio].seccion)
+      console.log("seccion", colorSeccionAleatorio)
+      console.log("textoa", texto1aAleatorio)
+      console.log("textob", texto1bAleatorio)
+    } else {
+      const newFilter = arrTips.filter(
+        (item) => item.video !== "" && item.seccion !== "Sésamo"  && item.edad == JSON.parse(localStorage.getItem("dateChild")).name
+      );
+      let numberAleatorio = Math.round(Math.random() * (newFilter.length - 1));
+  
+      setVideoAleatorio(newFilter[numberAleatorio].video);
+      setTexto1aAleatorio(newFilter[numberAleatorio].texto1A);
+      setTexto1bAleatorio(newFilter[numberAleatorio].texto1B);
+      setTexto2Aleatorio(newFilter[numberAleatorio].texto2);
+      setColorSeccionAleatorio(newFilter[numberAleatorio].seccion)
+      console.log("seccion", colorSeccionAleatorio)
+      console.log("textoa", texto1aAleatorio)
+      console.log("textob", texto1bAleatorio)
+    }
+   
  
    /* if(colorSeccionAleatorio === "Higiene y Agua Segura") {
       setColorSeccionAleatorio("#7dc7c5")
