@@ -566,17 +566,28 @@ export const BienvenidoCuidador = ({
             </div>
 
             <div className="box-row-2">
-              <p className="box-text ">
-                Hoy aprenderemos a desarrollar las habilidades de lenguaje de
-                {JSON.parse(localStorage.getItem("dateChild")).name}
-                aprovechando los momentos de aseo.
-              </p>
+
+            {texto1bAleatorio !== ""  && texto1aAleatorio!== "" ? (
+                              <p className="box-text ">
+                                 {texto1aAleatorio}  {JSON.parse(localStorage.getItem("dateChild")).name} {texto1bAleatorio} 
+                              </p>
+                            ) : (
+                               texto1bAleatorio !== ""  && texto1aAleatorio === "" ? (
+                                <p className="box-text ">
+                                {texto1bAleatorio}
+                              </p>
+                              ):(
+                                <p className="box-text ">
+                               {JSON.parse(localStorage.getItem("dateChild")).name}  {texto1aAleatorio}  
+                              </p>
+                              ) 
+                              
+                            )}
             </div>
           </div>
           <p className="estrellita-lila heartbeat">&#10022;</p>
           <p className="title-dit">
-            Recuerda explicarle qué parte de su cuerpo estás limpiando y
-            contarle qué vas a hacer luego.
+            {texto2Aleatorio}
           </p>
           <p className="estrellita-lila heartbeat">&#10022;</p>
           <div className="mt-3 video">
