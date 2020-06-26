@@ -491,9 +491,9 @@ export default [
     // higieneAguaSegura_edad_0_tip_1
 
     {
-        "texto1A": " Cuando te lavas las manos matas los gérmenes que te hacen contraer enfermedades diarreicas. ¡Házlo siempre! ¡Cuidandote tú, cuidas a tus hijas e hijos!",
+        "texto1A": "",
         "edad": 0,
-        "texto1B": "",
+        "texto1B": " Cuando te lavas las manos matas los gérmenes que te hacen contraer enfermedades diarreicas. ¡Házlo siempre! ¡Cuidandote tú, cuidas a tus hijas e hijos!",
         "titulo": "Evita enfermedades",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
         "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
@@ -529,14 +529,14 @@ export default [
     },
     {
         // higieneAguaSegura_edad_0_tip_10
-        "texto1B": "",
+        "texto1B": " Aunque el pañal se cambie varias veces al día, no puedes olvidarte nunca de lavarte las manos. ¡Lávate antes y luego de hacerlo! Las heces tiene gérmenes que podrían enfermar a tu bebé. ¡Cuídalo!",
         "titulo": "Sana costumbre",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
         "icono": " http://52.177.117.53/static/media/icono-blanco/0-1/pa%C3%B1al_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 10,
-        "texto1A": " Aunque el pañal se cambie varias veces al día, no puedes olvidarte nunca de lavarte las manos. ¡Lávate antes y luego de hacerlo! Las heces tiene gérmenes que podrían enfermar a tu bebé. ¡Cuídalo!",
+        "texto1A": "",
         "edad": 0
     },
     {
@@ -554,14 +554,14 @@ export default [
     },
     {
         // higieneAguaSegura_edad_0_tip_4
-        "texto1B": "",
+        "texto1B":" Lávate las manos antes de amamantar, antes de cocinar, antes de comer y luego de ir al baño. Son momentos clave!",
         "titulo": "Que sea una costumbre",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": " http://52.177.117.53/static/media/icono-blanco/0-1/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 4,
-        "texto1A": " Lávate las manos antes de amamantar, antes de cocinar, antes de comer y luego de ir al baño. Son momentos clave!",
+        "texto1A": "",
         "edad": 0
 
     },
@@ -592,9 +592,9 @@ export default [
 
     },
     { // higieneAguaSegura_edad_0_tip_7
-        "texto1A": " La única forma de matar los gérmenes del agua es hirviendola. Si la tomas directo del caño o del envase, podrías enfermarte del estómago. Y necesitas una buena salud para amamantar a tu bebé, recuerda que los 6 primeros meses solo debe tomar tu leche. ",
+        "texto1A": "",
         "edad": 0,
-        "texto1B": "",
+        "texto1B": " La única forma de matar los gérmenes del agua es hirviendola. Si la tomas directo del caño o del envase, podrías enfermarte del estómago. Y necesitas una buena salud para amamantar a tu bebé, recuerda que los 6 primeros meses solo debe tomar tu leche. ",
         "titulo": "Cuida lo que consumes ",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/tetera_Mesa%20de%20trabajo%201.svg",
@@ -647,31 +647,31 @@ export default [
         "seccion": "Juego",
         "video": "",
         "n_tip": 2,
-        "texto1A": " No siempre podemos dedicarle todo el tiempo que quisiéramos a nuestros hijos, pero con 20 minutos de juego diarios los puedes hacer muy felices. ¡Tú puedes!",
+        "texto1A":"",
         "edad": 0,
-        "texto1B": "",
+        "texto1B":" No siempre podemos dedicarle todo el tiempo que quisiéramos a nuestros hijos, pero con 20 minutos de juego diarios los puedes hacer muy felices. ¡Tú puedes!",
         "titulo": "¡No te olvides de jugar!"
     },
     {
         // juego_edad_0_tip_4
-        "texto1B": "",
+        "texto1B":" Aprovecha momentos en casa con tu bebé para desarrollar sus habilidades de memoria y concentración. ¡Házle un tour por su cuarto! Muéstrale los objetos que hay y para qué sirven, él te entiende muy bien. ",
         "titulo": "Aprovecha cada momento",
         "icono": " http://52.177.117.53/static/media/icono-blanco/0-1/juguete_Mesa%20de%20trabajo%201.svg",
         "seccion": "Juego",
         "video": "",
         "n_tip": 4,
         "edad": 0,
-        "texto1A": " Aprovecha momentos en casa con tu bebé para desarrollar sus habilidades de memoria y concentración. ¡Házle un tour por su cuarto! Muéstrale los objetos que hay y para qué sirven, él te entiende muy bien. "
+        "texto1A": ""
 
     },
     {
         // juego_edad_0_tip_5
         "seccion": "Juego",
-        "video": "http://bit.ly/c-bebe",
+        "video": "https://www.youtube.com/embed/10lqONhiZLM?rel=0&autoplay=1",
         "n_tip": 5,
-        "texto1A": " Aprovecha momentos en casa con tu bebé para desarrollar sus habilidades de lenguaje simplemente conversando con él. Mientras lo haces, prueba haciendo sonidos y caras graciosas, sus balbuceos son sus respuestas.",
+        "texto1A": "",
         "edad": 0,
-        "texto1B": "",
+        "texto1B": " Aprovecha momentos en casa con tu bebé para desarrollar sus habilidades de lenguaje simplemente conversando con él. Mientras lo haces, prueba haciendo sonidos y caras graciosas, sus balbuceos son sus respuestas.",
         "titulo": "Háblale",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": ""
@@ -730,23 +730,23 @@ export default [
     {
         // juego_edad_0_tip_8
         "n_tip": 8,
-        "texto1A": " Aprovecha momentos en casa con tu bebé para desarrollar sus habilidades cognitivas. A la hora de la comida, permítele que juegue y sienta con la comida. Así diferenciará texturas, sensaciones y formas.",
+        "texto1A": "",
         "edad": 0,
-        "texto1B": "",
+        "texto1B": " Aprovecha momentos en casa con tu bebé para desarrollar sus habilidades cognitivas. A la hora de la comida, permítele que juegue y sienta con la comida. Así diferenciará texturas, sensaciones y formas.",
         "titulo": "Sensaciones",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "",
         "seccion": "Juego",
-        "video": "http://bit.ly/sensa-ciones"
+        "video": "https://www.youtube.com/embed/H2Eug9vyC0A?rel=0&autoplay=1"
     },
     {
         // rutina_edad_0_tip_1
         "seccion": "Rutina",
         "video": "",
         "n_tip": 1,
-        "texto1A": " ¿Sabías que el 85% del cerebro se desarrolla en los primeros 3 años de vida? Aprovecha este tiempo al máximo con ",
+        "texto1A": "",
         "edad": 0,
-        "texto1B": "",
+        "texto1B": " ¿Sabías que el 85% del cerebro se desarrolla en los primeros 3 años de vida? Aprovecha este tiempo al máximo con ",
         "titulo": "¡Ayúdalo a desarrollarse!",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/cerebro_Mesa%20de%20trabajo%201.svg"
@@ -760,7 +760,7 @@ export default [
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "icono": "",
         "seccion": "Rutina",
-        "video": "http://bit.ly/mi-barrio",
+        "video": "https://www.youtube.com/embed/Sd7cTxwKxxE?rel=0&autoplay=1",
         "n_tip": 10
     },
     {
@@ -769,7 +769,7 @@ export default [
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "",
         "seccion": "Rutina",
-        "Video": " http://bit.ly/cuento-dormir",
+        "Video": "https://www.youtube.com/embed/f2QQzTQ1tqs?rel=0&autoplay=1",
         "n_tip": 4,
         "texto1A": " no quiere dormir a su hora? ¡Cuéntale un cuento! Si no tienes uno, puedes inventarlo con lo que puedan ver en el cuarto. Mira cómo hacerlo aquí:",
         "edad": 0,
@@ -784,13 +784,13 @@ export default [
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "icono": "",
         "seccion": "Rutina",
-        "video": "http://bit.ly/rut-sueño",
+        "video": "https://www.youtube.com/embed/Xr-2uahlFGE?rel=0&autoplay=1",
         "n_tip": 5
     },
     {
         // rutina_edad_0_tip_6": {
         "seccion": "Rutina",
-        "video": "http://bit.ly/sensa-ciones ",
+        "video": "https://www.youtube.com/embed/W3ezNzrS-n4?rel=0&autoplay=1",
         "n_tip": 6,
         "texto1A": " A la hora de comer enseñale a ",
         "edad": 0,
@@ -802,7 +802,7 @@ export default [
     {
         // rutina_edad_0_tip_7": {
         "seccion": "Rutina",
-        "video": " http://bit.ly/prim-balbuceo",
+        "video": "https://www.youtube.com/embed/NDsuMumIV6A?rel=0&autoplay=1",
         "n_tip": 7,
         "texto1A": " balbucea como si tratara de hablar? Repite los sonidos que hace y agrega más. Así fortalecerás sus habilidades de comunicación ¿Quieres saber cómo ayudarlo? Mira un ejemplo aquí:",
         "edad": 0,
@@ -969,9 +969,9 @@ export default [
     {
         // socioemocional_edad_0_tip_9": {
         "n_tip": 9,
-        "texto1A": " Dile cuánto lo amas a cada instante. Con tu amor desarrollará un vínculo especial llamado \"apego seguro\". Muy importante para el desarrollo de sus habilidades socioemocionales.",
+        "texto1A": "",
         "edad": 0,
-        "texto1B": "",
+        "texto1B": " Dile cuánto lo amas a cada instante. Con tu amor desarrollará un vínculo especial llamado \"apego seguro\". Muy importante para el desarrollo de sus habilidades socioemocionales.",
         "titulo": "Fortaleciendo lazos",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": " http://52.177.117.53/static/media/icono-blanco/0-1/mama_con_bebe_Mesa%20de%20trabajo%201.svg",
@@ -1130,9 +1130,9 @@ export default [
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 1,
-        "texto1A": " Cuando te lavas las manos matas los gérmenes que te hacen contraer enfermedades diarreicas. ¡Házlo siempre! ¡Cuidandote tú, cuidas a tus hijas e hijos!",
+        "texto1A": "",
         "edad": 1,
-        "texto1B": "",
+        "texto1B": " Cuando te lavas las manos matas los gérmenes que te hacen contraer enfermedades diarreicas. ¡Házlo siempre! ¡Cuidandote tú, cuidas a tus hijas e hijos!",
         "titulo": "Siempre prevenidos",
 
     },
@@ -1154,9 +1154,9 @@ export default [
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 5,
-        "texto1A": " La única forma de matar los gérmenes del agua es hirviendola. Si la tomas directo del caño o del envase, podrías enfermarte del estómago. Y necesitas una buena salud para amamantar a tu bebé, recuerda que los 6 primeros meses solo debe tomar tu leche. ",
+        "texto1A": "",
         "edad": 1,
-        "texto1B": "",
+        "texto1B": " La única forma de matar los gérmenes del agua es hirviendola. Si la tomas directo del caño o del envase, podrías enfermarte del estómago. Y necesitas una buena salud para amamantar a tu bebé, recuerda que los 6 primeros meses solo debe tomar tu leche. ",
         "titulo": "Cuídate",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/tetera_Mesa%20de%20trabajo%201.svg",
@@ -1234,9 +1234,9 @@ export default [
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 8,
-        "texto1A": " El agua es muy valiosa y tenemos que cuidarla. Guárdala en envases limpios con tapa para evitar que se contamine. ¡Sigue asi!",
+        "texto1A": "",
         "edad": 1,
-        "texto1B": "",
+        "texto1B": " Los alimentos amarillos y naranjas son buenos para el corazón, los ojos y ayudan a combatir gérmenes. Naranja, mandarina, plátano y más!",
         "titulo": "Sin contaminación",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": " http://52.177.117.53/static/media/icono-blanco/1-2/envase_agua_tapada_Mesa%20de%20trabajo%201.svg",
@@ -1247,7 +1247,7 @@ export default [
         "n_tip": 9,
         "texto1A": " Envuelve bien el pañal sucio antes de botarlo y ten el tacho lejos de donde está ",
         "edad": 1,
-        "texto1B": " Luego, lávate las manos con agua y jabón. ",
+        "texto1B": ". Luego, lávate las manos con agua y jabón. ",
         "titulo": "La limpieza es importante",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/pa%C3%B1al_Mesa%20de%20trabajo%201.svg",
@@ -1393,9 +1393,9 @@ export default [
         "seccion": "Juego",
         "video": "",
         "n_tip": 1,
-        "texto1A": " No siempre podemos dedicarle todo el tiempo que quisiéramos a nuestros hijos, pero con 20 minutos de juego diarios los puedes hacer muy felices. ¡Tú puedes!",
+        "texto1A": "",
         "edad": 1,
-        "texto1B": "",
+        "texto1B": " No siempre podemos dedicarle todo el tiempo que quisiéramos a nuestros hijos, pero con 20 minutos de juego diarios los puedes hacer muy felices. ¡Tú puedes!",
         "titulo": "Quieren tu atención",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/juguete_Mesa%20de%20trabajo%201.svg"
@@ -1408,7 +1408,7 @@ export default [
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "",
         "seccion": "Juego",
-        "video": "http://bit.ly/cuento-dormir",
+        "video": "https://www.youtube.com/embed/f2QQzTQ1tqs?rel=0&autoplay=1",
         "n_tip": 10,
         "texto1A": " ¡Es hora de un cuento! No te preocupes si no tienes uno a la mano, puedes usar tu imaginación para contar una historia a ",
         "edad": 1
@@ -1436,7 +1436,7 @@ export default [
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "",
         "seccion": "Juego",
-        "video": "http://bit.ly/l-chacra"
+        "video": "https://www.youtube.com/embed/DdXHLFElY9c?rel=0&autoplay=1"
 
     },
     {
@@ -1467,14 +1467,14 @@ export default [
     },
     {
         // "juego_edad_1_tip_6": {
-        "texto1B": "",
+        "texto1B": " Cuando felicitamos a nuestros hijos aumentamos su autoestima y confianza. Esto ayudará a que luego se animen a retos nuevos. ¡Fortalece esto con los juegos que tú conoces! ¡Cambien las reglas y respeten sus turnos! Muy bien!",
         "titulo": "Fortaleciendo lazos",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
         "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/juguete_Mesa%20de%20trabajo%201.svg",
         "seccion": "Juego",
         "video": "",
         "n_tip": 6,
-        "texto1A": " Cuando felicitamos a nuestros hijos aumentamos su autoestima y confianza. Esto ayudará a que luego se animen a retos nuevos. ¡Fortalece esto con los juegos que tú conoces! ¡Cambien las reglas y respeten sus turnos! Muy bien!",
+        "texto1A": "",
         "edad": 1
 
     },
@@ -1494,14 +1494,14 @@ export default [
     {
         // "juego_edad_1_tip_8": {
         "n_tip": 8,
-        "texto1A": " Juega con tu hijo. Puedes usar una pelota de trapo o cualquier objeto. Utilízalo para ejercitar su memoria y sentido del espacio. ¿Quieres saber cómo? Aprende aquí: ",
+        "texto1A": "",
         "edad": 1,
-        "texto1B": "",
+        "texto1B": " Juega con tu hijo. Puedes usar una pelota de trapo o cualquier objeto. Utilízalo para ejercitar su memoria y sentido del espacio. ¿Quieres saber cómo? Aprende aquí: ",
         "titulo": "¿A dónde se fue?",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "",
         "seccion": "Juego",
-        "video": "http://bit.ly/donde-fue"
+        "video": "https://www.youtube.com/embed/JihA9XOpaHw?rel=0&autoplay=1"
 
     },
     {
@@ -1556,7 +1556,7 @@ export default [
     },
     {
         // nutricionSalud_edad_1_tip_2": {
-        "texto1A": " la leche materna tiene anticuerpos que protegen a ",
+        "texto1A": " La leche materna tiene anticuerpos que protegen a ",
         "edad": 1,
         "texto1B": " de enfermedades ¡Tu leche es la mejor!",
         "titulo": "Sabías que....",
@@ -1626,7 +1626,7 @@ export default [
         "n_tip": 8,
         "texto1A": " Haz de tu casa un lugar seguro para ",
         "edad": 1,
-        "texto1B": " Bloquea los enchufes y el ingreso a lugares en donde podría caerse. ¡Cuidalo mucho!",
+        "texto1B": " . Bloquea los enchufes y el ingreso a lugares en donde podría caerse. ¡Cuidalo mucho!",
         "titulo": "Cuídalo de los peligros",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/enchufe_Mesa%20de%20trabajo%201.svg"
@@ -1655,7 +1655,7 @@ export default [
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "",
         "seccion": "Rutina",
-        "video": "http://bit.ly/mi-barrio",
+        "video": "https://www.youtube.com/embed/Sd7cTxwKxxE?rel=0&autoplay=1",
         "n_tip": 4
     },
     {
@@ -1676,7 +1676,7 @@ export default [
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
         "icono": "",
         "seccion": "Rutina",
-        "video": "http://bit.ly/basura-lugar",
+        "video": "https://www.youtube.com/embed/yEuuvoi1BCM?rel=0&autoplay=1",
         "n_tip": 6,
         "texto1A": " Cuando ",
         "edad": 1,
@@ -1741,7 +1741,7 @@ export default [
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "icono": "",
         "seccion": "Rutina",
-        "video": "http://bit.ly/espejito-e",
+        "video": "https://www.youtube.com/embed/SQto53eoWwA?rel=0&autoplay=1",
         "n_tip": 10,
         "texto1A": " Aprovecha los momentos de aseo para impulsar el desarrollo de ",
         "edad": 1,
@@ -1751,7 +1751,7 @@ export default [
     {
         // "rutina_edad_1_tip_2": {
         "seccion": "Rutina",
-        "video": " http://bit.ly/rut-sueño",
+        "video": "https://www.youtube.com/embed/Xr-2uahlFGE?rel=0&autoplay=1",
         "n_tip": 2,
         "texto1A": " Cuando ",
         "edad": 1,
@@ -1764,7 +1764,7 @@ export default [
     {
         // "rutina_edad_1_tip_3": {
         "seccion": "Rutina",
-        "video": " http://bit.ly/2qQRfPR",
+        "video": "https://www.youtube.com/embed/oX9ZD56fzZ0?rel=0&autoplay=1",
         "n_tip": 3,
         "texto1A": " Poco a poco ",
         "edad": 1,
@@ -1802,14 +1802,14 @@ export default [
     },
     {
         // socioemocional_edad_1_tip_2": {
-        "texto1B": "",
+        "texto1B": " Cuando los padres gritan o pegan, los niños desarrollan menos el control de sus emociones y se vuelven más agresivos. Dale mucho amor!",
         "titulo": "Ellos te imitan",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
         "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/persona_molesta_prohibido_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 2,
-        "texto1A": " Cuando los padres gritan o pegan, los niños desarrollan menos el control de sus emociones y se vuelven más agresivos. Dale mucho amor!",
+        "texto1A": "",
         "edad": 1
 
     },
@@ -1895,9 +1895,9 @@ export default [
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 9,
-        "texto1A": " Dile cuánto lo amas a cada instante. Con tu amor desarrollará un vínculo especial llamado \"apego seguro\". Muy importante para el desarrollo de sus habilidades socioemocionales.",
+        "texto1A":"",
         "edad": 1,
-        "texto1B": "",
+        "texto1B":  " Dile cuánto lo amas a cada instante. Con tu amor desarrollará un vínculo especial llamado \"apego seguro\". Muy importante para el desarrollo de sus habilidades socioemocionales.",
         "titulo": "Dale seguridad",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "file:///C:/Users/sony/Desktop/build/static/media/icono-blanco/1-2/mama_con_bebe_Mesa%20de%20trabajo%201.svg"
@@ -1908,9 +1908,9 @@ export default [
     {
         // higieneAguaSegura_edad_2_tip_10": {
         "n_tip": 10,
-        "texto1A": " La única forma de matar los gérmenes del agua es hirviendola. Si la tomas directo del caño o del envase, podrían enfermarse del estómago. ",
+        "texto1A": "",
         "edad": 2,
-        "texto1B": "",
+        "texto1B": " La única forma de matar los gérmenes del agua es hirviendola. Si la tomas directo del caño o del envase, podrían enfermarse del estómago. ",
         "titulo": "Evita los gérmenes",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/tetera_Mesa%20de%20trabajo%201.svg",
@@ -1973,7 +1973,7 @@ export default [
         "titulo": "Enseña los buenos hábitos",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "",
-        "video": "http://bit.ly/lava-manos",
+        "video": "https://www.youtube.com/embed/up9tzrav86Y?rel=0&autoplay=1",
         "seccion": "Higiene y Agua Segura",
         "n_tip": 4
     },
@@ -2131,9 +2131,9 @@ export default [
         "seccion": "socioemocional",
         "video": "",
         "n_tip": 8,
-        "texto1A": " Dile cuánto lo amas a cada instante. Con tu amor desarrollará un vínculo especial llamado \"apego seguro\". Muy importante para el desarrollo de sus habilidades socioemocionales.",
+        "texto1A": "",
         "edad": 2,
-        "texto1B": "",
+        "texto1B": " Dile cuánto lo amas a cada instante. Con tu amor desarrollará un vínculo especial llamado \"apego seguro\". Muy importante para el desarrollo de sus habilidades socioemocionales.",
         "titulo": "Demuestra tus sentimientos",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "http://52.177.117.5/static/media/icono-blanco/2-3/mama_con_bebe_Mesa%20de%20trabajo%201.svg"
@@ -2172,7 +2172,7 @@ export default [
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
         "icono": "",
         "seccion": "Rutina",
-        "video": "http://bit.ly/basura-lugar",
+        "video": "https://www.youtube.com/embed/yEuuvoi1BCM?rel=0&autoplay=1",
         "n_tip": 10
     },
     {
@@ -2223,7 +2223,7 @@ export default [
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
         "icono": "",
         "seccion": "Rutina",
-        "video": "http://bit.ly/yo-intentar",
+        "video": "https://www.youtube.com/embed/0M3QXhQxKu8?rel=0&autoplay=1",
         "n_tip": 5
 
     },
@@ -2260,7 +2260,7 @@ export default [
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "",
         "seccion": "Rutina",
-        "video": " http://bit.ly/rut-sueño",
+        "video": "https://www.youtube.com/embed/Xr-2uahlFGE?rel=0&autoplay=1",
         "n_tip": 8
     },
     {
@@ -2273,13 +2273,13 @@ export default [
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
         "icono": "",
         "seccion": "Rutina",
-        "video": " http://bit.ly/2qQRfPR"
+        "video": "https://www.youtube.com/embed/oX9ZD56fzZ0?rel=0&autoplay=1"
 
     },
     // "juego_edad_2_tip_1": {
     {
         "seccion": "Juego",
-        "video": " http://bit.ly/36ixHUT",
+        "video": "https://www.youtube.com/embed/cCfvENGXj-w?rel=0&autoplay=1",
         "n_tip": 1,
         "texto1A": " Cuando barras el piso dale a tu hijo una escoba también. Dividanse el espacio que necesitan limpiar, haz que se encargue de un pequeño espacio manejable para ",
         "edad": 2,
@@ -2291,21 +2291,21 @@ export default [
     },
     // "juego_edad_2_tip_10": 
     {
-        "texto1B": "",
+        "texto1B": " Lanza una pelota imaginaria a tu hijo y pide que te la pase de vuelta. Así le enseñas a imaginar, esta es una cualidad super importante para su aprendizaje posterior. Aprende como aquí:",
         "titulo": "Ejercitemos su mente",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "icono": "",
         "seccion": "Juego",
-        "video": " http://bit.ly/mi-pelota",
+        "video": "https://www.youtube.com/embed/3FlVABQsHkQ?rel=0&autoplay=1",
         "n_tip": 10,
-        "texto1A": " Lanza una pelota imaginaria a tu hijo y pide que te la pase de vuelta. Así le enseñas a imaginar, esta es una cualidad super importante para su aprendizaje posterior. Aprende como aquí:",
+        "texto1A": "",
         "edad": 2
 
     },
     // "juego_edad_2_tip_2": 
     {
         "seccion": "Juego",
-        "video": "http://bit.ly/cuento-dormir",
+        "video": "https://www.youtube.com/embed/f2QQzTQ1tqs?rel=0&autoplay=1",
         "n_tip": 2,
         "texto1A": " se demora en dormir o se queda muy inquieto luego de jugar? Contarle un cuento le ayudará a dormir. Recuerda que un buen descanso asegura su desarrollo físico y cognitivo. Mira como aquí: ",
         "edad": 2,
@@ -2358,7 +2358,7 @@ export default [
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
         "icono": "",
         "seccion": "Juego",
-        "video": "http://bit.ly/donde-fue",
+        "video": "https://www.youtube.com/embed/JihA9XOpaHw?rel=0&autoplay=1",
         "n_tip": 6,
         "texto1A": " Juega con",
         "edad": 2,
@@ -2367,7 +2367,7 @@ export default [
     // "juego_edad_2_tip_7": 
     {
         "seccion": "Juego",
-        "video": " http://bit.ly/b-junto",
+        "video": "https://www.youtube.com/embed/TrLuqJ8nAaw?rel=0&autoplay=1",
         "n_tip": 7,
         "texto1A": " ¡Baila con ",
         "edad": 2,
@@ -2507,9 +2507,9 @@ export default [
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 9,
-        "texto1A": " Las menestras como las lentejas y el frijol tienen mucho hierro. Cómelo con un jugo de piña o naranja, te ayudará a absorber los nutrientes más rápido.",
+        "texto1A": "",
         "edad": 2,
-        "texto1B": "",
+        "texto1B": " Las menestras como las lentejas y el frijol tienen mucho hierro. Cómelo con un jugo de piña o naranja, te ayudará a absorber los nutrientes más rápido.",
         "titulo": "Comiendo sano",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!"
     },
@@ -2530,12 +2530,12 @@ export default [
     // " higieneAguaSegura_edad_3_tip_1": 
     {
         "n_tip": 1,
-        "texto1A": " Cuando te lavas las manos matas los gérmenes que te hacen contraer enfermedades diarreicas. ¡Házlo siempre! ¡Cuidandote tú, cuidas a tus hijas e hijos!",
+        "texto1A": "",
         "edad": 3,
-        "texto1B": "",
+        "texto1B": " Cuando te lavas las manos matas los gérmenes que te hacen contraer enfermedades diarreicas. ¡Házlo siempre! ¡Cuidandote tú, cuidas a tus hijas e hijos!",
         "titulo": "Que sea una costumbre",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://www.youtube.com/embed/up9tzrav86Y?rel=0&autoplay=1",
         "seccion": "Higiene y Agua Segura",
         "video": ""
     },
@@ -2554,7 +2554,7 @@ export default [
     // "higieneAguaSegura_edad_3_tip_10": 
     {
         "seccion": "Higiene y Agua Segura",
-        "video": "http://bit.ly/espejito-e",
+        "video": "https://www.youtube.com/embed/SQto53eoWwA?rel=0&autoplay=1",
         "n_tip": 10,
         "texto1A": " Cuando te laves los dientes con ",
         "edad": 3,
@@ -2571,9 +2571,9 @@ export default [
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 2,
-        "texto1A": " Tener la boca limpia y cuidar bien los dientes es importante para la masticación y la buena comunicación. ¡No lo olvides!",
+        "texto1A": "",
         "edad": 3,
-        "texto1B": ""
+        "texto1B": " Tener la boca limpia y cuidar bien los dientes es importante para la masticación y la buena comunicación. ¡No lo olvides!"
     },
     // "higieneAguaSegura_edad_3_tip_3":
     {
@@ -2613,9 +2613,9 @@ export default [
     },
     // "higieneAguaSegura_edad_3_tip_7": 
     {
-        "texto1A": " El agua es muy valiosa y tenemos que cuidarla. Guárdala en envases limpios con tapa para evitar que se contamine. ¡Sigue asi!",
+        "texto1A": "",
         "edad": 3,
-        "texto1B": "",
+        "texto1B": " El agua es muy valiosa y tenemos que cuidarla. Guárdala en envases limpios con tapa para evitar que se contamine. ¡Sigue asi!",
         "titulo": "Cuidemosla",
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
         "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/envase_agua_tapada_Mesa%20de%20trabajo%201.svg",
@@ -2626,9 +2626,9 @@ export default [
     // "higieneAguaSegura_edad_3_tip_8": 
     {
         "n_tip": 8,
-        "texto1A": " Cierra bien el caño cuando no la estés usando y si tienes alguna gotera, coloca un balde. ¡No desperdicies!",
+        "texto1A":"",
         "edad": 3,
-        "texto1B": "",
+        "texto1B":" Cierra bien el caño cuando no la estés usando y si tienes alguna gotera, coloca un balde. ¡No desperdicies!",
         "titulo": "Cuida el agua",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/gota_agua_Mesa%20de%20trabajo%201.svg",
@@ -2651,7 +2651,7 @@ export default [
     {
         // socioemocional_edad_3_tip_1": {
         "seccion": "Socioemocional",
-        "video": "http://bit.ly/c-junto",
+        "video": "https://www.youtube.com/embed/IxkaX5adBAw?rel=0&autoplay=1",
         "n_tip": 1,
         "texto1A": " Conversa con ",
         "edad": 3,
@@ -2704,9 +2704,9 @@ export default [
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 4,
-        "texto1A": " Dile cuánto lo amas a cada instante. Con tu amor desarrollará un vínculo especial llamado \"apego seguro\". Muy importante para el desarrollo de sus habilidades ",
+        "texto1A":"",
         "edad": 3,
-        "texto1B": ""
+        "texto1B":  " Dile cuánto lo amas a cada instante. Con tu amor desarrollará un vínculo especial llamado \"apego seguro\". Muy importante para el desarrollo de sus habilidades "
     },
     // "socioemocional_edad_3_tip_5": 
     {
@@ -2783,7 +2783,7 @@ export default [
     {
         // rutina_edad_3_tip_9": {
         "seccion": "Rutina",
-        "video": "http://bit.ly/l-chacra",
+        "video": "https://www.youtube.com/embed/DdXHLFElY9c?rel=0&autoplay=1",
         "n_tip": 9,
         "texto1A": " ¿Es hora de ir al campo a trabajar? Puedes llevar a ",
         "edad": 3,
@@ -2822,7 +2822,7 @@ export default [
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
         "icono": "",
         "seccion": "Rutina",
-        "video": " http://bit.ly/el-chef",
+        "video": "https://www.youtube.com/embed/H2Eug9vyC0A?rel=0&autoplay=1",
         "n_tip": 3,
         "texto1A": " Mientras cocinas ",
         "edad": 3,
@@ -2835,7 +2835,7 @@ export default [
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "",
         "seccion": "Rutina",
-        "video": "http://bit.ly/lavar-r",
+        "video": "https://www.youtube.com/embed/RruTm2w2RYI?rel=0&autoplay=1",
         "n_tip": 4,
         "texto1A": " Cuando toca lavar la ropa, invita a ",
         "edad": 3
@@ -2873,7 +2873,7 @@ export default [
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
         "icono": "",
         "seccion": "Rutina",
-        "video": "http://bit.ly/yo-intentar",
+        "video": "https://www.youtube.com/embed/0M3QXhQxKu8?rel=0&autoplay=1",
         "n_tip": 7
     },
     // "rutina_edad_3_tip_8": 
@@ -2893,7 +2893,7 @@ export default [
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "",
         "seccion": "Juego",
-        "video": "http://bit.ly/que-dice",
+        "video": "https://www.youtube.com/embed/LcDOv56VofM?rel=0&autoplay=1",
         "n_tip": 1,
         "texto1A": " puede aprender las partes del cuerpo jugando \"Simón Dice\". ¡Es un juego de imitaciones! Con este juego también aprenden la importancia de respetar turnos. Conócelo aquí: ",
         "edad": 3,
@@ -2903,9 +2903,9 @@ export default [
     // " juego_edad_3_tip_4": 
     {
         "n_tip": 4,
-        "texto1A": " Construyan una torre con tazas y objetos que encuentren en casa. Este juego desarrolla su creatividad y habilidad para resolver problemas. ¡No olvides felicitar a ",
+        "texto1A": "",
         "edad": 3,
-        "texto1B": "",
+        "texto1B": " Construyan una torre con tazas y objetos que encuentren en casa. Este juego desarrolla su creatividad y habilidad para resolver problemas. ¡No olvides felicitar a ",
         "titulo": "Ayúdalo a desarrollarse",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/matematica_Mesa%20de%20trabajo%201.svg",
@@ -2933,7 +2933,7 @@ export default [
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
         "icono": "",
         "seccion": "Juego",
-        "video": " http://bit.ly/b-junto",
+        "video": "https://www.youtube.com/embed/TrLuqJ8nAaw?rel=0&autoplay=1",
         "n_tip": 2
     },
     // "juego_edad_3_tip_3": 
@@ -2945,14 +2945,14 @@ export default [
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "",
         "seccion": "Juego",
-        "video": " http://bit.ly/a-guardar",
+        "video": "https://www.youtube.com/embed/pJM_KL8R-c0?rel=0&autoplay=1",
         "n_tip": 3
     },
     // "juego_edad_3_tip_5": 
     {
-        "texto1A": " Jueguen a quedarse quietos como una estatua. Invita a todos en el hogar a jugar para hacerlo mucho más divertido. Empiecen todos parados en 1 pie o sin reírse. ¡Vayan cambiando las reglas! Así lo ayudas a concentrarse y autorregularse. ",
+        "texto1A": "",
         "edad": 3,
-        "texto1B": "",
+        "texto1B": " Jueguen a quedarse quietos como una estatua. Invita a todos en el hogar a jugar para hacerlo mucho más divertido. Empiecen todos parados en 1 pie o sin reírse. ¡Vayan cambiando las reglas! Así lo ayudas a concentrarse y autorregularse. ",
         "titulo": "Respeto las reglas",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/ni%C2%A7o_ni%C2%A7a_feliz_Mesa%20de%20trabajo%201.svg",
@@ -2990,11 +2990,11 @@ export default [
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "icono": "",
         "seccion": "Juego",
-        "video": " http://bit.ly/mi-pelota",
+        "video": "https://www.youtube.com/embed/3FlVABQsHkQ?rel=0&autoplay=1",
         "n_tip": 8,
-        "texto1A": " Lanza una pelota imaginaria a tu hijo y pide que te la pase de vuelta. Así le enseñas a imaginar, esta es una cualidad super importante para su aprendizaje posterior. Aprende como aquí:",
+        "texto1A": "",
         "edad": 3,
-        "texto1B": ""
+        "texto1B": " Lanza una pelota imaginaria a tu hijo y pide que te la pase de vuelta. Así le enseñas a imaginar, esta es una cualidad super importante para su aprendizaje posterior. Aprende como aquí:"
     },
     // "juego_edad_3_tip_9":
     {
@@ -3005,7 +3005,7 @@ export default [
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "icono": "",
         "seccion": "Juego",
-        "video": "http://bit.ly/la-pelota",
+        "video": "https://www.youtube.com/embed/BfkyjxVJZO4?rel=0&autoplay=1",
         "n_tip": 9
     },
     {
@@ -3034,14 +3034,14 @@ export default [
     },
     // "nutricionSalud_edad_3_tip_2": 
     {
-        "texto1B": "",
+        "texto1B": " Los alimentos amarillos y naranjas son buenos para el corazón, los ojos y ayudan a combatir gérmenes. ¡Naranja, mandarina, plátano y más!",
         "titulo": "Diversidad",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/naranja_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 2,
-        "texto1A": " Los alimentos amarillos y naranjas son buenos para el corazón, los ojos y ayudan a combatir gérmenes. ¡Naranja, mandarina, plátano y más!",
+        "texto1A": "",
         "edad": 3
     },
     // "nutricionSalud_edad_3_tip_3": 
@@ -3154,9 +3154,9 @@ export default [
     },
     // "higieneAguaSegura_edad_4_tip_2": 
     {
-        "texto1A": " El agua es muy valiosa y tenemos que cuidarla. Guárdala en envases limpios con tapa para evitar que se contamine. ¡Sigue asi!",
+        "texto1A": "",
         "edad": 4,
-        "texto1B": "",
+        "texto1B": " El agua es muy valiosa y tenemos que cuidarla. Guárdala en envases limpios con tapa para evitar que se contamine. ¡Sigue asi!",
         "titulo": "Es vital",
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
         "icono": "",
@@ -3167,9 +3167,9 @@ export default [
     // "higieneAguaSegura_edad_4_tip_3": 
     {
         "n_tip": 3,
-        "texto1A": " Cierra bien el caño cuando no la estés usando y si tienes alguna gotera, coloca un balde. ¡No desperdicies!",
+        "texto1A": "",
         "edad": 4,
-        "texto1B": "",
+        "texto1B": " Cierra bien el caño cuando no la estés usando y si tienes alguna gotera, coloca un balde. ¡No desperdicies!",
         "titulo": "Cuida el agua",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/gota_agua_Mesa%20de%20trabajo%201.svg",
@@ -3197,7 +3197,7 @@ export default [
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
         "icono": "",
         "seccion": "Higiene y Agua Segura",
-        "video": "http://bit.ly/espejito-e",
+        "video": "https://www.youtube.com/embed/SQto53eoWwA?rel=0&autoplay=1",
         "n_tip": 5
     },
     // "higieneAguaSegura_edad_4_tip_6": 
@@ -3226,21 +3226,21 @@ export default [
     },
     // "higieneAguaSegura_edad_4_tip_8":
     {
-        "texto1B": "",
+        "texto1B": " Cuando te lavas las manos matas los gérmenes que te hacen contraer enfermedades diarreicas. ¡Házlo siempre! ¡Cuidandote tú, cuidas a tus hijas e hijos!",
         "titulo": "Fuera los gérmenes",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 8,
-        "texto1A": " Cuando te lavas las manos matas los gérmenes que te hacen contraer enfermedades diarreicas. ¡Házlo siempre! ¡Cuidandote tú, cuidas a tus hijas e hijos!",
+        "texto1A": "",
         "edad": 4
     },
     // "higieneAguaSegura_edad_4_tip_9":
     {
-        "texto1A": " Tener la boca limpia y cuidar bien los dientes es importante para la masticación y la buena comunicación. ¡No lo olvides!",
+        "texto1A":"",
         "edad": 4,
-        "texto1B": "",
+        "texto1B":  " Tener la boca limpia y cuidar bien los dientes es importante para la masticación y la buena comunicación. ¡No lo olvides!",
         "titulo": "Es parte de tu salud",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/cepillo_dental_Mesa%20de%20trabajo%201.svg",
@@ -3283,7 +3283,7 @@ export default [
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
         "icono": "",
         "seccion": "Socioemocional",
-        "video": "http://bit.ly/c-junto"
+        "video": "https://www.youtube.com/embed/10VBzODaTjY?rel=0&autoplay=1"
     },
     // "socioemocional_edad_4_tip_3":
     {
@@ -3317,9 +3317,9 @@ export default [
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 5,
-        "texto1A": " Dile cuánto lo amas a cada instante. Con tu amor desarrollará un vínculo especial llamado \"apego seguro\". Muy importante para el desarrollo de sus habilidades socioemocionales.",
+        "texto1A": "",
         "edad": 4,
-        "texto1B": ""
+        "texto1B": " Dile cuánto lo amas a cada instante. Con tu amor desarrollará un vínculo especial llamado \"apego seguro\". Muy importante para el desarrollo de sus habilidades socioemocionales."
     },
     // "socioemocional_edad_4_tip_6": 
 
@@ -3386,7 +3386,7 @@ export default [
     // "rutina_edad_4_tip_10": 
     {
         "seccion": "Rutina",
-        "video": " http://bit.ly/el-chef",
+        "video": "https://www.youtube.com/embed/478MoVMYKUk?rel=0&autoplay=1",
         "n_tip": 10,
         "texto1A": " Mientras cocinas ",
         "edad": 4,
@@ -3398,7 +3398,7 @@ export default [
     // "rutina_edad_4_tip_2":
     {
         "seccion": "Rutina",
-        "video": "http://bit.ly/l-chacra",
+        "video": "https://www.youtube.com/embed/jsCIhoCa0TI?rel=0&autoplay=1",
         "n_tip": 2,
         "texto1A": " ¿Es hora de ir al campo a trabajar? Puedes llevar a ",
         "edad": 4,
@@ -3434,7 +3434,7 @@ export default [
     // "rutina_edad_4_tip_5": 
     {
         "seccion": "Rutina",
-        "video": "http://bit.ly/yo-intentar",
+        "video": "https://www.youtube.com/embed/r4L5AlBHpgI?rel=0&autoplay=1",
         "n_tip": 5,
         "texto1A": " Deja que ",
         "edad": 4,
@@ -3448,7 +3448,7 @@ export default [
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "",
         "seccion": "Rutina",
-        "video": "http://bit.ly/lavar-r",
+        "video": "https://www.youtube.com/embed/RruTm2w2RYI?rel=0&autoplay=1",
         "n_tip": 6,
         "texto1A": " Cuando toca lavar la ropa, invita a ",
         "edad": 4,
@@ -3526,7 +3526,7 @@ export default [
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
         "icono": "",
         "seccion": "Juego",
-        "video": " http://bit.ly/b-junto",
+        "video": "https://www.youtube.com/embed/TrLuqJ8nAaw?rel=0&autoplay=1",
         "n_tip": 2
     },
     // "juego_edad_4_tip_3":
@@ -3538,13 +3538,13 @@ export default [
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "",
         "seccion": "Juego",
-        "video": " http://bit.ly/a-guardar",
+        "video": "https://www.youtube.com/embed/pJM_KL8R-c0?rel=0&autoplay=1",
         "n_tip": 3
     },
     // "juego_edad_4_tip_4": 
     {
         "seccion": "Juego",
-        "video": "http://bit.ly/que-dice",
+        "video": "https://www.youtube.com/embed/LcDOv56VofM?rel=0&autoplay=1",
         "n_tip": 4,
         "texto1A": " puede aprender las partes del cuerpo jugando \"Simón Dice\". ¡Es un juego de imitaciones! Con este juego también aprenden la importancia de respetar turnos. Conócelo aquí: ",
         "edad": 4,
@@ -3567,9 +3567,9 @@ export default [
     },
     // "juego_edad_4_tip_6": 
     {
-        "texto1A": " Construyan una torre con tazas y objetos que encuentren en casa. Este juego desarrolla su creatividad y habilidad para resolver problemas. ¡No olvides felicitar a ",
+        "texto1A": "",
         "edad": 4,
-        "texto1B": "",
+        "texto1B": " Construyan una torre con tazas y objetos que encuentren en casa. Este juego desarrolla su creatividad y habilidad para resolver problemas. ¡No olvides felicitar a ",
         "titulo": "Desarrollando competencias",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/matematica_Mesa%20de%20trabajo%201.svg",
@@ -3579,9 +3579,9 @@ export default [
     },
     // "juego_edad_4_tip_7":
     {
-        "texto1A": " Jueguen a quedarse quietos como una estatua. Invita a todos en el hogar a jugar para hacerlo mucho más divertido. Empiecen todos parados en 1 pie o sin reírse. ¡Vayan cambiando las reglas! Así lo ayudas a concentrarse y autorregularse. ",
+        "texto1A": "",
         "edad": 4,
-        "texto1B": "",
+        "texto1B": " Jueguen a quedarse quietos como una estatua. Invita a todos en el hogar a jugar para hacerlo mucho más divertido. Empiecen todos parados en 1 pie o sin reírse. ¡Vayan cambiando las reglas! Así lo ayudas a concentrarse y autorregularse. ",
         "titulo": "¿Jugamos?",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/ni%C3%B1o_ni%C3%B1a_feliz_Mesa%20de%20trabajo%201.svg",
@@ -3606,9 +3606,9 @@ export default [
         "seccion": "Juego",
         "video": " http://bit.ly/mi-pelota",
         "n_tip": 9,
-        "texto1A": " Lanza una pelota imaginaria a tu hijo y pide que te la pase de vuelta. Así le enseñas a imaginar, esta es una cualidad super importante para su aprendizaje posterior. Aprende como aquí:",
+        "texto1A": "",
         "edad": 4,
-        "texto1B": "",
+        "texto1B": " Lanza una pelota imaginaria a tu hijo y pide que te la pase de vuelta. Así le enseñas a imaginar, esta es una cualidad super importante para su aprendizaje posterior. Aprende como aquí:",
         "titulo": "Agudiza su ingenio",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "icono": ""
@@ -3664,9 +3664,9 @@ export default [
     // "nutricionSalud_edad_4_tip_4":
     {
         "n_tip": 4,
-        "texto1A": " Los alimentos amarillos y naranjas son buenos para el corazón, los ojos y ayudan a combatir gérmenes. Naranja, mandarina, plátano y más!",
+        "texto1A": "",
         "edad": 4,
-        "texto1B": "",
+        "texto1B": " Los alimentos amarillos y naranjas son buenos para el corazón, los ojos y ayudan a combatir gérmenes. Naranja, mandarina, plátano y más!",
         "titulo": "De distintos colores",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "",
@@ -3752,9 +3752,9 @@ export default [
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 10,
-        "texto1A": " Tener la boca limpia y cuidar bien los dientes es importante para la masticación y la buena comunicación. ¡No lo olvides!",
+        "texto1A":"",
         "edad": 5,
-        "texto1B": "",
+        "texto1B":  " Tener la boca limpia y cuidar bien los dientes es importante para la masticación y la buena comunicación. ¡No lo olvides!",
         "titulo": "Más sonrisas",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/cepillo_dental_Mesa%20de%20trabajo%201.svg"
@@ -3784,21 +3784,21 @@ export default [
     },
     // "higieneAguaSegura_edad_5_tip_4": 
     {
-        "texto1B": "",
+        "texto1B": " El agua es muy valiosa y tenemos que cuidarla. Guárdala en envases limpios con tapa para evitar que se contamine. ¡Sigue asi!",
         "titulo": "Enséñale que.....",
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
         "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/envase_agua_tapada_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 4,
-        "texto1A": " El agua es muy valiosa y tenemos que cuidarla. Guárdala en envases limpios con tapa para evitar que se contamine. ¡Sigue asi!",
+        "texto1A": "",
         "edad": 5
     },
     // "higieneAguaSegura_edad_5_tip_5":
     {
-        "texto1A": " Cierra bien el caño cuando no la estés usando y si tienes alguna gotera, coloca un balde. ¡No desperdicies!",
+        "texto1A": "",
         "edad": 5,
-        "texto1B": "",
+        "texto1B": " Cierra bien el caño cuando no la estés usando y si tienes alguna gotera, coloca un balde. ¡No desperdicies!",
         "titulo": "Cuida el agua",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/gota_agua_Mesa%20de%20trabajo%201.svg",
@@ -3821,7 +3821,7 @@ export default [
     // "higieneAguaSegura_edad_5_tip_7": 
     {
         "seccion": "Higiene y Agua Segura",
-        "video": "http://bit.ly/espejito-e",
+        "video": "https://www.youtube.com/embed/SQto53eoWwA?rel=0&autoplay=1",
         "n_tip": 7,
         "texto1A": " Cuando te laves los dientes con ",
         "edad": 5,
@@ -3850,9 +3850,9 @@ export default [
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 9,
-        "texto1A": " Cuando te lavas las manos matas los gérmenes que te hacen contraer enfermedades diarreicas. ¡Házlo siempre! ¡Cuidandote tú, cuidas a tus hijas e hijos!",
+        "texto1A": "",
         "edad": 5,
-        "texto1B": ""
+        "texto1B": " Cuando te lavas las manos matas los gérmenes que te hacen contraer enfermedades diarreicas. ¡Házlo siempre! ¡Cuidandote tú, cuidas a tus hijas e hijos!"
     },
 
     // " socioemocional_edad_5_tip_1": 
@@ -3967,9 +3967,9 @@ export default [
     },
     // "socioemocional_edad_5_tip_9":
     {
-        "texto1A": " Dile cuánto lo amas a cada instante. Con tu amor desarrollará un vínculo especial llamado \"apego seguro\". Muy importante para el desarrollo de sus habilidades socioemocionales.",
+        "texto1A": "",
         "edad": 5,
-        "texto1B": "",
+        "texto1B": " Dile cuánto lo amas a cada instante. Con tu amor desarrollará un vínculo especial llamado \"apego seguro\". Muy importante para el desarrollo de sus habilidades socioemocionales.",
         "titulo": "Muestra tus sentimientos",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/mama_con_bebe_Mesa%20de%20trabajo%201.svg",
@@ -3981,7 +3981,7 @@ export default [
     // "rutina_edad_5_tip_1": 
     {
         "seccion": "Rutina",
-        "video": "http://bit.ly/lavar-r",
+        "video": "https://www.youtube.com/embed/RruTm2w2RYI?rel=0&autoplay=1",
         "n_tip": 1,
         "texto1A": " Cuando toca lavar la ropa, invita a ",
         "edad": 5,
@@ -4121,7 +4121,7 @@ export default [
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "",
         "seccion": "Juego",
-        "video": "http://bit.ly/que-dice"
+        "video": "https://www.youtube.com/embed/LcDOv56VofM?rel=0&autoplay=1"
     },
     // "juego_edad_5_tip_2": 
     {
@@ -4145,7 +4145,7 @@ export default [
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
         "icono": "",
         "seccion": "Juego",
-        "video": " http://bit.ly/b-junto",
+        "video": "https://www.youtube.com/embed/TrLuqJ8nAaw?rel=0&autoplay=1",
         "n_tip": 3
     },
     // "juego_edad_5_tip_4": 
@@ -4158,7 +4158,7 @@ export default [
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "",
         "seccion": "Juego",
-        "video": " http://bit.ly/a-guardar"
+        "video": "https://www.youtube.com/embed/pJM_KL8R-c0?rel=0&autoplay=1"
     },
     // "juego_edad_5_tip_5": 
     {
@@ -4174,9 +4174,9 @@ export default [
     },
     // "juego_edad_5_tip_6": 
     {
-        "texto1A": " Construyan una torre con tazas y objetos que encuentren en casa. Este juego desarrolla su creatividad y habilidad para resolver problemas. ¡No olvides felicitar a ",
+        "texto1A": "",
         "edad": 5,
-        "texto1B": "",
+        "texto1B": " Construyan una torre con tazas y objetos que encuentren en casa. Este juego desarrolla su creatividad y habilidad para resolver problemas. ¡No olvides felicitar a ",
         "titulo": "Siempre creativos",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/matematica_Mesa%20de%20trabajo%201.svg",
@@ -4192,9 +4192,9 @@ export default [
         "seccion": "Juego",
         "video": "",
         "n_tip": 7,
-        "texto1A": " Jueguen a quedarse quietos como una estatua. Invita a todos en el hogar a jugar para hacerlo mucho más divertido. Empiecen todos parados en 1 pie o sin reírse. ¡Vayan cambiando las reglas! Así lo ayudas a concentrarse y autorregularse. ",
+        "texto1A": "",
         "edad": 5,
-        "texto1B": ""
+        "texto1B": " Jueguen a quedarse quietos como una estatua. Invita a todos en el hogar a jugar para hacerlo mucho más divertido. Empiecen todos parados en 1 pie o sin reírse. ¡Vayan cambiando las reglas! Así lo ayudas a concentrarse y autorregularse. "
     },
     // "juego_edad_5_tip_8":
     {
@@ -4211,9 +4211,9 @@ export default [
     // "juego_edad_5_tip_9": 
     {
         "n_tip": 9,
-        "texto1A": " Lanza una pelota imaginaria a tu hijo y pide que te la pase de vuelta. Así le enseñas a imaginar, esta es una cualidad super importante para su aprendizaje posterior. Aprende como aquí:",
+        "texto1A": "",
         "edad": 5,
-        "texto1B": "",
+        "texto1B": " Lanza una pelota imaginaria a tu hijo y pide que te la pase de vuelta. Así le enseñas a imaginar, esta es una cualidad super importante para su aprendizaje posterior. Aprende como aquí:",
         "titulo": "Desarrollando la imaginación",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "icono": "",
@@ -4321,9 +4321,9 @@ export default [
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 8,
-        "texto1A": " Los alimentos amarillos y naranjas son buenos para el corazón, los ojos y ayudan a combatir gérmenes. Naranja, mandarina, plátano y más!",
+        "texto1A": "",
         "edad": 5,
-        "texto1B": "",
+        "texto1B": " Los alimentos amarillos y naranjas son buenos para el corazón, los ojos y ayudan a combatir gérmenes. Naranja, mandarina, plátano y más!",
         "titulo": "Estar bien alimentado",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/naranja_Mesa%20de%20trabajo%201.svg"
