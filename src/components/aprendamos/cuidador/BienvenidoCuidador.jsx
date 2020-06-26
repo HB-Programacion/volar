@@ -2,7 +2,7 @@ import React from "react";
 import "./../aprendamos.css";
 import "./../../../App.css";
 import "./bienvenidoCuidador.css";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 import iconoBienvenidaCuidador from "./../../../images/icon-bienvenida-cuidador.svg";
 import arrowLeft from "./../../../images/arrow-left-blue.svg";
 import arrowRight from "./../../../images/arrow-right-blue.svg";
@@ -12,7 +12,7 @@ import iconAreaRutina from "./../../../images/icon-rutina.svg";
 import iconAreaJuego from "./../../../images/icon-juego.svg";
 import iconAreaNutricion from "./../../../images/icon-nutricion.svg";
 import iconAreaSesamo from "./../../../images/icon-sesamo.svg";
-import { auth, db } from "../../../components/firebase/firebase";
+import {db } from "../../../components/firebase/firebase";
 import arrTips from "../../../../src/data";
 
 export const BienvenidoCuidador = ({
@@ -566,17 +566,28 @@ export const BienvenidoCuidador = ({
             </div>
 
             <div className="box-row-2">
-              <p className="box-text ">
-                Hoy aprenderemos a desarrollar las habilidades de lenguaje de
-                {JSON.parse(localStorage.getItem("dateChild")).name}
-                aprovechando los momentos de aseo.
-              </p>
+
+            {texto1bAleatorio !== ""  && texto1aAleatorio!== "" ? (
+                              <p className="box-text ">
+                                 {texto1aAleatorio}  {JSON.parse(localStorage.getItem("dateChild")).name} {texto1bAleatorio} 
+                              </p>
+                            ) : (
+                               texto1bAleatorio !== ""  && texto1aAleatorio === "" ? (
+                                <p className="box-text ">
+                                {texto1bAleatorio}
+                              </p>
+                              ):(
+                                <p className="box-text ">
+                               {JSON.parse(localStorage.getItem("dateChild")).name}  {texto1aAleatorio}  
+                              </p>
+                              ) 
+                              
+                            )}
             </div>
           </div>
           <p className="estrellita-lila heartbeat">&#10022;</p>
           <p className="title-dit">
-            Recuerda explicarle qué parte de su cuerpo estás limpiando y
-            contarle qué vas a hacer luego.
+            {texto2Aleatorio}
           </p>
           <p className="estrellita-lila heartbeat">&#10022;</p>
           <div className="mt-3 video">
