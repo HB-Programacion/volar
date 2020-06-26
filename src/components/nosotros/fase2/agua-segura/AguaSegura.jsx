@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./AguaSegura.css"
+import { useHistory } from "react-router-dom";
 
 import crecer from "../../../../images/nosotros-img/agua-segura.svg"
 import limpios from "../../../../images/agua-segura-img/limpios-y-felices.png"
@@ -22,8 +23,10 @@ import fortalecimientoOrg from "../../../../images/agua-segura-img/fortalecimien
 
 
 const Agua = () => {
+    let history = useHistory();
     return(
         <div className="fondo-azul animated fadeIn">
+        <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left goBack-fase" aria-hidden="true"></i> 
             <div className="fase2-agua border-bottom-radius">
                 <div className="fase2-agua-title">
                     <div className="logo-agua-img">

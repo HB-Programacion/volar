@@ -2,6 +2,8 @@ import React from 'react'
 
 import "./Piloto.css"
 
+import { useHistory } from "react-router-dom";
+
 import logo from "../../../../images/piloto-img/logo-piloto.svg"
 import factibilidad from "../../../../images/piloto-img/factibilidad.svg"
 import analizar from "../../../../images/piloto-img/analizar.svg"
@@ -18,8 +20,10 @@ import card126 from "../../../../images/piloto-img/126.png"
 import card17 from "../../../../images/piloto-img/17.png"
 
 const Piloto = () => {
+    let history = useHistory();
     return (
         <div className="fondo-blanco animated fadeIn">
+        <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left goBack-fase" aria-hidden="true"></i>
             <div className="fase2-piloto border-bottom-radius">
                 <div className="fase2-piloto-title">
                     <div className="logo-piloto">

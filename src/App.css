@@ -371,7 +371,7 @@ textarea:focus {
 }
 
 .arrowGoback{
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   position: absolute;
   color: #fff;
   left: 5%;
@@ -382,9 +382,23 @@ textarea:focus {
   color: #1A1F46
 }
 
+
 .goBack-area{
   top: 20%
 }
+.goBack-fase{
+  font-size: 3.2rem;
+  position: absolute;
+  color: #EF8B44;
+  left: 5%;
+  top: 15%;
+  cursor: pointer
+}
+
+.goBack-fase:hover{
+  color: #1A1F46;
+}
+
 
 }
 

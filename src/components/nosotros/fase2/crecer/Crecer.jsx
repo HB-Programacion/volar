@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./Crecer.css"
+import { useHistory } from "react-router-dom";
 
 import crecer from "../../../../images/nosotros-img/crecer.svg"
 import foto from "../../../../images/crecer-img/foto-talleres-presenciales.png"
@@ -25,12 +26,15 @@ import CarouselCrecerDesktop from "./CarouselCrecerDesktop";
 
 const Crecer = () => {
 
+    let history = useHistory();
+
     const width = window.innerWidth;
     const breakpoint = 769;
 
 
     return(
         <div className="fondo-azul animated fadeIn">
+        <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left goBack-fase" aria-hidden="true"></i> 
             <div className="fase2-crecer border-bottom-radius">
                 <div className="fase2-crecer-title">
                     <div className="logo-crecer-img">
