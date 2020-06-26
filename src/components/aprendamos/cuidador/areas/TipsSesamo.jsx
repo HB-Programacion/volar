@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./tips.css";
+import { useHistory } from "react-router-dom";
 /*import cohete from '../../images/cohete-volando.svg';*/
 import arrTips from '../../../../data'
 
@@ -10,7 +11,7 @@ const TipsSesamo = ({
   loading,
 }) => {
 
-
+  let history = useHistory();
  /*  const childData= db.collection("usuarios").doc(firebaseUser.uid).collection("addChild").doc("OxtF7ijtoOlOX7zx3xcY")
   console.log("hola", childData.edadChild)
     ///Obteniendo todo el contenido de firebase///*/
@@ -22,6 +23,7 @@ const TipsSesamo = ({
       <div className="background-tips-sesamo" id="aprendamos-page">
         <div className=" animated fadeIn">
             <>
+            <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback" aria-hidden="true"></i> 
               {arrTips
                 .filter(
                   (item) =>

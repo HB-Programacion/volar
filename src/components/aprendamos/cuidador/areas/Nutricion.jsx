@@ -1,5 +1,7 @@
 import React from "react";
 import "./areas.css";
+
+import { useHistory } from "react-router-dom";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import iconoNutricionWhite from "./../../../../images/areas-img/icon_nutricion.png";
 import iconoTipNutricion from "./../../../../images/areas-img/icono_tip_nutricion.svg";
@@ -15,7 +17,8 @@ export const Nutricion= ({
   firebaseUser,
   idChild,
 }) => {
-  
+  let history = useHistory();
+
   let arrayNutricion=  arrTips
 
   arrayNutricion.sort(function (a, b) {
@@ -38,6 +41,7 @@ export const Nutricion= ({
 
   return (
     <div>
+      <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback goBack-area" aria-hidden="true"></i> 
       {firebaseUser !== null ? (
         <div>
           <div className="box-title-nutricion show-desktop">
@@ -89,6 +93,7 @@ export const Nutricion= ({
         </div>
       ) : (
         <div>
+          <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback goBack-area" aria-hidden="true"></i> 
           <div className="box-title-nutricion show-desktop">
             <img
               src={iconoNutricionWhite}

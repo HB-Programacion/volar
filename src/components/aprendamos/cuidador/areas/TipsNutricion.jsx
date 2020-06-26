@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./tips.css";
+import { useHistory } from "react-router-dom";
+
 import { Nutricion } from "./Nutricion";
 import { Orbitals } from "react-spinners-css";
 import { auth, db } from "../../../../components/firebase/firebase";
@@ -14,13 +16,14 @@ const TipsNutricion = ({
   firebaseUser,
   idChild,
 }) => {
-
+  let history = useHistory();
   return (
     <div>
       {firebaseUser !== null ? (
         <div className="background-tips-nutricion" id="aprendamos-page">
           <div className=" animated fadeIn">
               <>
+              <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback" aria-hidden="true"></i> 
                 {arrTips
                   .filter(
                     (item) =>
@@ -93,6 +96,7 @@ const TipsNutricion = ({
         <div className="background-tips-nutricion" id="aprendamos-page">
           <div className=" animated fadeIn">
               <>
+              <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback" aria-hidden="true"></i> 
                 {arrTips
                   .filter(
                     (item) =>

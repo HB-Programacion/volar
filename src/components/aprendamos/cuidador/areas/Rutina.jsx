@@ -1,5 +1,7 @@
 import React from "react";
 import "./areas.css";
+
+import { useHistory } from "react-router-dom";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import iconoRutinaWhite from "./../../../../images/areas-img/icon_rutina.png";
 import iconoTipRutina from "./../../../../images/areas-img/icono_tip_rutina.svg";
@@ -17,6 +19,7 @@ export const Rutina= ({
   idChild,
 }) => {
 
+  let history = useHistory();
 
   let arrayRutina=  arrTips
 
@@ -43,6 +46,7 @@ export const Rutina= ({
 
   return (
     <div>
+      <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback goBack-area" aria-hidden="true"></i> 
       {firebaseUser !== null ? (
         <div>
           <div className="box-title-rutina show-desktop">
@@ -93,6 +97,7 @@ export const Rutina= ({
         </div>
       ) : (
         <div>
+          <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback goBack-area" aria-hidden="true"></i> 
           <div className="box-title-rutina
            show-desktop">
             <img

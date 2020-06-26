@@ -1,5 +1,7 @@
 import React from "react";
 import "./areas.css";
+
+import { useHistory } from "react-router-dom";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import iconoJuegoWhite from "./../../../../images/areas-img/icon_juego (1).png";
 import iconoTipJuego from "./../../../../images/areas-img/icono_tip_juego.svg";
@@ -17,6 +19,7 @@ export const Juego = ({
   idChild,
 }) => {
 
+  let history = useHistory();
 
 
   const mandarNumberTipOficial = (numberTip) => {
@@ -39,6 +42,7 @@ export const Juego = ({
 
   return (
     <div>
+      <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback goBack-area" aria-hidden="true"></i> 
       {firebaseUser !== null ? (
         <div>
           <div className="box-title-juego show-desktop">
@@ -91,6 +95,7 @@ export const Juego = ({
         </div>
       ) : (
         <div>
+          <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback goBack-area" aria-hidden="true"></i> 
           <div className="box-title-juego show-desktop">
             <img
               src={iconoJuegoWhite}

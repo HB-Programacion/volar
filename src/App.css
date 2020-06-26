@@ -308,6 +308,8 @@ textarea:focus {
 .out-none-button:focus{
   outline: none!important
 }
+
+
 /* TABLET */
 @media (min-width: 992px) {
   /* .equipo-home .card img{
@@ -368,6 +370,21 @@ textarea:focus {
   font-size: 1.5rem;
 }
 
+.arrowGoback{
+  font-size: 3.5rem;
+  position: absolute;
+  color: #fff;
+  left: 5%;
+  /* top: 5%; */
+  cursor: pointer
+}
+.arrowGoback:hover{
+  color: #1A1F46
+}
+
+.goBack-area{
+  top: 20%
+}
 
 }
 

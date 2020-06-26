@@ -1,5 +1,6 @@
 import React from "react";
 import "./areas.css";
+import { useHistory } from "react-router-dom";
 
 import { Orbitals } from "react-spinners-css";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -19,6 +20,7 @@ export const Higiene = ({
   firebaseUser,
   idChild,
 }) => {
+  let history = useHistory();
 
   let arrayHigiene =  arrTips
 
@@ -42,6 +44,7 @@ export const Higiene = ({
 
   return (
     <div>
+      <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback goBack-area" aria-hidden="true"></i> 
       {firebaseUser !== null ? (
         <div>
           <div className="box-title-higine show-desktop">
@@ -61,6 +64,7 @@ export const Higiene = ({
       </div> }*/}
            {/* {contenidoFirebase && ( */}
               <div className="row">
+              
                 {arrayHigiene
                   .filter(
                     (item) =>
@@ -99,6 +103,7 @@ export const Higiene = ({
         </div>
       ) : (
         <div>
+          <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback goBack-area" aria-hidden="true"></i> 
           <div className="box-title-higine show-desktop">
             <img
               src={iconoHigieneWhite}

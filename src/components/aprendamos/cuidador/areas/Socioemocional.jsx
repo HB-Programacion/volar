@@ -1,5 +1,7 @@
 import React from "react";
 import "./areas.css";
+
+import { useHistory } from "react-router-dom";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import iconoSocioemocionalWhite from "./../../../../images/areas-img/icon_socioemocional.png";
 import iconoTipSocioemocional from "./../../../../images/areas-img/icono_tip_socioemocional.svg";
@@ -16,6 +18,8 @@ export const Socioemocional = ({
   firebaseUser,
   idChild,
 }) => {
+
+  let history = useHistory();
 
   const mandarNumberTipOficial = (numberTip) => {
     localStorage.setItem('localNumberTip', numberTip)
@@ -38,6 +42,7 @@ export const Socioemocional = ({
 
   return (
     <div>
+      <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback goBack-area" aria-hidden="true"></i> 
       {firebaseUser !== null ? (
         <div>
           <div className="box-title-socioemocional show-desktop">
@@ -89,6 +94,7 @@ export const Socioemocional = ({
         </div>
       ) : (
         <div>
+          <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback goBack-area" aria-hidden="true"></i> 
           <div className="box-title-socioemocional show-desktop">
             <img
               src={iconoSocioemocionalWhite}

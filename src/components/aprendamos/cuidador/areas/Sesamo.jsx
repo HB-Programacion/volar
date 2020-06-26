@@ -1,5 +1,7 @@
 import React from "react";
 import "./areas.css";
+
+import { useHistory } from "react-router-dom";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import iconoSesamoWhite from "./../../../../images/areas-img/icon_sesamo.png";
 import iconoVideoJuego from "./../../../../images/areas-img/icon-video-sesamo.svg";
@@ -16,6 +18,8 @@ export const Sesamo = ({
   idChild,
 }) => {
 
+
+  let history = useHistory();
   
   let arraySesamo=arrTips
 
@@ -40,6 +44,7 @@ export const Sesamo = ({
 
   return (
 <>
+<i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback goBack-area" aria-hidden="true"></i> 
 {
   firebaseUser!==null?(
     <div>
@@ -88,6 +93,7 @@ export const Sesamo = ({
   </div> ): 
   (
     <div>
+      <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback goBack-area" aria-hidden="true"></i> 
     <div className="box-title-sesamo show-desktop">
       <img
         src={iconoSesamoWhite}

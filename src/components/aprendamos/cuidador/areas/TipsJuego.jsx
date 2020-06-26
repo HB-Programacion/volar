@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./tips.css";
+import { useHistory } from "react-router-dom";
 import { auth, db } from "../../../../components/firebase/firebase";
 // import cohete from '../../images/cohete-volando.svg';
 
@@ -15,13 +16,14 @@ const TipsJuego = ({
   idChild,
 }) => {
 
-
+  let history = useHistory();
   return (
     <div>
       {firebaseUser !== null ? (
         <div className="background-tips-juego" id="aprendamos-page">
           <div className=" animated fadeIn">
               <>
+              <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback" aria-hidden="true"></i> 
                 {arrTips
                   .filter(
                     (item) =>
@@ -94,6 +96,7 @@ const TipsJuego = ({
         <div className="background-tips-juego" id="aprendamos-page">
           <div className=" animated fadeIn">
               <>
+              <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback" aria-hidden="true"></i> 
                 {arrTips
                   .filter(
                     (item) =>
