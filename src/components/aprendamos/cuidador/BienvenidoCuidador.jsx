@@ -81,7 +81,7 @@ export const BienvenidoCuidador = ({
       console.log("textob", texto1bAleatorio)
     } else {
       const newFilter = arrTips.filter(
-        (item) => item.video !== "" && item.seccion !== "Sésamo"  && item.edad == JSON.parse(localStorage.getItem("dateChild")).name
+        (item) => item.video !== "" && item.seccion !== "Sésamo"  && item.edad == JSON.parse(localStorage.getItem("dateChild")).edad
       );
       let numberAleatorio = Math.round(Math.random() * (newFilter.length - 1));
   
