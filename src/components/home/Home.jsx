@@ -56,7 +56,7 @@ const Home = () => {
 					<source src={videoo} type="video/webm"/>
 					Your browser does not support the video tag.
 				</video>
-                <img src={fondomobile} alt="" className="show-mobile"/>
+                <img src={fondomobile} alt="" className=" fondo-mobile-home show-mobile"/>
             </div>
              <div className="text-center text-white text-proposito">
                 <div className="d-flex justify-content-center  text-center text-white">

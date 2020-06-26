@@ -308,6 +308,36 @@ textarea:focus {
 .out-none-button:focus{
   outline: none!important
 }
+.arrowGoback{
+  font-size: 1.5rem;
+  position: absolute;
+  color: #fff;
+  left: 5%;
+  /* top: 5%; */
+  cursor: pointer
+}
+.arrowGoback:hover{
+  color: #1A1F46
+}
+
+
+.goBack-area{
+  top: 20%
+}
+.goBack-fase{
+  font-size: 1.5rem;
+  position: absolute;
+  color: #EF8B44;
+  left: 5%;
+  top: 15%;
+  cursor: pointer
+}
+
+.goBack-fase:hover{
+  color: #1A1F46;
+}
+
+
 
 
 /* TABLET */
