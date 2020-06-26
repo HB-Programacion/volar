@@ -23,7 +23,11 @@ export const BienvenidoCuidador = ({
 }) => {
   const [nameChild, setNameChild] = React.useState("");
   const [videoAleatorio, setVideoAleatorio] = React.useState("");
+  const [texto1aAleatorio, setTexto1aAleatorio] = React.useState("");
+  const [texto1bAleatorio, setTexto1bAleatorio] = React.useState("");
+  const [texto2Aleatorio, setTexto2Aleatorio] = React.useState("");
   const [colaboradorBreca, setColaboradorBreca] = React.useState("");
+  const [colorSeccionAleatorio, setColorSeccionAleatorio] = React.useState("");
   React.useEffect(() => {
     if (firebaseUser !== null) {
       const perfilUser = db.collection("usuarios").doc(firebaseUser.uid);
@@ -61,18 +65,38 @@ export const BienvenidoCuidador = ({
      }*/
     }
     const newFilter = arrTips.filter(
-      (item) => item.video !== "" && item.seccion === "Sésamo"
+      (item) => item.video !== "" && item.seccion !== "Sésamo"  && item.edad == localStorage.getItem('edadChildLogueadoActive')
     );
     let numberAleatorio = Math.round(Math.random() * (newFilter.length - 1));
 
     setVideoAleatorio(newFilter[numberAleatorio].video);
-  }, [firebaseUser, idChild, contenidoFirebase]);
+    setTexto1aAleatorio(newFilter[numberAleatorio].texto1A);
+    setTexto1bAleatorio(newFilter[numberAleatorio].texto1B);
+    setTexto2Aleatorio(newFilter[numberAleatorio].texto2);
+    setColorSeccionAleatorio(newFilter[numberAleatorio].seccion)
+    console.log("seccion", colorSeccionAleatorio)
+    console.log("textoa", texto1aAleatorio)
+    console.log("textob", texto1bAleatorio)
+ 
+   /* if(colorSeccionAleatorio === "Higiene y Agua Segura") {
+      setColorSeccionAleatorio("#7dc7c5")
+    } else if (colorSeccionAleatorio === "Socioemocional"){
+      setColorSeccionAleatorio("#ae96b2")
+    } else if (colorSeccionAleatorio === "Juego"){
+      setColorSeccionAleatorio("#f7b919")
+    } else if (colorSeccionAleatorio === "Rutina"){
+      setColorSeccionAleatorio("#ef8b44")
+    } else {
+      setColorSeccionAleatorio("#eb477a")
+    }*/
+    
+  }, [firebaseUser, idChild]);
 
   return (
     <>
       {firebaseUser !== null ? (
         <div className="pb-5 ">
-          <div className="box-title-cuidador  animated fadeIn ">
+          <div style ={{backgroundColor:colorSeccionAleatorio}} className="box-title-cuidador  animated fadeIn ">
             <div className="box-row-1 ">
               {/* <img src={starsLeftDesktop} className="stars-left-desktop heartbeat"></img> */}
               <img
@@ -87,17 +111,27 @@ export const BienvenidoCuidador = ({
             </div>
 
             <div className="box-row-2">
-              <p className="box-text ">
-                Hoy aprenderemos a desarrollar las habilidades de lenguaje de
-                {localStorage.getItem("nameChildActive")} aprovechando los
-                momentos de aseo.
-              </p>
+            {texto1bAleatorio !== ""  && texto1aAleatorio!== "" ? (
+                              <p className="box-text ">
+                                 {texto1aAleatorio}  {localStorage.getItem("nameChildActive")} {texto1bAleatorio} 
+                              </p>
+                            ) : (
+                               texto1bAleatorio !== ""  && texto1aAleatorio === "" ? (
+                                <p className="box-text ">
+                                {texto1bAleatorio}
+                              </p>
+                              ):(
+                                <p className="box-text ">
+                               {localStorage.getItem("nameChildActive")}  {texto1aAleatorio}  
+                              </p>
+                              ) 
+                              
+                            )}
             </div>
           </div>
           <p className="estrellita-lila heartbeat">&#10022;</p>
           <p className="title-dit">
-            Recuerda explicarle qué parte de su cuerpo estás limpiando y
-            contarle qué vas a hacer luego.
+          {texto2Aleatorio}  
           </p>
           <p className="estrellita-lila heartbeat">&#10022;</p>
           <div className="mt-3 video">

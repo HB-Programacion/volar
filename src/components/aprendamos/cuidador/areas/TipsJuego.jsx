@@ -63,16 +63,23 @@ const TipsJuego = ({
                         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                           <div class="text-tips">
                             <h3>Hola {localStorage.getItem("nameUserActive")}</h3>
-                            {item.texto1B !== "" ? (
+                            {item.texto1B !== ""  && item.texto1A !== "" ? (
                               <p class="text-tips-light">
                                 {item.texto1A}
                                 {localStorage.getItem('nameChildActive')}
                                 {item.texto1B}
                               </p>
                             ) : (
-                              <p class="text-tips-light">
-                                {item.texto1A}
+                               item.texto1B !== ""  && item.texto1A === "" ? (
+                                <p class="text-tips-light">
+                                {item.texto1B}
                               </p>
+                              ):(
+                                <p class="text-tips-light">
+                               {localStorage.getItem('nameChildActive')}  {item.texto1A}
+                              </p>
+                              ) 
+                              
                             )}
                             <p class="text-tips-bold">{item.texto2}</p>
                           </div>
@@ -138,16 +145,23 @@ const TipsJuego = ({
                           ): (
                             <div class="text-tips">
                             <h3>Hola</h3>
-                            {item.texto1B !== "" ? (
+                            {item.texto1B !== ""  && item.texto1A !== "" ? (
                               <p class="text-tips-light">
                                 {item.texto1A}
                                 {JSON.parse(localStorage.getItem("dateChild")).name}
                                 {item.texto1B}
                               </p>
                             ) : (
-                              <p class="text-tips-light">
-                                {item.texto1A}
+                               item.texto1B !== ""  && item.texto1A === "" ? (
+                                <p class="text-tips-light">
+                                {item.texto1B}
                               </p>
+                              ):(
+                                <p class="text-tips-light">
+                               {JSON.parse(localStorage.getItem("dateChild")).name}  {item.texto1A}
+                              </p>
+                              ) 
+                              
                             )}
                             <p class="text-tips-bold">{item.texto2}</p>
                           </div>
