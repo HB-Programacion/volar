@@ -1,19 +1,24 @@
 import React from 'react'
 
+import "./docente.css"
+
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import iconoCuidador from "../../../../images/icon-cuidador.png";
-import iconoAliado from "../../../../images/icon-aliado.png";
+import material from "../../../../images/docente/material-educativo.svg";
+import recursos from "../../../../images/docente/recursos-extras.svg";
 
 import starsLeftDesktop from "../../../../images/stars-left-desktop.svg";
 import starsRightDesktop from "../../../../images/stars-right-desktop.svg";
 import starsss from "../../../../images/stars-left.svg"
 
+
+import Compartir from "../compartir/Compartir"
+
+
 const Docente = () => {
     return (
-        <div className="background-blue animated fadeIn">
-    
-        <div id="tittle-nosotros" className="box-title-aprendamos animated fadeIn ">
+        <div className="background-lila animated fadeIn">
+        <div id="tittle-nosotros" className="box-title-docente animated fadeIn ">
               <figure className="stars-group">
                   <img src={starsLeftDesktop} className="stars-left-desktop heartbeat"></img>
                   <img src={starsRightDesktop} className="stars-right-desktop heartbeat"></img>
@@ -23,35 +28,31 @@ const Docente = () => {
                   <img src={starsss} className="right-star-empieza heartbeat" alt="stars-right"></img>
         </div>
   
-        <div className="btn-box">
+        <div className="box-btn-docente">
           <div className="row ml-0 mr-0">
             <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
               <Link to="/aprendamos/cuidador-principal"className="link" >
-              <div className="btn-cuidador">
-                <img className="icono heartbeat" src={iconoCuidador} alt="icono cuidador" />
-                <h2 className="letter-btn">
-                  CUIDADOR PRINCIPAL
+              <div className="btn-material">
+                <img className="icono-docente heartbeat" src={material} alt="icono aliado" />
+                <h2 className="ml-2">
+                  Material educativo
                 </h2>
-                <div className="vertical-center">
-                  <i className="fas fa-chevron-right"></i>
-                </div>
               </div>
               </Link>
             </div>
             <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-              <div className="btn-aliado">
-                <img className="icono heartbeat" src={iconoAliado} alt="icono cuidador" />
-                <h2 className="letter-btn">
-                  ALIADO POR LA INFANCIA
+              <div className="btn-recursos">
+                <img className="icono-docente heartbeat" src={recursos} alt="icono aliado" />
+                <h2 className="ml-2">
+                  Recursos extras
                 </h2>
-                <div className="vertical-center">
-                  <i className="fas fa-chevron-right"></i>
-                </div>
               </div>
             </div>
           </div>
         </div>
+        <Compartir/>
       </div>
+      
     )
 }
 

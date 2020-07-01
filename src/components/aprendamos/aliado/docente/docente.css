@@ -1,0 +1,108 @@
+.background-lila{
+    background: #AE96B2;
+    height: 52rem;
+}
+
+.box-title-docente {
+    display: flex;
+      justify-content: center;
+      padding-top: 10rem;
+      background-color: #fff;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      height: 20rem;
+  }
+
+  .box-btn-docente{
+      width: 80%;
+      margin: auto;
+      margin-top: 5rem;
+  }
+
+.btn-material{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #EB477A;
+    -webkit-text-stroke: 0.06em #EB477A;
+    letter-spacing: 0.06em;
+    padding:1.8rem 1.8rem 1.8rem 1.8rem;
+    border-radius: 20px;
+    box-shadow: 0 0 9px rgb(172, 171, 171);
+    font-size: 2.2rem;
+    text-align: center;
+    text-decoration:none!important;
+    font-family: 'Questrial';
+    margin: 2rem;
+    margin-top: 4rem
+}
+
+.btn-recursos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #7DC7C5;
+    -webkit-text-stroke: 0.06em #7DC7C5;
+    letter-spacing: 0.06em;
+    padding: 1.8rem 1.8rem 1.8rem 1.8rem;
+    border-radius: 20px;
+    box-shadow: 0 0 9px rgb(172, 171, 171);
+    font-size: 2.2rem;
+    text-align: center;
+    text-decoration:none!important;
+    font-family: 'Questrial';
+    margin: 2rem;
+    margin-top: 4rem
+}
+
+.icono-docente{
+    width: 5rem;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+
+    .background-lila{
+        background: #AE96B2;
+        height: 40rem;
+    }
+
+    .box-title-docente{
+    padding-top: 7rem;
+    height: 15rem;
+    }
+
+    .box-btn-docente{
+        width: 100%;
+        margin-top: 1rem
+    }
+    .btn-material{
+        padding:1rem .5rem 1rem .5rem;
+        margin: 1rem;
+        margin-top: 2rem
+        
+    }
+    .btn-material h2{
+        font-size: 1.5rem;
+        -webkit-text-stroke: 1px;
+        letter-spacing: 0.01em;
+    }
+    .btn-recursos{
+        padding:1rem .5rem 1rem .5rem;
+        margin: 1rem;
+        margin-top: 2rem
+    }
+
+    .btn-recursos h2{
+        font-size: 1.5rem;
+        -webkit-text-stroke: 1px;
+        letter-spacing: 0.01em;
+    }
+    .icono-docente{
+        width: 3.5rem;
+        height: 100%;
+    }
+
+}

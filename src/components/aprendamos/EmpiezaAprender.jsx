@@ -2,13 +2,8 @@ import React from "react";
 import "./aprendamos.css";
 import "./../../App.css";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import starsLeft from "./../../images/starts-left-aprendamos.png";
-import starsRight from "./../../images/stars-right-aprendamos.png";
 import iconoCuidador from "./../../images/icon-cuidador.png";
 import iconoAliado from "./../../images/icon-aliado.png";
-import starsLeft2 from "../../images/starts-left-aprendamos2.png"
-import starsRight2 from "../../images/starts-right-aprendamos2.png";
-import starCenter from "../../images/start-light-blue.png"
 
 import starsLeftDesktop from "../../images/stars-left-desktop.svg";
 import starsRightDesktop from "../../images/stars-right-desktop.svg";
