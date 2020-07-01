@@ -15,7 +15,7 @@ import Nosotros from "./components/nosotros/Nosotros";
 
 import { Aprendamos } from "./components/aprendamos/aprendamos";
 import { EmpiezaAprender } from "./components/aprendamos/EmpiezaAprender";
-import  RegistroNiños from "./components/aprendamos/cuidador/RegistroNiños";
+import RegistroNiños from "./components/aprendamos/cuidador/RegistroNiños";
 import { BienvenidoCuidador } from "./components/aprendamos/cuidador/BienvenidoCuidador";
 import { Higiene } from "./components/aprendamos/cuidador/areas/Higiene";
 import { Socioemocional } from "./components/aprendamos/cuidador/areas/Socioemocional";
@@ -23,11 +23,11 @@ import { Rutina } from "./components/aprendamos/cuidador/areas/Rutina";
 import { Juego } from "./components/aprendamos/cuidador/areas/Juego";
 import { Nutricion } from "./components/aprendamos/cuidador/areas/Nutricion";
 import { Sesamo } from "./components/aprendamos/cuidador/areas/Sesamo";
-import  TipsHigiene  from "./components/aprendamos/cuidador/areas/TipsHigiene";
-import  TipsSocioemocional  from "./components/aprendamos/cuidador/areas/TipsSocioemocional";
-import  TipsRutina from "./components/aprendamos/cuidador/areas/TipsRutina";
-import  TipsJuego from "./components/aprendamos/cuidador/areas/TipsJuego";
-import  TipsNutricion from "./components/aprendamos/cuidador/areas/TipsNutricion";
+import TipsHigiene from "./components/aprendamos/cuidador/areas/TipsHigiene";
+import TipsSocioemocional from "./components/aprendamos/cuidador/areas/TipsSocioemocional";
+import TipsRutina from "./components/aprendamos/cuidador/areas/TipsRutina";
+import TipsJuego from "./components/aprendamos/cuidador/areas/TipsJuego";
+import TipsNutricion from "./components/aprendamos/cuidador/areas/TipsNutricion";
 import TipsSesamo from "./components/aprendamos/cuidador/areas/TipsSesamo"
 import Login from "./components/loginRegister/Login";
 import Signup from "./components/loginRegister/Signup";
@@ -56,6 +56,7 @@ import Grupos from "./components/nosotros/fase3/modelo/grupos/Grupos";
 import Programa from "./components/nosotros/fase3/modelo/programa-mensajeria/Programa";
 import Spots from "./components/nosotros/fase3/modelo/spots/Spots";
 import Feria from "./components/nosotros/fase3/modelo/feria/Feria";
+import AprendamosAliados from "./components/aprendamos/AprendamosAliados"
 import Docente from "./components/aprendamos/aliado/docente/Docente";
 
 function App() {
@@ -100,22 +101,22 @@ function App() {
     localStorage.setItem('nameChildActive', nameChild)
     localStorage.setItem('edadChildLogueadoActive', edadChild)
     localStorage.setItem('idChildLogueadoActive', idChildArray)
-    console.log( localStorage.getItem('idChildLogueado'))
+    console.log(localStorage.getItem('idChildLogueado'))
     const dateChildActive = {
       name: nameChild, // Generamos una id rápida
       edad: edadChild,
       id: idChildArray,
-  };
-  localStorage.setItem('dateChildActive', JSON.stringify(dateChildActive))
+    };
+    localStorage.setItem('dateChildActive', JSON.stringify(dateChildActive))
 
   };
 
 
-  
+
   const updateArrayChild = (arrayChildT) => {
     setArrayChild(arrayChildT);
 
-    console.log("judith" , arrayChild)
+    console.log("judith", arrayChild)
 
   };
 
@@ -132,7 +133,7 @@ function App() {
   console.log("holis", contenidoJson)
   React.useEffect(() => {
 
-   {/* fetch("../data.json")
+    {/* fetch("../data.json")
     .then((response) => response.json())
     .then((datos) => {
       setContenidoJson(datos);
@@ -204,179 +205,184 @@ function App() {
             exact
             component={RegistroNiños}
           />
-          {localStorage.getItem('idChildLogueadoActive')!==null ? (
-             <Route path={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}`} exact>
-             <BienvenidoCuidador
-               idChild={idChild}
-               firebaseUser={firebaseUser}
-               arrayChild={arrayChild}
-             />
-           </Route>
-          ): (
-            <Route path={`/aprendamos/cuidador/`} exact>
-            <BienvenidoCuidador
-              idChild={idChild}
+          {localStorage.getItem('idChildLogueadoActive') !== null ? (
+            <Route path={`/aprendamos/cuidador/${localStorage.getItem('idChildLogueadoActive')}`} exact>
+              <BienvenidoCuidador
+                idChild={idChild}
+                firebaseUser={firebaseUser}
+                arrayChild={arrayChild}
+              />
+            </Route>
+          ) : (
+              <Route path={`/aprendamos/cuidador/`} exact>
+                <BienvenidoCuidador
+                  idChild={idChild}
+                  firebaseUser={firebaseUser}
+                  arrayChild={arrayChild}
+                />
+              </Route>
+            )
+          }
+
+
+          <Route path={`/aprendamos/cuidador/${localStorage.getItem('idChildLogueadoActive')}/higiene`} exact>
+            <Higiene
               firebaseUser={firebaseUser}
-              arrayChild={arrayChild}
+              idChild={idChild}
             />
           </Route>
-          )
-          }
-    
-          <Route path={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/higiene`} exact>
+          <Route path={`/aprendamos/cuidador/${localStorage.getItem('idChildLogueadoActive')}/socioemocional`} exact>
+            <Socioemocional
+              firebaseUser={firebaseUser}
+              idChild={idChild}
+            />
+          </Route>
+          <Route path={`/aprendamos/cuidador/${localStorage.getItem('idChildLogueadoActive')}/rutina`} exact>
+            <Rutina
+              firebaseUser={firebaseUser}
+              idChild={idChild}
+            />
+          </Route>
+          <Route path={`/aprendamos/cuidador/${localStorage.getItem('idChildLogueadoActive')}/juego`} exact>
+            <Juego
+              firebaseUser={firebaseUser}
+              idChild={idChild}
+            />
+          </Route>
+          <Route path={`/aprendamos/cuidador/${localStorage.getItem('idChildLogueadoActive')}/nutricion`} exact>
+            <Nutricion
+              firebaseUser={firebaseUser}
+              idChild={idChild}
+            />
+          </Route>
+          <Route path={`/aprendamos/cuidador/${localStorage.getItem('idChildLogueadoActive')}/sesamo`} exact>
+            <Sesamo
+              firebaseUser={firebaseUser}
+              idChild={idChild}
+            />
+          </Route>
+          <Route path={`/aprendamos/cuidador/${localStorage.getItem('idChildLogueadoActive')}/higiene/tips`} exact>
+            <TipsHigiene
+              firebaseUser={firebaseUser}
+              idChild={idChild}
+            />
+          </Route>
+          <Route path={`/aprendamos/cuidador/${localStorage.getItem('idChildLogueadoActive')}/socioemocional/tips`} exact>
+            <TipsSocioemocional
+              firebaseUser={firebaseUser}
+              idChild={idChild}
+            />
+          </Route>
+          <Route path={`/aprendamos/cuidador/${localStorage.getItem('idChildLogueadoActive')}/rutina/tips`} exact>
+            <TipsRutina
+              firebaseUser={firebaseUser}
+              idChild={idChild}
+            />
+          </Route>
+          <Route path={`/aprendamos/cuidador/${localStorage.getItem('idChildLogueadoActive')}/juego/tips`} exact>
+            <TipsJuego
+              firebaseUser={firebaseUser}
+              idChild={idChild}
+            />
+          </Route>
+          <Route path={`/aprendamos/cuidador/${localStorage.getItem('idChildLogueadoActive')}/nutricion/tips`} exact>
+            <TipsNutricion
+              firebaseUser={firebaseUser}
+              idChild={idChild}
+            />
+          </Route>
+          <Route path={`/aprendamos/cuidador/${localStorage.getItem('idChildLogueadoActive')}/sesamo/tips`} exact>
+            <TipsSesamo
+            />
+          </Route>
+          <Route path={`/aprendamos/cuidador/higiene`} exact>
             <Higiene
               firebaseUser={firebaseUser}
               idChild={idChild}
             />
-             </Route>
-            <Route path={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/socioemocional`}exact>
-              <Socioemocional
-                firebaseUser={firebaseUser}
-                idChild={idChild}
-              />
-            </Route>
-            <Route path={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/rutina`}exact>
-              <Rutina
-                firebaseUser={firebaseUser}
-                idChild={idChild}
-              />
-            </Route>
-            <Route path={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/juego`} exact>
-              <Juego
-                firebaseUser={firebaseUser}
-                idChild={idChild}
-              />
-            </Route>
-            <Route path={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/nutricion`} exact>
-              <Nutricion
-                firebaseUser={firebaseUser}
-                idChild={idChild}
-              />
-            </Route>
-            <Route path={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/sesamo`} exact>
-              <Sesamo
-                firebaseUser={firebaseUser}
-                idChild={idChild}
-              />
-            </Route>
-            <Route path={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/higiene/tips`} exact>
-              <TipsHigiene
-                  firebaseUser={firebaseUser}
-                idChild={idChild}
-              />
-            </Route>
-            <Route path={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/socioemocional/tips`}exact>
-              <TipsSocioemocional
-                firebaseUser={firebaseUser}
-                idChild={idChild}
-              />
-            </Route>
-            <Route path={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/rutina/tips`} exact>
-              <TipsRutina
-                firebaseUser={firebaseUser}
-                idChild={idChild}
-              />
-            </Route>
-            <Route path={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/juego/tips`} exact>
-              <TipsJuego
-                firebaseUser={firebaseUser}
-                idChild={idChild}
-              />
-            </Route>
-            <Route path={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/nutricion/tips`} exact>
-              <TipsNutricion
-                firebaseUser={firebaseUser}
-                idChild={idChild}
-              />
-            </Route>
-            <Route path={`/aprendamos/cuidador/${ localStorage.getItem('idChildLogueadoActive')}/sesamo/tips`} exact>
-              <TipsSesamo
-              />
-            </Route>
-            <Route path={`/aprendamos/cuidador/higiene`} exact>
-            <Higiene
+          </Route>
+          <Route path={`/aprendamos/cuidador/socioemocional`} exact>
+            <Socioemocional
               firebaseUser={firebaseUser}
               idChild={idChild}
             />
-             </Route>
-            <Route path={`/aprendamos/cuidador/socioemocional`}exact>
-              <Socioemocional
-                firebaseUser={firebaseUser}
-                idChild={idChild}
-              />
+          </Route>
+          <Route path={`/aprendamos/cuidador/rutina`} exact>
+            <Rutina
+              firebaseUser={firebaseUser}
+              idChild={idChild}
+            />
+          </Route>
+          <Route path={`/aprendamos/cuidador/juego`} exact>
+            <Juego
+              firebaseUser={firebaseUser}
+              idChild={idChild}
+            />
+          </Route>
+          <Route path={`/aprendamos/cuidador/nutricion`} exact>
+            <Nutricion
+              firebaseUser={firebaseUser}
+              idChild={idChild}
+            />
+          </Route>
+          <Route path={`/aprendamos/cuidador/sesamo`} exact>
+            <Sesamo
+              firebaseUser={firebaseUser}
+              idChild={idChild}
+            />
+          </Route>
+          <Route path={`/aprendamos/cuidador/higiene/tips`} exact>
+            <TipsHigiene
+              firebaseUser={firebaseUser}
+              idChild={idChild}
+            />
+          </Route>
+          <Route path={`/aprendamos/cuidador/socioemocional/tips`} exact>
+            <TipsSocioemocional
+              firebaseUser={firebaseUser}
+              idChild={idChild}
+            />
+          </Route>
+          <Route path={`/aprendamos/cuidador/rutina/tips`} exact>
+            <TipsRutina
+              firebaseUser={firebaseUser}
+              idChild={idChild}
+            />
+          </Route>
+          <Route path={`/aprendamos/cuidador/juego/tips`} exact>
+            <TipsJuego
+              firebaseUser={firebaseUser}
+              idChild={idChild}
+            />
+          </Route>
+          <Route path={`/aprendamos/cuidador/nutricion/tips`} exact>
+            <TipsNutricion
+              firebaseUser={firebaseUser}
+              idChild={idChild}
+            />
+          </Route>
+          <Route path={`/aprendamos/cuidador/sesamo/tips`} exact>
+            <TipsSesamo
+            />
+          </Route>
+          <Route path={"/aprendamos/aliados"} exact>
+            <AprendamosAliados
+            />
+          </Route>
+          <Route path="/login" exact>
+            <Login firebaseUser={firebaseUser} />
+          </Route>
+          <Route path="/login-construccion" exact component={ConstruccionLogin}>
+          </Route>
+          <Route path="/signup" exact>
+            <Signup firebaseUser={firebaseUser} />
+          </Route>
+          <Route path="/password/reset" exact component={PasswordReset} />
+          {firebaseUser !== null ? (
+            <Route path="/perfil" exact>
+              <Perfil firebaseUser={firebaseUser} />
             </Route>
-            <Route path={`/aprendamos/cuidador/rutina`}exact>
-              <Rutina
-                firebaseUser={firebaseUser}
-                idChild={idChild}
-              />
-            </Route>
-            <Route path={`/aprendamos/cuidador/juego`} exact>
-              <Juego
-                firebaseUser={firebaseUser}
-                idChild={idChild}
-              />
-            </Route>
-            <Route path={`/aprendamos/cuidador/nutricion`} exact>
-              <Nutricion
-                firebaseUser={firebaseUser}
-                idChild={idChild}
-              />
-            </Route>
-            <Route path={`/aprendamos/cuidador/sesamo`} exact>
-              <Sesamo
-                firebaseUser={firebaseUser}
-                idChild={idChild}
-              />
-            </Route>
-            <Route path={`/aprendamos/cuidador/higiene/tips`} exact>
-              <TipsHigiene
-                  firebaseUser={firebaseUser}
-                idChild={idChild}
-              />
-            </Route>
-            <Route path={`/aprendamos/cuidador/socioemocional/tips`}exact>
-              <TipsSocioemocional
-                firebaseUser={firebaseUser}
-                idChild={idChild}
-              />
-            </Route>
-            <Route path={`/aprendamos/cuidador/rutina/tips`} exact>
-              <TipsRutina
-                firebaseUser={firebaseUser}
-                idChild={idChild}
-              />
-            </Route>
-            <Route path={`/aprendamos/cuidador/juego/tips`} exact>
-              <TipsJuego
-                firebaseUser={firebaseUser}
-                idChild={idChild}
-              />
-            </Route>
-            <Route path={`/aprendamos/cuidador/nutricion/tips`} exact>
-              <TipsNutricion
-                firebaseUser={firebaseUser}
-                idChild={idChild}
-              />
-            </Route>
-            <Route path={`/aprendamos/cuidador/sesamo/tips`} exact>
-              <TipsSesamo
-              />
-            </Route>
-            <Route path="/login" exact>
-              <Login firebaseUser={firebaseUser} />
-            </Route>
-            <Route path="/login-construccion" exact component={ConstruccionLogin}>
-            </Route>
-            <Route path="/signup" exact>
-              <Signup firebaseUser={firebaseUser} />
-            </Route>
-            <Route path="/password/reset" exact component={PasswordReset} />
-            {firebaseUser !== null ? (
-              <Route path="/perfil" exact>
-                <Perfil firebaseUser={firebaseUser} />
-              </Route>
-            ) : null}
+          ) : null}
 
           <Route path="/registro-niño" exact>
             <RegistroChild
@@ -402,8 +408,8 @@ function App() {
           <Route path="/nosotros/fase3/modelo-volar/feria-familiar" exact component={Feria} />
           <Route path="/aprendamos/aliado/docente" exact component={Docente} />
         </Switch>
-          <Footer />
-          <Redes />
+        <Footer />
+        <Redes />
       </div>
     </Router>
   ) : (
@@ -412,7 +418,7 @@ function App() {
           <Orbitals color="#EF8B44" size={900} />
         </div>
       </div>
-  );
+    );
 }
 
 export default App;
