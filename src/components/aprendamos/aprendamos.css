@@ -185,8 +185,18 @@ width: 30%
 .boton-hover-aprendamos:hover{
   transform: scale(1.1)!important;
 }
-
-
+  /*Aprendamos Aliado*/
+.modal-header{
+border-bottom: 0px!important;
+}
+.close{
+  outline: none!important;
+  float: left!important;
+}
+.caja-boton-rol{
+  width: 40%!important;
+  margin: auto;
+}
 /*mobile*/
 
 @media (max-width: 768px) {
