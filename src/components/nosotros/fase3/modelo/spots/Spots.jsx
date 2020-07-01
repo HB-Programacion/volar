@@ -1,12 +1,15 @@
 import React from 'react'
 
 import "../rotacion/Rotacion.css"
+import { useHistory } from "react-router-dom";
 
 import tablet from "../../../../../images/fase3-img/modelo/radio.svg"
 
 const Spots = () => {
+    let history = useHistory();
     return (
         <div className="animated fadeIn">
+         <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left goBack-fase" aria-hidden="true"></i>
             <div className="img-modelo-rosa">
                 <figure >
                     <img src={tablet} alt="" className="w-100 heartbeat"/>

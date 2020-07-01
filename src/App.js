@@ -56,6 +56,7 @@ import Grupos from "./components/nosotros/fase3/modelo/grupos/Grupos";
 import Programa from "./components/nosotros/fase3/modelo/programa-mensajeria/Programa";
 import Spots from "./components/nosotros/fase3/modelo/spots/Spots";
 import Feria from "./components/nosotros/fase3/modelo/feria/Feria";
+import Docente from "./components/aprendamos/aliado/docente/Docente";
 
 function App() {
   const [firebaseUser, setFirebaseUser] = React.useState(false);
@@ -399,6 +400,7 @@ function App() {
           <Route path="/nosotros/fase3/modelo-volar/programa-mensajeria-de-texto" exact component={Programa} />
           <Route path="/nosotros/fase3/modelo-volar/spots-radiales" exact component={Spots} />
           <Route path="/nosotros/fase3/modelo-volar/feria-familiar" exact component={Feria} />
+          <Route path="/aprendamos/aliado/docente" exact component={Docente} />
         </Switch>
           <Footer />
           <Redes />
