@@ -4,12 +4,18 @@ import "./../../App.css";
 import { BrowserRouter as Router, Route, Link,  withRouter } from "react-router-dom";
 import arrowLeft from "./../../images/arrow-left-blue.svg";
 import arrowRight from "./../../images/arrow-right-blue.svg";
+import { Button, Modal } from 'react-bootstrap';
 
 const AprendamosAliados = (props) => {
+  const [show, setShow] = React.useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   const [selectRol, setSelectRol] = React.useState("");
 
-  const procesarRol =  () => {
+  const procesarRol =  (e) => {
+    e.preventDefault();
     const dateRol = {
       rol: selectRol, // Generamos una id rápida
       tipo: "aliado",
@@ -18,7 +24,7 @@ const AprendamosAliados = (props) => {
   if(selectRol==="Docente"){
     props.history.push("/aprendamos/aliado/docente");
   }
-
+ handleClose()
   }
   
 
@@ -32,8 +38,7 @@ const AprendamosAliados = (props) => {
           <div className="row justify-content-center h-100 sin-margin-row wobble-hor-bottom">
             <btn
               className="btn-light-blue text-white  m-3 boton-hover-aprendamos"
-              data-toggle="modal"
-              data-target="#exampleModalLong"
+              onClick={handleShow}
             >
               <img
                 src={arrowLeft}
@@ -57,8 +62,65 @@ const AprendamosAliados = (props) => {
               Iniciar Sesión
               <img src={arrowRight} className="arrow-blue"></img>
             </Link>
+            
           </div>
-          <div
+        </div>
+        <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+        </Modal.Header>
+        <Modal.Body>
+        <div className="container animated fadeIn">
+                    <div className="">
+                      <div className="row">
+                        <h1 className="tittle-register-child">
+                          ¡Bienvenido!
+                        </h1>
+                      </div>
+                      <div className="row">
+                        <h2 className="subtittle-register-child">
+                          Cuidador Principal
+                        </h2>
+                      </div>
+                      <div>
+                        <form onSubmit={procesarRol}>
+                          <div className="row">
+                            <div className="col-12">
+                              <p className="letter-register">Cuéntanos que rol cumples:</p>
+                              <select
+                                className="select-register-space"
+                                onChange={(e) => setSelectRol(e.target.value)}
+                                value={selectRol}
+                              >
+                                <option value="">Rol que cumplo</option>
+                                <option value="Agente comunitario de Salud">Agente comunitario de Salud</option>
+                                <option value="Madre cuidadora">Madre cuidadora (PNCM)</option>
+                                <option value="Guía de Familia">Guía de Familia (PCNM)</option>
+                                <option value="Guía de Sala">Guía de Sala (PCNM)</option>
+                                <option value="Docente">Docente</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div className="caja-boton-rol">
+                            <button
+                              type="submit"
+                              className="btn-navy-blue text-white mt-3 mb-3 wobble-hor-bottom out-none-button"
+                              data-dismiss="modal"
+                            >
+                              <img src={arrowLeft} className="arrow-blue"></img>
+                              INGRESAR
+                              <img
+                                src={arrowRight}
+                                className="arrow-blue"
+                              ></img>
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+        </Modal.Body>
+      </Modal>
+      {/*<div
             class="modal fade"
             id="exampleModalLong"
             tabindex="-1"
@@ -114,6 +176,7 @@ const AprendamosAliados = (props) => {
                             <button
                               type="submit"
                               className="btn-navy-blue text-white mt-3 mb-3 wobble-hor-bottom out-none-button"
+                              data-dismiss="modal"
                             >
                               <img src={arrowLeft} className="arrow-blue"></img>
                               INGRESAR
@@ -130,8 +193,7 @@ const AprendamosAliados = (props) => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+      </div>*/}
       </div>
     </div>
   );
