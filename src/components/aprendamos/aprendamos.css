@@ -68,6 +68,16 @@
   -o-background-size: cover;
 }
 
+.background-blanco{
+  background: #fff no-repeat;
+  height: auto;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  margin-bottom: 2rem
+}
+
 .title-aprendamos {
   color: #2e335e;
   text-align: center;

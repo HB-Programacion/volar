@@ -57,6 +57,16 @@
     margin-top: 4rem
 }
 
+.btn-material:hover{
+    /* background: rgba(250, 236, 253, 0.541); */
+    box-shadow: 0 0 14px #EB477A;
+}
+.btn-recursos:hover{
+    /* background: rgba(250, 236, 253, 0.541); */
+    box-shadow: 0 0 14px rgb(94, 202, 199);
+}
+
+
 .icono-docente{
     width: 5rem;
     height: 100%;

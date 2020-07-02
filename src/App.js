@@ -60,6 +60,7 @@ import AprendamosAliados from "./components/aprendamos/AprendamosAliados";
 import Docente from "./components/aprendamos/aliado/docente/Docente";
 import ListMaterialEducativo from "./components/aprendamos/aliado/docente/ListMaterialEducativo";
 import MaterialEducativo from "./components/aprendamos/aliado/docente/MaterialEducativo";
+import Recursos from "./components/aprendamos/aliado/docente/recursos/Recursos";
 
 
 function App() {
@@ -412,6 +413,7 @@ function App() {
           <Route path="/aprendamos/aliado/docente" exact component={Docente} />
           <Route path="/aprendamos/aliado/docente/material-educativo" exact component={ListMaterialEducativo} />
           <Route path={`/aprendamos/aliado/docente/material-educativo/individual`} exact component={MaterialEducativo} />
+          <Route path="/aprendamos/aliado/docente/recursos-extras" exact component={Recursos} />
 
         </Switch>
         <Footer />
