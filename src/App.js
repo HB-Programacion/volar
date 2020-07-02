@@ -56,8 +56,11 @@ import Grupos from "./components/nosotros/fase3/modelo/grupos/Grupos";
 import Programa from "./components/nosotros/fase3/modelo/programa-mensajeria/Programa";
 import Spots from "./components/nosotros/fase3/modelo/spots/Spots";
 import Feria from "./components/nosotros/fase3/modelo/feria/Feria";
-import AprendamosAliados from "./components/aprendamos/AprendamosAliados"
+import AprendamosAliados from "./components/aprendamos/AprendamosAliados";
 import Docente from "./components/aprendamos/aliado/docente/Docente";
+import ListMaterialEducativo from "./components/aprendamos/aliado/docente/ListMaterialEducativo";
+import MaterialEducativo from "./components/aprendamos/aliado/docente/MaterialEducativo";
+
 
 function App() {
   const [firebaseUser, setFirebaseUser] = React.useState(false);
@@ -407,6 +410,9 @@ function App() {
           <Route path="/nosotros/fase3/modelo-volar/spots-radiales" exact component={Spots} />
           <Route path="/nosotros/fase3/modelo-volar/feria-familiar" exact component={Feria} />
           <Route path="/aprendamos/aliado/docente" exact component={Docente} />
+          <Route path="/aprendamos/aliado/docente/material-educativo" exact component={ListMaterialEducativo} />
+          <Route path={`/aprendamos/aliado/docente/material-educativo/individual`} exact component={MaterialEducativo} />
+
         </Switch>
         <Footer />
         <Redes />
