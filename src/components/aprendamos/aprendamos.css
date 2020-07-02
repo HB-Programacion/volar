@@ -194,12 +194,17 @@ border-bottom: 0px!important;
   float: left!important;
 }
 .caja-boton-rol{
-  width: 40%!important;
+  width: 50%!important;
   margin: auto;
 }
 /*mobile*/
 
 @media (max-width: 768px) {
+/*Aprendamos aliados */
+  .caja-boton-rol{
+    width: 100%!important;
+    margin: auto;
+  }
   /* en construccion */
   .background {
     background: url(./../../images/FONDO_APRENDAMOS_INICIO.png) no-repeat;
