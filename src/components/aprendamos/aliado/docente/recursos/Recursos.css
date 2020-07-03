@@ -3,8 +3,8 @@
       justify-content: center;
       padding-top: 11rem;
       background-color: #7DC7C5;
-      border-bottom-left-radius: 40px;
-      border-bottom-right-radius: 40px;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
       height: 22rem;
   }
 
@@ -44,8 +44,8 @@
     text-align: center;
     text-decoration:none!important;
     font-family: 'Questrial';
-    margin: 2rem;
-    margin-top: 4rem
+    margin: 1.5rem;
+    /* margin-top: 2rem */
 }
 
 .btn-recursos-socios:hover{
@@ -66,7 +66,7 @@
 
     .box-title-recursos {
         padding-top: 7.5rem;
-        height: 20rem;
+        height: 19rem;
             
       }
     

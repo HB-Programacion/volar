@@ -47,44 +47,44 @@ const Recursos = () => {
       <div className="box-btn-recursos">
         <div className="row ml-0 mr-0">
         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
-            <div className="btn-recursos-socios">
+            <Link to="/aprendamos/aliado/docente/recursos-extras/inicial" className="btn-recursos-socios">
               <img
                 className="icono-docente heartbeat"
                 src={inicial}
                 alt="icono aliado"
               />
               <h2 className="title-recursos-socios">Inicial</h2>
-            </div>
+            </Link>
           </div>
           <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
-            <div className="btn-recursos-socios">
+            <Link to="/aprendamos/aliado/docente/recursos-extras/primaria" className="btn-recursos-socios">
               <img
                 className="icono-docente heartbeat"
                 src={primaria}
                 alt="icono aliado"
               />
               <h2 className="title-recursos-socios">Primaria</h2>
-            </div>
+            </Link>
           </div>
           <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
-            <div className="btn-recursos-socios">
+            <Link to="/aprendamos/aliado/docente/recursos-extras/secundaria" className="btn-recursos-socios">
               <img
                 className="icono-docente heartbeat"
                 src={secundaria}
                 alt="icono aliado"
               />
               <h2 className="title-recursos-socios">Secundaria</h2>
-            </div>
+            </Link>
           </div>
           <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
-            <div className="btn-recursos-socios">
+            <Link to="/aprendamos/aliado/docente/recursos-extras/cuentacuentos" className="btn-recursos-socios">
               <img
                 className="icono-docente heartbeat"
                 src={inicial}
                 alt="icono aliado"
               />
-              <h2 className="title-recursos-socios">Cuentacuentos</h2>
-            </div>
+              <h2 className="title-recursos-socios">Cuentacuentos volar</h2>
+            </Link>
           </div>
         </div>
       </div>

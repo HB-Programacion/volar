@@ -4602,6 +4602,4 @@ export default [
         "texto3": "Consejo 2: No dejar que se acumule la basura y mantener siempre el basurero tapado.",
         "n_tip": 9
     }
-
-
 ]

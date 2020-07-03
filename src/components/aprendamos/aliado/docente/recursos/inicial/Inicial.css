@@ -1,0 +1,9 @@
+.bg-recursos-img{
+ background-image: url("../../../../../../images/aprendamos-api/API_1_DESKTOP.png");
+ height: 100rem;
+}
+
+.bg-recursos-img div{
+    width: 500px;
+    height: 500px;
+}
