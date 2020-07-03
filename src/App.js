@@ -418,10 +418,10 @@ function App() {
           <Route path="/aprendamos/aliado/docente/material-educativo" exact component={ListMaterialEducativo} />
           <Route path={`/aprendamos/aliado/docente/material-educativo/individual`} exact component={MaterialEducativo} />
           <Route path="/aprendamos/aliado/docente/recursos-extras" exact component={Recursos} />
-          <Route path="/aprendamos/aliado/docente/recursos-extras/inicial" exact componet={Inicial}/>
-          <Route path="/aprendamos/aliado/docente/recursos-extras/primaria" exact componet={Primaria}/>
-          <Route path="/aprendamos/aliado/docente/recursos-extras/secundaria" exact componet={Secundaria}/>
-          <Route path="/aprendamos/aliado/docente/recursos-extras/cuentacuentos" exact componet={Cuentacuentos}/>
+          <Route path="/aprendamos/aliado/docente/recursos-extras/inicial" exact component={Inicial}/>
+          <Route path="/aprendamos/aliado/docente/recursos-extras/primaria" exact component={Primaria}/>
+          <Route path="/aprendamos/aliado/docente/recursos-extras/secundaria" exact component={Secundaria}/>
+          <Route path="/aprendamos/aliado/docente/recursos-extras/cuentacuentos" exact component={Cuentacuentos}/>
 
 
         </Switch>

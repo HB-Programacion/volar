@@ -31,7 +31,7 @@ const Docente = () => {
         <div className="box-btn-docente">
           <div className="row ml-0 mr-0">
             <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-              <Link to="/aprendamos/cuidador-principal"className="link" >
+              <Link to="/aprendamos/aliado/docente/material-educativo"className="link" >
               <div className="btn-material">
                 <img className="icono-docente heartbeat" src={material} alt="icono aliado" />
                 <h2 className="ml-2">
