@@ -1,5 +1,5 @@
-.bg-recursos-img {
-    background-image: url("../../../../../../images/aprendamos-api/API_2_DESKTOP.png");
+.bg-recursos-img-cuentacuentos {
+    background-image: url("../../../../../../images/aprendamos-api/API_4_DESKTOP.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -8,48 +8,49 @@
 }
 
 
-.box-title-inicial {
-    padding-top: 10rem;
-    text-align: center
+.box-title-cuentacuentos {
+    padding-top: 13rem;
+    text-align: center;
+    
 }
 
-.img-inicial {
-    width: 6rem;
+.img-cuentacuentos {
+    width: 5rem;
     height: 100%;
     display: block;
     margin: auto;
     margin-bottom: 1rem
 }
 
-.title-inicial {
-    color: #AE96B2;
+.title-cuentacuentos {
+    color: #EF8B44;
     font-size: 2.4rem;
     letter-spacing: .03rem;
-    -webkit-text-stroke: 0.04em #AE96B2;
+    -webkit-text-stroke: 0.04em #EF8B44;
 }
 
-.box-btn-inicial {
+.box-btn-cuentacuentos {
     margin-top: 1rem;
-
+    padding-bottom: 13rem;
 }
 
-.btn-inicial {
+.btn-cuentacuentos {
     margin-bottom: 2rem;
     margin-top: 2rem;
     padding-left: 2rem;
     padding-right: 2rem
 }
 
-.title-btn-inicial {
+.title-btn-cuentacuentos {
     color: #2E335E;
     -webkit-text-stroke: 0.04em #2E335E;
     font-size: 1.5rem;
     letter-spacing: .03rem;
 }
 
-.btn-morado-inicial {
+.btn-naranja-cuentacuentos {
     padding: 2rem;
-    background: #AE96B2;
+    background: #EF8B44;
     color: #fff;
     text-align: center;
     margin-top: 1.5rem;
@@ -60,28 +61,29 @@
     letter-spacing: .03rem;
 }
 
-
-.btn-morado-inicial:hover{
+.btn-naranja-cuentacuentos:hover{
+    cursor: pointer;
     background: #fff;
-    color: #AE96B2;
-    -webkit-text-stroke:#AE96B2;
+    color: #EF8B44;
+    -webkit-text-stroke:#EF8B44;
 }
 
-.btn-blanco-inicial {
+.btn-blanco-cuentacuentos {
     padding: 2rem;
     background: #fff;
-    color: #AE96B2;
+    color: #EF8B44;
     text-align: center;
     margin-top: 1.5rem;
     border-radius: 15px;
     box-shadow: 0 0 9px rgba(172, 171, 171, 0.966);
     font-size: 1.3rem;
-    -webkit-text-stroke: 0.04em #AE96B2;
+    -webkit-text-stroke: 0.04em #EF8B44;
     letter-spacing: .03rem;
 }
 
-.btn-blanco-inicial:hover{
-    background: #AE96B2;
+.btn-blanco-cuentacuentos:hover{
+    cursor: pointer;
+    background: #EF8B44;
     color: #fff;
     -webkit-text-stroke:#fff;
 }
@@ -91,48 +93,56 @@
     line-height: 1.4rem
 }
 
-.btn-compartir-inicial{
+.btn-compartir-cuentacuentos{
     position: relative;
     top: -2rem
 }
 
 
+.title-none-cuentacuentos{
+    margin-top: 3.5rem;
+    font-size: .1rem;
+    color: none;
+    -webkit-text-fill-color: transparent;
+}
+
 @media (max-width: 768px) {
 
-    .bg-recursos-img {
-        background-image: url("../../../../../../images/aprendamos-api/API_2_MOBILE.png");
+    .bg-recursos-img-cuentacuentos {
+        background-image: url("../../../../../../images/aprendamos-api/API_4_MOBILE.png");
         height: 100%;
         /* background-position: top; */
         /* background-size: 100% */
     }
-    .box-title-inicial {
+    .box-title-cuentacuentos {
         padding-top: 8rem;
     }
 
-    .img-inicial {
+    .img-cuentacuentos {
         width: 3rem;
     }
 
-    .title-inicial {
+    .title-cuentacuentos {
         font-size: 1.4rem;
-        -webkit-text-stroke: .06rem #AE96B2;
+        -webkit-text-stroke: .06rem #EF8B44;
     }
 
-    .btn-inicial {
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem
+    .btn-cuentacuentos {
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem
     }
 
-    .title-btn-inicial {
+    .title-btn-cuentacuentos {
         font-size: 1rem;
     }
-    .box-btn-inicial {
-        margin-top: .5rem;
+    .box-btn-cuentacuentos {
+        margin-top: 2.5rem;
+        padding-bottom: 5rem;
     }
 
-    .btn-morado-inicial {
+    .btn-naranja-cuentacuentos {
         padding: 1rem;
         margin-top: .5rem;
         font-size: .9rem;
@@ -140,19 +150,24 @@
         letter-spacing: .04rem;
     }
 
-    .btn-blanco-inicial {
+    .btn-blanco-cuentacuentos {
         padding: 1rem;
         margin-top: .5rem;
         font-size: .9rem;
-        -webkit-text-stroke: 0.03em #AE96B2;
+        -webkit-text-stroke: 0.03em #EF8B44;
         letter-spacing: .04rem;
     }
 
 
-    .btn-compartir-inicial{
+    .btn-compartir-cuentacuentos{
         position: relative;
         top: 0rem;
         padding-bottom: 1rem
+    }
+
+    .title-none-cuentacuentos{
+        margin-top: -1.9rem;
+        font-size: .05rem;
     }
     
 }
