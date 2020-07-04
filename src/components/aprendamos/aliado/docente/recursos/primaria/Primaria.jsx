@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { useHistory } from "react-router-dom";
 
 import Compartir from "../../../compartir/Compartir";
 import primaria from "../../../../../../images/docente/primaria.svg";
@@ -7,8 +7,10 @@ import primaria from "../../../../../../images/docente/primaria.svg";
 import "./Primaria.css";
 
 const Primaria = () => {
+    let history = useHistory();
     return (
-        <div className="bg-recursos-img-primaria">
+        <div className="bg-recursos-img-primaria animated fadeIn">
+        <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback-docente goBack-docente" aria-hidden="true"></i>
         <div>
             <div className="box-title-primaria">
                 <figure className="img-primaria">

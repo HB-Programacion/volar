@@ -71,6 +71,11 @@
     width: 5rem;
     height: 100%;
 }
+
+.icono-docente-cuentacuentos{
+    width: 4rem;
+    height: 100%;
+}
 /*Lista de material educativo*/
 .box-title-listMaterialEducativo{
  background: #EB477A;
@@ -137,6 +142,24 @@
     margin-right: auto;
 }
 
+
+.arrowGoback-docente{
+    font-size: 2.5rem;
+    position: absolute;
+    color: #7DC7C5;
+    left: 5%;
+    /* top: 5%; */
+    cursor: pointer
+  }
+  .arrowGoback-docente:hover{
+    color: #1A1F46
+  }
+  
+  
+  .goBack-docente{
+    top: 15%
+  }
+
 @media (max-width: 768px) {
 
     .background-lila{
@@ -179,6 +202,11 @@
         width: 3.5rem;
         height: 100%;
     }
+
+    .icono-docente-cuentacuentos{
+        width: 2.6rem;
+        height: 100%;
+    }
     .videoWrapper-material-educativo iframe {
         position: absolute;
         top: 0;
@@ -189,4 +217,10 @@
         margin-left: auto;
         margin-right: auto;
     }
+    .arrowGoback-docente{
+        font-size: 1.5rem
+    }
+    .goBack-docente{
+        top: 13%
+      }
 }

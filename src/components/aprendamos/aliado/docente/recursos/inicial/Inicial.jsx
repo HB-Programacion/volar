@@ -1,4 +1,5 @@
 import React from 'react'
+import { useHistory } from "react-router-dom";
 
 import "./Inicial.css";
 
@@ -7,8 +8,10 @@ import inicial from "../../../../../../images/docente/inicial.svg";
 
 
 const Inicial = () => {
+    let history = useHistory();
     return (
-        <div className="bg-recursos-img">
+        <div className="bg-recursos-img animated fadeIn">
+        <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback-docente goBack-docente" aria-hidden="true"></i>
         <div>
             <div className="box-title-inicial">
                 <figure className="img-inicial">
