@@ -26,7 +26,7 @@ const AprendamosAliados = (props) => {
   }
   
   if(selectRol!=="Docente" || selectRol!==""){
-    props.history.push(`/aprendamos/aliado/${JSON.parse(localStorage.getItem("dateRol")).rol}`);
+    props.history.push(`/aprendamos/aliado/modulos`);
   }
  handleClose()
   }
