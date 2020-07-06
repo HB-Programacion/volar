@@ -8,7 +8,7 @@ const MaterialEducativo = () => {
     let history = useHistory();
     return (
         <div>
-        <div className="background-tips-sesamo" id="aprendamos-page">
+        <div className="background-list-material-educativo" id="aprendamos-page">
           <div className=" animated fadeIn">
               <>
               <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback" aria-hidden="true"></i> 

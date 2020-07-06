@@ -84,7 +84,7 @@ export const EmpiezaAprender = () => {
             </Link>
           </div>
           <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-          <Link to="/aprendamos/aliados" className="link">
+          <Link to="/aprendamos/aliado" className="link">
             <div
               className="btn-aliado"
             >
