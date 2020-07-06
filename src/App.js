@@ -417,7 +417,7 @@ function App() {
           <Route path="/nosotros/fase3/modelo-volar/feria-familiar" exact component={Feria} />
           <Route path="/aprendamos/aliado/docente" exact component={Docente} />
           <Route path="/aprendamos/aliado/docente/material-educativo" exact component={ListMaterialEducativo} />
-          <Route path={`/aprendamos/aliado/modulos`} exact component={Modulos} />
+          <Route path="/aprendamos/aliado/modulos" exact component={Modulos} />
           <Route path={`/aprendamos/aliado/docente/material-educativo/individual`} exact component={MaterialEducativo} />
           <Route path="/aprendamos/aliado/docente/recursos-extras" exact component={Recursos} />
           <Route path="/aprendamos/aliado/docente/recursos-extras/inicial" exact component={Inicial}/>
