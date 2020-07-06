@@ -125,6 +125,7 @@ background-color: #EF8B44;
   padding: 1.5rem 1.5rem 1.5rem 1.5rem;
   border-radius: 20px;
   display: flex;
+  align-items: center;
 }
 .box-section-higiene:hover{
   box-shadow:  5px 5px 10px  #28ABA9;
