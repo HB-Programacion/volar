@@ -14,7 +14,7 @@ const Cuentacuentos = () => {
         <div>
             <div className="box-title-cuentacuentos">
                 <figure className="img-cuentacuentos">
-                    <img src={cuentacuentos} alt="cuentacuentos-volar" className="w-100"/>
+                    <img src={cuentacuentos} alt="cuentacuentos-volar" className="w-100 heartbeat"/>
                 </figure>
                 <h1 className="title-cuentacuentos" >Cuentacuentos volar</h1>
             </div>

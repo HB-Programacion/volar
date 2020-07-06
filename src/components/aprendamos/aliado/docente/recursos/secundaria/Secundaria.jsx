@@ -14,7 +14,7 @@ const Secundaria = () => {
         <div>
             <div className="box-title-secundaria">
                 <figure className="img-secundaria">
-                    <img src={secundaria} alt="secundaria-volar" className="w-100"/>
+                    <img src={secundaria} alt="secundaria-volar" className="w-100 heartbeat"/>
                 </figure>
                 <h1 className="title-secundaria" >Secundaria de 13 a 17</h1>
             </div>

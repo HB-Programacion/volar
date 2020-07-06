@@ -14,7 +14,7 @@ const Primaria = () => {
         <div>
             <div className="box-title-primaria">
                 <figure className="img-primaria">
-                    <img src={primaria} alt="primaria-volar" className="w-100"/>
+                    <img src={primaria} alt="primaria-volar" className="w-100 heartbeat"/>
                 </figure>
                 <h1 className="title-primaria" >Primaria de 6 a 12</h1>
             </div>
