@@ -22,7 +22,11 @@ const AprendamosAliados = (props) => {
   };
   localStorage.setItem('dateRol', JSON.stringify(dateRol))
   if(selectRol==="Docente"){
-    props.history.push("/aprendamos/aliado/docente");
+   return  props.history.push("/aprendamos/aliado/docente");
+  }
+  
+  if(selectRol!=="Docente" || selectRol!==""){
+    return props.history.push("/aprendamos/aliado/modulos");
   }
  handleClose()
   }

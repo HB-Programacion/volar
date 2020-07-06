@@ -142,6 +142,15 @@
     margin-left: auto;
     margin-right: auto;
 }
+.background-list-material-educativo {
+    background: url(./../../../../images/aprendamos-api/API_1_DESKTOP.png) no-repeat;
+    height: 58rem;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    padding-top: 5.5rem
+  }
 
 
 .arrowGoback-docente{
@@ -218,10 +227,13 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .arrowGoback-docente{
-        font-size: 1.5rem
-    }
-    .goBack-docente{
-        top: 13%
+    .background-list-material-educativo {
+        background: url(./../../../../images/aprendamos-api/API_1_MOBILE.png) no-repeat;
+        height: 30rem;
+        background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        padding-top: 5.5rem
       }
 }
