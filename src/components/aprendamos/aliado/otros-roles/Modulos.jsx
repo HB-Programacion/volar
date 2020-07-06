@@ -42,7 +42,6 @@ const Modulos = ({ firebaseUser }) => {
 
   let history = useHistory();
 
-
   return (
     <div>
       <i
@@ -148,10 +147,7 @@ const Modulos = ({ firebaseUser }) => {
               </btn>
             </div>
             <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-              <btn
-                className="link"
-                onClick={handleShowModulo6}
-              >
+              <btn className="link" onClick={handleShowModulo6}>
                 <div className="box-section box-section-higiene">
                   <div class="box-icon">
                     <img
@@ -167,10 +163,7 @@ const Modulos = ({ firebaseUser }) => {
               </btn>
             </div>
             <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-              <btn
-                className="link"
-                onClick={handleShowModulo7}
-              >
+              <btn className="link" onClick={handleShowModulo7}>
                 <div className="box-section box-section-higiene">
                   <div class="box-icon">
                     <img
@@ -186,10 +179,7 @@ const Modulos = ({ firebaseUser }) => {
               </btn>
             </div>
             <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-              <btn
-                className="link"
-                onClick={handleShowModulo8}
-              >
+              <btn className="link" onClick={handleShowModulo8}>
                 <div className="box-section box-section-higiene">
                   <div class="box-icon">
                     <img
@@ -205,10 +195,7 @@ const Modulos = ({ firebaseUser }) => {
               </btn>
             </div>
             <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-              <btn
-                className="link"
-                onClick={handleShowModulo9}
-              >
+              <btn className="link" onClick={handleShowModulo9}>
                 <div className="box-section box-section-higiene">
                   <div class="box-icon">
                     <img
@@ -399,11 +386,12 @@ const Modulos = ({ firebaseUser }) => {
                 <div className="row">
                   <div className="col-12">
                     <h4 className="tittle-letter-modal">
-                      ¡Ya has completado el 50% de tus módulos! ¡Bien hecho!
+                      En este módulo aprenderemos más prácticas saludables para
+                      practicar con nuestras familias.
                     </h4>
                     <p className="letter-modal">
-                      Con estos materiales aprenderemos sobre las rutinas y su
-                      importancia:
+                      ¡Esta vez conoceremos todo sobre el agua segura y la
+                      higiene!
                     </p>
                   </div>
                 </div>
@@ -432,11 +420,11 @@ const Modulos = ({ firebaseUser }) => {
                 <div className="row">
                   <div className="col-12">
                     <h4 className="tittle-letter-modal">
-                      ¡Ya has completado el 50% de tus módulos! ¡Bien hecho!
+                      Las niñas y los niños aprenden jugando
                     </h4>
                     <p className="letter-modal">
-                      Con estos materiales aprenderemos sobre las rutinas y su
-                      importancia:
+                      aprendamos a guiar a las familias con los siguientes
+                      materiales:
                     </p>
                   </div>
                 </div>
@@ -465,11 +453,12 @@ const Modulos = ({ firebaseUser }) => {
                 <div className="row">
                   <div className="col-12">
                     <h4 className="tittle-letter-modal">
-                      ¡Ya has completado el 50% de tus módulos! ¡Bien hecho!
+                      ¡Ya casi has completado todos los módulos! ¡Eres un gran
+                      aliado por la infancia!
                     </h4>
                     <p className="letter-modal">
-                      Con estos materiales aprenderemos sobre las rutinas y su
-                      importancia:
+                      En este modulo aprenderemos prácticas saludables
+                      relacionadas a la alimentación de las niñas y niños:
                     </p>
                   </div>
                 </div>
@@ -498,11 +487,11 @@ const Modulos = ({ firebaseUser }) => {
                 <div className="row">
                   <div className="col-12">
                     <h4 className="tittle-letter-modal">
-                      ¡Ya has completado el 50% de tus módulos! ¡Bien hecho!
+                      ¡Bien hecho! ¡Llegamos al último módulo!
                     </h4>
                     <p className="letter-modal">
-                      Con estos materiales aprenderemos sobre las rutinas y su
-                      importancia:
+                      Aquí aprenderemos la importancia de aplicar disciplina
+                      positiva con nuestras niñas y niños.
                     </p>
                   </div>
                 </div>
