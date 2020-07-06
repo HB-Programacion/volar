@@ -66,6 +66,7 @@
     background: #fff;
     color: #EF8B44;
     -webkit-text-stroke:#EF8B44;
+    text-decoration: none
 }
 
 .btn-blanco-cuentacuentos {
@@ -86,6 +87,7 @@
     background: #EF8B44;
     color: #fff;
     -webkit-text-stroke:#fff;
+    text-decoration: none
 }
 
 
@@ -131,7 +133,8 @@
         margin-bottom: 1.5rem;
         margin-top: 1.5rem;
         padding-left: 2rem;
-        padding-right: 2rem
+        padding-right: 2rem;
+        text-decoration: none
     }
 
     .title-btn-cuentacuentos {
