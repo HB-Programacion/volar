@@ -15,7 +15,7 @@ const Inicial = () => {
         <div>
             <div className="box-title-inicial">
                 <figure className="img-inicial">
-                    <img src={inicial} alt="inicial-volar" className="w-100"/>
+                    <img src={inicial} alt="inicial-volar" className="w-100 heartbeat"/>
                 </figure>
                 <h1 className="title-inicial" >Inicial de 3 a 5 años</h1>
             </div>

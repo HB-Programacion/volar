@@ -1,7 +1,9 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
+
 import "./../../cuidador/areas/areas.css";
 import "./modulos.css";
-import { useHistory } from "react-router-dom";
+
 import iconoTipLighBlue from "./../../../../images/icon-tip-ligh-blue.svg";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { auth, db } from "../../../../components/firebase/firebase";
@@ -43,21 +45,21 @@ const Modulos = ({ firebaseUser }) => {
   let history = useHistory();
 
   return (
-    <div>
-      <i
+    <div className="animated fadeIn">
+      <div>
+        <div className="box-title-modulo show-desktop">
+            <h1 className="title-modulo  tracking-in-expand-fwd-top">
+              Visita nuestros módulos <br /> y aprender con volar
+            </h1>
+        </div>
+        <div className="list-modulo">
+        <i
         onClick={() => {
           history.goBack();
         }}
         className="fas fa-chevron-left arrowGoback goBack-area"
         aria-hidden="true"
       ></i>
-      <div>
-        <div className="box-title-modulo show-desktop">
-          <h1 className="title-modulo  tracking-in-expand-fwd-top">
-            Visita nuestros módulos <br /> y aprender con volar
-          </h1>
-        </div>
-        <div className="list-modulo">
           {/*  {error && <strong>Error: {JSON.stringify(error)}</strong>}
             {loading && <div className="grande">
                 <div className="centrando-spiner">
@@ -65,14 +67,15 @@ const Modulos = ({ firebaseUser }) => {
         </div>
       </div> }*/}
           {/* {contenidoFirebase && ( */}
-          <div className="row">
+         <div className="container">
+         <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
               <btn className="link" onClick={handleShowModulo1}>
                 <div className="box-section box-section-higiene">
                   <div class="box-icon">
                     <img
                       src={iconoTipLighBlue}
-                      className="icono-modulo-tip"
+                      className="icono-modulo-tip heartbeat"
                       alt="icono de tip"
                     />
                   </div>
@@ -88,7 +91,7 @@ const Modulos = ({ firebaseUser }) => {
                   <div class="box-icon">
                     <img
                       src={iconoTipLighBlue}
-                      className="icono-modulo-tip"
+                      className="icono-modulo-tip heartbeat"
                       alt="icono de tip"
                     />
                   </div>
@@ -104,7 +107,7 @@ const Modulos = ({ firebaseUser }) => {
                   <div class="box-icon">
                     <img
                       src={iconoTipLighBlue}
-                      className="icono-modulo-tip"
+                      className="icono-modulo-tip heartbeat"
                       alt="icono de tip"
                     />
                   </div>
@@ -120,7 +123,7 @@ const Modulos = ({ firebaseUser }) => {
                   <div class="box-icon">
                     <img
                       src={iconoTipLighBlue}
-                      className="icono-modulo-tip"
+                      className="icono-modulo-tip heartbeat"
                       alt="icono de tip"
                     />
                   </div>
@@ -136,7 +139,7 @@ const Modulos = ({ firebaseUser }) => {
                   <div class="box-icon">
                     <img
                       src={iconoTipLighBlue}
-                      className="icono-modulo-tip"
+                      className="icono-modulo-tip heartbeat"
                       alt="icono de tip"
                     />
                   </div>
@@ -152,7 +155,7 @@ const Modulos = ({ firebaseUser }) => {
                   <div class="box-icon">
                     <img
                       src={iconoTipLighBlue}
-                      className="icono-modulo-tip"
+                      className="icono-modulo-tip heartbeat"
                       alt="icono de tip"
                     />
                   </div>
@@ -168,7 +171,7 @@ const Modulos = ({ firebaseUser }) => {
                   <div class="box-icon">
                     <img
                       src={iconoTipLighBlue}
-                      className="icono-modulo-tip"
+                      className="icono-modulo-tip heartbeat"
                       alt="icono de tip"
                     />
                   </div>
@@ -184,7 +187,7 @@ const Modulos = ({ firebaseUser }) => {
                   <div class="box-icon">
                     <img
                       src={iconoTipLighBlue}
-                      className="icono-modulo-tip"
+                      className="icono-modulo-tip heartbeat"
                       alt="icono de tip"
                     />
                   </div>
@@ -200,7 +203,7 @@ const Modulos = ({ firebaseUser }) => {
                   <div class="box-icon">
                     <img
                       src={iconoTipLighBlue}
-                      className="icono-modulo-tip"
+                      className="icono-modulo-tip heartbeat"
                       alt="icono de tip"
                     />
                   </div>
@@ -211,6 +214,7 @@ const Modulos = ({ firebaseUser }) => {
               </btn>
             </div>
           </div>
+         </div>
           {/*  )} */}
         </div>
       </div>

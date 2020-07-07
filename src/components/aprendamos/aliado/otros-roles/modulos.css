@@ -1,128 +1,143 @@
 .title-modulo {
     text-align: center;
     color: #ffffff;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     line-height: 2.5rem;
-    -webkit-text-stroke: 1.5px #ffffff;
+    -webkit-text-stroke: 1px #ffffff;
     letter-spacing: 0.9px;
     font-family: "Questrial";
-    margin-top: 2rem;
-    margin-bottom: 10rem;
+    margin-top: 1rem;
     font-weight: 500;
-   line-height: 4rem;
 }
+
 .box-title-modulo {
     background: #7DC7C5;
     display: flex;
     flex-direction: column;
     padding-top: 9rem;
-    /*height: 100vh;
-      width: 100%;*/
-    background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
+    padding-bottom: 8rem;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
-  
-  }
 
-  .list-modulo{
-    margin-top: -6rem;
+}
+
+.list-modulo {
+    margin-top: -5rem;
     margin-right: 3rem;
     margin-left: 3rem;
     margin-bottom: 5rem;
 
 }
-.box-text-modulo{
-display: flex;
-/* flex-direction: column; */
-/* text-align: center; */
-font-family: "Questrial";
-color: #2e335e;
-margin: 0.5rem 0.5rem 0rem 2rem;
-align-items: center;
-}
-.box-text-modulo h3{
-font-weight: 600;
+
+.box-text-modulo {
+    display: flex;
+    /* flex-direction: column; */
+    /* text-align: center; */
+    font-family: "Questrial";
+    color: #2e335e;
+    margin: 0.5rem 0.5rem 0rem 2rem;
+    align-items: center;
 }
 
-.icono-modulo-tip{
-    width:4rem
-}
-.box-icon{
-    width:4rem;
+.box-text-modulo h3 {
+    font-weight: 600;
+    font-size: 1.4rem
 }
 
-.letter-modal{
-color: #2e335e;
-font-family: "Questrial";
-font-size: 1.2rem;
-text-align: center;
-margin-bottom: 0;
--webkit-text-stroke: 1px #2e335e;
+.icono-modulo-tip {
+    width: 4rem
 }
-.tittle-letter-modal{
+
+.box-icon {
+    width: 4rem;
+}
+
+.letter-modal {
+    color: #2e335e;
+    font-family: "Questrial";
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 0;
+    -webkit-text-stroke: 1px #2e335e;
+}
+
+.tittle-letter-modal {
     color: #2e335e;
     font-family: "Questrial";
     font-size: 1.4rem;
     text-align: center;
     margin-bottom: 1rem;
     -webkit-text-stroke: 0.1rem #2e335e;
-    }
+}
 
-.font-white{
+.font-white {
     color: #ffffff;
     font-family: "Questrial";
     font-size: 1.1rem;
 }
+
 .btn-navy-blue:hover,
 .btn-navy-blue:focus {
-  border: 3.5px #1A1F46;
-  text-decoration: none;
+    border: 3.5px #1A1F46;
+    text-decoration: none;
 
-  font-size: 1.3rem!important;
+    font-size: 1.3rem !important;
 }
+
 .modal-dialog {
-    max-width: 40rem!important;
+    max-width: 40rem !important;
     margin: 1.75rem auto;
 }
+
 .modal-header .close {
     padding: 1rem 1rem;
-    margin: -1rem -1rem auto!important;
+    margin: -1rem -1rem auto !important;
 }
+
 @media (max-width: 768px) {
-.title-modulo {
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    margin-top: 0rem;
-    margin-bottom: 10rem;
-    line-height: 2rem;
-}
-.list-modulo {
-    margin-top: -8rem;
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
-    margin-bottom: 5rem;
-}
-.box-icon {
-    width: 2.5rem;
-}
-.icono-modulo-tip {
-    width: 2.5rem;
-}
-.box-text-modulo h3 {
-    font-weight: 600;
-    font-size: 1rem;
-}
-.box-text-modulo {
-    margin: 0.5rem 0.5rem 0rem 1rem;
-}
-.modal-content {
-    position: relative;
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-    width: 90%;
-}
+    .title-modulo {
+        font-size: 1.5rem;
+        margin-top: 0rem;
+        /* margin-bottom: 10rem; */
+        line-height: 1.5rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem
+    }
+
+    .box-title-modulo {
+        padding-top: 8rem;
+    padding-bottom: 3.5rem;
+    }
+
+    .list-modulo {
+        margin-top: -1.8rem;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+        margin-bottom: 5rem;
+    }
+
+    .box-icon {
+        width: 2.5rem;
+    }
+
+    .icono-modulo-tip {
+        width: 2.5rem;
+    }
+
+    .box-text-modulo h3 {
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    .box-text-modulo {
+        margin: 0.5rem 0.5rem 0rem 1rem;
+    }
+
+    .modal-content {
+        position: relative;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        width: 90%;
+    }
 }
