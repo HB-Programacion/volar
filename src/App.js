@@ -69,7 +69,6 @@ import Modulo5 from "./components/aprendamos/aliado/otros-roles/Modulo_5";
 import Modulo6 from "./components/aprendamos/aliado/otros-roles/Modulo_6";
 import Modulo7 from "./components/aprendamos/aliado/otros-roles/Modulo_7";
 import Modulo8 from "./components/aprendamos/aliado/otros-roles/Modulo_8";
-import Modulo9 from "./components/aprendamos/aliado/otros-roles/Modulo_9";
 import Recursos from "./components/aprendamos/aliado/docente/recursos/Recursos";
 import Inicial from "./components/aprendamos/aliado/docente/recursos/inicial/Inicial";
 import Primaria from "./components/aprendamos/aliado/docente/recursos/primaria/Primaria";
@@ -435,7 +434,6 @@ function App() {
           <Route path="/aprendamos/aliado/modulos/modulo_6" exact component={Modulo6} />
           <Route path="/aprendamos/aliado/modulos/modulo_7" exact component={Modulo7} />
           <Route path="/aprendamos/aliado/modulos/modulo_8" exact component={Modulo8} />
-          <Route path="/aprendamos/aliado/modulos/modulo_9" exact component={Modulo9} />
           <Route path={`/aprendamos/aliado/docente/material-educativo/individual`} exact component={MaterialEducativo} />
           <Route path="/aprendamos/aliado/docente/recursos-extras" exact component={Recursos} />
           <Route path="/aprendamos/aliado/docente/recursos-extras/inicial" exact component={Inicial}/>
