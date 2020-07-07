@@ -2242,7 +2242,7 @@ export default [
     {
         // "rutina_edad_2_tip_7": {
         "seccion": "Rutina",
-        "video": "http://bit.ly/mi-barrio",
+        "video": "https://www.youtube.com/embed/Sd7cTxwKxxE?rel=0&autoplay=1",
         "n_tip": 7,
         "texto1A": " Cuando camines con ",
         "edad": 2,
@@ -2336,7 +2336,7 @@ export default [
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "",
         "seccion": "Juego",
-        "video": "http://bit.ly/sucio-limpio",
+        "video": "https://www.youtube.com/embed/igCeJTs4smk?rel=0&autoplay=1",
         "n_tip": 4
 
     },
@@ -2963,7 +2963,7 @@ export default [
     // "juego_edad_3_tip_6":
     {
         "seccion": "Juego",
-        "video": "http://bit.ly/sucio-limpio",
+        "video": "https://www.youtube.com/embed/igCeJTs4smk?rel=0&autoplay=1",
         "n_tip": 6,
         "texto1A": " Ayuda a ",
         "edad": 3,
@@ -3510,7 +3510,7 @@ export default [
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "icono": "",
         "seccion": "Juego",
-        "video": "http://bit.ly/la-pelota",
+        "video": "https://www.youtube.com/embed/BfkyjxVJZO4?rel=0&autoplay=1",
         "n_tip": 10,
         "texto1A": " quiere jugar con la pelota? Salgan a un espacio abierto y practiquen pateando la pelota o lanzandola con las manos. Esta actividad fortalece su desarrollo físico y cognitivo.",
         "edad": 4,
@@ -3598,17 +3598,17 @@ export default [
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "",
         "seccion": "Juego",
-        "video": "http://bit.ly/sucio-limpio",
+        "video": "https://www.youtube.com/embed/igCeJTs4smk?rel=0&autoplay=1",
         "n_tip": 8
     },
     // "juego_edad_4_tip_9": 
     {
         "seccion": "Juego",
-        "video": " http://bit.ly/mi-pelota",
+        "video": "https://www.youtube.com/embed/rmPc8ar_-Tc?rel=0&autoplay=1",
         "n_tip": 9,
-        "texto1A": "",
+        "texto1A": "¡Juguemos a las chapadas! Juega con toda la familia y ve añadiendo reglas y niveles al juego. Así ",
         "edad": 4,
-        "texto1B": " Lanza una pelota imaginaria a tu hijo y pide que te la pase de vuelta. Así le enseñas a imaginar, esta es una cualidad super importante para su aprendizaje posterior. Aprende como aquí:",
+        "texto1B": " fortalecerá sus habilidades sociales, muy importantes para su futuro. Mira como aquí:",
         "titulo": "Agudiza su ingenio",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "icono": ""
@@ -3933,7 +3933,7 @@ export default [
     {
         "icono": "",
         "seccion": "Socioemocional",
-        "video": "http://bit.ly/c-junto",
+        "video": "https://www.youtube.com/embed/IxkaX5adBAw?rel=0&autoplay=1",
         "n_tip": 6,
         "texto1A": " Conversa con ",
         "edad": 5,
@@ -3996,7 +3996,7 @@ export default [
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
         "icono": "",
         "seccion": "Rutina",
-        "video": "http://bit.ly/yo-intentar",
+        "video": "https://www.youtube.com/embed/0M3QXhQxKu8?rel=0&autoplay=1",
         "n_tip": 10,
         "texto1A": " Deja que ",
         "edad": 5,
@@ -4043,7 +4043,7 @@ export default [
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "",
         "seccion": "Rutina",
-        "video": "http://bit.ly/l-chacra",
+        "video": "https://www.youtube.com/embed/DdXHLFElY9c?rel=0&autoplay=1",
         "n_tip": 5,
         "texto1A": " ¿Es hora de ir al campo a trabajar? Puedes llevar a ",
         "edad": 5,
@@ -4084,7 +4084,7 @@ export default [
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
         "icono": "",
         "seccion": "Rutina",
-        "video": " http://bit.ly/el-chef"
+        "video": "https://www.youtube.com/embed/H2Eug9vyC0A?rel=0&autoplay=1"
     },
     // "rutina_edad_5_tip_9": 
     {
@@ -4166,7 +4166,7 @@ export default [
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "icono": "",
         "seccion": "Juego",
-        "video": "http://bit.ly/la-pelota",
+        "video": "https://www.youtube.com/embed/BfkyjxVJZO4?rel=0&autoplay=1",
         "n_tip": 5,
         "texto1A": " quiere jugar con la pelota? Salgan a un espacio abierto y practiquen pateando la pelota o lanzandola con las manos. Esta actividad fortalece su desarrollo físico y cognitivo.",
         "edad": 5,
@@ -4206,7 +4206,7 @@ export default [
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "",
         "seccion": "Juego",
-        "video": "http://bit.ly/sucio-limpio"
+        "video": "https://www.youtube.com/embed/igCeJTs4smk?rel=0&autoplay=1"
     },
     // "juego_edad_5_tip_9": 
     {
@@ -4218,7 +4218,7 @@ export default [
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "icono": "",
         "seccion": "Juego",
-        "video": " http://bit.ly/mi-pelota"
+        "video": "https://www.youtube.com/embed/3FlVABQsHkQ?rel=0&autoplay=1"
     },
     {
         // nutricionSalud_edad_5_tip_1": {
@@ -4395,7 +4395,7 @@ export default [
         "tipo": "Video Educativo",
         "texto1": "Mientras Elmo y Clara juegan a \"congelados\", a Elmo le dan ganas de ir a los servicios. Elmo le confieza a Clara que le da miedo ir a los servicios. Clara, le explica que no hay que tener miedo porque ahora los baños se encuentran limpios y seguros porque están limpios, tienen agua y jabón. Elmo regresa del baño feliz y le cuenta a Clara que además no olvidó de lavarse las manos.",
         "seccion": "Sésamo",
-        "video": "https://www.youtube.com/embed/JuFqw-VvYDY?rel=0&autoplay=1",
+        "video": "https://www.youtube.com/embed/NaxYhVzFmdQ?rel=0&autoplay=1",
         "texto3": "",
         "n_tip": 13
     },
@@ -4406,7 +4406,7 @@ export default [
         "tipo": "Video Educativo",
         "texto1": "Clara le explica a Elmo porqué es muy importante utilizar zapatos para ir al baño/servicios para evitar contagio con gérmenes. ",
         "seccion": "Sésamo",
-        "video": "https://www.youtube.com/embed/NIK8kjKqyA8?rel=0&autoplay=1",
+        "video": "https://www.youtube.com/embed/70GQ8Bgg50k?rel=0&autoplay=1",
         "texto3": "",
         "n_tip": 14
     },
@@ -4450,7 +4450,7 @@ export default [
         "tipo": "Video Educativo",
         "texto1": "Clara le explica a Elmo porqué no deben tomar agua de la manguera y la importancia de beber sólo agua segura para proteger su salud.",
         "seccion": "Sésamo",
-        "video": "https://www.youtube.com/embed/3pgBvL-0Nzg?rel=0&autoplay=1",
+        "video": "https://www.youtube.com/embed/n33vj3JjEHQ?rel=0&autoplay=1",
         "texto3": "",
         "n_tip": 18
     },
@@ -4484,7 +4484,7 @@ export default [
         "texto1": "Elmo y Clara nos cuentan la importancia de difundir la información relevante sobre el cuidado del agua limpia y segura. Invitan a que los niños \"pasen el mensaje y no los gérmenes\" contando a sus familias y amigos lo que les enseñan en la escuela sobre los temas de agua e higiene.",
         "seccion": "Sésamo",
         "n_tip": 20,
-        "video ": "https://www.youtube.com/embed/kM0TGopNB64?rel=0&autoplay=1",
+        "video": "https://www.youtube.com/embed/Kkzx5NNiXRY?rel=0&autoplay=1",
         "titulo": "Promoción de la Salud",
         "tipo": "Video Educativo"
     },
@@ -4506,7 +4506,7 @@ export default [
         "tipo": "Canción",
         "texto1": "Elmo y Clara nos cantan sobre la importancia de lavarse las manos siempre y que debemos ser conscientes de no desperdiciarla. Dan las indicaciones de cómo lavarse las manos correctamente y los momentos críticos para hacerlo (despúes de ir al baño, antes de comer, después de jugar, etc.)",
         "seccion": "Sésamo",
-        "video": "https://www.youtube.com/embed/=e0pecj7ZCcQ?rel=0&autoplay=1",
+        "video": "https://www.youtube.com/embed/e0pecj7ZCcQ?rel=0&autoplay=1",
         "texto3": "",
         "n_tip": 22
     },
@@ -4539,7 +4539,7 @@ export default [
         "tipo": "Video Educativo",
         "texto1": "A través de imágenes, sin audio, se muestra el correcto lavado de manos de forma divertida.",
         "seccion": "Sésamo",
-        "video": "https://www.youtube.com/embed/zR6mV8PcZ7A?rel=0&autoplay=1",
+        "video": "https://www.youtube.com/embed/rqodhJ5nVFU?rel=0&autoplay=1",
         "texto3": "",
         "n_tip": 4
     },
@@ -4550,7 +4550,7 @@ export default [
     // "sesamo_video_5": 
     {
         "seccion": "Sésamo",
-        "video": "https://www.youtube.com/embed/dTwJ6cFO3vY?rel=0&autoplay=1",
+        "video": "https://www.youtube.com/embed/tQRplxMHUIQ?rel=0&autoplay=1",
         "texto3": "",
         "n_tip": 5,
         "titulo": "Gérmenes brillantes",
@@ -4576,7 +4576,7 @@ export default [
         "tipo": "Video Educativo",
         "texto1": "Clara le explica a Elmo porqué es importante las manos con agua y con jabón antes de comer, aún cuando tenemos mucha hambre. ",
         "seccion": "Sésamo",
-        "video": "https://www.youtube.com/embed/je3NBznQOys?rel=0&autoplay=1",
+        "video": "https://www.youtube.com/embed/l_J_Nmb6WlA?rel=0&autoplay=1",
         "texto3": "",
         "n_tip": 7
     },
