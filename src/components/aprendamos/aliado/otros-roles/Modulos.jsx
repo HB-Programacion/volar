@@ -80,7 +80,7 @@ const Modulos = ({ firebaseUser }) => {
                     />
                   </div>
                   <div className="box-text-modulo">
-                    <h3>Introductorio</h3>
+                    <h3>Estructura del Cerebro y Estrés Tóxico </h3>
                   </div>
                 </div>
               </btn>
@@ -96,7 +96,7 @@ const Modulos = ({ firebaseUser }) => {
                     />
                   </div>
                   <div className="box-text-modulo">
-                    <h3>Estructura del Cerebro y Estrés Tóxico </h3>
+                    <h3>Practicas Saludables I</h3>
                   </div>
                 </div>
               </btn>
@@ -112,7 +112,7 @@ const Modulos = ({ firebaseUser }) => {
                     />
                   </div>
                   <div className="box-text-modulo">
-                    <h3>Practicas Saludables I</h3>
+                    <h3>Autonomía e imagen del niño</h3>
                   </div>
                 </div>
               </btn>
@@ -128,7 +128,7 @@ const Modulos = ({ firebaseUser }) => {
                     />
                   </div>
                   <div className="box-text-modulo">
-                    <h3>Autonomía e imagen del niño</h3>
+                    <h3>Rutinas: Cuidado y Protección </h3>
                   </div>
                 </div>
               </btn>
@@ -144,7 +144,7 @@ const Modulos = ({ firebaseUser }) => {
                     />
                   </div>
                   <div className="box-text-modulo">
-                    <h3>Rutinas: Cuidado y Protección </h3>
+                    <h3>Practicas Saludables II</h3>
                   </div>
                 </div>
               </btn>
@@ -160,7 +160,7 @@ const Modulos = ({ firebaseUser }) => {
                     />
                   </div>
                   <div className="box-text-modulo">
-                    <h3>Practicas Saludables II</h3>
+                    <h3>Importancia del Juego</h3>
                   </div>
                 </div>
               </btn>
@@ -176,29 +176,13 @@ const Modulos = ({ firebaseUser }) => {
                     />
                   </div>
                   <div className="box-text-modulo">
-                    <h3>Importancia del Juego</h3>
-                  </div>
-                </div>
-              </btn>
-            </div>
-            <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-              <btn className="link" onClick={handleShowModulo8}>
-                <div className="box-section box-section-higiene">
-                  <div class="box-icon">
-                    <img
-                      src={iconoTipLighBlue}
-                      className="icono-modulo-tip heartbeat"
-                      alt="icono de tip"
-                    />
-                  </div>
-                  <div className="box-text-modulo">
                     <h3>Practicas Saludables III</h3>
                   </div>
                 </div>
               </btn>
             </div>
             <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-              <btn className="link" onClick={handleShowModulo9}>
+              <btn className="link" onClick={handleShowModulo8}>
                 <div className="box-section box-section-higiene">
                   <div class="box-icon">
                     <img
@@ -226,12 +210,11 @@ const Modulos = ({ firebaseUser }) => {
               <div>
                 <div className="row">
                   <div className="col-12">
-                    <h4 className="tittle-letter-modal">
-                      ¡Bienvenido al módulo introductorio!
-                    </h4>
+                    <h4 className="tittle-letter-modal">¡Felicitaciones!</h4>
                     <p className="letter-modal">
-                      Aquí encontrarás todos los materiales complementarios que
-                      te ayudarán a iniciar tu formación con Volar
+                      Acabas de empezar tu formación como Aliado por la
+                      infancia. Para este primer tema te dejamos los siguientes
+                      materiales:
                     </p>
                   </div>
                 </div>
@@ -240,7 +223,7 @@ const Modulos = ({ firebaseUser }) => {
                     type="submit"
                     className="btn-navy-blue font-white mt-3 mb-3 wobble-hor-bottom out-none-button"
                     data-dismiss="modal"
-                    href="/aprendamos/aliado/modulos/modulo_1"
+                     href="/aprendamos/aliado/modulos/modulo_1"
                   >
                     <img src={arrowLeft} className="arrow-blue"></img>
                     VER MÁS AQUÍ
@@ -260,11 +243,12 @@ const Modulos = ({ firebaseUser }) => {
               <div>
                 <div className="row">
                   <div className="col-12">
-                    <h4 className="tittle-letter-modal">¡Felicitaciones!</h4>
+                    <h4 className="tittle-letter-modal">
+                      ¡Seguimos Avanzando!{" "}
+                    </h4>
                     <p className="letter-modal">
-                      Acabas de empezar tu formación como Aliado por la
-                      infancia. Para este primer tema te dejamos los siguientes
-                      materiales:
+                      En este módulo aprenderemos prácticas saludables que todo
+                      cuidador necesita saber:
                     </p>
                   </div>
                 </div>
@@ -273,7 +257,7 @@ const Modulos = ({ firebaseUser }) => {
                     type="submit"
                     className="btn-navy-blue font-white mt-3 mb-3 wobble-hor-bottom out-none-button"
                     data-dismiss="modal"
-                     href="/aprendamos/aliado/modulos/modulo_2"
+                    href="/aprendamos/aliado/modulos/modulo_2"
                   >
                     <img src={arrowLeft} className="arrow-blue"></img>
                     VER MÁS AQUÍ
@@ -294,11 +278,10 @@ const Modulos = ({ firebaseUser }) => {
                 <div className="row">
                   <div className="col-12">
                     <h4 className="tittle-letter-modal">
-                      ¡Seguimos Avanzando!{" "}
+                      ¿Qué es la autonomía?
                     </h4>
                     <p className="letter-modal">
-                      En este módulo aprenderemos prácticas saludables que todo
-                      cuidador necesita saber:
+                      Descúbrelo en el siguiente video:
                     </p>
                   </div>
                 </div>
@@ -328,10 +311,11 @@ const Modulos = ({ firebaseUser }) => {
                 <div className="row">
                   <div className="col-12">
                     <h4 className="tittle-letter-modal">
-                      ¿Qué es la autonomía?
+                      ¡Ya has completado el 50% de tus módulos! ¡Bien hecho!
                     </h4>
                     <p className="letter-modal">
-                      Descúbrelo en el siguiente video:
+                      Con estos materiales aprenderemos sobre las rutinas y su
+                      importancia:
                     </p>
                   </div>
                 </div>
@@ -361,11 +345,12 @@ const Modulos = ({ firebaseUser }) => {
                 <div className="row">
                   <div className="col-12">
                     <h4 className="tittle-letter-modal">
-                      ¡Ya has completado el 50% de tus módulos! ¡Bien hecho!
+                      En este módulo aprenderemos más prácticas saludables para
+                      practicar con nuestras familias.
                     </h4>
                     <p className="letter-modal">
-                      Con estos materiales aprenderemos sobre las rutinas y su
-                      importancia:
+                      ¡Esta vez conoceremos todo sobre el agua segura y la
+                      higiene!
                     </p>
                   </div>
                 </div>
@@ -395,41 +380,6 @@ const Modulos = ({ firebaseUser }) => {
                 <div className="row">
                   <div className="col-12">
                     <h4 className="tittle-letter-modal">
-                      En este módulo aprenderemos más prácticas saludables para
-                      practicar con nuestras familias.
-                    </h4>
-                    <p className="letter-modal">
-                      ¡Esta vez conoceremos todo sobre el agua segura y la
-                      higiene!
-                    </p>
-                  </div>
-                </div>
-                <div className="caja-boton-rol">
-                  <a
-                    type="submit"
-                    className="btn-navy-blue font-white mt-3 mb-3 wobble-hor-bottom out-none-button"
-                    data-dismiss="modal"
-                    href="/aprendamos/aliado/modulos/modulo_6"
-                  >
-                    <img src={arrowLeft} className="arrow-blue"></img>
-                    VER MÁS AQUÍ
-                    <img src={arrowRight} className="arrow-blue"></img>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Modal.Body>
-      </Modal>
-      <Modal show={showModulo7} onHide={handleCloseModulo7}>
-        <Modal.Header closeButton></Modal.Header>
-        <Modal.Body>
-          <div className="container animated fadeIn">
-            <div className="">
-              <div>
-                <div className="row">
-                  <div className="col-12">
-                    <h4 className="tittle-letter-modal">
                       Las niñas y los niños aprenden jugando
                     </h4>
                     <p className="letter-modal">
@@ -443,7 +393,7 @@ const Modulos = ({ firebaseUser }) => {
                     type="submit"
                     className="btn-navy-blue font-white mt-3 mb-3 wobble-hor-bottom out-none-button"
                     data-dismiss="modal"
-                    href="/aprendamos/aliado/modulos/modulo_7"
+                    href="/aprendamos/aliado/modulos/modulo_6"
                   >
                     <img src={arrowLeft} className="arrow-blue"></img>
                     VER MÁS AQUÍ
@@ -456,7 +406,7 @@ const Modulos = ({ firebaseUser }) => {
           </div>
         </Modal.Body>
       </Modal>
-      <Modal show={showModulo8} onHide={handleCloseModulo8}>
+      <Modal show={showModulo7} onHide={handleCloseModulo7}>
         <Modal.Header closeButton></Modal.Header>
         <Modal.Body>
           <div className="container animated fadeIn">
@@ -479,7 +429,7 @@ const Modulos = ({ firebaseUser }) => {
                     type="submit"
                     className="btn-navy-blue font-white mt-3 mb-3 wobble-hor-bottom out-none-button"
                     data-dismiss="modal"
-                    href="/aprendamos/aliado/modulos/modulo_8"
+                    href="/aprendamos/aliado/modulos/modulo_7"
                   >
                     <img src={arrowLeft} className="arrow-blue"></img>
                     VER MÁS AQUÍ
@@ -491,7 +441,7 @@ const Modulos = ({ firebaseUser }) => {
           </div>
         </Modal.Body>
       </Modal>
-      <Modal show={showModulo9} onHide={handleCloseModulo9}>
+      <Modal show={showModulo8} onHide={handleCloseModulo8}>
         <Modal.Header closeButton></Modal.Header>
         <Modal.Body>
           <div className="container animated fadeIn">
@@ -513,7 +463,7 @@ const Modulos = ({ firebaseUser }) => {
                     type="submit"
                     className="btn-navy-blue font-white mt-3 mb-3 wobble-hor-bottom out-none-button"
                     data-dismiss="modal"
-                    href="/aprendamos/aliado/modulos/modulo_9"
+                    href="/aprendamos/aliado/modulos/modulo_8"
                   >
                     <img src={arrowLeft} className="arrow-blue"></img>
                     VER MÁS AQUÍ
