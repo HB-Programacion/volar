@@ -61,6 +61,15 @@ import Docente from "./components/aprendamos/aliado/docente/Docente";
 import ListMaterialEducativo from "./components/aprendamos/aliado/docente/ListMaterialEducativo";
 import MaterialEducativo from "./components/aprendamos/aliado/docente/MaterialEducativo";
 import Modulos from "./components/aprendamos/aliado/otros-roles/Modulos";
+import Modulo1 from "./components/aprendamos/aliado/otros-roles/Modulo_1";
+import Modulo2 from "./components/aprendamos/aliado/otros-roles/Modulo_2";
+import Modulo3 from "./components/aprendamos/aliado/otros-roles/Modulo_3";
+import Modulo4 from "./components/aprendamos/aliado/otros-roles/Modulo_4";
+import Modulo5 from "./components/aprendamos/aliado/otros-roles/Modulo_5";
+import Modulo6 from "./components/aprendamos/aliado/otros-roles/Modulo_6";
+import Modulo7 from "./components/aprendamos/aliado/otros-roles/Modulo_7";
+import Modulo8 from "./components/aprendamos/aliado/otros-roles/Modulo_8";
+import Modulo9 from "./components/aprendamos/aliado/otros-roles/Modulo_9";
 import Recursos from "./components/aprendamos/aliado/docente/recursos/Recursos";
 import Inicial from "./components/aprendamos/aliado/docente/recursos/inicial/Inicial";
 import Primaria from "./components/aprendamos/aliado/docente/recursos/primaria/Primaria";
@@ -418,6 +427,15 @@ function App() {
           <Route path="/aprendamos/aliado/docente" exact component={Docente} />
           <Route path="/aprendamos/aliado/docente/material-educativo" exact component={ListMaterialEducativo} />
           <Route path="/aprendamos/aliado/modulos" exact component={Modulos} />
+          <Route path="/aprendamos/aliado/modulos/modulo_1" exact component={Modulo1} />
+          <Route path="/aprendamos/aliado/modulos/modulo_2" exact component={Modulo2} />
+          <Route path="/aprendamos/aliado/modulos/modulo_3" exact component={Modulo3} />
+          <Route path="/aprendamos/aliado/modulos/modulo_4" exact component={Modulo4} />
+          <Route path="/aprendamos/aliado/modulos/modulo_5" exact component={Modulo5} />
+          <Route path="/aprendamos/aliado/modulos/modulo_6" exact component={Modulo6} />
+          <Route path="/aprendamos/aliado/modulos/modulo_7" exact component={Modulo7} />
+          <Route path="/aprendamos/aliado/modulos/modulo_8" exact component={Modulo8} />
+          <Route path="/aprendamos/aliado/modulos/modulo_9" exact component={Modulo9} />
           <Route path={`/aprendamos/aliado/docente/material-educativo/individual`} exact component={MaterialEducativo} />
           <Route path="/aprendamos/aliado/docente/recursos-extras" exact component={Recursos} />
           <Route path="/aprendamos/aliado/docente/recursos-extras/inicial" exact component={Inicial}/>
