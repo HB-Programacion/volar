@@ -236,15 +236,16 @@ const Modulos = ({ firebaseUser }) => {
                   </div>
                 </div>
                 <div className="caja-boton-rol">
-                  <button
+                  <a
                     type="submit"
                     className="btn-navy-blue font-white mt-3 mb-3 wobble-hor-bottom out-none-button"
                     data-dismiss="modal"
+                    href="/aprendamos/aliado/modulos/modulo_1"
                   >
                     <img src={arrowLeft} className="arrow-blue"></img>
                     VER MÁS AQUÍ
                     <img src={arrowRight} className="arrow-blue"></img>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -268,15 +269,16 @@ const Modulos = ({ firebaseUser }) => {
                   </div>
                 </div>
                 <div className="caja-boton-rol">
-                  <button
+                  <a
                     type="submit"
                     className="btn-navy-blue font-white mt-3 mb-3 wobble-hor-bottom out-none-button"
                     data-dismiss="modal"
+                     href="/aprendamos/aliado/modulos/modulo_2"
                   >
                     <img src={arrowLeft} className="arrow-blue"></img>
                     VER MÁS AQUÍ
                     <img src={arrowRight} className="arrow-blue"></img>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -301,15 +303,16 @@ const Modulos = ({ firebaseUser }) => {
                   </div>
                 </div>
                 <div className="caja-boton-rol">
-                  <button
+                  <a
                     type="submit"
                     className="btn-navy-blue font-white mt-3 mb-3 wobble-hor-bottom out-none-button"
                     data-dismiss="modal"
+                    href="/aprendamos/aliado/modulos/modulo_3"
                   >
                     <img src={arrowLeft} className="arrow-blue"></img>
                     VER MÁS AQUÍ
                     <img src={arrowRight} className="arrow-blue"></img>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -333,15 +336,16 @@ const Modulos = ({ firebaseUser }) => {
                   </div>
                 </div>
                 <div className="caja-boton-rol">
-                  <button
+                  <a
                     type="submit"
                     className="btn-navy-blue font-white mt-3 mb-3 wobble-hor-bottom out-none-button"
                     data-dismiss="modal"
+                    href="/aprendamos/aliado/modulos/modulo_4"
                   >
                     <img src={arrowLeft} className="arrow-blue"></img>
                     VER MÁS AQUÍ
                     <img src={arrowRight} className="arrow-blue"></img>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -366,15 +370,16 @@ const Modulos = ({ firebaseUser }) => {
                   </div>
                 </div>
                 <div className="caja-boton-rol">
-                  <button
+                  <a
                     type="submit"
                     className="btn-navy-blue font-white mt-3 mb-3 wobble-hor-bottom out-none-button"
                     data-dismiss="modal"
+                    href="/aprendamos/aliado/modulos/modulo_5"
                   >
                     <img src={arrowLeft} className="arrow-blue"></img>
                     VER MÁS AQUÍ
                     <img src={arrowRight} className="arrow-blue"></img>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -400,15 +405,16 @@ const Modulos = ({ firebaseUser }) => {
                   </div>
                 </div>
                 <div className="caja-boton-rol">
-                  <button
+                  <a
                     type="submit"
                     className="btn-navy-blue font-white mt-3 mb-3 wobble-hor-bottom out-none-button"
                     data-dismiss="modal"
+                    href="/aprendamos/aliado/modulos/modulo_6"
                   >
                     <img src={arrowLeft} className="arrow-blue"></img>
                     VER MÁS AQUÍ
                     <img src={arrowRight} className="arrow-blue"></img>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -433,15 +439,17 @@ const Modulos = ({ firebaseUser }) => {
                   </div>
                 </div>
                 <div className="caja-boton-rol">
-                  <button
+                  <a
                     type="submit"
                     className="btn-navy-blue font-white mt-3 mb-3 wobble-hor-bottom out-none-button"
                     data-dismiss="modal"
+                    href="/aprendamos/aliado/modulos/modulo_7"
                   >
                     <img src={arrowLeft} className="arrow-blue"></img>
                     VER MÁS AQUÍ
                     <img src={arrowRight} className="arrow-blue"></img>
-                  </button>
+
+                  </a>
                 </div>
               </div>
             </div>
@@ -467,15 +475,16 @@ const Modulos = ({ firebaseUser }) => {
                   </div>
                 </div>
                 <div className="caja-boton-rol">
-                  <button
+                  <a
                     type="submit"
                     className="btn-navy-blue font-white mt-3 mb-3 wobble-hor-bottom out-none-button"
                     data-dismiss="modal"
+                    href="/aprendamos/aliado/modulos/modulo_8"
                   >
                     <img src={arrowLeft} className="arrow-blue"></img>
                     VER MÁS AQUÍ
                     <img src={arrowRight} className="arrow-blue"></img>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -500,15 +509,16 @@ const Modulos = ({ firebaseUser }) => {
                   </div>
                 </div>
                 <div className="caja-boton-rol">
-                  <button
+                  <a
                     type="submit"
                     className="btn-navy-blue font-white mt-3 mb-3 wobble-hor-bottom out-none-button"
                     data-dismiss="modal"
+                    href="/aprendamos/aliado/modulos/modulo_9"
                   >
                     <img src={arrowLeft} className="arrow-blue"></img>
                     VER MÁS AQUÍ
                     <img src={arrowRight} className="arrow-blue"></img>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
