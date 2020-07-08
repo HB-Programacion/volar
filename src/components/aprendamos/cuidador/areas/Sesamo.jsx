@@ -59,7 +59,7 @@ export const Sesamo = ({
 
         <div className="row">
           {arraySesamo
-            .filter((item) => item.seccion === "Sésamo")
+            .filter((item) => item.seccion === "Sésamo" && item.video!== "" )
             .map((item) => (
               <div
                 key={item.id}
@@ -105,7 +105,7 @@ export const Sesamo = ({
 
         <div className="row">
           {arraySesamo
-            .filter((item) => item.seccion === "Sésamo")
+            .filter((item) => item.seccion === "Sésamo" && item.video!== "")
             .map((item) => (
               <div
                 key={item.id}

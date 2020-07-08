@@ -117,12 +117,11 @@
 }
 .box-text-material-educativo{
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     /* text-align: center; */
     font-family: "Questrial";
     color: #2e335e;
     margin: 0.5rem 0.5rem 0rem 2rem;
-    align-items: center;
 }
 .box-text-material-educativo h3{
     font-weight: 600;

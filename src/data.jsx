@@ -4583,7 +4583,7 @@ export default [
     // "sesamo_video_8": 
     {
         "texto2": "",
-        "tipo": "video",
+        "tipo": "Video Educativo",
         "texto1": "Video no animado. Un niño explica cómo la enfermera del centro de salud les enseñó cómo depositar la basura en su lugar y porqué es importante hacerlo para conservar el medio ambiente. Explica que los espacios de basura acumulada y el agua estancada traen enfermedades. Además, se explican los diferentes tipos de basura, la importancia de mantener la comunidad limpia y qué hacer para contribuir con la limpieza de la comunidad.",
         "seccion": "Sésamo",
         "video": "https://www.youtube.com/embed/DPaTG2Qm-fs?rel=0&autoplay=1",
@@ -4601,5 +4601,51 @@ export default [
         "video": "https://www.youtube.com/embed/MSWs0uL_MH0?rel=0&autoplay=1",
         "texto3": "Consejo 2: No dejar que se acumule la basura y mantener siempre el basurero tapado.",
         "n_tip": 9
+    },
+    {
+        "titulo": "Clara y  el equipo antigérmenes",
+        "texto2": " El cuento se enfoca en comportamientos positivos de saneamiento e higiene, y en el poder de niñas y los niños como educadores en sus propias comunidades. Impreso al estilo rotafolio, el libro muestra a Clara y Elmo en un contexto peruano e incluye preguntas y actividades que extienden el aprendizaje y la diversión.",
+        "tipo": "Cuento",
+        "texto1": "Clara y Elmo son “superagentes saludables”, que ayudan a sus amigas y amigos a estar más sanos y felices.",
+        "seccion": "Sésamo",
+        "video": "",
+        "link":"http://52.177.117.53/static/media/pdf/01_GÉRMENES_APORTA_2020.pdf#toolbar=0",
+        "texto3": "",
+        "n_tip": 24
+    },
+    {
+        "titulo": "Elmo y Clara : Guardianes del Agua",
+        "texto2": "El cuento explora cómo identificar el agua segura y las distintas maneras en que se puede consumir, transportar y manipular.",
+        "tipo": "Cuento",
+        "texto1": "Clara y Elmo aprenden a cuidar el agua y consumirla con responsabilidad. ",
+        "seccion": "Sésamo",
+        "video": "",
+        "link":"http://52.177.117.53/static/media/pdf/01_GUARDIANES_APORTA_2020.pdf#toolbar=0",
+        "texto3": "Impreso al estilo rotafolio, el libro muestra a Ana, Clara y Elmo pasando un día en una comunidad como las que abundan a lo largo y ancho de Perú. Incluye preguntas de debate y actividades complementarias.",
+        "n_tip": 25
+    },
+    {
+        "titulo": "Guia de docente ",
+        "texto2": "",
+        "tipo": "Guia de sesiones ",
+        "texto1": "Guia de sesiones del programa Limpios y Felices PERÚ",
+        "seccion": "Sésamo",
+        "video": "",
+        "link":"http://52.177.117.53/static/media/GUIA_final_Aporta_2020.pdf#toolbar=0",
+        "texto3": "",
+        "n_tip": 26
+    },
+    {
+        "titulo": "Sésamo  para Educadores",
+        "texto2": "",
+        "tipo": "Link",
+        "texto1": "¡Nuestros amigos de Sésamo tienen más contenido para seguir desarrollando tus habilidades como aliado por la infancia!",
+        "seccion": "Sésamo",
+        "video": "",
+        "pdf":"",
+        "link":"https://sesamo.com/educadores",
+        "texto3": "",
+        "n_tip": 27
     }
+
 ]
