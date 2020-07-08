@@ -1,3 +1,7 @@
+#icon{
+    display: none!important
+}
+
 .bg-recursos-img {
     background-image: url("../../../../../../images/aprendamos-api/API_2_DESKTOP.png");
     background-repeat: no-repeat;

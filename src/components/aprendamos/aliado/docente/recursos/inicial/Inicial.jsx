@@ -52,6 +52,12 @@ const Inicial = () => {
                             <h2 className="title-btn-inicial">Enseña Perú</h2>
                             <div className="btn-morado-inicial">Recursos para padres</div>
                         </div>
+                        <a href="http://52.177.117.53/static/media/pdf/modelos-culturales.pdf" target="blank" > User guide 
+   
+   {/* <iframe src="http://52.177.117.53/static/media/pdf/modelos-culturales.pdf"/> */}
+  
+   </a>
+  
                     </div>
                 </div>
             </div>

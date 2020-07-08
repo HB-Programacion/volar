@@ -41,7 +41,7 @@
 
 .box-text-modulo h3 {
     font-weight: 600;
-    font-size: 1.4rem
+    font-size: 1.3rem
 }
 
 .icono-modulo-tip {
@@ -93,8 +93,149 @@
     padding: 1rem 1rem;
     margin: -1rem -1rem auto !important;
 }
+/* MODULOSSSSSS */
 
-@media (max-width: 768px) {
+.box-modulos-aliados{
+    margin-top: 7rem;
+    padding-top: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 4rem;
+    font-family: "Questrial";
+}
+
+.box-modulos-textos{
+    padding-left: 3rem!important;
+    padding-right: 3rem!important;
+}
+
+.flecha-abajo-aliado{
+    width: 3%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    margin: auto;
+}
+
+.box-materiales-modulos{
+    padding-left: 2.1rem!important;
+    padding-right: 2.1rem!important;
+    margin-top: 3.5rem
+}
+
+.title-modulos-aliados{
+    color: #EF8B44;
+    font-size: 2.3rem;
+    line-height: 2.3rem;
+    letter-spacing: .018rem;
+    margin-bottom: 1.5rem;
+    -webkit-text-stroke: 1px #EF8B44;
+}
+
+.text-materiales-aliados{
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 2.3rem;
+    letter-spacing: .018rem;
+    -webkit-text-stroke: 1px #2E335E;
+    color:#2E335E;
+    margin-top: 1rem;
+    margin-bottom: 5rem
+
+}
+
+
+.title-materiales-modulos{
+    color:#2E335E;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #2E335E;
+}
+
+.subtitle-materiales-modulos{
+    color:#2E335E;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.7rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem
+}
+
+.btn-modulos-info{
+    display: flex;
+    justify-content: center;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    align-items: center
+    
+}
+
+.btn-infografia{
+    /* width: 4rem;
+    height: 4rem; */
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 1px 2px 2px 1px rgb(151, 152, 155);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%
+
+}
+
+
+.btn-info-text{
+    color: #1A1F46;
+    font-size: 1.1rem;
+    margin-left: 1rem;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: .6rem;
+    line-height: 1.2rem;
+    width: 80%;
+    border-bottom: 1px solid #EF8B44
+    
+}
+
+
+.btn-aprendamos-aliados{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.btn-azul-aprendamos{
+    background: #2E335E;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 25px;
+    border: 1.3px solid #1A1F46;
+    box-shadow: 1px 1px 1px 1px #1A1F46;
+    font-size: 1rem;
+    -webkit-text-stroke: 1px #fff;
+    letter-spacing: .07rem;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.btn-azul-aprendamos:hover{
+    color: #2E335E;
+    background: #fff;
+    -webkit-text-stroke: 1px #2E335E;
+    box-shadow: 1px 1px 1px 1px #1A1F46;
+}
+
+
+@media (max-width: 1024px) {
     .title-modulo {
         font-size: 1.5rem;
         margin-top: 0rem;
@@ -140,4 +281,89 @@
         flex-direction: column;
         width: 90%;
     }
+
+
+
+    /* MODULOSSSS */
+
+    .box-modulos-aliados{
+        margin-top: 6rem;
+        padding-top: 2.5rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        margin-bottom: 2rem;
+    }
+
+    .box-modulos-textos{
+        padding-left: 2rem!important;
+        padding-right: 2rem!important;
+    }
+
+    .title-modulos-aliados{
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .flecha-abajo-aliado{
+        width: 10%;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .text-materiales-aliados{
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem
+    }
+
+    .box-materiales-modulos{
+        padding-left: 1rem!important;
+        padding-right: 1rem!important;
+        margin-top: 2rem
+    }
+
+    .title-materiales-modulos{
+        font-size: 1.1rem;
+        margin-top: 1rem;
+    }
+    .subtitle-materiales-modulos{
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.1rem;
+    }
+    .btn-modulos-info{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-bottom: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .btn-info-text{
+        font-size: .85rem;
+        margin-left: 1rem;
+        line-height: 1rem;
+    }
+    
+
+    .btn-aprendamos-aliados{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-bottom: 3rem
+    }
+    
+
+    .btn-azul-aprendamos{
+        padding: .6rem;
+        border-radius: 25px;
+        border: 1.3px solid #1A1F46;
+        box-shadow: 1px 1px 1px 1px #1A1F46;
+        font-size: .8rem;
+        -webkit-text-stroke: 1px #fff;
+        letter-spacing: .07rem;
+        /* width: 100% */
+    }
+    
+
 }
