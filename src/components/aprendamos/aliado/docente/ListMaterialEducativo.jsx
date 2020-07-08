@@ -51,10 +51,10 @@ const ListMaterialEducativo = ({
           <div className="box-title-listMaterialEducativo show-desktop">
             <h1 className="align-center text-blue">¡Bienvenido!</h1>
             <h1 className="align-center text-blue bold">
-              Conoce los recursos de nuestros socios{" "}
+              Conoce los recursos de nuestros socios
             </h1>
           </div>
-          <div className="list-material-educativo">
+          <div className="container list-material-educativo">
             <div className="row">
               {arraySesamo
                 .filter((item) => item.seccion === "Sésamo")

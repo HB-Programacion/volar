@@ -4631,7 +4631,7 @@ export default [
         "texto1": "Guia de sesiones del programa Limpios y Felices PERÚ",
         "seccion": "Sésamo",
         "video": "",
-        "link":"http://52.177.117.53/static/media/GUIA_final_Aporta_2020.pdf#toolbar=0",
+        "link":"http://52.177.117.53/static/media/pdf/GUIA_final_Aporta_2020.pdf#toolbar=0",
         "texto3": "",
         "n_tip": 26
     },

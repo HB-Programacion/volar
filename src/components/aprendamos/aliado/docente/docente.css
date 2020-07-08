@@ -104,6 +104,7 @@
 .text-blue{
     font-family: "Questrial";
     color: #2e335e;
+    padding: 0.5rem;
 }
 .bold{
     font-weight: bolder;
@@ -114,6 +115,9 @@
         margin-left: 3rem;
         margin-bottom: 5rem;
     
+}
+.container {
+    max-width: 100rem!important;
 }
 .box-text-material-educativo{
     display: flex;
@@ -228,11 +232,32 @@
     }
     .background-list-material-educativo {
         background: url(./../../../../images/aprendamos-api/API_1_MOBILE.png) no-repeat;
-        height: 30rem;
+        height: 35rem;
         background-size: cover;
         -moz-background-size: cover;
         -webkit-background-size: cover;
         -o-background-size: cover;
         padding-top: 5.5rem
       }
+      .text-blue{
+        font-size: 1.2rem;
+    }
+
+    .list-material-educativo{
+            margin-top: -4rem;
+            margin-right: 0rem;
+            margin-left: 0rem;
+            margin-bottom: 5rem;
+        
+    }
+    .box-text-material-educativo{
+
+        margin: 0.5rem 0.5rem 0rem 0.5rem;
+    }
+    .box-text-material-educativo h3 {
+        font-size: 1.2rem;
+    }
+    .box-title-listMaterialEducativo{
+         padding-bottom: 5rem;
+       }
 }
