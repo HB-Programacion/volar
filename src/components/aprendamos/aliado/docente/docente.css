@@ -157,7 +157,7 @@
     font-size: 2.5rem;
     position: absolute;
     color: #7DC7C5;
-    left: 5%;
+    left: 3%;
     /* top: 5%; */
     cursor: pointer
   }
@@ -167,7 +167,7 @@
   
   
   .goBack-docente{
-    top: 15%
+    top: 13%
   }
 
 @media (max-width: 992px) {

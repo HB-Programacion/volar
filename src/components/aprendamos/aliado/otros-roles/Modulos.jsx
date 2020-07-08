@@ -221,7 +221,7 @@ const Modulos = ({ firebaseUser }) => {
                 <div className="caja-boton-rol">
                   <a
                     type="submit"
-                    className="btn-navy-blue font-white mt-3 mb-3 wobble-hor-bottom out-none-button"
+                    className="btn-navy-blue font-white mt-3 mb-3 wobble-hor-bottom out-none-button link"
                     data-dismiss="modal"
                      href="/aprendamos/aliado/modulos/modulo_1"
                   >
