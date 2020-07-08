@@ -1,85 +1,84 @@
-.background-lila{
-    background: #AE96B2;
-    height: 55rem;
+.background-lila {
+  background: #ae96b2;
+  height: 55rem;
 }
 
 .box-title-docente {
-    display: flex;
-      justify-content: center;
-      padding-top: 10rem;
-      background-color: #fff;
-      border-bottom-left-radius: 40px;
-      border-bottom-right-radius: 40px;
-      height: 20rem;
-  }
-
-  .box-btn-docente{
-      width: 80%;
-      margin: auto;
-      margin-top: 7rem;
-      margin-bottom: 3rem;
-  }
-
-.btn-material{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-    color: #EB477A;
-    -webkit-text-stroke: 0.06em #EB477A;
-    letter-spacing: 0.06em;
-    padding:1.8rem 1.8rem 1.8rem 1.8rem;
-    border-radius: 20px;
-    box-shadow: 0 0 9px rgb(172, 171, 171);
-    font-size: 2.2rem;
-    text-align: center;
-    text-decoration:none!important;
-    font-family: 'Questrial';
-    margin: 2rem;
-    margin-top: 4rem
+  display: flex;
+  justify-content: center;
+  padding-top: 10rem;
+  background-color: #fff;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  height: 20rem;
 }
 
-.btn-recursos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-    color: #7DC7C5;
-    -webkit-text-stroke: 0.06em #7DC7C5;
-    letter-spacing: 0.06em;
-    padding: 1.8rem 1.8rem 1.8rem 1.8rem;
-    border-radius: 20px;
-    box-shadow: 0 0 9px rgb(172, 171, 171);
-    font-size: 2.2rem;
-    text-align: center;
-    text-decoration:none!important;
-    font-family: 'Questrial';
-    margin: 2rem;
-    margin-top: 4rem
+.box-btn-docente {
+  width: 80%;
+  margin: auto;
+  margin-top: 7rem;
+  margin-bottom: 3rem;
 }
 
-.btn-material:hover{
-    /* background: rgba(250, 236, 253, 0.541); */
-    box-shadow: 0 0 14px #EB477A;
-}
-.btn-recursos:hover{
-    /* background: rgba(250, 236, 253, 0.541); */
-    box-shadow: 0 0 14px rgb(94, 202, 199);
+.btn-material {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  color: #eb477a;
+  -webkit-text-stroke: 0.06em #eb477a;
+  letter-spacing: 0.06em;
+  padding: 1.8rem 1.8rem 1.8rem 1.8rem;
+  border-radius: 20px;
+  box-shadow: 0 0 9px rgb(172, 171, 171);
+  font-size: 2.2rem;
+  text-align: center;
+  text-decoration: none !important;
+  font-family: "Questrial";
+  margin: 2rem;
+  margin-top: 4rem;
 }
 
-
-.icono-docente{
-    width: 5rem;
-    height: 100%;
+.btn-recursos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  color: #7dc7c5;
+  -webkit-text-stroke: 0.06em #7dc7c5;
+  letter-spacing: 0.06em;
+  padding: 1.8rem 1.8rem 1.8rem 1.8rem;
+  border-radius: 20px;
+  box-shadow: 0 0 9px rgb(172, 171, 171);
+  font-size: 2.2rem;
+  text-align: center;
+  text-decoration: none !important;
+  font-family: "Questrial";
+  margin: 2rem;
+  margin-top: 4rem;
 }
 
-.icono-docente-cuentacuentos{
-    width: 4rem;
-    height: 100%;
+.btn-material:hover {
+  /* background: rgba(250, 236, 253, 0.541); */
+  box-shadow: 0 0 14px #eb477a;
+}
+.btn-recursos:hover {
+  /* background: rgba(250, 236, 253, 0.541); */
+  box-shadow: 0 0 14px rgb(94, 202, 199);
+}
+
+.icono-docente {
+  width: 5rem;
+  height: 100%;
+}
+
+.icono-docente-cuentacuentos {
+  width: 4rem;
+  height: 100%;
 }
 /*Lista de material educativo*/
-.box-title-listMaterialEducativo{
- background: #EB477A;
+.box-title-listMaterialEducativo {
+  background: #eb477a;
   display: flex;
   flex-direction: column;
   padding-top: 8rem;
@@ -94,170 +93,179 @@
   border-bottom-right-radius: 40px;
 }
 
-.box-section-material-educativo:hover{
-    box-shadow:  5px 5px 10px  #EB477A;
-  }
+.box-section-material-educativo:hover {
+  box-shadow: 5px 5px 10px #eb477a;
+}
+
+.align-center {
+  text-align: center;
+}
+.text-blue {
+  font-family: "Questrial";
+  color: #2e335e;
+  padding: 0.5rem;
+}
+.bold {
+  font-weight: bolder;
+}
+.list-material-educativo {
+  margin-top: -6rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
+  margin-bottom: 5rem;
+}
+
+.box-text-material-educativo {
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  font-family: "Questrial";
+  color: #2e335e;
+  margin: 0.5rem 0.5rem 0rem 2rem;
+}
+.box-text-material-educativo h3 {
+  font-weight: 600;
+}
+
+.background-list-material-educativo {
+  background: url(./../../../../images/aprendamos-api/API_1_DESKTOP.png)
+    no-repeat;
+  height: 85rem;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  padding-top: 5.5rem;
+}
+
+.arrowGoback-docente {
+  font-size: 2.5rem;
+  position: absolute;
+  color: #7dc7c5;
+  left: 3%;
+  /* top: 5%; */
+  cursor: pointer;
+}
+.arrowGoback-docente:hover {
+  color: #1a1f46;
+}
+
+.goBack-docente {
+  top: 13%;
+}
+
+.wrapper-link {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.wrapper-link object {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 80%;
+  height: 100%;
+}
+.text-links{
   
-.align-center{
-    text-align: center;
+        padding: 2rem 5rem;
+   
 }
-.text-blue{
-    font-family: "Questrial";
-    color: #2e335e;
-    padding: 0.5rem;
+@media (max-width: 1024px) {
+  .wrapper-link object {
+    width: 100% !important;
+    height: 100%;
+  }
 }
-.bold{
-    font-weight: bolder;
-}
-.list-material-educativo{
-        margin-top: -6rem;
-        margin-right: 3rem;
-        margin-left: 3rem;
-        margin-bottom: 5rem;
-    
-}
-.container {
-    max-width: 100rem!important;
-}
-.box-text-material-educativo{
-    display: flex;
-    flex-direction: column;
-    /* text-align: center; */
-    font-family: "Questrial";
-    color: #2e335e;
-    margin: 0.5rem 0.5rem 0rem 2rem;
-}
-.box-text-material-educativo h3{
-    font-weight: 600;
-}
-.videoWrapper-material-educativo {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-}
-.videoWrapper-material-educativo iframe {
+@media (max-width: 992px) {
+  .background-lila {
+    background: #ae96b2;
+    height: 100%;
+  }
+
+  .box-title-docente {
+    padding-top: 7rem;
+    height: 15rem;
+  }
+
+  .box-btn-docente {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .btn-material {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    margin: 1rem;
+    margin-top: 2rem;
+  }
+  .btn-material h2 {
+    font-size: 1.5rem;
+    -webkit-text-stroke: 1px;
+    letter-spacing: 0.01em;
+  }
+  .btn-recursos {
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    margin: 1rem;
+    margin-top: 2rem;
+  }
+
+  .btn-recursos h2 {
+    font-size: 1.5rem;
+    -webkit-text-stroke: 1px;
+    letter-spacing: 0.01em;
+  }
+  .icono-docente {
+    width: 3.5rem;
+    height: 100%;
+  }
+
+  .icono-docente-cuentacuentos {
+    width: 2.6rem;
+    height: 100%;
+  }
+  .videoWrapper-material-educativo iframe {
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     right: 0;
     margin-left: auto;
     margin-right: auto;
-}
-.background-list-material-educativo {
-    background: url(./../../../../images/aprendamos-api/API_1_DESKTOP.png) no-repeat;
-    height: 58rem;
+  }
+  .background-list-material-educativo {
+    background: url(./../../../../images/aprendamos-api/API_1_MOBILE.png)
+      no-repeat;
+    height: 50rem;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
-    padding-top: 5.5rem
+    padding-top: 5.5rem;
+  }
+  .text-blue {
+    font-size: 1.2rem;
   }
 
-
-.arrowGoback-docente{
-    font-size: 2.5rem;
-    position: absolute;
-    color: #7DC7C5;
-    left: 3%;
-    /* top: 5%; */
-    cursor: pointer
+  .list-material-educativo {
+    margin-top: -4rem;
+    margin-right: 0rem;
+    margin-left: 0rem;
+    margin-bottom: 5rem;
   }
-  .arrowGoback-docente:hover{
-    color: #1A1F46
+  .box-text-material-educativo {
+    margin: 0.5rem 0.5rem 0rem 0.5rem;
   }
+  .box-text-material-educativo h3 {
+    font-size: 1.2rem;
+  }
+  .box-title-listMaterialEducativo {
+    padding-bottom: 5rem;
+  }
+  .text-links{
   
-  
-  .goBack-docente{
-    top: 13%
-  }
+    padding: 2rem 0.5rem;
 
-@media (max-width: 992px) {
-
-    .background-lila{
-        background: #AE96B2;
-        height: 100%;
-    }
-
-    .box-title-docente{
-    padding-top: 7rem;
-    height: 15rem;
-    }
-
-    .box-btn-docente{
-        width: 100%;
-        margin-top: 1rem
-    }
-    .btn-material{
-        padding:1rem .5rem 1rem .5rem;
-        margin: 1rem;
-        margin-top: 2rem
-        
-    }
-    .btn-material h2{
-        font-size: 1.5rem;
-        -webkit-text-stroke: 1px;
-        letter-spacing: 0.01em;
-    }
-    .btn-recursos{
-        padding:1rem .5rem 1rem .5rem;
-        margin: 1rem;
-        margin-top: 2rem
-    }
-
-    .btn-recursos h2{
-        font-size: 1.5rem;
-        -webkit-text-stroke: 1px;
-        letter-spacing: 0.01em;
-    }
-    .icono-docente{
-        width: 3.5rem;
-        height: 100%;
-    }
-
-    .icono-docente-cuentacuentos{
-        width: 2.6rem;
-        height: 100%;
-    }
-    .videoWrapper-material-educativo iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .background-list-material-educativo {
-        background: url(./../../../../images/aprendamos-api/API_1_MOBILE.png) no-repeat;
-        height: 35rem;
-        background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
-        -o-background-size: cover;
-        padding-top: 5.5rem
-      }
-      .text-blue{
-        font-size: 1.2rem;
-    }
-
-    .list-material-educativo{
-            margin-top: -4rem;
-            margin-right: 0rem;
-            margin-left: 0rem;
-            margin-bottom: 5rem;
-        
-    }
-    .box-text-material-educativo{
-
-        margin: 0.5rem 0.5rem 0rem 0.5rem;
-    }
-    .box-text-material-educativo h3 {
-        font-size: 1.2rem;
-    }
-    .box-title-listMaterialEducativo{
-         padding-bottom: 5rem;
-       }
+}
 }

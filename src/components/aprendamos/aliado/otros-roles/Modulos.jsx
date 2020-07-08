@@ -67,7 +67,7 @@ const Modulos = ({ firebaseUser }) => {
         </div>
       </div> }*/}
           {/* {contenidoFirebase && ( */}
-         <div className="container">
+         <div className="container-fluid">
          <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
               <btn className="link" onClick={handleShowModulo1}>

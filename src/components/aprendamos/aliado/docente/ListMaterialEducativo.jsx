@@ -40,13 +40,6 @@ const ListMaterialEducativo = ({
   return (
     <div>
       <>
-        <i
-          onClick={() => {
-            history.goBack();
-          }}
-          className="fas fa-chevron-left arrowGoback goBack-area"
-          aria-hidden="true"
-        ></i>
         <div>
           <div className="box-title-listMaterialEducativo show-desktop">
             <h1 className="align-center text-blue">¡Bienvenido!</h1>
@@ -54,8 +47,16 @@ const ListMaterialEducativo = ({
               Conoce los recursos de nuestros socios
             </h1>
           </div>
-          <div className="container list-material-educativo">
-            <div className="row">
+          <div className="list-material-educativo">
+          <i
+          onClick={() => {
+            history.goBack();
+          }}
+          className="fas fa-chevron-left arrowGoback goBack-area"
+          aria-hidden="true"
+        ></i>
+           <div className="container-fluid">
+           <div className="row">
               {arraySesamo
                 .filter((item) => item.seccion === "Sésamo")
                 .map((item) => (
@@ -87,9 +88,8 @@ const ListMaterialEducativo = ({
                     ) : (
                       <a
                         className="link"
-                        href={item.link}
+                        href={`/aprendamos/aliado/docente/material-educativo/individual`}
                         onClick={() => mandarNumberTipOficial(item.n_tip)}
-                        target="_blank"
                       >
                         <div className="box-section box-section-material-educativo">
                           <img
@@ -109,6 +109,7 @@ const ListMaterialEducativo = ({
                   </div>
                 ))}
             </div>
+           </div>
           </div>
         </div>
       </>
