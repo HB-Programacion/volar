@@ -761,7 +761,8 @@ export default [
         "icono": "",
         "seccion": "Rutina",
         "video": "https://www.youtube.com/embed/Sd7cTxwKxxE?rel=0&autoplay=1",
-        "n_tip": 10
+        "n_tip": 10,
+        "titulo": "Descubriendo "
     },
     {
         // rutina_edad_0_tip_4": {
@@ -1006,17 +1007,17 @@ export default [
 
     },
     {
-        // "nutricionSalud_edad_0_tip_10": {
-        "texto1B": " Aprovechalo!",
-        "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/lactancia_Mesa%20de%20trabajo%201.svg",
-        "seccion": "Salud y Nutrición",
+        // nutricionSalud_edad_0_tip_10": {
+        "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 10,
+        "texto1A": " Dar de lactar reduce el riesgo de cáncer de mama en la madre. Amamantar es cuidarte mientras  cuidas a ",
         "edad": 0,
+        "texto1B": " Aprovechalo!",
         "titulo": "Sabías que...",
-        "texto1A": " Dar de lactar reduce el riesgo de cáncer de mama en la madre. Amamantar es cuidarte mientras  cuidas a "
-        
+        "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
+        "icono":  "http://52.177.117.53/static/media/icono-blanco/0-1/lactancia_Mesa%20de%20trabajo%201.svg",
+
     },
     {
         // "nutricionSalud_edad_0_tip_2": {
@@ -1071,9 +1072,9 @@ export default [
     },
     {
         // "nutricionSalud_edad_0_tip_6": {
-        "texto1A": " Cuando ",
+        "texto1A": "Los bebés son muy frágiles. Mira mucho a ",
         "edad": 0,
-        "texto1B": " llora no intenta manipularte. El llanto es la única forma que tiene para comunicar lo que necesita. ¡Consuélalo al momento! ",
+        "texto1B": " y conoce su llanto y gestos. Si ves algo distinto, podría estar enfermo. ¡Llévalo al centro de salud!",
         "titulo": "Cálmalo",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
         "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/salud_Mesa%20de%20trabajo%201.svg",
@@ -1704,7 +1705,7 @@ export default [
         "texto1B": " corra, salte y baile, cuidándolo siempre",
         "titulo": "Momentos de diversión",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "file:///C:/Users/sony/Desktop/static/media/icono-blanco/1-2/ni%C3%B1a_saltando_Mesa%20de%20trabajo%201.svg",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/ni%C3%B1a_saltando_Mesa%20de%20trabajo%201.svg",
         "seccion": "Rutina",
         "video": ""
 
@@ -1756,7 +1757,7 @@ export default [
         "texto1A": " Cuando ",
         "edad": 1,
         "texto1B": " vaya a dormir asegúrate de que esté cómodo y que no hayan ruidos. Mira cómo aquí:",
-        "iconos": "",
+        "icono": "",
         "titulo": "Fin del día",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!"
 
@@ -1790,7 +1791,7 @@ export default [
     {
         // "socioemocional_edad_1_tip_10": {
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "file:///C:/Users/sony/Desktop/static/media/icono-blanco/1-2/mama_con_bebe_Mesa%20de%20trabajo%201.svg",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/mama_con_bebe_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 10,
@@ -1900,7 +1901,7 @@ export default [
         "texto1B":  " Dile cuánto lo amas a cada instante. Con tu amor desarrollará un vínculo especial llamado \"apego seguro\". Muy importante para el desarrollo de sus habilidades socioemocionales.",
         "titulo": "Dale seguridad",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "file:///C:/Users/sony/Desktop/static/media/icono-blanco/1-2/mama_con_bebe_Mesa%20de%20trabajo%201.svg"
+        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/mama_con_bebe_Mesa%20de%20trabajo%201.svg"
 
     },
 
@@ -2086,7 +2087,7 @@ export default [
         "texto1B": " ¡Dale mucho amor y respétalo!",
         "titulo": "Cariño ante todo",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/pu%C2%A7o_prohibido_Mesa%20de%20trabajo%201.svg"
+        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/icono-blanco/2-3/puno_prohibido_Mesa%20de%20trabajo%201.svg"
 
     },
     {
@@ -2128,7 +2129,7 @@ export default [
     },
     {
         // "socioemocional_edad_2_tip_8": {
-        "seccion": "socioemocional",
+        "seccion": "Socioemocional",
         "video": "",
         "n_tip": 8,
         "texto1A": "",
@@ -2138,11 +2139,12 @@ export default [
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "http://52.177.117.5/static/media/icono-blanco/2-3/mama_con_bebe_Mesa%20de%20trabajo%201.svg"
     },
+   
     {
         // socioemocional_edad_2_tip_9": {
         "titulo": "Ellos te entienden",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/pu%C2%A7o_prohibido_Mesa%20de%20trabajo%201.svg",
+        "icono": "http://52.177.117.5/static/media/icono-blanco/2-3/icono-blanco/2-3/puno_prohibido_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 9,
@@ -2175,9 +2177,10 @@ export default [
         "video": "https://www.youtube.com/embed/yEuuvoi1BCM?rel=0&autoplay=1",
         "n_tip": 10
     },
+
     {
         // "rutina_edad_2_tip_2": {
-        "seccion": "rutina",
+        "seccion": "Rutina",
         "video": "",
         "n_tip": 2,
         "texto1A": " ha crecido e irá aprendiendo a hacer sus cosas solo poco a poco. Así se sentirá más seguro. A esto le llamamos \"autonomía\".",
@@ -2535,7 +2538,7 @@ export default [
         "texto1B": " Cuando te lavas las manos matas los gérmenes que te hacen contraer enfermedades diarreicas. ¡Házlo siempre! ¡Cuidandote tú, cuidas a tus hijas e hijos!",
         "titulo": "Que sea una costumbre",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "https://www.youtube.com/embed/up9tzrav86Y?rel=0&autoplay=1",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": ""
     },
@@ -2670,7 +2673,7 @@ export default [
         "texto1A": " La violencia como los golpes o los gritos causa mucho estrés y afecta el desarrollo del cerebro de ",
         "texto1B": " ¡Dale mucho amor y respetalo!",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/pu%C2%A7o_prohibido_Mesa%20de%20trabajo%201.svg"
+        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/icono-blanco/2-3/puno_prohibido_Mesa%20de%20trabajo%201.svg"
     },
     // "socioemocional_edad_3_tip_2": 
     {
@@ -2712,7 +2715,7 @@ export default [
     {
         "titulo": "El poder de hablar",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/pu%C2%A7o_prohibido_Mesa%20de%20trabajo%201.svg",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/icono-blanco/2-3/puno_prohibido_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 5,
@@ -2955,7 +2958,7 @@ export default [
         "texto1B": " Jueguen a quedarse quietos como una estatua. Invita a todos en el hogar a jugar para hacerlo mucho más divertido. Empiecen todos parados en 1 pie o sin reírse. ¡Vayan cambiando las reglas! Así lo ayudas a concentrarse y autorregularse. ",
         "titulo": "Respeto las reglas",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/ni%C2%A7o_ni%C2%A7a_feliz_Mesa%20de%20trabajo%201.svg",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/niño_niña_feliz_Mesa%20de%20trabajo%201.svg",
         "seccion": "Juego",
         "video": "",
         "n_tip": "5"
@@ -3114,7 +3117,7 @@ export default [
         "texto1B": " siéntale en un espacio seguro y háblale mientras lo ayudas a comer. ¡Disfruten juntos! Estas pequeñas interacciones van moldeando su cerebro. ",
         "titulo": "Momentos juntos",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.5/static/media/icono-blanco/3-4/plato_de_comida_Mesa%20de%20trabajo%201.svg"
+        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/plato_de_comida_Mesa%20de%20trabajo%201.svg"
     },
     // "nutricionSalud_edad_3_tip_9": 
     {
@@ -3264,7 +3267,7 @@ export default [
     // "socioemocional_edad_4_tip_10": 
     {
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/pu%C3%B1o_prohibido_Mesa%20de%20trabajo%201.svg",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/icono-blanco/2-3/puno_prohibido_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 10,
@@ -3332,7 +3335,7 @@ export default [
         "texto1B": " no hará que deje de portarse mal. Solo lo hará más dependiente. ¡No lo castigues! Promueve su autonomía, ayudándole a entender sus emociones.",
         "titulo": "Hablando nos comprendemos",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/pu%C3%B1o_prohibido_Mesa%20de%20trabajo%201.svg"
+        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/icono-blanco/2-3/puno_prohibido_Mesa%20de%20trabajo%201.svg"
     },
     // "socioemocional_edad_4_tip_7": 
     {
@@ -3903,7 +3906,7 @@ export default [
         "texto1B": "¡Dale mucho amor y respétalo!",
         "titulo": "Cariño mutuo",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/pu%C3%B1o_prohibido_Mesa%20de%20trabajo%201.svg"
+        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/icono-blanco/2-3/puno_prohibido_Mesa%20de%20trabajo%201.svg"
     },
     // "socioemocional_edad_5_tip_4": 
     {
@@ -3912,7 +3915,7 @@ export default [
         "texto1B": " no hará que deje de portarse mal. Solo lo hará más dependiente. ¡No lo castigues! Promueve su autonomía, ayudándole a entender sus emociones.",
         "titulo": "Sentimientos",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/pu%C3%B1o_prohibido_Mesa%20de%20trabajo%201.svg",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/icono-blanco/2-3/puno_prohibido_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 4
