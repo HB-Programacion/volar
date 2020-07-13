@@ -185,7 +185,7 @@ export default [
         seccion: "Socioemocional",
         edad: -1,
         n_tip: 6,
-        icono: "http://52.177.117.53/build/static/media/icono-blanco/GESTACION/cancion_Mesa%20de%20trabajo%201.svg",
+        icono: "http://52.177.117.53/static/media/icono-blanco/GESTACION/cancion_Mesa%20de%20trabajo%201.svg",
         texto1A: "",
         texto1B: " Es importante que el bebé sienta tu presencia y la de tu pareja o familia, tocando la barriguita, acariciando o cantando, siempre que tú te sientas cómoda. Esta comunicación fortalecerá el bienestar emocional de tu bebé.",
         texto2: "¡Tú puedes ayudarlos a crecer mejor!",
@@ -233,8 +233,8 @@ export default [
         seccion: "Socioemocional",
         edad: -1,
         n_tip: 10,
-        icono: "",
-        texto1A: "http://52.177.117.53/static/media/icono-blanco/GESTACION/thumbs_up_Mesa%20de%20trabajo%201.svg",
+        icono: "http://52.177.117.53/static/media/icono-blanco/GESTACION/thumbs_up_Mesa%20de%20trabajo%201.svg",
+        texto1A: "",
         texto1B: ' Si la fecha de parto está cerca, te recomendamos practicar con tu pareja o un familiar cercano señales no verbales para comunicarse. Por ejemplo, puedes usar el dedo pulgar para indicar que "sí" o que "no". Así podrás comunicarle lo que quieres o sientes de manera más rápida y sin generar mucho estrés.',
         texto2: "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         titulo: "Anticípate",
@@ -281,7 +281,7 @@ export default [
         seccion: 'Rutina',
         edad: -1,
         n_tip: 4,
-        icono: ' http://52.177.117.53/build/static/media/icono-blanco/GESTACION/cancion_corazon_Mesa%20de%20trabajo%201.svg',
+        icono: ' http://52.177.117.53/static/media/icono-blanco/GESTACION/cancion_corazon_Mesa%20de%20trabajo%201.svg',
         texto1A: '',
         texto1B: ' Cántale una canción a tu bebé todas las mañanas y noches! Cuando nazca puede gustarle escuchar esa canción y fortalecerá ese vínculo especial entre tú y él.',
         texto2: '¡Tú puedes ayudarlos a crecer mejor!',
@@ -317,7 +317,7 @@ export default [
         "seccion": "Rutina",
         "edad": -1,
         "n_tip": 7,
-        "icono": "",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/GESTACION/niño_niña_feliz_Mesa%20de%20trabajo%201.svg",
         "texto1A": "",
         "texto1B": "¿Sabías que los niños que reciben más cariño y atención crecen más seguros y sociales? ¡Dale mucho amor a tu bebé!",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
@@ -769,7 +769,7 @@ export default [
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "",
         "seccion": "Rutina",
-        "Video": "https://www.youtube.com/embed/f2QQzTQ1tqs?rel=0&autoplay=1",
+        "video": "https://www.youtube.com/embed/f2QQzTQ1tqs?rel=0&autoplay=1",
         "n_tip": 4,
         "texto1A": " no quiere dormir a su hora? ¡Cuéntale un cuento! Si no tienes uno, puedes inventarlo con lo que puedan ver en el cuarto. Mira cómo hacerlo aquí:",
         "edad": 0,
@@ -908,7 +908,7 @@ export default [
         "texto1B": " cada vez que lo ensucie. Préstale atención para saber cuando se haga y ten pañales a la mano. ¡Muy bien!",
         "titulo": "Limpios y felices",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/0-1/bebe_llorando_Mesa%20de%20trabajo%201.svg",
+        "icono": " http://52.177.117.53/static/media/icono-blanco/0-1/pañal_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 4
@@ -1704,7 +1704,7 @@ export default [
         "texto1B": " corra, salte y baile, cuidándolo siempre",
         "titulo": "Momentos de diversión",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "file:///C:/Users/sony/Desktop/build/static/media/icono-blanco/1-2/ni%C3%B1a_saltando_Mesa%20de%20trabajo%201.svg",
+        "icono": "file:///C:/Users/sony/Desktop/static/media/icono-blanco/1-2/ni%C3%B1a_saltando_Mesa%20de%20trabajo%201.svg",
         "seccion": "Rutina",
         "video": ""
 
@@ -1790,7 +1790,7 @@ export default [
     {
         // "socioemocional_edad_1_tip_10": {
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "file:///C:/Users/sony/Desktop/build/static/media/icono-blanco/1-2/mama_con_bebe_Mesa%20de%20trabajo%201.svg",
+        "icono": "file:///C:/Users/sony/Desktop/static/media/icono-blanco/1-2/mama_con_bebe_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 10,
@@ -1900,7 +1900,7 @@ export default [
         "texto1B":  " Dile cuánto lo amas a cada instante. Con tu amor desarrollará un vínculo especial llamado \"apego seguro\". Muy importante para el desarrollo de sus habilidades socioemocionales.",
         "titulo": "Dale seguridad",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "file:///C:/Users/sony/Desktop/build/static/media/icono-blanco/1-2/mama_con_bebe_Mesa%20de%20trabajo%201.svg"
+        "icono": "file:///C:/Users/sony/Desktop/static/media/icono-blanco/1-2/mama_con_bebe_Mesa%20de%20trabajo%201.svg"
 
     },
 
