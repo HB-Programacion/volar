@@ -1,6 +1,7 @@
 .background-tips-higiene {
     background: url(./../../../../images/areas-img/tips_higiene.png) no-repeat;
-    height: 58rem;
+    /* height: 58rem; */
+    height: 100%;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -10,7 +11,8 @@
 
   .background-tips-socioemocional {
     background: url(./../../../../images/areas-img/tips_socioemocional.png) no-repeat;
-    height: 58rem;
+    /* height: 58rem; */
+    height: 100%;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -20,7 +22,8 @@
 
   .background-tips-rutina {
     background: url(./../../../../images/areas-img/tips_rutina.png) no-repeat;
-    height: 58rem;
+    /* height: 58rem; */
+    height: 100%;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -30,7 +33,8 @@
 
   .background-tips-juego {
     background: url(./../../../../images/areas-img/tips_juego.png) no-repeat;
-    height: 58rem;
+    /* height: 58rem; */
+    height: 100%;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -41,7 +45,8 @@
   
   .background-tips-nutricion {
     background: url(./../../../../images/areas-img/tips_nutricion.png) no-repeat;
-    height: 58rem;
+    /* height: 58rem; */
+    height: 100%;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -51,7 +56,8 @@
 
   .background-tips-sesamo {
     background: url(./../../../../images/areas-img/tips_sesamo.png) no-repeat;
-    height: 58rem;
+    /* height: 58rem; */
+    height: 100%;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -79,7 +85,9 @@
 }
 
 .tips-margin-top{
-margin: 2rem 3rem 2rem 3rem !important;
+/* margin: 2rem 3rem 2rem 3rem !important; */
+margin-top: 2rem;
+padding-bottom: 4rem
 }
 
 .text-tips{
@@ -186,7 +194,7 @@ margin: 2rem 3rem 2rem 3rem !important;
     height: 100%;
   }
 .iconos-tips-blanco{
-  width: 30%;
+  width: 20%;
   margin: auto;
   display: block
 }
@@ -203,7 +211,7 @@ margin: 2rem 3rem 2rem 3rem !important;
   @media (max-width: 768px) {
     .background-tips-higiene {
         background: url(./../../../../images/areas-img/tips-higiene-mobile.png) no-repeat;
-        height: 40rem;
+        /* height: 40rem; */
         background-size: cover;
         -moz-background-size: cover;
         -webkit-background-size: cover;
@@ -241,7 +249,9 @@ margin: 2rem 3rem 2rem 3rem !important;
     }
     
     .tips-margin-top{
-    margin: 0.5rem 0.5rem 0.5rem 0.5rem !important;
+    /* margin: 0.5rem 0.5rem 0.5rem 0.5rem !important; */
+    margin-top: 0.5rem;
+    padding-bottom: 3rem;
     }
     
     .text-tips{
@@ -282,7 +292,7 @@ margin: 2rem 3rem 2rem 3rem !important;
     
     .background-tips-socioemocional {
         background: url(./../../../../images/areas-img/tips-socioemocional-mobile.png) no-repeat;
-        height: 40rem;
+        /* height: 40rem; */
         background-size: cover;
         -moz-background-size: cover;
         -webkit-background-size: cover;
@@ -304,7 +314,7 @@ margin: 2rem 3rem 2rem 3rem !important;
 
     .background-tips-rutina {
         background: url(./../../../../images/areas-img/tips-rutina-mobile.png) no-repeat;
-        height: 40rem;
+        /* height: 40rem; */
         background-size: cover;
         -moz-background-size: cover;
         -webkit-background-size: cover;
@@ -314,7 +324,7 @@ margin: 2rem 3rem 2rem 3rem !important;
 
       .background-tips-sesamo {
         background: url(./../../../../images/areas-img/tips-sesamo-mobile.png) no-repeat;
-        height: 40rem;
+        /* height: 40rem; */
         background-size: cover;
         -moz-background-size: cover;
         -webkit-background-size: cover;
