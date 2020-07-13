@@ -60,12 +60,12 @@ const ListMaterialEducativo = ({
               {arraySesamo
                 .filter((item) => item.seccion === "Sésamo")
                 .map((item) => (
-                  <div
+                 
+                   item.tipo === "Video Educativo" || item.tipo ==="Canción" ? (
+                    <div
                     key={item.id}
                     className="col-sm-12 col-md-12 col-lg-4 col-xl-4"
                   >
-                    {item.tipo === "Video Educativo" ||
-                    item.tipo === "Canción" ? (
                       <a
                         className="link"
                         href={`/aprendamos/aliado/docente/material-educativo/individual`}
@@ -85,28 +85,37 @@ const ListMaterialEducativo = ({
                           </div>
                         </div>
                       </a>
-                    ) : (
-                      <a
-                        className="link"
-                        href={`/aprendamos/aliado/docente/material-educativo/individual`}
-                        onClick={() => mandarNumberTipOficial(item.n_tip)}
-                      >
-                        <div className="box-section box-section-material-educativo">
-                          <img
-                            src={focoRosado}
-                            className="icono-video-tip"
-                            alt="icono de tip"
-                          />
-                          <div className="box-text-material-educativo">
-                            <h3>{item.titulo}</h3>
-                            <h5 className="text-video-tip">
-                              N° {item.n_tip} {item.tipo}
-                            </h5>
-                          </div>
-                        </div>
-                      </a>
-                    )}
+                    
                   </div>
+                   ): (
+                    <div
+                    key={item.id}
+                    className="col-sm-12 col-md-12 col-lg-4 col-xl-4"
+                  >
+                      <a
+                        className="link"
+                        href={item.link}
+                        target="_blank"
+
+                      >
+                        <div className="box-section box-section-material-educativo">
+                          <img
+                            src={focoRosado}
+                            className="icono-video-tip"
+                            alt="icono de tip"
+                          />
+                          <div className="box-text-material-educativo">
+                            <h3>{item.titulo}</h3>
+                            <h5 className="text-video-tip">
+                              N° {item.n_tip} {item.tipo}
+                            </h5>
+                          </div>
+                        </div>
+                      </a>
+                    
+                  </div>
+                   )
+                 
                 ))}
             </div>
            </div>

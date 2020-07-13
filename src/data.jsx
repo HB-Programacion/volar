@@ -4609,7 +4609,7 @@ export default [
         "texto1": "Clara y Elmo son “superagentes saludables”, que ayudan a sus amigas y amigos a estar más sanos y felices.",
         "seccion": "Sésamo",
         "video": "",
-        "link":"http://52.177.117.53/static/media/pdf/01_GÉRMENES_APORTA_2020.pdf#toolbar=0",
+        "link":"https://sesamo.com/educadores",
         "texto3": "",
         "n_tip": 24
     },
@@ -4620,7 +4620,7 @@ export default [
         "texto1": "Clara y Elmo aprenden a cuidar el agua y consumirla con responsabilidad. ",
         "seccion": "Sésamo",
         "video": "",
-        "link":"http://52.177.117.53/static/media/pdf/01_GUARDIANES_APORTA_2020.pdf#toolbar=0",
+        "link":"https://sesamo.com/educadores",
         "texto3": "Impreso al estilo rotafolio, el libro muestra a Ana, Clara y Elmo pasando un día en una comunidad como las que abundan a lo largo y ancho de Perú. Incluye preguntas de debate y actividades complementarias.",
         "n_tip": 25
     },
@@ -4631,7 +4631,7 @@ export default [
         "texto1": "Guia de sesiones del programa Limpios y Felices PERÚ",
         "seccion": "Sésamo",
         "video": "",
-        "link":"http://52.177.117.53/static/media/pdf/GUIA_final_Aporta_2020.pdf#toolbar=0",
+        "link":"https://sesamo.com/educadores",
         "texto3": "",
         "n_tip": 26
     },

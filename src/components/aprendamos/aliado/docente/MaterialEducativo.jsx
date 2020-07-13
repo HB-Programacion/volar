@@ -25,9 +25,6 @@ const MaterialEducativo = () => {
                   item.n_tip == localStorage.getItem("localNumberTip")
               )
               .map((item) => (
-                
-                item.tipo === "Video Educativo" ||
-                item.tipo === "Canción" ? 
                   <div className="">
                   <div className="row justify-content-center h-100 sin-margin-row">
                     <h1 className="tittle-tips"> {item.titulo}</h1>
@@ -61,41 +58,7 @@ const MaterialEducativo = () => {
                       </div>
                     </div>
                   </div>
-                </div>:  <div className="">
-                  <div className="row justify-content-center h-100 sin-margin-row">
-                    <h1 className="tittle-tips"> {item.titulo}</h1>
-                  </div>
-                  <div className="row justify-content-center  h-100 sin-margin-row">
-                    <h3 className="tips-numbers"> {item.tipo}</h3>
-                  </div>
-                  <div class="text-links">
-                        <p class="text-tips-light">{item.texto1}</p>
-                        <p class="text-tips-light">{item.texto2}</p>
-                        <p class="text-tips-light">{item.texto3}</p>
-                  </div>
-                  <div className="row tips-margin-top sin-margin-row">
-                    <div className="col-12">
-                    <div className="wrapper-link show-desktop">
-                      
-                    <object
-                      data={item.link}
-                      width="100%" height="700"
-                    >
-                    </object>
-                  </div>
-                  <div className="wrapper-link hide-desktop">
-                      
-                      <object
-                        data={item.link}
-                        width="350" height="700"
-                      >
-                      </object>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-                  
-                
+                </div>       
               ))}
           </>
         </div>
