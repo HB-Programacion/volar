@@ -2087,7 +2087,7 @@ export default [
         "texto1B": " ¡Dale mucho amor y respétalo!",
         "titulo": "Cariño ante todo",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/icono-blanco/2-3/puno_prohibido_Mesa%20de%20trabajo%201.svg"
+        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/puño_prohibido_Mesa%20de%20trabajo%201.svg"
 
     },
     {
@@ -2144,7 +2144,7 @@ export default [
         // socioemocional_edad_2_tip_9": {
         "titulo": "Ellos te entienden",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.5/static/media/icono-blanco/2-3/icono-blanco/2-3/puno_prohibido_Mesa%20de%20trabajo%201.svg",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/puño_prohibido_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 9,
@@ -2673,7 +2673,7 @@ export default [
         "texto1A": " La violencia como los golpes o los gritos causa mucho estrés y afecta el desarrollo del cerebro de ",
         "texto1B": " ¡Dale mucho amor y respetalo!",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/icono-blanco/2-3/puno_prohibido_Mesa%20de%20trabajo%201.svg"
+        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/puño_prohibido_Mesa%20de%20trabajo%201.svg"
     },
     // "socioemocional_edad_3_tip_2": 
     {
@@ -2715,7 +2715,7 @@ export default [
     {
         "titulo": "El poder de hablar",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/icono-blanco/2-3/puno_prohibido_Mesa%20de%20trabajo%201.svg",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/puño_prohibido_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 5,
@@ -3162,7 +3162,7 @@ export default [
         "texto1B": " El agua es muy valiosa y tenemos que cuidarla. Guárdala en envases limpios con tapa para evitar que se contamine. ¡Sigue asi!",
         "titulo": "Es vital",
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
-        "icono": "",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/envase_agua_tapada_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 2
@@ -3186,7 +3186,7 @@ export default [
         "texto1B": " ¡Suma el lavado de manos a tu rutina diaria!",
         "titulo": "Cuidado",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 4
@@ -3232,7 +3232,7 @@ export default [
         "texto1B": " Cuando te lavas las manos matas los gérmenes que te hacen contraer enfermedades diarreicas. ¡Házlo siempre! ¡Cuidandote tú, cuidas a tus hijas e hijos!",
         "titulo": "Fuera los gérmenes",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/cepillo_dental_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 8,
@@ -3267,7 +3267,7 @@ export default [
     // "socioemocional_edad_4_tip_10": 
     {
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/icono-blanco/2-3/puno_prohibido_Mesa%20de%20trabajo%201.svg",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/puño_prohibido_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 10,
@@ -3335,7 +3335,7 @@ export default [
         "texto1B": " no hará que deje de portarse mal. Solo lo hará más dependiente. ¡No lo castigues! Promueve su autonomía, ayudándole a entender sus emociones.",
         "titulo": "Hablando nos comprendemos",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/icono-blanco/2-3/puno_prohibido_Mesa%20de%20trabajo%201.svg"
+        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/puño_prohibido_Mesa%20de%20trabajo%201.svg"
     },
     // "socioemocional_edad_4_tip_7": 
     {
@@ -3345,7 +3345,7 @@ export default [
         "texto1B": "",
         "titulo": "Ellos te entienden",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/corazon_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": ""
     },
@@ -3620,7 +3620,7 @@ export default [
         // " nutricionSalud_edad_4_tip_1": {
         "titulo": "Siempre interactúen ",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/plato_de_comida_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": "1",
@@ -3672,13 +3672,13 @@ export default [
         "texto1B": " Los alimentos amarillos y naranjas son buenos para el corazón, los ojos y ayudan a combatir gérmenes. Naranja, mandarina, plátano y más!",
         "titulo": "De distintos colores",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/naranja_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": ""
     },
     // "nutricionSalud_edad_4_tip_5": 
     {
-        "icono": "",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/centro_de_salud_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 5,
@@ -3819,7 +3819,7 @@ export default [
         "texto1B": "¡Suma el lavado de manos a tu rutina diaria!",
         "titulo": "Sana costumbre",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": ""
+        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/lavado_de_mano_Mesa%20de%20trabajo%201.svg"
     },
     // "higieneAguaSegura_edad_5_tip_7": 
     {
@@ -3906,7 +3906,7 @@ export default [
         "texto1B": "¡Dale mucho amor y respétalo!",
         "titulo": "Cariño mutuo",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/icono-blanco/2-3/puno_prohibido_Mesa%20de%20trabajo%201.svg"
+        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/puño_prohibido_Mesa%20de%20trabajo%201.svg"
     },
     // "socioemocional_edad_5_tip_4": 
     {
@@ -3915,7 +3915,7 @@ export default [
         "texto1B": " no hará que deje de portarse mal. Solo lo hará más dependiente. ¡No lo castigues! Promueve su autonomía, ayudándole a entender sus emociones.",
         "titulo": "Sentimientos",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/icono-blanco/2-3/puno_prohibido_Mesa%20de%20trabajo%201.svg",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/puño_prohibido_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 4
@@ -4056,7 +4056,7 @@ export default [
     // "rutina_edad_5_tip_6": 
     {
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
         "seccion": "Rutina",
         "video": "",
         "n_tip": 6,
@@ -4230,7 +4230,7 @@ export default [
         "texto1B": " no quiere comer cosas nuevas, prueba mezclarlo con alimentos que le gusten. Por ejemplo, si le gusta el huevo sancochado, puedes mezclar un poco en un platito de arverjitas. ¡Y listo! ",
         "titulo": "Busca soluciones creativas",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/plato_de_comida_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 1
@@ -4242,7 +4242,7 @@ export default [
         "texto1B": " siéntale en un espacio seguro y háblale mientras lo ayudas a comer. ¡Disfruten juntos! Estas pequeñas interacciones van moldeando su cerebro. ",
         "titulo": "Momentos felices",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/plato_de_comida_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 10
@@ -4287,7 +4287,7 @@ export default [
     {
         "titulo": "Sabías que...",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "",
+        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/plato_de_comida_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 5,
