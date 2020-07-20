@@ -37,8 +37,11 @@
     margin-bottom: 2rem;
     margin-top: 2rem;
     padding-left: 2rem;
-    padding-right: 2rem
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
 }
+
 
 .title-btn-secundaria {
     color: #2E335E;
@@ -99,7 +102,7 @@
 
 
 .title-none-secundaria{
-    margin-top: 3.5rem;
+    margin-top: 1.5rem;
     font-size: .1rem;
     color: none;
     -webkit-text-fill-color: transparent;

@@ -1,162 +1,156 @@
-#icon{
-    display: none!important
+#icon {
+  display: none !important;
 }
 
 .bg-recursos-img {
-    background-image: url("../../../../../../images/aprendamos-api/API_2_DESKTOP.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    font-family: 'Questrial';
+  background-image: url("../../../../../../images/aprendamos-api/API_2_DESKTOP.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  font-family: "Questrial";
 }
 
-
 .box-title-inicial {
-    padding-top: 10rem;
-    text-align: center
+  padding-top: 10rem;
+  text-align: center;
 }
 
 .img-inicial {
-    width: 6rem;
-    height: 100%;
-    display: block;
-    margin: auto;
-    margin-bottom: 1rem
+  width: 6rem;
+  height: 100%;
+  display: block;
+  margin: auto;
+  margin-bottom: 1rem;
 }
 
 .title-inicial {
-    color: #AE96B2;
-    font-size: 2.4rem;
-    letter-spacing: .03rem;
-    -webkit-text-stroke: 0.04em #AE96B2;
+  color: #ae96b2;
+  font-size: 2.4rem;
+  letter-spacing: 0.03rem;
+  -webkit-text-stroke: 0.04em #ae96b2;
 }
 
 .box-btn-inicial {
-    margin-top: 1rem;
-
+  margin-top: 1rem;
 }
 
 .btn-inicial {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .title-btn-inicial {
-    color: #2E335E;
-    -webkit-text-stroke: 0.04em #2E335E;
-    font-size: 1.5rem;
-    letter-spacing: .03rem;
+  color: #2e335e;
+  -webkit-text-stroke: 0.04em #2e335e;
+  font-size: 1.5rem;
+  letter-spacing: 0.03rem;
 }
 
 .btn-morado-inicial {
-    padding: 2rem;
-    background: #AE96B2;
-    color: #fff;
-    text-align: center;
-    margin-top: 1.5rem;
-    border-radius: 15px;
-    box-shadow: 0 0 8px rgba(172, 171, 171, 0.966);
-    font-size: 1.3rem;
-    -webkit-text-stroke: 0.04em #fff;
-    letter-spacing: .03rem;
+  padding: 2rem;
+  background: #ae96b2;
+  color: #fff;
+  text-align: center;
+  margin-top: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 0 8px rgba(172, 171, 171, 0.966);
+  font-size: 1.3rem;
+  -webkit-text-stroke: 0.04em #fff;
+  letter-spacing: 0.03rem;
 }
 
-
-.btn-morado-inicial:hover{
-    background: #fff;
-    color: #AE96B2;
-    -webkit-text-stroke:#AE96B2;
+.btn-morado-inicial:hover {
+  background: #fff;
+  color: #ae96b2;
+  -webkit-text-stroke: #ae96b2;
 }
 
 .btn-blanco-inicial {
-    padding: 2rem;
-    background: #fff;
-    color: #AE96B2;
-    text-align: center;
-    margin-top: 1.5rem;
-    border-radius: 15px;
-    box-shadow: 0 0 9px rgba(172, 171, 171, 0.966);
-    font-size: 1.3rem;
-    -webkit-text-stroke: 0.04em #AE96B2;
-    letter-spacing: .03rem;
+  padding: 2rem;
+  background: #fff;
+  color: #ae96b2;
+  text-align: center;
+  margin-top: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 0 9px rgba(172, 171, 171, 0.966);
+  font-size: 1.3rem;
+  -webkit-text-stroke: 0.04em #ae96b2;
+  letter-spacing: 0.03rem;
 }
 
-.btn-blanco-inicial:hover{
-    background: #AE96B2;
-    color: #fff;
-    -webkit-text-stroke:#fff;
+.btn-blanco-inicial:hover {
+  background: #ae96b2;
+  color: #fff;
+  -webkit-text-stroke: #fff;
 }
-
 
 .interline-btn {
-    line-height: 1.4rem
+  line-height: 1.4rem;
 }
 
-.btn-compartir-inicial{
-    position: relative;
-    top: -2rem
+.btn-compartir-inicial {
+  position: relative;
+  top: -2rem;
 }
-
 
 @media (max-width: 768px) {
+  .bg-recursos-img {
+    background-image: url("../../../../../../images/aprendamos-api/API_2_MOBILE.png");
+    height: 100%;
+    /* background-position: top; */
+    /* background-size: 100% */
+  }
+  .box-title-inicial {
+    padding-top: 8rem;
+  }
 
-    .bg-recursos-img {
-        background-image: url("../../../../../../images/aprendamos-api/API_2_MOBILE.png");
-        height: 100%;
-        /* background-position: top; */
-        /* background-size: 100% */
-    }
-    .box-title-inicial {
-        padding-top: 8rem;
-    }
+  .img-inicial {
+    width: 3rem;
+  }
 
-    .img-inicial {
-        width: 3rem;
-    }
+  .title-inicial {
+    font-size: 1.4rem;
+    -webkit-text-stroke: 0.06rem #ae96b2;
+  }
 
-    .title-inicial {
-        font-size: 1.4rem;
-        -webkit-text-stroke: .06rem #AE96B2;
-    }
+  .btn-inicial {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 
-    .btn-inicial {
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem
-    }
+  .title-btn-inicial {
+    font-size: 1rem;
+  }
+  .box-btn-inicial {
+    margin-top: 0.5rem;
+  }
 
-    .title-btn-inicial {
-        font-size: 1rem;
-    }
-    .box-btn-inicial {
-        margin-top: .5rem;
-    }
+  .btn-morado-inicial {
+    padding: 1rem;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    -webkit-text-stroke: 0.03em #fff;
+    letter-spacing: 0.04rem;
+  }
 
-    .btn-morado-inicial {
-        padding: 1rem;
-        margin-top: .5rem;
-        font-size: .9rem;
-        -webkit-text-stroke: 0.03em #fff;
-        letter-spacing: .04rem;
-    }
+  .btn-blanco-inicial {
+    padding: 1rem;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    -webkit-text-stroke: 0.03em #ae96b2;
+    letter-spacing: 0.04rem;
+  }
 
-    .btn-blanco-inicial {
-        padding: 1rem;
-        margin-top: .5rem;
-        font-size: .9rem;
-        -webkit-text-stroke: 0.03em #AE96B2;
-        letter-spacing: .04rem;
-    }
-
-
-    .btn-compartir-inicial{
-        position: relative;
-        top: 0rem;
-        padding-bottom: 1rem
-    }
-    
+  .btn-compartir-inicial {
+    position: relative;
+    top: 0rem;
+    padding-bottom: 1rem;
+  }
 }

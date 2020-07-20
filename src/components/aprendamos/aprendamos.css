@@ -58,7 +58,13 @@
 
 
 /*Aprendamos2*/
-
+.box-white{
+  width: 50%;
+  margin:auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
 .background-blue {
   background: #2e335e no-repeat;
   height: 70rem;
@@ -214,6 +220,13 @@ border-bottom: 0px!important;
   .caja-boton-rol{
     width: 100%!important;
     margin: auto;
+  }
+  .box-white{
+    width: 90%;
+    margin:auto;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
   }
   /* en construccion */
   .background {

@@ -2,7 +2,7 @@ import React from 'react'
 import { useHistory } from "react-router-dom";
 
 import "./Inicial.css";
-
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Compartir from "../../../compartir/Compartir";
 import inicial from "../../../../../../images/docente/inicial.svg";
 
@@ -24,33 +24,33 @@ const Inicial = () => {
                     <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
                         <div className="btn-inicial">
                             <h2 className="title-btn-inicial">Khan Academy</h2>
-                            <div className="btn-morado-inicial">Educación Remota</div>
+                            <a href="https://khanacademy.zendesk.com/hc/es/articles/360040418972-Soy-un-padre-c%C3%B3mo-puedo-usar-Khan-Academy-para-apoyar-el-aprendizaje-de-mi-hijo-durante-el-cierre-de-su-escuela-" target="_blank" className="btn-morado-inicial">Educación Remota</a>
                         </div>
                     </div>
                     <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
                         <div className="btn-inicial">
                             <h2 className="title-btn-inicial">Perú Educa</h2>
-                            <div className="btn-blanco-inicial">Artículos de interés</div>
-                            <div  className="btn-blanco-inicial">Consejos de crianza</div>
+                            <a href="http://www.perueduca.pe/web/familia-y-comunidad/articulos-de-interes-0-5" target="_blank"  className="btn-blanco-inicial">Artículos de interés</a>
+                            <a  href="http://www.perueduca.pe/web/familia-y-comunidad/consejos-de-crianza-0-5" className="btn-blanco-inicial" target="_blank">Consejos de crianza</a>
                         </div>
                     </div>
                     <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
                         <div className="btn-inicial">
                             <h2 className="title-btn-inicial">Educación 3.0</h2>
-                            <div className="btn-morado-inicial interline-btn">Recursos educativos generales</div>
+                            <a href="https://www.educaciontrespuntocero.com/recursos/infantil/" target="_blank" className="btn-morado-inicial interline-btn">Recursos educativos generales</a>
                         </div>
                     </div>
                     <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
                         <div className="btn-inicial">
                             <h2 className="title-btn-inicial">Aprendo en casa (MINEDU)</h2>
-                            <div  className="btn-blanco-inicial">Cómo hablar de COVID-19</div>
-                            <div  className="btn-blanco-inicial">Actvidades por edad</div>
+                            <a href="https://www.youtube.com/watch?v=Ny5qRXisRnQ" target="_blank" className="btn-blanco-inicial">Cómo hablar de COVID-19</a>
+                            <a href="https://aprendoencasa.pe/#/nivel/inicial" target="_blank"  className="btn-blanco-inicial">Actvidades por edad</a>
                         </div>
                     </div>
                     <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
                         <div className="btn-inicial">
                             <h2 className="title-btn-inicial">Enseña Perú</h2>
-                            <div className="btn-morado-inicial">Recursos para padres</div>
+                            <a href="http://ensenaperu.org/elaprendizajenoparafamilias" target="_blank" className="btn-morado-inicial">Recursos para padres</a>
                         </div>
                         <a href="http://52.177.117.53/static/media/pdf/modelos-culturales.pdf" target="blank" > User guide 
    
