@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 import "./fase1.css"
 
@@ -15,9 +16,11 @@ import arrowLeftBlue from '../../../images/arrow-left-blue.svg'
 import arrowRightBlue from '../../../images/arrow-right-blue.svg'
 
 const Fase1 = () => {
+    let history = useHistory();
     return(
         <div className="animated fadeIn">
             <div className="fase1 border-bottom-radius">
+            <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left goBack-fase" aria-hidden="true"></i>
                 <h6 className="titulo-numero-fase">Fase 1</h6>
                 <h5 className="titulo-fase tracking-in-expand-fwd-top">Aprender</h5>
                 <p className="p-mobile-blue w-fase">El objetivo de esta fase fue identificar intervenciones potencialmente efectivas para fomentar el desarrollo infantil temprano (DIT) en las zonas de influencia del grupo Breca en Perú.

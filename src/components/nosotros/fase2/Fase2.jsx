@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 import "./Fase2.css"
 import {Router, Route, Link, Switch } from "react-router-dom";
@@ -10,11 +11,11 @@ import agua from "../../../images/nosotros-img/agua-segura.svg"
 import coheteStars from "../../../images/cohete-stars.svg"
 
 const Fase2 = () => {
+    let history = useHistory();
     return(
         <div className="animated fadeIn">
             <div className="fase2 border-bottom-radius">
-                {/* <img src={starLeftMobile} className="star-left-mobile"></img>
-                <img src={starRightMobile} className="star-right-mobile"></img> */}
+            <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback" aria-hidden="true"></i> 
                 <h6 className="titulo-numero-fase2">Fase 2</h6>
                 <h5 className="titulo-fase2  tracking-in-expand-fwd-top">Probar</h5>
                 <p className="p-mobile-white w-fase">En este momento del proyecto tuvimos como objetivo explorar diferentes tipos de soluciones, darle forma al futuro modelo de “Volar” y conducir las ideas a las zonas de influencia.

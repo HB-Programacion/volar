@@ -1,4 +1,5 @@
 import React from 'react'
+import { useHistory } from "react-router-dom";
 
 import "./Fase3.css"
 import duracion from "../../../images/fase3-img/duracion.svg"
@@ -10,9 +11,11 @@ import cohete from "../../../images/fase3-img/cohete-naranja.svg"
 import coheteLuna from '../../../images/cohete-stars.svg';
 
 const Fase3 = () => {
+    let history = useHistory();
     return (
         <div className="animated fadeIn">
             <div className="fase1 fase3-image border-bottom-radius">
+            <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback" aria-hidden="true"></i> 
                 <h6 className="titulo-numero-fase">Fase 3</h6>
                 <h5 className="titulo-fase tracking-in-expand-fwd-top">Refinar</h5>
                 <p className="p-mobile-blue w-fase">

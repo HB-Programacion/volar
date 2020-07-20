@@ -1,4 +1,5 @@
 import React from 'react'
+import { useHistory } from "react-router-dom";
 
 import "./Fase4.css"
 
@@ -18,9 +19,11 @@ import aesa from "../../../images/fase4-img/aesa.png"
 
 
 const Fase4 = () => {
+    let history = useHistory();
     return (
         <div className="animated fadeIn">
             <div className="fase1 fase4-fondo">
+            <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left goBack-fase" aria-hidden="true"></i> 
                 <h6 className="titulo-numero-fase color-white">Fase 4</h6>
                 <h5 className="titulo-fase4 tracking-in-expand-fwd-top">Evaluar y escalar</h5>
                 <p className="p-mobile-white w-fase">
