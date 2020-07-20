@@ -42,7 +42,7 @@ const Modulo_1 = () => {
                             <img src={cerebro} alt="" className="w-100"/>
                         </figure>
                         <h3 className="title-materiales-modulos">Estructura del cerebro</h3>
-                        <p className="subtitle-materiales-modulos">Durante los 06 primeros meses, los bebés solo deben tomar leche materna.  </p>
+                        <p className="subtitle-materiales-modulos">¡Conviértete en un desarrollador de cerebros!.</p>
                     </div>
                     <div className="btn-modulos-info">
                         <figure className="btn-infografia">
@@ -63,7 +63,7 @@ const Modulo_1 = () => {
                             <img src={calidad} alt="" className="w-100"/>
                         </figure>
                         <h3 className="title-materiales-modulos">Interacciones de Calidad</h3>
-                        <p className="subtitle-materiales-modulos">Durante los 06 primeros meses, los bebés solo deben tomar leche materna.  </p>
+                        <p className="subtitle-materiales-modulos">Encuentra ejemplos de interacciones de calidad entre cuidadores y niños de todas las edades en nuestra sección “Aprendamos”.</p>
                     </div>
                     <div className="btn-aprendamos-aliados">
                         <div className="mt-5 btn-azul-aprendamos ">
@@ -79,7 +79,7 @@ const Modulo_1 = () => {
                             <img src={estres} alt="" className="w-100"/>
                         </figure>
                         <h3 className="title-materiales-modulos">Estrés Tóxico</h3>
-                        <p className="subtitle-materiales-modulos">Durante los 06 primeros meses, los bebés solo deben tomar leche materna.  </p>
+                        <p className="subtitle-materiales-modulos">¡Aprendamos a prevenir el estrés tóxico!</p>
                     </div>
                     <div className="btn-modulos-info">
                         <figure className="btn-infografia">

@@ -234,6 +234,10 @@
     box-shadow: 1px 1px 1px 1px #1A1F46;
 }
 
+.modulo5{
+    justify-content: center
+}
+
 
 @media (max-width: 1024px) {
     .title-modulo {
@@ -287,7 +291,7 @@
     /* MODULOSSSS */
 
     .box-modulos-aliados{
-        margin-top: 6rem;
+        margin-top: 10rem;
         padding-top: 2.5rem;
         padding-left: 0rem;
         padding-right: 0rem;
@@ -306,7 +310,7 @@
     }
 
     .flecha-abajo-aliado{
-        width: 10%;
+        width: 5%;
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
     }
