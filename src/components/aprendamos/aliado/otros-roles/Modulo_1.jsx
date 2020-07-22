@@ -15,7 +15,9 @@ const Modulo_1 = () => {
     let history = useHistory();
     return (
         <div className="box-modulos-aliados">
-         <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback-docente goBack-docente" aria-hidden="true"></i>
+        <a href="/aprendamos/aliado/modulos">
+            <i className="fas fa-chevron-left arrowGoback-docente goBack-docente" aria-hidden="true"></i>
+        </a>
             <div className="row sin-margin-row">
                 <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 box-modulos-textos">
                     <h3 className="title-modulos-aliados">¿Qué aprenderemos?</h3>
@@ -38,7 +40,7 @@ const Modulo_1 = () => {
             <div className="row sin-margin-row box-materiales-modulos">
                 <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 ">
                     <div>
-                        <figure className="w-20 m-auto">
+                        <figure className="w-17 m-auto">
                             <img src={cerebro} alt="" className="w-100"/>
                         </figure>
                         <h3 className="title-materiales-modulos">Estructura del cerebro</h3>
@@ -46,21 +48,21 @@ const Modulo_1 = () => {
                     </div>
                     <div className="btn-modulos-info">
                         <figure className="btn-infografia">
-                            <img src={infografia} alt=""className="w-100"/>
+                            <img src={infografia} alt=""className="w-70"/>
                         </figure>
                         <div className="btn-info-text">Infografía: conexiones neuronales en el cerebro de los niños desde el nacimiento hasta los 5 años.</div>
                     </div>
                     <div className="btn-modulos-info">
                         <figure className="btn-infografia">
-                            <img src={video} alt="" className="w-100"/>
+                            <img src={video} alt="" className="w-70"/>
                         </figure>
                         <div className="btn-info-text">Video Animado sobre estructura del cerebro</div>
                     </div>
                 </div>
                 <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 ">
                     <div>
-                        <figure className="w-20 m-auto">
-                            <img src={calidad} alt="" className="w-100"/>
+                        <figure className="w-25 m-auto">
+                            <img src={calidad} alt="" className="w-70"/>
                         </figure>
                         <h3 className="title-materiales-modulos">Interacciones de Calidad</h3>
                         <p className="subtitle-materiales-modulos">Encuentra ejemplos de interacciones de calidad entre cuidadores y niños de todas las edades en nuestra sección “Aprendamos”.</p>
@@ -75,7 +77,7 @@ const Modulo_1 = () => {
                 </div>
                 <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 ">
                     <div>
-                        <figure className="w-20 m-auto">
+                        <figure className="w-15 m-auto">
                             <img src={estres} alt="" className="w-100"/>
                         </figure>
                         <h3 className="title-materiales-modulos">Estrés Tóxico</h3>
@@ -83,7 +85,7 @@ const Modulo_1 = () => {
                     </div>
                     <div className="btn-modulos-info">
                         <figure className="btn-infografia">
-                            <img src={infografia} alt=""className="w-100"/>
+                            <img src={infografia} alt=""className="w-70"/>
                         </figure>
                         <div className="btn-info-text">Infografía: cerebro con estrés tóxico + situaciones de estrés tóxico</div>
                     </div>

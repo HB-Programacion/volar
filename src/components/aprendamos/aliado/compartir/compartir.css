@@ -13,6 +13,14 @@
  align-items: center;
  margin: 0;
 }
+
+.compartir-aliado:hover{
+    background: #7dc7c480;
+    box-shadow: 1px 1px 15px #7dc7c5;
+    border: 0.5px solid #7dc7c5;
+    cursor: pointer
+}
+
 .compartir-aliado img{
     width: 80%;
    

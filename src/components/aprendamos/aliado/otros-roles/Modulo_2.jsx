@@ -2,9 +2,9 @@ import React from 'react'
 import { useHistory } from "react-router-dom";
 
 import flecha from "../../../../images/modulos-img/flecha-abajo.svg"
-import cerebro from "../../../../images/modulos-img/cerebro.svg"
-import calidad from "../../../../images/modulos-img/calidad.svg"
-import estres from "../../../../images/modulos-img/estres.svg"
+import lactancia from "../../../../images/modulos-img/lactancia.svg"
+import cred from "../../../../images/modulos-img/cred.svg"
+import suplementos from "../../../../images/modulos-img/suplementos.svg"
 import infografia from "../../../../images/modulos-img/infografia.svg"
 import video from "../../../../images/modulos-img/video.svg"
 import arrowLeft from "./../../../../images/arrow-left-blue.svg";
@@ -15,7 +15,9 @@ const Modulo_2 = () => {
     let history = useHistory();
     return (
         <div className="box-modulos-aliados">
-         <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback-docente goBack-docente" aria-hidden="true"></i>
+            <a href="/aprendamos/aliado/modulos">
+                <i className="fas fa-chevron-left arrowGoback-docente goBack-docente" aria-hidden="true"></i>
+            </a>
             <div className="row sin-margin-row">
                 <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 box-modulos-textos">
                     <h3 className="title-modulos-aliados">¿Qué aprenderemos?</h3>
@@ -38,69 +40,69 @@ const Modulo_2 = () => {
             <div className="row sin-margin-row box-materiales-modulos">
                 <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 ">
                     <div>
-                        <figure className="w-20 m-auto">
-                            <img src={cerebro} alt="" className="w-100"/>
+                        <figure className="w-16 m-auto">
+                            <img src={lactancia} alt="" className="w-100"/>
                         </figure>
                         <h3 className="title-materiales-modulos">Lactancia Materna Exclusiva</h3>
                         <p className="subtitle-materiales-modulos">Durante los 06 primeros meses, los bebés solo deben tomar leche materna.  </p>
                     </div>
                     <div className="btn-modulos-info">
                         <figure className="btn-infografia">
-                            <img src={infografia} alt=""className="w-100"/>
+                            <img src={infografia} alt=""className="w-70"/>
                         </figure>
                         <div className="btn-info-text">Infografía: beneficios de la lactancia materna en la salud del niño</div>
                     </div>
                     <div className="btn-modulos-info">
                         <figure className="btn-infografia">
-                            <img src={infografia} alt="" className="w-100"/>
+                            <img src={infografia} alt="" className="w-70"/>
                         </figure>
                         <div className="btn-info-text">Infografía: posturas/posiciones para la lactancia</div>
                     </div>
                 </div>
                 <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 ">
                     <div>
-                        <figure className="w-20 m-auto">
-                            <img src={calidad} alt="" className="w-100"/>
+                        <figure className="w-17 m-auto">
+                            <img src={cred} alt="" className="w-100"/>
                         </figure>
                         <h3 className="title-materiales-modulos">CRED</h3>
                         <p className="subtitle-materiales-modulos">Motiva a los cuidadores que visitas a que  asistan a sus controles CRED. </p>
                     </div>
                     <div className="btn-modulos-info">
                         <figure className="btn-infografia">
-                            <img src={infografia} alt=""className="w-100"/>
+                            <img src={infografia} alt=""className="w-70"/>
                         </figure>
                         <div className="btn-info-text">Infografía: importancia del CRED</div>
                     </div>
                     <div className="btn-modulos-info">
                         <figure className="btn-infografia">
-                            <img src={infografia} alt="" className="w-100"/>
+                            <img src={infografia} alt="" className="w-70"/>
                         </figure>
                         <div className="btn-info-text">Inforgrafía: CRED según edad de nacido</div>
                     </div>
                 </div>
                 <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 ">
                     <div>
-                        <figure className="w-20 m-auto">
-                            <img src={estres} alt="" className="w-100"/>
+                        <figure className="w-12 m-auto">
+                            <img src={suplementos} alt="" className="w-100"/>
                         </figure>
                         <h3 className="title-materiales-modulos">Suplementos de hierro</h3>
                         <p className="subtitle-materiales-modulos">Acompaña a las familias en su experiencia con los suplementos de hierro. </p>
                     </div>
                     <div className="btn-modulos-info">
                         <figure className="btn-infografia">
-                            <img src={infografia} alt=""className="w-100"/>
+                            <img src={infografia} alt=""className="w-70"/>
                         </figure>
                         <div className="btn-info-text">Infografía: ¿Cómo afecta la anemia a los niños?: mala alimentación, influye en el desarrollo físico y emocional</div>
                     </div>
                     <div className="btn-modulos-info">
                         <figure className="btn-infografia">
-                            <img src={infografia} alt=""className="w-100"/>
+                            <img src={infografia} alt=""className="w-70"/>
                         </figure>
                         <div className="btn-info-text">Infografía: pasos para administrar el sulfato ferrosoen los niños</div>
                     </div>
                     <div className="btn-modulos-info">
                         <figure className="btn-infografia">
-                            <img src={infografia} alt=""className="w-100"/>
+                            <img src={infografia} alt=""className="w-70"/>
                         </figure>
                         <div className="btn-info-text">Infografía: efectos secundarios de los suplementos de hierro.</div>
                     </div>

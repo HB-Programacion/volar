@@ -153,7 +153,7 @@ const Home = () => {
                                 </div>
                                 <div className="carousel-caption  d-md-block">
                                     <div className="box-title-slide">
-                                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://52.177.117.53/"> 
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//volar.org.pe/"> 
                                             <figure className=" share ">
                                                 <img src={share} className="share-img heartbeat"></img>
                                             </figure>
@@ -179,7 +179,7 @@ const Home = () => {
                                 </div>
                                 <div className="carousel-caption  d-md-block">
                                     <div className="box-title-slide">
-                                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://52.177.117.53/"> 
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//volar.org.pe/"> 
                                             <figure className=" share ">
                                                 <img src={shareF} className="share-img heartbeat"></img>
                                             </figure>
@@ -204,7 +204,7 @@ const Home = () => {
                                 </div>
                                 <div className="carousel-caption  d-md-block">
                                     <div className="box-title-slide">
-                                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://52.177.117.53/"> 
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//volar.org.pe/"> 
                                             <figure className=" share ">
                                                 <img src={shareC} className="share-img heartbeat"></img>
                                             </figure>
@@ -229,7 +229,7 @@ const Home = () => {
                                 </div>
                                 <div className="carousel-caption  d-md-block">
                                     <div className="box-title-slide">
-                                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://52.177.117.53/"> 
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//volar.org.pe/"> 
                                             <figure className=" share ">
                                                 <img src={shareA} className="share-img heartbeat"></img>
                                             </figure>
@@ -275,7 +275,7 @@ const Home = () => {
                                 </div>
                                 <div className="carousel-caption  d-md-block">
                                     <div className="box-title-slide">
-                                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://52.177.117.53/">
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//volar.org.pe/">
                                             <figure className=" share ">
                                                 <img src={share} className="share-img heartbeat"></img>
                                             </figure>
@@ -301,7 +301,7 @@ const Home = () => {
                                 </div>
                                 <div className="carousel-caption  d-md-block">
                                     <div className="box-title-slide">
-                                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://52.177.117.53/">
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//volar.org.pe/">
                                             <figure className=" share ">
                                                 <img src={shareF} className="share-img heartbeat"></img>
                                             </figure>
@@ -326,7 +326,7 @@ const Home = () => {
                                     </div>
                                     <div className="carousel-caption  d-md-block">
                                         <div className="box-title-slide">
-                                            <a href="https://www.facebook.com/sharer/sharer.php?u=http://52.177.117.53/">                                        
+                                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//volar.org.pe/">                                        
                                                 <figure className=" share ">
                                                     <img src={shareC} className="share-img heartbeat"></img>
                                                 </figure>
@@ -351,7 +351,7 @@ const Home = () => {
                                     </div>
                                     <div className="carousel-caption  d-md-block">
                                         <div className="box-title-slide">
-                                            <a href="https://www.facebook.com/sharer/sharer.php?u=http://52.177.117.53/">                                        
+                                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//volar.org.pe/">                                        
                                                 <figure className=" share ">
                                                     <img src={shareA} className="share-img heartbeat"></img>
                                                 </figure>
