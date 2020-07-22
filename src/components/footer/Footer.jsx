@@ -25,8 +25,8 @@ const Footer = () => {
             <div className="box-ubicacion">
                 <img src={ubicacion} className="mb-3 ubicacion"></img>
                 <p>Oficina</p>
-                <p>Calle Las Begonias 441, Piso 9 </p>
-                <p className="text-small">San Isidro, Lima 27 - Perú </p>
+                <p>Calle Dionisio Derteano 144</p>
+                <p className="text-small">San Isidro, Piso 19 - Perú </p>
             </div>
             <div className="box-telefono">
                 <img src={telefono} className="mb-3 telefono"></img>
