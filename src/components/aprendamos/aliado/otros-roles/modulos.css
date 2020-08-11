@@ -85,8 +85,11 @@
 }
 
 .modal-dialog {
-    max-width: 40rem !important;
+    max-width: 55rem !important;
     margin: 1.75rem auto;
+}
+.img-infografia{
+    width: 100%;
 }
 
 .modal-header .close {
@@ -177,7 +180,9 @@
     width: 100%;
     margin-bottom: 2rem;
     margin-top: 1.5rem;
-    align-items: center
+    align-items: center;
+    background: #fff;
+    border: none;
     
 }
 
