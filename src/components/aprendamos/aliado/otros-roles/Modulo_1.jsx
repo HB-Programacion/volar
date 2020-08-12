@@ -8,15 +8,21 @@ import infografia from "../../../../images/modulos-img/infografia.svg";
 import video from "../../../../images/modulos-img/video.svg";
 import arrowLeft from "./../../../../images/arrow-left-blue.svg";
 import arrowRight from "./../../../../images/arrow-right-blue.svg";
-import infografia1 from "./../../../../images/modulos-img/1-Conexiones\ Neuronales.jpg"
+import infografia1 from "./../../../../images/modulos-img/1-Conexiones\ Neuronales.jpg";
+import infografia2 from "./../../../../images/modulos-img/1-Estres toxico 1.jpg"
 import { Button, Modal } from "react-bootstrap";
 
 const Modulo_1 = () => {
   const [showInfografia1, setShowInfografia1] = React.useState(false);
-
-  const handleCloseinfografia1 = () => setShowInfografia1(false);
+  const [showVideo1, setShowVideo1] = React.useState(false);
+  const [showInfografia2, setShowInfografia2] = React.useState(false);
+   
+  const handleCloseInfografia1 = () => setShowInfografia1(false);
   const handleShowInfografia1 = () => setShowInfografia1(true);
-
+  const handleCloseInfografia2 = () => setShowInfografia2(false);
+  const handleShowInfografia2 = () => setShowInfografia2(true);
+  const handleCloseVideo1=()=> setShowVideo1(false)
+  const handleShowVideo1=()=> setShowVideo1(true)
   let history = useHistory();
   return (
     <div className="box-modulos-aliados">
@@ -81,7 +87,7 @@ const Modulo_1 = () => {
               ¡Conviértete en un desarrollador de cerebros!.
             </p>
           </div>
-          <button className="btn-modulos-info" onClick={handleShowInfografia1}>
+          <button className="btn-modulos-info" onClick={()=>handleShowInfografia1()}>
             <figure className="btn-infografia">
               <img src={infografia} alt="" className="w-100" />
             </figure>
@@ -90,14 +96,14 @@ const Modulo_1 = () => {
               el nacimiento hasta los 5 años.
             </div>
           </button>
-          <div className="btn-modulos-info">
+          <button className="btn-modulos-info" onClick={()=>handleShowVideo1()}>
             <figure className="btn-infografia">
               <img src={video} alt="" className="w-100" />
             </figure>
             <div className="btn-info-text">
               Video Animado sobre estructura del cerebro
             </div>
-          </div>
+          </button>
         </div>
         <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 ">
           <div>
@@ -112,13 +118,13 @@ const Modulo_1 = () => {
               niños de todas las edades en nuestra sección “Aprendamos”.
             </p>
           </div>
-          <div className="btn-aprendamos-aliados">
+          <a href="/aprendamos" className="btn-aprendamos-aliados">
             <div className="mt-5 btn-azul-aprendamos ">
               <img src={arrowLeft} className="arrow-blue"></img>
               APRENDAMOS
               <img src={arrowRight} className="arrow-blue"></img>
             </div>
-          </div>
+          </a>
         </div>
         <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 ">
           <div>
@@ -130,7 +136,7 @@ const Modulo_1 = () => {
               ¡Aprendamos a prevenir el estrés tóxico!
             </p>
           </div>
-          <div className="btn-modulos-info">
+          <button className="btn-modulos-info" onClick={()=>handleShowInfografia2()}>
             <figure className="btn-infografia">
               <img src={infografia} alt="" className="w-100" />
             </figure>
@@ -138,10 +144,10 @@ const Modulo_1 = () => {
               Infografía: cerebro con estrés tóxico + situaciones de estrés
               tóxico
             </div>
-          </div>
+          </button>
         </div>
       </div>
-      <Modal show={showInfografia1} onHide={handleCloseinfografia1}>
+      <Modal show={showInfografia1} onHide={handleCloseInfografia1}>
         <Modal.Header closeButton></Modal.Header>
         <Modal.Body>
           <div className="container animated fadeIn">
@@ -150,6 +156,42 @@ const Modulo_1 = () => {
                 <div className="row">
                   <div className="col-12">
                     <img className="img-infografia" src={infografia1} alt=""/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Modal.Body>
+      </Modal>
+      <Modal show={showVideo1} onHide={handleCloseVideo1}>
+        <Modal.Header closeButton></Modal.Header>
+        <Modal.Body>
+          <div className="container animated fadeIn">
+            <div className="">
+            <div className="videoWrapper">
+                        <iframe
+                          className="border-video-rutina"
+                          width="600"
+                          height="350"
+                          src="https://www.youtube.com/embed/HmvCTcrR8fA"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+            </div>
+          </div>
+        </Modal.Body>
+      </Modal>
+      <Modal show={showInfografia2} onHide={handleCloseInfografia2}>
+        <Modal.Header closeButton></Modal.Header>
+        <Modal.Body>
+        <div className="container animated fadeIn">
+            <div className="">
+              <div>
+                <div className="row">
+                  <div className="col-12">
+                    <img className="img-infografia" src={ infografia2} alt=""/>
                   </div>
                 </div>
               </div>

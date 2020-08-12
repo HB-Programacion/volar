@@ -60,7 +60,7 @@ const Login = (props) => {
       })*/
 
       await  db.collection("usuarios").doc(res.user.uid).get().then( usuarioBBDD => {
-        if (!usuarioBBDD .exists) {
+        if (!usuarioBBDD.exists) {
               console.log("No existe el usuario");
               db.collection("usuarios").doc(res.user.uid).set({
                 email: res.user.email,

@@ -31,8 +31,9 @@ import TipsNutricion from "./components/aprendamos/cuidador/areas/TipsNutricion"
 import TipsSesamo from "./components/aprendamos/cuidador/areas/TipsSesamo"
 import Login from "./components/loginRegister/Login";
 import Signup from "./components/loginRegister/Signup";
+import PoliticaDePrivacidad from "./components/loginRegister/PoliticaDePrivacidad";
 import { PasswordReset } from "./components/loginRegister/PasswordReset";
-import { Contactanos2 } from "./components/contactanos/Contactanos2";
+import { Contactanos2 } from "./components/contactanos/Contactanos3";
 import { Contactanos } from "./components/contactanos/Contactanos";
 // import { auth,db } from "./components/firebase/firebase";
 import Perfil from "./components/loginRegister/perfil/Perfil";
@@ -393,6 +394,8 @@ function App() {
           </Route>
           <Route path="/signup" exact>
             <Signup firebaseUser={firebaseUser} />
+          </Route>
+          <Route path="/politica-de-privacidad" exact component={PoliticaDePrivacidad}>
           </Route>
           <Route path="/password/reset" exact component={PasswordReset} />
           {firebaseUser !== null ? (

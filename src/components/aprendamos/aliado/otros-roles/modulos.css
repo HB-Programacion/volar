@@ -96,6 +96,12 @@
     padding: 1rem 1rem;
     margin: -1rem -1rem auto !important;
 }
+.modal-header {
+    padding: 0.5rem 0.5rem 0rem 1rem!important;
+}
+.modal-body{
+    padding: 0.5rem!important;
+}
 /* MODULOSSSSSS */
 
 .box-modulos-aliados{
@@ -129,7 +135,8 @@
 
     padding-left: 2.1rem!important;
     padding-right: 2.1rem!important;
-    margin-top: 3.5rem
+    margin-top: 3.5rem;
+    justify-content: center;
 }
 
 .title-modulos-aliados{
@@ -183,8 +190,9 @@
     align-items: center;
     background: #fff;
     border: none;
-    
+    cursor: pointer;
 }
+    
 
 .btn-infografia{
     /* width: 4rem;
