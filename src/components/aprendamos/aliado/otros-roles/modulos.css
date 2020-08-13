@@ -85,13 +85,22 @@
 }
 
 .modal-dialog {
-    max-width: 40rem !important;
+    max-width: 55rem !important;
     margin: 1.75rem auto;
+}
+.img-infografia{
+    width: 100%;
 }
 
 .modal-header .close {
     padding: 1rem 1rem;
     margin: -1rem -1rem auto !important;
+}
+.modal-header {
+    padding: 0.5rem 0.5rem 0rem 1rem!important;
+}
+.modal-body{
+    padding: 0.5rem!important;
 }
 /* MODULOSSSSSS */
 
@@ -126,7 +135,8 @@
 
     padding-left: 2.1rem!important;
     padding-right: 2.1rem!important;
-    margin-top: 3.5rem
+    margin-top: 3.5rem;
+    justify-content: center;
 }
 
 .title-modulos-aliados{
@@ -177,9 +187,12 @@
     width: 100%;
     margin-bottom: 2rem;
     margin-top: 1.5rem;
-    align-items: center
-    
+    align-items: center;
+    background: #fff;
+    border: none;
+    cursor: pointer;
 }
+    
 
 .btn-infografia{
     /* width: 4rem;

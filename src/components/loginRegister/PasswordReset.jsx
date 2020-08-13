@@ -12,18 +12,24 @@ export const PasswordReset = () => {
       var actionCodeSettings = {
           // After password reset, the user will be give the ability to go back
           // to this page.
-          url: 'http://localhost:3000/',
+          url: 'https://volar.org.pe/login',
           handleCodeInApp: false
         };
       await auth.sendPasswordResetEmail(
           email, actionCodeSettings)
           .then(function() {
+            alert("Tu mensaje a sido enviado")
+
             // Password reset email sent.
           })
           .catch(function(error) {
-            // Error occurred. Inspect error.code.
+            if(error="The email address is badly formatted."){
+              alert("La dirección de correo electrónico está mal formateada. (Email mal escrito y/o no registrado)")
+            } else {
+              alert(error)
+            }
+            console.log(error)
           });
-          alert("tu mensaje a sido enviado")
   }
 
 
