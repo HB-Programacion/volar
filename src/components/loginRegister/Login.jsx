@@ -11,7 +11,9 @@ const Login = (props) => {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
   const [error, setError] = React.useState(null);
-
+ console.log(auth, "jacinta" )
+;
+console.log(auth.CurrentUser, "jocinta")
   const procesarDatos = (e) => {
     e.preventDefault();
     if (!email.trim()) {

@@ -33,6 +33,7 @@ import Login from "./components/loginRegister/Login";
 import Signup from "./components/loginRegister/Signup";
 import PoliticaDePrivacidad from "./components/loginRegister/PoliticaDePrivacidad";
 import { PasswordReset } from "./components/loginRegister/PasswordReset";
+import  NewPassword  from "./components/loginRegister/NewPassword";
 import { Contactanos2 } from "./components/contactanos/Contactanos3";
 import { Contactanos } from "./components/contactanos/Contactanos";
 // import { auth,db } from "./components/firebase/firebase";
@@ -398,6 +399,7 @@ function App() {
           <Route path="/politica-de-privacidad" exact component={PoliticaDePrivacidad}>
           </Route>
           <Route path="/password/reset" exact component={PasswordReset} />
+          <Route path="/new-password" exact component={NewPassword} />
           {firebaseUser !== null ? (
             <Route path="/perfil" exact>
               <Perfil firebaseUser={firebaseUser} />

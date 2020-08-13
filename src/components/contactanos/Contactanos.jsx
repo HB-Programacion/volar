@@ -12,7 +12,7 @@ export const Contactanos = () => {
           ¡Contáctanos!
         </h1>
 
-        <form method="POST"  action="./send.php">
+        <form method="POST"  action="https://volar.org.pe/send.php">
           <div className="list-register">
             <p className="letter-register">NOMBRE</p>
             <input
