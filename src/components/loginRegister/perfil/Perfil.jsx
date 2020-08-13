@@ -53,6 +53,8 @@ const Perfil = (props) => {
   const [currentPassword, setCurrentPassword] = React.useState("");
   const [newPassword, setNewPassword] = React.useState("");
   const [repeatNewPassword, setRepeatNewPassword] = React.useState("");
+  const [errorPassword, setErrorPassword] = React.useState(null);
+  const [guardadoPassword, setGuardadoPassword] = React.useState(null);
 
   const [usuarioChild] = useCollection(
     db
@@ -200,35 +202,29 @@ const Perfil = (props) => {
 
   const actualizarPassword = (e) => {
     e.preventDefault();
-    setGuardado(null);
+    setGuardadoPassword(null);
     if (password !== currentPassword) {
-      setError("Contraseña actual incorrecta");
+      setErrorPassword("Contraseña actual incorrecta");
       return;
     }
     if (!newPassword.trim()) {
-      setError("Añadir la nueva contraseña");
+      setErrorPassword("Añadir la nueva contraseña");
       return;
     }
     if (newPassword !== repeatNewPassword) {
-      setError("Las contraseñas no coinciden");
+      setErrorPassword("Las contraseñas no coinciden");
       return;
     }
 
     editarPassword();
-    setError(null);
+    setErrorPassword(null);
   };
   const editarPerfil = async (e) => {
     try {
       const user = auth.currentUser;
       console.log("judith", user);
-      user
+      await user
         .updateEmail(emailEdit)
-        .then(function () {
-          // Update successful.
-        })
-        .catch(function (error) {
-          console.log("error", error);
-        });
       await db
         .collection("usuarios")
         .doc(props.firebaseUser.uid)
@@ -245,10 +241,18 @@ const Perfil = (props) => {
           departamentoKey: departamentoElegidoKey,
           provinciaKey: provinciaElegidoKey,
         });
+      
 
       setGuardado("Tu  perfil ha sido guardo exitosamente");
     } catch (error) {
-      console.log(error);
+      if(error.message==="This operation is sensitive and requires recent authentication. Log in again before retrying this request."){
+        setError("Esta operación es sensible y requiere autenticación reciente. Vuelva a iniciar sesión antes de volver a intentar esta solicitud.")
+      } else if(error.message==="The email address is already in use by another account."){
+        setError("La dirección de correo electrónico ya está en uso por otra cuenta.")
+      } else {
+        setError(error.message)
+      }
+    
     }
   };
 
@@ -264,8 +268,9 @@ const Perfil = (props) => {
           password: newPassword,
         });
 
-      setGuardado("Tu contraseña ha sido actualizada");
+      setGuardadoPassword("Tu contraseña ha sido actualizada");
     } catch (error) {
+      setError(error.message)
       console.log(error);
     }
   };
@@ -700,11 +705,11 @@ const Perfil = (props) => {
                             Cambiar contraseña
                           </Link>
                         </div>
-                        {error && (
-                          <div className="alert alert-danger">{error}</div>
+                        {errorPassword && (
+                          <div className="alert alert-danger">{errorPassword}</div>
                         )}
-                        {guardado && (
-                          <div className="alert alert-success">{guardado}</div>
+                        {guardadoPassword && (
+                          <div className="alert alert-success">{guardadoPassword}</div>
                         )}
                         <div className="row">
                           <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">

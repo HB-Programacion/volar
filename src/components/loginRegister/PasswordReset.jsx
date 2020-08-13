@@ -12,8 +12,8 @@ export const PasswordReset = () => {
       var actionCodeSettings = {
           // After password reset, the user will be give the ability to go back
           // to this page.
-          url: 'https://volar.org.pe/login',
-          handleCodeInApp: false
+          url: 'https://volar.org.pe/perfil',
+          handleCodeInApp: true
         };
       await auth.sendPasswordResetEmail(
           email, actionCodeSettings)

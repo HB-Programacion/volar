@@ -35,18 +35,40 @@ const Signup = (props) => {
     if (password.length < 8) {
       setError("Password mayor a 8 carácteres");
       return;
-    }
-    if(password!==passwordRepeat){
-        setError("Copia de contraseña es incorrecta");
-        return;
-    }
-
-    if(password===passwordRepeat){
+    } else{
+       let  mayuscula = false;
+       let  minuscula = false;
+       let  numero = false;
+       for(let  i = 0;i<password.length;i++)
+       {
+         if(password.charCodeAt(i) >= 65 && password.charCodeAt(i) <= 90)
+         {
+           mayuscula = true;
+         }
+         else if(password.charCodeAt(i) >= 97 && password.charCodeAt(i) <= 122)
+         {
+           minuscula = true;
+         }
+         else if (password.charCodeAt(i) >= 48 && password.charCodeAt(i) <= 57)
+         {
+           numero = true;
+         }
+       }
+       if(mayuscula == true && minuscula == true  && numero == true)
+       {
+        if(password!==passwordRepeat){
+          setError("Copia de contraseña es incorrecta");
+          return;
+      } else{
         registrar();
-    } 
-    setError(null);
+      }
+       } else {
+        setError("Password no contiene mayúscula, minúscula, números y/o contraseña no coinciden");
+       }
+    }
   };
 
+  
   const registrar = React.useCallback(async () => {
     try {
       const res = await auth.createUserWithEmailAndPassword(email, password);
@@ -69,10 +91,9 @@ const Signup = (props) => {
         departamentoKey:"",
         provinciaKey:"",
       });
-      console.log("información email", res.user)
       setPassword("");
-      setEmail("");
-      setError(null);
+     setEmail("");
+     setError(null);
       props.history.push("/perfil");
     } catch (error) {
       if (error.code === "auth/invalid-email") {
