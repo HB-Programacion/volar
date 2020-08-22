@@ -5,7 +5,7 @@ export default [
         "seccion": "Higiene y Agua Segura",
         "edad": -1,
         "n_tip": 1,
-        "icono": "http://52.177.117.53/static/media/icono-blanco/GESTACION/madre_embarazada_y_corazon_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/GESTACION/madre_embarazada_y_corazon_Mesa%20de%20trabajo%201.svg",
         "texto1A": "",
         "texto1B": " La comida mal lavada puede hinchar tu panza y hacer que el bebé nazca antes o con problemas de crecimiento. ¡Cuidate!",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
@@ -17,7 +17,7 @@ export default [
         "seccion": "Higiene y Agua Segura",
         "edad": -1,
         "n_tip": 2,
-        "icono": "http://52.177.117.53/static/media/icono-blanco/GESTACION/fruta_vinagre_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/GESTACION/fruta_vinagre_Mesa%20de%20trabajo%201.svg",
         "texto1A": "",
         "texto1B": " Un tip para quitar los gérmenes de la fruta es remojarla en vinagre por 5 minutos antes de comerla. ¡Qué rico!",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
@@ -29,7 +29,7 @@ export default [
         "seccion": "Higiene y Agua Segura",
         "edad": -1,
         "n_tip": 3,
-        "icono": "http://52.177.117.53/static/media/icono-blanco/GESTACION/higiene_intima_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/GESTACION/higiene_intima_Mesa%20de%20trabajo%201.svg",
         "texto1A": "",
         "texto1B": " Recuerda que es muy importante que cuides tu higiene íntima, cualquier infeccion podria lastimar al bebé. ¡Cuídate",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
@@ -41,7 +41,7 @@ export default [
         "seccion": "Higiene y Agua Segura",
         "edad": -1,
         "n_tip": 4,
-        "icono": "http://52.177.117.53/static/media/icono-blanco/GESTACION/botella_limpieza_desinfectante_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/GESTACION/botella_limpieza_desinfectante_Mesa%20de%20trabajo%201.svg",
         "texto1A": "",
         "texto1B": "Si el espacio donde comen esta sucio, los gérmenes entraran a tu cuerpo y al bebé.",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo.",
@@ -53,7 +53,7 @@ export default [
         seccion: "Higiene y Agua Segura",
         edad: -1,
         n_tip: 5,
-        icono: "http://52.177.117.53/static/media/icono-blanco/GESTACION/jarra_de_agua_con_mosca_Mesa%20de%20trabajo%201.svg",
+        icono: "https://volar.org.pe/static/media/icono-blanco/GESTACION/jarra_de_agua_con_mosca_Mesa%20de%20trabajo%201.svg",
         texto1A: "",
         texto1B: " Si el espacio en donde almacenas el agua está sucio, el agua podría ensuciarse y enfermarte. Estos recipientes necesitan estar en constante limpieza y desinfección para no perjudicar la salud de nuestra familia.",
         texto2: "¡Tú puedes ayudarlos a crecer mejor!",
@@ -65,7 +65,7 @@ export default [
         seccion: "Higiene y Agua Segura",
         edad: -1,
         n_tip: 6,
-        icono: "http://52.177.117.53/static/media/icono-blanco/GESTACION/vaso_de_agua_Mesa%20de%20trabajo%201.svg",
+        icono: "https://volar.org.pe/static/media/icono-blanco/GESTACION/vaso_de_agua_Mesa%20de%20trabajo%201.svg",
         texto1A: "",
         texto1B: " Toma mucha agua hervida durante el dia. ¡Eso ayudará a eliminar los gérmenes!",
         texto2: "¡Tú puedes ayudarlos a crecer mejor!",
@@ -77,7 +77,7 @@ export default [
         seccion: "Higiene y Agua Segura",
         edad: -1,
         n_tip: 7,
-        icono: "http://52.177.117.53/static/media/icono-blanco/GESTACION/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
+        icono: "https://volar.org.pe/static/media/icono-blanco/GESTACION/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
         texto1A: "",
         texto1B: " Si comen fuera de casa, revisa que el lugar tenga acceso a agua y jabón para lavarte las manos antes. ¡Así matas los gérmenes!",
         texto2: "¡Tú puedes ayudarlos a crecer mejor!",
@@ -89,7 +89,7 @@ export default [
         seccion: "Higiene y Agua Segura",
         edad: -1,
         n_tip: 8,
-        icono: "http://52.177.117.53/static/media/icono-blanco/GESTACION/balde_de_agua_Mesa%20de%20trabajo%201.svg",
+        icono: "https://volar.org.pe/static/media/icono-blanco/GESTACION/balde_de_agua_Mesa%20de%20trabajo%201.svg",
         texto1A: "",
         texto1B: " Cuidando tu embarazo, cuidas la salud de tu bebé. Si hay que cargar un balde de agua, mejor pídeselo a tu pareja o algún familia. Si lo haces tú, podrías lastimar al bebé.",
         texto2: "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
@@ -101,7 +101,7 @@ export default [
         seccion: "Higiene y Agua Segura",
         edad: -1,
         n_tip: 9,
-        icono: "http://52.177.117.53/static/media/icono-blanco/GESTACION/cepillo_de_diente_y_jabon_Mesa%20de%20trabajo%201.svg",
+        icono: "https://volar.org.pe/static/media/icono-blanco/GESTACION/cepillo_de_diente_y_jabon_Mesa%20de%20trabajo%201.svg",
         texto1A: "",
         texto1B: " Lávate bien las manos antes de cocinar y luego de ir al baño. ¡Bien hecho!",
         texto2: "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
@@ -113,7 +113,7 @@ export default [
         seccion: "Higiene y Agua Segura",
         edad: -1,
         n_tip: 10,
-        icono: "http://52.177.117.53/static/media/icono-blanco/0-1/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
+        icono: "https://volar.org.pe/static/media/icono-blanco/0-1/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
         texto1A: "",
         texto1B: " Lávate bien las manos antes de cocinar y luego de ir al baño. ¡Bien hecho!",
         texto2: "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
@@ -125,7 +125,7 @@ export default [
         seccion: "Socioemocional",
         edad: -1,
         n_tip: 1,
-        icono: "http://52.177.117.53/static/media/icono-blanco/GESTACION/cerebro_Mesa%20de%20trabajo%201.svg",
+        icono: "https://volar.org.pe/static/media/icono-blanco/GESTACION/cerebro_Mesa%20de%20trabajo%201.svg",
         texto1A: "",
         texto1B: " Tu bebé siente todo lo que tú sientes. Si te estresas, él también. Mucho estrés afecta el desarrollo de su cerebro.",
         texto2: "¡Tú puedes ayudarlos a crecer mejor!",
@@ -137,7 +137,7 @@ export default [
         seccion: "Socioemocional",
         edad: -1,
         n_tip: 2,
-        icono: "http://52.177.117.53/static/media/icono-blanco/GESTACION/sue%C3%B1o_Mesa%20de%20trabajo%201.svg",
+        icono: "https://volar.org.pe/static/media/icono-blanco/GESTACION/sue%C3%B1o_Mesa%20de%20trabajo%201.svg",
         texto1A: "",
         texto1B: " Evita los momentos de estrés. Apoyate en tus familiares para que puedas descansar y hacer ejercicios.",
         texto2: "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
@@ -149,7 +149,7 @@ export default [
         seccion: "Socioemocional",
         edad: -1,
         n_tip: 3,
-        icono: "http://52.177.117.53/static/media/icono-blanco/GESTACION/megafono_no_permitido_Mesa%20de%20trabajo%201.svg",
+        icono: "https://volar.org.pe/static/media/icono-blanco/GESTACION/megafono_no_permitido_Mesa%20de%20trabajo%201.svg",
         texto1A: "",
         texto1B: " Los gritos y agresiones durante el embarazo causan altos niveles de estrés en el bebé. Esto puede disminuir tu aumento de peso y afectar su desarrollo. ¡No lo permitas!",
         texto2: "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
@@ -161,7 +161,7 @@ export default [
         seccion: "Socioemocional",
         edad: -1,
         n_tip: 4,
-        icono: "http://52.177.117.53/static/media/icono-blanco/GESTACION/megafono_no_permitido_Mesa%20de%20trabajo%201.svg",
+        icono: "https://volar.org.pe/static/media/icono-blanco/GESTACION/megafono_no_permitido_Mesa%20de%20trabajo%201.svg",
         texto1A: "",
         texto1B: " El embarazo es una etapa muy especial. Experimentarás muchos cambios físicos y emocionales. ¡No te preocupes!",
         texto2: "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
@@ -173,7 +173,7 @@ export default [
         seccion: "Socioemocional",
         edad: -1,
         n_tip: 5,
-        icono: "http://52.177.117.53/static/media/icono-blanco/GESTACION/cansancio_Mesa%20de%20trabajo%201.svg",
+        icono: "https://volar.org.pe/static/media/icono-blanco/GESTACION/cansancio_Mesa%20de%20trabajo%201.svg",
         texto1A: "",
         texto1B: " ¡Felicitaciones por tu embarazo! Puede que empieces a sentirte muy cansada. Es mejor que delegues las tareas del hogar a tu pareja o algún familiar, evita exponerte.",
         texto2: "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
@@ -185,7 +185,7 @@ export default [
         seccion: "Socioemocional",
         edad: -1,
         n_tip: 6,
-        icono: "http://52.177.117.53/static/media/icono-blanco/GESTACION/cancion_Mesa%20de%20trabajo%201.svg",
+        icono: "https://volar.org.pe/static/media/icono-blanco/GESTACION/cancion_Mesa%20de%20trabajo%201.svg",
         texto1A: "",
         texto1B: " Es importante que el bebé sienta tu presencia y la de tu pareja o familia, tocando la barriguita, acariciando o cantando, siempre que tú te sientas cómoda. Esta comunicación fortalecerá el bienestar emocional de tu bebé.",
         texto2: "¡Tú puedes ayudarlos a crecer mejor!",
@@ -197,7 +197,7 @@ export default [
         seccion: "Socioemocional",
         edad: -1,
         n_tip: 7,
-        icono: "http://52.177.117.53/static/media/icono-blanco/GESTACION/embarazada_feliz_Mesa%20de%20trabajo%201.svg",
+        icono: "https://volar.org.pe/static/media/icono-blanco/GESTACION/embarazada_feliz_Mesa%20de%20trabajo%201.svg",
         texto1A: "",
         texto1B: " El embarazo es una etapa muy especial. Experimentarás muchos cambios físicos y emocionales. ¡No te preocupes!",
         texto2: "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
@@ -209,7 +209,7 @@ export default [
         seccion: "Socioemocional",
         edad: -1,
         n_tip: 8,
-        icono: "http://52.177.117.53/static/media/icono-blanco/GESTACION/corazones_Mesa%20de%20trabajo%201.svg",
+        icono: "https://volar.org.pe/static/media/icono-blanco/GESTACION/corazones_Mesa%20de%20trabajo%201.svg",
         texto1A: "",
         texto1B: " Dile a tu pareja o familia que es importante que se respeten y se den cariño. Si hace algo que te molesta, dicelo. ¡Cuídense!",
         texto2: "¡Tú puedes ayudarlos a crecer mejor!",
@@ -221,7 +221,7 @@ export default [
         seccion: "Socioemocional",
         edad: -1,
         n_tip: 9,
-        icono: "http://52.177.117.53/static/media/icono-blanco/GESTACION/respirar_Mesa%20de%20trabajo%201.svg",
+        icono: "https://volar.org.pe/static/media/icono-blanco/GESTACION/respirar_Mesa%20de%20trabajo%201.svg",
         texto1A: "",
         texto1B: " ¿Se acerca el día del parto? ¡Felicitaciones! Recuerda practicar estar al tanto de tu respiración, esto te ayudará a enfrentar el dolor.",
         texto2: "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
@@ -233,7 +233,7 @@ export default [
         seccion: "Socioemocional",
         edad: -1,
         n_tip: 10,
-        icono: "http://52.177.117.53/static/media/icono-blanco/GESTACION/thumbs_up_Mesa%20de%20trabajo%201.svg",
+        icono: "https://volar.org.pe/static/media/icono-blanco/GESTACION/thumbs_up_Mesa%20de%20trabajo%201.svg",
         texto1A: "",
         texto1B: ' Si la fecha de parto está cerca, te recomendamos practicar con tu pareja o un familiar cercano señales no verbales para comunicarse. Por ejemplo, puedes usar el dedo pulgar para indicar que "sí" o que "no". Así podrás comunicarle lo que quieres o sientes de manera más rápida y sin generar mucho estrés.',
         texto2: "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
@@ -245,7 +245,7 @@ export default [
         seccion: 'Rutina',
         edad: -1,
         n_tip: 1,
-        icono: 'http://52.177.117.53/static/media/icono-blanco/GESTACION/cerebro_musica_Mesa%20de%20trabajo%201.svg',
+        icono: 'https://volar.org.pe/static/media/icono-blanco/GESTACION/cerebro_musica_Mesa%20de%20trabajo%201.svg',
         texto1A: '',
         texto1B: ' ¿Sabías que escuchar música desarrolla del cerebro de tu bebé? Tu bebé ya puede escuchar y la música estimula su cerebro.',
         texto2: '¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!',
@@ -257,7 +257,7 @@ export default [
         seccion: 'Rutina',
         edad: -1,
         n_tip: 2,
-        icono: 'http://52.177.117.53/static/media/icono-blanco/GESTACION/bebe_Mesa%20de%20trabajo%201.svg',
+        icono: 'https://volar.org.pe/static/media/icono-blanco/GESTACION/bebe_Mesa%20de%20trabajo%201.svg',
         texto1A: '',
         texto1B: ' Ahora que tu bebé ya puede escuchar dile cuanto lo esperas y lo mucho que lo amas. Bien hecho!',
         texto2: '¡Tú puedes ayudarlos a crecer mejor!',
@@ -281,7 +281,7 @@ export default [
         seccion: 'Rutina',
         edad: -1,
         n_tip: 4,
-        icono: ' http://52.177.117.53/static/media/icono-blanco/GESTACION/cancion_corazon_Mesa%20de%20trabajo%201.svg',
+        icono: ' https://volar.org.pe/static/media/icono-blanco/GESTACION/cancion_corazon_Mesa%20de%20trabajo%201.svg',
         texto1A: '',
         texto1B: ' Cántale una canción a tu bebé todas las mañanas y noches! Cuando nazca puede gustarle escuchar esa canción y fortalecerá ese vínculo especial entre tú y él.',
         texto2: '¡Tú puedes ayudarlos a crecer mejor!',
@@ -293,7 +293,7 @@ export default [
         "seccion": "Rutina",
         "edad": -1,
         "n_tip": 5,
-        "icono": "http://52.177.117.53/static/media/icono-blanco/GESTACION/bebe_en_una_panza_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/GESTACION/bebe_en_una_panza_Mesa%20de%20trabajo%201.svg",
         "texto1A": "",
         "texto1B": " A los 7 meses de embarazo,tu bebé ya se moverá más y reaccionará a tus movimientos. ¡Eso significa que está creciendo!",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
@@ -305,7 +305,7 @@ export default [
         "seccion": "Rutina",
         "edad": -1,
         "n_tip": 6,
-        "icono": "http://52.177.117.53/static/media/icono-blanco/GESTACION/embarazada_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/GESTACION/embarazada_Mesa%20de%20trabajo%201.svg",
         "texto1A": "",
         "texto1B": " Puedes comunicarte con tu bebé de muchas formas. Cuando se mueva, sobate la panza. ¿Patea de vuelta? ¡Te está respondiendo!",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
@@ -317,7 +317,7 @@ export default [
         "seccion": "Rutina",
         "edad": -1,
         "n_tip": 7,
-        "icono": "http://52.177.117.53/static/media/icono-blanco/GESTACION/niño_niña_feliz_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/GESTACION/niño_niña_feliz_Mesa%20de%20trabajo%201.svg",
         "texto1A": "",
         "texto1B": "¿Sabías que los niños que reciben más cariño y atención crecen más seguros y sociales? ¡Dale mucho amor a tu bebé!",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
@@ -329,7 +329,7 @@ export default [
         "seccion": "Rutina",
         "edad": -1,
         "n_tip": 8,
-        "icono": "http://52.177.117.53/static/media/icono-blanco/GESTACION/madre_embarazada_y_corazon_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/GESTACION/madre_embarazada_y_corazon_Mesa%20de%20trabajo%201.svg",
         "texto1A": "",
         "texto1B": "  ¿Ya son 3 meses de embarazo? Ya puedes masajear tu vientre sin problemas. Es una muy buena forma de relajarte y comunicarte con tu bebé. Recuerda consultar con tu ginecólogo todas tus dudas e inquietudes.",
         "texto2": " ¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
@@ -341,7 +341,7 @@ export default [
         "seccion": "Rutina",
         "edad": -1,
         "n_tip": 9,
-        "icono": "http://52.177.117.53/static/media/icono-blanco/GESTACION/cuento_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/GESTACION/cuento_Mesa%20de%20trabajo%201.svg",
         "texto1A": "",
         "texto1B": " Anima a tu pareja a leer para tu bebé. Esto ayudará a que lo conozca y se acostumbre a su voz. Esta actividad es super importante, especialmente en el último trimestre de tu embarazo.",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
@@ -353,7 +353,7 @@ export default [
         "seccion": "Rutina",
         "edad": -1,
         "n_tip": 10,
-        "icono": "http://52.177.117.53/static/media/icono-blanco/GESTACION/ni%C3%B1o_ni%C3%B1a_feliz_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/GESTACION/ni%C3%B1o_ni%C3%B1a_feliz_Mesa%20de%20trabajo%201.svg",
         "texto1A": "",
         "texto1B": "Dale a tu bebé todo el amor que necesite, sin importar si es niño o niña. Ambos deben ser tratados de la misma forma y necesitan de tu cariño e interacción para desarrollar todas sus habilidades.",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
@@ -370,7 +370,7 @@ export default [
         "texto1B": "Para llevar un embarazo saludable y evitar complicaciones en el parto debes comer 3 comidas grandes y 2 refrigerios pequeños diarios.",
         "titulo": "Sabías que.... ",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/GESTACION/plato_de_comida_fruta_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/GESTACION/plato_de_comida_fruta_Mesa%20de%20trabajo%201.svg"
     },
     {
         // nutricionSalud_edad_-1_tip_2
@@ -380,7 +380,7 @@ export default [
         "texto1B": "El 30% de las mujeres embarazadas en el Perú tienen anemia. ¡No seas parte de esta cifra, cuidate! Ingiere alimentos ricos en hierros, tu médico podrá decirte cuáles encontrar en tu región.",
         "titulo": "¡Aliméntate bien!",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/GESTACION/pescado_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/GESTACION/pescado_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": ""
     },
@@ -388,7 +388,7 @@ export default [
         // nutricionSalud_edad_-1_tip_3
         "titulo": "Ayúdalo en su desarrollo",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/GESTACION/cerebro_corazon_Mesa%20de%20trabajo%201.svg",
+        "icono": " https://volar.org.pe/static/media/icono-blanco/GESTACION/cerebro_corazon_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 3,
@@ -400,7 +400,7 @@ export default [
         // nutricionSalud_edad_-1_tip_4
         "titulo": "Nuestro consejo para ti",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/GESTACION/carnes_pescado_Mesa%20de%20trabajo%201.svg",
+        "icono": " https://volar.org.pe/static/media/icono-blanco/GESTACION/carnes_pescado_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 4,
@@ -413,7 +413,7 @@ export default [
         // nutricionSalud_edad_-1_tip_5
         "titulo": "Tu salud no es un juego",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/GESTACION/fiebre_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/GESTACION/fiebre_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 5,
@@ -432,7 +432,7 @@ export default [
         "texto1B": "El 75% de embarazadas sufre hinchazón de manos y pies? No te asustes. Esto es normal y se da porque retienes líquidos. ¡Si tú estás tranquila, tu bebé también lo está!",
         "titulo": "Sabías que....",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/GESTACION/pies_manos_hinchadas_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/GESTACION/pies_manos_hinchadas_Mesa%20de%20trabajo%201.svg"
 
     },
     {
@@ -442,7 +442,7 @@ export default [
         "texto1B": "Mantén una dieta balanceada para cuidar a tu bebé. Come más cereales, proteínas, frutas y verduras y menos dulces y grasas.",
         "titulo": "Cuida lo que comes",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/GESTACION/frutas_verduras_dulce_grasas_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/GESTACION/frutas_verduras_dulce_grasas_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 7
@@ -455,7 +455,7 @@ export default [
         "texto1B": "¿Sabías que los alimentos altos en vitamina A ayudan a reducir los riesgos al dar a luz? Tienen nutrientes que protegen tu cuerpo.",
         "titulo": "Tip Volar",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/GESTACION/zanahoria_brocoli_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/GESTACION/zanahoria_brocoli_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 8
@@ -470,7 +470,7 @@ export default [
         "texto1B": "¿Sabías que el ejercicio físico baja la hinchazón, mejora tu ánimo y reduce el dolor de espalda? ¡A ejercitarse se ha dicho! Puedes empezar con caminatas de 10 minutos y vas aumentando.",
         "titulo": "¡Hagamos ejercicio!",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/GESTACION/caminar_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/GESTACION/caminar_Mesa%20de%20trabajo%201.svg"
 
     },
     {
@@ -483,7 +483,7 @@ export default [
         "texto1B": "Para reducir las nauseas, come cada 3 horas en porciones chicas, toma mucha agua y descansa. ¡Cuidate! ¡Lo estás haciendo increíble! ",
         "titulo": " Te ayudamos en el embarazo",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/GESTACION/agua_plato_de_comida_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/GESTACION/agua_plato_de_comida_Mesa%20de%20trabajo%201.svg"
 
     },
 
@@ -496,7 +496,7 @@ export default [
         "texto1B": " Cuando te lavas las manos matas los gérmenes que te hacen contraer enfermedades diarreicas. ¡Házlo siempre! ¡Cuidandote tú, cuidas a tus hijas e hijos!",
         "titulo": "Evita enfermedades",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/0-1/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 1
@@ -511,7 +511,7 @@ export default [
         "texto1B": " tiene que estar limpio antes de que vuelva a su boca. No hacerlo podría exponerlo a enfermedades. ¡Cuídalo mucho!",
         "titulo": "¡Ten cuidado!",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/0-1/biber%C3%B3n_Mesa%20de%20trabajo%201.svg"
+        "icono": " https://volar.org.pe/static/media/icono-blanco/0-1/biber%C3%B3n_Mesa%20de%20trabajo%201.svg"
 
     },
     {
@@ -519,7 +519,7 @@ export default [
         "texto1B": " ya está aprendiendo. Cuando le laves las manos, explícale lo que haces. ¡te escuchará!",
         "titulo": "Paso a Paso ",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/0-1/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
+        "icono": " https://volar.org.pe/static/media/icono-blanco/0-1/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 8,
@@ -532,7 +532,7 @@ export default [
         "texto1B": " Aunque el pañal se cambie varias veces al día, no puedes olvidarte nunca de lavarte las manos. ¡Lávate antes y luego de hacerlo! Las heces tiene gérmenes que podrían enfermar a tu bebé. ¡Cuídalo!",
         "titulo": "Sana costumbre",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/0-1/pa%C3%B1al_Mesa%20de%20trabajo%201.svg",
+        "icono": " https://volar.org.pe/static/media/icono-blanco/0-1/pa%C3%B1al_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 10,
@@ -547,7 +547,7 @@ export default [
         "texto1B": " debe estar siempre limpio. Los gérmenes que esten ahí podrian enfermar a tu bebé. Desinféctalo con agua y detergente.",
         "titulo": "La limpieza es clave",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/batea_de_ropa_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/0-1/batea_de_ropa_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": ""
 
@@ -557,7 +557,7 @@ export default [
         "texto1B":" Lávate las manos antes de amamantar, antes de cocinar, antes de comer y luego de ir al baño. Son momentos clave!",
         "titulo": "Que sea una costumbre",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/0-1/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
+        "icono": " https://volar.org.pe/static/media/icono-blanco/0-1/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 4,
@@ -575,7 +575,7 @@ export default [
         "texto1B": " de los gérmenes. El lugar donde lo bañas, donde lo cambias y donde descansa deben estar siempre limpios. ¡Evita que se enferme!",
         "titulo": "Limpia siempre los espacios",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/botella_limpieza_desinfectante_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/0-1/botella_limpieza_desinfectante_Mesa%20de%20trabajo%201.svg"
 
     },
     {
@@ -586,7 +586,7 @@ export default [
         "texto1B": " antes de usarlo otra vez. Lávalo con agua hervida y tenlo 5 minutos en agua caliente. ¡Bien hecho!",
         "titulo": "Cuídalo",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/biber%C3%B3n_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/0-1/biber%C3%B3n_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": ""
 
@@ -597,7 +597,7 @@ export default [
         "texto1B": " La única forma de matar los gérmenes del agua es hirviendola. Si la tomas directo del caño o del envase, podrías enfermarte del estómago. Y necesitas una buena salud para amamantar a tu bebé, recuerda que los 6 primeros meses solo debe tomar tu leche. ",
         "titulo": "Cuida lo que consumes ",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/tetera_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/0-1/tetera_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 7
@@ -606,7 +606,7 @@ export default [
         // higieneAguaSegura_edad_0_tip_9
         "titulo": "Limpieza es salud",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/lavado_frutas_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/0-1/lavado_frutas_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 9,
@@ -625,7 +625,7 @@ export default [
         "texto1A": " Aprovecha momentos de la rutina como cuando lo alimentas o le cambias el pañal para fortalecer el desarrollo del cerebro de ",
         "texto1B": " Por ejemplo, jueguen al avioncito con la cuchara. ¡Préstale atención a sus reacciones! ",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/cuchara_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/0-1/cuchara_Mesa%20de%20trabajo%201.svg",
         "titulo":"Aprovecha cada momento"
 
     },
@@ -635,7 +635,7 @@ export default [
         "texto1B": " motiva a que explore con sus manos.",
         "titulo": "El día a día es clave",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/juguete_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/0-1/juguete_Mesa%20de%20trabajo%201.svg",
         "seccion": "Juego",
         "video": "",
         "n_tip": 10
@@ -643,7 +643,7 @@ export default [
     {
         // juego_edad_0_tip_2
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/0-1/juguete_Mesa%20de%20trabajo%201.svg",
+        "icono": " https://volar.org.pe/static/media/icono-blanco/0-1/juguete_Mesa%20de%20trabajo%201.svg",
         "seccion": "Juego",
         "video": "",
         "n_tip": 2,
@@ -656,7 +656,7 @@ export default [
         // juego_edad_0_tip_4
         "texto1B":" Aprovecha momentos en casa con tu bebé para desarrollar sus habilidades de memoria y concentración. ¡Házle un tour por su cuarto! Muéstrale los objetos que hay y para qué sirven, él te entiende muy bien. ",
         "titulo": "Aprovecha cada momento",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/0-1/juguete_Mesa%20de%20trabajo%201.svg",
+        "icono": " https://volar.org.pe/static/media/icono-blanco/0-1/juguete_Mesa%20de%20trabajo%201.svg",
         "seccion": "Juego",
         "video": "",
         "n_tip": 4,
@@ -686,7 +686,7 @@ export default [
         "texto1B": " ya puede responderte con movimientos. Conoce tu voz y cuando la escuche moverá su cuerpo para responderte. ¿Recuerdas la canción que le cantabas cuando estaba en tu vientre? ¡Traigámosla al escenario ahora!",
         "titulo": "Ayúdalo en su desarrollo",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/microfono_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/0-1/microfono_Mesa%20de%20trabajo%201.svg"
 
     },
     {
@@ -699,7 +699,7 @@ export default [
         "texto1B": " mientras lo aseas. Señala partes de su cuerpo y dile cómo se llaman. ",
         "titulo": "Tiempo juntos",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/0-1/plato_de_comida_Mesa%20de%20trabajo%201.svg"
+        "icono": " https://volar.org.pe/static/media/icono-blanco/0-1/plato_de_comida_Mesa%20de%20trabajo%201.svg"
 
     },
     {
@@ -712,14 +712,14 @@ export default [
         "texto1B": " Así se estará familiarizando con las palabras que formarán parte de su lenguaje. ",
         "titulo": "Momento de imaginar",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/cuento_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/0-1/cuento_Mesa%20de%20trabajo%201.svg"
 
     },
     {
         // juego_edad_0_tip_3
         "titulo": "Juega con él/ella",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/0-1/juguete_Mesa%20de%20trabajo%201.svg",
+        "icono": " https://volar.org.pe/static/media/icono-blanco/0-1/juguete_Mesa%20de%20trabajo%201.svg",
         "seccion": "Juego",
         "video": "",
         "n_tip": 3,
@@ -749,7 +749,7 @@ export default [
         "texto1B": " ¿Sabías que el 85% del cerebro se desarrolla en los primeros 3 años de vida? Aprovecha este tiempo al máximo con ",
         "titulo": "¡Ayúdalo a desarrollarse!",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/cerebro_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/0-1/cerebro_Mesa%20de%20trabajo%201.svg"
 
     },
     {
@@ -834,7 +834,7 @@ export default [
         "texto1B": " nombra las partes de su cuerpo mientras las limpias. Dile esta es tu mano y señala. ¡Se divertirá y aprenderá!",
         "titulo": "Aprendiendo juntos",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/0-1/bebe_ba%C3%B1andoce_Mesa%20de%20trabajo%201.svg"
+        "icono": " https://volar.org.pe/static/media/icono-blanco/0-1/bebe_ba%C3%B1andoce_Mesa%20de%20trabajo%201.svg"
 
     },
     {
@@ -847,7 +847,7 @@ export default [
         "texto1B": " míralo a los ojos y sonríele. También aprende sintiéndote y mirándote!",
         "titulo": "Mantén el contacto",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/lactancia_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/0-1/lactancia_Mesa%20de%20trabajo%201.svg"
 
     },
     {
@@ -860,7 +860,7 @@ export default [
         "texto1B": " ¡Pónganse horas para cada actividad como la lactancia, el baño y las siestas!",
         "titulo": "¡Sigue los horarios!",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/reloj_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/0-1/reloj_Mesa%20de%20trabajo%201.svg"
 
     },
     {
@@ -870,7 +870,7 @@ export default [
         "texto1B": "",
         "titulo": "¡Arriba el animo!",
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/triste_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/0-1/triste_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 1
@@ -886,13 +886,13 @@ export default [
         "texto1B": "",
         "titulo": "¡Respeto mutuo!",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/corazon_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/0-1/corazon_Mesa%20de%20trabajo%201.svg"
 
     },
     {
         // "socioemocional_edad_0_tip_3": {
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/pa%C3%B1al_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/0-1/pa%C3%B1al_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 3,
@@ -909,7 +909,7 @@ export default [
         "texto1B": " cada vez que lo ensucie. Préstale atención para saber cuando se haga y ten pañales a la mano. ¡Muy bien!",
         "titulo": "Limpios y felices",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/0-1/pañal_Mesa%20de%20trabajo%201.svg",
+        "icono": " https://volar.org.pe/static/media/icono-blanco/0-1/pañal_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 4
@@ -925,7 +925,7 @@ export default [
         "texto1B": " reduce los  llantos intenso y hace que tu bebé se sienta más seguro. ¡Consuélalo!",
         "titulo": "Dale tu amor",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/0-1/bebe_llorando_Mesa%20de%20trabajo%201.svg"
+        "icono": " https://volar.org.pe/static/media/icono-blanco/0-1/bebe_llorando_Mesa%20de%20trabajo%201.svg"
 
     },
     {
@@ -938,7 +938,7 @@ export default [
         "texto1B": " llora no intenta manipularte. El llanto es la única forma que tiene para comunicar lo que necesita. ¡Consuelalo al momento! ",
         "titulo": "Cálmalo",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/bebe_llorando_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/0-1/bebe_llorando_Mesa%20de%20trabajo%201.svg"
 
     },
     {
@@ -948,7 +948,7 @@ export default [
         "texto1B": "",
         "titulo": "Todo en su momento",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/bebe_gatenado_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/0-1/bebe_gatenado_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 7
@@ -964,7 +964,7 @@ export default [
         "texto1B": "",
         "titulo": "Dale confianza",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/bebe_sentado_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/0-1/bebe_sentado_Mesa%20de%20trabajo%201.svg"
 
     },
     {
@@ -975,7 +975,7 @@ export default [
         "texto1B": " Dile cuánto lo amas a cada instante. Con tu amor desarrollará un vínculo especial llamado \"apego seguro\". Muy importante para el desarrollo de sus habilidades socioemocionales.",
         "titulo": "Fortaleciendo lazos",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/0-1/mama_con_bebe_Mesa%20de%20trabajo%201.svg",
+        "icono": " https://volar.org.pe/static/media/icono-blanco/0-1/mama_con_bebe_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": ""
 
@@ -990,7 +990,7 @@ export default [
         "edad": 0,
         "titulo": "Ayúdalo",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/0-1/mama_con_bebe_Mesa%20de%20trabajo%201.svg"
+        "icono": " https://volar.org.pe/static/media/icono-blanco/0-1/mama_con_bebe_Mesa%20de%20trabajo%201.svg"
 
     },
     {
@@ -1003,7 +1003,7 @@ export default [
         "texto1B": " contra severas enfermedades. En la primera semana de nacido le toca la BCG y la Hepatitis B. Si aún no se la ponen, ve al centro de salud para lo hagan pronto.",
         "titulo": "¡Es prioridad!",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/0-1/vacuna_Mesa%20de%20trabajo%201.svg"
+        "icono": " https://volar.org.pe/static/media/icono-blanco/0-1/vacuna_Mesa%20de%20trabajo%201.svg"
 
     },
     {
@@ -1016,7 +1016,7 @@ export default [
         "texto1B": " Aprovechalo!",
         "titulo": "Sabías que...",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono":  "http://52.177.117.53/static/media/icono-blanco/0-1/lactancia_Mesa%20de%20trabajo%201.svg",
+        "icono":  "https://volar.org.pe/static/media/icono-blanco/0-1/lactancia_Mesa%20de%20trabajo%201.svg",
 
     },
     {
@@ -1026,7 +1026,7 @@ export default [
         "texto1B": "",
         "titulo": "El doctor también juega un rol",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/salud_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/0-1/salud_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 2
@@ -1042,7 +1042,7 @@ export default [
         "texto1B": " de enfermedades ¡Tu leche es la mejor!",
         "titulo": "Sabías que...",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/lactancia_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/0-1/lactancia_Mesa%20de%20trabajo%201.svg"
     },
     {
         // nutricionSalud_edad_0_tip_4": {
@@ -1054,7 +1054,7 @@ export default [
         "texto1B": " y estarás fuerte para cuidarlo. ¡Bien hecho!",
         "titulo": "Tu hijo(a) se beneficia",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/0-1/bebe_feliz_Mesa%20de%20trabajo%201.svg"
+        "icono": " https://volar.org.pe/static/media/icono-blanco/0-1/bebe_feliz_Mesa%20de%20trabajo%201.svg"
 
     },
     {
@@ -1065,7 +1065,7 @@ export default [
         "texto1B": "",
         "titulo": "Fundamental",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/0-1/vacuna_Mesa%20de%20trabajo%201.svg",
+        "icono": " https://volar.org.pe/static/media/icono-blanco/0-1/vacuna_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": ""
 
@@ -1077,7 +1077,7 @@ export default [
         "texto1B": " y conoce su llanto y gestos. Si ves algo distinto, podría estar enfermo. ¡Llévalo al centro de salud!",
         "titulo": "Cálmalo",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/salud_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/0-1/salud_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 6
@@ -1086,7 +1086,7 @@ export default [
     {
         // nutricionSalud_edad_0_tip_7": {
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/pure_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/0-1/pure_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 7,
@@ -1106,7 +1106,7 @@ export default [
         "texto1B": " alimentos blandos o purés de 2 a 3 veces al día y sigue dándole leche materna. ¡Bien hecho!",
         "titulo": "Tip Volar",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/0-1/bebe_feliz_Mesa%20de%20trabajo%201.svg"
+        "icono": " https://volar.org.pe/static/media/icono-blanco/0-1/bebe_feliz_Mesa%20de%20trabajo%201.svg"
 
     },
     {
@@ -1119,7 +1119,7 @@ export default [
         "texto1B": " no necesita agua. Tu leche materna tiene toda el agua que necesita, es limpia y segura. ¡Sigue asi!",
         "titulo": "Tú le ofreces lo que necesita",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/lactancia_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/0-1/lactancia_Mesa%20de%20trabajo%201.svg"
 
     },
 
@@ -1127,7 +1127,7 @@ export default [
     {
         // " higieneAguaSegura_edad_1_tip_1": {
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/0-1/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/0-1/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 1,
@@ -1147,7 +1147,7 @@ export default [
         "texto1B": " antes de usarlos. Lávalos con agua hervida y tenlos 5 minutos en agua caliente. ¡Bien!",
         "titulo": "Evita los gérmenes",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/cubierto_plato_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/cubierto_plato_Mesa%20de%20trabajo%201.svg",
 
     },
 
@@ -1160,7 +1160,7 @@ export default [
         "texto1B": " La única forma de matar los gérmenes del agua es hirviendola. Si la tomas directo del caño o del envase, podrías enfermarte del estómago. Y necesitas una buena salud para amamantar a tu bebé, recuerda que los 6 primeros meses solo debe tomar tu leche. ",
         "titulo": "Cuídate",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/tetera_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/tetera_Mesa%20de%20trabajo%201.svg",
 
     },
     // " higieneAguaSegura_edad_1_tip_5": 
@@ -1175,7 +1175,7 @@ export default [
         "texto1B": " ¡Ten cuidado siempre con el contacto que tiene con ellos! ",
         "titulo": "Contacto mínimo",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/1-2/perro_Mesa%20de%20trabajo%201.svg",
+        "icono": " https://volar.org.pe/static/media/icono-blanco/1-2/perro_Mesa%20de%20trabajo%201.svg",
        
     },
     // "higieneAguaSegura_edad_1_tip_2": 
@@ -1188,7 +1188,7 @@ export default [
         "texto1B": " ¡Suma el lavado de manos a tu rutina diaria! ¡Con agua y jabón durante 20seg!",
         "titulo": "La limpieza es lo primero",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
        
     },
     // "higieneAguaSegura_edad_1_tip_3": 
@@ -1201,14 +1201,14 @@ export default [
         "texto1B": " tiene más dientecitos, ayúdalo a mantenerlos limpios. Enséñale que deben lavarse los dientes siempre luego de comer. ¡Bien!",
         "titulo": "Siempre limpios",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/cepillo_dental_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/cepillo_dental_Mesa%20de%20trabajo%201.svg",
        
     },
     // "higieneAguaSegura_edad_1_tip_6":
      {
         "titulo": "Cuidado con lo que consume",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "  http://52.177.117.53/static/media/icono-blanco/1-2/vaso_de_agua_Mesa%20de%20trabajo%201.svg",
+        "icono": "  https://volar.org.pe/static/media/icono-blanco/1-2/vaso_de_agua_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 6,
@@ -1222,7 +1222,7 @@ export default [
         "texto1B": " come la fruta sucia le dolerá mucho el estómago y podría darle diarrea o algo peor. ¡Cuidalo mucho! ",
         "titulo": "Cuídalos",
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/frutas_sucias_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/frutas_sucias_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 7,
@@ -1240,7 +1240,7 @@ export default [
         "texto1B": " Los alimentos amarillos y naranjas son buenos para el corazón, los ojos y ayudan a combatir gérmenes. Naranja, mandarina, plátano y más!",
         "titulo": "Sin contaminación",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/1-2/envase_agua_tapada_Mesa%20de%20trabajo%201.svg",
+        "icono": " https://volar.org.pe/static/media/icono-blanco/1-2/envase_agua_tapada_Mesa%20de%20trabajo%201.svg",
        
     },
     // "higieneAguaSegura_edad_1_tip_9": 
@@ -1251,7 +1251,7 @@ export default [
         "texto1B": ". Luego, lávate las manos con agua y jabón. ",
         "titulo": "La limpieza es importante",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/pa%C3%B1al_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/pa%C3%B1al_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
        
@@ -1263,7 +1263,7 @@ export default [
     //     "texto1B": " tiene estos síntomas, llévalo al centro de salud.",
     //     "titulo": "Cuídalo",
     //     "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-    //     "icono": " http://52.177.117.53/static/media/icono-blanco/1-2/dolor_de_barriga_Mesa%20de%20trabajo%201.svg",
+    //     "icono": " https://volar.org.pe/static/media/icono-blanco/1-2/dolor_de_barriga_Mesa%20de%20trabajo%201.svg",
     //     "seccion": "Nutrición y Salud",
     //     "video": "",
     //     "n_tip": 4,
@@ -1276,7 +1276,7 @@ export default [
     //     // nutricionSalud_edad_1_tip_1": {
     //     "titulo": "Su desarrollo es importante",
     //     "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-    //     "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/ni%C3%B1o_ni%C3%B1a_feliz_Mesa%20de%20trabajo%201.svg",
+    //     "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/ni%C3%B1o_ni%C3%B1a_feliz_Mesa%20de%20trabajo%201.svg",
     //     "seccion": "Nutrición y Salud",
     //     "video": "",
     //     "n_tip": 1,
@@ -1293,7 +1293,7 @@ export default [
     //     "texto1B": " alejado de cualquiera que tosa o estornude. Muchas enfermedades respiratorias se transmiten así y estas afectan el desarrollo del cerebro de tus hijos. ",
     //     "titulo": "Aleja a las posibles amenazas",
     //     "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-    //     "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/estornudar_prohibido_Mesa%20de%20trabajo%201.svg",
+    //     "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/estornudar_prohibido_Mesa%20de%20trabajo%201.svg",
     //     "seccion": "Nutrición y Salud",
     //     "video": ""
 
@@ -1305,7 +1305,7 @@ export default [
     //     "texto1B": " de enfermedades ¡Tu leche es la mejor!",
     //     "titulo": "Sabías que....",
     //     "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-    //     "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/lactancia_Mesa%20de%20trabajo%201.svg",
+    //     "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/lactancia_Mesa%20de%20trabajo%201.svg",
     //     "seccion": "Nutrición y Salud",
     //     "video": "",
     //     "n_tip": 2
@@ -1314,7 +1314,7 @@ export default [
     // {
     //     // nutricionSalud_edad_1_tip_3": {
     //     "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-    //     "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/plato_de_comida_Mesa%20de%20trabajo%201.svg",
+    //     "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/plato_de_comida_Mesa%20de%20trabajo%201.svg",
     //     "seccion": "Nutrición y Salud",
     //     "video": "",
     //     "n_tip": 3,
@@ -1329,7 +1329,7 @@ export default [
     //     "texto1B": " 3 o 4 veces al dia. Necesita comer más para crecer mejor. ¡Bien hecho!",
     //     "titulo": "La alimentación es importante",
     //     "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-    //     "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/plato_de_comida_Mesa%20de%20trabajo%201.svg",
+    //     "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/plato_de_comida_Mesa%20de%20trabajo%201.svg",
     //     "seccion": "Nutrición y Salud",
     //     "video": "",
     //     "n_tip": 5,
@@ -1344,7 +1344,7 @@ export default [
     //     "texto1B": " con muchas verduras y carnes. Necesita una variedad de alimentos para crecer bien. ¡Tú puedes!",
     //     "titulo": "Balancea tu alimentación",
     //     "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-    //     "icono": " http://52.177.117.53/static/media/icono-blanco/1-2/verdura_fruta_Mesa%20de%20trabajo%201.svg",
+    //     "icono": " https://volar.org.pe/static/media/icono-blanco/1-2/verdura_fruta_Mesa%20de%20trabajo%201.svg",
     //     "seccion": "Nutrición y Salud",
     //     "video": "",
     //     "n_tip": 6
@@ -1357,7 +1357,7 @@ export default [
     //     "texto1B": " le tocan nuevas vacunas! Acude a su control puntualmente y en el centro de salud se las aplicarán. ¡Son muy importantes! Gracias a ellas prevenimos enfermedades que afectan su desarrollo.",
     //     "titulo": "Nuevamente al médico",
     //     "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-    //     "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/vacuna_Mesa%20de%20trabajo%201.svg",
+    //     "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/vacuna_Mesa%20de%20trabajo%201.svg",
     //     "seccion": "Nutrición y Salud",
     //     "video": "",
     //     "n_tip": 7
@@ -1373,7 +1373,7 @@ export default [
     //     "texto1B": " Bloquea los enchufes y el ingreso a lugares en donde podría caerse. ¡Cuidalo mucho!",
     //     "titulo": "Cuídalo de los peligros",
     //     "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-    //     "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/enchufe_Mesa%20de%20trabajo%201.svg"
+    //     "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/enchufe_Mesa%20de%20trabajo%201.svg"
 
     // },
     // {
@@ -1386,7 +1386,7 @@ export default [
     //     "texto1B": " con gaseosas, helados o dulces. No tienen ninguna vitamina y afectan su crecimiento. ¡Cuidalo!",
     //     "titulo": "Evita darle esto",
     //     "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-    //     "icono": " http://52.177.117.53/static/media/icono-blanco/1-2/dulce_prohibido_Mesa%20de%20trabajo%201.svg"
+    //     "icono": " https://volar.org.pe/static/media/icono-blanco/1-2/dulce_prohibido_Mesa%20de%20trabajo%201.svg"
 
     // },
     {
@@ -1399,7 +1399,7 @@ export default [
         "texto1B": " No siempre podemos dedicarle todo el tiempo que quisiéramos a nuestros hijos, pero con 20 minutos de juego diarios los puedes hacer muy felices. ¡Tú puedes!",
         "titulo": "Quieren tu atención",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/juguete_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/juguete_Mesa%20de%20trabajo%201.svg"
 
     },
     {
@@ -1422,7 +1422,7 @@ export default [
         "texto1B": " Le encantará y le enseñará paciencia y organización. ¡Lo estás haciendo excelente!",
         "titulo": "Momentos de diversión",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/ni%C3%B1o_feliz_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/ni%C3%B1o_feliz_Mesa%20de%20trabajo%201.svg",
         "seccion": "Juego",
         "video": "",
         "n_tip": 2
@@ -1450,14 +1450,14 @@ export default [
         "texto1B": " Si no tienes pelota, puedes usar medias enrolladas. ",
         "titulo": "Acompaña su crecimiento",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/pelota_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/pelota_Mesa%20de%20trabajo%201.svg"
 
     },
     {
         // "juego_edad_1_tip_5": {
         "titulo": "La importancia del sueño",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/sue%C3%B1o_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/sue%C3%B1o_Mesa%20de%20trabajo%201.svg",
         "seccion": "Juego",
         "video": "",
         "n_tip": 5,
@@ -1471,7 +1471,7 @@ export default [
         "texto1B": " Cuando felicitamos a nuestros hijos aumentamos su autoestima y confianza. Esto ayudará a que luego se animen a retos nuevos. ¡Fortalece esto con los juegos que tú conoces! ¡Cambien las reglas y respeten sus turnos! Muy bien!",
         "titulo": "Fortaleciendo lazos",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/juguete_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/juguete_Mesa%20de%20trabajo%201.svg",
         "seccion": "Juego",
         "video": "",
         "n_tip": 6,
@@ -1486,7 +1486,7 @@ export default [
         "texto1B": " se acerque a ti por abrazos y besos. Tu amor lo ayudará a crecer mejor. ¡Muy bien!",
         "titulo": "Todo con cariño",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/corazon_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/corazon_Mesa%20de%20trabajo%201.svg",
         "seccion": "Juego",
         "video": "",
         "n_tip": 7
@@ -1509,7 +1509,7 @@ export default [
         // "juego_edad_1_tip_9": {
         "titulo": "Motívalo",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/1-2/mano_aplaudiendo_Mesa%20de%20trabajo%201.svg",
+        "icono": " https://volar.org.pe/static/media/icono-blanco/1-2/mano_aplaudiendo_Mesa%20de%20trabajo%201.svg",
         "seccion": "Juego",
         "video": "",
         "n_tip": 9,
@@ -1523,7 +1523,7 @@ export default [
         "texto1B": " tiene estos síntomas, llévalo al centro de salud.",
         "titulo": "Cuídalo",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/1-2/dolor_de_barriga_Mesa%20de%20trabajo%201.svg",
+        "icono": " https://volar.org.pe/static/media/icono-blanco/1-2/dolor_de_barriga_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 4,
@@ -1534,7 +1534,7 @@ export default [
         // nutricionSalud_edad_1_tip_1": {
         "titulo": "Su desarrollo es importante",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/ni%C3%B1o_ni%C3%B1a_feliz_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/ni%C3%B1o_ni%C3%B1a_feliz_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 1,
@@ -1551,7 +1551,7 @@ export default [
         "texto1B": " alejado de cualquiera que tosa o estornude. Muchas enfermedades respiratorias se transmiten así y estas afectan el desarrollo del cerebro de tus hijos. ",
         "titulo": "Aleja a las posibles amenazas",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/estornudar_prohibido_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/estornudar_prohibido_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": ""
     },
@@ -1562,7 +1562,7 @@ export default [
         "texto1B": " de enfermedades ¡Tu leche es la mejor!",
         "titulo": "Sabías que....",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/lactancia_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/lactancia_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 2
@@ -1571,7 +1571,7 @@ export default [
     {
         // "nutricionSalud_edad_1_tip_3": {
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/plato_de_comida_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/plato_de_comida_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 3,
@@ -1586,7 +1586,7 @@ export default [
         "texto1B": " 3 o 4 veces al dia. Necesita comer más para crecer mejor. ¡Bien hecho!",
         "titulo": "La alimentación es importante",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/plato_de_comida_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/plato_de_comida_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 5,
@@ -1601,7 +1601,7 @@ export default [
         "texto1B": " con muchas verduras y carnes. Necesita una variedad de alimentos para crecer bien. ¡Tú puedes!",
         "titulo": "Balancea tu alimentación",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/1-2/verdura_fruta_Mesa%20de%20trabajo%201.svg",
+        "icono": " https://volar.org.pe/static/media/icono-blanco/1-2/verdura_fruta_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 6
@@ -1614,7 +1614,7 @@ export default [
         "texto1B": " le tocan nuevas vacunas! Acude a su control puntualmente y en el centro de salud se las aplicarán. ¡Son muy importantes! Gracias a ellas prevenimos enfermedades que afectan su desarrollo.",
         "titulo": "Nuevamente al médico",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/vacuna_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/vacuna_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 7
@@ -1630,7 +1630,7 @@ export default [
         "texto1B": " . Bloquea los enchufes y el ingreso a lugares en donde podría caerse. ¡Cuidalo mucho!",
         "titulo": "Cuídalo de los peligros",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/enchufe_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/enchufe_Mesa%20de%20trabajo%201.svg"
 
     },
     {
@@ -1643,7 +1643,7 @@ export default [
         "texto1B": " con gaseosas, helados o dulces. No tienen ninguna vitamina y afectan su crecimiento. ¡Cuidalo!",
         "titulo": "Evita darle esto",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/1-2/dulce_prohibido_Mesa%20de%20trabajo%201.svg"
+        "icono": " https://volar.org.pe/static/media/icono-blanco/1-2/dulce_prohibido_Mesa%20de%20trabajo%201.svg"
 
     },
 
@@ -1667,7 +1667,7 @@ export default [
         "texto1B": " necesita que motives su habla. Por ejemplo, puedes contarle cómo eras tu de pequeña. ¡Amará escucharte!",
         "titulo": "¡Conversen!",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/mama_hablando_con_bebe_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/mama_hablando_con_bebe_Mesa%20de%20trabajo%201.svg",
         "seccion": "Rutina",
         "video": ""
     },
@@ -1689,7 +1689,7 @@ export default [
         "texto1B": " que encuentre algo y lo traiga. Le enseñas a hacer dos cosas en orden y ejercitas su memoria. ¡Bien hecho!",
         "titulo": "Creciendo juntos",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/juguete_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/juguete_Mesa%20de%20trabajo%201.svg",
         "seccion": "Rutina",
         "video": "",
         "n_tip": 7,
@@ -1705,7 +1705,7 @@ export default [
         "texto1B": " corra, salte y baile, cuidándolo siempre",
         "titulo": "Momentos de diversión",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/ni%C3%B1a_saltando_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/ni%C3%B1a_saltando_Mesa%20de%20trabajo%201.svg",
         "seccion": "Rutina",
         "video": ""
 
@@ -1718,7 +1718,7 @@ export default [
         "texto1B": " en voz alta. Esto ayudará a prepararlo para desarrollar sus habilidades matemáticas. ",
         "titulo": "Todo momento sirve para aprender",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/plato_de_comida_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/plato_de_comida_Mesa%20de%20trabajo%201.svg",
         "seccion": "Rutina",
         "video": ""
 
@@ -1733,7 +1733,7 @@ export default [
         "texto1B": "",
         "titulo": "Ellos entienden",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/1-2/bebe_feliz_Mesa%20de%20trabajo%201.svg"
+        "icono": " https://volar.org.pe/static/media/icono-blanco/1-2/bebe_feliz_Mesa%20de%20trabajo%201.svg"
 
     },
     {
@@ -1784,14 +1784,14 @@ export default [
         "texto1B": " hace una pataleta, ponte a su altura, escucha lo que dice, dile que lo entiendes y abrazalo. No uses violencia nunca. ",
         "titulo": "Compréndelo",
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/1-2/bebe_llorando_Mesa%20de%20trabajo%201.svg",
+        "icono": " https://volar.org.pe/static/media/icono-blanco/1-2/bebe_llorando_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": ""
     },
     {
         // "socioemocional_edad_1_tip_10": {
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/mama_con_bebe_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/mama_con_bebe_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 10,
@@ -1806,7 +1806,7 @@ export default [
         "texto1B": " Cuando los padres gritan o pegan, los niños desarrollan menos el control de sus emociones y se vuelven más agresivos. Dale mucho amor!",
         "titulo": "Ellos te imitan",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/persona_molesta_prohibido_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/persona_molesta_prohibido_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 2,
@@ -1824,7 +1824,7 @@ export default [
         "texto1B": "",
         "titulo": "Ellos notan sus sentimientos",
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/triste_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/triste_Mesa%20de%20trabajo%201.svg"
     },
     {
         // "socioemocional_edad_1_tip_4": {
@@ -1834,7 +1834,7 @@ export default [
         "texto1B": "",
         "titulo": "Dale tranquilidad",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/corazon_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/corazon_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": ""
 
@@ -1849,7 +1849,7 @@ export default [
         "texto1B": " y eso afecta el desarrollo de su cerebro. ¡Ténlo siempre limpio para que se desarrolle bien! ",
         "titulo": "Limpios y felices",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/pa%C3%B1al_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/pa%C3%B1al_Mesa%20de%20trabajo%201.svg"
 
     },
     {
@@ -1857,7 +1857,7 @@ export default [
         "texto1B": " cada vez que lo ensucie. Préstale atención para saber cuando se haga y ten pañales a la mano. ¡Muy bien!",
         "titulo": "Siempre limpios",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/pa%C3%B1al_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/pa%C3%B1al_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 6,
@@ -1875,12 +1875,12 @@ export default [
         "texto1B": " reduce los  llantos intenso y hace que tu bebé se sienta más seguro. ¡Consuélalo!",
         "titulo": "Dale tu amor",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/bebe_llorando_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/bebe_llorando_Mesa%20de%20trabajo%201.svg"
 
     },
     {
         // "socioemocional_edad_1_tip_8": {
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/bebe_llorando_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/bebe_llorando_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 8,
@@ -1901,7 +1901,7 @@ export default [
         "texto1B":  " Dile cuánto lo amas a cada instante. Con tu amor desarrollará un vínculo especial llamado \"apego seguro\". Muy importante para el desarrollo de sus habilidades socioemocionales.",
         "titulo": "Dale seguridad",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/1-2/mama_con_bebe_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/mama_con_bebe_Mesa%20de%20trabajo%201.svg"
 
     },
 
@@ -1914,7 +1914,7 @@ export default [
         "texto1B": " La única forma de matar los gérmenes del agua es hirviendola. Si la tomas directo del caño o del envase, podrían enfermarse del estómago. ",
         "titulo": "Evita los gérmenes",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/tetera_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/tetera_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": ""
     },
@@ -1925,7 +1925,7 @@ export default [
         "texto1B": " que si acaricia un animal, tiene que lavarse las manos con agua y con jabón para evitar enfermarse. ¡Bien hecho!",
         "titulo": "La importancia del aseo",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/perro_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/perro_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 2
@@ -1934,7 +1934,7 @@ export default [
         // higieneAguaSegura_edad_2_tip_3": {
         "titulo": "Vamos creciendo",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/toilet_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/toilet_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 3,
@@ -1949,7 +1949,7 @@ export default [
         "texto1B": " deben estar siempre limpios para evitar que los gérmenes entren en él. ¡Cuídalo!",
         "titulo": "Espacios siempre limpios",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/juguete_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/juguete_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 6
@@ -1964,7 +1964,7 @@ export default [
         "texto1B": "Cuando te lavas las manos matas los gérmenes que te hacen contraer enfermedades diarreicas. ¡Házlo siempre! ¡Cuidandote tú, cuidas a tus hijas e hijos!",
         "titulo": "Prevenidos",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/lavado_de_mano_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/lavado_de_mano_Mesa%20de%20trabajo%201.svg"
     },
     {
         // higieneAguaSegura_edad_2_tip_4": {
@@ -1983,7 +1983,7 @@ export default [
         "texto1B": " debe estar limpio. Los niños pequeños tocan todo y se tocan la cara luego. ¡Cuídalo de los gérmenes!",
         "titulo": "Cuida sus manos",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/juguete_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/juguete_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 5,
@@ -1997,7 +1997,7 @@ export default [
         "texto1B": "¡Suma el lavado de manos a tu rutina diaria! ¡Con agua y jabón durante 20seg!",
         "titulo": "Tarea de todos los días",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": " http://52.177.117.53/static/media/icono-blanco/2-3/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
+        "icono": " https://volar.org.pe/static/media/icono-blanco/2-3/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 7
@@ -2009,7 +2009,7 @@ export default [
         "texto1B": " tiene más dientecitos, ayúdalo a mantenerlos limpios. Enséñale que deben lavarse los dientes siempre luego de comer. ¡Bien!",
         "titulo": "Parte de su salud",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/cepillo_dental_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/cepillo_dental_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 8
@@ -2022,7 +2022,7 @@ export default [
         "texto1B": " antes de usarlos. Lávalos con agua hervida y tenlos 5 minutos en agua caliente. ¡Bien!",
         "titulo": "No olvides limpiar antes de usar",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/cubierto_plato_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/cubierto_plato_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": ""
     },
@@ -2032,7 +2032,7 @@ export default [
         "texto1B": " se enoja es muy jóven para saber como controlarlo. Abrázalo, pónte a su altura para hablarle suavemente y enséñale como tranquilizarse. ",
         "titulo": "Ayúdalo",
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/abrazos_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/abrazos_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 1,
@@ -2049,7 +2049,7 @@ export default [
         "texto1B": "",
         "titulo": "Explícale",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/corazon_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/corazon_Mesa%20de%20trabajo%201.svg"
 
     },
     {
@@ -2057,7 +2057,7 @@ export default [
         "texto1B": "",
         "titulo": "Entiéndelo",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/dialogo_con_bebe_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/dialogo_con_bebe_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 2,
@@ -2074,7 +2074,7 @@ export default [
         "texto1B": " Las niñas y niños copian la mayoría de actitudes que ven a su alrededor. ",
         "titulo": "Lo de su alrededor les afecta",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/familia_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/familia_Mesa%20de%20trabajo%201.svg"
 
     },
     {
@@ -2087,7 +2087,7 @@ export default [
         "texto1B": " ¡Dale mucho amor y respétalo!",
         "titulo": "Cariño ante todo",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/puño_prohibido_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/puño_prohibido_Mesa%20de%20trabajo%201.svg"
 
     },
     {
@@ -2095,7 +2095,7 @@ export default [
         "texto1B": " se lastime de vez en cuando. Esto no significa que te hayas equivocado. Dale besos y abrazos para consolarlo y animarlo.",
         "titulo": "Golpes de la vida",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/band%20aid_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/band%20aid_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 5,
@@ -2110,7 +2110,7 @@ export default [
         "texto1B": " que hablar tiene mejores resultados que los berrinches. ¡Felicitalo/a cuando se esfuerce por comunicarse con sus propias palabras!",
         "titulo": "Razona con él/ella",
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/dialogo_con_bebe_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/dialogo_con_bebe_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 6
@@ -2125,7 +2125,7 @@ export default [
         "texto1B": "",
         "titulo": "Ellos perciben",
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/triste_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/triste_Mesa%20de%20trabajo%201.svg"
     },
     {
         // "socioemocional_edad_2_tip_8": {
@@ -2144,7 +2144,7 @@ export default [
         // socioemocional_edad_2_tip_9": {
         "titulo": "Ellos te entienden",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/puño_prohibido_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/puño_prohibido_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 9,
@@ -2162,7 +2162,7 @@ export default [
         "texto1B": " grite o llore cuando algo no sale como quiere. Está aprendiendo qué es la frustración. ¡Paciencia!",
         "titulo": "Aprendemos día a día",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/triste_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/triste_Mesa%20de%20trabajo%201.svg"
 
     },
     {
@@ -2188,7 +2188,7 @@ export default [
         "texto1B": "",
         "titulo": "Cambios",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/bebe_feliz_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/bebe_feliz_Mesa%20de%20trabajo%201.svg"
 
     },
     {
@@ -2198,7 +2198,7 @@ export default [
         "texto1B": " se lave los dientes, las manos y se cambie solo. Ayúdalo cada vez menos. ¡Así desarrollas su autonomía!",
         "titulo": "Nuevas habilidades",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/utilis%20de%20aseo_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/utilis%20de%20aseo_Mesa%20de%20trabajo%201.svg",
         "seccion": "Rutina",
         "video": "",
         "n_tip": 3
@@ -2207,7 +2207,7 @@ export default [
     {
         // "rutina_edad_2_tip_4": {
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/zapatillas_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/zapatillas_Mesa%20de%20trabajo%201.svg",
         "seccion": "Rutina",
         "video": "",
         "n_tip": 4,
@@ -2240,7 +2240,7 @@ export default [
         "texto1B": "",
         "titulo": "Felicita sus logros",
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/basin_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/basin_Mesa%20de%20trabajo%201.svg"
     },
     {
         // "rutina_edad_2_tip_7": {
@@ -2328,7 +2328,7 @@ export default [
         "texto1B": " habla más, ayúdalo a incorporar más palabras en su vocabulario y a saber cuando utilizarlas. Puedes ayudarle jugando a \"Veo Veo\": Escoge un objeto visible a tu alrededor, descríbelo usando \"Veo veo\" - por ejemplo: Veo veo un objeto redondo y amarillo. Deja que tu pequeño/a lo encuentre y felicítalo cuando lo haga. ",
         "titulo": "Aprendemos jugando",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/abc_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/abc_Mesa%20de%20trabajo%201.svg"
     },
     // "juego_edad_2_tip_4": 
     {
@@ -2353,7 +2353,7 @@ export default [
         "texto1B": " a rimar palabras. Por ejemplo, cera con pera, balón con jabón o beso con queso. Di una rima tú y otra [NOMBRE_HIJO]. ¡Está aprendiendo mucho y todo gracias a ti!",
         "titulo": "Jugando con las palabras",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/abc_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/abc_Mesa%20de%20trabajo%201.svg"
     },
     // "juego_edad_2_tip_6": 
     {
@@ -2385,7 +2385,7 @@ export default [
         "texto1B": " una hoja y colores y dile que te dibuje, que dibuje a su familia y la casa donde vive. Dibujar fortalecerá sus manos y dedos para cuando empiece a escribir. ¡Bien hecho!",
         "titulo": "Reforzando su habilidad motora",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/lapiz%20de%20color_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/lapiz%20de%20color_Mesa%20de%20trabajo%201.svg",
         "seccion": "Juego",
         "video": "",
         "n_tip": 8,
@@ -2403,7 +2403,7 @@ export default [
         "texto1B": " crea contigo es único. Jugar y darle mucho amor lo ayudará a ser más seguro, autónomo y social cuando crezca",
         "titulo": "Dale seguridad",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/corazon_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/corazon_Mesa%20de%20trabajo%201.svg"
     },
 
     //  "nutricionSalud_edad_2_tip_10": 
@@ -2413,7 +2413,7 @@ export default [
         "texto1B": " no se vacunó de tuberculosis al nacer, hazlo ahora.  La tuberculosis puede ser mortal. ¡Cuidalo mucho!",
         "titulo": "¡Atención!",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/vacuna_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/vacuna_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 10
@@ -2425,7 +2425,7 @@ export default [
         "texto1A": " Si aún no has vacunado a ",
         "texto1B": " contra el sarampión, llévalo al centro de salud para que lo vacunen. ¡No lo descuides!",
         "titulo": "Es momento",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/vacuna_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/vacuna_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 2
@@ -2441,7 +2441,7 @@ export default [
         "texto1B": " siéntale en un espacio seguro y háblale mientras lo ayudas a comer. ¡Disfruten juntos! Estas pequeñas interacciones van moldeando su cerebro. ",
         "titulo": "Interactúen",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/plato_de_comida_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/plato_de_comida_Mesa%20de%20trabajo%201.svg"
     },
     // "nutricionSalud_edad_2_tip_4": 
     {
@@ -2450,7 +2450,7 @@ export default [
         "texto1B": " no quiere comer cosas nuevas, prueba mezclarlo con alimentos que le gusten. Por ejemplo, si le gusta el huevo sancochado, puedes mezclar un poco en un platito de arverjitas. ¡Y listo! ",
         "titulo": "Busca soluciones",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/plato_de_comida_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/plato_de_comida_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 4
@@ -2460,7 +2460,7 @@ export default [
         "texto1B": " con muchas verduras y carnes. Necesita una variedad de alimentos para crecer bien. ¡Tú puedes!",
         "titulo": "Para crecer fuerte",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/verdura_carne_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/verdura_carne_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 5,
@@ -2476,7 +2476,7 @@ export default [
         "texto1B": " con gaseosas, helados o dulces. No tienen ninguna vitamina y afectan su crecimiento. ¡Cuidalo!",
         "titulo": "Evita esto",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/dulce_prohibido_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/dulce_prohibido_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": ""
 
@@ -2491,11 +2491,11 @@ export default [
         "texto1B": " Esto limita su desarrollo cognitivo en la escuela. Cuídalo y asegura de que reciba alimentos nutritivos. Si necesitas ayuda, consulta con tu centro de salud. ",
         "titulo": "Bien de salud",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/plato_de_comida_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/plato_de_comida_Mesa%20de%20trabajo%201.svg"
     },
     // "nutricionSalud_edad_2_tip_8": 
     {
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/taza_de_te_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/taza_de_te_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "n_tip": 8,
         "edad": 2,
@@ -2506,7 +2506,7 @@ export default [
     },
     // "nutricionSalud_edad_2_tip_9": 
     {
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/lenteja_naranja_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/lenteja_naranja_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 9,
@@ -2521,7 +2521,7 @@ export default [
         "texto1B": " tenga algún dolor o malestar, llévalo al centro de salud de tu comunidad. ¡No lo automediques! ¡Cuídalo! Sus primeros años son muy importantes para el desarrollo integral de sus habilidades. ",
         "titulo": "Acude al especialista",
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/centro_de_salud_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/centro_de_salud_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 1,
@@ -2538,7 +2538,7 @@ export default [
         "texto1B": " Cuando te lavas las manos matas los gérmenes que te hacen contraer enfermedades diarreicas. ¡Házlo siempre! ¡Cuidandote tú, cuidas a tus hijas e hijos!",
         "titulo": "Que sea una costumbre",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": ""
     },
@@ -2546,7 +2546,7 @@ export default [
     {
         "titulo": "¡Cuidado!",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/juguete_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/juguete_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 4,
@@ -2570,7 +2570,7 @@ export default [
     {
         "titulo": "Son parte de tu salud",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/cepillo_dental_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/cepillo_dental_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 2,
@@ -2588,12 +2588,12 @@ export default [
         "texto1B": "",
         "titulo": "La limpieza es primordial",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/toilet_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/toilet_Mesa%20de%20trabajo%201.svg"
     },
     // "higieneAguaSegura_edad_3_tip_5": 
     {
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/cubierto_plato_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/cubierto_plato_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 5,
@@ -2607,7 +2607,7 @@ export default [
         "texto1B": " lo toque. ¡Cuídalo mucho!",
         "titulo": "¡Tú puedes ayudarlos a crecer mejor!",
         "texto2": "Siempre limpios",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/botella_limpieza_desinfectante_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/botella_limpieza_desinfectante_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 6,
@@ -2621,7 +2621,7 @@ export default [
         "texto1B": " El agua es muy valiosa y tenemos que cuidarla. Guárdala en envases limpios con tapa para evitar que se contamine. ¡Sigue asi!",
         "titulo": "Cuidemosla",
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/envase_agua_tapada_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/envase_agua_tapada_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 7
@@ -2634,14 +2634,14 @@ export default [
         "texto1B":" Cierra bien el caño cuando no la estés usando y si tienes alguna gotera, coloca un balde. ¡No desperdicies!",
         "titulo": "Cuida el agua",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/gota_agua_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/gota_agua_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": ""
     },
     // "higieneAguaSegura_edad_3_tip_9": 
     {
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 9,
@@ -2673,7 +2673,7 @@ export default [
         "texto1A": " La violencia como los golpes o los gritos causa mucho estrés y afecta el desarrollo del cerebro de ",
         "texto1B": " ¡Dale mucho amor y respetalo!",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/puño_prohibido_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/puño_prohibido_Mesa%20de%20trabajo%201.svg"
     },
     // "socioemocional_edad_3_tip_2": 
     {
@@ -2685,14 +2685,14 @@ export default [
         "texto1B": " que hablar tiene mejores resultados que los berrinches. ¡Felicitalo/a cuando se esfuerce por comunicarse con sus propias palabras!",
         "titulo": "Todos nos entendemos",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/dialogo_con_bebe_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/dialogo_con_bebe_Mesa%20de%20trabajo%201.svg"
     },
     // "socioemocional_edad_3_tip_3": 
     {
         "texto1B": "",
         "titulo": "Ellos perciben",
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/triste_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/triste_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 3,
@@ -2703,7 +2703,7 @@ export default [
     {
         "titulo": "Fortaleciendo lazos",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/mama_con_bebe_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/mama_con_bebe_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 4,
@@ -2715,7 +2715,7 @@ export default [
     {
         "titulo": "El poder de hablar",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/puño_prohibido_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/puño_prohibido_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 5,
@@ -2731,7 +2731,7 @@ export default [
         "texto1B": "",
         "titulo": "Conversemos",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/corazon_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/corazon_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": ""
     },
@@ -2745,13 +2745,13 @@ export default [
         "texto1B": " se enoja es muy jóven para saber cómo controlarlo. Abrázalo, pónte a su altura para hablarle suavemente y enséñale cómo tranquilizarse. ",
         "titulo": "Sentimientos",
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/abrazos_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/abrazos_Mesa%20de%20trabajo%201.svg"
     },
     // "socioemocional_edad_3_tip_8": 
     {
         "titulo": "Ellos comprenden",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/dialogo_con_bebe_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/dialogo_con_bebe_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 8,
@@ -2763,7 +2763,7 @@ export default [
         "texto1B": " Las niñas y niños copian la mayoría de actitudes que ven a su alrededor. ",
         "titulo": "Ellos imitan",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/familia_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/familia_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 9,
@@ -2775,7 +2775,7 @@ export default [
         // rutina_edad_3_tip_1": {
         "titulo": "Estímulos por todos lados ",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/revista_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/revista_Mesa%20de%20trabajo%201.svg",
         "seccion": "Rutina",
         "video": "",
         "n_tip": 1,
@@ -2805,12 +2805,12 @@ export default [
         "texto1B": " pero recuerda que deben lavarse las manos constantemente. Tantos los animales como las superficies en la calle tienen muchos gérmenes que no podemos ver. ¡La única forma es con agua y jabón! ",
         "titulo": "La importancia de la limpieza",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/lavado_de_mano_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/lavado_de_mano_Mesa%20de%20trabajo%201.svg"
     },
     // "rutina_edad_3_tip_2": 
     {
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/nariz_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/nariz_Mesa%20de%20trabajo%201.svg",
         "seccion": "Rutina",
         "video": "",
         "n_tip": 2,
@@ -2850,7 +2850,7 @@ export default [
         "texto1B": " ama conversar contigo y esto le hace muy bien al desarrollo de su cerebro.",
         "titulo": "A pasear",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/pincel_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/pincel_Mesa%20de%20trabajo%201.svg",
         "seccion": "Rutina",
         "video": "",
         "n_tip": 5
@@ -2862,7 +2862,7 @@ export default [
         "texto1B": " se ponga las zapatillas solo, un día enséñale cómo hacerlo paso por paso y con palabras sencillas. Al siguiente día lo miras mientras lo hace y poco después lo hará sin tu ayuda. ",
         "titulo": "Autonomía",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/zapatillas_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/zapatillas_Mesa%20de%20trabajo%201.svg",
         "seccion": "Rutina",
         "video": "",
         "n_tip": 6
@@ -2886,7 +2886,7 @@ export default [
         "texto1B": " cuál fue su parte favorita del día. Conversar durante la cena puede convertirse en una tradición.",
         "titulo": "Siempre hablen",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/dialogo_con_bebe_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/dialogo_con_bebe_Mesa%20de%20trabajo%201.svg",
         "seccion": "Rutina",
         "video": "",
         "n_tip": 8
@@ -2911,7 +2911,7 @@ export default [
         "texto1B": " Construyan una torre con tazas y objetos que encuentren en casa. Este juego desarrolla su creatividad y habilidad para resolver problemas. ¡No olvides felicitar a ",
         "titulo": "Ayúdalo a desarrollarse",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/matematica_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/matematica_Mesa%20de%20trabajo%201.svg",
         "seccion": "Juego",
         "video": ""
     },
@@ -2922,7 +2922,7 @@ export default [
         "texto1B": "a reconocer lo que siente. Jueguen a imitar emociones. Con tu cuerpo expresa una emoción y dile que adivine. ¡Túrnense! ",
         "titulo": "Detectar sentimientos",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/mujer_muy_feliz_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/mujer_muy_feliz_Mesa%20de%20trabajo%201.svg",
         "seccion": "Juego",
         "video": "",
         "n_tip": 10
@@ -2958,7 +2958,7 @@ export default [
         "texto1B": " Jueguen a quedarse quietos como una estatua. Invita a todos en el hogar a jugar para hacerlo mucho más divertido. Empiecen todos parados en 1 pie o sin reírse. ¡Vayan cambiando las reglas! Así lo ayudas a concentrarse y autorregularse. ",
         "titulo": "Respeto las reglas",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/niño_niña_feliz_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/niño_niña_feliz_Mesa%20de%20trabajo%201.svg",
         "seccion": "Juego",
         "video": "",
         "n_tip": "5"
@@ -2979,7 +2979,7 @@ export default [
     {
         "titulo": "Aprendemos jugando",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/abc_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/abc_Mesa%20de%20trabajo%201.svg",
         "seccion": "Juego",
         "video": "",
         "n_tip": 7,
@@ -3015,7 +3015,7 @@ export default [
         // " nutricionSalud_edad_3_tip_1": {
         "titulo": "A tiempo",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/vacuna_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/vacuna_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 1,
@@ -3031,7 +3031,7 @@ export default [
         "texto1B": "con gaseosas, helados o dulces. No tienen ninguna vitamina y afectan su crecimiento. ¡Cuídalo!",
         "titulo": "Ningún beneficio",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/dulce_prohibido_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/dulce_prohibido_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": ""
     },
@@ -3040,7 +3040,7 @@ export default [
         "texto1B": " Los alimentos amarillos y naranjas son buenos para el corazón, los ojos y ayudan a combatir gérmenes. ¡Naranja, mandarina, plátano y más!",
         "titulo": "Diversidad",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/naranja_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/naranja_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 2,
@@ -3050,7 +3050,7 @@ export default [
     // "nutricionSalud_edad_3_tip_3": 
     {
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/centro_de_salud_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/centro_de_salud_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 3,
@@ -3063,7 +3063,7 @@ export default [
     {
         "titulo": "Momentos",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/plato_de_comida_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/plato_de_comida_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 4,
@@ -3074,7 +3074,7 @@ export default [
     // "nutricionSalud_edad_3_tip_5": 
     {
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/plato_de_comida_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/plato_de_comida_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 5,
@@ -3091,7 +3091,7 @@ export default [
         "texto1B": " con muchas verduras y carnes. Necesita una variedad de alimentos para crecer bien. ¡Tú puedes!",
         "titulo": "Alimentación balanceada",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/verdura_carne_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/verdura_carne_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": ""
     },
@@ -3102,7 +3102,7 @@ export default [
         "texto1B": " Podría derramarse y quemarlo. Deja que se enfríen un poco antes de dárselas.",
         "titulo": "Temperatura correcta",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/prohibido_agua_caliente_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/prohibido_agua_caliente_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 7
@@ -3117,7 +3117,7 @@ export default [
         "texto1B": " siéntale en un espacio seguro y háblale mientras lo ayudas a comer. ¡Disfruten juntos! Estas pequeñas interacciones van moldeando su cerebro. ",
         "titulo": "Momentos juntos",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/plato_de_comida_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/plato_de_comida_Mesa%20de%20trabajo%201.svg"
     },
     // "nutricionSalud_edad_3_tip_9": 
     {
@@ -3126,7 +3126,7 @@ export default [
         "texto1B": " Esto limita su desarrollo cognitivo en la escuela. Cuídalo y asegura de que reciba alimentos nutritivos. Si necesitas ayuda, consulta con tu centro de salud. ",
         "titulo": "Cuídalo siempre",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/3-4/plato_de_comida_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/plato_de_comida_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 9
@@ -3134,7 +3134,7 @@ export default [
     // "higieneAguaSegura_edad_4_tip_1": 
     {
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/botella_limpieza_desinfectante_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/botella_limpieza_desinfectante_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 1,
@@ -3147,7 +3147,7 @@ export default [
     {
         "titulo": "Aprendiendo cada día",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/toilet_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/toilet_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 10,
@@ -3162,7 +3162,7 @@ export default [
         "texto1B": " El agua es muy valiosa y tenemos que cuidarla. Guárdala en envases limpios con tapa para evitar que se contamine. ¡Sigue asi!",
         "titulo": "Es vital",
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/envase_agua_tapada_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/envase_agua_tapada_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 2
@@ -3175,7 +3175,7 @@ export default [
         "texto1B": " Cierra bien el caño cuando no la estés usando y si tienes alguna gotera, coloca un balde. ¡No desperdicies!",
         "titulo": "Cuida el agua",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/gota_agua_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/gota_agua_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": ""
     },
@@ -3186,7 +3186,7 @@ export default [
         "texto1B": " ¡Suma el lavado de manos a tu rutina diaria!",
         "titulo": "Cuidado",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 4
@@ -3211,7 +3211,7 @@ export default [
         "texto1B": " debe estar limpio. Los niños pequeños tocan todo y se tocan la cara luego. ¡Cuídalo de los gérmenes!",
         "titulo": "Cuida sus manos",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/juguete_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/juguete_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": ""
     },
@@ -3225,14 +3225,14 @@ export default [
         "texto1B": " antes de usarlos. Lávalos con agua hervida y tenlos 5 minutos en agua caliente. ¡Bien!",
         "titulo": "Evita los gérmenes",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/cubierto_plato_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/cubierto_plato_Mesa%20de%20trabajo%201.svg"
     },
     // "higieneAguaSegura_edad_4_tip_8":
     {
         "texto1B": " Cuando te lavas las manos matas los gérmenes que te hacen contraer enfermedades diarreicas. ¡Házlo siempre! ¡Cuidandote tú, cuidas a tus hijas e hijos!",
         "titulo": "Fuera los gérmenes",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/cepillo_dental_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/cepillo_dental_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 8,
@@ -3246,7 +3246,7 @@ export default [
         "texto1B":  " Tener la boca limpia y cuidar bien los dientes es importante para la masticación y la buena comunicación. ¡No lo olvides!",
         "titulo": "Es parte de tu salud",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/cepillo_dental_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/cepillo_dental_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 9
@@ -3262,12 +3262,12 @@ export default [
         "texto1B": "",
         "titulo": "Ellos comprenden",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/dialogo_con_bebe_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/dialogo_con_bebe_Mesa%20de%20trabajo%201.svg"
     },
     // "socioemocional_edad_4_tip_10": 
     {
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/puño_prohibido_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/puño_prohibido_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 10,
@@ -3296,7 +3296,7 @@ export default [
         "texto1B": " que hablar tiene mejores resultados que los berrinches. ¡Felicitalo/a cuando se esfuerce por comunicarse con sus propias palabras!",
         "titulo": "Hablando nos entendemos",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/dialogo_con_bebe_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/dialogo_con_bebe_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": ""
     },
@@ -3305,7 +3305,7 @@ export default [
         "texto1B": "",
         "titulo": "Ellos perciben",
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/triste_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/triste_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 4,
@@ -3316,7 +3316,7 @@ export default [
     {
         "titulo": "Sentimientos",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/mama_con_bebe_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/mama_con_bebe_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 5,
@@ -3335,7 +3335,7 @@ export default [
         "texto1B": " no hará que deje de portarse mal. Solo lo hará más dependiente. ¡No lo castigues! Promueve su autonomía, ayudándole a entender sus emociones.",
         "titulo": "Hablando nos comprendemos",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/2-3/puño_prohibido_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/puño_prohibido_Mesa%20de%20trabajo%201.svg"
     },
     // "socioemocional_edad_4_tip_7": 
     {
@@ -3345,7 +3345,7 @@ export default [
         "texto1B": "",
         "titulo": "Ellos te entienden",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/corazon_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/corazon_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": ""
     },
@@ -3359,14 +3359,14 @@ export default [
         "texto1B": " se enoja es muy jóven para saber cómo controlarlo. Abrázalo, pónte a su altura para hablarle suavemente y enséñale cómo tranquilizarse. ",
         "titulo": "Control de sentimientos",
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/abc_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/abc_Mesa%20de%20trabajo%201.svg"
     },
     // "socioemocional_edad_4_tip_9": 
     {
         "texto1B": " Las niñas y niños copian la mayoría de actitudes que ven a su alrededor. ",
         "titulo": "Habla con él/ella",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/familia_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/familia_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 9,
@@ -3384,7 +3384,7 @@ export default [
         "texto1B": " cuál fue su parte favorita del día. Conversar durante la cena puede convertirse en una tradición.",
         "titulo": "Siempre hablen",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/dialogo_con_bebe_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/dialogo_con_bebe_Mesa%20de%20trabajo%201.svg"
     },
     // "rutina_edad_4_tip_10": 
     {
@@ -3420,11 +3420,11 @@ export default [
         "texto1B": " pero recuerda que deben lavarse las manos constantemente. Tantos los animales como las superficies en la calle tienen muchos gérmenes que no podemos ver. ¡La única forma es con agua y jabón! ",
         "titulo": "Importante",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/lavado_de_mano_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/lavado_de_mano_Mesa%20de%20trabajo%201.svg"
     },
     // "rutina_edad_4_tip_4": 
     {
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/zapatillas_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/zapatillas_Mesa%20de%20trabajo%201.svg",
         "seccion": "Rutina",
         "video": "",
         "n_tip": 4,
@@ -3468,7 +3468,7 @@ export default [
         "texto1B": " ama conversar contigo y esto le hace muy bien al desarrollo de su cerebro.",
         "titulo": "Todo momento sirve para aprender",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/pincel_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/pincel_Mesa%20de%20trabajo%201.svg"
     },
     // "rutina_edad_4_tip_8": 
     {
@@ -3480,7 +3480,7 @@ export default [
         "texto1B": " que señale las palabras que ve en revistas o afiches. Repitan juntos los sonidos. ¡Esta actividad acerca a la escritura!",
         "titulo": "Todo ayuda",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/revista_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/revista_Mesa%20de%20trabajo%201.svg"
     },
     // "rutina_edad_4_tip_9": 
     {
@@ -3490,7 +3490,7 @@ export default [
         "texto1B": " a oler los alimentos y condimentos y enséñales su nombre. ¡Ayúdalo a desarrollar sus sentidos!",
         "titulo": "Aprendemos juntos",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/nariz_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/nariz_Mesa%20de%20trabajo%201.svg",
         "seccion": "Rutina",
         "video": ""
     },
@@ -3498,7 +3498,7 @@ export default [
     // "juego_edad_4_tip_1": 
     {
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/abc_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/abc_Mesa%20de%20trabajo%201.svg",
         "seccion": "Juego",
         "video": "",
         "n_tip": 1,
@@ -3560,7 +3560,7 @@ export default [
     {
         "titulo": "Enseñanzas",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/mujer_muy_feliz_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/mujer_muy_feliz_Mesa%20de%20trabajo%201.svg",
         "seccion": "Juego",
         "video": "",
         "n_tip": 5,
@@ -3575,7 +3575,7 @@ export default [
         "texto1B": " Construyan una torre con tazas y objetos que encuentren en casa. Este juego desarrolla su creatividad y habilidad para resolver problemas. ¡No olvides felicitar a ",
         "titulo": "Desarrollando competencias",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/matematica_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/matematica_Mesa%20de%20trabajo%201.svg",
         "seccion": "Juego",
         "video": "",
         "n_tip": 6
@@ -3587,7 +3587,7 @@ export default [
         "texto1B": " Jueguen a quedarse quietos como una estatua. Invita a todos en el hogar a jugar para hacerlo mucho más divertido. Empiecen todos parados en 1 pie o sin reírse. ¡Vayan cambiando las reglas! Así lo ayudas a concentrarse y autorregularse. ",
         "titulo": "¿Jugamos?",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/ni%C3%B1o_ni%C3%B1a_feliz_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/ni%C3%B1o_ni%C3%B1a_feliz_Mesa%20de%20trabajo%201.svg",
         "seccion": "Juego",
         "video": "",
         "n_tip": 7
@@ -3620,7 +3620,7 @@ export default [
         // " nutricionSalud_edad_4_tip_1": {
         "titulo": "Siempre interactúen ",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/plato_de_comida_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/plato_de_comida_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": "1",
@@ -3638,7 +3638,7 @@ export default [
         "texto1B": " con gaseosas, helados o dulces. No tienen ninguna vitamina y afectan su crecimiento. ¡Cuídalo!",
         "titulo": "No son buenos",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/dulce_prohibido_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/dulce_prohibido_Mesa%20de%20trabajo%201.svg"
     },
     // "nutricionSalud_edad_4_tip_2": 
     {
@@ -3650,14 +3650,14 @@ export default [
         "texto1B": " siéntale en un espacio seguro y háblale mientras lo ayudas a comer. ¡Disfruten juntos! Estas pequeñas interacciones van moldeando su cerebro. ",
         "titulo": "Ayúdalo",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/naranja_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/naranja_Mesa%20de%20trabajo%201.svg"
     },
     // "nutricionSalud_edad_4_tip_3": 
     {
         "texto1B": " contra el sarampión, llévalo al centro de salud para que lo vacunen. ¡No lo descuides!",
         "titulo": "Estás a tiempo",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/vacuna_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/vacuna_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 3,
@@ -3672,13 +3672,13 @@ export default [
         "texto1B": " Los alimentos amarillos y naranjas son buenos para el corazón, los ojos y ayudan a combatir gérmenes. Naranja, mandarina, plátano y más!",
         "titulo": "De distintos colores",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/naranja_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/naranja_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": ""
     },
     // "nutricionSalud_edad_4_tip_5": 
     {
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/centro_de_salud_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/centro_de_salud_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 5,
@@ -3692,7 +3692,7 @@ export default [
     {
         "titulo": "Combina sabores",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/plato_de_comida_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/plato_de_comida_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 6,
@@ -3704,7 +3704,7 @@ export default [
     {
         "titulo": "Alimentos balanceados",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/verdura_carne_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/verdura_carne_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 7,
@@ -3716,7 +3716,7 @@ export default [
     {
         "titulo": "A temperatura ambiente",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/4-5/prohibido_agua_caliente_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/prohibido_agua_caliente_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 8,
@@ -3732,7 +3732,7 @@ export default [
         "texto1B": " Esto limita su desarrollo cognitivo en la escuela. Cuídalo y asegura de que reciba alimentos nutritivos. Si necesitas ayuda, consulta con tu centro de salud. ",
         "titulo": "Sabías que....",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53//static/media/icono-blanco/4-5/centro_de_salud_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe//static/media/icono-blanco/4-5/centro_de_salud_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": ""
     },
@@ -3743,7 +3743,7 @@ export default [
         "texto1B": " debe estar limpio. Los niños pequeños tocan todo y se tocan la cara luego. ¡Cuídalo de los gérmenes!",
         "titulo": "Cuida sus manos",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/juguete_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/juguete_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 1,
@@ -3760,11 +3760,11 @@ export default [
         "texto1B":  " Tener la boca limpia y cuidar bien los dientes es importante para la masticación y la buena comunicación. ¡No lo olvides!",
         "titulo": "Más sonrisas",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/cepillo_dental_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/cepillo_dental_Mesa%20de%20trabajo%201.svg"
     },
     // "higieneAguaSegura_edad_5_tip_2": 
     {
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/cubierto_plato_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/cubierto_plato_Mesa%20de%20trabajo%201.svg",
         "texto1": "",
         "seccion": "Higiene y Agua Segura",
         "n_tip": 2,
@@ -3781,7 +3781,7 @@ export default [
         "texto1B": " lo toque. ¡Cuídalo mucho!",
         "titulo": "Evita los gérmenes",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/botella_limpieza_desinfectante_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/botella_limpieza_desinfectante_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": ""
     },
@@ -3790,7 +3790,7 @@ export default [
         "texto1B": " El agua es muy valiosa y tenemos que cuidarla. Guárdala en envases limpios con tapa para evitar que se contamine. ¡Sigue asi!",
         "titulo": "Enséñale que.....",
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/envase_agua_tapada_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/envase_agua_tapada_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 4,
@@ -3804,7 +3804,7 @@ export default [
         "texto1B": " Cierra bien el caño cuando no la estés usando y si tienes alguna gotera, coloca un balde. ¡No desperdicies!",
         "titulo": "Cuida el agua",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/gota_agua_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/gota_agua_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 5
@@ -3819,7 +3819,7 @@ export default [
         "texto1B": "¡Suma el lavado de manos a tu rutina diaria!",
         "titulo": "Sana costumbre",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/lavado_de_mano_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/lavado_de_mano_Mesa%20de%20trabajo%201.svg"
     },
     // "higieneAguaSegura_edad_5_tip_7": 
     {
@@ -3838,7 +3838,7 @@ export default [
         "texto1B": "",
         "titulo": "Más independiente",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/toilet_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/toilet_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 8,
@@ -3849,7 +3849,7 @@ export default [
     {
         "titulo": "Cuidando a los que más quieres",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 9,
@@ -3868,7 +3868,7 @@ export default [
         "texto1B": "",
         "titulo": "Ellos comprenden lo que dices",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/dialogo_con_bebe_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/dialogo_con_bebe_Mesa%20de%20trabajo%201.svg",
        
     },
 
@@ -3876,7 +3876,7 @@ export default [
     {
         "titulo": "Ayúdalo con sus sentimientos",
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/abrazos_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/abrazos_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 10,
@@ -3891,7 +3891,7 @@ export default [
         "texto1B": " Las niñas y niños copian la mayoría de actitudes que ven a su alrededor. ",
         "titulo": "Ellos imitan lo que ven",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/familia_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/familia_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 2
@@ -3906,7 +3906,7 @@ export default [
         "texto1B": "¡Dale mucho amor y respétalo!",
         "titulo": "Cariño mutuo",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/puño_prohibido_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/puño_prohibido_Mesa%20de%20trabajo%201.svg"
     },
     // "socioemocional_edad_5_tip_4": 
     {
@@ -3915,7 +3915,7 @@ export default [
         "texto1B": " no hará que deje de portarse mal. Solo lo hará más dependiente. ¡No lo castigues! Promueve su autonomía, ayudándole a entender sus emociones.",
         "titulo": "Sentimientos",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/puño_prohibido_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/puño_prohibido_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 4
@@ -3930,7 +3930,7 @@ export default [
         "texto1B": "",
         "titulo": "Todos nos entendemos",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/corazon_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/corazon_Mesa%20de%20trabajo%201.svg"
     },
     // "socioemocional_edad_5_tip_6": 
     {
@@ -3949,7 +3949,7 @@ export default [
         "texto1B": " que hablar tiene mejores resultados que los berrinches. ¡Felicitalo/a cuando se esfuerce por comunicarse con sus propias palabras!",
         "titulo": "El poder de las palabras",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/dialogo_con_bebe_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/dialogo_con_bebe_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 7,
@@ -3966,7 +3966,7 @@ export default [
         "texto1B": "",
         "titulo": "Tus sentimientos lo afectan",
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/triste_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/triste_Mesa%20de%20trabajo%201.svg"
     },
     // "socioemocional_edad_5_tip_9":
     {
@@ -3975,7 +3975,7 @@ export default [
         "texto1B": " Dile cuánto lo amas a cada instante. Con tu amor desarrollará un vínculo especial llamado \"apego seguro\". Muy importante para el desarrollo de sus habilidades socioemocionales.",
         "titulo": "Muestra tus sentimientos",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/mama_con_bebe_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/mama_con_bebe_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 9
@@ -4013,7 +4013,7 @@ export default [
         "texto1B": " ama conversar contigo y esto le hace muy bien al desarrollo de su cerebro.",
         "titulo": "Lugares de diversión",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/pincel_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/pincel_Mesa%20de%20trabajo%201.svg",
         "seccion": "Rutina",
         "video": ""
     },
@@ -4024,7 +4024,7 @@ export default [
         "texto1B": " que señale las palabras que ve en revistas o afiches. Repitan juntos los sonidos. ¡Esta actividad acerca a la escritura!",
         "titulo": "Siempre aprendiendo",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/revista_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/revista_Mesa%20de%20trabajo%201.svg",
         "seccion": "Rutina",
         "video": "",
         "n_tip": 3
@@ -4037,7 +4037,7 @@ export default [
         "texto1B": " cuál fue su parte favorita del día. Conversar durante la cena puede convertirse en una tradición.",
         "titulo": "En constante comunicación",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/dialogo_con_bebe_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/dialogo_con_bebe_Mesa%20de%20trabajo%201.svg",
         "seccion": "Rutina",
         "video": ""
     },
@@ -4056,7 +4056,7 @@ export default [
     // "rutina_edad_5_tip_6": 
     {
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/lavado_de_mano_Mesa%20de%20trabajo%201.svg",
         "seccion": "Rutina",
         "video": "",
         "n_tip": 6,
@@ -4075,7 +4075,7 @@ export default [
         "texto1B": " a oler los alimentos y condimentos y enséñales su nombre. ¡Ayúdalo a desarrollar sus sentidos!",
         "titulo": "Descubriendo nuevas sensaciones",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/nariz_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/nariz_Mesa%20de%20trabajo%201.svg"
     },
     // "rutina_edad_5_tip_8": 
     {
@@ -4099,7 +4099,7 @@ export default [
         "texto1B": " se ponga las zapatillas solo, un día enséñale cómo hacerlo paso por paso y con palabras sencillas. Al siguiente día lo miras mientras lo hace y poco después lo hará sin tu ayuda. ",
         "titulo": "Dale su autonomía",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/zapatillas_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/zapatillas_Mesa%20de%20trabajo%201.svg"
     },
 
     // "juego_edad_5_tip_1":
@@ -4112,7 +4112,7 @@ export default [
         "texto1B": " a reconocer lo que siente. Jueguen a imitar emociones. Con tu cuerpo expresa una emoción y dile que adivine. ¡Túrnense! ",
         "titulo": "Como jugando",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/mujer_muy_feliz_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/mujer_muy_feliz_Mesa%20de%20trabajo%201.svg"
     },
     // "juego_edad_5_tip_10": 
     {
@@ -4137,7 +4137,7 @@ export default [
         "texto1C": " ¡Está aprendiendo mucho y todo gracias a ti!",
         "titulo": "Apoya su lenguaje",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/abc_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/abc_Mesa%20de%20trabajo%201.svg"
     },
     // "juego_edad_5_tip_3": 
     {
@@ -4182,7 +4182,7 @@ export default [
         "texto1B": " Construyan una torre con tazas y objetos que encuentren en casa. Este juego desarrolla su creatividad y habilidad para resolver problemas. ¡No olvides felicitar a ",
         "titulo": "Siempre creativos",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/matematica_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/matematica_Mesa%20de%20trabajo%201.svg",
         "seccion": "Juego",
         "video": "",
         "n_tip": 6
@@ -4191,7 +4191,7 @@ export default [
     {
         "titulo": "¿Jugamos?",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/ni%C3%B1o_ni%C3%B1a_feliz_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/ni%C3%B1o_ni%C3%B1a_feliz_Mesa%20de%20trabajo%201.svg",
         "seccion": "Juego",
         "video": "",
         "n_tip": 7,
@@ -4230,7 +4230,7 @@ export default [
         "texto1B": " no quiere comer cosas nuevas, prueba mezclarlo con alimentos que le gusten. Por ejemplo, si le gusta el huevo sancochado, puedes mezclar un poco en un platito de arverjitas. ¡Y listo! ",
         "titulo": "Busca soluciones creativas",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/plato_de_comida_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/plato_de_comida_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 1
@@ -4242,7 +4242,7 @@ export default [
         "texto1B": " siéntale en un espacio seguro y háblale mientras lo ayudas a comer. ¡Disfruten juntos! Estas pequeñas interacciones van moldeando su cerebro. ",
         "titulo": "Momentos felices",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/plato_de_comida_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/plato_de_comida_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 10
@@ -4252,7 +4252,7 @@ export default [
         "texto1B": " con muchas verduras y carnes. Necesita una variedad de alimentos para crecer bien. ¡Tú puedes!",
         "titulo": "Comida sana",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/verdura_carne_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/verdura_carne_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 2,
@@ -4263,7 +4263,7 @@ export default [
     {
         "titulo": "A temperatura correcta",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/prohibido_agua_caliente_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/prohibido_agua_caliente_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 3,
@@ -4279,7 +4279,7 @@ export default [
         "texto1B": " siéntale en un espacio seguro y háblale mientras lo ayudas a comer. ¡Disfruten juntos! Estas pequeñas interacciones van moldeando su cerebro. ",
         "titulo": "Momento de distracción",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/plato_de_comida_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/plato_de_comida_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": ""
     },
@@ -4287,7 +4287,7 @@ export default [
     {
         "titulo": "Sabías que...",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/plato_de_comida_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/plato_de_comida_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 5,
@@ -4305,7 +4305,7 @@ export default [
         "texto1B": " con gaseosas, helados o dulces. No tienen ninguna vitamina y afectan su crecimiento. ¡Cuídalo!",
         "titulo": "No es bueno",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/dulce_prohibido_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/dulce_prohibido_Mesa%20de%20trabajo%201.svg"
     },
     // "nutricionSalud_edad_5_tip_7": 
     {
@@ -4315,7 +4315,7 @@ export default [
         "texto1B": " contra el sarampión, llévalo al centro de salud para que lo vacunen. ¡No lo descuides!",
         "titulo": "Es muy importante",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/vacuna_Mesa%20de%20trabajo%201.svg",
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/vacuna_Mesa%20de%20trabajo%201.svg",
         "seccion": "Nutrición y Salud",
         "video": ""
     },
@@ -4329,7 +4329,7 @@ export default [
         "texto1B": " Los alimentos amarillos y naranjas son buenos para el corazón, los ojos y ayudan a combatir gérmenes. Naranja, mandarina, plátano y más!",
         "titulo": "Estar bien alimentado",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/naranja_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/naranja_Mesa%20de%20trabajo%201.svg"
     },
     // "nutricionSalud_edad_5_tip_9":
     {
@@ -4341,7 +4341,7 @@ export default [
         "texto1B": " tenga algún dolor o malestar, llévalo al centro de salud de tu comunidad. ¡No lo automediques! ¡Cuídalo! Sus primeros años son muy importantes para el desarrollo integral de sus habilidades. ",
         "titulo": "No juegues con su salud",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
-        "icono": "http://52.177.117.53/static/media/icono-blanco/5-6/centro_de_salud_Mesa%20de%20trabajo%201.svg"
+        "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/centro_de_salud_Mesa%20de%20trabajo%201.svg"
     },
  
 
