@@ -21,8 +21,9 @@ const Recursos = () => {
   return (
     <div className="background-blanco animated fadeIn">
       <div id="tittle-nosotros" className="box-title-recursos animated fadeIn ">
-    <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback goBack-area" aria-hidden="true"></i> 
-      
+        <a onClick={()=>{history.goBack()}}>
+          <i  className="fas fa-chevron-left arrowGoback goBack-area" aria-hidden="true"></i>
+        </a>
         <h1 className="title title-recursos tracking-in-expand-fwd-top">
           ¡Bienvenido! <br />
           Conoce los recursos de nuestros socios 

@@ -44,7 +44,9 @@ export const Higiene = ({
 
   return (
     <div>
-      <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback goBack-area" aria-hidden="true"></i> 
+      <a onClick={()=>{history.goBack()}}>
+        <i  className="fas fa-chevron-left arrowGoback goBack-area" aria-hidden="true"></i>
+      </a> 
       {firebaseUser !== null ? (
         <div>
           <div className="box-title-higine show-desktop">
@@ -103,7 +105,9 @@ export const Higiene = ({
         </div>
       ) : (
         <div>
-          <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback goBack-area" aria-hidden="true"></i> 
+          <a onClick={()=>{history.goBack()}}>
+          <i  className="fas fa-chevron-left arrowGoback goBack-area" aria-hidden="true"></i> 
+          </a>
           <div className="box-title-higine show-desktop">
             <img
               src={iconoHigieneWhite}

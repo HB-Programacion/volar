@@ -11,7 +11,9 @@ const Feria = () => {
 
     return (
         <div>
-            <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left goBack-fase" aria-hidden="true"></i>
+            <a onClick={()=>{history.goBack()}}>
+                <i className="fas fa-chevron-left goBack-fase" aria-hidden="true"></i>
+            </a> 
             <div className="img-modelo-rosa">
                 <figure >
                     <img src={tablet} alt="" className="w-100"/>

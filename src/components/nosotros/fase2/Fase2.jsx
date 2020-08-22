@@ -15,7 +15,8 @@ const Fase2 = () => {
     return(
         <div className="animated fadeIn">
             <div className="fase2 border-bottom-radius">
-            <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback" aria-hidden="true"></i> 
+            <a onClick={()=>{history.goBack()}}>
+            <i className="fas fa-chevron-left arrowGoback" aria-hidden="true"></i></a> 
                 <h6 className="titulo-numero-fase2">Fase 2</h6>
                 <h5 className="titulo-fase2  tracking-in-expand-fwd-top">Probar</h5>
                 <p className="p-mobile-white w-fase">En este momento del proyecto tuvimos como objetivo explorar diferentes tipos de soluciones, darle forma al futuro modelo de “Volar” y conducir las ideas a las zonas de influencia.

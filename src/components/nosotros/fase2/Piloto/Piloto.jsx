@@ -23,7 +23,9 @@ const Piloto = () => {
     let history = useHistory();
     return (
         <div className="fondo-blanco animated fadeIn">
-        <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left goBack-fase" aria-hidden="true"></i>
+        <a onClick={()=>{history.goBack()}}>
+        <i  className="fas fa-chevron-left goBack-fase" aria-hidden="true"></i>
+        </a>
             <div className="fase2-piloto border-bottom-radius">
                 <div className="fase2-piloto-title">
                     <div className="logo-piloto">

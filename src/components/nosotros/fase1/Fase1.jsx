@@ -1,5 +1,5 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+import {useHistory } from "react-router-dom";
 
 import "./fase1.css"
 
@@ -20,8 +20,8 @@ const Fase1 = () => {
     return(
         <div className="animated fadeIn">
             <div className="fase1 border-bottom-radius">
-            <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left goBack-fase" aria-hidden="true"></i>
-                <h6 className="titulo-numero-fase">Fase 1</h6>
+                <a  onClick={()=>{history.goBack()}}><i  className="fas fa-chevron-left goBack-fase" aria-hidden="true"></i></a>
+                <h6 className="titulo-numero-fase" >Fase 1</h6>
                 <h5 className="titulo-fase tracking-in-expand-fwd-top">Aprender</h5>
                 <p className="p-mobile-blue w-fase">El objetivo de esta fase fue identificar intervenciones potencialmente efectivas para fomentar el desarrollo infantil temprano (DIT) en las zonas de influencia del grupo Breca en Perú.
                 </p>

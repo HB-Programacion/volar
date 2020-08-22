@@ -11,13 +11,14 @@ const MaterialEducativo = () => {
       <div className="background-list-material-educativo" id="aprendamos-page">
         <div className=" animated fadeIn">
           <>
-            <i
-              onClick={() => {
+           <a onClick={() => {
                 history.goBack();
-              }}
+              }}>
+           <i
               className="fas fa-chevron-left arrowGoback"
               aria-hidden="true"
             ></i>
+           </a>
             {arrTips
               .filter(
                 (item) =>

@@ -10,7 +10,9 @@ const Cuentacuentos = () => {
     let history = useHistory();
     return (
         <div className="bg-recursos-img-cuentacuentos animated fadeIn">
-        <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback-docente goBack-docente" aria-hidden="true"></i>
+        <a onClick={()=>{history.goBack()}}>
+        <i  className="fas fa-chevron-left arrowGoback-docente goBack-docente" aria-hidden="true"></i>
+        </a>
         <div>
             <div className="box-title-cuentacuentos">
                 <figure className="img-cuentacuentos">

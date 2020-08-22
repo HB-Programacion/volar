@@ -30,13 +30,14 @@ const Modulo_6 = () => {
   let history = useHistory();
   return (
     <div className="box-modulos-aliados">
-      <i
-        onClick={() => {
+      <a onClick={() => {
           history.goBack();
-        }}
+        }}>
+      <i
         className="fas fa-chevron-left arrowGoback-docente goBack-docente"
         aria-hidden="true"
       ></i>
+      </a>
       <div className="row sin-margin-row">
         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 box-modulos-textos">
           <h3 className="title-modulos-aliados">¿Qué aprenderemos?</h3>

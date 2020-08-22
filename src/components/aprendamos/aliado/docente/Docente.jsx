@@ -28,8 +28,9 @@ const Docente = () => {
                   <h1 className="title title-aprendamos tracking-in-expand-fwd-top">¡Bienvenido! <br/>Aliado por la infancia</h1>
                   <img src={starsss} className="right-star-empieza heartbeat" alt="stars-right"></img>
         </div>
-        <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback-docente goBack-docente" aria-hidden="true"></i>
-  
+        <a onClick={()=>{history.goBack()}}>
+          <i  className="fas fa-chevron-left arrowGoback-docente goBack-docente" aria-hidden="true"></i>
+        </a>
         <div className="box-btn-docente">
           <div className="row ml-0 mr-0">
             <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">

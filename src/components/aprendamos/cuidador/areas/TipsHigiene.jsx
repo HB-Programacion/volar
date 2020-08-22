@@ -31,7 +31,9 @@ const TipsHigiene = ({contenidoFirebase,error,loading,firebaseUser,idChild,}) =>
             )}*/}
             {/*{contenidoFirebase && ( */}
               <>
-              <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback" aria-hidden="true"></i> 
+              <a onClick={()=>{history.goBack()}}>
+                <i  className="fas fa-chevron-left arrowGoback" aria-hidden="true"></i>
+              </a> 
 
                 {arrTips
                   .filter(
@@ -106,7 +108,9 @@ const TipsHigiene = ({contenidoFirebase,error,loading,firebaseUser,idChild,}) =>
         <div className="background-tips-higiene" id="aprendamos-page">
           <div className=" animated fadeIn">
               <>
-              <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback" aria-hidden="true"></i> 
+              <a onClick={()=>{history.goBack()}}>
+                <i  className="fas fa-chevron-left arrowGoback" aria-hidden="true"></i>
+              </a> 
                 {arrTips
                   .filter(
                     (item) =>

@@ -23,7 +23,9 @@ const TipsNutricion = ({
         <div className="background-tips-nutricion" id="aprendamos-page">
           <div className=" animated fadeIn">
               <>
-              <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback" aria-hidden="true"></i> 
+              <a onClick={()=>{history.goBack()}}>
+                <i  className="fas fa-chevron-left arrowGoback" aria-hidden="true"></i>
+              </a> 
                 {arrTips
                   .filter(
                     (item) =>
@@ -96,7 +98,9 @@ const TipsNutricion = ({
         <div className="background-tips-nutricion" id="aprendamos-page">
           <div className=" animated fadeIn">
               <>
-              <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback" aria-hidden="true"></i> 
+              <a onClick={()=>{history.goBack()}}>
+                <i  className="fas fa-chevron-left arrowGoback" aria-hidden="true"></i>
+              </a> 
                 {arrTips
                   .filter(
                     (item) =>

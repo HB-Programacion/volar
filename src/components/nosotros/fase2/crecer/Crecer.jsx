@@ -34,7 +34,9 @@ const Crecer = () => {
 
     return(
         <div className="fondo-azul animated fadeIn">
-        <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left goBack-fase" aria-hidden="true"></i> 
+        <a onClick={()=>{history.goBack()}}>
+        <i  className="fas fa-chevron-left goBack-fase" aria-hidden="true"></i> 
+        </a>
             <div className="fase2-crecer border-bottom-radius">
                 <div className="fase2-crecer-title">
                     <div className="logo-crecer-img">

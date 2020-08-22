@@ -11,7 +11,9 @@ const Inicial = () => {
     let history = useHistory();
     return (
         <div className="bg-recursos-img animated fadeIn">
-        <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback-docente goBack-docente" aria-hidden="true"></i>
+        <a onClick={()=>{history.goBack()}}>
+            <i  className="fas fa-chevron-left arrowGoback-docente goBack-docente" aria-hidden="true"></i>
+        </a>
         <div>
             <div className="box-title-inicial">
                 <figure className="img-inicial">

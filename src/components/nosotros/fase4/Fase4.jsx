@@ -23,7 +23,9 @@ const Fase4 = () => {
     return (
         <div className="animated fadeIn">
             <div className="fase1 fase4-fondo">
-            <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left goBack-fase" aria-hidden="true"></i> 
+                <a onClick={()=>{history.goBack()}} >
+                    <i className="fas fa-chevron-left goBack-fase" aria-hidden="true"></i> 
+                </a>
                 <h6 className="titulo-numero-fase color-white">Fase 4</h6>
                 <h5 className="titulo-fase4 tracking-in-expand-fwd-top">Evaluar y escalar</h5>
                 <p className="p-mobile-white w-fase">

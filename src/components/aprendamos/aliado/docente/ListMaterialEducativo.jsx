@@ -48,13 +48,14 @@ const ListMaterialEducativo = ({
             </h1>
           </div>
           <div className="list-material-educativo">
-          <i
-          onClick={() => {
-            history.goBack();
-          }}
-          className="fas fa-chevron-left arrowGoback goBack-area"
-          aria-hidden="true"
-        ></i>
+          <a onClick={() => {
+              history.goBack();
+            }}>
+            <i
+            className="fas fa-chevron-left arrowGoback goBack-area"
+            aria-hidden="true"
+            ></i>
+          </a>
            <div className="container-fluid">
            <div className="row">
               {arraySesamo

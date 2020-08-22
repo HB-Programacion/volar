@@ -46,7 +46,9 @@ export const Rutina= ({
 
   return (
     <div>
-      <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback goBack-area" aria-hidden="true"></i> 
+      <a onClick={()=>{history.goBack()}}>
+      <i  className="fas fa-chevron-left arrowGoback goBack-area" aria-hidden="true"></i>
+      </a>
       {firebaseUser !== null ? (
         <div>
           <div className="box-title-rutina show-desktop">
@@ -97,7 +99,9 @@ export const Rutina= ({
         </div>
       ) : (
         <div>
-          <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback goBack-area" aria-hidden="true"></i> 
+          <a onClick={()=>{history.goBack()}}>
+          <i  className="fas fa-chevron-left arrowGoback goBack-area" aria-hidden="true"></i>
+          </a> 
           <div className="box-title-rutina
            show-desktop">
             <img

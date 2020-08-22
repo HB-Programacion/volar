@@ -15,7 +15,9 @@ const Fase3 = () => {
     return (
         <div className="animated fadeIn">
             <div className="fase1 fase3-image border-bottom-radius">
-            <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback" aria-hidden="true"></i> 
+            <a onClick={()=>{history.goBack()}}>
+                <i  className="fas fa-chevron-left arrowGoback" aria-hidden="true"></i>
+            </a> 
                 <h6 className="titulo-numero-fase">Fase 3</h6>
                 <h5 className="titulo-fase tracking-in-expand-fwd-top">Refinar</h5>
                 <p className="p-mobile-blue w-fase">

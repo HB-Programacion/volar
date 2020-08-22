@@ -44,7 +44,9 @@ export const Sesamo = ({
 
   return (
 <>
-<i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback goBack-area" aria-hidden="true"></i> 
+<a onClick={()=>{history.goBack()}}>
+<i  className="fas fa-chevron-left arrowGoback goBack-area" aria-hidden="true"></i> 
+</a>
 {
   firebaseUser!==null?(
     <div>
@@ -93,7 +95,9 @@ export const Sesamo = ({
   </div> ): 
   (
     <div>
-      <i onClick={()=>{history.goBack()}} className="fas fa-chevron-left arrowGoback goBack-area" aria-hidden="true"></i> 
+      <a onClick={()=>{history.goBack()}} >
+      <i className="fas fa-chevron-left arrowGoback goBack-area" aria-hidden="true"></i> 
+      </a>
     <div className="box-title-sesamo show-desktop">
       <img
         src={iconoSesamoWhite}
