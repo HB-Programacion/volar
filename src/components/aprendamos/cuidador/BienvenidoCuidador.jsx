@@ -165,7 +165,7 @@ export const BienvenidoCuidador = ({
           </div>
           <div className=" caja-compartir-hola">
             <a
-              href="https://www.facebook.com/sharer/sharer.php?u=http://52.177.117.53/"
+              href="https://www.facebook.com/sharer/sharer.php?u=https%3A//volar.org.pe/"
               className="btn-navy-blue w-80 text-white wobble-hor-bottom"
             >
               <img src={arrowLeft} className="arrow-blue"></img>
@@ -621,7 +621,7 @@ export const BienvenidoCuidador = ({
           </div>
           <div className="caja-boton-contactanos caja-compartir-hola">
             <a
-              href="https://www.facebook.com/sharer/sharer.php?u=http://52.177.117.53/"
+              href="https://www.facebook.com/sharer/sharer.php?u=https%3A//volar.org.pe/"
               className="btn-navy-blue w-80 text-white wobble-hor-bottom"
             >
               <img src={arrowLeft} className="arrow-blue"></img>

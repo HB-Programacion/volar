@@ -164,6 +164,7 @@
   font-family: "Questrial";
   margin: 2rem;
   margin-top: 4rem;
+  justify-content: center
 }
 
 .btn-aliado {
@@ -182,6 +183,7 @@
   font-family: "Questrial";
   margin: 2rem;
   margin-top: 4rem;
+  justify-content: center
 }
 
 .btn-box {
@@ -204,6 +206,8 @@
   margin: 1.5rem;
   position: relative;
   left: -1rem;
+  display: flex;
+  align-items: center
 }
 
 .icono {
@@ -367,7 +371,7 @@
 
   .letter-btn {
     margin: 0.5rem;
-    margin-top: 1.4rem;
+    /* margin-top: rem; */
     font-size: 0.9rem !important;
     width: 12rem;
     position: relative;
