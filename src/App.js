@@ -217,7 +217,7 @@ function App() {
             exact
             component={Aprendamos}
           />
-          
+
           <Route path="/aprendamos" exact>
             <EmpiezaAprender
               firebaseUser={firebaseUser}
@@ -397,24 +397,7 @@ function App() {
           <Route path="/politica-de-privacidad" exact component={PoliticaDePrivacidad}>
           </Route>
           <Route path="/login" exact>
-              <Login firebaseUser={firebaseUser} />
-            </Route>
-          {firebaseUser !== null ? (
-            <Route path="/perfil" exact>
-              <Perfil firebaseUser={firebaseUser} />
-            </Route>
-          ) :
-           <>
-            <Route path="/signup" exact>
-              <Signup firebaseUser={firebaseUser} />
-            </Route>
-            <Route path="/password/reset" exact component={PasswordReset} />
-            <Route path="/new-password" exact component={NewPassword} /></> }
-          <Route path="/registro-niño" exact>
-            <RegistroChild
-              firebaseUser={firebaseUser}
-              mandarIdChild={mandarIdChild}
-            />
+            <Login firebaseUser={firebaseUser} />
           </Route>
           <Route path="/contactanos" exact component={Contactanos} />
           <Route path="/nosotros/fase1" exact component={Fase1} />
@@ -449,6 +432,23 @@ function App() {
           <Route path="/aprendamos/aliado/docente/recursos-extras/primaria" exact component={Primaria} />
           <Route path="/aprendamos/aliado/docente/recursos-extras/secundaria" exact component={Secundaria} />
           <Route path="/aprendamos/aliado/docente/recursos-extras/cuentacuentos" exact component={Cuentacuentos} />
+          {firebaseUser !== null ? (
+            <Route path="/perfil" exact>
+              <Perfil firebaseUser={firebaseUser} />
+            </Route>
+          ) :
+            <>
+              <Route path="/signup" exact>
+                <Signup firebaseUser={firebaseUser} />
+              </Route>
+              <Route path="/password/reset" exact component={PasswordReset} />
+              <Route path="/new-password" exact component={NewPassword} /></>}
+          <Route path="/registro-niño" exact>
+            <RegistroChild
+              firebaseUser={firebaseUser}
+              mandarIdChild={mandarIdChild}
+            />
+          </Route>
           <Route path="*" component={Error} />
         </Switch>
         <Footer />
