@@ -44,17 +44,7 @@ const MenuNuevo =props => {
                 <ul>
                     <li><NavLink to="/" activeClassName='is-activeHome' exact={true} >Inicio</NavLink></li>
                     <li><NavLink to="/nosotros" activeClassName='is-activeHome' >Nosotros</NavLink></li>
-                    {
-                      props.firebaseUser !== null ?  (
-                        localStorage.getItem('idChildLogueadoActive') !==null    ? (
-                              <li><NavLink to={`/aprendamos/cuidador/${localStorage.getItem('idChildLogueadoActive')}`} activeClassName='is-activeHome' >Aprendamos</NavLink></li>
-                            ):(
-                              <li><NavLink to="/registro-niño" activeClassName='is-activeHome' >Aprendamos</NavLink></li>
-                            )
-                       ) :
                       <li><NavLink to='/aprendamos' activeClassName='is-activeHome' >Aprendamos</NavLink></li>
-                    }
-
                     <li><NavLink to="/contactanos" activeClassName='is-activeHome'>Contáctanos</NavLink></li>
                     {props.firebaseUser !== null ? (
                         <li className="nav-item dropdown">

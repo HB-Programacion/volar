@@ -11,9 +11,7 @@ const Login = (props) => {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
   const [error, setError] = React.useState(null);
- console.log(auth, "jacinta" )
 ;
-console.log(auth.CurrentUser, "jocinta")
   const procesarDatos = (e) => {
     e.preventDefault();
     if (!email.trim()) {
@@ -22,10 +20,6 @@ console.log(auth.CurrentUser, "jocinta")
     }
     if (!password.trim()) {
       setError("ingrese password");
-      return;
-    }
-    if (password.length < 6) {
-      setError("Password mayor a 6 carácteres");
       return;
     }
     login();
@@ -39,15 +33,14 @@ console.log(auth.CurrentUser, "jocinta")
       setError(null)
       props.history.push("/")
     } catch (error) {
-      console.log(error);
       if(error.code==="auth/invalid-email"){
         setError('Email no válido...')
-      }  
-      if(error.code==="auth/user-not-found"){
+      }  else if (error.code==="auth/user-not-found"){
         setError("Email no registrado")
-      }
-      if(error.code==="auth/wrong-password"){
+      } else if (error.code==="auth/wrong-password"){
         setError("Contraseña Incorrecta")
+      } else {
+        setError(error.message);
       }
     }
   }, [email,password, props.history]);
@@ -63,7 +56,6 @@ console.log(auth.CurrentUser, "jocinta")
 
       await  db.collection("usuarios").doc(res.user.uid).get().then( usuarioBBDD => {
         if (!usuarioBBDD.exists) {
-              console.log("No existe el usuario");
               db.collection("usuarios").doc(res.user.uid).set({
                 email: res.user.email,
                 uid: res.user.uid,
@@ -88,9 +80,6 @@ console.log(auth.CurrentUser, "jocinta")
              props.history.push("/");
         }
      });
-  
-
-    
       setPassword("");
       setEmail("");
       setError(null);
@@ -100,6 +89,8 @@ console.log(auth.CurrentUser, "jocinta")
         setError("Email no válido");
       } else if (error.code === "auth/email-already-in-use") {
         setError("Email ya utilizado");
+      } else {
+        setError(error.message);
       }
     }
   }, [props.history]);
@@ -117,7 +108,6 @@ console.log(auth.CurrentUser, "jocinta")
   
       await  db.collection("usuarios").doc(res.user.uid).get().then( usuarioBBDD => {
         if (!usuarioBBDD .exists) {
-              console.log("No existe el usuario");
               db.collection("usuarios").doc(res.user.uid).set({
                 email: res.user.email,
                 uid: res.user.uid,
@@ -137,8 +127,6 @@ console.log(auth.CurrentUser, "jocinta")
               //Entiendo que aqui va el código para asignar el mail e imagen
         }
         else{
-              console.log("Existe el usuario");
-           
              props.history.push("/");
         }
      });
@@ -148,11 +136,12 @@ console.log(auth.CurrentUser, "jocinta")
       setError(null);
       props.history.push("/");
     } catch (error) {
-      console.log(error);
       if (error.code === "auth/invalid-email") {
         setError("Email no válido");
       } else if (error.code === "auth/email-already-in-use") {
         setError("Email ya utilizado");
+      } else {
+        setError(error.message);
       }
     }
   }, [ props.history]);

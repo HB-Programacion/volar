@@ -7,7 +7,7 @@ import share from "../../../../images/docente/share.svg"
 const Compartir = () => {
     return (
         <>
-           <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//volar.org.pe/" className="compartir-aliado">
+           <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//volar.org.pe/" className="compartir-aliado" target="_blank">
                <img src={share} alt=""/>
             </a> 
         </>
