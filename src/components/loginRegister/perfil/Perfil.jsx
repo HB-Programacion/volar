@@ -334,7 +334,7 @@ const Perfil = (props) => {
         .collection("addChild")
         .doc(id)
         .delete();
-
+        localStorage.removeItem('idChildLogueadoActive')
       /*  const arrayFiltrado = tareas.filter((item) => item.id !== id);
       setTareas(arrayFiltrado);*/
     } catch (error) {
@@ -382,7 +382,8 @@ const Perfil = (props) => {
                 </div>
                 <p className="letter-register">CORREO:</p>
                 {props.firebaseUser.providerData[0].providerId ===
-                "google.com" ? (
+                "google.com" || props.firebaseUser.providerData[0].providerId ===
+                "facebook.com"? (
                   <input
                     className="input-register-space"
                     type="text"
@@ -555,7 +556,7 @@ const Perfil = (props) => {
                     </div>
                     <p className="letter-register">CORREO:</p>
                     {props.firebaseUser.providerData[0].providerId ===
-                    "google.com" ? (
+                    "google.com" || props.firebaseUser.providerData[0].providerId ==="facebook.com" ? (
                       <input
                         className="input-register-space"
                         type="text"
@@ -690,7 +691,8 @@ const Perfil = (props) => {
                     </div>
                   </form>
                   {props.firebaseUser.providerData[0].providerId !==
-                  "google.com" ? (
+                  "google.com" || props.firebaseUser.providerData[0].providerId !==
+                  "facebook.com"? (
                     <form onSubmit={actualizarPassword}>
                       <div className="box-actualizar-password">
                         <div className="row">
@@ -726,11 +728,10 @@ const Perfil = (props) => {
                             />
                           </div>
                           <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                            {password === currentPassword &&
-                            password.length >= 6 ? (
-                              <p>La contraseña actual es la correcta</p>
+                            {password === currentPassword ? (
+                              <p className="message-correct">La contraseña actual es la correcta</p>
                             ) : (
-                              <p>La contraseña actual no es la correcta</p>
+                              <p className="message-correct">La contraseña actual no es la correcta</p>
                             )}
                           </div>
                         </div>
@@ -786,7 +787,7 @@ const Perfil = (props) => {
                     ""
                   )}
                 </div>
-                <div className="col-sm-12 col-md-12	col-lg-5 col-xl-5">
+                <div className="col-sm-12 col-md-5	col-lg-5 col-xl-5">
                   <div className="vertical-line"></div>
                   <div className="marginPerfilChild">
                     <p className="subtitulo-perfil">Niños:</p>

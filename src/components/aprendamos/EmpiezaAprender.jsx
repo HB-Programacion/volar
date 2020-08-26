@@ -1,14 +1,14 @@
 import React from "react";
 import "./aprendamos.css";
 import "./../../App.css";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, NavLink } from "react-router-dom";
 import iconoCuidador from "./../../images/icon-cuidador.png";
 import iconoAliado from "./../../images/icon-aliado.png";
 import starsLeftDesktop from "../../images/stars-left-desktop.svg";
 import starsRightDesktop from "../../images/stars-right-desktop.svg";
 import starsss from "../../images/stars-left.svg";
 
-export const EmpiezaAprender = () => {
+export const EmpiezaAprender = (props) => {
   return (
     <div className="background-blue animated fadeIn">
       {/* <div className="box-title-aprendamos show-tittle">
@@ -69,19 +69,54 @@ export const EmpiezaAprender = () => {
       <div className="btn-box">
         <div className="row ml-0 mr-0">
           <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-            <Link to="/aprendamos/cuidador-principal" className="link">
-              <div className="btn-cuidador">
-                <img
-                  className="icono heartbeat"
-                  src={iconoCuidador}
-                  alt="icono cuidador"
-                />
-                <h2 className="letter-btn">CUIDADOR PRINCIPAL</h2>
-                <div className="vertical-center">
-                  <i className="fas fa-chevron-right"></i>
-                </div>
-              </div>
-            </Link>
+          {
+                      props.firebaseUser !== null ?  (
+                        localStorage.getItem('idChildLogueadoActive') !==null    ? (
+                          <Link to={`/aprendamos/cuidador/${localStorage.getItem('idChildLogueadoActive')}`} className="link">
+                          <div className="btn-cuidador">
+                            <img
+                              className="icono heartbeat"
+                              src={iconoCuidador}
+                              alt="icono cuidador"
+                            />
+                            <h2 className="letter-btn">CUIDADOR PRINCIPAL</h2>
+                            <div className="vertical-center">
+                              <i className="fas fa-chevron-right"></i>
+                            </div>
+                          </div>
+                        </Link>
+                            ):(
+                              <Link to="/registro-niño" className="link">
+                          <div className="btn-cuidador">
+                            <img
+                              className="icono heartbeat"
+                              src={iconoCuidador}
+                              alt="icono cuidador"
+                            />
+                            <h2 className="letter-btn">CUIDADOR PRINCIPAL</h2>
+                            <div className="vertical-center">
+                              <i className="fas fa-chevron-right"></i>
+                            </div>
+                          </div>
+                        </Link>
+                         
+                            )
+                       ) :
+                       <Link to="/aprendamos/cuidador-principal" className="link">
+                       <div className="btn-cuidador">
+                         <img
+                           className="icono heartbeat"
+                           src={iconoCuidador}
+                           alt="icono cuidador"
+                         />
+                         <h2 className="letter-btn">CUIDADOR PRINCIPAL</h2>
+                         <div className="vertical-center">
+                           <i className="fas fa-chevron-right"></i>
+                         </div>
+                       </div>
+                     </Link>
+                    }
+
           </div>
           <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
           <Link to="/aprendamos/aliado" className="link">

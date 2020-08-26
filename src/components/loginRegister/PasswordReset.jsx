@@ -28,7 +28,6 @@ export const PasswordReset = () => {
             } else {
               alert(error)
             }
-            console.log(error)
           });
   }
 

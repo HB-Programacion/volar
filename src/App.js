@@ -33,7 +33,7 @@ import Login from "./components/loginRegister/Login";
 import Signup from "./components/loginRegister/Signup";
 import PoliticaDePrivacidad from "./components/loginRegister/PoliticaDePrivacidad";
 import { PasswordReset } from "./components/loginRegister/PasswordReset";
-import  NewPassword  from "./components/loginRegister/NewPassword";
+import NewPassword from "./components/loginRegister/NewPassword";
 import { Contactanos2 } from "./components/contactanos/Contactanos3";
 import { Contactanos } from "./components/contactanos/Contactanos";
 // import { auth,db } from "./components/firebase/firebase";
@@ -76,7 +76,7 @@ import Inicial from "./components/aprendamos/aliado/docente/recursos/inicial/Ini
 import Primaria from "./components/aprendamos/aliado/docente/recursos/primaria/Primaria";
 import Secundaria from "./components/aprendamos/aliado/docente/recursos/secundaria/Secundaria";
 import Cuentacuentos from "./components/aprendamos/aliado/docente/recursos/cuentacuentos/Cuentacuentos";
-
+import Error from "./components/Error"
 
 function App() {
   const [firebaseUser, setFirebaseUser] = React.useState(false);
@@ -120,7 +120,6 @@ function App() {
     localStorage.setItem('nameChildActive', nameChild)
     localStorage.setItem('edadChildLogueadoActive', edadChild)
     localStorage.setItem('idChildLogueadoActive', idChildArray)
-    console.log(localStorage.getItem('idChildLogueado'))
     const dateChildActive = {
       name: nameChild, // Generamos una id rápida
       edad: edadChild,
@@ -218,7 +217,14 @@ function App() {
             exact
             component={Aprendamos}
           />
-          <Route path="/aprendamos" exact component={EmpiezaAprender} />
+          
+          <Route path="/aprendamos" exact>
+            <EmpiezaAprender
+              firebaseUser={firebaseUser}
+              idChild={idChild}
+            />
+          </Route>
+
           <Route
             path="/aprendamos/cuidador/registro-niños"
             exact
@@ -388,24 +394,22 @@ function App() {
             <AprendamosAliados
             />
           </Route>
-          <Route path="/login" exact>
-            <Login firebaseUser={firebaseUser} />
-          </Route>
-          <Route path="/login-construccion" exact component={ConstruccionLogin}>
-          </Route>
-          <Route path="/signup" exact>
-            <Signup firebaseUser={firebaseUser} />
-          </Route>
           <Route path="/politica-de-privacidad" exact component={PoliticaDePrivacidad}>
           </Route>
-          <Route path="/password/reset" exact component={PasswordReset} />
-          <Route path="/new-password" exact component={NewPassword} />
+          <Route path="/login" exact>
+              <Login firebaseUser={firebaseUser} />
+            </Route>
           {firebaseUser !== null ? (
             <Route path="/perfil" exact>
               <Perfil firebaseUser={firebaseUser} />
             </Route>
-          ) : null}
-
+          ) :
+           <>
+            <Route path="/signup" exact>
+              <Signup firebaseUser={firebaseUser} />
+            </Route>
+            <Route path="/password/reset" exact component={PasswordReset} />
+            <Route path="/new-password" exact component={NewPassword} /></> }
           <Route path="/registro-niño" exact>
             <RegistroChild
               firebaseUser={firebaseUser}
@@ -441,12 +445,11 @@ function App() {
           <Route path="/aprendamos/aliado/modulos/modulo_8" exact component={Modulo8} />
           <Route path={`/aprendamos/aliado/docente/material-educativo/individual`} exact component={MaterialEducativo} />
           <Route path="/aprendamos/aliado/docente/recursos-extras" exact component={Recursos} />
-          <Route path="/aprendamos/aliado/docente/recursos-extras/inicial" exact component={Inicial}/>
-          <Route path="/aprendamos/aliado/docente/recursos-extras/primaria" exact component={Primaria}/>
-          <Route path="/aprendamos/aliado/docente/recursos-extras/secundaria" exact component={Secundaria}/>
-          <Route path="/aprendamos/aliado/docente/recursos-extras/cuentacuentos" exact component={Cuentacuentos}/>
-
-
+          <Route path="/aprendamos/aliado/docente/recursos-extras/inicial" exact component={Inicial} />
+          <Route path="/aprendamos/aliado/docente/recursos-extras/primaria" exact component={Primaria} />
+          <Route path="/aprendamos/aliado/docente/recursos-extras/secundaria" exact component={Secundaria} />
+          <Route path="/aprendamos/aliado/docente/recursos-extras/cuentacuentos" exact component={Cuentacuentos} />
+          <Route path="*" component={Error} />
         </Switch>
         <Footer />
         <Redes />

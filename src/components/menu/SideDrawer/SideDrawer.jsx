@@ -57,7 +57,6 @@ const SideDraw = (props) => {
             <img src={logoBlanco} className="w-60 mb-5" />
           </NavLink>
         </li>
-
         {props.firebaseUser !== null ? (
           <div>
             <li>
@@ -83,7 +82,6 @@ const SideDraw = (props) => {
             </NavLink>
           </li>
         )}
-
         <li>
           <NavLink
             to="/"
@@ -105,46 +103,17 @@ const SideDraw = (props) => {
             Nosotros
           </NavLink>
         </li>
-        {props.firebaseUser !== null ? (
-          localStorage.getItem("idChildLogueadoActive") !== null ? (
-            <li>
-              <NavLink
-                to={`/aprendamos/cuidador/${localStorage.getItem(
-                  "idChildLogueadoActive"
-                )}`}
-                onClick={props.ocultarMenuMobile}
-                activeClassName="is-activeHomeMobile"
-              >
-                <img src={aprendamos} className="w-15 mr-2" />
-                Aprendamos
-              </NavLink>
-            </li>
-          ) : (
-            <li>
-              {" "}
-              <NavLink
-                to="/registro-niño"
-                onClick={props.ocultarMenuMobile}
-                activeClassName="is-activeHomeMobile"
-              >
-                <img src={aprendamos} className="w-15 mr-2" />
-                Aprendamos
-              </NavLink>
-            </li>
-          )
-        ) : (
-          <li>
-            <NavLink
-              to="/aprendamos"
-              onClick={props.ocultarMenuMobile}
-              activeClassName="is-activeHomeMobile"
-            >
-              <img src={aprendamos} className="w-15 mr-2" />
-              Aprendamos
-            </NavLink>
-          </li>
-        )}
-
+        <li>
+          <NavLink
+            to="/aprendamos"
+            onClick={props.ocultarMenuMobile}
+            activeClassName="is-activeHomeMobile"
+          >
+            <img src={aprendamos} className="w-15 mr-2" />
+            Aprendamos
+          </NavLink>
+        </li>
+        
         <li>
           <NavLink
             to="/contactanos"
@@ -155,7 +124,6 @@ const SideDraw = (props) => {
             Contáctanos
           </NavLink>
         </li>
-
         {props.firebaseUser !== null ? (
           <li>
             <Link
