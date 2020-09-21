@@ -432,6 +432,13 @@ function App() {
           <Route path="/aprendamos/aliado/docente/recursos-extras/primaria" exact component={Primaria} />
           <Route path="/aprendamos/aliado/docente/recursos-extras/secundaria" exact component={Secundaria} />
           <Route path="/aprendamos/aliado/docente/recursos-extras/cuentacuentos" exact component={Cuentacuentos} />
+          <Route path="/registro-niño" exact>
+            <RegistroChild
+              firebaseUser={firebaseUser}
+              mandarIdChild={mandarIdChild}
+            />
+          </Route>
+          <Route path="*" component={Error} />
           {firebaseUser !== null ? (
             <Route path="/perfil" exact>
               <Perfil firebaseUser={firebaseUser} />
@@ -443,13 +450,6 @@ function App() {
               </Route>
               <Route path="/password/reset" exact component={PasswordReset} />
               <Route path="/new-password" exact component={NewPassword} /></>}
-          <Route path="/registro-niño" exact>
-            <RegistroChild
-              firebaseUser={firebaseUser}
-              mandarIdChild={mandarIdChild}
-            />
-          </Route>
-          <Route path="*" component={Error} />
         </Switch>
         <Footer />
         <Redes />
