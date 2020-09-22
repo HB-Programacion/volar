@@ -50,8 +50,11 @@
 	text-decoration: none
 }
 
-
 .cont-redes a:nth-child(2) {
+	background-color: #7dc7c5;
+	text-decoration: none
+}
+.cont-redes a:nth-child(3) {
 	background-color: #7dc7c5;
 	text-decoration: none
 }
