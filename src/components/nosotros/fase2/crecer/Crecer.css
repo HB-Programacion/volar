@@ -1,5 +1,3 @@
-
-
 .fase2-crecer{
     margin-top: 4.5rem;
     background-image: url("../../../../images/crecer-img/fondo_crecer_mejor_mobile.png");
@@ -375,8 +373,9 @@
     }
 
     .box-azul-crecer{
-        padding-top: 5rem;
+        padding-top: 9rem;
         padding-bottom: 5rem;
+        /* margin-top: 8rem; */
     }
     
     .box-azul-crecer h5{
@@ -428,7 +427,7 @@
     }
 
     .box-blanco-crecer{
-        padding-top: 5rem;
+        padding-top: 7rem;
         padding-bottom: 5rem;
     }
     .box-blanco-crecer h5{
@@ -514,8 +513,8 @@
     }
 
     .box-spots{
-        padding-top: 5rem;
-        padding-bottom: 5rem;
+        padding-top: 8rem;
+        padding-bottom: 7rem;
     }
 
     .box-spots h5{

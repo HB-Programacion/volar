@@ -4,7 +4,7 @@ import "./Modelo.css"
 
 import foco from "../../../../images/fase3-img/modelo/foco-naranja.svg"
 import propuesta from "../../../../images/fase3-img/modelo/propuesta-valor.svg"
-import modelo from "../../../../images/fase3-img/modelo/modelo-intervencion.png"
+import modelo from "../../../../images/fase3-img/modelo/modelo-intervencion-mobile.png"
 import modeloDesktop from "../../../../images/fase3-img/modelo/modelo-intervencion-desktop.png"
 import mujer from "../../../../images/fase3-img/modelo/woman-naranja.svg"
 import tablet from "../../../../images/fase3-img/modelo/tablet.svg"

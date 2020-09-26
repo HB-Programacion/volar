@@ -14,10 +14,10 @@ const CarouselCrecerMobile = () => {
 
                         <div className="row">
                             <div className="col-md-12 ">
-                                <div className="card mb-2 card-crecer">
+                                <a className="card mb-2 card-crecer" href="#talleres">
                                         <img className="card-img-top " src={talleres}
                                         alt="talleres-presenciales"/>
-                                </div>
+                                </a>
                             </div>
                            
                         </div>
@@ -28,10 +28,10 @@ const CarouselCrecerMobile = () => {
 
                         <div className="row">
                             <div className="col-md-12">
-                                <div className="card mb-2 card-crecer">
+                                <a className="card mb-2 card-crecer" href="#videos">
                                         <img className="card-img-top " src={videos}
                                         alt="Card image cap"/>
-                                </div>
+                                </a>
                             </div>
 
                         </div>
@@ -42,10 +42,10 @@ const CarouselCrecerMobile = () => {
 
                         <div className="row">
                             <div className="col-md-12">
-                                <div className="card mb-2 card-crecer">
+                                <a className="card mb-2 card-crecer" href="#mensajeria">
                                         <img className="card-img-top " src={mensajeria}
                                         alt="Card image cap"/>
-                                </div>
+                                </a>
                             </div>
 
 
@@ -57,10 +57,10 @@ const CarouselCrecerMobile = () => {
 
                         <div className="row">
                             <div className="col-md-12">
-                                <div className="card mb-2 card-crecer">
+                                <a className="card mb-2 card-crecer" href="#radio">
                                         <img className="card-img-top " src={radio}
                                         alt="Card image cap"/>
-                                </div>
+                                </a>
                             </div>
 
                         </div>
