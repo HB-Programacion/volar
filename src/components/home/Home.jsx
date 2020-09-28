@@ -35,7 +35,6 @@ import tituloHome from "../../images/home-img/titulo_home.png"
 import CarouselMobile from "./CarouselMobile";
 import CarouselDesktop from "./CarouselDesktop";
 import videoo from "../../images/video/home_desktop_1.mp4"
-import videoMobile from "../../images/video/home_tablet_1.mp4"
 import habla from "../../images/home-img/hablaYcanta.svg"
 import exploren from "../../images/home-img/exploren.svg"
 import lean from "../../images/home-img/lean.svg"
