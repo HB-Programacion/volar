@@ -438,18 +438,18 @@ function App() {
               mandarIdChild={mandarIdChild}
             />
           </Route>
-          <Route path="*" component={Error} />
           {firebaseUser !== null ? (
             <Route path="/perfil" exact>
               <Perfil firebaseUser={firebaseUser} />
             </Route>
           ) :
-            <>
+            (<>
               <Route path="/signup" exact>
                 <Signup firebaseUser={firebaseUser} />
               </Route>
               <Route path="/password/reset" exact component={PasswordReset} />
-              <Route path="/new-password" exact component={NewPassword} /></>}
+              <Route path="/new-password" exact component={NewPassword} /></>)}
+          <Route component={Error} />
         </Switch>
         <Footer />
         <Redes />

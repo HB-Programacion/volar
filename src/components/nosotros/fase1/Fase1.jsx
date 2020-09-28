@@ -80,7 +80,7 @@ const Fase1 = () => {
                         <img src={arrowRightBlue}className="arrow-orange"></img>
                         </div>
                     </a>
-                    <a href="/aprendamos" className="wobble-hor-bottom">
+                    <a href="https://volar.org.pe/static/media/pdf/VOLER_REPORTE.pdf" download="Memoria-de-volar"  className="wobble-hor-bottom"  target="_blank">
                         <div className="btn-fase-naranja">
                         <img src={arrowLeft} className="arrow-orange"></img>
                         <div className="ml-2 mr-2">APRENDE MÁS</div>
