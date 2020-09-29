@@ -99,7 +99,7 @@ const Modulo_3 = () => {
                   className="border-video-rutina"
                   width="600"
                   height="350"
-                  src="https://www.youtube.com/embed/HmvCTcrR8fA"
+                  src="https://www.youtube.com/embed/NE7878hHk30"
                   frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen

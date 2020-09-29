@@ -185,7 +185,7 @@ const Modulo_8 = () => {
                   className="border-video-rutina"
                   width="600"
                   height="350"
-                  src="https://www.youtube.com/embed/HmvCTcrR8fA"
+                  src="https://www.youtube.com/embed/a0V5SMgzfB0"
                   frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen

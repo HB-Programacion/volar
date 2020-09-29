@@ -3196,7 +3196,7 @@ export default [
     {
         "texto1A": " Cuando te laves los dientes con ",
         "edad": 4,
-        "texto1B": " hagan círculos suaves de adelante hacia atrás, escupan la pasta y enjuagense. ¡Bien hecho! ¿Tienes un espejo a la mano? Prueba esta actividad: ",
+        "texto1B": " hagan círculos suaves de adelante hacia atrás, escupan la pasta y enjuagense. ¡Bien hecho! ¿Tienes un espejo a la mano? Prueba esta actividad. ",
         "titulo": "Frente al espejo",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
         "icono": "",
@@ -3282,7 +3282,7 @@ export default [
         "n_tip": 2,
         "texto1A": " Conversa con ",
         "edad": 4,
-        "texto1B": " sobre los alimentos que están cocinando para el almuerzo. Hablen de los sabores, colores y formas. Alimentando su mente, forjas su autonomía. Mira como: ",
+        "texto1B": " sobre los alimentos que están cocinando para el almuerzo. Hablen de los sabores, colores y formas. Alimentando su mente, forjas su autonomía. Mira como en este video: ",
         "titulo": "Momentos de enseñanza",
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
         "icono": "",
@@ -3516,9 +3516,9 @@ export default [
         "seccion": "Juego",
         "video": "https://www.youtube.com/embed/BfkyjxVJZO4?rel=0&autoplay=1",
         "n_tip": 10,
-        "texto1A": " quiere jugar con la pelota? Salgan a un espacio abierto y practiquen pateando la pelota o lanzandola con las manos. Esta actividad fortalece su desarrollo físico y cognitivo.",
+        "texto1A": "¿",
         "edad": 4,
-        "texto1B": "",
+        "texto1B": " quiere jugar con la pelota? Salgan a un espacio abierto y practiquen pateando la pelota o lanzandola con las manos. Esta actividad fortalece su desarrollo físico y cognitivo.",
         "titulo": "Siempre a su lado"
     },
     // "juego_edad_4_tip_2": 
@@ -3537,7 +3537,7 @@ export default [
     {
         "texto1A": " Enséñale a ",
         "edad": 4,
-        "texto1B": " a guardar sus juguetes. ¡Hazlo divertido! Empiecen recogiendo los de un solo color, un solo tamaño o el grupo que se les ocurra. Mira un ejemplo aquí:",
+        "texto1B": " a guardar sus juguetes. ¡Hazlo divertido! Empiecen recogiendo los de un solo color, un solo tamaño o el grupo que se les ocurra. Mira como en este video:",
         "titulo": "Todo en orden",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "",
@@ -3550,7 +3550,7 @@ export default [
         "seccion": "Juego",
         "video": "https://www.youtube.com/embed/LcDOv56VofM?rel=0&autoplay=1",
         "n_tip": 4,
-        "texto1A": " puede aprender las partes del cuerpo jugando \"Simón Dice\". ¡Es un juego de imitaciones! Con este juego también aprenden la importancia de respetar turnos. Conócelo aquí: ",
+        "texto1A": " puede aprender las partes del cuerpo jugando \"Simón Dice\". ¡Es un juego de imitaciones! Con este juego también aprenden la importancia de respetar turnos. Conócelo aquí. ",
         "edad": 4,
         "texto1B": "",
         "titulo": "Jugando aprendemos",
@@ -3571,9 +3571,9 @@ export default [
     },
     // "juego_edad_4_tip_6": 
     {
-        "texto1A": "",
+        "texto1A": "Construyan una torre con tazas y objetos que encuentren en casa. Este juego desarrolla su creatividad y habilidad para resolver problemas. ¡No olvides felicitar a ",
         "edad": 4,
-        "texto1B": " Construyan una torre con tazas y objetos que encuentren en casa. Este juego desarrolla su creatividad y habilidad para resolver problemas. ¡No olvides felicitar a ",
+        "texto1B": "!",
         "titulo": "Desarrollando competencias",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "https://volar.org.pe/static/media/icono-blanco/4-5/matematica_Mesa%20de%20trabajo%201.svg",
@@ -3829,21 +3829,21 @@ export default [
         "n_tip": 7,
         "texto1A": " Cuando te laves los dientes con ",
         "edad": 5,
-        "texto1B": " hagan círculos suaves de adelante hacia atrás, escupan la pasta y enjuagense. ¡Bien hecho! ¿Tienes un espejo a la mano? Prueba esta actividad: ",
+        "texto1B": " hagan círculos suaves de adelante hacia atrás, escupan la pasta y enjuagense. ¡Bien hecho! ¿Tienes un espejo a la mano? Prueba esta actividad. ",
         "titulo": "Aprendo día a día",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
         "icono": ""
     },
     // "higieneAguaSegura_edad_5_tip_8": 
     {
-        "texto1B": "",
+        "texto1B": " ya va solo/a al baño? ¡Excelente! Enséñale a siempre jalar la cadena luego y lavarse bien las manos con agua y con jabón. ¡Muy bien!",
         "titulo": "Más independiente",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/toilet_Mesa%20de%20trabajo%201.svg",
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 8,
-        "texto1A": " ya va solo/a al baño? ¡Excelente! Enséñale a siempre jalar la cadena luego y lavarse bien las manos con agua y con jabón. ¡Muy bien!",
+        "texto1A": "¿",
         "edad": 5
     },
     // "higieneAguaSegura_edad_5_tip_9": 
@@ -3887,9 +3887,9 @@ export default [
     },
     // "socioemocional_edad_5_tip_2": 
     {
-        "texto1A": " se está portando mal? Piensa en como se comporta la familia frente a ",
+        "texto1A": "¿Se está portando mal? Piensa en como se comporta la familia frente a ",
         "edad": 5,
-        "texto1B": " Las niñas y niños copian la mayoría de actitudes que ven a su alrededor. ",
+        "texto1B": ". Las niñas y niños copian la mayoría de actitudes que ven a su alrededor. ",
         "titulo": "Ellos imitan lo que ven",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/familia_Mesa%20de%20trabajo%201.svg",
@@ -3941,7 +3941,7 @@ export default [
         "n_tip": 6,
         "texto1A": " Conversa con ",
         "edad": 5,
-        "texto1B": " sobre los alimentos que están cocinando para el almuerzo. Hablen de los sabores, colores y formas. Alimentando su mente, forjas su autonomía. Mira como: ",
+        "texto1B": " sobre los alimentos que están cocinando para el almuerzo. Hablen de los sabores, colores y formas. Alimentando su mente, forjas su autonomía. Mira como en este video: ",
         "titulo": "Actividades juntos",
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!"
     },
@@ -4009,7 +4009,7 @@ export default [
     // "rutina_edad_5_tip_2": 
     {
         "n_tip": 2,
-        "texto1A": " ¿Van a salir? Toma un pincel imaginario y mientras caminen pinten todo lo que ven. Disfruten de conversar sobre lo que pintan.",
+        "texto1A": " ¿Van a salir? Toma un pincel imaginario y mientras caminen pinten todo lo que ven. Disfruten de conversar sobre lo que pintan. ",
         "edad": 5,
         "texto1B": " ama conversar contigo y esto le hace muy bien al desarrollo de su cerebro.",
         "titulo": "Lugares de diversión",
@@ -4118,7 +4118,7 @@ export default [
     // "juego_edad_5_tip_10": 
     {
         "n_tip": 10,
-        "texto1A": " puede aprender las partes del cuerpo jugando \"Simón Dice\". ¡Es un juego de imitaciones! Con este juego también aprenden la importancia de respetar turnos. Conócelo aquí: ",
+        "texto1A": " puede aprender las partes del cuerpo jugando \"Simón Dice\". ¡Es un juego de imitaciones! Con este juego también aprenden la importancia de respetar turnos. Mira como en este video: ",
         "edad": 5,
         "texto1B": "",
         "titulo": "Aprendemos jugando",
@@ -4157,7 +4157,7 @@ export default [
         "n_tip": 4,
         "texto1A": " Enséñale a ",
         "edad": 5,
-        "texto1B": " a guardar sus juguetes. ¡Hazlo divertido! Empiecen recogiendo los de un solo color, un solo tamaño o el grupo que se les ocurra. Mira un ejemplo aquí:",
+        "texto1B": " a guardar sus juguetes. ¡Hazlo divertido! Empiecen recogiendo los de un solo color, un solo tamaño o el grupo que se les ocurra. Mira como en este video:",
         "titulo": "Todo en orden",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "",
@@ -4172,15 +4172,15 @@ export default [
         "seccion": "Juego",
         "video": "https://www.youtube.com/embed/BfkyjxVJZO4?rel=0&autoplay=1",
         "n_tip": 5,
-        "texto1A": " quiere jugar con la pelota? Salgan a un espacio abierto y practiquen pateando la pelota o lanzandola con las manos. Esta actividad fortalece su desarrollo físico y cognitivo.",
+        "texto1A": "¿",
         "edad": 5,
-        "texto1B": ""
+        "texto1B": " quiere jugar con la pelota? Salgan a un espacio abierto y practiquen pateando la pelota o lanzandola con las manos. Esta actividad fortalece su desarrollo físico y cognitivo."
     },
     // "juego_edad_5_tip_6": 
     {
-        "texto1A": "",
+        "texto1A": " Construyan una torre con tazas y objetos que encuentren en casa. Este juego desarrolla su creatividad y habilidad para resolver problemas. ¡No olvides felicitar a ",
         "edad": 5,
-        "texto1B": " Construyan una torre con tazas y objetos que encuentren en casa. Este juego desarrolla su creatividad y habilidad para resolver problemas. ¡No olvides felicitar a ",
+        "texto1B": ".",
         "titulo": "Siempre creativos",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "https://volar.org.pe/static/media/icono-blanco/5-6/matematica_Mesa%20de%20trabajo%201.svg",
@@ -4217,7 +4217,7 @@ export default [
         "n_tip": 9,
         "texto1A": "",
         "edad": 5,
-        "texto1B": " Lanza una pelota imaginaria a tu hijo y pide que te la pase de vuelta. Así le enseñas a imaginar, esta es una cualidad super importante para su aprendizaje posterior. Aprende como aquí:",
+        "texto1B": " Lanza una pelota imaginaria a tu hijo y pide que te la pase de vuelta. Así le enseñas a imaginar, esta es una cualidad super importante para su aprendizaje posterior. Mira como en este video:",
         "titulo": "Desarrollando la imaginación",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "icono": "",
@@ -4294,7 +4294,7 @@ export default [
         "n_tip": 5,
         "texto1A": " La anemia altera la capacidad de aprendizaje y atención de ",
         "edad": 5,
-        "texto1B": " Esto limita su desarrollo cognitivo en la escuela. Cuídalo y asegura de que reciba alimentos nutritivos. Si necesitas ayuda, consulta con tu centro de salud. "
+        "texto1B": ". Esto limita su desarrollo cognitivo en la escuela. Cuídalo y asegura de que reciba alimentos nutritivos. Si necesitas ayuda, consulta con tu centro de salud. "
     },
     // "nutricionSalud_edad_5_tip_6":
     {

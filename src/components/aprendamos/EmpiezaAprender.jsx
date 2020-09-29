@@ -12,6 +12,7 @@ import iconoAliado from "./../../images/icon-aliado.png";
 import starsLeftDesktop from "../../images/stars-left-desktop.svg";
 import starsRightDesktop from "../../images/stars-right-desktop.svg";
 import starsss from "../../images/stars-left.svg";
+import { Helmet } from "react-helmet";
 
 export const EmpiezaAprender = (props) => {
   return (

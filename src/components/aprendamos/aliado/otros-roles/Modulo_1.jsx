@@ -120,7 +120,7 @@ const Modulo_1 = () => {
               niños de todas las edades en nuestra sección “Aprendamos”.
             </p>
           </div>
-          <a href="/aprendamos" className="btn-aprendamos-aliados">
+          <a href="https://www.facebook.com/somosvolar" className="btn-aprendamos-aliados">
             <div className="mt-5 btn-azul-aprendamos ">
               <img src={arrowLeft} className="arrow-blue"></img>
               APRENDAMOS
@@ -175,7 +175,7 @@ const Modulo_1 = () => {
                           className="border-video-rutina"
                           width="600"
                           height="350"
-                          src="https://www.youtube.com/embed/HmvCTcrR8fA"
+                          src="https://www.youtube.com/embed/DAekMfWImXg"
                           frameborder="0"
                           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                           allowfullscreen
