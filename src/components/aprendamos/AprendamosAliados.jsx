@@ -11,6 +11,8 @@ import arrowLeft from "./../../images/arrow-left-blue.svg";
 import arrowRight from "./../../images/arrow-right-blue.svg";
 import { Button, Modal } from "react-bootstrap";
 
+import { Helmet } from "react-helmet";
+
 const AprendamosAliados = (props) => {
   const [show, setShow] = React.useState(false);
 
@@ -41,6 +43,38 @@ const AprendamosAliados = (props) => {
       className="padding-top background animated fadeIn"
       id="aprendamos-page"
     >
+       <Helmet>
+        <title>Aliado - Volar</title>
+        <meta
+          name="description"
+          content="Aliado description"
+        />
+        <meta name="keywords" content="Volar,volar"></meta>
+        <meta name="URL" content="https://volar.org.pe/aprendamos/aliado" />
+        <meta name="author" content="volar.orge.pe" />
+        <meta name="distribution" content="global" />
+        <meta
+          property="og:image"
+          content="https://volar.org.pe/static/media/icon-aliado.4151b42a.png"
+        />
+        <meta property="og:url" content="https://volar.org.pe/aprendamos/aliado" />
+        <meta property="og:type" content="https://volar.org.pe/aprendamos/aliado" />
+        <meta property="og:title" content="Aprendamos - Volar" />
+        <meta
+          property="og:description"
+          content="Aliado description"
+        />
+        <meta />
+        <meta name="twitter:title" content="Aprendamos - Volar" />
+        <meta
+          name="twitter:description"
+          content="Aliado description"
+        />
+        <meta
+          name="twitter:image"
+          content="https://volar.org.pe/static/media/icon-aliado.4151b42a.png"
+        />
+      </Helmet>
       <div className="column fluid">
         <div className="margin-top-bottom">
           <div className="box-white">
@@ -48,7 +82,7 @@ const AprendamosAliados = (props) => {
               <h1 className="tittle-register-child">¡Bienvenido!</h1>
             </div>
             <div className="row">
-              <h2 className="subtittle-register-child">Aliado por la Infacia</h2>
+              <h2 className="subtittle-register-child">Aliado por la Infancia</h2>
             </div>
             <div>
               <form onSubmit={procesarRol}>
