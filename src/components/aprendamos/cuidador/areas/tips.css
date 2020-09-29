@@ -86,8 +86,7 @@
 
 .tips-margin-top{
 /* margin: 2rem 3rem 2rem 3rem !important; */
-margin-top: 2rem;
-padding-bottom: 4rem
+padding: 2rem 3rem
 }
 
 .text-tips{
@@ -96,7 +95,8 @@ padding-bottom: 4rem
   justify-content: center;
   flex-direction: column;
   height: 100%;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   color: #2E335E;
 }
 .text-tips-light{
@@ -250,14 +250,11 @@ padding-bottom: 4rem
     
     .tips-margin-top{
     /* margin: 0.5rem 0.5rem 0.5rem 0.5rem !important; */
-    margin-top: 0.5rem;
-    padding-bottom: 3rem;
+    padding:0.5rem;
     }
-    
-    .text-tips{
-        padding: 2rem 0rem 0rem 0rem;
-        margin-top: 0rem
-    }
+
+      
+
     .text-tips-light{
         font-family: 'Questrial';
         color: #2E335E;
