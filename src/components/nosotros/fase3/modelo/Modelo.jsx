@@ -1,4 +1,5 @@
 import React from 'react'
+import { useHistory } from "react-router-dom";
 
 import "./Modelo.css"
 
@@ -17,9 +18,13 @@ import starR from "../../../../images/fase3-img/modelo/start-right.svg"
 
 
 const Modelo = () => {
+    let history = useHistory();
     return (
         <div className="fondo-circulo animated fadeIn">
             <div className="fase2 fase3-modelo border-bottom-radius">
+            <a onClick={()=>{history.goBack()}}>
+                <i  className="fas fa-chevron-left goBack-fase" aria-hidden="true"></i>
+            </a>
                 <h5 className="titulo-fase titulo-fase3-modelo tracking-in-expand-fwd-top">Modelo volar</h5>
                 <div className="box-modelo-volar">
                     <div className="box-modelo-volar-item">

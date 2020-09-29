@@ -594,7 +594,7 @@ export default [
     { // higieneAguaSegura_edad_0_tip_7
         "texto1A": "",
         "edad": 0,
-        "texto1B": " La única forma de matar los gérmenes del agua es hirviendola. Si la tomas directo del caño o del envase, podrías enfermarte del estómago. Y necesitas una buena salud para amamantar a tu bebé, recuerda que los 6 primeros meses solo debe tomar tu leche. ",
+        "texto1B": " La única forma de matar los gérmenes del agua es hirviendola. Si la tomas directo del caño o del envase, podrías enfermarte del estómago. Y necesitas una buena salud para amamantar a tu bebé, recuerda que los 6 primeros meses solo debe tomar  leche materna. ",
         "titulo": "Cuida lo que consumes ",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "https://volar.org.pe/static/media/icono-blanco/0-1/tetera_Mesa%20de%20trabajo%201.svg",
@@ -612,7 +612,7 @@ export default [
         "n_tip": 9,
         "texto1A": " Lava la fruta con abundante agua y un cepillo antes de preparar la papilla para ",
         "edad": 0,
-        "texto1B": "¡No te arriesgues!"
+        "texto1B": " ¡No te arriesgues!"
     },
 
 
@@ -654,7 +654,7 @@ export default [
     },
     {
         // juego_edad_0_tip_4
-        "texto1B":" Aprovecha momentos en casa con tu bebé para desarrollar sus habilidades de memoria y concentración. ¡Házle un tour por su cuarto! Muéstrale los objetos que hay y para qué sirven, él te entiende muy bien. ",
+        "texto1B":" Aprovecha momentos en casa con tu bebé para desarrollar sus habilidades de memoria y concentración. ¡Házle un tour por su cuarto! Muéstrale los objetos que hay y para qué sirven, él/ella te entiende muy bien. ",
         "titulo": "Aprovecha cada momento",
         "icono": " https://volar.org.pe/static/media/icono-blanco/0-1/juguete_Mesa%20de%20trabajo%201.svg",
         "seccion": "Juego",
@@ -744,9 +744,9 @@ export default [
         "seccion": "Rutina",
         "video": "",
         "n_tip": 1,
-        "texto1A": "",
+        "texto1A": " ¿Sabías que el 85% del cerebro se desarrolla en los primeros 3 años de vida? Aprovecha este tiempo al máximo con ",
         "edad": 0,
-        "texto1B": " ¿Sabías que el 85% del cerebro se desarrolla en los primeros 3 años de vida? Aprovecha este tiempo al máximo con ",
+        "texto1B": ".",
         "titulo": "¡Ayúdalo a desarrollarse!",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "icono": "https://volar.org.pe/static/media/icono-blanco/0-1/cerebro_Mesa%20de%20trabajo%201.svg"
@@ -756,7 +756,7 @@ export default [
         // rutina_edad_0_tip_10": {
         "texto1A": " Cuando camines con ",
         "edad": 0,
-        "texto1B": " cuéntale lo que ves y apúntalo con el dedo. Él irá aprendiendo las palabras y las recordará cuando hable!",
+        "texto1B": " cuéntale lo que ves y apúntalo con el dedo. Él/ella irá aprendiendo las palabras y las recordará cuando hable!",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "icono": "",
         "seccion": "Rutina",
@@ -780,7 +780,7 @@ export default [
         // rutina_edad_0_tip_5": {
         "texto1A": " Cuando acuestes a ",
         "edad": 0,
-        "texto1B": " arrúllalo, háblale suavemente y acuéstalo boca arriba. Un buen descanso asegura un mejor desarrollo físico. Mira cómo aquí: ",
+        "texto1B": " arrúllalo, háblale suavemente y acuéstalo boca arriba. Un buen descanso asegura un mejor desarrollo físico. Mira como en este video: ",
         "titulo": "Tiempo de dormir",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "icono": "",
@@ -795,7 +795,7 @@ export default [
         "n_tip": 6,
         "texto1A": " A la hora de comer enseñale a ",
         "edad": 0,
-        "texto1B": " los colores, texturas y sabores distintos de la comida. Así fortaleces su desarrollo cognitivo. Mira cómo aquí: ",
+        "texto1B": " los colores, texturas y sabores distintos de la comida. Así fortaleces su desarrollo cognitivo. Mira como en este video: ",
         "titulo": "Siempre hay momentos para aprender",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
         "icono": ""
@@ -805,9 +805,9 @@ export default [
         "seccion": "Rutina",
         "video": "https://www.youtube.com/embed/NDsuMumIV6A?rel=0&autoplay=1",
         "n_tip": 7,
-        "texto1A": " balbucea como si tratara de hablar? Repite los sonidos que hace y agrega más. Así fortalecerás sus habilidades de comunicación ¿Quieres saber cómo ayudarlo? Mira un ejemplo aquí:",
+        "texto1A": "¿",
         "edad": 0,
-        "texto1B": "",
+        "texto1B": " balbucea como si tratara de hablar? Repite los sonidos que hace y agrega más. Así fortalecerás sus habilidades de comunicación ¿Quieres saber cómo ayudarlo? Mira como en este video:",
         "titulo": "Primeros balbuceos",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": ""
@@ -819,7 +819,7 @@ export default [
         "n_tip": 8,
         "texto1A": " Enséñale a ",
         "edad": 0,
-        "texto1B": " a aplaudir sosteniendo sus manos y juntandolas. Le encantará el sonido y pasará un divertido momento con su persona favorita: ¡tú! Mira cómo: ",
+        "texto1B": " a aplaudir sosteniendo sus manos y juntandolas. Le encantará el sonido y pasará un divertido momento con su persona favorita: ¡tú! Mira como en este video: ",
         "titulo": "Momentos únicos",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "icono": ""
@@ -935,7 +935,7 @@ export default [
         "n_tip": 6,
         "texto1A": " Cuando ",
         "edad": 0,
-        "texto1B": " llora no intenta manipularte. El llanto es la única forma que tiene para comunicar lo que necesita. ¡Consuelalo al momento! ",
+        "texto1B": " llora, no intenta manipularte. El llanto es la única forma que tiene para comunicar lo que necesita. ¡Consuelalo al momento! ",
         "titulo": "Cálmalo",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "https://volar.org.pe/static/media/icono-blanco/0-1/bebe_llorando_Mesa%20de%20trabajo%201.svg"
@@ -984,9 +984,9 @@ export default [
         // socioemocional_edad_0_tip_10": {
         "seccion": "Socioemocional",
         "video": "",
-        "textoB1": " es arrullarlo en tus brazos y hablarle en tono suave. Se irá calmando. ¡Muy bien! Tu voz es su guía para entender las cosas, ya te entienden. ",
+        "texto1B": " es arrullarlo en tus brazos y hablarle en tono suave. Se irá calmando. ¡Muy bien! Tu voz es su guía para entender las cosas, ya te entienden. ",
         "n_tip": 10,
-        "textoA1": " Un consejo para calmar el llanto de ",
+        "texto1A": " Un consejo para calmar el llanto de ",
         "edad": 0,
         "titulo": "Ayúdalo",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
@@ -1039,7 +1039,7 @@ export default [
         "n_tip": 3,
         "texto1A": " La leche materna tiene anticuerpos que protegen a ",
         "edad": 0,
-        "texto1B": " de enfermedades ¡Tu leche es la mejor!",
+        "texto1B": " de enfermedades ¡La leche materna es la mejor!",
         "titulo": "Sabías que...",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "https://volar.org.pe/static/media/icono-blanco/0-1/lactancia_Mesa%20de%20trabajo%201.svg"
@@ -1060,9 +1060,9 @@ export default [
     {
         // nutricionSalud_edad_0_tip_5": {
         "n_tip": 5,
-        "texto1A": " le toca nuevas vacunas a partir de los dos meses de nacido para poder prevenir enfermedades. Estas vacunas son Pentavalente, Polio, Rotavirus y Neumococo. ¡Pidelas en tu centro de salud!",
+        "texto1A": "A ",
         "edad": 0,
-        "texto1B": "",
+        "texto1B": " le toca nuevas vacunas a partir de los dos meses de nacido para poder prevenir enfermedades. Estas vacunas son Pentavalente, Polio, Rotavirus y Neumococo. ¡Pidelas en tu centro de salud!",
         "titulo": "Fundamental",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": " https://volar.org.pe/static/media/icono-blanco/0-1/vacuna_Mesa%20de%20trabajo%201.svg",
@@ -1116,7 +1116,7 @@ export default [
         "n_tip": 9,
         "texto1A": " Recuerda que ",
         "edad": 0,
-        "texto1B": " no necesita agua. Tu leche materna tiene toda el agua que necesita, es limpia y segura. ¡Sigue asi!",
+        "texto1B": " no necesita agua. La leche materna tiene toda el agua que necesitas, es limpia y segura. ¡Sigue asi!",
         "titulo": "Tú le ofreces lo que necesita",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "https://volar.org.pe/static/media/icono-blanco/0-1/lactancia_Mesa%20de%20trabajo%201.svg"
@@ -1157,7 +1157,7 @@ export default [
         "n_tip": 5,
         "texto1A": "",
         "edad": 1,
-        "texto1B": " La única forma de matar los gérmenes del agua es hirviendola. Si la tomas directo del caño o del envase, podrías enfermarte del estómago. Y necesitas una buena salud para amamantar a tu bebé, recuerda que los 6 primeros meses solo debe tomar tu leche. ",
+        "texto1B": " La única forma de matar los gérmenes del agua es hirviendola. Si la tomas directo del caño o del envase, podrías enfermarte del estómago. Y necesitas una buena salud para amamantar a tu bebé, recuerda que los 6 primeros meses solo debe tomar leche materna. ",
         "titulo": "Cuídate",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "icono": "https://volar.org.pe/static/media/icono-blanco/1-2/tetera_Mesa%20de%20trabajo%201.svg",
@@ -1432,7 +1432,7 @@ export default [
         "n_tip": 3,
         "texto1A": " Aprovecha los momentos fuera del hogar también! Cuando lleves a ",
         "edad": 1,
-        "texto1B": " a la chacra o a un parque, sean muy observadores e identifiquen los objetos que se parecen. Mira cómo aquí:",
+        "texto1B": " a la chacra o a un parque, sean muy observadores e identifiquen los objetos que se parecen. Mira como en este video:",
         "titulo": "Vamos a pasear",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "",
@@ -1681,7 +1681,7 @@ export default [
         "n_tip": 6,
         "texto1A": " Cuando ",
         "edad": 1,
-        "texto1B": " termina de comer puedes usar el momento de botar los desechos para fortalecer su autonomía. Mira cómo aquí:"
+        "texto1B": " termina de comer puedes usar el momento de botar los desechos para fortalecer su autonomía. Mira como en este video:"
 
     },
     {
@@ -1746,7 +1746,7 @@ export default [
         "n_tip": 10,
         "texto1A": " Aprovecha los momentos de aseo para impulsar el desarrollo de ",
         "edad": 1,
-        "texto1B": " Cuando vayan a lavarse los dientes, utilicen con mucho cuidado un espejo para mirarse y comparar sus rostros.  ¡Así fortalecerá sus habilidades de clasificación! Mira cómo aquí: "
+        "texto1B": " Cuando vayan a lavarse los dientes, utilicen con mucho cuidado un espejo para mirarse y comparar sus rostros.  ¡Así fortalecerá sus habilidades de clasificación! Mira como en este video: "
 
     },
     {
@@ -1756,7 +1756,7 @@ export default [
         "n_tip": 2,
         "texto1A": " Cuando ",
         "edad": 1,
-        "texto1B": " vaya a dormir asegúrate de que esté cómodo y que no hayan ruidos. Mira cómo aquí:",
+        "texto1B": " vaya a dormir asegúrate de que esté cómodo y que no hayan ruidos. Mira como en este video:",
         "icono": "",
         "titulo": "Fin del día",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!"
@@ -1769,7 +1769,7 @@ export default [
         "n_tip": 3,
         "texto1A": " Poco a poco ",
         "edad": 1,
-        "texto1B": " podrá avisarte cuando quiera orinar. Ten paciencia y felicítalo cuando lo haga. Mira cómo:",
+        "texto1B": " podrá avisarte cuando quiera orinar. Ten paciencia y felicítalo cuando lo haga. Mira como en este video:",
         "titulo": "Avanzando día a día",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
         "icono": ""
@@ -1938,9 +1938,9 @@ export default [
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 3,
-        "texto1A": " ya va solo/a al baño? ¡Excelente! Enséñale a siempre jalar la cadena luego y lavarse bien las manos con agua y con jabón. ¡Muy bien!",
+        "texto1A": "¿",
         "edad": "2",
-        "texto1B": ""
+        "texto1B": " ya va solo/a al baño? ¡Excelente! Enséñale a siempre jalar la cadena luego y lavarse bien las manos con agua y con jabón. ¡Muy bien!"
     },
     {
         // higieneAguaSegura_edad_2_tip_6": {
@@ -1970,7 +1970,7 @@ export default [
         // higieneAguaSegura_edad_2_tip_4": {
         "texto1A": " Anima a ",
         "edad": 2,
-        "texto1B": " a que se lave las manos. Debe usar jabón y agua limpia para acabar con todos los gérmenes que podrían perjudicar su desarrollo. Mira como aquí: ",
+        "texto1B": " a que se lave las manos. Debe usar jabón y agua limpia para acabar con todos los gérmenes que podrían perjudicar su desarrollo. Mira como en este video: ",
         "titulo": "Enseña los buenos hábitos",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "",
@@ -2036,7 +2036,7 @@ export default [
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 1,
-        "texto1A": " Cuando",
+        "texto1A": " Cuando ",
         "edad": 2
     },
     {
@@ -2069,9 +2069,9 @@ export default [
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 3,
-        "texto1A": " se está portando mal? Piensa en como se comporta la familia frente a ",
+        "texto1A": "¿Se está portando mal? Piensa en como se comporta la familia frente a ",
         "edad": 2,
-        "texto1B": " Las niñas y niños copian la mayoría de actitudes que ven a su alrededor. ",
+        "texto1B": ". Las niñas y niños copian la mayoría de actitudes que ven a su alrededor. ",
         "titulo": "Lo de su alrededor les afecta",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/familia_Mesa%20de%20trabajo%201.svg"
@@ -2169,7 +2169,7 @@ export default [
         // rutina_edad_2_tip_10": {
         "texto1A": " Cuando ",
         "edad": 2,
-        "texto1B": " termina de comer puedes usar el momento de botar los desechos para fortalecer su autonomía. Mira como aquí:",
+        "texto1B": " termina de comer puedes usar el momento de botar los desechos para fortalecer su autonomía. Mira como en este video:",
         "titulo": "La basura en su lugar",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
         "icono": "",
@@ -2221,7 +2221,7 @@ export default [
         // "rutina_edad_2_tip_5": {
         "texto1A": " Deja que ",
         "edad": 2,
-        "texto1B": " escoja la ropa que utilizará en el día.  Tú puedes escoger dos opciones pero la palabra final que sea suya. ¿Usar un polo rojo o azul? Decidir lo ayuda a ser autónomo. Mira como aquí: ",
+        "texto1B": " escoja la ropa que utilizará en el día.  Tú puedes escoger dos opciones pero la palabra final que sea suya. ¿Usar un polo rojo o azul? Decidir lo ayuda a ser autónomo. Mira como en este video: ",
         "titulo": "Libre elección",
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
         "icono": "",
@@ -2235,9 +2235,9 @@ export default [
         "seccion": "Rutina",
         "video": "",
         "n_tip": 6,
-        "texto1A": " ya va solo al baño? ¿Ya te avisa cuando quiere ir? Aplaudelo y felicítalo(a) cada vez que lo haga.  ¡Esto animará a que continúe!",
+        "texto1A": "¿",
         "edad": 2,
-        "texto1B": "",
+        "texto1B": " ya va solo al baño? ¿Ya te avisa cuando quiere ir? Aplaudelo y felicítalo(a) cada vez que lo haga.  ¡Esto animará a que continúe!",
         "titulo": "Felicita sus logros",
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
         "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/basin_Mesa%20de%20trabajo%201.svg"
@@ -2258,7 +2258,7 @@ export default [
         // rutina_edad_2_tip_8": {
         "texto1A": " Cuando ",
         "edad": 2,
-        "texto1B": " vaya a dormir asegúrate que esté cómodo y que no hayan ruidos. Mira cómo aquí:",
+        "texto1B": " vaya a dormir asegúrate que esté cómodo y que no hayan ruidos. Mira como en este video:",
         "titulo": "A descansar",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "",
@@ -2271,7 +2271,7 @@ export default [
         "n_tip": 9,
         "texto1A": " Poco a poco ",
         "edad": 2,
-        "texto1B": " podrá avisarte cuando quiera orinar. Ten paciencia y felicítalo cuando lo haga. Mira cómo:",
+        "texto1B": " podrá avisarte cuando quiera orinar. Ten paciencia y felicítalo cuando lo haga. Mira como en este video:",
         "titulo": "Aprendiendo cada día más",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
         "icono": "",
@@ -2286,7 +2286,7 @@ export default [
         "n_tip": 1,
         "texto1A": " Cuando barras el piso dale a tu hijo una escoba también. Dividanse el espacio que necesitan limpiar, haz que se encargue de un pequeño espacio manejable para ",
         "edad": 2,
-        "texto1B": " Te imitará y aprenderá. Otra forma divertida también puede ser:",
+        "texto1B": " Te imitará y aprenderá. Mira como en este video::",
         "titulo": "Momentos juntos",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": ""
@@ -2294,7 +2294,7 @@ export default [
     },
     // "juego_edad_2_tip_10": 
     {
-        "texto1B": " Lanza una pelota imaginaria a tu hijo y pide que te la pase de vuelta. Así le enseñas a imaginar, esta es una cualidad super importante para su aprendizaje posterior. Aprende como aquí:",
+        "texto1B": " Lanza una pelota imaginaria a tu hijo y pide que te la pase de vuelta. Así le enseñas a imaginar, esta es una cualidad super importante para su aprendizaje posterior. Mira como en este video:",
         "titulo": "Ejercitemos su mente",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "icono": "",
@@ -2310,7 +2310,7 @@ export default [
         "seccion": "Juego",
         "video": "https://www.youtube.com/embed/f2QQzTQ1tqs?rel=0&autoplay=1",
         "n_tip": 2,
-        "texto1A": " se demora en dormir o se queda muy inquieto luego de jugar? Contarle un cuento le ayudará a dormir. Recuerda que un buen descanso asegura su desarrollo físico y cognitivo. Mira como aquí: ",
+        "texto1A": " se demora en dormir o se queda muy inquieto luego de jugar? Contarle un cuento le ayudará a dormir. Recuerda que un buen descanso asegura su desarrollo físico y cognitivo. Mira como en este video: ",
         "edad": 2,
         "texto1B": "",
         "titulo": "Ayúdalo a dormir",
@@ -2334,7 +2334,7 @@ export default [
     {
         "texto1A": " Ayuda a",
         "edad": 2,
-        "texto1B": " a desarrollar su lenguaje. Cuando lo limpies, señala las partes de su cuerpo. Hazlo de manera divertida para que tanto tú como tu hijo/a puedan disfrutar mientras aprenden. Mira como aquí: ",
+        "texto1B": " a desarrollar su lenguaje. Cuando lo limpies, señala las partes de su cuerpo. Hazlo de manera divertida para que tanto tú como tu hijo/a puedan disfrutar mientras aprenden. Mira como en este video:",
         "titulo": "Siempre háblale",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "",
@@ -2348,9 +2348,9 @@ export default [
         "seccion": "Juego",
         "video": "",
         "n_tip": 5,
-        "texto1A": " Hoy juega con ",
+        "texto1A": " Hoy juega a rimar palabras. Por ejemplo, cera con pera, balón con jabón o beso con queso. Di una rima tú y otra ",
         "edad": 2,
-        "texto1B": " a rimar palabras. Por ejemplo, cera con pera, balón con jabón o beso con queso. Di una rima tú y otra [NOMBRE_HIJO]. ¡Está aprendiendo mucho y todo gracias a ti!",
+        "texto1B": ". ¡Está aprendiendo mucho y todo gracias a ti!",
         "titulo": "Jugando con las palabras",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "https://volar.org.pe/static/media/icono-blanco/2-3/abc_Mesa%20de%20trabajo%201.svg"
@@ -2365,7 +2365,7 @@ export default [
         "n_tip": 6,
         "texto1A": " Juega con",
         "edad": 2,
-        "texto1B": " Muéstrale un peluche o cualquier objeto seguro que tengas a la mano, ocúltate detrás de ti y pídele que lo encuentre. ¿Lo encontró? Ahora cambien turnos y dejá que sea él/ella quien esconda. Mira como aquí: "
+        "texto1B": " Muéstrale un peluche o cualquier objeto seguro que tengas a la mano, ocúltate detrás de ti y pídele que lo encuentre. ¿Lo encontró? Ahora cambien turnos y dejá que sea él/ella quien esconda. Mira como en este video: "
     },
     // "juego_edad_2_tip_7": 
     {
@@ -2374,7 +2374,7 @@ export default [
         "n_tip": 7,
         "texto1A": " ¡Baila con ",
         "edad": 2,
-        "texto1B": " Bailar le enseña a coordinar sus movimientos, controlar sus extremidades y también refuerza su memoria de trabajo. Pon música en tu celular o la radio y disfruten. Prueben distintos pasos y muévanse por el espacio. Mira como aquí:",
+        "texto1B": " Bailar le enseña a coordinar sus movimientos, controlar sus extremidades y también refuerza su memoria de trabajo. Pon música en tu celular o la radio y disfruten. Prueben distintos pasos y muévanse por el espacio. Mira como en este video:",
         "titulo": "A moverse",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": ""
@@ -2525,7 +2525,7 @@ export default [
         "seccion": "Nutrición y Salud",
         "video": "",
         "n_tip": 1,
-        "texto1A": " Siempre que",
+        "texto1A": "Siempre que ",
         "edad": 2
     },
 
@@ -2561,7 +2561,7 @@ export default [
         "n_tip": 10,
         "texto1A": " Cuando te laves los dientes con ",
         "edad": 3,
-        "texto1B": " hagan círculos suaves de adelante hacia atrás, escupan la pasta y enjuagense. ¡Bien hecho! ¿Tienes un espejo a la mano? Prueba esta actividad: ",
+        "texto1B": " hagan círculos suaves de adelante hacia atrás, escupan la pasta y enjuagense. ¡Bien hecho! ¿Tienes un espejo a la mano? Prueba esta actividad. ",
         "titulo": "Aprendiendo juntos",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
         "icono": ""
@@ -2583,9 +2583,9 @@ export default [
         "seccion": "Higiene y Agua Segura",
         "video": "",
         "n_tip": 3,
-        "texto1A": " ya va solo/a al baño? ¡Excelente! Enséñale a siempre jalar la cadena luego y lavarse bien las manos con agua y con jabon. ¡Muy bien!",
+        "texto1A": "¿",
         "edad": 3,
-        "texto1B": "",
+        "texto1B": " ya va solo/a al baño? ¡Excelente! Enséñale a siempre jalar la cadena luego y lavarse bien las manos con agua y con jabon. ¡Muy bien!",
         "titulo": "La limpieza es primordial",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/toilet_Mesa%20de%20trabajo%201.svg"
@@ -2658,7 +2658,7 @@ export default [
         "n_tip": 1,
         "texto1A": " Conversa con ",
         "edad": 3,
-        "texto1B": " sobre los alimentos que están cocinando para el almuerzo. Hablen de los sabores, colores y formas. Alimentando su mente, forjas su autonomía. Mira como: ",
+        "texto1B": " sobre los alimentos que están cocinando para el almuerzo. Hablen de los sabores, colores y formas. Alimentando su mente, forjas su autonomía. Mira como en este video: ",
         "titulo": "Aprendiendo día a día",
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
         "icono": ""
@@ -2756,18 +2756,19 @@ export default [
         "video": "",
         "n_tip": 8,
         "edad": 3,
-        "texto1A": " entiende si le dices que no y también sabe decirlo. Si te dice que no quiere hacer algo, no lo tomes a mal. ¡Dale más opciones y conversen sobre ellas!"
+        "texto1A": " ",
+        "texto1B": " entiende si le dices que no y también sabe decirlo. Si te dice que no quiere hacer algo, no lo tomes a mal. ¡Dale más opciones y conversen sobre ellas!"
     },
     // "socioemocional_edad_3_tip_9": 
     {
-        "texto1B": " Las niñas y niños copian la mayoría de actitudes que ven a su alrededor. ",
+        "texto1B": ". Las niñas y niños copian la mayoría de actitudes que ven a su alrededor. ",
         "titulo": "Ellos imitan",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/familia_Mesa%20de%20trabajo%201.svg",
         "seccion": "Socioemocional",
         "video": "",
         "n_tip": 9,
-        "texto1A": " se está portando mal? Piensa en como se comporta la familia frente a ",
+        "texto1A": "¿Se está portando mal? Piensa en como se comporta la familia frente a ",
         "edad": 3
     },
 
@@ -2779,7 +2780,7 @@ export default [
         "seccion": "Rutina",
         "video": "",
         "n_tip": 1,
-        "texto1A": " Pídele a",
+        "texto1A": " Pídele a ",
         "edad": 3,
         "texto1B": " que señale las palabras que ve en revistas o afiches. Repitan juntos los sonidos. ¡Esta actividad acerca a la escritura!"
     },
@@ -2790,7 +2791,7 @@ export default [
         "n_tip": 9,
         "texto1A": " ¿Es hora de ir al campo a trabajar? Puedes llevar a ",
         "edad": 3,
-        "texto1B": " y mientras van recogiendo la cosecha, pueden ir descubriendo las cosas que va viendo.  Mira como aquí: ",
+        "texto1B": " y mientras van recogiendo la cosecha, pueden ir descubriendo las cosas que va viendo.  Mira como en este video: ",
         "titulo": "Enséñale a ayudar",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": ""
@@ -2833,7 +2834,7 @@ export default [
     },
     // "rutina_edad_3_tip_4": 
     {
-        "texto1B": " a que te ayude a agrupar la ropa por colores. Con esta actividad estará desarrollando habilidades matemáticas! Mira como aquí: ",
+        "texto1B": " a que te ayude a agrupar la ropa por colores. Con esta actividad estará desarrollando habilidades matemáticas! Mira como en este video: ",
         "titulo": "Actividades en casa",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "",
@@ -2871,7 +2872,7 @@ export default [
     {
         "texto1A": " Deja que ",
         "edad": 3,
-        "texto1B": " escoja la ropa que utilizará en el día.  Tú puedes escoger dos opciones pero la palabra final que sea suya. ¿Usar un polo rojo o azul? Decidir lo ayuda a ser autónomo. Mira como aquí: ",
+        "texto1B": " escoja la ropa que utilizará en el día.  Tú puedes escoger dos opciones pero la palabra final que sea suya. ¿Usar un polo rojo o azul? Decidir lo ayuda a ser autónomo. Mira como en este video: ",
         "titulo": "Libre elección",
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
         "icono": "",
@@ -2898,7 +2899,7 @@ export default [
         "seccion": "Juego",
         "video": "https://www.youtube.com/embed/LcDOv56VofM?rel=0&autoplay=1",
         "n_tip": 1,
-        "texto1A": " puede aprender las partes del cuerpo jugando \"Simón Dice\". ¡Es un juego de imitaciones! Con este juego también aprenden la importancia de respetar turnos. Conócelo aquí: ",
+        "texto1A": " puede aprender las partes del cuerpo jugando \"Simón Dice\". ¡Es un juego de imitaciones! Con este juego también aprenden la importancia de respetar turnos. Mira como en este video: ",
         "edad": 3,
         "texto1B": "",
         "titulo": "¿Jugamos?"
@@ -2906,9 +2907,9 @@ export default [
     // " juego_edad_3_tip_4": 
     {
         "n_tip": 4,
-        "texto1A": "",
+        "texto1A": "Construyan una torre con tazas y objetos que encuentren en casa. Este juego desarrolla su creatividad y habilidad para resolver problemas. ¡No olvides felicitar a  ",
         "edad": 3,
-        "texto1B": " Construyan una torre con tazas y objetos que encuentren en casa. Este juego desarrolla su creatividad y habilidad para resolver problemas. ¡No olvides felicitar a ",
+        "texto1B": ".",
         "titulo": "Ayúdalo a desarrollarse",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/matematica_Mesa%20de%20trabajo%201.svg",
@@ -2919,7 +2920,7 @@ export default [
     {
         "texto1A": " Ayuda a ",
         "edad": 3,
-        "texto1B": "a reconocer lo que siente. Jueguen a imitar emociones. Con tu cuerpo expresa una emoción y dile que adivine. ¡Túrnense! ",
+        "texto1B": " a reconocer lo que siente. Jueguen a imitar emociones. Con tu cuerpo expresa una emoción y dile que adivine. ¡Túrnense! ",
         "titulo": "Detectar sentimientos",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/mujer_muy_feliz_Mesa%20de%20trabajo%201.svg",
@@ -2931,7 +2932,7 @@ export default [
     {
         "texto1A": " Bailar desarrolla el cerebro de ",
         "edad": 3,
-        "texto1B": " Aprende a prestar atención a ritmos y sonidos. ¡Bailen por toda la casa!  Mira como aquí:",
+        "texto1B": " Aprende a prestar atención a ritmos y sonidos. ¡Bailen por toda la casa!  Mira como en este video:",
         "titulo": "Actividades juntos",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
         "icono": "",
@@ -2943,7 +2944,7 @@ export default [
     {
         "texto1A": " Enséñale a ",
         "edad": 3,
-        "texto1B": " a guardar sus juguetes. ¡Hazlo divertido! Empiecen recogiendo los de un solo color, un solo tamaño o el grupo que se les ocurra. Mira un ejemplo aquí:",
+        "texto1B": " a guardar sus juguetes. ¡Hazlo divertido! Empiecen recogiendo los de un solo color, un solo tamaño o el grupo que se les ocurra. Mira como en este video:",
         "titulo": "A mantener el orden",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": "",
@@ -2970,7 +2971,7 @@ export default [
         "n_tip": 6,
         "texto1A": " Ayuda a ",
         "edad": 3,
-        "texto1B": " a desarrollar su lenguaje. Cuando lo limpies, señala las partes de su cuerpo. Hazlo de manera divertida para que tan tú como tu hijo/a puedan disfrutar mientras aprenden. Mira como aquí: ",
+        "texto1B": " a desarrollar su lenguaje. Cuando lo limpies, señala las partes de su cuerpo. Hazlo de manera divertida para que tan tú como tu hijo/a puedan disfrutar mientras aprenden. Mira como en este video: ",
         "titulo": "Todo momento es bueno para aprender",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": ""
@@ -2983,9 +2984,9 @@ export default [
         "seccion": "Juego",
         "video": "",
         "n_tip": 7,
-        "texto1A": " Hoy juega con ",
+        "texto1A": " Hoy juega con rimar palabras. Por ejemplo, cera con pera, balón con jabón o beso con queso. Di una rima tú y otra ",
         "edad": 3,
-        "texto1B": " a rimar palabras. Por ejemplo, cera con pera, balón con jabón o beso con queso. Di una rima tú y otra [NOMBRE_HIJO]. ¡Está aprendiendo mucho y todo gracias a ti!"
+        "texto1B": ". ¡Está aprendiendo mucho y todo gracias a ti!"
     },
     // "juego_edad_3_tip_8": 
     {
@@ -2997,13 +2998,13 @@ export default [
         "n_tip": 8,
         "texto1A": "",
         "edad": 3,
-        "texto1B": " Lanza una pelota imaginaria a tu hijo y pide que te la pase de vuelta. Así le enseñas a imaginar, esta es una cualidad super importante para su aprendizaje posterior. Aprende como aquí:"
+        "texto1B": " Lanza una pelota imaginaria a tu hijo y pide que te la pase de vuelta. Así le enseñas a imaginar, esta es una cualidad super importante para su aprendizaje posterior. Mira como en este video:"
     },
     // "juego_edad_3_tip_9":
     {
-        "texto1A": " quiere jugar con la pelota? Salgan a un espacio abierto y practiquen pateando la pelota o lanzandola con las manos. Esta actividad fortalece su desarrollo físico y cognitivo.",
+        "texto1A": "¿",
         "edad": 3,
-        "texto1B": "",
+        "texto1B": " quiere jugar con la pelota? Salgan a un espacio abierto y practiquen pateando la pelota o lanzandola con las manos. Esta actividad fortalece su desarrollo físico y cognitivo.",
         "titulo": "Jugando con el balón",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "icono": "",
@@ -3028,7 +3029,7 @@ export default [
         "n_tip": 10,
         "texto1A": " No alimentes a ",
         "edad": 3,
-        "texto1B": "con gaseosas, helados o dulces. No tienen ninguna vitamina y afectan su crecimiento. ¡Cuídalo!",
+        "texto1B": " con gaseosas, helados o dulces. No tienen ninguna vitamina y afectan su crecimiento. ¡Cuídalo!",
         "titulo": "Ningún beneficio",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "https://volar.org.pe/static/media/icono-blanco/3-4/dulce_prohibido_Mesa%20de%20trabajo%201.svg",
@@ -3140,7 +3141,7 @@ export default [
         "n_tip": 1,
         "texto1A": " Aunque no se vean, los gérmenes siempre están ahí. Lava todo con agua limpia y desinfectante antes de que ",
         "edad": 4,
-        "texto1B": " lo toque. ¡Cuídalo mucho!",
+        "texto1B": " lo toque. ¡Cuídale mucho!",
         "titulo": "La limpieza es importante"
     },
     // "higieneAguaSegura_edad_4_tip_10": 
@@ -3393,7 +3394,7 @@ export default [
         "n_tip": 10,
         "texto1A": " Mientras cocinas ",
         "edad": 4,
-        "texto1B": " puede ser tu ayudante. Dale tareas sencillas como pelar arverjas y describe las formas, texturas y colores de los alimentos que va tocando. Mira como aquí:",
+        "texto1B": " puede ser tu ayudante. Dale tareas sencillas como pelar arverjas y describe las formas, texturas y colores de los alimentos que va tocando. Mira como en este video:",
         "titulo": "Ayudante del chef",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
         "icono": ""
@@ -3405,7 +3406,7 @@ export default [
         "n_tip": 2,
         "texto1A": " ¿Es hora de ir al campo a trabajar? Puedes llevar a ",
         "edad": 4,
-        "texto1B": " y mientras van recogiendo la cosecha, pueden ir descubriendo las cosas que va viendo.  Mira como aquí:",
+        "texto1B": " y mientras van recogiendo la cosecha, pueden ir descubriendo las cosas que va viendo.  Mira como en este video:",
         "titulo": "Aprendiendo más",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": ""
@@ -3441,7 +3442,7 @@ export default [
         "n_tip": 5,
         "texto1A": " Deja que ",
         "edad": 4,
-        "texto1B": " escoja la ropa que utilizará en el día.  Tú puedes escoger dos opciones pero la palabra final que sea suya. ¿Usar un polo rojo o azul? Decidir lo ayuda a ser autónomo. Mira como aquí: ",
+        "texto1B": " escoja la ropa que utilizará en el día.  Tú puedes escoger dos opciones pero la palabra final que sea suya. ¿Usar un polo rojo o azul? Decidir lo ayuda a ser autónomo. Mira como en este video: ",
         "titulo": "Dale libertad",
         "texto2": "¡Siguiendo estos consejos estás sumando al desarrollo integral de tu bebé!",
         "icono": ""
@@ -3455,7 +3456,7 @@ export default [
         "n_tip": 6,
         "texto1A": " Cuando toca lavar la ropa, invita a ",
         "edad": 4,
-        "texto1B": " a que te ayude a agrupar la ropa por colores. Con esta actividad estará desarrollando habilidades matemáticas! Mira como aquí: ",
+        "texto1B": " a que te ayude a agrupar la ropa por colores. Con esta actividad estará desarrollando habilidades matemáticas! Mira como en este video: ",
         "titulo": "Lavando juntos"
     },
     // "rutina_edad_4_tip_7": 
@@ -3524,7 +3525,7 @@ export default [
     {
         "texto1A": " Bailar desarrolla el cerebro de ",
         "edad": 4,
-        "texto1B": " Aprende a prestar atención a ritmos y sonidos. ¡Bailen por toda la casa!  Mira como aquí:",
+        "texto1B": " Aprende a prestar atención a ritmos y sonidos. ¡Bailen por toda la casa!  Mira como en este video:",
         "titulo": "Actividades juntos",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
         "icono": "",
@@ -3596,7 +3597,7 @@ export default [
     {
         "texto1A": " Ayuda a ",
         "edad": 4,
-        "texto1B": " a desarrollar su lenguaje. Cuando lo limpies, señala las partes de su cuerpo. Hazlo de manera divertida para que tan tú como tu hijo/a puedan disfrutar mientras aprenden. Mira como aquí: ",
+        "texto1B": " a desarrollar su lenguaje. Cuando lo limpies, señala las partes de su cuerpo. Hazlo de manera divertida para que tan tú como tu hijo/a puedan disfrutar mientras aprenden. Mira como en este video: ",
         "titulo": "Siempre juntos",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "",
@@ -3611,7 +3612,7 @@ export default [
         "n_tip": 9,
         "texto1A": "¡Juguemos a las chapadas! Juega con toda la familia y ve añadiendo reglas y niveles al juego. Así ",
         "edad": 4,
-        "texto1B": " fortalecerá sus habilidades sociales, muy importantes para su futuro. Mira como aquí:",
+        "texto1B": " fortalecerá sus habilidades sociales, muy importantes para su futuro. Mira como en este video:",
         "titulo": "Agudiza su ingenio",
         "texto2": "¡Tú tienes todo lo que se necesita para desarrollar el cerebro de tus hijos e hijas!",
         "icono": ""
@@ -3988,7 +3989,7 @@ export default [
         "n_tip": 1,
         "texto1A": " Cuando toca lavar la ropa, invita a ",
         "edad": 5,
-        "texto1B": " a que te ayude a agrupar la ropa por colores. Con esta actividad estará desarrollando habilidades matemáticas! Mira como aquí: ",
+        "texto1B": " a que te ayude a agrupar la ropa por colores. Con esta actividad estará desarrollando habilidades matemáticas! Mira como en este video: ",
         "titulo": "Realizando la limpieza juntos",
         "texto2": "Encuentra un consejo volar para cada momento, tu bebé ama pasar tiempo contigo. ",
         "icono": ""
@@ -4003,7 +4004,7 @@ export default [
         "n_tip": 10,
         "texto1A": " Deja que ",
         "edad": 5,
-        "texto1B": " escoja la ropa que utilizará en el día.  Tú puedes escoger dos opciones pero la palabra final que sea suya. ¿Usar un polo rojo o azul? Decidir lo ayuda a ser autónomo. Mira como aquí: "
+        "texto1B": " escoja la ropa que utilizará en el día.  Tú puedes escoger dos opciones pero la palabra final que sea suya. ¿Usar un polo rojo o azul? Decidir lo ayuda a ser autónomo. Mira como en este video: "
     },
     // "rutina_edad_5_tip_2": 
     {
@@ -4050,7 +4051,7 @@ export default [
         "n_tip": 5,
         "texto1A": " ¿Es hora de ir al campo a trabajar? Puedes llevar a ",
         "edad": 5,
-        "texto1B": " y mientras van recogiendo la cosecha, pueden ir descubriendo las cosas que va viendo.  Mira como aquí:",
+        "texto1B": " y mientras van recogiendo la cosecha, pueden ir descubriendo las cosas que va viendo.  Mira como en este video:",
         "titulo": "Dale responsabilidades"
     },
     // "rutina_edad_5_tip_6": 
@@ -4143,7 +4144,7 @@ export default [
     {
         "texto1A": " Bailar desarrolla el cerebro de ",
         "edad": 5,
-        "texto1B": " Aprende a prestar atención a ritmos y sonidos. ¡Bailen por toda la casa!  Mira como aquí:",
+        "texto1B": " Aprende a prestar atención a ritmos y sonidos. ¡Bailen por toda la casa!  Mira como en este video:",
         "titulo": "En movimiento",
         "texto2": "¡Siguiendo estos consejos estas sumando al desarrollo integral de tu bebé!",
         "icono": "",
@@ -4204,7 +4205,7 @@ export default [
         "n_tip": 8,
         "texto1A": " Ayuda a ",
         "edad": 5,
-        "texto1B": " a desarrollar su lenguaje. Cuando lo limpies, señala las partes de su cuerpo. Hazlo de manera divertida para que tan tú como tu hijo/a puedan disfrutar mientras aprenden. Mira como aquí: ",
+        "texto1B": " a desarrollar su lenguaje. Cuando lo limpies, señala las partes de su cuerpo. Hazlo de manera divertida para que tan tú como tu hijo/a puedan disfrutar mientras aprenden. Mira como en este video: ",
         "titulo": "Avanzamos juntos",
         "texto2": "¡Tú puedes ayudarlos a crecer mejor!",
         "icono": "",

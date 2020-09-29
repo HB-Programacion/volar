@@ -78,7 +78,7 @@ const Piloto = () => {
                     </div>
                 </div>
                 <p className=" estrellita-amarilla">&#10022;</p>
-                <h6 className="title-piloto">Resultados del piloto:</h6>
+                <h6 className="title-piloto">Alcances del piloto:</h6>
                 <div className="container text-center mt-2">
                     <p className=" p-mobile-blue">En total han sido 1,150 niños y niñas beneficiados por el alcance del piloto en sus ocho intervenciones.</p>
                 </div>

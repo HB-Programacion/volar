@@ -69,7 +69,7 @@ const Home = () => {
                 </p>
                 <p className="">Los bebés nacen listos para aprender.<br></br><strong className="fuerte-desktop">¡Y tú tienes todo para ayudarlos!</strong> </p>
         
-                <a href="https://www.youtube.com/watch?v=XOIlfPB7ezs"className="btn-orange text-white wobble-hor-bottom" target="_blank">
+                <a href="https://youtu.be/_rAy16B7eJs"className="btn-orange text-white wobble-hor-bottom" target="_blank">
                     <img src={arrowLeft} className="arrow-orange"></img>
                         ¡Entérate más!
                     <img src={arrowRigth}className="arrow-orange"></img>

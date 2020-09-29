@@ -65,7 +65,7 @@ const TipsSocioemocional = ({
                         </div>
                         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                           <div class="text-tips">
-                            <h3>Hola {localStorage.getItem("nameUserActive")}</h3>
+                          {item.edad==-1 ? <h3>Estos consejos están dirigidos a la gestante de tu familia:</h3> : <h3>Hola {localStorage.getItem("nameUserActive")}</h3>}
                             {item.texto1B !== ""  && item.texto1A !== "" ? (
                               <p class="text-tips-light">
                                 {item.texto1A}
