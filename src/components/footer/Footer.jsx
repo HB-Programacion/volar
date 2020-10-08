@@ -57,7 +57,7 @@ const Footer = () => {
           </a>
         </figure>
       </div>
-      <a className="terminos-condiciones" href="https://drive.google.com/file/d/1AVacSukAo7wo7G2KUY_770wKXYae9FS2/view">
+      <a className="terminos-condiciones" href="https://drive.google.com/file/d/1AVacSukAo7wo7G2KUY_770wKXYae9FS2/view" target="_blanck">
         <p className="text-blue-volar">Términos y condiciones</p>
       </a>
     </div>
