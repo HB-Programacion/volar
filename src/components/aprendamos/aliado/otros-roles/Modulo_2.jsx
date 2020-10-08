@@ -11,7 +11,7 @@ import infografia4 from "./../../../../images/modulos-img/2-Posturas Lactancia.j
 import infografia5 from "./../../../../images/modulos-img/2-Importancia del CRED.jpg";
 import infografia6 from "./../../../../images/modulos-img/2-CRED segun edad.jpg";
 import infografia7 from "./../../../../images/modulos-img/2-Anemia Desarollo.jpg";
-import infografia8 from "./../../../../images/modulos-img/2-Pasos suplementos hierro.jpg"
+import infografia8 from "./../../../../images/modulos-img/2-Pasos suplementos hierro.jpg";
 import infografia9 from "./../../../../images/modulos-img/2-Efectos Secundarios Hierro.jpg";
 import video from "../../../../images/modulos-img/video.svg";
 import arrowLeft from "./../../../../images/arrow-left-blue.svg";
@@ -39,20 +39,20 @@ const Modulo_2 = () => {
   const handleShowInfografia7 = () => setShowInfografia7(true);
   const handleCloseInfografia8 = () => setShowInfografia8(false);
   const handleShowInfografia8 = () => setShowInfografia8(true);
-  const handleCloseInfografia9= () => setShowInfografia9(false);
+  const handleCloseInfografia9 = () => setShowInfografia9(false);
   const handleShowInfografia9 = () => setShowInfografia9(true);
 
   let history = useHistory();
   return (
     <div className="box-modulos-aliados">
-      <a onClick={() => {
+      {/* <a onClick={() => {
           history.goBack();
-        }}>
-      <i
-        
-        className="fas fa-chevron-left arrowGoback-docente goBack-docente"
-        aria-hidden="true"
-      ></i>
+        }}> */}
+      <a href="/aprendamos/aliado/modulos">
+        <i
+          className="fas fa-chevron-left arrowGoback-docente goBack-docente"
+          aria-hidden="true"
+        ></i>
       </a>
       <div className="row sin-margin-row">
         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 box-modulos-textos">
@@ -113,7 +113,10 @@ const Modulo_2 = () => {
               materna.{" "}
             </p>
           </div>
-          <btn className="btn-modulos-info" onClick={()=>handleShowInfografia3()}>
+          <btn
+            className="btn-modulos-info"
+            onClick={() => handleShowInfografia3()}
+          >
             <figure className="btn-infografia">
               <img src={infografia} alt="" className="w-100" />
             </figure>
@@ -122,7 +125,10 @@ const Modulo_2 = () => {
               niño
             </div>
           </btn>
-          <btn className="btn-modulos-info" onClick={()=>handleShowInfografia4()}>
+          <btn
+            className="btn-modulos-info"
+            onClick={() => handleShowInfografia4()}
+          >
             <figure className="btn-infografia">
               <img src={infografia} alt="" className="w-100" />
             </figure>
@@ -142,7 +148,10 @@ const Modulo_2 = () => {
               CRED.{" "}
             </p>
           </div>
-          <btn className="btn-modulos-info" onClick={()=>handleShowInfografia5()}>
+          <btn
+            className="btn-modulos-info"
+            onClick={() => handleShowInfografia5()}
+          >
             <figure className="btn-infografia">
               <img src={infografia} alt="" className="w-100" />
             </figure>
@@ -150,7 +159,10 @@ const Modulo_2 = () => {
               Infografía: importancia del CRED
             </div>
           </btn>
-          <btn className="btn-modulos-info" onClick={()=>handleShowInfografia6()}>
+          <btn
+            className="btn-modulos-info"
+            onClick={() => handleShowInfografia6()}
+          >
             <figure className="btn-infografia">
               <img src={infografia} alt="" className="w-100" />
             </figure>
@@ -170,7 +182,10 @@ const Modulo_2 = () => {
               hierro.{" "}
             </p>
           </div>
-          <btn className="btn-modulos-info" onClick={()=>handleShowInfografia7()}>
+          <btn
+            className="btn-modulos-info"
+            onClick={() => handleShowInfografia7()}
+          >
             <figure className="btn-infografia">
               <img src={infografia} alt="" className="w-100" />
             </figure>
@@ -179,7 +194,10 @@ const Modulo_2 = () => {
               alimentación, influye en el desarrollo físico y emocional
             </div>
           </btn>
-          <btn  className="btn-modulos-info" onClick={()=>handleShowInfografia8()}>
+          <btn
+            className="btn-modulos-info"
+            onClick={() => handleShowInfografia8()}
+          >
             <figure className="btn-infografia">
               <img src={infografia} alt="" className="w-100" />
             </figure>
@@ -187,7 +205,10 @@ const Modulo_2 = () => {
               Infografía: pasos para administrar el sulfato ferrosoen los niños
             </div>
           </btn>
-          <btn className="btn-modulos-info" onClick={()=>handleShowInfografia9()}>
+          <btn
+            className="btn-modulos-info"
+            onClick={() => handleShowInfografia9()}
+          >
             <figure className="btn-infografia">
               <img src={infografia} alt="" className="w-100" />
             </figure>
@@ -205,7 +226,7 @@ const Modulo_2 = () => {
               <div>
                 <div className="row">
                   <div className="col-12">
-                    <img className="img-infografia" src={infografia3} alt=""/>
+                    <img className="img-infografia" src={infografia3} alt="" />
                   </div>
                 </div>
               </div>
@@ -221,7 +242,7 @@ const Modulo_2 = () => {
               <div>
                 <div className="row">
                   <div className="col-12">
-                    <img className="img-infografia" src={infografia4} alt=""/>
+                    <img className="img-infografia" src={infografia4} alt="" />
                   </div>
                 </div>
               </div>
@@ -237,7 +258,7 @@ const Modulo_2 = () => {
               <div>
                 <div className="row">
                   <div className="col-12">
-                    <img className="img-infografia" src={infografia5} alt=""/>
+                    <img className="img-infografia" src={infografia5} alt="" />
                   </div>
                 </div>
               </div>
@@ -253,7 +274,7 @@ const Modulo_2 = () => {
               <div>
                 <div className="row">
                   <div className="col-12">
-                    <img className="img-infografia" src={infografia6} alt=""/>
+                    <img className="img-infografia" src={infografia6} alt="" />
                   </div>
                 </div>
               </div>
@@ -269,7 +290,7 @@ const Modulo_2 = () => {
               <div>
                 <div className="row">
                   <div className="col-12">
-                    <img className="img-infografia" src={infografia7} alt=""/>
+                    <img className="img-infografia" src={infografia7} alt="" />
                   </div>
                 </div>
               </div>
@@ -285,7 +306,7 @@ const Modulo_2 = () => {
               <div>
                 <div className="row">
                   <div className="col-12">
-                    <img className="img-infografia" src={infografia8} alt=""/>
+                    <img className="img-infografia" src={infografia8} alt="" />
                   </div>
                 </div>
               </div>
@@ -301,7 +322,7 @@ const Modulo_2 = () => {
               <div>
                 <div className="row">
                   <div className="col-12">
-                    <img className="img-infografia" src={infografia9} alt=""/>
+                    <img className="img-infografia" src={infografia9} alt="" />
                   </div>
                 </div>
               </div>

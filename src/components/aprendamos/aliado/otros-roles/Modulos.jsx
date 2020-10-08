@@ -48,20 +48,20 @@ const Modulos = ({ firebaseUser }) => {
     <div className="animated fadeIn">
       <div>
         <div className="box-title-modulo show-desktop">
-            <h1 className="title-modulo  tracking-in-expand-fwd-top">
-              Visita nuestros módulos <br /> y aprender con volar
-            </h1>
+          <h1 className="title-modulo  tracking-in-expand-fwd-top">
+            Visita nuestros módulos <br /> y aprender con volar
+          </h1>
         </div>
         <div className="list-modulo">
-        <a onClick={() => {
+          {/* <a onClick={() => {
           history.goBack();
-        }}>
-        <i
-        
-        className="fas fa-chevron-left arrowGoback goBack-area"
-        aria-hidden="true"
-      ></i>
-        </a>
+        }}> */}
+          <a href="/aprendamos/aliado">
+            <i
+              className="fas fa-chevron-left arrowGoback goBack-area"
+              aria-hidden="true"
+            ></i>
+          </a>
           {/*  {error && <strong>Error: {JSON.stringify(error)}</strong>}
             {loading && <div className="grande">
                 <div className="centrando-spiner">
@@ -69,138 +69,138 @@ const Modulos = ({ firebaseUser }) => {
         </div>
       </div> }*/}
           {/* {contenidoFirebase && ( */}
-         <div className="container-fluid">
-         <div className="row">
-            <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-              <btn className="link" onClick={handleShowModulo1}>
-                <div className="box-section box-section-higiene">
-                  <div class="box-icon">
-                    <img
-                      src={iconoTipLighBlue}
-                      className="icono-modulo-tip heartbeat"
-                      alt="icono de tip"
-                    />
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <btn className="link" onClick={handleShowModulo1}>
+                  <div className="box-section box-section-higiene">
+                    <div class="box-icon">
+                      <img
+                        src={iconoTipLighBlue}
+                        className="icono-modulo-tip heartbeat"
+                        alt="icono de tip"
+                      />
+                    </div>
+                    <div className="box-text-modulo">
+                      <h3>Estructura del Cerebro y Estrés Tóxico </h3>
+                    </div>
                   </div>
-                  <div className="box-text-modulo">
-                    <h3>Estructura del Cerebro y Estrés Tóxico </h3>
+                </btn>
+              </div>
+              <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <btn className="link" onClick={handleShowModulo2}>
+                  <div className="box-section box-section-higiene">
+                    <div class="box-icon">
+                      <img
+                        src={iconoTipLighBlue}
+                        className="icono-modulo-tip heartbeat"
+                        alt="icono de tip"
+                      />
+                    </div>
+                    <div className="box-text-modulo">
+                      <h3>Practicas Saludables I</h3>
+                    </div>
                   </div>
-                </div>
-              </btn>
-            </div>
-            <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-              <btn className="link" onClick={handleShowModulo2}>
-                <div className="box-section box-section-higiene">
-                  <div class="box-icon">
-                    <img
-                      src={iconoTipLighBlue}
-                      className="icono-modulo-tip heartbeat"
-                      alt="icono de tip"
-                    />
+                </btn>
+              </div>
+              <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <btn className="link" onClick={handleShowModulo3}>
+                  <div className="box-section box-section-higiene">
+                    <div class="box-icon">
+                      <img
+                        src={iconoTipLighBlue}
+                        className="icono-modulo-tip heartbeat"
+                        alt="icono de tip"
+                      />
+                    </div>
+                    <div className="box-text-modulo">
+                      <h3>Autonomía e imagen del niño</h3>
+                    </div>
                   </div>
-                  <div className="box-text-modulo">
-                    <h3>Practicas Saludables I</h3>
+                </btn>
+              </div>
+              <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <btn className="link" onClick={handleShowModulo4}>
+                  <div className="box-section box-section-higiene">
+                    <div class="box-icon">
+                      <img
+                        src={iconoTipLighBlue}
+                        className="icono-modulo-tip heartbeat"
+                        alt="icono de tip"
+                      />
+                    </div>
+                    <div className="box-text-modulo">
+                      <h3>Rutinas: Cuidado y Protección </h3>
+                    </div>
                   </div>
-                </div>
-              </btn>
-            </div>
-            <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-              <btn className="link" onClick={handleShowModulo3}>
-                <div className="box-section box-section-higiene">
-                  <div class="box-icon">
-                    <img
-                      src={iconoTipLighBlue}
-                      className="icono-modulo-tip heartbeat"
-                      alt="icono de tip"
-                    />
+                </btn>
+              </div>
+              <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <btn className="link" onClick={handleShowModulo5}>
+                  <div className="box-section box-section-higiene">
+                    <div class="box-icon">
+                      <img
+                        src={iconoTipLighBlue}
+                        className="icono-modulo-tip heartbeat"
+                        alt="icono de tip"
+                      />
+                    </div>
+                    <div className="box-text-modulo">
+                      <h3>Practicas Saludables II</h3>
+                    </div>
                   </div>
-                  <div className="box-text-modulo">
-                    <h3>Autonomía e imagen del niño</h3>
+                </btn>
+              </div>
+              <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <btn className="link" onClick={handleShowModulo6}>
+                  <div className="box-section box-section-higiene">
+                    <div class="box-icon">
+                      <img
+                        src={iconoTipLighBlue}
+                        className="icono-modulo-tip heartbeat"
+                        alt="icono de tip"
+                      />
+                    </div>
+                    <div className="box-text-modulo">
+                      <h3>Importancia del Juego</h3>
+                    </div>
                   </div>
-                </div>
-              </btn>
-            </div>
-            <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-              <btn className="link" onClick={handleShowModulo4}>
-                <div className="box-section box-section-higiene">
-                  <div class="box-icon">
-                    <img
-                      src={iconoTipLighBlue}
-                      className="icono-modulo-tip heartbeat"
-                      alt="icono de tip"
-                    />
+                </btn>
+              </div>
+              <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <btn className="link" onClick={handleShowModulo7}>
+                  <div className="box-section box-section-higiene">
+                    <div class="box-icon">
+                      <img
+                        src={iconoTipLighBlue}
+                        className="icono-modulo-tip heartbeat"
+                        alt="icono de tip"
+                      />
+                    </div>
+                    <div className="box-text-modulo">
+                      <h3>Practicas Saludables III</h3>
+                    </div>
                   </div>
-                  <div className="box-text-modulo">
-                    <h3>Rutinas: Cuidado y Protección </h3>
+                </btn>
+              </div>
+              <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <btn className="link" onClick={handleShowModulo8}>
+                  <div className="box-section box-section-higiene">
+                    <div class="box-icon">
+                      <img
+                        src={iconoTipLighBlue}
+                        className="icono-modulo-tip heartbeat"
+                        alt="icono de tip"
+                      />
+                    </div>
+                    <div className="box-text-modulo">
+                      <h3>Disciplina Positiva</h3>
+                    </div>
                   </div>
-                </div>
-              </btn>
-            </div>
-            <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-              <btn className="link" onClick={handleShowModulo5}>
-                <div className="box-section box-section-higiene">
-                  <div class="box-icon">
-                    <img
-                      src={iconoTipLighBlue}
-                      className="icono-modulo-tip heartbeat"
-                      alt="icono de tip"
-                    />
-                  </div>
-                  <div className="box-text-modulo">
-                    <h3>Practicas Saludables II</h3>
-                  </div>
-                </div>
-              </btn>
-            </div>
-            <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-              <btn className="link" onClick={handleShowModulo6}>
-                <div className="box-section box-section-higiene">
-                  <div class="box-icon">
-                    <img
-                      src={iconoTipLighBlue}
-                      className="icono-modulo-tip heartbeat"
-                      alt="icono de tip"
-                    />
-                  </div>
-                  <div className="box-text-modulo">
-                    <h3>Importancia del Juego</h3>
-                  </div>
-                </div>
-              </btn>
-            </div>
-            <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-              <btn className="link" onClick={handleShowModulo7}>
-                <div className="box-section box-section-higiene">
-                  <div class="box-icon">
-                    <img
-                      src={iconoTipLighBlue}
-                      className="icono-modulo-tip heartbeat"
-                      alt="icono de tip"
-                    />
-                  </div>
-                  <div className="box-text-modulo">
-                    <h3>Practicas Saludables III</h3>
-                  </div>
-                </div>
-              </btn>
-            </div>
-            <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-              <btn className="link" onClick={handleShowModulo8}>
-                <div className="box-section box-section-higiene">
-                  <div class="box-icon">
-                    <img
-                      src={iconoTipLighBlue}
-                      className="icono-modulo-tip heartbeat"
-                      alt="icono de tip"
-                    />
-                  </div>
-                  <div className="box-text-modulo">
-                    <h3>Disciplina Positiva</h3>
-                  </div>
-                </div>
-              </btn>
+                </btn>
+              </div>
             </div>
           </div>
-         </div>
           {/*  )} */}
         </div>
       </div>
@@ -225,7 +225,7 @@ const Modulos = ({ firebaseUser }) => {
                     type="submit"
                     className="btn-navy-blue font-white mt-3 mb-3 wobble-hor-bottom out-none-button link"
                     data-dismiss="modal"
-                     href="/aprendamos/aliado/modulos/modulo_1"
+                    href="/aprendamos/aliado/modulos/modulo_1"
                   >
                     <img src={arrowLeft} className="arrow-blue"></img>
                     VER MÁS AQUÍ
@@ -400,7 +400,6 @@ const Modulos = ({ firebaseUser }) => {
                     <img src={arrowLeft} className="arrow-blue"></img>
                     VER MÁS AQUÍ
                     <img src={arrowRight} className="arrow-blue"></img>
-
                   </a>
                 </div>
               </div>

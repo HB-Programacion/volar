@@ -15,7 +15,7 @@ const MaterialEducativo = () => {
                 history.goBack();
               }}>
            <i
-              className="fas fa-chevron-left arrowGoback"
+              className="fas fa-chevron-left arrowGoback goBack-area elmo-videos-flecha"
               aria-hidden="true"
             ></i>
            </a>

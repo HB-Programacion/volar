@@ -140,10 +140,10 @@ const Home = () => {
 
           <h2 className="mt-nosotros">nosotros</h2>
           <p className="text-blue-volar">
-            “Volar” es un proyecto de Aporta Desarrollo Sostenible, la
-            plataforma de impacto social del Grupo Breca, diseñado con la
-            intención de que las niñas y niños peruanos de 0 a 5 años alcancen
-            su máximo potencial.{" "}
+            "Volar" es un proyecto transversal del Grupo Breca diseñado con el
+            objetivo de cambiar las trayectorias de desarrollo de niños y niñas
+            de sus zonas de influencia e inspirar políticas públicas en DIT que
+            permitan ampliar el alcance a todo el territorio nacional.{" "}
           </p>
           <p className="text-aguamarina estrellita-home">&#10022;</p>
           <p className="text-aguamarina subtitulo-home">
