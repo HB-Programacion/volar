@@ -49,11 +49,17 @@ const Footer = () => {
           </a>
         </figure>
         <figure>
-          <a href="https://www.youtube.com/channel/UCL8SsKlZTg_qL9QEOWohzXg/featured" target="_blank">
+          <a
+            href="https://www.youtube.com/channel/UCL8SsKlZTg_qL9QEOWohzXg/featured"
+            target="_blank"
+          >
             <img src={youtube} className="icon-footer"></img>
           </a>
         </figure>
       </div>
+      <a className="terminos-condiciones" href="https://drive.google.com/file/d/1AVacSukAo7wo7G2KUY_770wKXYae9FS2/view" target="_blanck">
+        <p className="text-blue-volar">Términos y condiciones</p>
+      </a>
     </div>
   );
 };

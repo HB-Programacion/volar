@@ -49,15 +49,15 @@ export const EmpiezaAprender = (props) => {
           content="Aprendamos"
         />
         <meta name="keywords" content="Volar,volar"></meta>
-        <meta name="URL" content="https://volar.org.pe/" />
+        <meta name="URL" content="https://volar.org.pe/aprendamos" />
         <meta name="author" content="volar.orge.pe" />
         <meta name="distribution" content="global" />
         <meta
           property="og:image"
           content="https://volar.org.pe/static/media/icon-cuidador.b9d2cd3d.png"
         />
-        <meta property="og:url" content="https://volar.org.pe/" />
-        <meta property="og:type" content="https://volar.org.pe/" />
+        <meta property="og:url" content="https://volar.org.pe/aprendamos" />
+        <meta property="og:type" content="https://volar.org.pe/aprendamos" />
         <meta property="og:title" content="Aprendamos - Volar" />
         <meta
           property="og:description"

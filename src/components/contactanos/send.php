@@ -53,10 +53,10 @@ if ( ! isset($_POST['email']) ) {
 // Construimos el mensaje
 $to = 'narda@henribarrett.com,judith@henribarrett.com';
 $reply1 = 'hola@volar.org.pe';
-$reply2 = 'UNIDOS EN LA MESA';
+$reply2 = 'CONTÁCTANOS - VOLAR';
 $user_email = $_POST['email'];
-$subject1 = 'Protocolos de reactivación - Unidos en la mesa';
-$subject2 = 'UNIDOS EN LA MESA';
+$subject1 = 'CONTÁCTANOS - VOLAR';
+$subject2 = 'CONTÁCTANOS - VOLAR';
 
 $message1 = '  <table style="max-width: 600px; padding: 10px; margin:0 auto; border-collapse: collapse; background-color: #fff;">
 <tr>

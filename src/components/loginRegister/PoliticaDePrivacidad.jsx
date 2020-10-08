@@ -2,139 +2,136 @@ import React from "react";
 
 const PoliticaDePrivacidad = () => {
   return (
-    <div>
-      <h1>DECLARACIÓN DE PRIVACIDAD </h1>
-      <p>
-      ---- SECCIÓN 1 - ¿QUÉ HACEMOS CON TU
-      INFORMACIÓN? Cuando compras algo de nuestra tienda, como parte del proceso
-      de compra venta, nosotros recolectamos la información personal que nos das
-      tales como nombre, dirección y correo electrónico. Cuando navegas en
-      nuestra tienda, también recibimos de manera automática la dirección de
-      protocolo de internet de tu computadora (IP) con el fin de proporcionarnos
-      información que nos ayuda a conocer acerca de su navegador y sistema
-      operativo. Email marketing (if applicable): Con tu permiso, podremos
-      enviarte correos electrónicos acerca de nuestra tienda, nuevos productos y
-      otras actualizaciones
-      </p>
-      <p>
-      SECTION 2 - CONSENTIMIENTO Cómo obtienen mi
-      consentimiento? Cuando nos provees tu información personal para completar
-      una transacción, verificar tu tarjeta de crédito, crear una órden,
-      concertar un envío o hacer una devolución, implicamos que aceptas la
-      recolección y uso por esa razón específica solamente. Si te pedimos tu
-      información personal por una razón secundaria, como marketing, te
-      pediremos directame tu expreso consentimiento, o te daremos la oportunidad
-      de negarte. ¿Cómo puedo anular mi consentimientoÇ Si luego de haber
-      aceptado cambias de opinión, puedes anular tu consentimiento para que te
-      contactemos, por la recolección, uso o divulgación de tu información, en
-      cualquier momento, contactándonos a judithcristinaqi@gmail.com o
-      escribiéndonos a: Volar San isidro., Lima, LIM, 051, Peru 
-      </p>
-      <p>
-      SECCIÓN 3 -
-      DIVULGACIÓN Podemos divulgar tu información personal si se nos requiere
-      por ley o si violas nuestros Términos de Servicio. 
-      </p>
-      <p>
-      SECCIÓN 4 - SHOPIFY
-      Nuestra tienda se encuentra alojada en Shopify Inc. Ellos nos proporcionan
-      la plataforma de comercio electrónico en línea que nos permite venderte
-      nuestros productos y servicios. Tus datos se almacenan a través del
-      almacenamiento de datos de Shopify, bases de datos y la aplicación general
-      de Shopify. Tus datos se almacenan en un servidor seguro detrás de un
-      firewall. Payment: Si eliges una pasarela de pago directo para completar
-      tu compra, entonces Shopify almacena datos de tu tarjeta de crédito. Está
-      cifrada a través de la Seguridad Standard de Datos de la Industrai de
-      Tarjetas de Pago (PCI-DSS). Tus datos de transacción de compra se
-      almacenan sólo en la medida en que sea necesario para completar la
-      transacción de compra. Después de que se haya completado, se borra la
-      información de su transacción de compra. Todas las pasarelas de pago
-      directo se adhieren a los estándares establecidos por PCI-DSS como lo
-      indicado por el Consejo de Normas de Seguridad de PCI, que es un esfuerzo
-      conjunto de marcas como Visa, MasterCard, American Express y Discover. Los
-      requisitos del PCI-DSS ayudan a garantizar el manejo seguro de la
-      información de tarjetas de crédito de las tiendas y sus proveedores de
-      servicios. Para una visión más clara, es posible que también desees leer
-      las Condiciones de servicio de Shopify aquí o Declaración de privacidad
-      aquí.
-      </p>
-      <p>
-      SECCIÓN 5 - SERVICES DE TERCERAS PARTES En general, los proveedores
-      de terceras partes utilizados por nosotros solo recopilarán, usarán y
-      divulgarán tu información en la medida que sea necesaria para que les
-      permita desempeñar los servicios que nos proveen. Sin embargo, algunos
-      proveedores de servicios de terceros, tales como pasarelas de pago y otros
-      procesadores de transacciones de pago, tienen sus propias poliíticas de
-      privacidad con respecto a la información que estamos obligados a
-      proporcionarles para las transacciones relacionadas con las compras. Para
-      estos proveedores, te recomendamos que leas las poliíticas de
-      privacidadpara que puedas entender la manera en que tu información
-      personal será manejada. En particular, recuerda que algunos proveedores
-      pueden estar ubicados o contar con instalaciones que se encuentran en una
-      jurisdicción diferente a ti o nosotros. Asique si deseas proceder con una
-      transacción que involucra los servicios de un proveedor a terceros, tu
-      información puede estar sujeta a las leyes de la jurisdicción
-      (jurisdicciones) en que se encuentra el proveedor de servicios o sus
-      instalaciones. A modo de ejemplo, si te encuentras en Canadá y tu
-      transacción es procesada por una pasarela de pago con sede en Estados
-      Unidos, entonces tu información personal utilizada para completar la
-      transacción puede ser sujeto de divulgación en virtud de la legislación de
-      Estados Unidos, incluyendo la Ley Patriota. Una vez que abandonas el sitio
-      web de nuestra tienda o te rediriges a un sitio o aplicación de terceros,
-      ya no estás siendo regulados por la presente Política de Privacidad o los
-      Términos de Servicio de nuestra página web. Enlaces Cuando haces clic en
-      enlaces de nuestra tienda, puede que seas redirigido fuera de nuestro
-      sitio. No somos reponsables por las prácticas de privacidad de otros
-      sitios y te recomendamos leer sus normas de privacidad. 
-      </p>
-      <p>
-      SECCIÓN 6 -
-      SEGURIDAD Para proteger tu información personal, tomamos precauciones
-      razonables y seguimos las mejores prácticas de la industria para
-      asegurarnos de que no haya pérdida de manera inapropiada, mal uso, acceso,
-      divulgación, alteración o destrucción de la misma. SI nos proporcionas la
-      información de tu tarjeta de crédito, dicha información es encriptada
-      mediante la tecnología Secure Socket Layer (SSL) y se almacena con un
-      cifrado AES-256. Aunque ningún método de transmisión a través de Internet
-      o de almacenamiento electrónico es 100% seguro, seguimos todos los
-      requisitos de PCI-DSS e implementamos normas adicionales aceptadas por la
-      industria. COOKIES Aquí tienes una lista de cookies que utilizamos. Las
-      enlistamos para que puedas elegir si quieres optar por quitarlas o no.
-      _session_id, unique token, sessional, Allows Shopify to store information
-      about your session (referrer, landing page, etc). _shopify_visit, no data
-      held, Persistent for 30 minutes from the last visit, Used by our website
-      provider’s internal stats tracker to record the number of visits
-      _shopify_uniq, no data held, expires midnight (relative to the visitor) of
-      the next day, Counts the number of visits to a store by a single customer.
-      cart, unique token, persistent for 2 weeks, Stores information about the
-      contents of your cart. _secure_session_id, unique token, sessional
-      storefront_digest, unique token, indefinite If the shop has a password,
-      this is used to determine if the current visitor has access. SECCIÓN 7 -
-      EDAD DE CONSENTIMIENTO Al utilizar este sitio, declaras que tienes al
-      menos la mayoría de edad en tu estado o provincia de residencia, o que
-      tienes la mayoría de edad en tu estado o provincia de residencia y que nos
-      has dado tu consentimiento para permitir que cualquiera de tus
-      dependientes menores use este sitio.
-      </p>
-      <p>
-      SECCIÓN 8 - CAMBIOS A ESTA POLÍTICA
-      DE PRIVACIDAD Nos reservamos el derecho de modificar esta política de
-      privacidad en cualquier momento, asique por favor revísala frecuentemente.
-      Cambios y aclaraciones entrarán en vigencia inmediatamente después de su
-      publicación en el sitio web. Si hacemos cambios materiales a esta
-      política, notificaremos aquí que ha sido actualizada, por lo que cual
-      estás enterado de qué información recopilamos, cómo y bajo qué
-      circunstancias, si las hubiere, la utilizamos y/o divulgamos. Si nuestra
-      tienda es adquirida o fusionada con otra empresa, tu información puede ser
-      transferida a los nuevos propietarios, para que podamos seguir vendiéndote
-      productos. PREGUNTAS E INFORMACIÓN DE CONTACTO Si quieres: acceder,
-      corregir, enmendar o borrar cualquier información personal que poseamos
-      sobre ti, registrar una queja, o simplemente quieres más información
-      contacta a nuestro Oficial de Cumplimiento de Privacidad
-      judithcristinaqi@gmail.com o por correopostal a Volar [Re: Privacy
-      Compliance Officer] [San isidro., Lima, LIM, 051, Peru] ----
-      </p>
-
+    <div className="container mt-4  animated fadeIn ">
+      <div className="register-child contactanos-box">
+        <h1 className="title tittle-register-child text-contactanos tracking-in-expand-fwd-top">
+          POLÍTICA DE PRIVACIDAD
+        </h1>
+        <div className="list-register">
+          <h5> 10 de Septiembre 2020</h5>
+          <p>
+            Esta Política de privacidad se aplica a la información que
+            recopilamos cuando utiliza la web volar.org.pe o cuando usted
+            interactúe de otra manera con Volar.
+          </p>
+          <p>
+            Podemos cambiar esta Política de privacidad de vez en cuando. Si
+            hacemos cambios, se lo notificaremos revisando la fecha en la parte
+            superior de la política. Le recomendamos que revise la Política de
+            privacidad cada vez que interactúe con Volar para mantenerse
+            informado sobre nuestras prácticas de información y las formas en
+            que puede ayudar a proteger su privacidad.
+          </p>
+          <h3>¿QUÉ HACEMOS CON TU INFORMACIÓN?</h3>
+          <h4>Información que nos proporciona</h4>
+          <p>
+            Recopilamos la información que nos proporciona directamente. Por
+            ejemplo, podemos recopilar información cuando crea una cuenta,
+            completa un formulario, nos envía un mensaje,participa en cualquier
+            función interactiva en la web, o se comunica con nosotros. Esta
+            información puede incluir nombre, dirección de correo electrónico y
+            otra información que elija proporcionar.
+          </p>
+          <h4>
+            Información que recopilamos automáticamente cuando utiliza nuestra
+            web
+          </h4>
+          <p>
+            Cuando accede o utiliza nuestro sitio web, recopilamos
+            automáticamente información sobre usted, que incluye:
+          </p>
+          <ul>
+            <li>
+              Proporcionar, mantener y mejorar nuestro sitio web y cualquier
+              servicio relacionado.
+            </li>
+            <li>
+              Responder a sus comentarios, preguntas y solicitudes y brindar
+              servicio al cliente;
+            </li>
+            <li>
+              Supervisar y analizar tendencias, uso y actividades en relación
+              con nuestra Aplicación y Sitios, personalizar y mejorar la
+              Aplicación y los Sitios, y proporcionar anuncios, contenido o
+              funciones que coincidan con los perfiles o intereses de los
+              usuarios.
+            </li>
+          </ul>
+          <h4>Intercambio de información</h4>
+          <p>
+            Podemos compartir información sobre usted de la siguiente manera o
+            como se describe en esta Política de privacidad:
+          </p>
+          <ul>
+            <li>
+              Con proveedores, consultores y otros proveedores de servicios que
+              necesitan acceso a dicha información para ayudarnos a administrar
+              u operar nuestro sitio web o para realizar trabajos en nuestro
+              nombre.
+            </li>
+            <li>
+              En respuesta a una solicitud de información si creemos que la
+              divulgación se realiza de acuerdo con cualquier ley, regulación o
+              proceso legal aplicable, o según lo requiera cualquier ley, regla
+              o regulación aplicable.
+            </li>
+            <li>
+              Con su consentimiento o bajo su dirección, incluso si le
+              notificamos a través de nuestra Aplicación o los Sitios que la
+              información que proporcione se compartirá de una manera particular
+              y usted proporciona dicha información.
+            </li>
+            <li>
+              Podemos compartir información agregada o anónima que no lo
+              identifica directamente.
+            </li>
+          </ul>
+          <h4>Servicios de análisis proporcionados por otros</h4>
+          <p>
+            Podemos permitir que otros brinden servicios de análisis en nuestro
+            nombre en diferentes sitios web o aplicaciones y en diferentes
+            dispositivos. Estas entidades pueden utilizar cookies, balizas web,
+            píxeles de seguimiento y otras tecnologías en la Aplicación o en los
+            Sitios para recopilar y almacenar información sobre su uso de la
+            Aplicación, los Sitios y otras aplicaciones o sitios web, incluida
+            su dirección IP, navegador web, páginas. visualizados, datos de
+            tráfico, tiempo dedicado a las páginas, enlaces en los que se hizo
+            clic, información de conversión e ID de usuario. Esta información
+            puede ser utilizada por Volar y otros para, entre otras cosas,
+            analizar y rastrear datos, determinar la popularidad de cierto
+            contenido, comprender mejor su actividad en línea y mejorar su
+            experiencia en línea.
+          </p>
+          <h4>Seguridad</h4>
+          <p>
+            Volar toma medidas razonables para ayudar a proteger su información
+            contra pérdida, robo, uso indebido y acceso no autorizado,
+            divulgación, alteración y destrucción.
+          </p>
+          <h3>Tus Opciones</h3>
+          <h4>Información de la cuenta</h4>
+          <p>
+            Puede actualizar, corregir o eliminar información sobre usted en
+            cualquier momento. Si desea eliminar o desactivar su cuenta,
+            envíenos un correo electrónico a hola@volar.org.pe, pero tenga en
+            cuenta que podemos retener cierta información según lo requiera la
+            ley o con fines comerciales legítimos. También podemos conservar
+            copias en caché o archivadas de información sobre usted durante un
+            cierto período de tiempo.
+          </p>
+          <h4>Cookies</h4>
+          <p>
+            La mayoría de los navegadores web están configurados para aceptar
+            cookies de forma predeterminada. Si lo prefiere, generalmente puede
+            elegir configurar su navegador para eliminar o rechazar las cookies
+            del navegador. Tenga en cuenta que si elige eliminar o rechazar las
+            cookies, esto podría afectar la disponibilidad y funcionalidad de
+            nuestros Servicios.
+          </p>
+          <h3>Contáctenos</h3>
+          <p>Si tiene alguna pregunta sobre esta Política de privacidad, contáctenos en: volar.org.pe</p>
+        </div>
+      </div>
     </div>
   );
 };

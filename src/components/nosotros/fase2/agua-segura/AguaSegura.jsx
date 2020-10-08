@@ -1,5 +1,8 @@
 import React from "react";
 
+import * as Scroll from 'react-scroll';
+import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
 import "./AguaSegura.css";
 import { useHistory } from "react-router-dom";
 

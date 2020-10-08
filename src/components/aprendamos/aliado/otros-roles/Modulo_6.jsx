@@ -14,29 +14,29 @@ import infografia17 from "./../../../../images/modulos-img/6-Juego Esctructurado
 import infografia18 from "./../../../../images/modulos-img/6-Niños dejan de jugar.jpg";
 import { Button, Modal } from "react-bootstrap";
 
-
 const Modulo_6 = () => {
-    const [showInfografia16, setShowInfografia16] = React.useState(false);
-    const [showInfografia17, setShowInfografia17] = React.useState(false);
-    const [showInfografia18, setShowInfografia18] = React.useState(false);
+  const [showInfografia16, setShowInfografia16] = React.useState(false);
+  const [showInfografia17, setShowInfografia17] = React.useState(false);
+  const [showInfografia18, setShowInfografia18] = React.useState(false);
 
-    const handleCloseInfografia16 = () => setShowInfografia16(false);
-    const handleShowInfografia16 = () => setShowInfografia16(true);
-    const handleCloseInfografia17 = () => setShowInfografia17(false);
-    const handleShowInfografia17 = () => setShowInfografia17(true);
-    const handleCloseInfografia18 = () => setShowInfografia18(false);
-    const handleShowInfografia18 = () => setShowInfografia18(true);
+  const handleCloseInfografia16 = () => setShowInfografia16(false);
+  const handleShowInfografia16 = () => setShowInfografia16(true);
+  const handleCloseInfografia17 = () => setShowInfografia17(false);
+  const handleShowInfografia17 = () => setShowInfografia17(true);
+  const handleCloseInfografia18 = () => setShowInfografia18(false);
+  const handleShowInfografia18 = () => setShowInfografia18(true);
 
   let history = useHistory();
   return (
     <div className="box-modulos-aliados">
-      <a onClick={() => {
+      {/* <a onClick={() => {
           history.goBack();
-        }}>
-      <i
-        className="fas fa-chevron-left arrowGoback-docente goBack-docente"
-        aria-hidden="true"
-      ></i>
+        }}> */}
+      <a href="/aprendamos/aliado/modulos">
+        <i
+          className="fas fa-chevron-left arrowGoback-docente goBack-docente"
+          aria-hidden="true"
+        ></i>
       </a>
       <div className="row sin-margin-row">
         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 box-modulos-textos">
@@ -110,7 +110,10 @@ const Modulo_6 = () => {
               materna.{" "}
             </p>
           </div>
-          <btn className="btn-modulos-info" onClick={() => handleShowInfografia16()}>
+          <btn
+            className="btn-modulos-info"
+            onClick={() => handleShowInfografia16()}
+          >
             <figure className="btn-infografia">
               <img src={infografia} alt="" className="w-100" />
             </figure>
@@ -119,7 +122,10 @@ const Modulo_6 = () => {
               desarrollo de los niños
             </div>
           </btn>
-          <btn className="btn-modulos-info" onClick={() => handleShowInfografia17()}>
+          <btn
+            className="btn-modulos-info"
+            onClick={() => handleShowInfografia17()}
+          >
             <figure className="btn-infografia">
               <img src={infografia} alt="" className="w-100" />
             </figure>
@@ -128,7 +134,10 @@ const Modulo_6 = () => {
               el desarrollo de los niños
             </div>
           </btn>
-          <btn className="btn-modulos-info" onClick={() => handleShowInfografia18()}>
+          <btn
+            className="btn-modulos-info"
+            onClick={() => handleShowInfografia18()}
+          >
             <figure className="btn-infografia">
               <img src={infografia} alt="" className="w-100" />
             </figure>
@@ -146,7 +155,7 @@ const Modulo_6 = () => {
               <div>
                 <div className="row">
                   <div className="col-12">
-                    <img className="img-infografia" src={infografia16} alt=""/>
+                    <img className="img-infografia" src={infografia16} alt="" />
                   </div>
                 </div>
               </div>
@@ -162,7 +171,7 @@ const Modulo_6 = () => {
               <div>
                 <div className="row">
                   <div className="col-12">
-                    <img className="img-infografia" src={infografia17} alt=""/>
+                    <img className="img-infografia" src={infografia17} alt="" />
                   </div>
                 </div>
               </div>
@@ -178,7 +187,7 @@ const Modulo_6 = () => {
               <div>
                 <div className="row">
                   <div className="col-12">
-                    <img className="img-infografia" src={infografia18} alt=""/>
+                    <img className="img-infografia" src={infografia18} alt="" />
                   </div>
                 </div>
               </div>

@@ -18,14 +18,14 @@ const Modulo_3 = () => {
   let history = useHistory();
   return (
     <div className="box-modulos-aliados">
-      <a onClick={() => {
+      {/* <a onClick={() => {
           history.goBack();
-        }}>
-      <i
-        
-        className="fas fa-chevron-left arrowGoback-docente goBack-docente"
-        aria-hidden="true"
-      ></i>
+        }}> */}
+      <a href="/aprendamos/aliado/modulos">
+        <i
+          className="fas fa-chevron-left arrowGoback-docente goBack-docente"
+          aria-hidden="true"
+        ></i>
       </a>
       <div className="row sin-margin-row">
         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 box-modulos-textos">
@@ -114,3 +114,4 @@ const Modulo_3 = () => {
 };
 
 export default Modulo_3;
+

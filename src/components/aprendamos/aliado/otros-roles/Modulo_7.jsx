@@ -24,13 +24,14 @@ const Modulo_7 = () => {
   let history = useHistory();
   return (
     <div className="box-modulos-aliados">
-      <a onClick={() => {
+      {/* <a onClick={() => {
           history.goBack();
-        }}>
-      <i
-        className="fas fa-chevron-left arrowGoback-docente goBack-docente"
-        aria-hidden="true"
-      ></i>
+        }}> */}
+      <a href="/aprendamos/aliado/modulos">
+        <i
+          className="fas fa-chevron-left arrowGoback-docente goBack-docente"
+          aria-hidden="true"
+        ></i>
       </a>
       <div className="row sin-margin-row">
         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 box-modulos-textos">
@@ -75,7 +76,10 @@ const Modulo_7 = () => {
               Alimentación balanceada
             </h3>
           </div>
-          <btn className="btn-modulos-info" onClick={() => handleShowInfografia19()}>
+          <btn
+            className="btn-modulos-info"
+            onClick={() => handleShowInfografia19()}
+          >
             <figure className="btn-infografia">
               <img src={infografia} alt="" className="w-100" />
             </figure>
@@ -83,7 +87,10 @@ const Modulo_7 = () => {
               Infografía alimentación balanceada según edad
             </div>
           </btn>
-          <btn className="btn-modulos-info" onClick={() => handleShowInfografia20()}>
+          <btn
+            className="btn-modulos-info"
+            onClick={() => handleShowInfografia20()}
+          >
             <figure className="btn-infografia">
               <img src={infografia} alt="" className="w-100" />
             </figure>
@@ -96,12 +103,12 @@ const Modulo_7 = () => {
       <Modal show={showInfografia19} onHide={handleCloseInfografia19}>
         <Modal.Header closeButton></Modal.Header>
         <Modal.Body>
-        <div className="container animated fadeIn">
+          <div className="container animated fadeIn">
             <div className="">
               <div>
                 <div className="row">
                   <div className="col-12">
-                    <img className="img-infografia" src={infografia19} alt=""/>
+                    <img className="img-infografia" src={infografia19} alt="" />
                   </div>
                 </div>
               </div>
@@ -117,7 +124,7 @@ const Modulo_7 = () => {
               <div>
                 <div className="row">
                   <div className="col-12">
-                    <img className="img-infografia" src={infografia20} alt=""/>
+                    <img className="img-infografia" src={infografia20} alt="" />
                   </div>
                 </div>
               </div>

@@ -17,24 +17,22 @@ const Modulo_4 = () => {
   const [showInfografia10, setShowInfografia10] = React.useState(false);
   const [showInfografia11, setShowInfografia11] = React.useState(false);
 
-
   const handleCloseInfografia10 = () => setShowInfografia10(false);
   const handleShowInfografia10 = () => setShowInfografia10(true);
   const handleCloseInfografia11 = () => setShowInfografia11(false);
   const handleShowInfografia11 = () => setShowInfografia11(true);
 
-
   let history = useHistory();
   return (
     <div className="box-modulos-aliados">
-      <a onClick={() => {
+      {/* <a onClick={() => {
           history.goBack();
-        }}>
-      <i
-        
-        className="fas fa-chevron-left arrowGoback-docente goBack-docente"
-        aria-hidden="true"
-      ></i>
+        }}> */}
+      <a href="/aprendamos/aliado/modulos">
+        <i
+          className="fas fa-chevron-left arrowGoback-docente goBack-docente"
+          aria-hidden="true"
+        ></i>
       </a>
       <div className="row sin-margin-row">
         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 box-modulos-textos">
@@ -90,20 +88,26 @@ const Modulo_4 = () => {
               Infografía: beneficios de las rutinas para los niños{" "}
             </p>
           </div>
-          <btn className="btn-modulos-info" onClick={() => handleShowInfografia10()}>
+          <btn
+            className="btn-modulos-info"
+            onClick={() => handleShowInfografia10()}
+          >
             <figure className="btn-infografia">
               <img src={infografia} alt="" className="w-100" />
             </figure>
             <div className="btn-info-text">
-            Infografía: beneficios de las rutinas para los niños.
+              Infografía: beneficios de las rutinas para los niños.
             </div>
           </btn>
-          <btn className="btn-modulos-info" onClick={() => handleShowInfografia11()}>
+          <btn
+            className="btn-modulos-info"
+            onClick={() => handleShowInfografia11()}
+          >
             <figure className="btn-infografia">
               <img src={infografia} alt="" className="w-100" />
             </figure>
             <div className="btn-info-text">
-            Infografía: pasos para crear una rutina diaria.
+              Infografía: pasos para crear una rutina diaria.
             </div>
           </btn>
         </div>
@@ -116,7 +120,7 @@ const Modulo_4 = () => {
               <div>
                 <div className="row">
                   <div className="col-12">
-                    <img className="img-infografia" src={infografia10} alt=""/>
+                    <img className="img-infografia" src={infografia10} alt="" />
                   </div>
                 </div>
               </div>
@@ -132,7 +136,7 @@ const Modulo_4 = () => {
               <div>
                 <div className="row">
                   <div className="col-12">
-                    <img className="img-infografia" src={infografia11} alt=""/>
+                    <img className="img-infografia" src={infografia11} alt="" />
                   </div>
                 </div>
               </div>

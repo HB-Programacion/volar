@@ -8,32 +8,33 @@ import infografia from "../../../../images/modulos-img/infografia.svg";
 import video from "../../../../images/modulos-img/video.svg";
 import arrowLeft from "./../../../../images/arrow-left-blue.svg";
 import arrowRight from "./../../../../images/arrow-right-blue.svg";
-import infografia1 from "./../../../../images/modulos-img/1-Conexiones\ Neuronales.jpg";
-import infografia2 from "./../../../../images/modulos-img/1-Estres toxico 1.jpg"
+import infografia1 from "./../../../../images/modulos-img/1-Conexiones Neuronales.jpg";
+import infografia2 from "./../../../../images/modulos-img/1-Estres toxico 1.jpg";
 import { Button, Modal } from "react-bootstrap";
 
 const Modulo_1 = () => {
   const [showInfografia1, setShowInfografia1] = React.useState(false);
   const [showVideo1, setShowVideo1] = React.useState(false);
   const [showInfografia2, setShowInfografia2] = React.useState(false);
-   
+
   const handleCloseInfografia1 = () => setShowInfografia1(false);
   const handleShowInfografia1 = () => setShowInfografia1(true);
   const handleCloseInfografia2 = () => setShowInfografia2(false);
   const handleShowInfografia2 = () => setShowInfografia2(true);
-  const handleCloseVideo1=()=> setShowVideo1(false)
-  const handleShowVideo1=()=> setShowVideo1(true)
+  const handleCloseVideo1 = () => setShowVideo1(false);
+  const handleShowVideo1 = () => setShowVideo1(true);
   let history = useHistory();
   return (
     <div className="box-modulos-aliados">
-      <a onClick={() => {
+      {/* <a onClick={() => {
           history.goBack();
-        }}>
-      <i
-        
-        className="fas fa-chevron-left arrowGoback-docente goBack-docente"
-        aria-hidden="true"
-      ></i>
+        }}> */}
+
+      <a href="/aprendamos/aliado/modulos">
+        <i
+          className="fas fa-chevron-left arrowGoback-docente goBack-docente"
+          aria-hidden="true"
+        ></i>
       </a>
       <div className="row sin-margin-row">
         <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 box-modulos-textos">
@@ -82,14 +83,17 @@ const Modulo_1 = () => {
         <div className="col-sm-12 col-md-12 col-lg-4 col-xl-4 ">
           <div>
             <figure className="w-20 m-auto">
-              <img src={cerebro} alt="" className="w-100"  />
+              <img src={cerebro} alt="" className="w-100" />
             </figure>
             <h3 className="title-materiales-modulos">Estructura del cerebro</h3>
             <p className="subtitle-materiales-modulos">
               ¡Conviértete en un desarrollador de cerebros!.
             </p>
           </div>
-          <button className="btn-modulos-info" onClick={()=>handleShowInfografia1()}>
+          <button
+            className="btn-modulos-info"
+            onClick={() => handleShowInfografia1()}
+          >
             <figure className="btn-infografia">
               <img src={infografia} alt="" className="w-100" />
             </figure>
@@ -98,7 +102,10 @@ const Modulo_1 = () => {
               el nacimiento hasta los 5 años.
             </div>
           </button>
-          <button className="btn-modulos-info" onClick={()=>handleShowVideo1()}>
+          <button
+            className="btn-modulos-info"
+            onClick={() => handleShowVideo1()}
+          >
             <figure className="btn-infografia">
               <img src={video} alt="" className="w-100" />
             </figure>
@@ -120,7 +127,7 @@ const Modulo_1 = () => {
               niños de todas las edades en nuestra sección “Aprendamos”.
             </p>
           </div>
-          <a href="https://www.facebook.com/somosvolar" className="btn-aprendamos-aliados">
+          <a href="https://www.facebook.com/somosvolar/" className="btn-aprendamos-aliados">
             <div className="mt-5 btn-azul-aprendamos ">
               <img src={arrowLeft} className="arrow-blue"></img>
               APRENDAMOS
@@ -138,7 +145,10 @@ const Modulo_1 = () => {
               ¡Aprendamos a prevenir el estrés tóxico!
             </p>
           </div>
-          <button className="btn-modulos-info" onClick={()=>handleShowInfografia2()}>
+          <button
+            className="btn-modulos-info"
+            onClick={() => handleShowInfografia2()}
+          >
             <figure className="btn-infografia">
               <img src={infografia} alt="" className="w-100" />
             </figure>
@@ -157,7 +167,7 @@ const Modulo_1 = () => {
               <div>
                 <div className="row">
                   <div className="col-12">
-                    <img className="img-infografia" src={infografia1} alt=""/>
+                    <img className="img-infografia" src={infografia1} alt="" />
                   </div>
                 </div>
               </div>
@@ -170,17 +180,17 @@ const Modulo_1 = () => {
         <Modal.Body>
           <div className="container animated fadeIn">
             <div className="">
-            <div className="videoWrapper">
-                        <iframe
-                          className="border-video-rutina"
-                          width="600"
-                          height="350"
-                          src="https://www.youtube.com/embed/DAekMfWImXg"
-                          frameborder="0"
-                          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                          allowfullscreen
-                        ></iframe>
-                      </div>
+              <div className="videoWrapper">
+                <iframe
+                  className="border-video-rutina"
+                  width="600"
+                  height="350"
+                  src="https://www.youtube.com/embed/DAekMfWImXg"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </Modal.Body>
@@ -188,12 +198,12 @@ const Modulo_1 = () => {
       <Modal show={showInfografia2} onHide={handleCloseInfografia2}>
         <Modal.Header closeButton></Modal.Header>
         <Modal.Body>
-        <div className="container animated fadeIn">
+          <div className="container animated fadeIn">
             <div className="">
               <div>
                 <div className="row">
                   <div className="col-12">
-                    <img className="img-infografia" src={ infografia2} alt=""/>
+                    <img className="img-infografia" src={infografia2} alt="" />
                   </div>
                 </div>
               </div>
