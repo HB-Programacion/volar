@@ -47,7 +47,7 @@ const Home = () => {
   return (
     <div className="animated fadeIn">
       <Helmet>
-        <title>Home - Volar</title>
+        <title>Inicio - Volar</title>
         <meta
           name="description"
           content="Volar es un proyecto de Aporta Desarrollo Sostenible, la plataforma de impacto social del Grupo Breca, diseñado con la intención de que las niñas y niños peruanos de 0 a 5 años alcancen su máximo potencial."
