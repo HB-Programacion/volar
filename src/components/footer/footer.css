@@ -33,7 +33,8 @@
    }
    .box-ubicacion p{
      font-size: 1rem;
-     line-height: .3rem
+     line-height: .3rem;
+     font-family: 'Questrial';
    }
    .box-ubicacion .text-small{
      font-size: .88rem
@@ -41,7 +42,8 @@
    
    .box-correo p, .box-telefono{
      font-size: 1rem;
-     line-height: .3rem
+     line-height: .3rem;
+     font-family: 'Questrial';
    }
    .aporta{
     width: 8rem;
@@ -96,5 +98,10 @@
     .box-correo p, .box-telefono{
       font-size: 1.2rem;
       line-height: .5rem
+    }
+    .terminos-condiciones p{
+      font-family: 'Questrial';
+      font-size: 1.2rem;
+     
     }
   }

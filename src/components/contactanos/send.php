@@ -68,7 +68,7 @@ $message1 = '  <table style="max-width: 600px; padding: 10px; margin:0 auto; bor
 <tr>
     <td style="">
         <div style="color: #34495e; margin: 4% 10% 2%; text-align: justify;font-family: sans-serif">
-            <h2 style="color: #9C252D; text-align: center;">¡Hola ' . $_POST['name'] . '  Confirmamos tu  participación!</h2>
+            <h2 style="color: #9C252D; text-align: center;">¡Hola ' . $_POST['name'] . '  Gracias por contactarte con nosotros</h2>
             <p style="text-align: center; font-size: 0.8rem; color:#A99354; font-weight: 700;font-style: italic;">
                 Pronto nos estaremos comunicando contigo para enviarte el link del evento.
             </p>
@@ -93,45 +93,41 @@ $message2 = '<div> <h3>Hay una persona que desea comunicarse con Volar .</h3><ta
 
 echo '<!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Refresh" content="4;url=https://volar.org.pe">
-    <link  rel="icon"   href="favicon.jpeg" type="image/jpeg" />
-    <title>Estas Registrado</title>
-<style media="screen">
-body { background: #2e335e; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0;}
-#message {
-background: white;
-width: 360px;
-margin: 100px auto 16px;
-padding: 32px 24px 16px;
-border-radius: 3px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
-#message h3 { color: #1e1e1e; font-weight: normal; font-size: 1rem; margin: 16px 0 12px; }
-#message h1 { font-size: 1.5rem; font-weight: 700; color: #2e335e; margin: 0 0 16px;text-align: center;}
-#img-logo{
+    <link rel="icon" href="favicon.jpeg" type="image/jpeg" />
+    <title>Contáctanos</title>
+    <style media="screen">
+        body {
+            background: #2e335e;
+        }
 
-  margin:auto
-}
-#load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-@media (max-width: 600px) {
-  #message { margin-top: 0; background: white; box-shadow: none; width: 300px; margin: 10rem auto 1rem; border-top: 16px solid #ef8b44;}
+        .img-gracias {
+            width: 30%;
+            padding-top: 9rem;
+            padding-bottom: 7rem;
+            margin: auto;
+            display: block;
+        }
 
-}
+        @media (max-width: 768px) {
+            .img-gracias {
+                width: 70%;
+            }
+        }
+    </style>
 </head>
-</style>
+
 </head>
+
 <body>
-<div id="message">
-<h1>GRACIAS POR CONTACTARSE CON VOLAR</h1>
-<h3>Pronto nos estaremos comunicando contigo.</h3>
-<img id="img-logo" src="https://volar.org.pe/logo-volar.png" alt="">
-</div>
+    <div>
+        <img src="https://volar.org.pe/static/media/gracias-volar.png" alt="" class="img-gracias"></img>
+
+    </div>
 </body>
 
 </html>';

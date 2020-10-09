@@ -451,7 +451,7 @@ function App() {
               </Route>
               <Route path="/password/reset" exact component={PasswordReset} />
               <Route path="/new-password" exact component={NewPassword} /></>)}
-          {/* <Route component={Error} /> */}
+          <Route component={Error} />
         </Switch>
         <Footer />
         <Redes />
