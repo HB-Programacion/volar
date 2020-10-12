@@ -78,6 +78,7 @@ import Secundaria from "./components/aprendamos/aliado/docente/recursos/secundar
 import Cuentacuentos from "./components/aprendamos/aliado/docente/recursos/cuentacuentos/Cuentacuentos";
 import Error from "./components/Error"
 import Condiciones from "./components/loginRegister/Condiciones";
+import GraciasForm from "./components/contactanos/GraciasForm";
 
 function App() {
   const [firebaseUser, setFirebaseUser] = React.useState(false);
@@ -434,6 +435,7 @@ function App() {
           <Route path="/aprendamos/aliado/docente/recursos-extras/secundaria" exact component={Secundaria} />
           <Route path="/aprendamos/aliado/docente/recursos-extras/cuentacuentos" exact component={Cuentacuentos} />
           <Route path="/condiciones" exact component={Condiciones} />
+          <Route path="/gracias_por_contactarse" exact component={GraciasForm} />
           <Route path="/registro-niño" exact>
             <RegistroChild
               firebaseUser={firebaseUser}

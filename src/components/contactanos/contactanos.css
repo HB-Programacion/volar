@@ -14,8 +14,44 @@
 padding-bottom: 1.5rem;
 /* text-transform: uppercase */
 }
+.error-contactanos{
+    text-align: center;
+    color: red;
+    font-weight: 500;
+}
+.img-gracias {
+    width: 90%;
+    padding-top: 9rem;
+    padding-bottom: 7rem;
+    margin: auto;
+    display: block;
+}
 
+.box-blue-contactanos{
+    background-color: #2e335e;
+}
+.fade-in {
+	-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
 
+ @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
 @media (min-width: 769px) {
     .caja-boton-contactanos{
         width: 35%!important;
@@ -24,5 +60,7 @@ padding-bottom: 1.5rem;
         padding-top: 7rem;
         margin-bottom: 10rem
     }
-
+    .img-gracias {
+        width: 40%;
+    }
 }

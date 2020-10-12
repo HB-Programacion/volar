@@ -1,6 +1,11 @@
 
 <?php
+//  ini_set('SMTP', "localhost");
+//  ini_set('smtp_port', 25);
+//  ini_set('sendmail_from', "postmaster@localhost.com");
+//  ini_set('display_errors', "On");    // Mostrar los errores (usar sólo durante las pruebas)
 function send_email($from, $to, $subject, $message_html, $message_txt = '')
+ 
 {
 
     $email = $to;
@@ -53,51 +58,60 @@ if ( ! isset($_POST['email']) ) {
 // Construimos el mensaje
 $to = 'narda@henribarrett.com,judith@henribarrett.com';
 $reply1 = 'hola@volar.org.pe';
-$reply2 = 'CONTÁCTANOS - VOLAR';
+// $reply2 = 'CONTÁCTANOS - VOLAR';
 $user_email = $_POST['email'];
 $subject1 = 'CONTÁCTANOS - VOLAR';
-$subject2 = 'CONTÁCTANOS - VOLAR';
+// $subject2 = 'CONTÁCTANOS - VOLAR';
 
-$message1 = '  <table style="max-width: 600px; padding: 10px; margin:0 auto; border-collapse: collapse; background-color: #fff;">
-<tr>
-    <td style=" text-align: left; padding-top: 2rem;">
-            <img width="85%" style="display:block; margin: auto" src="https://henribarrett.com/unidos-en-la-mesa/banner1.png">
-    </td>
-</tr>
+// $message1 = '  <table style="max-width: 600px; padding: 10px; margin:0 auto; border-collapse: collapse; background-color: #fff;">
+// <tr>
+//     <td style=" text-align: left; padding-top: 2rem;">
+//             <img width="85%" style="display:block; margin: auto" src="https://henribarrett.com/unidos-en-la-mesa/banner1.png">
+//     </td>
+// </tr>
 
-<tr>
-    <td style="">
-        <div style="color: #34495e; margin: 4% 10% 2%; text-align: justify;font-family: sans-serif">
-            <h2 style="color: #9C252D; text-align: center;">¡Hola ' . $_POST['name'] . '  Gracias por contactarte con nosotros</h2>
-            <p style="text-align: center; font-size: 0.8rem; color:#A99354; font-weight: 700;font-style: italic;">
-                Pronto nos estaremos comunicando contigo para enviarte el link del evento.
-            </p>
+// <tr>
+//     <td style="">
+//         <div style="color: #34495e; margin: 4% 10% 2%; text-align: justify;font-family: sans-serif">
+//             <h2 style="color: #9C252D; text-align: center;">¡Hola ' . $_POST['name'] . '  Gracias por contactarte con nosotros</h2>
+//             <p style="text-align: center; font-size: 0.8rem; color:#A99354; font-weight: 700;font-style: italic;">
+//                 Pronto nos estaremos comunicando contigo para enviarte el link del evento.
+//             </p>
         
-            <p style="text-align: center; font-size: 0.7rem; color:#A99354; font-weight: 700;font-style: italic;">
-                Para mas información puedes escribir a <a href="mailto:hola@henribarrett.com">hola@henribarrett.com</a> o a través de nuestras redes sociales.
-            </p>
-            <hr>
-        </div>
-    </td>
-</tr>
+//             <p style="text-align: center; font-size: 0.7rem; color:#A99354; font-weight: 700;font-style: italic;">
+//                 Para mas información puedes escribir a <a href="mailto:hola@henribarrett.com">hola@henribarrett.com</a> o a través de nuestras redes sociales.
+//             </p>
+//             <hr>
+//         </div>
+//     </td>
+// </tr>
     
-<tr>
-    <td style="padding-bottom: 2rem;">
-        <img style="padding: 0; display: block; margin: auto;" src="https://henribarrett.com/unidos-en-la-mesa/footer.png" width="85%">
-    </td>
-</tr>
+// <tr>
+//     <td style="padding-bottom: 2rem;">
+//         <img style="padding: 0; display: block; margin: auto;" src="https://henribarrett.com/unidos-en-la-mesa/footer.png" width="85%">
+//     </td>
+// </tr>
 
-</table>';
+// </table>';
 
-$message2 = '<div> <h3>Hay una persona que desea comunicarse con Volar .</h3><table> <tr><td>Nombre</td><td>' . $_POST['name'] . '</td></tr><tr><td>Email</td><td>' . $_POST['email'] . '</td></tr><tr><td>Empresa</td><td>' . $_POST['message'] . '</td></tr></table></div>';
+$message1 = '<div> <h3>Hay una persona que desea comunicarse con Volar .</h3><table> <tr><td>Nombre</td><td>' . $_POST['name'] . '</td></tr><tr><td>Email</td><td>' . $_POST['email'] . '</td></tr><tr><td>Empresa</td><td>' . $_POST['message'] . '</td></tr></table></div>';
 
+
+
+// send_email($reply1, $user_email, $subject1, $message1);
+
+
+send_email($reply1, $to, $subject1, $message1);
+
+
+if( $send_email == true )
 echo '<!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Refresh" content="4;url=https://volar.org.pe">
+    <meta http-equiv="Refresh" content="8;url=https://volar.org.pe">
     <link rel="icon" href="favicon.jpeg" type="image/jpeg" />
     <title>Contáctanos</title>
     <style media="screen">
@@ -131,13 +145,8 @@ echo '<!DOCTYPE html>
 </body>
 
 </html>';
-
-send_email($reply1, $user_email, $subject1, $message1);
-
-
-send_email($reply1, $to, $subject2, $message2);
-
-
+else
+echo "<p>ERROR al enviar el E-Mail</p>";
 
 ?>
 
