@@ -12,7 +12,7 @@ import iconAreaRutina from "./../../../images/icon-rutina.svg";
 import iconAreaJuego from "./../../../images/icon-juego.svg";
 import iconAreaNutricion from "./../../../images/icon-nutricion.svg";
 import iconAreaSesamo from "./../../../images/icon-sesamo.svg";
-import {db } from "../../../components/firebase/firebase";
+import { db } from "../../../components/firebase/firebase";
 import arrTips from "../../../../src/data";
 
 export const BienvenidoCuidador = ({
@@ -36,7 +36,7 @@ export const BienvenidoCuidador = ({
         .then((doc) => {
           setColaboradorBreca(doc.data().breca);
         })
-        .catch(function (error) {
+        .catch(function(error) {
           console.log("Error getting document:", error);
         });
     }
@@ -51,70 +51,55 @@ export const BienvenidoCuidador = ({
         .then((snapShots) => {
           setNameChild(snapShots.data().nameChild);
         })
-        .catch(function (error) {
+        .catch(function(error) {
           console.log("Error getting document:", error);
         });
     }
-    {
-      /* if(contenidoFirebase){
-       const newFilter=  contenidoFirebase.docs.filter(item=> item.data().video!=="" && item.data().seccion=== "Sésamo")
-       let  numberAleatorio = Math.round(Math.random()*(newFilter.length-1));
-
-       setVideoAleatorio(newFilter[numberAleatorio].data().video);
-   
-     }*/
-    }
-    if (firebaseUser !== null ){
-
+    if (firebaseUser !== null) {
       const newFilter = arrTips.filter(
-        (item) => item.video !== "" && item.seccion !== "Sésamo"  && item.edad == localStorage.getItem('edadChildLogueadoActive')
+        (item) =>
+          item.video !== "" &&
+          item.seccion !== "Sésamo" &&
+          item.edad == localStorage.getItem("edadChildLogueadoActive")
       );
       let numberAleatorio = Math.round(Math.random() * (newFilter.length - 1));
-  
+
       setVideoAleatorio(newFilter[numberAleatorio].video);
       setTexto1aAleatorio(newFilter[numberAleatorio].texto1A);
       setTexto1bAleatorio(newFilter[numberAleatorio].texto1B);
       setTexto2Aleatorio(newFilter[numberAleatorio].texto2);
-      setColorSeccionAleatorio(newFilter[numberAleatorio].seccion)
-      console.log("seccion", colorSeccionAleatorio)
-      console.log("textoa", texto1aAleatorio)
-      console.log("textob", texto1bAleatorio)
+      setColorSeccionAleatorio(newFilter[numberAleatorio].seccion);
+      console.log("seccion", colorSeccionAleatorio);
+      console.log("textoa", texto1aAleatorio);
+      console.log("textob", texto1bAleatorio);
     } else {
       const newFilter = arrTips.filter(
-        (item) => item.video !== "" && item.seccion !== "Sésamo"  && item.edad == JSON.parse(localStorage.getItem("dateChild")).edad
+        (item) =>
+          item.video !== "" &&
+          item.seccion !== "Sésamo" &&
+          item.edad == JSON.parse(localStorage.getItem("dateChild")).edad
       );
       let numberAleatorio = Math.round(Math.random() * (newFilter.length - 1));
-  
+
       setVideoAleatorio(newFilter[numberAleatorio].video);
       setTexto1aAleatorio(newFilter[numberAleatorio].texto1A);
       setTexto1bAleatorio(newFilter[numberAleatorio].texto1B);
       setTexto2Aleatorio(newFilter[numberAleatorio].texto2);
-      setColorSeccionAleatorio(newFilter[numberAleatorio].seccion)
-      console.log("seccion", colorSeccionAleatorio)
-      console.log("textoa", texto1aAleatorio)
-      console.log("textob", texto1bAleatorio)
+      setColorSeccionAleatorio(newFilter[numberAleatorio].seccion);
+      console.log("seccion", colorSeccionAleatorio);
+      console.log("textoa", texto1aAleatorio);
+      console.log("textob", texto1bAleatorio);
     }
-   
- 
-   /* if(colorSeccionAleatorio === "Higiene y Agua Segura") {
-      setColorSeccionAleatorio("#7dc7c5")
-    } else if (colorSeccionAleatorio === "Socioemocional"){
-      setColorSeccionAleatorio("#ae96b2")
-    } else if (colorSeccionAleatorio === "Juego"){
-      setColorSeccionAleatorio("#f7b919")
-    } else if (colorSeccionAleatorio === "Rutina"){
-      setColorSeccionAleatorio("#ef8b44")
-    } else {
-      setColorSeccionAleatorio("#eb477a")
-    }*/
-    
   }, [firebaseUser, idChild]);
 
   return (
     <>
       {firebaseUser !== null ? (
         <div className="pb-5 ">
-          <div style ={{backgroundColor:colorSeccionAleatorio}} className="box-title-cuidador  animated fadeIn ">
+          <div
+            style={{ backgroundColor: colorSeccionAleatorio }}
+            className="box-title-cuidador  animated fadeIn "
+          >
             <div className="box-row-1 ">
               {/* <img src={starsLeftDesktop} className="stars-left-desktop heartbeat"></img> */}
               <img
@@ -129,28 +114,22 @@ export const BienvenidoCuidador = ({
             </div>
 
             <div className="box-row-2">
-            {texto1bAleatorio !== ""  && texto1aAleatorio!== "" ? (
-                              <p className="box-text ">
-                                 {texto1aAleatorio}  {localStorage.getItem("nameChildActive")} {texto1bAleatorio} 
-                              </p>
-                            ) : (
-                               texto1bAleatorio !== ""  && texto1aAleatorio === "" ? (
-                                <p className="box-text ">
-                                {texto1bAleatorio}
-                              </p>
-                              ):(
-                                <p className="box-text ">
-                               {localStorage.getItem("nameChildActive")}  {texto1aAleatorio}  
-                              </p>
-                              ) 
-                              
-                            )}
+              {texto1bAleatorio !== "" && texto1aAleatorio !== "" ? (
+                <p className="box-text ">
+                  {texto1aAleatorio} {localStorage.getItem("nameChildActive")}{" "}
+                  {texto1bAleatorio}
+                </p>
+              ) : texto1bAleatorio !== "" && texto1aAleatorio === "" ? (
+                <p className="box-text ">{texto1bAleatorio}</p>
+              ) : (
+                <p className="box-text ">
+                  {localStorage.getItem("nameChildActive")} {texto1aAleatorio}
+                </p>
+              )}
             </div>
           </div>
           <p className="estrellita-lila heartbeat">&#10022;</p>
-          <p className="title-dit">
-          {texto2Aleatorio}  
-          </p>
+          <p className="title-dit">{texto2Aleatorio}</p>
           <p className="estrellita-lila heartbeat">&#10022;</p>
           <div className="mt-3 video">
             <div className="video-responsive">
@@ -233,24 +212,26 @@ export const BienvenidoCuidador = ({
                     </div>
                   </a>
                 </div>
-                { localStorage.getItem('edadChildLogueadoActive')==="-1" ?"":(
-                     <div className="w-20">
-                     <a
-                       href={`/aprendamos/cuidador/${localStorage.getItem(
-                         "idChildLogueadoActive"
-                       )}/juego`}
-                       className="link"
-                     >
-                       <div className="area-juego">
-                         <img
-                           src={iconAreaJuego}
-                           className="icon-area heartbeat"
-                           alt="stars-left"
-                         />
-                         <p className="text-area-juego">JUEGO</p>
-                       </div>
-                     </a>
-                   </div>
+                {localStorage.getItem("edadChildLogueadoActive") === "-1" ? (
+                  ""
+                ) : (
+                  <div className="w-20">
+                    <a
+                      href={`/aprendamos/cuidador/${localStorage.getItem(
+                        "idChildLogueadoActive"
+                      )}/juego`}
+                      className="link"
+                    >
+                      <div className="area-juego">
+                        <img
+                          src={iconAreaJuego}
+                          className="icon-area heartbeat"
+                          alt="stars-left"
+                        />
+                        <p className="text-area-juego">JUEGO</p>
+                      </div>
+                    </a>
+                  </div>
                 )}
                 <div className="w-20">
                   <a
@@ -274,7 +255,6 @@ export const BienvenidoCuidador = ({
               </div>
             ) : (
               <>
-                
                 <div className="btn-areas w-100">
                   <div className="w-20">
                     <a
@@ -331,25 +311,27 @@ export const BienvenidoCuidador = ({
                   </div>
                 </div>
                 <div className="btn-areas w-100">
-                { localStorage.getItem('edadChildLogueadoActive')==="-1" ?"":(
-                     <div className="w-20">
-                     <a
-                       href={`/aprendamos/cuidador/${localStorage.getItem(
-                         "idChildLogueadoActive"
-                       )}/juego`}
-                       className="link"
-                     >
-                       <div className="area-juego">
-                         <img
-                           src={iconAreaJuego}
-                           className="icon-area heartbeat"
-                           alt="stars-left"
-                         />
-                         <p className="text-area-juego">JUEGO</p>
-                       </div>
-                     </a>
-                   </div>
-                )}
+                  {localStorage.getItem("edadChildLogueadoActive") === "-1" ? (
+                    ""
+                  ) : (
+                    <div className="w-20">
+                      <a
+                        href={`/aprendamos/cuidador/${localStorage.getItem(
+                          "idChildLogueadoActive"
+                        )}/juego`}
+                        className="link"
+                      >
+                        <div className="area-juego">
+                          <img
+                            src={iconAreaJuego}
+                            className="icon-area heartbeat"
+                            alt="stars-left"
+                          />
+                          <p className="text-area-juego">JUEGO</p>
+                        </div>
+                      </a>
+                    </div>
+                  )}
                   <div className="w-20">
                     <a
                       href={`/aprendamos/cuidador/${localStorage.getItem(
@@ -426,147 +408,150 @@ export const BienvenidoCuidador = ({
                 </a>
               </div>
             </div>
-            { localStorage.getItem('edadChildLogueadoActive')==="-1" ?(
+            {localStorage.getItem("edadChildLogueadoActive") === "-1" ? (
               <>
-              <div className="btn-areas w-100">
-              <div className="w-50">
-                <a
-                  href={`/aprendamos/cuidador/${localStorage.getItem(
-                    "idChildLogueadoActive"
-                  )}/rutina`}
-                  className="link"
-                >
-                  <div className="area-rutina">
-                    <img
-                      src={iconAreaRutina}
-                      className="icon-area heartbeat"
-                      alt="stars-left"
-                    />
-                    <p className="text-area-rutina">RUTINA</p>
+                <div className="btn-areas w-100">
+                  <div className="w-50">
+                    <a
+                      href={`/aprendamos/cuidador/${localStorage.getItem(
+                        "idChildLogueadoActive"
+                      )}/rutina`}
+                      className="link"
+                    >
+                      <div className="area-rutina">
+                        <img
+                          src={iconAreaRutina}
+                          className="icon-area heartbeat"
+                          alt="stars-left"
+                        />
+                        <p className="text-area-rutina">RUTINA</p>
+                      </div>
+                    </a>
                   </div>
-                </a>
-              </div>
-              <div className="w-50">
-                <a
-                  href={`/aprendamos/cuidador/${localStorage.getItem(
-                    "idChildLogueadoActive"
-                  )}/nutricion`}
-                  className="link"
-                >
-                  <div className="area-nutricion">
-                    <img
-                      src={iconAreaNutricion}
-                      className="icon-area heartbeat"
-                      alt="stars-left"
-                    />
-                    <p className="text-area-nutricion">NUTRICIÓN Y FÍSICO</p>
+                  <div className="w-50">
+                    <a
+                      href={`/aprendamos/cuidador/${localStorage.getItem(
+                        "idChildLogueadoActive"
+                      )}/nutricion`}
+                      className="link"
+                    >
+                      <div className="area-nutricion">
+                        <img
+                          src={iconAreaNutricion}
+                          className="icon-area heartbeat"
+                          alt="stars-left"
+                        />
+                        <p className="text-area-nutricion">
+                          NUTRICIÓN Y FÍSICO
+                        </p>
+                      </div>
+                    </a>
                   </div>
-                </a>
-              </div>
-            </div>
-            <div className="btn-areas w-100">
-              {colaboradorBreca === "SI" ? (
-                <div className="w-50">
-                  <a
-                    href={`/aprendamos/cuidador/${localStorage.getItem(
-                      "idChildLogueadoActive"
-                    )}/sesamo`}
-                    className="link"
-                  >
-                    <div className="area-sesamo">
-                      <img
-                        src={iconAreaSesamo}
-                        className="icon-sesamo heartbeat"
-                        alt="stars-left"
-                      />
-                    </div>
-                  </a>
                 </div>
-              ) : (
-                ""
-              )}
-            </div>
+                <div className="btn-areas w-100">
+                  {colaboradorBreca === "SI" ? (
+                    <div className="w-50">
+                      <a
+                        href={`/aprendamos/cuidador/${localStorage.getItem(
+                          "idChildLogueadoActive"
+                        )}/sesamo`}
+                        className="link"
+                      >
+                        <div className="area-sesamo">
+                          <img
+                            src={iconAreaSesamo}
+                            className="icon-sesamo heartbeat"
+                            alt="stars-left"
+                          />
+                        </div>
+                      </a>
+                    </div>
+                  ) : (
+                    ""
+                  )}
+                </div>
               </>
-            ):(
-                    <>
-                    <div className="btn-areas w-100">
-              <div className="w-50">
-                <a
-                  href={`/aprendamos/cuidador/${localStorage.getItem(
-                    "idChildLogueadoActive"
-                  )}/rutina`}
-                  className="link"
-                >
-                  <div className="area-rutina">
-                    <img
-                      src={iconAreaRutina}
-                      className="icon-area heartbeat"
-                      alt="stars-left"
-                    />
-                    <p className="text-area-rutina">RUTINA</p>
+            ) : (
+              <>
+                <div className="btn-areas w-100">
+                  <div className="w-50">
+                    <a
+                      href={`/aprendamos/cuidador/${localStorage.getItem(
+                        "idChildLogueadoActive"
+                      )}/rutina`}
+                      className="link"
+                    >
+                      <div className="area-rutina">
+                        <img
+                          src={iconAreaRutina}
+                          className="icon-area heartbeat"
+                          alt="stars-left"
+                        />
+                        <p className="text-area-rutina">RUTINA</p>
+                      </div>
+                    </a>
                   </div>
-                </a>
-              </div>
-              <div className="w-50">
-                <a
-                  href={`/aprendamos/cuidador/${localStorage.getItem(
-                    "idChildLogueadoActive"
-                  )}/juego`}
-                  className="link"
-                >
-                  <div className="area-juego">
-                    <img
-                      src={iconAreaJuego}
-                      className="icon-area heartbeat"
-                      alt="stars-left"
-                    />
-                    <p className="text-area-juego">JUEGO</p>
+                  <div className="w-50">
+                    <a
+                      href={`/aprendamos/cuidador/${localStorage.getItem(
+                        "idChildLogueadoActive"
+                      )}/juego`}
+                      className="link"
+                    >
+                      <div className="area-juego">
+                        <img
+                          src={iconAreaJuego}
+                          className="icon-area heartbeat"
+                          alt="stars-left"
+                        />
+                        <p className="text-area-juego">JUEGO</p>
+                      </div>
+                    </a>
                   </div>
-                </a>
-              </div>
-            </div>
-            <div className="btn-areas w-100">
-              <div className="w-50">
-                <a
-                  href={`/aprendamos/cuidador/${localStorage.getItem(
-                    "idChildLogueadoActive"
-                  )}/nutricion`}
-                  className="link"
-                >
-                  <div className="area-nutricion">
-                    <img
-                      src={iconAreaNutricion}
-                      className="icon-area heartbeat"
-                      alt="stars-left"
-                    />
-                    <p className="text-area-nutricion">NUTRICIÓN Y FÍSICO</p>
-                  </div>
-                </a>
-              </div>
-              {colaboradorBreca === "SI" ? (
-                <div className="w-50">
-                  <a
-                    href={`/aprendamos/cuidador/${localStorage.getItem(
-                      "idChildLogueadoActive"
-                    )}/sesamo`}
-                    className="link"
-                  >
-                    <div className="area-sesamo">
-                      <img
-                        src={iconAreaSesamo}
-                        className="icon-sesamo heartbeat"
-                        alt="stars-left"
-                      />
-                    </div>
-                  </a>
                 </div>
-              ) : (
-                ""
-              )}
-            </div>
-                    </> 
-                )}
-            
+                <div className="btn-areas w-100">
+                  <div className="w-50">
+                    <a
+                      href={`/aprendamos/cuidador/${localStorage.getItem(
+                        "idChildLogueadoActive"
+                      )}/nutricion`}
+                      className="link"
+                    >
+                      <div className="area-nutricion">
+                        <img
+                          src={iconAreaNutricion}
+                          className="icon-area heartbeat"
+                          alt="stars-left"
+                        />
+                        <p className="text-area-nutricion">
+                          NUTRICIÓN Y FÍSICO
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  {colaboradorBreca === "SI" ? (
+                    <div className="w-50">
+                      <a
+                        href={`/aprendamos/cuidador/${localStorage.getItem(
+                          "idChildLogueadoActive"
+                        )}/sesamo`}
+                        className="link"
+                      >
+                        <div className="area-sesamo">
+                          <img
+                            src={iconAreaSesamo}
+                            className="icon-sesamo heartbeat"
+                            alt="stars-left"
+                          />
+                        </div>
+                      </a>
+                    </div>
+                  ) : (
+                    ""
+                  )}
+                </div>
+              </>
+            )}
           </div>
         </div>
       ) : (
@@ -584,29 +569,24 @@ export const BienvenidoCuidador = ({
             </div>
 
             <div className="box-row-2">
-
-            {texto1bAleatorio !== ""  && texto1aAleatorio!== "" ? (
-                              <p className="box-text ">
-                                 {texto1aAleatorio}  {JSON.parse(localStorage.getItem("dateChild")).name} {texto1bAleatorio} 
-                              </p>
-                            ) : (
-                               texto1bAleatorio !== ""  && texto1aAleatorio === "" ? (
-                                <p className="box-text ">
-                                {texto1bAleatorio}
-                              </p>
-                              ):(
-                                <p className="box-text ">
-                               {JSON.parse(localStorage.getItem("dateChild")).name}  {texto1aAleatorio}  
-                              </p>
-                              ) 
-                              
-                            )}
+              {texto1bAleatorio !== "" && texto1aAleatorio !== "" ? (
+                <p className="box-text ">
+                  {texto1aAleatorio}{" "}
+                  {JSON.parse(localStorage.getItem("dateChild")).name}{" "}
+                  {texto1bAleatorio}
+                </p>
+              ) : texto1bAleatorio !== "" && texto1aAleatorio === "" ? (
+                <p className="box-text ">{texto1bAleatorio}</p>
+              ) : (
+                <p className="box-text ">
+                  {JSON.parse(localStorage.getItem("dateChild")).name}{" "}
+                  {texto1aAleatorio}
+                </p>
+              )}
             </div>
           </div>
           <p className="estrellita-lila heartbeat">&#10022;</p>
-          <p className="title-dit">
-            {texto2Aleatorio}
-          </p>
+          <p className="title-dit">{texto2Aleatorio}</p>
           <p className="estrellita-lila heartbeat">&#10022;</p>
           <div className="mt-3 video">
             <div className="video-responsive">
@@ -711,7 +691,6 @@ export const BienvenidoCuidador = ({
               </div>
             ) : (
               <>
-                
                 <div className="btn-areas w-100">
                   <div className="w-20">
                     <a href="/aprendamos/cuidador/higiene" className="link">
@@ -831,7 +810,6 @@ export const BienvenidoCuidador = ({
             </div>
             {JSON.parse(localStorage.getItem("dateChild")).edad === "-1" ? (
               <>
-                
                 <div className="btn-areas w-100">
                   <div className="w-50">
                     <a href="/aprendamos/cuidador/rutina" className="link">

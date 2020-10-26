@@ -7,9 +7,6 @@ import arrTips from "../../../../data";
 
 const TipsSesamo = ({ contenidoFirebase, error, loading }) => {
   let history = useHistory();
-  /*  const childData= db.collection("usuarios").doc(firebaseUser.uid).collection("addChild").doc("OxtF7ijtoOlOX7zx3xcY")
-  console.log("hola", childData.edadChild)
-    ///Obteniendo todo el contenido de firebase///*/
 
   return (
     <div>

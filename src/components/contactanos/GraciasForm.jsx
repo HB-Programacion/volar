@@ -9,12 +9,11 @@ import {
 const GraciasForm = () => {
   let history = useHistory();
   React.useEffect(() => {
-      const interval = setInterval(() => {
-        alertFunc();
-      }, 5000);
-      return () => clearInterval(interval);
-    },
-    []);
+    const interval = setInterval(() => {
+      alertFunc();
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
 
   const alertFunc = () => {
     history.push("/contactanos");

@@ -21,7 +21,7 @@ const ListMaterialEducativo = ({
 
   let arraySesamo = arrTips;
 
-  arraySesamo.sort(function (a, b) {
+  arraySesamo.sort(function(a, b) {
     if (a.n_tip > b.n_tip) {
       return 1;
     }
@@ -48,78 +48,72 @@ const ListMaterialEducativo = ({
             </h1>
           </div>
           <div className="list-material-educativo">
-          <a onClick={() => {
-              history.goBack();
-            }}>
-            <i
-            className="fas fa-chevron-left arrowGoback goBack-area"
-            aria-hidden="true"
-            ></i>
-          </a>
-           <div className="container-fluid">
-           <div className="row">
-              {arraySesamo
-                .filter((item) => item.seccion === "Sésamo")
-                .map((item) => (
-                 
-                   item.tipo === "Video Educativo" || item.tipo ==="Canción" ? (
-                    <div
-                    key={item.id}
-                    className="col-sm-12 col-md-12 col-lg-4 col-xl-4"
-                  >
-                      <a
-                        className="link"
-                        href={`/aprendamos/aliado/docente/material-educativo/individual`}
-                        onClick={() => mandarNumberTipOficial(item.n_tip)}
+            <a
+              onClick={() => {
+                history.goBack();
+              }}
+            >
+              <i
+                className="fas fa-chevron-left arrowGoback goBack-area"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <div className="container-fluid">
+              <div className="row">
+                {arraySesamo
+                  .filter((item) => item.seccion === "Sésamo")
+                  .map((item) =>
+                    item.tipo === "Video Educativo" ||
+                    item.tipo === "Canción" ? (
+                      <div
+                        key={item.id}
+                        className="col-sm-12 col-md-12 col-lg-4 col-xl-4"
                       >
-                        <div className="box-section box-section-material-educativo">
-                          <img
-                            src={focoRosado}
-                            className="icono-video-tip"
-                            alt="icono de tip"
-                          />
-                          <div className="box-text-material-educativo">
-                            <h3>{item.titulo}</h3>
-                            <h5 className="text-video-tip">
-                              N° {item.n_tip} {item.tipo}
-                            </h5>
+                        <a
+                          className="link"
+                          href={`/aprendamos/aliado/docente/material-educativo/individual`}
+                          onClick={() => mandarNumberTipOficial(item.n_tip)}
+                        >
+                          <div className="box-section box-section-material-educativo">
+                            <img
+                              src={focoRosado}
+                              className="icono-video-tip"
+                              alt="icono de tip"
+                            />
+                            <div className="box-text-material-educativo">
+                              <h3>{item.titulo}</h3>
+                              <h5 className="text-video-tip">
+                                N° {item.n_tip} {item.tipo}
+                              </h5>
+                            </div>
                           </div>
-                        </div>
-                      </a>
-                    
-                  </div>
-                   ): (
-                    <div
-                    key={item.id}
-                    className="col-sm-12 col-md-12 col-lg-4 col-xl-4"
-                  >
-                      <a
-                        className="link"
-                        href={item.link}
-                        target="_blank"
-
+                        </a>
+                      </div>
+                    ) : (
+                      <div
+                        key={item.id}
+                        className="col-sm-12 col-md-12 col-lg-4 col-xl-4"
                       >
-                        <div className="box-section box-section-material-educativo">
-                          <img
-                            src={focoRosado}
-                            className="icono-video-tip"
-                            alt="icono de tip"
-                          />
-                          <div className="box-text-material-educativo">
-                            <h3>{item.titulo}</h3>
-                            <h5 className="text-video-tip">
-                              N° {item.n_tip} {item.tipo}
-                            </h5>
+                        <a className="link" href={item.link} target="_blank">
+                          <div className="box-section box-section-material-educativo">
+                            <img
+                              src={focoRosado}
+                              className="icono-video-tip"
+                              alt="icono de tip"
+                            />
+                            <div className="box-text-material-educativo">
+                              <h3>{item.titulo}</h3>
+                              <h5 className="text-video-tip">
+                                N° {item.n_tip} {item.tipo}
+                              </h5>
+                            </div>
                           </div>
-                        </div>
-                      </a>
-                    
-                  </div>
-                   )
-                 
-                ))}
+                        </a>
+                      </div>
+                    )
+                  )}
+              </div>
             </div>
-           </div>
           </div>
         </div>
       </>

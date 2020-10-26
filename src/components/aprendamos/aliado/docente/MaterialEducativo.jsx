@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./../../cuidador/areas/tips.css";
 import { useHistory } from "react-router-dom";
-/*import cohete from '../../images/cohete-volando.svg';*/
 import arrTips from "../../../../data";
 const MaterialEducativo = () => {
   let history = useHistory();
@@ -11,14 +10,16 @@ const MaterialEducativo = () => {
       <div className="background-list-material-educativo" id="aprendamos-page">
         <div className=" animated fadeIn">
           <>
-           <a onClick={() => {
+            <a
+              onClick={() => {
                 history.goBack();
-              }}>
-           <i
-              className="fas fa-chevron-left arrowGoback goBack-area elmo-videos-flecha"
-              aria-hidden="true"
-            ></i>
-           </a>
+              }}
+            >
+              <i
+                className="fas fa-chevron-left arrowGoback goBack-area elmo-videos-flecha"
+                aria-hidden="true"
+              ></i>
+            </a>
             {arrTips
               .filter(
                 (item) =>
@@ -26,7 +27,7 @@ const MaterialEducativo = () => {
                   item.n_tip == localStorage.getItem("localNumberTip")
               )
               .map((item) => (
-                  <div className="">
+                <div className="">
                   <div className="row justify-content-center h-100 sin-margin-row">
                     <h1 className="tittle-tips"> {item.titulo}</h1>
                   </div>
@@ -59,7 +60,7 @@ const MaterialEducativo = () => {
                       </div>
                     </div>
                   </div>
-                </div>       
+                </div>
               ))}
           </>
         </div>

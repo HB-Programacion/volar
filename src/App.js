@@ -93,27 +93,11 @@ function App() {
     setSubItem(!subItem);
   };
 
-  // setSideDrawerOpen((prev)=>{
-
-  //   return{sideDrawerOpen:!prev.sideDrawerOpen}
 
   const drawerToggleClickHandler = () => {
-    // if(prev){
-    //   setmenuBurgerOpen(true)
-    // }else{
-    //   setmenuBurgerOpen(false)
-    // }
-    // setmenuBurgerOpen((prev)=>{
     setmenuBurgerOpen(true);
-    //   return{menuBurgerOpen:!prev.menuBurgerOpen}
-    // })
   };
-  {/*const [contenidoFirebase, loading, error] = useCollection(
-    db.collection("contenido").orderBy("n_tip", "asc"),
-    {
-      snapshotListenOptions: { includeMetadataChanges: true },
-    }
-  );*/}
+ 
 
 
 
@@ -143,23 +127,13 @@ function App() {
   const ocultarMenuMobile = () => {
     setmenuBurgerOpen(false);
   };
-  // let sideDrawer;
   let backdrop;
   if (menuBurgerOpen) {
-    // sideDrawer = <SideDrawer/>;
     backdrop = <Backdrop click={ocultarMenuMobile} />;
   }
 
   console.log("holis", contenidoJson)
   React.useEffect(() => {
-
-    {/* fetch("../data.json")
-    .then((response) => response.json())
-    .then((datos) => {
-      setContenidoJson(datos);
-      console.log("holita", datos)
-    });
-  */}
 
     auth.onAuthStateChanged((user) => {
 

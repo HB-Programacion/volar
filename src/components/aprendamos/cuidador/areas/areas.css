@@ -5,8 +5,6 @@
   display: flex;
   flex-direction: column;
   padding-top: 8rem;
-  /*height: 100vh;
-    width: 100%;*/
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -21,8 +19,6 @@
   display: flex;
   flex-direction: column;
   padding-top: 8rem;
-  /*height: 100vh;
-    width: 100%;*/
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -37,8 +33,6 @@ background-color: #AE96B2;
   display: flex;
   flex-direction: column;
   padding-top: 8rem;
-  /*height: 100vh;
-    width: 100%;*/
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -53,8 +47,6 @@ background-color: #EF8B44;
   display: flex;
   flex-direction: column;
   padding-top: 8rem;
-  /*height: 100vh;
-    width: 100%;*/
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -69,8 +61,6 @@ background-color: #EF8B44;
   display: flex;
   flex-direction: column;
   padding-top: 8rem;
-  /*height: 100vh;
-    width: 100%;*/
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -86,8 +76,6 @@ background-color: #EF8B44;
   flex-direction: column;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  /*height: 100vh;
-    width: 100%;*/
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -172,8 +160,6 @@ background-color: #EF8B44;
   color: #2e335e;
   margin: 0.5rem 0.5rem 0rem 2rem;
 
-  /* -webkit-text-stroke: 1.5px #7dc7c5;
-    font-size: 1.5rem;*/
 }
 
 .subtittle-video-tip {
@@ -218,8 +204,6 @@ background-color: #EF8B44;
     color: #2e335e;
     margin: 0.5rem 0.5rem 0rem 0.5rem;
 
-    /* -webkit-text-stroke: 1.5px #7dc7c5;
-        font-size: 1.5rem;*/
   }
 
   .subtittle-video-tip {

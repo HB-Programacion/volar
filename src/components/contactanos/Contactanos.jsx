@@ -1,25 +1,40 @@
 import React from "react";
 import "./contactanos.css";
-import { BrowserRouter as Router, Route, Link, useHistory } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  useHistory,
+} from "react-router-dom";
 import arrowLeft from "./../../images/arrow-left-blue.svg";
 import arrowRight from "./../../images/arrow-right-blue.svg";
-import emailjs from 'emailjs-com';
+import emailjs from "emailjs-com";
 
 export const Contactanos = () => {
- const [error, setError] = React.useState("");
- let history= useHistory()
-  const  sendEmail=(e) => {
+  const [error, setError] = React.useState("");
+  let history = useHistory();
+  const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_2qkvqvp', 'template_rufu117', e.target, 'user_pTnoExhJI5ETXocAlxU5L')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "service_2qkvqvp",
+        "template_rufu117",
+        e.target,
+        "user_pTnoExhJI5ETXocAlxU5L"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-          history.push("/gracias_por_contactarse")
-      }, (error) => {
+          history.push("/gracias_por_contactarse");
+        },
+        (error) => {
           console.log(error.text);
-          setError("No se logró enviar el mensaje, estamos solucionando ese error")
-      });
-      // e.target.reset();
+          setError(
+            "No se logró enviar el mensaje, estamos solucionando ese error"
+          );
+        }
+      );
   };
 
   return (
@@ -29,7 +44,6 @@ export const Contactanos = () => {
           ¡Contáctanos!
         </h1>
 
-        {/* <form method="POST"  action="https://volar.org.pe/send.php"> */}
         <form className="contact-form" onSubmit={sendEmail}>
           <div className="list-register">
             <p className="letter-register">NOMBRE</p>
@@ -57,7 +71,7 @@ export const Contactanos = () => {
               name="message"
               required
             />
-              <p className="error-contactanos">{error}</p>
+            <p className="error-contactanos">{error}</p>
             <div className="caja-boton-contactanos">
               <button
                 className="btn-navy-blue text-white wobble-hor-bottom boton-guardar-nino out-none-button"
