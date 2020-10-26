@@ -11,7 +11,7 @@ export const Contactanos = () => {
   const  sendEmail=(e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_4f10grg', 'template_3sfnxpo', e.target, 'user_SIGDfZFpDcNf0ef6IzLxN')
+    emailjs.sendForm('service_2qkvqvp', 'template_rufu117', e.target, 'user_pTnoExhJI5ETXocAlxU5L')
       .then((result) => {
           console.log(result.text);
           history.push("/gracias_por_contactarse")
